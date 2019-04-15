@@ -748,7 +748,7 @@ msgstr "Informations de contact"
 
 #. translators: privacy policy tutorial.
 #: wp-admin/includes/misc.php:1908
-msgid "European data protection law requires data about European residents which is transferred outside the European Union to be safeguarded to the same standards as if the data was in Europe. So in addition to listing where data goes, you should describe how you ensure that these standards are met either by yourself or by your third party providers, whether that is through an agreement such as Privacy Shield, models clauses in your contracts, or binding corporate rules."
+msgid "European data protection law requires data about European residents which is transferred outside the European Union to be safeguarded to the same standards as if the data was in Europe. So in addition to listing where data goes, you should describe how you ensure that these standards are met either by yourself or by your third party providers, whether that is through an agreement such as Privacy Shield, model clauses in your contracts, or binding corporate rules."
 msgstr "La loi européenne de protection des données nécessite que les données de résidents européens transférées en dehors de l’Union Européenne soient protégées dans les mêmes conditions que si elles étaient en Europe. En plus de lister les endroits où vont les données, vous devriez décrire comment vous vous assurez, par vous ou par vos sous-traitants, de la mise en conformité avec ces standards, soit par un accord comme le Privacy Shield (Bouclier de Protection des Données UE/États-Unis), des clauses dans vos contrats ou des règles d’entreprise contraignantes."
 
 #. translators: privacy policy tutorial.

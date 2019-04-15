@@ -150,7 +150,7 @@ msgstr "Formats"
 msgid "%1$s, %2$s"
 msgstr "%1$s, %2$s"
 
-#. translators: %s: default Update PHP page ViewSchedule
+#. translators: %s: default Update PHP page URL
 #: wp-includes/functions.php:6828
 msgid "This resource is provided by your web host, and is specific to your site. For more information, <a href=\"%s\" target=\"_blank\">see the official WordPress documentation</a>."
 msgstr "Cette ressource est fournie par votre hébergeur web, et elle est spécifique à votre site. Pour plus d’informations, <a href=\"%s\" target=\"_blank\">veuillez consulter la document officiel de WordPress (ouvre un nouvel onglet)</a>."
@@ -1009,8 +1009,8 @@ msgid "Add a link to a downloadable file."
 msgstr "Ajoutez un lien vers un fichier téléchargeable."
 
 #: wp-includes/js/dist/block-library.js:8621
-msgid "Copy ViewSchedule"
-msgstr "Copier l’ViewSchedule"
+msgid "Copy URL"
+msgstr "Copier l’URL"
 
 #: wp-includes/js/dist/block-library.js:8589
 msgid "Write file name…"
@@ -1052,12 +1052,12 @@ msgid "Embed"
 msgstr "Embarquer"
 
 #: wp-includes/js/dist/block-library.js:7663
-msgid "Enter ViewSchedule to embed here…"
-msgstr "Saisissez l’ViewSchedule à embarquer…"
+msgid "Enter URL to embed here…"
+msgstr "Saisissez l’URL à embarquer…"
 
 #: wp-includes/js/dist/block-library.js:8048
-msgid "%s ViewSchedule"
-msgstr "ViewSchedule %s"
+msgid "%s URL"
+msgstr "URL %s"
 
 #: wp-includes/js/dist/block-library.js:7625
 msgid "Embedding…"
@@ -1072,8 +1072,8 @@ msgid "Media Settings"
 msgstr "Réglages des médias"
 
 #: wp-includes/js/dist/block-library.js:7597
-msgid "Edit ViewSchedule"
-msgstr "Modifier l’ViewSchedule"
+msgid "Edit URL"
+msgstr "Modifier l’URL"
 
 #: wp-includes/js/dist/block-library.js:8006
 msgid "This embed may not preserve its aspect ratio when the browser is resized."
@@ -2341,8 +2341,8 @@ msgid "Drag a media file, upload a new one or select a file from your library."
 msgstr "Glissez un fichier média, téléversez-en un nouveau ou sélectionnez un fichier dans votre bibliothèque."
 
 #: wp-includes/js/dist/editor.js:22784
-msgid "Paste or type ViewSchedule"
-msgstr "Collez ou saisissez une ViewSchedule"
+msgid "Paste or type URL"
+msgstr "Collez ou saisissez une URL"
 
 #: wp-includes/js/dist/editor.js:17756 wp-includes/js/dist/edit-post.js:1156
 msgid "Manage All Reusable Blocks"
@@ -3140,7 +3140,7 @@ msgid "No comments to show."
 msgstr "Aucun commentaire à afficher."
 
 #. translators: 1: author name (inside <a> or <span> tag, based on if they have
-#. a ViewSchedule), 2: post title related to this comment
+#. a URL), 2: post title related to this comment
 #: wp-includes/blocks/latest-comments.php:99
 msgid "%1$s on %2$s"
 msgstr "%1$s sur %2$s"
@@ -3344,8 +3344,8 @@ msgid "User Registration Date"
 msgstr "Date d’inscription de l’utilisateur"
 
 #: wp-includes/user.php:2903
-msgid "User ViewSchedule"
-msgstr "ViewSchedule de l’utilisateur"
+msgid "User URL"
+msgstr "URL de l’utilisateur"
 
 #: wp-includes/user.php:2902
 msgid "User Email"
@@ -3535,8 +3535,8 @@ msgid "Pending"
 msgstr "En attente"
 
 #: wp-includes/comment.php:3359
-msgid "Comment ViewSchedule"
-msgstr "ViewSchedule du commentaire"
+msgid "Comment URL"
+msgstr "URL du commentaire"
 
 #: wp-includes/comment.php:3358
 msgid "Comment Content"
@@ -3555,8 +3555,8 @@ msgid "Comment Author IP"
 msgstr "IP de l’auteur du commentaire"
 
 #: wp-includes/comment.php:3354
-msgid "Comment Author ViewSchedule"
-msgstr "ViewSchedule de l’auteur du commentaire"
+msgid "Comment Author URL"
+msgstr "URL de l’auteur du commentaire"
 
 #: wp-includes/comment.php:3353
 msgid "Comment Author Email"
@@ -3636,7 +3636,7 @@ msgstr "Installé"
 msgid "%1$s is not a valid property of Object."
 msgstr "%1$s n’est pas une propriété valide de l’objet."
 
-#. translators: %s: ViewSchedule to Add Themes admin screen
+#. translators: %s: URL to Add Themes admin screen
 #: wp-includes/script-loader.php:1419
 msgid "You won&#8217;t be able to install new themes from here yet since your install requires SFTP credentials. For now, please <a href=\"%s\">add themes in the admin</a>."
 msgstr "Vous ne pourrez avoir la possibilité d’installer de nouveaux thèmes à partir d’ici car votre installation nécessite des identifiants SFTP. Pour l’instant, veuillez <a href=\"%s\">ajouter vos thèmes en passant par l’administration</a>."
@@ -3659,8 +3659,8 @@ msgstr "Cliquez sur « Suivant » pour commencer à ajouter des liens à votre
 
 #. translators: %s: a list of valid video file extensions
 #: wp-includes/widgets/class-wp-widget-media-video.php:50
-msgid "Sorry, we can&#8217;t load the video at the supplied ViewSchedule. Please check that the ViewSchedule is for a supported video file (%s) or stream (e.g. YouTube and Vimeo)."
-msgstr "Désolé, nous ne pouvons pas charger la vidéo depuis l’ViewSchedule fournie. Veuillez vérifier que l’ViewSchedule est celle d’un fichier vidéo supporté (%s) ou diffusé (ex : YouTube et Vimeo)."
+msgid "Sorry, we can&#8217;t load the video at the supplied URL. Please check that the URL is for a supported video file (%s) or stream (e.g. YouTube and Vimeo)."
+msgstr "Désolé, nous ne pouvons pas charger la vidéo depuis l’URL fournie. Veuillez vérifier que l’URL est celle d’un fichier vidéo supporté (%s) ou diffusé (ex : YouTube et Vimeo)."
 
 #: wp-includes/script-loader.php:1545
 msgctxt "post action/button label"
@@ -3744,7 +3744,7 @@ msgstr "Voici l’emplacement où ce menu apparaît. Pour modifier cela, choisis
 msgid "https://codex.wordpress.org/WordPress_Widgets"
 msgstr "https://codex.wordpress.org/WordPress_Widgets"
 
-#. translators: 1: Codex ViewSchedule, 2: additional link attributes, 3: accessibility
+#. translators: 1: Codex URL, 2: additional link attributes, 3: accessibility
 #. text
 #: wp-includes/customize/class-wp-customize-nav-menu-locations-control.php:53
 msgctxt "menu locations"
@@ -3943,7 +3943,7 @@ msgid_plural "There are %d errors which must be fixed before you can save."
 msgstr[0] "Il y a %d erreur que vous devriez corriger avant d’enregistrer."
 msgstr[1] "Il y a %d erreurs que vous devriez corriger avant d’enregistrer."
 
-#. translators: %s: ViewSchedule to the Customizer to load the autosaved version
+#. translators: %s: URL to the Customizer to load the autosaved version
 #: wp-includes/script-loader.php:1398
 msgid "There is a more recent autosave of your changes than the one you are previewing. <a href=\"%s\">Restore the autosave</a>"
 msgstr "Il existe une sauvegarde automatique de vos modifications plus récente que celle que vous en êtes en train de parcourir. <a href=\"%s\">Restaurer la sauvegarde</a>"
@@ -4434,8 +4434,8 @@ msgid "Install &amp; Preview"
 msgstr "Installer &amp; prévisualiser"
 
 #: wp-includes/customize/class-wp-customize-nav-menu-item-setting.php:719
-msgid "Invalid ViewSchedule."
-msgstr "ViewSchedule non-valide."
+msgid "Invalid URL."
+msgstr "URL non-valide."
 
 #. translators: %s: "Add Items" button text
 #: wp-includes/customize/class-wp-customize-nav-menu-control.php:44
@@ -4551,7 +4551,7 @@ msgstr "Créer un nouveau menu"
 msgid "New Menu"
 msgstr "Nouveau menu"
 
-#. translators: ViewSchedule to the widgets panel of the customizer
+#. translators: URL to the widgets panel of the customizer
 #: wp-includes/class-wp-customize-nav-menus.php:628
 msgid "If your theme has widget areas, you can also add menus there. Visit the <a href=\"%s\">Widgets panel</a> and add a &#8220;Navigation Menu widget&#8221; to display a menu in a sidebar or footer."
 msgstr "Si votre thème possède des zones de widgets, vous pouvez aussi y ajouter des menus. Consultez le <a href=\"%s\">panneau Widgets</a> et ajoutez un « Widget de menu de navigation » pour afficher un menu en colonne latérale ou en pied de page."
@@ -4808,7 +4808,7 @@ msgstr "Une erreur est survenue. Veuillez réessayer plus tard."
 msgid "Enter your closest city to find nearby events."
 msgstr "Saisissez la ville la plus proche afin de trouver des évènements à proximité."
 
-#. translators: %s: network settings ViewSchedule
+#. translators: %s: network settings URL
 #: wp-signup.php:922
 msgid "To change or disable registration go to your <a href=\"%s\">Options page</a>."
 msgstr "Pour changer ou désactiver l’inscription allez sur votre <a href=\"%s\">page d’options</a>."
@@ -4839,8 +4839,8 @@ msgid "Title for the widget"
 msgstr "Titre pour le widget"
 
 #: wp-includes/widgets/class-wp-widget-media.php:145
-msgid "ViewSchedule to the media file"
-msgstr "ViewSchedule du fichier média"
+msgid "URL to the media file"
+msgstr "URL du fichier média"
 
 #: wp-includes/widgets/class-wp-widget-media.php:138
 msgid "Attachment post ID"
@@ -4861,7 +4861,7 @@ msgid_plural "Media Widget (%d)"
 msgstr[0] "Widget média (%d)"
 msgstr[1] "Widgets média (%d)"
 
-#. translators: %s: ViewSchedule to media library
+#. translators: %s: URL to media library
 #: wp-includes/widgets/class-wp-widget-media.php:76
 msgid "We can&#8217;t find that file. Check your <a href=\"%s\">media library</a> and make sure it wasn&#8217;t deleted."
 msgstr "Nous ne trouvons pas ce fichier. Vérifiez votre <a href=\"%s\">bibliothèque</a> et assurez vous qu’il n’a pas été supprimé."
@@ -4890,8 +4890,8 @@ msgstr "Un élément média."
 
 #. translators: %s: video extension
 #: wp-includes/widgets/class-wp-widget-media-video.php:98
-msgid "ViewSchedule to the %s video source file"
-msgstr "ViewSchedule vers le fichier source vidéo %s"
+msgid "URL to the %s video source file"
+msgstr "URL vers le fichier source vidéo %s"
 
 #: wp-includes/widgets/class-wp-widget-media-video.php:48
 msgid "Video Widget"
@@ -4904,7 +4904,7 @@ msgid_plural "Video Widget (%d)"
 msgstr[0] "Widget vidéo (%d)"
 msgstr[1] "Widgets vidéo (%d)"
 
-#. translators: %s: ViewSchedule to media library
+#. translators: %s: URL to media library
 #: wp-includes/widgets/class-wp-widget-media-video.php:43
 msgid "We can&#8217;t find that video. Check your <a href=\"%s\">media library</a> and make sure it wasn&#8217;t deleted."
 msgstr "Nous ne trouvons pas cette vidéo. Vérifiez votre <a href=\"%s\">bibliothèque</a> et assurez vous qu’elle n’a pas été supprimée. "
@@ -4944,7 +4944,7 @@ msgid_plural "Image Widget (%d)"
 msgstr[0] "Widget image (%d)"
 msgstr[1] "Widgets image (%d)"
 
-#. translators: %s: ViewSchedule to media library
+#. translators: %s: URL to media library
 #: wp-includes/widgets/class-wp-widget-media-image.php:43
 msgid "We can&#8217;t find that image. Check your <a href=\"%s\">media library</a> and make sure it wasn&#8217;t deleted."
 msgstr "Nous ne trouvons pas cette image. Vérifiez votre <a href=\"%s\">bibliothèque</a> et assurez vous qu’elle n’a pas été supprimée. "
@@ -4976,8 +4976,8 @@ msgstr "Impossible de prévisualiser le média en raison d’une erreur inconnue
 
 #. translators: %s: audio extension
 #: wp-includes/widgets/class-wp-widget-media-audio.php:88
-msgid "ViewSchedule to the %s audio source file"
-msgstr "ViewSchedule vers le fichier source du son %s"
+msgid "URL to the %s audio source file"
+msgstr "URL vers le fichier source du son %s"
 
 #: wp-includes/widgets/class-wp-widget-media-audio.php:49
 msgid "Looks like this isn&#8217;t the correct kind of file. Please link to an audio file instead."
@@ -4994,7 +4994,7 @@ msgid_plural "Audio Widget (%d)"
 msgstr[0] "Widget de son (%d)"
 msgstr[1] "Widgets de son (%d)"
 
-#. translators: %s: ViewSchedule to media library
+#. translators: %s: URL to media library
 #: wp-includes/widgets/class-wp-widget-media-audio.php:43
 msgid "We can&#8217;t find that audio file. Check your <a href=\"%s\">media library</a> and make sure it wasn&#8217;t deleted."
 msgstr "Nous ne trouvons pas ce fichier audio. Vérifiez votre <a href=\"%s\">bibliothèque</a> et assurez vous qu’il n’a pas été supprimé. "
@@ -5225,8 +5225,8 @@ msgid "The oEmbed format to use."
 msgstr "Le format oEmbed à utiliser."
 
 #: wp-includes/class-wp-oembed-controller.php:69
-msgid "The ViewSchedule of the resource for which to fetch oEmbed data."
-msgstr "L’ViewSchedule de la ressource à parcourir pour obtenir les données oEmbed."
+msgid "The URL of the resource for which to fetch oEmbed data."
+msgstr "L’URL de la ressource à parcourir pour obtenir les données oEmbed."
 
 #: wp-includes/class-wp-editor.php:1170
 msgctxt "Short for blue in RGB"
@@ -5357,7 +5357,7 @@ msgstr "Limiter les réponses aux commentaires publiés après une date donnée 
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1326
 msgid "Avatar URLs for the user."
-msgstr "ViewSchedule d’avatar pour l’utilisateur."
+msgstr "URL d’avatar pour l’utilisateur."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1279
 msgid "Roles assigned to the user."
@@ -5372,16 +5372,16 @@ msgid "Locale for the user."
 msgstr "Langue de l’utilisateur."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1243
-msgid "Author ViewSchedule of the user."
-msgstr "ViewSchedule auteur pour l’utilisateur."
+msgid "Author URL of the user."
+msgstr "URL auteur pour l’utilisateur."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1238
 msgid "Description of the user."
 msgstr "Description de l’utilisateur."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1232
-msgid "ViewSchedule of the user."
-msgstr "ViewSchedule de l’utilisateur."
+msgid "URL of the user."
+msgstr "URL de l’utilisateur."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1217
 msgid "Last name for the user."
@@ -5417,8 +5417,8 @@ msgid "HTML title for the term."
 msgstr "Titre HTML pour le terme."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:877
-msgid "ViewSchedule of the term."
-msgstr "ViewSchedule du terme."
+msgid "URL of the term."
+msgstr "URL du terme."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:632
 msgid "The term cannot be deleted."
@@ -5468,8 +5468,8 @@ msgid "Invalid status."
 msgstr "État non valide."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:507
-msgid "ViewSchedule to the original attachment file."
-msgstr "ViewSchedule pour le fichier joint original."
+msgid "URL to the original attachment file."
+msgstr "URL pour le fichier joint original."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:487
 msgid "The attachment MIME type."
@@ -5509,7 +5509,7 @@ msgid "[%1$s] Activate %2$s"
 msgstr "[%1$s] Activation de %2$s"
 
 #. translators: New site notification email subject. 1: Network name, 2: New
-#. site ViewSchedule
+#. site URL
 #: wp-includes/ms-functions.php:975
 msgctxt "New site notification email subject"
 msgid "[%1$s] Activate %2$s"
@@ -5910,8 +5910,8 @@ msgid "Caption for the attachment, as it exists in the database."
 msgstr "Légende pour le fichier joint, telle qu’elle existe dans la base de données."
 
 #: wp-includes/class-wp-customize-manager.php:5972
-msgid "Please enter a valid YouTube ViewSchedule."
-msgstr "Veuillez saisir une ViewSchedule YouTube valide."
+msgid "Please enter a valid YouTube URL."
+msgstr "Veuillez saisir une URL YouTube valide."
 
 #: wp-includes/script-loader.php:827
 msgid "Expand Main menu"
@@ -5947,8 +5947,8 @@ msgid "The comment does not support trashing. Set '%s' to delete."
 msgstr "Le commentaire ne peut pas être mis à la corbeille. Utilisez le paramètre « %s » pour le supprimer."
 
 #: wp-includes/class-wp-customize-manager.php:5314
-msgid "Or, enter a YouTube ViewSchedule:"
-msgstr "Ou saisissez une ViewSchedule YouTube :"
+msgid "Or, enter a YouTube URL:"
+msgstr "Ou saisissez une URL YouTube :"
 
 #: wp-includes/rest-api/class-wp-rest-request.php:656
 msgid "Invalid JSON body passed."
@@ -5989,7 +5989,7 @@ msgid "Empty title"
 msgstr "Titre vide"
 
 #: wp-trackback.php:130
-msgid "We already have a ping from that ViewSchedule for this post."
+msgid "We already have a ping from that URL for this post."
 msgstr "Nous avons déjà un ping de cette adresse web pour cette publication."
 
 #: wp-trackback.php:115
@@ -6562,8 +6562,8 @@ msgstr "URLs d’avatar pour l’objet author."
 #. translators: %d: avatar image size in pixels
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1349
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1318
-msgid "Avatar ViewSchedule with image size of %d pixels."
-msgstr "ViewSchedule d’avatar avec une taille d’image de %d pixels."
+msgid "Avatar URL with image size of %d pixels."
+msgstr "URL d’avatar avec une taille d’image de %d pixels."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1334
 msgid "Type of Comment for the object."
@@ -6590,8 +6590,8 @@ msgstr "L’ID du parent de l’objet."
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1307
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1912
 #: wp-includes/rest-api/endpoints/class-wp-rest-search-controller.php:242
-msgid "ViewSchedule to the object."
-msgstr "ViewSchedule de l’objet."
+msgid "URL to the object."
+msgstr "URL de l’objet."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1287
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2078
@@ -6613,8 +6613,8 @@ msgid "User agent for the object author."
 msgstr "Agent utilisateur pour l’objet author."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1259
-msgid "ViewSchedule for the object author."
-msgstr "ViewSchedule pour l’objet auteur."
+msgid "URL for the object author."
+msgstr "URL pour l’objet auteur."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1251
 msgid "Display name for the object author."
@@ -7292,7 +7292,7 @@ msgstr "Lancer %s"
 msgid "Run Importer"
 msgstr "Lancer l’importateur"
 
-#. translators: %s: Activation ViewSchedule
+#. translators: %s: Activation URL
 #: wp-includes/script-loader.php:1699
 msgid "Importer installed successfully. <a href=\"%s\">Run importer</a>"
 msgstr "L’importateur a bien été installé. <a href=\"%s\">Lancer l’importateur></a>"
@@ -7551,7 +7551,7 @@ msgstr "Zone d’aperçu de recadrage d’image. Nécessite l’interaction de l
 msgid "https://codex.wordpress.org/Using_Permalinks#Choosing_your_permalink_structure"
 msgstr "https://codex.wordpress.org/Using_Permalinks#Choosing_your_permalink_structure"
 
-#. translators: %s: Codex ViewSchedule
+#. translators: %s: Codex URL
 #: wp-includes/formatting.php:4666
 msgid "A structure tag is required when using custom permalinks. <a href=\"%s\">Learn more</a>"
 msgstr "Une balise structurelle est nécessaire quand les permaliens personnalisés sont utilisés. <a href=\"%s\">En savoir plus</a>."
@@ -7639,7 +7639,7 @@ msgid "Logged in as %s. Edit your profile."
 msgstr "Connexion en tant que %s. Modifier votre profil."
 
 #. translators: 1: edit user link, 2: accessibility text, 3: user name, 4:
-#. logout ViewSchedule
+#. logout URL
 #: wp-includes/comment-template.php:2320
 msgid "<a href=\"%1$s\" aria-label=\"%2$s\">Logged in as %3$s</a>. <a href=\"%4$s\">Log out?</a>"
 msgstr "<a href=\"%1$s\" aria-label=\"%2$s\">Connecté en tant que %3$s</a>. <a href=\"%4$s\">Déconnexion ?</a>"
@@ -7792,7 +7792,7 @@ msgstr "<strong>ERREUR</strong> : votre commentaire est trop long."
 
 #: wp-includes/comment.php:1199
 msgid "<strong>ERROR</strong>: your url is too long."
-msgstr "<strong>ERREUR</strong> : votre ViewSchedule est trop longue."
+msgstr "<strong>ERREUR</strong> : votre URL est trop longue."
 
 #: wp-includes/comment.php:1195
 msgid "<strong>ERROR</strong>: your email address is too long."
@@ -7821,7 +7821,7 @@ msgstr "Approuvé"
 msgid "https://codex.wordpress.org/Child_Themes"
 msgstr "https://codex.wordpress.org/fr:Thèmes_Enfant"
 
-#. translators: 1: index.php, 2: Codex ViewSchedule, 3: style.css
+#. translators: 1: index.php, 2: Codex URL, 3: style.css
 #: wp-includes/class-wp-theme.php:293
 msgid "Template is missing. Standalone themes need to have a %1$s template file. <a href=\"%2$s\">Child themes</a> need to have a Template header in the %3$s stylesheet."
 msgstr "Le modèle est introuvable. Un thème nécessite un fichier de modèle %1$s. Les <a href=\"%2$s\">Thèmes enfant</a> nécessitent un entête de modèle dans la feuille de style %3$s."
@@ -7832,8 +7832,8 @@ msgid "Invalid object type"
 msgstr "Type d’objet non valide"
 
 #: wp-includes/class-wp-editor.php:1282 wp-includes/js/dist/editor.js:23333
-msgid "Paste ViewSchedule or type to search"
-msgstr "Collez ou saisissez l’ViewSchedule à rechercher"
+msgid "Paste URL or type to search"
+msgstr "Collez ou saisissez l’URL à rechercher"
 
 #: wp-includes/class-wp-customize-manager.php:5098
 msgid "Logo"
@@ -7913,7 +7913,7 @@ msgstr "Changements sauvegardés."
 msgid "https://codex.wordpress.org/Editing_wp-config.php"
 msgstr "https://codex.wordpress.org/fr:Modifier_wp-config.php"
 
-#. translators: %s: Codex ViewSchedule
+#. translators: %s: Codex URL
 #: wp-load.php:82
 msgid "Need more help? <a href='%s'>We got it</a>."
 msgstr "Besoin de plus d’aide ? <a href='%s'>En voici</a>."
@@ -8110,7 +8110,7 @@ msgstr "Cela signifie que nous avons perdu le contact avec le serveur de base de
 msgid "Error reconnecting to the database"
 msgstr "Erreur de reconnexion à la base de données"
 
-#. translators: %s: support forums ViewSchedule
+#. translators: %s: support forums URL
 #: wp-includes/wp-db.php:1675 wp-includes/wp-db.php:1833
 msgid "If you&#8217;re unsure what these terms mean you should probably contact your host. If you still need help you can always visit the <a href=\"%s\">WordPress Support Forums</a>."
 msgstr "Si vous n’êtes pas sûr de connaître ces termes, vous devriez probablement contacter votre hébergeur. Si vous avez toujours besoin d’aide, vous pouvez toujours vous rendre sur les <a href=\"%s\">forums d’entraide de WordPress</a>."
@@ -8132,7 +8132,7 @@ msgstr "Confirmez-vous utiliser le bon identifiant et le bon mot de passe ?"
 msgid "This either means that the username and password information in your %1$s file is incorrect or we can&#8217;t contact the database server at %2$s. This could mean your host&#8217;s database server is down."
 msgstr "Cela signifie soit que l’identifiant ou le mot de passe dans votre fichier %1$s n’est pas correct, soit que nous ne pouvons pas contacter le serveur de base de données à l’adresse %2$s. Cela peut signifier que votre serveur de base de données est tombé."
 
-#. translators: %s: support forums ViewSchedule
+#. translators: %s: support forums URL
 #: wp-includes/wp-db.php:1130
 msgid "If you don&#8217;t know how to set up a database you should <strong>contact your host</strong>. If all else fails you may find help at the <a href=\"%s\">WordPress Support Forums</a>."
 msgstr "Si vous ne savez pas comment configurer une base de données, vous devriez <strong>contacter votre hébergeur</strong>. Pour tout autre problème, vous devriez trouver de l’aide dans les <a href=\"%s\">Forums d’entraide de WordPress</a>."
@@ -8236,8 +8236,8 @@ msgid "The specified namespace could not be found."
 msgstr "L’espace de nom (namespace) spécifié n’a pas pu être trouvé."
 
 #: wp-includes/rest-api/class-wp-rest-server.php:985
-msgid "No route was found matching the ViewSchedule and request method"
-msgstr "Aucun itinéraire n’a été trouvé correspondant à l’ViewSchedule et à la méthode de requête"
+msgid "No route was found matching the URL and request method"
+msgstr "Aucun itinéraire n’a été trouvé correspondant à l’URL et à la méthode de requête"
 
 #: wp-includes/rest-api/class-wp-rest-server.php:864
 msgid "The handler for the route is invalid"
@@ -8461,8 +8461,8 @@ msgid "Copy and paste this code into your site to embed"
 msgstr "Copiez-collez ce code sur votre site pour l’y intégrer"
 
 #: wp-includes/embed.php:1094
-msgid "Copy and paste this ViewSchedule into your WordPress site to embed"
-msgstr "Copiez-collez cette ViewSchedule dans votre site WordPress pour l’inclure"
+msgid "Copy and paste this URL into your WordPress site to embed"
+msgstr "Copiez-collez cette URL dans votre site WordPress pour l’inclure"
 
 #: wp-includes/embed.php:1087
 msgid "HTML Embed"
@@ -8728,7 +8728,7 @@ msgstr "Thème actif"
 msgid "Menus can be displayed in locations defined by your theme."
 msgstr "Les menus peuvent être affichés dans les emplacements définis par votre thème."
 
-#. translators: ViewSchedule to the widgets panel of the customizer
+#. translators: URL to the widgets panel of the customizer
 #: wp-includes/class-wp-customize-nav-menus.php:594
 msgid "Menus can be displayed in locations defined by your theme or in <a href=\"%s\">widget areas</a> by adding a &#8220;Navigation Menu&#8221; widget."
 msgstr "Les menus peuvent être affichés dans les emplacements définis par votre thème ou dans des <a href=\"%s\">zones de widget</a> en ajoutant un widget de « Menu de navigation »."
@@ -9565,12 +9565,12 @@ msgctxt "noun"
 msgid "Trash"
 msgstr "Corbeille"
 
-#. translators: %s: trackback/pingback/comment author ViewSchedule
+#. translators: %s: trackback/pingback/comment author URL
 #: wp-includes/pluggable.php:1534 wp-includes/pluggable.php:1547
 #: wp-includes/pluggable.php:1562 wp-includes/pluggable.php:1710
 #: wp-includes/pluggable.php:1720 wp-includes/pluggable.php:1732
-msgid "ViewSchedule: %s"
-msgstr "ViewSchedule : %s"
+msgid "URL: %s"
+msgstr "URL : %s"
 
 #. translators: %s: comment text
 #: wp-includes/pluggable.php:1536 wp-includes/pluggable.php:1549
@@ -10003,12 +10003,12 @@ msgstr "Si vous souhaitez utiliser du contenu riche en provenance de Microsoft W
 msgid "Keyboard Shortcuts"
 msgstr "Raccourcis clavier"
 
-#. translators: %s: Browser cookie documentation ViewSchedule
+#. translators: %s: Browser cookie documentation URL
 #: wp-login.php:948
 msgid "<strong>ERROR</strong>: Cookies are blocked or not supported by your browser. You must <a href=\"%s\">enable cookies</a> to use WordPress."
 msgstr "<strong>ERREUR</strong> : les cookies sont bloqués ou ne sont pas reconnus par votre navigateur. Vous devez <a href=\"%s\">activer les cookies</a> pour utiliser WordPress."
 
-#. translators: 1: Browser cookie documentation ViewSchedule, 2: Support forums ViewSchedule
+#. translators: 1: Browser cookie documentation URL, 2: Support forums URL
 #: wp-login.php:937
 msgid "<strong>ERROR</strong>: Cookies are blocked due to unexpected output. For help, please see <a href=\"%1$s\">this documentation</a> or try the <a href=\"%2$s\">support forums</a>."
 msgstr "<strong>ERREUR</strong> : les cookies sont bloqués en raison d’un retour inattendu. Pour obtenir de l’aide, veuillez lire  <a href=\"%1$s\">cette documentation</a> ou essayez les <a href=\"%2$s\">forums d’entraide</a>."
@@ -10974,7 +10974,7 @@ msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr "on"
 
-#. translators: %s: support forums ViewSchedule
+#. translators: %s: support forums URL
 #: wp-includes/update.php:157 wp-includes/update.php:381
 #: wp-includes/update.php:566
 msgid "An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href=\"%s\">support forums</a>."
@@ -11154,12 +11154,12 @@ msgid "F j, Y"
 msgstr "j F Y"
 
 #: wp-includes/class-wp-xmlrpc-server.php:503
-msgid "The ViewSchedule to the admin area"
+msgid "The URL to the admin area"
 msgstr "L’adresse web de la zone d’administration"
 
 #: wp-includes/class-wp-xmlrpc-server.php:498
-msgid "Login Address (ViewSchedule)"
-msgstr "Adresse de connexion (ViewSchedule)"
+msgid "Login Address (URL)"
+msgstr "Adresse de connexion (URL)"
 
 #: wp-includes/media-template.php:214
 msgid "The web browser on your device cannot be used to upload files. You may be able to use the <a href=\"%s\">native app for your device</a> instead."
@@ -11239,12 +11239,12 @@ msgid "Do not deregister the %1$s script in the administration area. To target t
 msgstr "Ne désenregistrez pas le script %1$s dans la zone d’administration. Pour cibler le thème public, utilisez le crochet %2$s."
 
 #: wp-includes/class-wp-xmlrpc-server.php:493
-msgid "Site Address (ViewSchedule)"
-msgstr "Adresse web du site (ViewSchedule)"
+msgid "Site Address (URL)"
+msgstr "Adresse web du site (URL)"
 
 #: wp-includes/class-wp-xmlrpc-server.php:488
-msgid "WordPress Address (ViewSchedule)"
-msgstr "Adresse web de WordPress (ViewSchedule)"
+msgid "WordPress Address (URL)"
+msgstr "Adresse web de WordPress (URL)"
 
 #: wp-includes/class-wp-xmlrpc-server.php:2626
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:362
@@ -11263,7 +11263,7 @@ msgid "Random Order"
 msgstr "Ordre aléatoire"
 
 #: wp-includes/media.php:3691 wp-includes/js/dist/editor.js:23015
-msgid "Insert from ViewSchedule"
+msgid "Insert from URL"
 msgstr "Insérer à partir d’une adresse web"
 
 #: wp-includes/media.php:3649
@@ -11388,7 +11388,7 @@ msgstr "&#8592; Revenir à la bibliothèque"
 #: wp-includes/media-template.php:719 wp-includes/media-template.php:925
 #: wp-includes/media-template.php:1043
 #: wp-includes/js/dist/block-library.js:3178
-msgid "Custom ViewSchedule"
+msgid "Custom URL"
 msgstr "Lien personnalisé"
 
 #: wp-includes/media-template.php:788 wp-includes/js/dist/block-library.js:5143
@@ -11496,13 +11496,13 @@ msgstr ""
 #: wp-includes/ms-functions.php:1379
 msgid ""
 "New Site: %1$s\n"
-"ViewSchedule: %2$s\n"
+"URL: %2$s\n"
 "Remote IP address: %3$s\n"
 "\n"
 "Disable these notifications: %4$s"
 msgstr ""
 "Nouveau site : %1$s\n"
-"ViewSchedule : %2$s\n"
+"URL : %2$s\n"
 "Adresse IP : %3$s\n"
 "\n"
 "Désactiver ces notifications : %4$s"
@@ -12161,22 +12161,22 @@ msgstr "Vous pouvez créer un fichier %s par le biais d’une interface web, mai
 msgid "https://codex.wordpress.org/CSS"
 msgstr "https://codex.wordpress.org/CSS"
 
-#. translators: 1: login ViewSchedule, 2: username, 3: user email, 4: lost password ViewSchedule
+#. translators: 1: login URL, 2: username, 3: user email, 4: lost password URL
 #: wp-activate.php:148
 msgid "Your account has been activated. You may now <a href=\"%1$s\">log in</a> to the site using your chosen username of &#8220;%2$s&#8221;. Please check your email inbox at %3$s for your password and login instructions. If you do not receive an email, please check your junk or spam folder. If you still do not receive an email within an hour, you can <a href=\"%4$s\">reset your password</a>."
 msgstr "Votre compte vient d’être activé. Vous pouvez dès maintenant vous <a href=\"%1$s\">connecter</a> à votre site en utilisant votre identifiant « %2$s ». Vous trouverez dans votre messagerie (sur %3$s) un message vous donnant votre mot de passe et identifiant, ainsi que les instructions pour vous connecter. Si vous ne recevez pas d’e-mail, pensez à consulter le dossier « spam » de votre client de messagerie. Si vous ne recevez pas votre mot de passe dans moins d’une heure, vous pouvez <a href=\"%4$s\">réinitialiser votre mot de passe</a>."
 
-#. translators: 1: link to new site, 2: login ViewSchedule, 3: username
+#. translators: 1: link to new site, 2: login URL, 3: username
 #: wp-signup.php:525
 msgid "%1$s is your new site. <a href=\"%2$s\">Log in</a> as &#8220;%3$s&#8221; using your existing password."
 msgstr "%1$s est votre nouveau site. <a href=\"%2$s\">Connectez-vous</a> en tant que &#8220;%3$s&#8221; en utilisant votre mot de passe actuel."
 
-#. translators: 1: site ViewSchedule, 2: username, 3: user email, 4: lost password ViewSchedule
+#. translators: 1: site URL, 2: username, 3: user email, 4: lost password URL
 #: wp-activate.php:157
 msgid "Your site at %1$s is active. You may now log in to your site using your chosen username of &#8220;%2$s&#8221;. Please check your email inbox at %3$s for your password and login instructions. If you do not receive an email, please check your junk or spam folder. If you still do not receive an email within an hour, you can <a href=\"%4$s\">reset your password</a>."
 msgstr "Votre site est activé à %1$s. Vous pouvez dès maintenant vous connecter à ce site en utilisant l’identifiant choisi « %2$s ». Vous trouverez dans votre messagerie (sur %3$s) un message vous donnant votre mot de passe et identifiant, ainsi que les instructions pour vous connecter. Si vous ne recevez pas d’e-mail, pensez à consulter le dossier « indésirables » de votre client de messagerie. Si vous ne recevez pas votre mot de passe dans moins d’une heure, vous pouvez <a href=\"%4$s\">réinitialiser votre mot de passe</a>."
 
-#. translators: %s: database repair ViewSchedule
+#. translators: %s: database repair URL
 #: wp-includes/functions.php:1580
 msgid "One or more database tables are unavailable. The database may need to be <a href=\"%s\">repaired</a>."
 msgstr "Une ou plusieurs tables de votre base de données sont indisponibles. La base de données a peut-être besoin d’être <a href=\"%s\">réparée</a>."
@@ -12264,7 +12264,7 @@ msgid "<strong>ERROR</strong>: problem creating site entry."
 msgstr "<strong>ERREUR</strong> : problème lors de la création de l’entrée du site."
 
 #: wp-includes/ms-deprecated.php:404
-msgid "<strong>ERROR</strong>: Site ViewSchedule already taken."
+msgid "<strong>ERROR</strong>: Site URL already taken."
 msgstr "<strong>ERREUR</strong> : cette adresse de site est déjà prise."
 
 #: wp-includes/admin-bar.php:173
@@ -12367,12 +12367,12 @@ msgstr "Voir l’étiquette"
 msgid "You should specify a nonce action to be verified by using the first parameter."
 msgstr "Vous devriez préciser une action de type « nonce », qui sera vérifiée par le premier paramètre."
 
-#. translators: 1: site ViewSchedule, 2: login ViewSchedule
+#. translators: 1: site URL, 2: login URL
 #: wp-activate.php:192
 msgid "Your account is now activated. <a href=\"%1$s\">View your site</a> or <a href=\"%2$s\">Log in</a>"
 msgstr "Votre compte est maintenant activé. <a href=\"%1$s\">Consultez votre site</a> ou <a href=\"%2$s\">connectez-vous</a>"
 
-#. translators: 1: login ViewSchedule, 2: network home ViewSchedule
+#. translators: 1: login URL, 2: network home URL
 #: wp-activate.php:199
 msgid "Your account is now activated. <a href=\"%1$s\">Log in</a> or go back to the <a href=\"%2$s\">homepage</a>."
 msgstr "Votre compte est maintenant activé. <a href=\"%1$s\">Connectez-vous</a> ou retournez sur la <a href=\"%2$s\">page d’accueil de votre site</a>."
@@ -12449,8 +12449,8 @@ msgid "Or link to existing content"
 msgstr "Ou alors, faites un lien vers l’un des contenus de votre site"
 
 #: wp-includes/class-wp-editor.php:1729
-msgid "Enter the destination ViewSchedule"
-msgstr "Saisissez l’ViewSchedule de destination"
+msgid "Enter the destination URL"
+msgstr "Saisissez l’URL de destination"
 
 #: wp-includes/query.php:157 wp-includes/query.php:182
 #: wp-includes/query.php:207 wp-includes/query.php:235
@@ -12938,8 +12938,8 @@ msgid "Sorry, you are not allowed to post on this site."
 msgstr "Désolé, vous n’avez pas l’autorisation de publier sur ce site."
 
 #: wp-includes/option.php:1924
-msgid "Site ViewSchedule."
-msgstr "ViewSchedule du site."
+msgid "Site URL."
+msgstr "URL du site."
 
 #: wp-includes/class-wp-xmlrpc-server.php:550
 msgid "Site Tagline"
@@ -13032,11 +13032,11 @@ msgid "The given object ID is not that of a menu item."
 msgstr "L’ID donné pour cet objet n’est pas une entrée de menu."
 
 #: wp-includes/formatting.php:4589
-msgid "The Site address you entered did not appear to be a valid ViewSchedule. Please enter a valid ViewSchedule."
+msgid "The Site address you entered did not appear to be a valid URL. Please enter a valid URL."
 msgstr "L’adresse de site que vous avez saisie ne semble pas être valide. Veuillez saisir une adresse valide."
 
 #: wp-includes/formatting.php:4576
-msgid "The WordPress address you entered did not appear to be a valid ViewSchedule. Please enter a valid ViewSchedule."
+msgid "The WordPress address you entered did not appear to be a valid URL. Please enter a valid URL."
 msgstr "L’adresse de WordPress que vous avez saisie ne semble pas être valide. Veuillez saisir une adresse valide."
 
 #: wp-includes/formatting.php:4466
@@ -13057,8 +13057,8 @@ msgstr "Votre adresse de messagerie ne sera pas publiée."
 
 #: wp-includes/class-wp-xmlrpc-server.php:6685 wp-includes/class-http.php:275
 #: wp-includes/class-http.php:493
-msgid "A valid ViewSchedule was not provided."
-msgstr "L’ViewSchedule fournie n’est pas valide."
+msgid "A valid URL was not provided."
+msgstr "L’URL fournie n’est pas valide."
 
 #: wp-includes/class-wp-image-editor-imagick.php:261
 #: wp-includes/class-wp-image-editor-gd.php:182
@@ -13092,7 +13092,7 @@ msgstr "Cette action a été désactivée par l’administrateur."
 msgid "You are logged in already. No need to register again!"
 msgstr "Vous êtes déjà connecté. Inutile de vous inscrire à nouveau !"
 
-#. translators: %s: login ViewSchedule
+#. translators: %s: login URL
 #: wp-signup.php:934
 msgid "You must first <a href=\"%s\">log in</a>, and then you can create a new site."
 msgstr "Vous devez d’abord <a href=\"%s\">vous connecter</a> avant de pouvoir créer un nouveau site."
@@ -13315,16 +13315,16 @@ msgid "Your PHP installation appears to be missing the MySQL extension which is 
 msgstr "Votre installation PHP ne dispose pas de MySQL. Extension requise pour WordPress."
 
 #: wp-includes/class-wp-xmlrpc-server.php:6911
-msgid "The specified target ViewSchedule does not exist."
+msgid "The specified target URL does not exist."
 msgstr "L’adresse cible spécifiée n’existe pas."
 
-#. translators: 1: ViewSchedule of the page linked from, 2: ViewSchedule of the page linked to
+#. translators: 1: URL of the page linked from, 2: URL of the page linked to
 #: wp-includes/class-wp-xmlrpc-server.php:6878
 msgid "Pingback from %1$s to %2$s registered. Keep the web talking! :-)"
 msgstr "Réception d’un ping de %1$s pour %2$s. Continuons la conversation ! :-)"
 
 #: wp-includes/class-wp-xmlrpc-server.php:6834
-msgid "The source ViewSchedule does not contain a link to the target ViewSchedule, and so cannot be used as a source."
+msgid "The source URL does not contain a link to the target URL, and so cannot be used as a source."
 msgstr "L’adresse source ne contient pas de lien vers l’adresse cible, et ne peut donc pas être utilisée comme source."
 
 #: wp-includes/class-wp-xmlrpc-server.php:6795
@@ -13332,7 +13332,7 @@ msgid "We cannot find a title on that page."
 msgstr "Aucun titre n’a été trouvé sur la page."
 
 #: wp-includes/class-wp-xmlrpc-server.php:6774
-msgid "The source ViewSchedule does not exist."
+msgid "The source URL does not exist."
 msgstr "L’adresse d’origine n’existe pas."
 
 #: wp-includes/class-wp-xmlrpc-server.php:6748
@@ -13340,14 +13340,14 @@ msgid "The pingback has already been registered."
 msgstr "Le ping a déjà été enregistré."
 
 #: wp-includes/class-wp-xmlrpc-server.php:6738
-msgid "The source ViewSchedule and the target ViewSchedule cannot both point to the same resource."
+msgid "The source URL and the target URL cannot both point to the same resource."
 msgstr "L’adresse source et l’adresse cible ne peuvent pointer vers la même ressource."
 
 #: wp-includes/class-wp-xmlrpc-server.php:6727
 #: wp-includes/class-wp-xmlrpc-server.php:6734
 #: wp-includes/class-wp-xmlrpc-server.php:6743
 #: wp-includes/class-wp-xmlrpc-server.php:6904
-msgid "The specified target ViewSchedule cannot be used as a target. It either doesn&#8217;t exist, or it is not a pingback-enabled resource."
+msgid "The specified target URL cannot be used as a target. It either doesn&#8217;t exist, or it is not a pingback-enabled resource."
 msgstr "L’adresse web spécifiée ne peut pas être utilisée comme cible. Soit elle n’existe pas, ou il ne s’agit pas d’une ressource reconnaissant les pings."
 
 #: wp-includes/class-wp-xmlrpc-server.php:6691
@@ -13846,11 +13846,11 @@ msgid "Enter a description of the image"
 msgstr "Saisissez une description pour l’image"
 
 #: wp-includes/script-loader.php:843
-msgid "Enter the ViewSchedule of the image"
+msgid "Enter the URL of the image"
 msgstr "Saisissez l’adresse de l’image"
 
 #: wp-includes/script-loader.php:842
-msgid "Enter the ViewSchedule"
+msgid "Enter the URL"
 msgstr "Saisissez l’adresse"
 
 #: wp-includes/script-loader.php:841
@@ -14001,7 +14001,7 @@ msgid_plural "Currently %s comments are waiting for approval. Please visit the m
 msgstr[0] "En ce moment, %s commentaire attend votre approbation. Veuillez vous rendre sur le panneau de modération :"
 msgstr[1] "En ce moment, %s commentaires attendent vos approbations. Veuillez vous rendre sur le panneau de modération :"
 
-#. translators: Comment moderation. %s: Comment action ViewSchedule
+#. translators: Comment moderation. %s: Comment action URL
 #: wp-includes/pluggable.php:1739
 msgid "Approve it: %s"
 msgstr "L’approuver : %s"
@@ -14014,17 +14014,17 @@ msgstr "Extrait du ping :"
 msgid "Trackback excerpt: "
 msgstr "Extrait du rétrolien : "
 
-#. translators: Comment moderation. %s: Comment action ViewSchedule
+#. translators: Comment moderation. %s: Comment action URL
 #: wp-includes/pluggable.php:1582 wp-includes/pluggable.php:1750
 msgid "Spam it: %s"
 msgstr "Le marquer comme indésirable : %s"
 
-#. translators: Comment moderation. %s: Comment action ViewSchedule
+#. translators: Comment moderation. %s: Comment action URL
 #: wp-includes/pluggable.php:1579 wp-includes/pluggable.php:1746
 msgid "Delete it: %s"
 msgstr "Le supprimer : %s"
 
-#. translators: Comment moderation. %s: Comment action ViewSchedule
+#. translators: Comment moderation. %s: Comment action URL
 #: wp-includes/pluggable.php:1576 wp-includes/pluggable.php:1743
 msgid "Trash it: %s"
 msgstr "Le mettre dans la corbeille : %s"
@@ -14257,12 +14257,12 @@ msgid "General"
 msgstr "Général"
 
 #: wp-includes/class-wp-editor.php:1162
-msgid "The ViewSchedule you entered seems to be an external link. Do you want to add the required http:// prefix?"
-msgstr "L’ViewSchedule que vous avez saisie semble être un lien externe. Voulez-vous ajouter le préfixe « http:// » nécessaire ?"
+msgid "The URL you entered seems to be an external link. Do you want to add the required http:// prefix?"
+msgstr "L’URL que vous avez saisie semble être un lien externe. Voulez-vous ajouter le préfixe « http:// » nécessaire ?"
 
 #: wp-includes/class-wp-editor.php:1160
-msgid "The ViewSchedule you entered seems to be an email address. Do you want to add the required mailto: prefix?"
-msgstr "L’ViewSchedule que vous avez saisie semble être une adresse de messagerie. Voulez-vous y ajouter le préfixe « mailto: » nécessaire ?"
+msgid "The URL you entered seems to be an email address. Do you want to add the required mailto: prefix?"
+msgstr "L’URL que vous avez saisie semble être une adresse de messagerie. Voulez-vous y ajouter le préfixe « mailto: » nécessaire ?"
 
 #: wp-includes/customize/class-wp-customize-background-position-control.php:75
 #: wp-includes/class-wp-editor.php:1233
@@ -14831,7 +14831,7 @@ msgstr "« Retour"
 msgid "Please try again."
 msgstr "Veuillez réessayer."
 
-#. translators: %s: logout ViewSchedule
+#. translators: %s: logout URL
 #: wp-includes/functions.php:2905
 msgid "Do you really want to <a href=\"%s\">log out</a>?"
 msgstr "Voulez-vous réellement <a href=\"%s\">vous déconnecter</a> ?"
@@ -14953,8 +14953,8 @@ msgid "Give the feed a title (optional):"
 msgstr "Donnez un titre au flux (facultatif) :"
 
 #: wp-includes/widgets.php:1578
-msgid "Enter the RSS feed ViewSchedule here:"
-msgstr "Saisissez l’ViewSchedule du flux RSS ici :"
+msgid "Enter the RSS feed URL here:"
+msgstr "Saisissez l’URL du flux RSS ici :"
 
 #: wp-includes/widgets.php:1487
 msgid "Untitled"
@@ -15192,7 +15192,7 @@ msgstr "Commentaires (%s)"
 msgid "Tags: "
 msgstr "Étiquettes : "
 
-#. translators: %s: login ViewSchedule
+#. translators: %s: login URL
 #: wp-includes/comment-template.php:2314
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "Vous devez <a href=\"%s\">être connecté</a> pour publier un commentaire."
@@ -15582,7 +15582,7 @@ msgid "Save as Pending"
 msgstr "Mettre à relire"
 
 #: wp-includes/media-template.php:922 wp-includes/media-template.php:1039
-msgid "Image ViewSchedule"
+msgid "Image URL"
 msgstr "Adresse web de l’image"
 
 #: wp-includes/media.php:4170 wp-includes/class-wp-editor.php:1125
@@ -15596,7 +15596,7 @@ msgid "Edit Image"
 msgstr "Modifier l’image"
 
 #: wp-includes/js/dist/block-library.js:3359
-msgid "Link ViewSchedule"
+msgid "Link URL"
 msgstr "Cible du lien"
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:90
@@ -15942,7 +15942,7 @@ msgstr "Commentaire"
 #: wp-includes/js/dist/editor.js:22783 wp-includes/js/dist/editor.js:23328
 #: wp-includes/js/dist/edit-post.js:4821
 #: wp-includes/js/dist/block-library.js:8334
-msgid "ViewSchedule"
+msgid "URL"
 msgstr "Adresse web"
 
 #: wp-includes/class-wp-editor.php:1105 wp-includes/theme-compat/sidebar.php:29

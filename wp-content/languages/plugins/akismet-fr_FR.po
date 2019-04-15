@@ -60,8 +60,8 @@ msgid "This site uses Akismet to reduce spam. <a href=\"%s\" target=\"_blank\" r
 msgstr "Ce site utilise Akismet pour réduire les indésirables. <a href=\"%s\" target=\"_blank\" rel=\"nofollow noopener\">En savoir plus sur comment les données de vos commentaires sont utilisées</a>."
 
 #: class.akismet-admin.php:89
-msgid "We collect information about visitors who comment on Sites that use our Akismet anti-spam service. The information we collect depends on how the User sets up Akismet for the Site, but typically includes the commenter's IP address, user agent, referrer, and Site ViewSchedule (along with other information directly provided by the commenter such as their name, username, email address, and the comment itself)."
-msgstr "Nous récoltons des informations sur les visiteurs qui commentent sur les sites utilisant Akismet, notre service contre les indésirables. Ces informations récoltées dépendent des réglages Akismet effectués par l’utilisateur sur le site, et incluent généralement l’adresse IP des commentateurs, l’agent utilisateur, le référent et l’ViewSchedule du site (ainsi que d’autres informations fournies directement par le commentateur comme leur nom, identifiant, adresse e-mail et leur commentaire)."
+msgid "We collect information about visitors who comment on Sites that use our Akismet anti-spam service. The information we collect depends on how the User sets up Akismet for the Site, but typically includes the commenter's IP address, user agent, referrer, and Site URL (along with other information directly provided by the commenter such as their name, username, email address, and the comment itself)."
+msgstr "Nous récoltons des informations sur les visiteurs qui commentent sur les sites utilisant Akismet, notre service contre les indésirables. Ces informations récoltées dépendent des réglages Akismet effectués par l’utilisateur sur le site, et incluent généralement l’adresse IP des commentateurs, l’agent utilisateur, le référent et l’URL du site (ainsi que d’autres informations fournies directement par le commentateur comme leur nom, identifiant, adresse e-mail et leur commentaire)."
 
 #: class.akismet.php:226
 msgid "Comment discarded."
@@ -403,8 +403,8 @@ msgid "(undo)"
 msgstr "(annuler)"
 
 #: class.akismet-admin.php:148
-msgid "ViewSchedule removed"
-msgstr "ViewSchedule supprimée"
+msgid "URL removed"
+msgstr "URL supprimée"
 
 #: class.akismet-admin.php:147
 msgid "Removing..."
@@ -801,7 +801,7 @@ msgstr "Certains commentaires n’ont pas encore été vérifiés par Akismet. I
 msgid "Akismet Error Code: %s"
 msgstr "Code d’erreur Akismet : %s"
 
-#. translators: the placeholder is a clickable ViewSchedule that leads to more
+#. translators: the placeholder is a clickable URL that leads to more
 #. information regarding an error code.
 #: views/notice.php:30
 msgid "For more information: %s"
@@ -892,8 +892,8 @@ msgid "Automattic"
 msgstr "Automattic"
 
 #: class.akismet-admin.php:146
-msgid "Remove this ViewSchedule"
-msgstr "Supprimer cette ViewSchedule"
+msgid "Remove this URL"
+msgstr "Supprimer cette URL"
 
 #: class.akismet-admin.php:84
 msgid "Comment History"
