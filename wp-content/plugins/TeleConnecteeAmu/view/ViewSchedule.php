@@ -14,7 +14,7 @@ class ViewSchedule
     }
 
     public function displayName($current_user) {
-        echo '<h1 class="text-center text-black-50">'.$current_user->display_name. '</h1>';
+        echo '<h1 class="text-center text-black-50"> Je test un truc'.$current_user->display_name. '</h1>';
     }
 
     public function displayHome($current_user) {
