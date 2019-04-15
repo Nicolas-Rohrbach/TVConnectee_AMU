@@ -1,0 +1,27 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: r17000292
+ * Date: 15/04/2019
+ * Time: 09:07
+ */
+
+class ViewWeather
+{
+    public function displayWeather() {
+        echo '
+    <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/jquery.marquee.js"></script>
+    <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/weather.js"></script>
+	<div class="myFooter">
+		<div class="Alerts" id="Alerts"></div>
+		<div class="Infos">
+			<div class="Time" id="Time">
+			</div>
+			<div class="Date" id="Date">
+			</div>
+			<div class="Weather" id="Weather">
+			</div>
+		</div>
+	</div>';
+    }
+}
