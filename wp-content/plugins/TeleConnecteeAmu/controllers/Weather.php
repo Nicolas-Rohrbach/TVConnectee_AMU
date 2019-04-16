@@ -9,8 +9,13 @@
 class Weather
 {
     private $view;
-    public function displayMyWeather() {
-        $this->view = new ViewWeather();
-        $this->view->displayWeather();
+    public function displayMyWeather()
+    {
+        $user_login = wp_get_current_user()->user_login;
+
+        if ($user_login) {
+            $this->view = new ViewWeather();
+            $this->view->displayWeather();
+        }
     }
 }
