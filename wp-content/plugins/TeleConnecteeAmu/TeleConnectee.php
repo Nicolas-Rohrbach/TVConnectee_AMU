@@ -21,6 +21,7 @@ include_once 'views/ViewSchedule.php';
 include_once 'controllers/Schedule.php';
 include_once 'controllers/Weather.php';
 include_once 'views/ViewWeather.php';
+include_once 'controllers/R34ICS.php';
 
 
 add_action("wp_head", "mfp_card");
@@ -34,13 +35,10 @@ function mfp_Card()
 ';
 }
 
-
 $info = new Info();
 $users = new User();
 $schedule = new Schedule();
 $weather = new Weather();
-
-
 
 add_action('HookAlexis', array( $info, 'affichage_infos_pages' ) );
 add_action('infosMobile', array($info, 'affichage_infos_mobile' ) );
@@ -62,6 +60,22 @@ add_action('modifprof', array($users, 'afficherModifProf') );
 
 add_action('hookEDT',array($schedule,'displayMySchedule'));
 add_action('hookWeather',array($weather,'displayMyWeather'));
+
+// Initialize plugin
+add_action('init', function() {
+    global $R34ICS;
+    $R34ICS = new R34ICS();
+});
+
+
+// Load text domain for translations
+add_action('plugins_loaded', function() {
+    load_plugin_textdomain('r34ics', FALSE, basename( dirname( __FILE__ ) ) . '/i18n/languages/' );
+});
+
+
+// Flush rewrite rules when plugin is activated
+register_activation_hook(__FILE__, function() { flush_rewrite_rules(); });
 
 
 
