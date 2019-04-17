@@ -6,7 +6,16 @@
  * Time: 11:33
  */
 
-class Informations
+class Information
 {
+    private $bdInformation;
+    private $viewInformation;
+
+    public function __construct(){
+        $this->bdInformation = new BdInformation();
+        $this->viewInformation = new ViewInformation();
+    }
+
+
 
 }

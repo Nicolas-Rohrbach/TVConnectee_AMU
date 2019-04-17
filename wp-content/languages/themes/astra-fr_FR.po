@@ -263,7 +263,7 @@ msgstr "Aperçu de la mise en page du site"
 #: inc/customizer/class-astra-customizer-register-sections-panels.php:260
 #: inc/customizer/class-astra-customizer-register-sections-panels.php:309
 msgid "Helpful Information"
-msgstr "Informations utiles"
+msgstr "Information utiles"
 
 #: inc/customizer/configurations/layout/class-astra-site-identity-configs.php:43
 msgid "Different Logo for retina devices?"

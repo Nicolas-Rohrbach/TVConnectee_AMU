@@ -734,7 +734,7 @@ msgstr "Si vous utilisez votre site web dans un but commercial et que vous vous 
 #. translators: default privacy policy heading.
 #: wp-admin/includes/misc.php:1923
 msgid "Additional information"
-msgstr "Informations supplémentaires"
+msgstr "Information supplémentaires"
 
 #. translators: privacy policy tutorial.
 #: wp-admin/includes/misc.php:1919
@@ -744,7 +744,7 @@ msgstr "Dans cette section, indiquez la méthode de contact disponible pour les 
 #. translators: default privacy policy heading.
 #: wp-admin/includes/misc.php:1915
 msgid "Your contact information"
-msgstr "Informations de contact"
+msgstr "Information de contact"
 
 #. translators: privacy policy tutorial.
 #: wp-admin/includes/misc.php:1908
@@ -8984,7 +8984,7 @@ msgstr "À propos de vous"
 
 #: wp-admin/user-edit.php:484
 msgid "Contact Info"
-msgstr "Informations de contact"
+msgstr "Information de contact"
 
 #: wp-admin/user-edit.php:445
 msgid "Display name publicly as"
@@ -9880,7 +9880,7 @@ msgstr "Veuillez renseigner les informations suivantes. Ne vous inquiétez pas, 
 
 #: wp-admin/install.php:330
 msgid "Information needed"
-msgstr "Informations nécessaires"
+msgstr "Information nécessaires"
 
 #: wp-admin/install.php:260
 msgid "Insufficient Requirements"
@@ -10959,7 +10959,7 @@ msgstr "Nom de l’hôte :"
 
 #: wp-admin/includes/file.php:1802
 msgid "Connection Information"
-msgstr "Informations de connexion"
+msgstr "Information de connexion"
 
 #: wp-admin/includes/file.php:1775
 msgid "SSH2"
