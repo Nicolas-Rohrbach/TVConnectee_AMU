@@ -17,6 +17,12 @@ class BdInformation
     {
     }
 
+    /**
+     * Ajoute une information dans la BD avec en parametre le titre, le contenu et la date d'expiration.
+     * @param $title
+     * @param $content
+     * @param $endDate
+     */
     public function addInformation($title, $content, $endDate){
         global $wpdb;
 
@@ -40,5 +46,23 @@ class BdInformation
             )
         );
 
-    }
+    } //addInformation()
+
+    /**
+     * Supprime une information dans la BD a l'aide de son ID
+     * @param $id
+     */
+    public function deleteInformation($id){
+        global $wpdb;
+        $wpdb->query(
+            $wpdb->prepare(
+                "DELETE FROM `informations` WHERE id = %d",
+                $id
+            )
+        );
+    } //deleteInformation()
+
+
+
+
 }
