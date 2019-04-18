@@ -38,19 +38,19 @@ function mfp_Card()
 }
 
 
-$info = new Info();
+$information = new Information();
 $users = new User();
 $schedule = new Schedule();
 $weather = new Weather();
 
 
 
-add_action('HookAlexis', array( $info, 'affichage_infos_pages' ) );
-add_action('infosMobile', array($info, 'affichage_infos_mobile' ) );
+//add_action('HookAlexis', array( $info, 'affichage_infos_pages' ) );
+//add_action('infosMobile', array($info, 'affichage_infos_mobile' ) );
 
-add_action('insert_info', array( $info, 'traitement_formulaire_info'), 0, 4);
-add_action('HookAlexis', array( $info, 'suppr_info'), 0, 2);
-add_action('modif_info', array( $info, 'modifier_info'), 0, 4);
+//add_action('insert_info', array( $info, 'traitement_formulaire_info'), 0, 4);
+//add_action('HookAlexis', array( $info, 'suppr_info'), 0, 2);
+//add_action('modif_info', array( $info, 'modifier_info'), 0, 4);
 
 add_action('ajouter_user', array($users, 'insert_user'), 0, 3);
 
@@ -66,7 +66,7 @@ add_action('modifprof', array($users, 'afficherModifProf') );
 add_action('hookEDT',array($schedule,'displayMySchedule'));
 add_action('hookWeather',array($weather,'displayMyWeather'));
 
-
+add_action('hookWeather',array($information,'deleteInformation'));
 
 
 

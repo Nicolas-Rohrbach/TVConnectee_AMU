@@ -5,7 +5,7 @@
  * Date: 17/04/2019
  * Time: 11:34
  */
-//setlocale(LC_TIME, 'fra_fra');
+
 
 class BdInformation
 {
@@ -23,7 +23,7 @@ class BdInformation
      * @param $content
      * @param $endDate
      */
-    public function addInformation($title, $content, $endDate){
+    public function addInformationDB($title, $content, $endDate){
         global $wpdb;
 
         $current_user = wp_get_current_user();
@@ -31,7 +31,10 @@ class BdInformation
         if (isset($current_user)) {
             $user = $current_user->user_login;
         }
-        $creationDate = date('Y-m-d H:i:s');
+
+
+        $creationDate = date('Y-m-d');
+
 
         $wpdb->query(
             $wpdb->prepare(
@@ -52,11 +55,11 @@ class BdInformation
      * Supprime une information dans la BD a l'aide de son ID
      * @param $id
      */
-    public function deleteInformation($id){
+    public function deleteInformationBD($id){
         global $wpdb;
         $wpdb->query(
             $wpdb->prepare(
-                "DELETE FROM `informations` WHERE id = %d",
+                "DELETE FROM `informations` WHERE ID_info = %d",
                 $id
             )
         );
