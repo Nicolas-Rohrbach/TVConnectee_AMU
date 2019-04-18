@@ -55,7 +55,7 @@ class BdInformation
      * Supprime une information dans la BD a l'aide de son ID
      * @param $id
      */
-    public function deleteInformationBD($id){
+    public function deleteInformationDB($id){
         global $wpdb;
         $wpdb->query(
             $wpdb->prepare(
@@ -65,7 +65,11 @@ class BdInformation
         );
     } //deleteInformation()
 
-
+    public function getListInformation(){
+        global $wpdb;
+        $result = $wpdb->get_results("SELECT * FROM informations", ARRAY_A);
+        return $result;
+    }
 
 
 }
