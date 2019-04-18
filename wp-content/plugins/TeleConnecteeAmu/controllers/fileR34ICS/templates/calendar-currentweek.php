@@ -36,9 +36,9 @@ $ics_calendar_classes = array(
 	// Display calendar
 	?>
 	<select class="ics-calendar-select" style="display: none;">
-		<option value="previous-week"><?php _e('Last week', 'R35ICS'); ?></option>
-		<option value="current-week" selected="selected"><?php _e('This week', 'R35ICS'); ?></option>
-		<option value="next-week"><?php _e('Next week', 'R35ICS'); ?></option>
+		<option value="previous-week"><?php _e('Last week', 'R34ICS'); ?></option>
+		<option value="current-week" selected="selected"><?php _e('This week', 'R34ICS'); ?></option>
+		<option value="next-week"><?php _e('Next week', 'R34ICS'); ?></option>
 	</select>
 	
 	<div class="ics-calendar-currentweek-wrapper" style="display: none;">
@@ -125,7 +125,7 @@ $ics_calendar_classes = array(
 													<?php
 													if (!$all_day_indicator_shown) {
 														?>
-														<span class="all-day-indicator"><?php _e('All Day', 'R35ICS'); ?></span>
+														<span class="all-day-indicator"><?php _e('All Day', 'R34ICS'); ?></span>
 														<?php
 														$all_day_indicator_shown = true;
 													}

@@ -25,31 +25,8 @@ class R34ICS {
         $this->event_path = dirname(__FILE__) . $this->event_path;
         $this->carbon_path = dirname(__FILE__) . $this->carbon_path;
 
-        // Initialize admin
-        add_action('admin_menu', array(@$this, 'admin_menu'));
-
-        // Enqueue scripts
-        add_action('wp_enqueue_scripts', array(@$this, 'enqueue_scripts'));
-
         // Add ICS shortcode
         add_shortcode('ics_calendar', array(@$this, 'shortcode'));
-
-    }
-
-    public function admin_menu() {
-        add_options_page(
-            'ICS Calendar',
-            'ICS Calendar',
-            'manage_options',
-            'ics-calendar',
-            array(&$this, 'admin_page')
-        );
-    }
-
-    public function admin_page() {
-
-        // Render template
-        include(dirname(__FILE__) . '/templates/admin.php');
 
     }
 
@@ -344,10 +321,6 @@ class R34ICS {
                 break;
         }
 
-    }
-
-    public function enqueue_scripts() {
-        wp_enqueue_style('ics-calendar', plugin_dir_url(__FILE__) . '/assets/style.css');
     }
 
     public function first_dow($date=null) {

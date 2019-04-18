@@ -1,10 +1,12 @@
 <?php
-/*
-Plugin Name: TvConnecteeAmu
-Description: Plugin de la télé connectée de l'AMU
-Version: 1.5
-Author: Alexis
+/**
+ * Plugin Name: TvConnecteeAmu
+ * Description: Plugin de la télé connectée de l'AMU, ce plugin permet de générer des fichiers ICS. Ces fichiers sont ensuite lus pour pouvoir afficher l'emploi du temps de la personne connectée. Ce plugin permet aussi d'afficher la météo, des informations, des alertes. Tant en ayant une gestion des utilisateurs et des informations.
+ * Version: 2.1.1
+ * Author: Alexis Sola & Nicolas Rohrbach & Gwenaêl Roux
+ * Author URI: http://tvconnectee.alwaysdata.net/
 */
+
 include_once 'views/ViewCard.php';
 include_once 'views/ViewUser.php';
 include_once 'controllers/Info.php';
@@ -22,6 +24,7 @@ include_once 'controllers/Schedule.php';
 include_once 'controllers/Weather.php';
 include_once 'views/ViewWeather.php';
 include_once 'controllers/R34ICS.php';
+include_once 'views/ViewR34ICS.php';
 
 
 add_action("wp_head", "mfp_card");
@@ -67,18 +70,5 @@ add_action('init', function() {
     $R34ICS = new R34ICS();
 });
 
-
-// Load text domain for translations
-add_action('plugins_loaded', function() {
-    load_plugin_textdomain('r34ics', FALSE, basename( dirname( __FILE__ ) ) . '/i18n/languages/' );
-});
-
-
 // Flush rewrite rules when plugin is activated
 register_activation_hook(__FILE__, function() { flush_rewrite_rules(); });
-
-
-
-
-
-
