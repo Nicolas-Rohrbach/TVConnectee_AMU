@@ -8,11 +8,21 @@
 
 class ViewInformation
 {
-    public function displayInformation($title, $author, $content) {
+    public function displayInformationList($title, $author, $content) {
+        echo '<div style="overflow-x:auto;">
+                <table>
+                    <tr>
+                        <th> Titre </th>
+                        <th> Auteur </th>
+                        <th> Contenu </th>
+                    </tr>';
        for($i=1; $i <= sizeof($title); ++$i) {
-           echo ''.$title[$i].'_ 
-                 ['.$author[$i].']_
-                 '.$content[$i].'  </br>';
+           echo    '<tr>
+                        <td>'.$title[$i].'</td> 
+                        <td>'.$author[$i].'</td>
+                        <td>'.$content[$i].'</td>
+                    </tr>';
        }
+       echo  '</table>';
     }
 }
