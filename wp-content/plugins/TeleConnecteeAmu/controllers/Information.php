@@ -42,9 +42,8 @@ class Information
     } //deleteInformation()
 
     public function displayListInformation(){
-//        $this->createInformation('titre','hi hi hi',date("2019-07-21"));
-
-        $result = $this->bdInformation->getListInformation();
+        //$this->createInformation('titre test2','dkfsmlfk',date(2019-06-02));
+        $result = $this->bdInformation->getListInformationByAuthor('Lea');
 
         $titleList = array();
         $authorList = array();
@@ -63,11 +62,11 @@ class Information
 
             array_push($titleList, $title) ;
             array_push($authorList, $author) ;
-            $creationDateList = $creationDate;
-            $endDateList = $endDate;
+            array_push($creationDateList, $creationDate);
+            array_push($endDateList, $endDate);
             array_push($contentList,$content) ;
         }
-        $this->viewInformation->displayInformation($titleList,$authorList,$contentList);
+        $this->viewInformation->displayInformationList($titleList,$authorList,$contentList, $creationDateList, $endDateList);
     }
 
 }

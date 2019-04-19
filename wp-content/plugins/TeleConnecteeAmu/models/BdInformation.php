@@ -65,11 +65,24 @@ class BdInformation
         );
     } //deleteInformation()
 
+    /**
+     * Renvoie la liste de toutes les informations
+     * @return array|null|object
+     */
     public function getListInformation(){
         global $wpdb;
         $result = $wpdb->get_results("SELECT * FROM informations", ARRAY_A);
         return $result;
-    }
+    } //getListInformation()
 
-
+//    public function getListInformationByAuthor($user){
+//        global $wpdb;
+//        $result = $wpdb->get_results(
+//            $wpdb->prepare(
+//                "SELECT * FROM informations WHERE author = %s",
+//                $user
+//            ), ARRAY_A
+//        );
+//        return $result;
+//    } //getListInformationByAuthor()
 }
