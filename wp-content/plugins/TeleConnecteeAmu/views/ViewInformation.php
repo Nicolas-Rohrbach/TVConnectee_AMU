@@ -18,7 +18,7 @@ class ViewInformation
                         <th> Date de création </th>
                         <th> Date de fin </th>
                     </tr>';
-       for($i=1; $i <= sizeof($title); ++$i) {
+       for($i=0; $i < sizeof($title); ++$i) {
            echo    '<tr>
                         <td>'.$title[$i].'</td> 
                         <td>'.$author[$i].'</td>

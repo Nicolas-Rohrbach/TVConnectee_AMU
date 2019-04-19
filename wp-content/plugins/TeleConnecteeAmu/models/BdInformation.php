@@ -23,7 +23,8 @@ class BdInformation
      * @param $content
      * @param $endDate
      */
-    public function addInformationDB($title, $content, $endDate){
+    public function addInformationDB($title, $content, $endDate)
+    {
         global $wpdb;
 
         $current_user = wp_get_current_user();
@@ -55,7 +56,8 @@ class BdInformation
      * Supprime une information dans la BD a l'aide de son ID
      * @param $id
      */
-    public function deleteInformationDB($id){
+    public function deleteInformationDB($id)
+    {
         global $wpdb;
         $wpdb->query(
             $wpdb->prepare(
@@ -69,20 +71,27 @@ class BdInformation
      * Renvoie la liste de toutes les informations
      * @return array|null|object
      */
-    public function getListInformation(){
+    public function getListInformation()
+    {
         global $wpdb;
         $result = $wpdb->get_results("SELECT * FROM informations", ARRAY_A);
         return $result;
     } //getListInformation()
 
-//    public function getListInformationByAuthor($user){
-//        global $wpdb;
-//        $result = $wpdb->get_results(
-//            $wpdb->prepare(
-//                "SELECT * FROM informations WHERE author = %s",
-//                $user
-//            ), ARRAY_A
-//        );
-//        return $result;
-//    } //getListInformationByAuthor()
+    /**
+     * Renvoie la liste des information crée par un utilisateur
+     * @param $user
+     * @return array|null|object
+     */
+    public function getListInformationByAuthor($user)
+    {
+        global $wpdb;
+        $result = $wpdb->get_results(
+            $wpdb->prepare(
+                "SELECT * FROM informations WHERE author = %s",
+                $user
+            ), ARRAY_A
+        );
+        return $result;
+    } //getListInformationByAuthor()
 }
