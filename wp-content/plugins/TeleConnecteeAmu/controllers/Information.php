@@ -43,7 +43,7 @@ class Information
 
     public function displayListInformation(){
         //$this->createInformation('titre test2','dkfsmlfk',date(2019-06-02));
-        $result = $this->bdInformation->getListInformationByAuthor('Lea');
+        $result = $this->bdInformation->getListInformation();
 
         $titleList = array();
         $authorList = array();

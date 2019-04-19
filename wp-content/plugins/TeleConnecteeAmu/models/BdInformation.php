@@ -94,4 +94,11 @@ class BdInformation
         );
         return $result;
     } //getListInformationByAuthor()
+
+    public function getInformation($id) {
+        global $wpdb;
+        $result = $wpdb->get_results("SELECT * FROM informationsHERE id = %d",
+                $id);
+        return $result;
+    } //getInformation()
 }
