@@ -11,7 +11,7 @@ class ViewInformation
     public function displayInformationList($id,$title, $author, $content, $creationDate, $endDate) {
         echo '
            <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/formProcessing.js"></script>
-           <form method="post">
+           <form name="formInfo" method="post">
             <div style="overflow-x:auto;">
                 <table class="table table-hover">
                     <tr>
@@ -27,7 +27,7 @@ class ViewInformation
                     <tr>
                         <td>
                             <div class="radio">
-                                <label><input type="radio" name="optradio" value="'.$id[$i].'"></label>
+                                <label><input type="radio" name="optradio" value="'.$id[$i].'" id="'.$id[$i].'" > '.$id[$i].' </label>
                             </div>
                         </td>
                         <td>'.$title[$i].'</td> 
