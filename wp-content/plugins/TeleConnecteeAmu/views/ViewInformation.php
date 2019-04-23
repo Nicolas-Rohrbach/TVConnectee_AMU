@@ -9,7 +9,9 @@
 class ViewInformation
 {
     public function displayInformationList($id,$title, $author, $content, $creationDate, $endDate) {
-        echo '<div style="overflow-x:auto;">
+        echo '
+           <form>
+            <div style="overflow-x:auto;">
                 <table class="table table-hover">
                     <tr>
                         <th> ID </th>
@@ -20,8 +22,13 @@ class ViewInformation
                         <th> Date de fin </th>
                     </tr>';
        for($i=0; $i < sizeof($title); ++$i) {
-           echo    '<tr>
-                        <td>'.$id[$i].'</td>
+           echo    '
+                    <tr>
+                        <td>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio" value="'.$id[$i].'"></label>
+                            </div>
+                        </td>
                         <td>'.$title[$i].'</td> 
                         <td>'.$author[$i].'</td>
                         <td>'.$content[$i].'</td>
@@ -30,7 +37,8 @@ class ViewInformation
                     </tr>';
        }
        echo  '</table>
-              <!--<button type="button" class="btn-warning">Modifier</button>
-              <button type="button" class="btn-danger">Supprimer</button>-->';
+            <input type="submit" value="modifier" name="Modifier">
+            <input type="submit" value="supprimer" name="Supprimer">
+            </form>';
     }
 }
