@@ -6,11 +6,12 @@
  * Time: 11:35
  */
 
+
 class ViewInformation
 {
     public function displayInformationList($id,$title, $author, $content, $creationDate, $endDate) {
         echo '
-           <form>
+           <form action="../controllers/Information.php" method="post">
             <div style="overflow-x:auto;">
                 <table class="table table-hover">
                     <tr>

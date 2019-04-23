@@ -8,8 +8,8 @@ Author: Alexis
 include_once 'views/ViewCard.php';
 include_once 'views/ViewUser.php';
 include_once 'views/ViewInformation.php';
-include_once 'controllers/Info.php';
 include_once 'controllers/Information.php';
+include_once 'controllers/Info.php';
 include_once 'models/BdInfo.php';
 include_once 'models/BdUser.php';
 include_once 'models/BdInformation.php';
