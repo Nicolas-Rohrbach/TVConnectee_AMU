@@ -42,9 +42,10 @@ class Information
     } //deleteInformation()
 
     public function displayListInformation(){
-        //$this->createInformation('titre test2','dkfsmlfk',date(2019-06-02));
+
         $result = $this->bdInformation->getListInformation();
 
+        $idList = array();
         $titleList = array();
         $authorList = array();
         $creationDateList = array();
@@ -53,6 +54,7 @@ class Information
 
         foreach ($result as $row) {
 
+            $id = $row['ID_info'];
             $title = $row['title'];
             $author = $row['author'];
             $creationDate = date('Y-m-d',strtotime($row['creation_date']));
@@ -60,13 +62,14 @@ class Information
             $content = $row['content'];
 
 
+            array_push($idList, $id);
             array_push($titleList, $title) ;
             array_push($authorList, $author) ;
             array_push($creationDateList, $creationDate);
             array_push($endDateList, $endDate);
             array_push($contentList,$content) ;
         }
-        $this->viewInformation->displayInformationList($titleList,$authorList,$contentList, $creationDateList, $endDateList);
+        $this->viewInformation->displayInformationList($idList, $titleList,$authorList,$contentList, $creationDateList, $endDateList);
     }
 
 }

@@ -8,10 +8,11 @@
 
 class ViewInformation
 {
-    public function displayInformationList($title, $author, $content, $creationDate, $endDate) {
+    public function displayInformationList($id,$title, $author, $content, $creationDate, $endDate) {
         echo '<div style="overflow-x:auto;">
                 <table class="table table-hover">
                     <tr>
+                        <th> ID </th>
                         <th> Titre </th>
                         <th> Auteur </th>
                         <th> Contenu </th>
@@ -20,6 +21,7 @@ class ViewInformation
                     </tr>';
        for($i=0; $i < sizeof($title); ++$i) {
            echo    '<tr>
+                        <td>'.$id[$i].'</td>
                         <td>'.$title[$i].'</td> 
                         <td>'.$author[$i].'</td>
                         <td>'.$content[$i].'</td>
