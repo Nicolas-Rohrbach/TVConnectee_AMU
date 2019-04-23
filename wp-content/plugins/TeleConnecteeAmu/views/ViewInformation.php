@@ -6,12 +6,12 @@
  * Time: 11:35
  */
 
-
 class ViewInformation
 {
     public function displayInformationList($id,$title, $author, $content, $creationDate, $endDate) {
         echo '
-           <form action="../controllers/Information.php" method="post">
+           <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/formProcessing.js"></script>
+           <form method="post">
             <div style="overflow-x:auto;">
                 <table class="table table-hover">
                     <tr>
@@ -37,9 +37,9 @@ class ViewInformation
                         <td>'.$endDate[$i].'</td>
                     </tr>';
        }
-       echo  '</table>
-            <input type="submit" value="modifier" name="Modifier">
-            <input type="submit" value="supprimer" name="Supprimer">
+       echo  '</table> 
+           <button type="submit" value="supprimer" name="Supprimer" onclick="formInformationSupprimer()"> Supprimer </button>
+           <button type="submit" value="modifier" name="Modifier" onclick="formInformationModif()"> modifier </button>
             </form>';
     }
 }

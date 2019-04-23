@@ -72,20 +72,20 @@ class Information
         $this->viewInformation->displayInformationList($idList, $titleList,$authorList,$contentList, $creationDateList, $endDateList);
     }
 
-    public function formProcess(){
-
-        if (isset($_POST['supprimer'])) {
-            echo "<script>alert(\"suppression\")</script>";
-
-        } elseif (isset($_POST['modifier'])) {
-
-            echo "<script>alert(\"Page de mofification\")</script>";
-
-        } else {
-
-            echo "<script>alert(\"Erreur dans l'envoie du formulaire\")</script>";
-
-        }
-    }
+//    public function formProcess(){
+//
+//        if (isset($_POST['supprimer'])) {
+//            echo "<script>alert(\"suppression\")</script>";
+//
+//        } elseif (isset($_POST['modifier'])) {
+//
+//            echo "<script>alert(\"Page de mofification\")</script>";
+//
+//        } else {
+//
+//            echo "<script>alert(\"Erreur dans l'envoie du formulaire\")</script>";
+//
+//       }
+//    }
 
 }
