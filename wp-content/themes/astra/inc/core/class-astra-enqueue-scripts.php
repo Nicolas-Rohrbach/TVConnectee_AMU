@@ -176,7 +176,7 @@ if ( ! class_exists( 'Astra_Enqueue_Scripts' ) ) {
 				// Register & Enqueue Styles.
 				foreach ( $styles as $key => $style ) {
 
-					// Generate CSS ViewSchedule.
+					// Generate CSS URL.
 					$css_file = $css_uri . $style . $file_prefix . '.css';
 
 					// Register.

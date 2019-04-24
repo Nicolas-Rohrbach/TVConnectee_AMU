@@ -7,7 +7,12 @@ body.login {
 }
 body.login div#login {
     width: 35%;
-    height: 50%;
+}
+
+@media only screen and (max-device-width: 1000px){
+    body.login div#login {
+        width: 100%;
+    }
 }
 body.login div#login h1 {}
 body.login div#login h1 a {}

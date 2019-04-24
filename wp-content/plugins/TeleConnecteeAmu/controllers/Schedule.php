@@ -33,21 +33,26 @@ class Schedule
         # Cherche le code ADE dans le dossier data/ressources.yaml en fonction de l'utilisateur connecté et demande à afficher l'emploi du temps
         $current_user = wp_get_current_user();
 
-        if(isset($current_user->demiGroupe)) {
-            $this->url->displayName($current_user);
-            $this->url->displayTimetable($current_user->demiGroupe,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear);
+        try{
+            if($current_user->demiGroupe != 0) {
+                $this->url->displayName($current_user);
+                $this->url->displayTimetable($current_user->demiGroupe,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear);
+            }
+            else if($current_user->groupe != 0) {
+                $this->url->displayName($current_user);
+                $this->url->displayTimetable($current_user->groupe,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear);
+            }
+            else if($current_user->annee != 0) {
+                $this->url->displayName($current_user);
+                $this->url->displayTimetable($current_user->annee,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear);
+            }
+            #Si la personne n'est pas connectée ou si il s'agit d'un Admin ou d'une secrétaire
+            else {
+                $this->url->displayHome($current_user);
+            }
         }
-        else if(isset($current_user->groupe)) {
-            $this->url->displayName($current_user);
-            $this->url->displayTimetable($current_user->groupe,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear);
-        }
-        else if(isset($current_user->annee)) {
-            $this->url->displayName($current_user);
-            $this->url->displayTimetable($current_user->groupe,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear);
-        }
-        #Si la personne n'est pas connectée ou si il s'agit d'un Admin ou d'une secrétaire
-        else {
-            $this->url->displayHome($current_user);
+        catch (Exception $e) {
+            header("Location: http://".$_SERVER['HTTP_HOST']);
         }
     }
 

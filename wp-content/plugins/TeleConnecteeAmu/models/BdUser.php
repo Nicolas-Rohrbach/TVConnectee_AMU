@@ -8,89 +8,218 @@
 
 class BdUser
 {
-    /**
-     * BdUser constructor.
-     */
-    public function __construct(){
-    }
+    private static $bdd;
 
-    public function insertEtudiant($name, $mdp, $nicename, $email, $display, $annee, $alternant, $groupe, $demigroupe, $langue, $prenom){
+    private static function setBdd()
+    {
         global $wpdb;
-		$wpdb->query(
-				$wpdb->prepare(
-						"INSERT INTO `wp_users`(`ID`, `user_login`, `user_pass`, `role`, `annee`, `alternant`, `groupe`, `demiGroupe`, `langue`, `user_nicename`, `prenom`, `user_email`, `user_url`,
-                        `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES (%d, %s, %s, %s, %s, %d, %d, %s, %s, %s, %s, %s, %s, NOW(), %s, %d, %s)",
-								null,
-								$nicename,
-								$mdp,
-								'etudiant',
-								$annee,
-								$alternant,
-								$groupe,
-								$demigroupe,
-								$langue,
-								$name,
-								$prenom,
-								$email,
-								' ',
-								' ',
-								null,
-								$display)
-		);
-		
-		$result = $wpdb->get_row('SELECT * FROM `wp_users` WHERE `user_login` ="' . $nicename . '"', ARRAY_A);
-        $id = $result['ID'];
+        self::$bdd = new PDO('mysql:host='.$wpdb->dbhost.'; dbname='.$wpdb->dbname, $wpdb->dbuser, $wpdb->dbpassword);
+        self::$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+    }
 
-        $wpdb->query(
-			$wpdb->prepare(
-						"INSERT INTO `wp_usermeta`(`user_id`, `meta_key`, `meta_value`) VALUES (%d, %s, %s)",
-								$id,
-								'wp_capabilities',
-								"a:1:{s:8:\"etudiant\";b:1;}")
-		);
+    protected function getBdd()
+    {
+        if (self:: $bdd == null)
+            self::setBdd();
+        return self::$bdd;
+    }
+
+    protected function verifyNoDouble($email, $login)
+    {
+        $var = 0;
+        $req = $this->getBdd()->prepare('SELECT * FROM wp_users WHERE user_email =:mail OR user_login =:login');
+        $req->bindValue(':mail', $email);
+        $req->bindValue(':login', $login);
+        $req->execute();
+        while ($data = $req->fetch(PDO::FETCH_ASSOC)) {
+            $var = $var + 1;
+        }
+        if ($var > 0) {
+            return false;
+        } else {
+            return true;
+        }
+        $req->closeCursor();
+    }
+
+    public function checkNoDouble ($email, $login) {
+        return $this->verifyNoDouble($email, $login);
+    }
+
+    public function insertEtudiant($name, $pwd, $nicename, $email, $display, $year, $group, $demigroup, $firstname){
+
+        if($this->verifyNoDouble($email,$nicename)) {
+            $req = $this->getBdd()->prepare('INSERT INTO wp_users (user_login, user_pass, role, annee, groupe, demiGroupe,
+                                      user_nicename, prenom, user_email, user_url, user_registered, user_activation_key,
+                                      user_status, display_name) 
+                                         VALUES (:login, :pwd, :role, :annee, :groupe, :demiGroupe, :name, :firstname, :email, :url, NOW(), :key, :status, :displayname)');
+
+            $nul = " ";
+            $zero = 0;
+            $role = "etudiant";
+
+            $req->bindParam(':login', $nicename);
+            $req->bindParam(':pwd', $pwd);
+            $req->bindParam(':role', $role);
+            $req->bindParam(':annee', $year);
+            $req->bindParam(':groupe', $group);
+            $req->bindParam(':demiGroupe', $demigroup);
+            $req->bindParam(':name', $name);
+            $req->bindParam(':firstname', $firstname);
+            $req->bindParam(':email', $email);
+            $req->bindParam(':url', $nul);
+            $req->bindParam(':key', $nul);
+            $req->bindParam(':status', $zero);
+            $req->bindParam(':displayname', $display);
+
+            $req->execute();
+
+            global $wpdb;
+
+            $capa = 'wp_capabilities';
+            $role = 'a:1:{s:8:"etudiant";b:1;}';
+
+            $result = $wpdb->get_row('SELECT * FROM `wp_users` WHERE `user_login` ="' . $nicename . '"', ARRAY_A);
+            $id = $result['ID'];
+
+            $req = $this->getBdd()->prepare('INSERT INTO wp_usermeta(user_id, meta_key, meta_value) VALUES (:id, :capabilities, :role)');
+
+            $req->bindParam(':id', $id);
+            $req->bindParam(':capabilities', $capa);
+            $req->bindParam(':role', $role);
+
+            $req->execute();
+
+            return true;
+        }
+        else {
+
+            return false;
+        }
+
     }
 
 
-public function insertProf($name, $mdp, $nicename, $prenom, $email, $display){
-       global $wpdb;
-		$wpdb->query(
-				$wpdb->prepare(
-						"INSERT INTO `wp_users`(`ID`, `user_login`, `user_pass`, `role`, `annee`, `alternant`, `groupe`, `demiGroupe`, `langue`, `user_nicename`, `prenom`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES (%d, %s, %s, %s, %s, %d, %d, %s, %s, %s, %s, %s, %s, NOW(), %s, %d, %s)",
-								null,
-								$nicename,
-								$mdp,
-								'enseignant',
-								'',
-								'',
-								'',
-								'',
-								'',
-								$name,
-								$prenom,
-								$email,
-								' ',
-								' ',
-								null,
-								$display)
-		);
-	
-		$result = $wpdb->get_row('SELECT * FROM `wp_users` WHERE `user_login` ="' . $nicename . '"', ARRAY_A);
-        $id = $result['ID'];
-	
-		$wpdb->query(
-			$wpdb->prepare(
-						"INSERT INTO `wp_usermeta`(`user_id`, `meta_key`, `meta_value`) VALUES (%d, %s, %s)",
-								$id,
-								'wp_capabilities',
-								"a:1:{s:10:\"enseignant\";b:1;}")
-		);
-}
+    public function insertProf($name, $pwd, $nicename, $firstname, $email, $display,$code){
 
-public function getEtudiants(){
-    global $wpdb;
-    $result = $wpdb->get_results("SELECT * FROM wp_users WHERE role = 'etudiant'", ARRAY_A);
-    return $result;
-}
+        $name = filter_input(INPUT_POST,'nameTv');
+        $pwd = md5(filter_input(INPUT_POST,'pwdTv'));
+        $code = filter_input(INPUT_POST,'codeADE1');
+        $code2 = 0;
+        $code3 = 0;
+
+        if(isset($_POST['codeADE2'])) $code2 = filter_input(INPUT_POST,'codeADE2');
+        if(isset($_POST['codeADE3'])) $code3 = filter_input(INPUT_POST,'codeADE3');
+
+        if($this->verifyNoDouble($email,$nicename)) {
+            $req = $this->getBdd()->prepare('INSERT INTO wp_users (user_login, user_pass, role, annee, groupe, demiGroupe,
+                                      user_nicename, prenom, user_email, user_url, user_registered, user_activation_key,
+                                      user_status, display_name) 
+                                         VALUES (:login, :pwd, :role, :annee, :groupe, :demiGroupe, :name, :firstname, :email, :url, NOW(), :key, :status, :displayname)');
+
+            $nul = " ";
+            $zero = "0";
+            $role = "enseignant";
+
+            $req->bindParam(':login', $nicename);
+            $req->bindParam(':pwd', $pwd);
+            $req->bindParam(':role', $role);
+            $req->bindParam(':annee', $code);
+            $req->bindParam(':groupe', $code2);
+            $req->bindParam(':demiGroupe', $code3);
+            $req->bindParam(':name', $name);
+            $req->bindParam(':firstname', $firstname);
+            $req->bindParam(':email', $email);
+            $req->bindParam(':url', $nul);
+            $req->bindParam(':key', $nul);
+            $req->bindParam(':status', $zero);
+            $req->bindParam(':displayname', $display);
+
+            $req->execute();
+
+            global $wpdb;
+
+            $capa = 'wp_capabilities';
+            $role = 'a:1:{s:10:"enseignant";b:1;}';
+
+            $result = $wpdb->get_row('SELECT * FROM `wp_users` WHERE `user_login` ="' . $nicename . '"', ARRAY_A);
+            $id = $result['ID'];
+
+            $req = $this->getBdd()->prepare('INSERT INTO wp_usermeta(user_id, meta_key, meta_value) VALUES (:id, :capabilities, :role)');
+
+            $req->bindParam(':id', $id);
+            $req->bindParam(':capabilities', $capa);
+            $req->bindParam(':role', $role);
+
+            $req->execute();
+
+            return true;
+
+        }
+        else {
+            return false;
+        }
+
+    }
+
+    public function insertTv($name, $pwd, $code, $code2 = 0, $code3 = 0){
+
+        if($this->verifyNoDouble($name,$name)) {
+            $req = $this->getBdd()->prepare('INSERT INTO wp_users (user_login, user_pass, role, annee, groupe, demiGroupe,
+                                      user_nicename, prenom, user_email, user_url, user_registered, user_activation_key,
+                                      user_status, display_name) 
+                                         VALUES (:login, :pwd, :role, :annee, :groupe, :demiGroupe, :name, :firstname, :email, :url, NOW(), :key, :status, :displayname)');
+
+            $nul = " ";
+            $zero = "0";
+            $role = "television";
+
+            $req->bindParam(':login', $name);
+            $req->bindParam(':pwd', $pwd);
+            $req->bindParam(':role', $role);
+            $req->bindParam(':annee', $code);
+            $req->bindParam(':groupe', $code2);
+            $req->bindParam(':demiGroupe', $code3);
+            $req->bindParam(':name', $nul);
+            $req->bindParam(':firstname', $nul);
+            $req->bindParam(':email', $nul);
+            $req->bindParam(':url', $nul);
+            $req->bindParam(':key', $nul);
+            $req->bindParam(':status', $zero);
+            $req->bindParam(':displayname', $name);
+
+            $req->execute();
+
+            global $wpdb;
+
+            $capa = 'wp_capabilities';
+            $role = 'a:1:{s:10:"television";b:1;}';
+
+            $result = $wpdb->get_row('SELECT * FROM `wp_users` WHERE `user_login` ="' . $name . '"', ARRAY_A);
+            $id = $result['ID'];
+
+            $req = $this->getBdd()->prepare('INSERT INTO wp_usermeta(user_id, meta_key, meta_value) VALUES (:id, :capabilities, :role)');
+
+            $req->bindParam(':id', $id);
+            $req->bindParam(':capabilities', $capa);
+            $req->bindParam(':role', $role);
+
+            $req->execute();
+
+            return true;
+
+        }
+        else {
+            return false;
+        }
+
+    }
+
+    public function getEtudiants(){
+        global $wpdb;
+        $result = $wpdb->get_results("SELECT * FROM wp_users WHERE role = 'etudiant'", ARRAY_A);
+        return $result;
+    }
 
 public function getById($id){
         global $wpdb;
@@ -98,35 +227,35 @@ public function getById($id){
         return $result;
     }
 
-public function getProfs(){
+    public function getProfs(){
         global $wpdb;
         $result = $wpdb->get_results("SELECT * FROM wp_users WHERE role = 'enseignant'", ARRAY_A);
         return $result;
     }
 	
-public function getByGroupe($groupe){
+    public function getByGroupe($groupe){
 		global $wpdb;
 		$result = $wpdb->get_results("SELECT * FROM wp_users WHERE groupe= '$groupe'", ARRAY_A) ;
 		return $result ;
-}
+    }
 	
 	public function getByAnnee($annee){
 		global $wpdb;
 		$result = $wpdb->get_results("SELECT * FROM wp_users WHERE annee= '$annee'", ARRAY_A) ;
 		return $result ; 
-}
+    }
 
-public function getByNomPrenom($nom, $prenom){
+    public function getByNomPrenom($nom, $prenom){
         global $wpdb;
         $result = $wpdb->get_row('SELECT groupe, annee FROM wp_users WHERE user_nicename = "'.$nom.'" AND prenom = "'.$prenom.' "', ARRAY_A);
         return $result;
-}
+    }
 
-public function supprEtudiant($id){
-    global $wpdb;
-    $wpdb->query("DELETE FROM wp_users WHERE id = '$id'");
-    $wpdb->query("DELETE FROM wp_usermeta WHERE user_id = '$id'");
-}
+    public function supprEtudiant($id){
+        global $wpdb;
+        $wpdb->query("DELETE FROM wp_users WHERE id = '$id'");
+        $wpdb->query("DELETE FROM wp_usermeta WHERE user_id = '$id'");
+    }
 
     public function supprProf($id){
         global $wpdb;

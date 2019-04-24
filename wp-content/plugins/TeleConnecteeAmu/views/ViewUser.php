@@ -9,60 +9,45 @@
 class viewUser
 {
 
-    /**
-     * viewUser constructor.
-     */
-    public function __construct()
-    {
-    }
-    public function afficherInsert(){
+    public function afficherInsertEtudiant(){
         echo'
-		<h1 style="font-size:50px ; color:#003E53;">Création des comptes</h1>
-        <div style="width:100%; border-style:outset; border-width: 3px; border-color:#00688B; padding:5px; margin-top : 100px; margin-bottom : 100px; background-color: #99C2D0;">
-			<div style="float:left;width:35%;margin-right: 0%; border-width: 4px; padding: 5px; min-width: 35%;border-style:outset;border-color:#003E53; padding-bottom:30px; padding-left:10px;padding-right:10px;display: block;margin : auto; background-color: #D6E6EC;">
-				  <h2 class="display-2 text-black-50" style="font-size:25px; color:#00688B; text-align:center;">Créer des comptes étudiants</h2>
-				  <a href="http://tv-connectee-amu.alwaysdata.net/wp-content/plugins/TeleConnecteeAmu/Excel/vide.xlsx"
-   download="exempleExcelEtu">Fichier modèle à remplir</a>
-					   <form method="post" enctype="multipart/form-data">
-							<input type="file" name="excelEtud" class="btn btn-dark" style="text-align : center";/>
-							<button type="submit" name="importEtu" class="btn btn-primary" value="Importer">Importer le fichier</button>
-					   </form>
-			</div>
-			<div style="margin-left:60%; width="80%">
-				<img src="https://image.noelshack.com/fichiers/2019/09/4/1551391861-exempleetu.png">
-				<TABLE border="1" width="100%" class="table" style="background-color: #D6E6EC;">
-					<TR>
-						<TD width="50%">Le numéro ENT correspond au numéro ent de l\'étudiant
-						<TD width="50%">L\'email correspond à l\'email AMU de l\'étudiant
-					<TR>
-						<TD width="50%">La colonne alternant prends 1 si l\'étudiant est alternant, 0 sinon
-						<TD width="50%">La colonne langue correspond à la langue secondaire de l\'étudiant
-				</TABLE>
-			</div>
-		</div>
-		
-		 <div style="width:100%; border-style:outset; border-width: 3px; border-color:#00688B; padding:5px; background-color: #99C2D0;">
-			<div style="float:left;width:35%;margin-right: 0%; border-width: 4px; padding: 5px; min-width: 35%;border-style:outset;border-color:#003E53; padding-bottom:30px; padding-left:10px;padding-right:10px;display: block;margin : auto;background-color: #D6E6EC">
-				 <h2 class="display-2 text-black-50" style="font-size:25px; color:#00688B; text-align:center;">Créer des comptes professeurs</h2>
-			       <a href="http://tv-connectee-amu.alwaysdata.net/wp-content/plugins/TeleConnecteeAmu/Excel/profVide.xlsx"
-   download="exempleExcelProfs">Fichier modèle à remplir</a>
-				   <form method="post" enctype="multipart/form-data">
-			       <input type="file" name="excelProf" id="file" class="btn btn-dark" />
-				   <button type="submit" name="importProf" class="btn btn-primary" value="Importer" > Importer le fichier</button> 
-			   </form>
-		  </div> 
-	   	<div style="margin-left:60%; width="80%">
-					<img src="https://image.noelshack.com/fichiers/2019/09/4/1551391861-exempleprof.png" height="400" width="700">
-					<TABLE border="1" width="100%" class="table" style="background-color: #D6E6EC;">
-						<TR>
-							<TD width="50%">Le numéro ENT correspond au numéro ent du professeur
-							<TD width="50%">L\'email correspond à l\'email AMU du professeur
-						<TR>
-							<TD width="50%">Le code corespond au numéros attribués au professeur sur l\'emploi du temps ADE
-					</TABLE>
-				</div>
-			</div>
-			 ';
+             <form method="post" enctype="multipart/form-data">
+				<input type="file" name="excelEtud" class="btn btn-dark"/>
+				<br/>
+				<button type="submit" name="importEtu" class="btn btn-primary" value="Importer">Importer le fichier</button>
+			</form>
+			<br/>';
+    }
+
+    public function  affichierInsertProf() {
+        echo'
+             <form method="post" enctype="multipart/form-data">
+			    <input type="file" name="excelProf" id="file" class="btn btn-dark" />
+			    <br/>
+				<button type="submit" name="importProf" class="btn btn-primary" value="Importer" > Importer le fichier</button> 
+			 </form>
+			 <br/>';
+    }
+
+    public function displayFormTele() {
+        echo '
+ <div class="cadre">
+ <div align="center">
+    <form method="post" id="registerform">
+          <label for="nameTv">Titre de télévision</label>
+          <input type="text" class="form-control text-center modal-sm" id="nameTv" placeholder="Titre" required="">
+          <label for="inputPassword4">Mot de passe</label>
+          <input type="password" class="form-control text-center modal-sm" id="pwdTv" placeholder="Mot de passe" required="">
+        <label for="codeADE1">Emploi du temps (code ADE)</label>
+        <input type="text" class="form-control text-center modal-sm" id="codeADE1" placeholder="Code ADE" required="">
+            <label for="codeADE2">Emploi du temps 2</label>
+            <input type="text" class="form-control text-center modal-sm" id="codeADE2" placeholder="Code ADE2">
+            <label for="codeADE3">Emploi du temps 3</label>
+            <input type="text" class="form-control text-center modal-sm" id="codeADE3" placeholder="Code ADE3">
+      <button type="submit" class="btn btn-primary"">Créer</button>
+    </form>
+    </div>
+</div>';
     }
 
     public function tabHeadEtud(){
@@ -113,8 +98,8 @@ class viewUser
             <thead>
                 <tr class="text-center">
                     <th scope="col">#</th>
-                    <th scope="col">Nom</th>
                     <th scope="col">Prénom</th>
+                    <th scope="col">Nom</th>
                     <th scope="col">Année</th>
                     <th scope="col">Groupe</th>
                     <th scope="col">Modifier</th>
@@ -127,25 +112,22 @@ class viewUser
 
     public function afficherSupprEtud($nom,$prenom, $annee, $groupe,  $row, $id){
         echo '
-    <tr>    
-       
+    <tr>
       <th scope="row">'.$row.'</th>
+      <td class="text-center">'.$prenom.'</td>
       <td class="text-center">'.$nom.'</td>
-      <td class="text-center">'.$prenom.'</td>    
       <td class="text-center">'.$annee.'</td>
       <td class="text-center">'.$groupe.'</td>
-      <td class="text-center"> <a href="http://tv-connectee-amu.alwaysdata.net/modifier-un-etudiant/'.$id.'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
+      <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/modifier-lutilisateur/'.$id.'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
       <td class="text-center"> <button class="btn btn-danger btn-lg " name="suppretud" type="submit" value="'.$id.'" >Supprimer</button></td>
-    </tr>
-        ';
+    </tr>';
     }
 
     public function endTab(){
         echo'
           </tbody>
         </table>
-        </form>
-        ';
+        </form>';
     }
 
     public function affichageModifEtud($nom, $prenom, $annee, $groupe){
@@ -184,16 +166,12 @@ class viewUser
                     </select>
               </div>
                 <button name="modifvalider" type="submit" class="btn btn-primary btn-lg mb-3" value="Valider">Valider</button>
-            <a class="btn btn-dark btn-lg mb-3" href="http://tv-connectee-amu.alwaysdata.net">Annuler</a>
+            <a class="btn btn-dark btn-lg mb-3" href="http://'.$_SERVER['HTTP_HOST'].'">Annuler</a>
             </form>';
     }
 
-    public function refreshEtud(){
-        echo ' <meta http-equiv="refresh" content="0; url=http://tv-connectee-amu.alwaysdata.net/supprimer-des-etudiants/" />';
-    }
-
-    public function refreshProf(){
-        echo ' <meta http-equiv="refresh" content="0; url=http://tv-connectee-amu.alwaysdata.net/professeurs/" />';
+    public function refreshPage(){
+        echo '<meta http-equiv="refresh" content="0">';
     }
 
     public function tabHeadProf(){
@@ -233,8 +211,8 @@ class viewUser
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <td class="text-center"><strong>Nom</strong></td>
                     <td class="text-center"><strong>Prénom</strong></td>
+                    <td class="text-center"><strong>Nom</strong></td>
                     <td class="text-center"><strong>Modifier</strong></td>
                     <td class="text-center"><strong>Supprimer </strong></td>
                  </tr>
@@ -248,9 +226,9 @@ class viewUser
     <tr>    
        
       <th scope="row">'.$row.'</th>
-      <td class="text-center">'.$nom.'</td>
       <td class="text-center">'.$prenom.'</td>    
-      <td class="text-center"> <a href="http://tv-connectee-amu.alwaysdata.net/modifier-un-prof/'.$id.'" class="btn btn-primary btn-lg" name="modifprof" type="submit" value="Modifier">Modifier</a></td>
+      <td class="text-center">'.$nom.'</td>
+      <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/modifier-un-prof/'.$id.'" class="btn btn-primary btn-lg" name="modifprof" type="submit" value="Modifier">Modifier</a></td>
       <td class="text-center"> <button class="btn btn-danger btn-lg " name="supprprof" type="submit" value="'.$id.'" >Supprimer</button></td>
     </tr>
         ';
@@ -272,7 +250,7 @@ class viewUser
                     <input name="modifprenom" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Entrer le titre de linformation à ajouter" value="'.$prenom.'">
                 </div>
                 <button name="modifvalider" type="submit" class="btn btn-primary btn-lg mb-3" value="Valider">Valider</button>
-            <a class="btn btn-dark btn-lg mb-3" href="http://tv-connectee-amu.alwaysdata.net">Annuler</a>
+            <a class="btn btn-dark btn-lg mb-3" href="http://'.$_SERVER['HTTP_HOST'].'">Annuler</a>
             </form>';
     }
 

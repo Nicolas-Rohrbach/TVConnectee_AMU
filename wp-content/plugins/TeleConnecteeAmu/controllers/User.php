@@ -21,14 +21,20 @@ class User
         $this->card = new ViewCard();
     }
 
-    public function insert_user($actionEtud, $actionGroupe, $actionProf){
+    public function insert_etudiant($actionEtud){
 
         excelEtudiant($actionEtud);
-        //$this->excelGroupe($actionGroupe);
+        $this->userview->afficherInsertEtudiant();
+
+    }
+
+    public function insert_prof($actionProf) {
         excelProf($actionProf);
+        $this->userview->affichierInsertProf();
+    }
 
-        $this->userview->afficherInsert();
-
+    public function insert_tv() {
+        $this->userview->displayFormTele();
     }
 
     function afficherLesEtudiants($action){
@@ -99,7 +105,7 @@ class User
     public function supprEtudiant($action){
         if(isset($action)){
             $this->bduser->supprEtudiant($action);
-            $this->userview->refresh();
+            $this->userview->refreshPage();
         }
 
     }
@@ -163,9 +169,8 @@ class User
 
         if($action === 'Valider'){
             $this->bduser->supprEtudiant($id);
-            $this->bduser->insertEtudiant($nom, $result['user_pass'], $result['user_login'], $result['user_email'], $result['display_name'], $annee, $result['alternant'], $groupe, $result['demiGroupe'],
-                $result['langue'], $prenom);
-            $this->userview->refresh();
+            $this->bduser->insertEtudiant($nom, $result['user_pass'], $result['user_login'], $result['user_email'], $result['display_name'], $annee, $groupe, $result['demiGroupe'], $prenom);
+            $this->userview->refreshEtud();
 
         }
 
@@ -174,7 +179,7 @@ class User
     public function supprProf($action){
         if(isset($action)){
             $this->bduser->supprProf($action);
-            $this->userview->refreshEtud();
+            $this->userview->refreshProf();
         }
     }
 
@@ -199,10 +204,8 @@ class User
 
         if($action === 'Valider'){
             $this->bduser->supprProf($id);
-            $this->bduser->insertProf($nom, $result['user_pass'], $result['user_login'], $prenom ,$result['user_email'], $result['display_name']);
+            $this->bduser->insertProf($nom, $result['user_pass'], $result['user_login'], $prenom ,$result['user_email'], $result['display_name'], $result['code']);
             $this->userview->refreshProf();
-
-
         }
     }
 }

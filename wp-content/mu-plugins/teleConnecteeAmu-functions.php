@@ -1,28 +1,12 @@
 <?php
 /*
-Plugin Name: WordPress Channel functions
+Plugin Name: Télé Connectée Amu functions
 Description: L'ensemble des fonctions globales du site.
-Version: 0.1
+Version: 0.2
 License: GPL
 Author: Nicolas Rohrbach
-Author URI: https://wpchannel.com/
+Author URI: https://wptv/
 */
-
-/**
- * Function Name: front_end_login_fail.
- * Description: This redirects the failed login to the custom login page instead of default login page with a modified url
- **/
-//add_action( 'wp_login_failed', 'front_end_login_fail' );
-//function front_end_login_fail( $username ) {
-//
-//    $referrer = $_SERVER['HTTP_REFERER'];
-//// if there's a valid referrer, and it's not the default log-in screen
-//    if( !empty( $referrer ) && !strstr( $referrer,'wp-login' ) && !strstr( $referrer,'wp-admin' ) ) {
-//
-//        wp_redirect( "http://wptv/connexion?login=failed" );
-//        exit;
-//    }
-//}
 
 
 add_action('after_setup_theme', 'remove_admin_bar');
@@ -33,6 +17,7 @@ function remove_admin_bar() {
 }
 
 // Rediriger les non-administrateurs vers la page d'accueil À partir de l'administration
+add_action( 'init', 'wpm_admin_redirection' );
 function wpm_admin_redirection() {
     //Si on essaye d'accéder à L'administration Sans avoir le rôle administrateur
     if ( is_admin() && ! current_user_can( 'administrator' ) ) {
@@ -50,7 +35,7 @@ add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
 
 // changer l'URL du logo de la page de connexion afin qu'elle pointe vers votre site
 function my_login_logo_url() {
-    return get_bloginfo( 'http://wptv/' );
+    return get_bloginfo( 'http://'.$_SERVER['HTTP_HOST'].'/' );
 }
 add_filter( 'login_headerurl', 'my_login_logo_url' );
 

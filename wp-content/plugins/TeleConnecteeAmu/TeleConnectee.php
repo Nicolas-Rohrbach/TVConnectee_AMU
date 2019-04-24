@@ -9,20 +9,24 @@
 
 include_once 'views/ViewCard.php';
 include_once 'views/ViewUser.php';
+
 include_once 'controllers/Info.php';
 include_once 'models/BdInfo.php';
+
 include_once 'models/BdUser.php';
 include_once 'controllers/User.php';
-include_once 'Excel/PHPExcel/IOFactory.php';
-include_once 'Excel/PluginExcel.php';
+include_once 'models/Excel/PHPExcel/IOFactory.php';
+include_once 'models/Excel/PluginExcel.php';
 include_once 'models/DAO/DAOUser.php';
 include_once 'models/DAO/DAOEtudiant.php';
 include_once 'models/DAO/DAOProf.php';
 
 include_once 'views/ViewSchedule.php';
 include_once 'controllers/Schedule.php';
+
 include_once 'controllers/Weather.php';
 include_once 'views/ViewWeather.php';
+
 include_once 'controllers/R34ICS.php';
 include_once 'views/ViewR34ICS.php';
 
@@ -50,7 +54,9 @@ add_action('insert_info', array( $info, 'traitement_formulaire_info'), 0, 4);
 add_action('HookAlexis', array( $info, 'suppr_info'), 0, 2);
 add_action('modif_info', array( $info, 'modifier_info'), 0, 4);
 
-add_action('ajouter_user', array($users, 'insert_user'), 0, 3);
+add_action('add_student', array($users, 'insert_etudiant'), 0, 1);
+add_action('add_teacher', array($users, 'insert_prof'), 0, 1);
+add_action('hookTv', array($users, 'insert_tv'));
 
 add_action('afficher_prof', array($users, 'afficherLesProf'), 0, 1 );
 add_action('afficher_etudiant', array($users, 'afficherLesEtudiants'),0 ,1 );
