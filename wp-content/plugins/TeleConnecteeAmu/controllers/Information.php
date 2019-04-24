@@ -26,9 +26,6 @@ class Information
      * @param $endDate
      */
     public function createInformation($title, $content, $endDate) {
-//        $title = "titre test";
-//        $content = "yee";
-//        $endDate = date("2019-06-06"); //annee - mois - jour
         $this->bdInformation->addInformationDB($title, $content, $endDate);
     } //addInformation()
 
@@ -45,6 +42,11 @@ class Information
      *Récupère la liste des informations et l'affiche.
      */
     public function informationList(){
+//        $title = "test suppression";
+//        $content = "yee";
+//        $endDate = date("2019-04-20"); //annee - mois - jour
+//
+//        $this->createInformation($title, $content,$endDate);
 
         $result = $this->bdInformation->getListInformation();
 
@@ -64,6 +66,7 @@ class Information
             $endDate = date('Y-m-d',strtotime($row['end_date']));
             $content = $row['content'];
 
+            $this->endDateCheckInfo($id,$endDate);
 
             array_push($idList, $id);
             array_push($titleList, $title) ;
@@ -74,6 +77,20 @@ class Information
         }
         $this->viewInformation->displayInformationList($idList, $titleList,$authorList,$contentList, $creationDateList, $endDateList);
     } // informationList()
+
+    /**
+     * Verifie si la date d'expiration de l'info est dépassé et la supprime
+     * @param $id
+     * @param $endDate
+     */
+    public function endDateCheckInfo($id, $endDate){
+        if($endDate < date("Y-m-d")) {
+            $this->deleteInformation($id);
+        }
+    } //endDateCheckInfo()
+
+
+
 
    // public function changeInformation($id){
    //     $result = $this->bdInformation->getInformationbyID($id);

@@ -33,9 +33,7 @@ class BdInformation
             $user = $current_user->user_login;
         }
 
-
         $creationDate = date('Y-m-d');
-
 
         $wpdb->query(
             $wpdb->prepare(
