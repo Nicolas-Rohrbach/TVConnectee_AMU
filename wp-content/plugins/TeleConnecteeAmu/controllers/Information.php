@@ -42,9 +42,9 @@ class Information
      *Récupère la liste des informations et l'affiche.
      */
     public function informationList(){
-//        $title = "test suppression";
-//        $content = "yee";
-//        $endDate = date("2019-04-20"); //annee - mois - jour
+//      $title = "Test image";
+//        $content = '<img src="http://wptv/wp-content/uploads/2019/04/logo_iut-1.png">';
+//        $endDate = date("2019-04-26"); //annee - mois - jour<<
 //
 //        $this->createInformation($title, $content,$endDate);
 

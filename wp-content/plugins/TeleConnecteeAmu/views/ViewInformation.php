@@ -40,7 +40,7 @@ class ViewInformation
                         </td>
                         <td>'.$title[$i].'</td> 
                         <td>'.$author[$i].'</td>
-                        <td>'.$content[$i].'</td>
+                        <td class="contentInfo">'.$content[$i].'</td>
                         <td>'.$creationDate[$i].'</td>
                         <td>'.$endDate[$i].'</td>
                     </tr>';
