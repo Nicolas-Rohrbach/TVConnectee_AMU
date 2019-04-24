@@ -41,7 +41,10 @@ class Information
         $this->bdInformation->deleteInformationDB($id);
     } //deleteInformation()
 
-    public function displayListInformation(){
+    /**
+     *Récupère la liste des informations et l'affiche.
+     */
+    public function informationList(){
 
         $result = $this->bdInformation->getListInformation();
 
@@ -70,22 +73,10 @@ class Information
             array_push($contentList,$content) ;
         }
         $this->viewInformation->displayInformationList($idList, $titleList,$authorList,$contentList, $creationDateList, $endDateList);
-    }
+    } // informationList()
 
-//    public function formProcess(){
-//
-//        if (isset($_POST['supprimer'])) {
-//            echo "<script>alert(\"suppression\")</script>";
-//
-//        } elseif (isset($_POST['modifier'])) {
-//
-//            echo "<script>alert(\"Page de mofification\")</script>";
-//
-//        } else {
-//
-//            echo "<script>alert(\"Erreur dans l'envoie du formulaire\")</script>";
-//
-//       }
-//    }
+   // public function changeInformation($id){
+   //     $result = $this->bdInformation->getInformationbyID($id);
+    //}
 
 }

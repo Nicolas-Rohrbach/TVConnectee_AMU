@@ -1,9 +1,10 @@
 
-function formInformationSupprimer() {
+function formInformationDelete() {
     var id = document.forms["formInfo"]["optradio"].value;
     alert(id);
 }
 
-function formInformationModif() {
-    alert("modifier");
+function formInformationChange() {
+    var id = document.forms["formInfo"]["optradio"].value;
+    alert(id);
 }

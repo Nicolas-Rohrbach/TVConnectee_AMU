@@ -8,7 +8,16 @@
 
 class ViewInformation
 {
-    public function displayInformationList($id,$title, $author, $content, $creationDate, $endDate) {
+    /**
+     * Affiche toute la liste des informations présente dans la BD
+     * @param $id
+     * @param $title
+     * @param $author
+     * @param $content
+     * @param $creationDate
+     * @param $endDate
+     */
+    public function displayInformationList($id, $title, $author, $content, $creationDate, $endDate) {
         echo '
            <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/formProcessing.js"></script>
            <form name="formInfo" method="post">
@@ -27,7 +36,7 @@ class ViewInformation
                     <tr>
                         <td>
                             <div class="radio">
-                                <label><input type="radio" name="optradio" value="'.$id[$i].'" id="'.$id[$i].'" > '.$id[$i].' </label>
+                                <label><input type="radio" name="optradio" value="'.$id[$i].'" id="'.$id[$i].'" > </label>
                             </div>
                         </td>
                         <td>'.$title[$i].'</td> 
@@ -38,8 +47,38 @@ class ViewInformation
                     </tr>';
        }
        echo  '</table> 
-           <button type="submit" value="supprimer" name="Supprimer" onclick="formInformationSupprimer()"> Supprimer </button>
-           <button type="submit" value="modifier" name="Modifier" onclick="formInformationModif()"> modifier </button>
+           <button type="submit" value="supprimer" name="Supprimer" onclick="formInformationDelete()"> Supprimer </button>
+           <button type="submit" value="modifier" name="Modifier" onclick="formInformationChange()"> modifier </button>
             </form>';
-    }
+    } //displayInformationList()
+
+    public function displayChangeInfo($title, $content, $endDate) {
+        echo '
+            <form action="#" method="POST">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Titre</span>
+                    </div>
+                    <input name="modiftitre" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Entrer le titre de l\'information à ajouter" value="'.$title.'">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Contenu</span>
+                    </div>
+                    <textarea name="modifcontenu" class="form-control" aria-label="Contenu" placeholder="Entrer des précisions sur l\'information à ajouter" >'.$content.'</textarea>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Date</span>
+                    </div>
+                    <input name="modifdate" type="date" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Entrer la date d\'expiration de votre information" value="'.$endDate.'">
+                </div>
+                <div class="form-check mb-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Urgent</label>
+                </div>
+                <button name="modifvalider" type="submit" class="btn btn-primary btn-lg mb-3" value="Valider">Valider</button>
+            <a class="btn btn-dark btn-lg mb-3" href="http://tv-connectee-amu.alwaysdata.net">Annuler</a>
+            </form>';
+    } //displayChangeInfo()
 }

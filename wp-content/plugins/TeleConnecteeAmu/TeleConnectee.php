@@ -66,7 +66,7 @@ add_action('modifprof', array($users, 'afficherModifProf') );
 add_action('hookEDT',array($schedule,'displayMySchedule'));
 add_action('hookWeather',array($weather,'displayMyWeather'));
 
-add_action('test',(array($information,'displayListInformation')));
+add_action('test',(array($information,'informationList')));
 
 
 
