@@ -13,3 +13,18 @@
 */
 
 @import url("../astra/style.css");
+.information {
+	max-width : 30%;
+	min-height: 600px;
+	border : solid black;
+}
+.title {
+	background-color: lightblue;
+	font-size : 3em;
+	text-align: center;
+}
+
+.content_info {
+	font-size : 2em;
+	margin : 2%;
+}

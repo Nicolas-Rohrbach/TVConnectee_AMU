@@ -85,9 +85,9 @@ class ViewInformation
     public function displayInformationView($title, $content){
 
            echo '
-				<div class="d-flex information">
-				    <div class="title">'.$title.'</div>
-				    <div class="content_info">'.$content.'</div>	
+				<div class="d-flex flex-column information">
+				    <div class="d_flex title">'.$title.'</div>
+				    <div class="d_flex content_info">'.$content.'</div>	
 				</div>
         ';
     }
