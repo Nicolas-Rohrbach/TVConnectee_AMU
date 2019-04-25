@@ -15,19 +15,19 @@ function chaine_aleatoire($chaine = 'azertyuiopqsdfghjklmwxcvbn123456789')
     return $generation;
 }
 
-function excelEtudiant($actionEtud){
-    $bduser = new BdUser();
+function excelStudent($actionEtud){
+    $model = new StudentManager();
 
     global $wpdb;
     $doubles = array();
     $con = mysqli_connect($wpdb->dbhost, $wpdb->dbuser, $wpdb->dbpassword, $wpdb->dbname);
 	
     if(isset($actionEtud)) {
-        $extension = end(explode(".", $_FILES["excelEtud"]["name"]));    // For getting Extension of selected file
+        $extension = end(explode(".", $_FILES["excelEtu"]["name"]));    // For getting Extension of selected file
         $allowed_extension = array("xls", "xlsx", "csv");                // allowed extension
         if (in_array($extension, $allowed_extension))                    // check selected file extension is present in allowed extension array
         {
-            $file = $_FILES["excelEtud"]["tmp_name"];                    // getting temporary source of excel file
+            $file = $_FILES["excelEtu"]["tmp_name"];                    // getting temporary source of excel file
             $objPHPExcel = PHPExcel_IOFactory::load($file);              // create object of PHPExcel library by using load() method and in load method define path of selected file
 
             foreach ($objPHPExcel->getWorksheetIterator() as $worksheet) {
@@ -41,25 +41,24 @@ function excelEtudiant($actionEtud){
                     mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(6, 1)->getValue()) == "Demi-groupe")
                 {
                     for ($row = 2; $row <= $highestRow; $row++) {
-                        $prenom = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(0, $row)->getValue());
-                        $name = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(1, $row)->getValue());
+                        $firstname = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(0, $row)->getValue());
+                        $lastname = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(1, $row)->getValue());
                         $mdp = chaine_aleatoire() ;
-                        $mdpMd5 = md5($mdp) ;
-                        $nicename = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(2, $row)->getValue());
+                        $pwd = md5($mdp) ;
+                        $login = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(2, $row)->getValue());
                         $email = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(3, $row)->getValue());
-                        $display = "$prenom" . " $name" ;
-                        $annee = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(4, $row)->getValue());
-                        $groupe = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(5, $row)->getValue());
-                        $demigroupe = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(6, $row)->getValue());
+                        $year = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(4, $row)->getValue());
+                        $group = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(5, $row)->getValue());
+                        $halfgroup = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(6, $row)->getValue());
 
-                        if($bduser->insertEtudiant($name, $mdpMd5, $nicename, $email, $display, $annee, $groupe, $demigroupe, $prenom)) {
+                        if($model->insertStudent($login, $pwd, $year, $group, $halfgroup, $firstname, $lastname, $email)) {
                             $message = "Bonjour, vous avez été inscrit sur le site de la Télé Connecté de votre département en temps qu'étudiant. <br> Sur ce site, vous aurez accès à votre emploie du temps, à vos notes et aux informations concernant votre scolarité. <br>" ;
-                            $message2 = $message . "Votre identifiant est " . $nicename . " et votre mot de passe est " . $mdp . ". <br>"  ;
+                            $message2 = $message . "Votre identifiant est " . $login . " et votre mot de passe est " . $mdp . ". <br>"  ;
                             $message3 = $message2 . "Pour vous connecter, rendez vous sur le site : tv-connectee-amu.alwaysdata.net ." . "<br> Nous vous souhaitons une bonne expérience sur notre site. <br>" ;
                             //mail($email, "Inscription à la télé-connecté", $message3);
                         }
                         else {
-                            array_push($doubles, $nicename);
+                            array_push($doubles, $login);
                         }
                     }
                 }
@@ -82,15 +81,15 @@ function excelEtudiant($actionEtud){
     }
 }
 
-function excelProf($actionProf)
+function excelTeacher($actionTeacher)
 {
-    $bduser = new BdUser();
+    $model = new TeacherManager();
 
     global $wpdb;
     $doubles = array();
     $con = mysqli_connect($wpdb->dbhost, $wpdb->dbuser, $wpdb->dbpassword, $wpdb->dbname);
 
-    if(isset($actionProf)) {
+    if(isset($actionTeacher)) {
         $extension = end(explode(".", $_FILES["excelProf"]["name"]));        // For getting Extension of selected file
         $allowed_extension = array("xls", "xlsx", "csv");               	 // allowed extension
         if (in_array($extension, $allowed_extension))                  	  	 // check selected file extension is present in allowed extension array
@@ -107,23 +106,22 @@ function excelProf($actionProf)
                     mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(4, 1)->getValue()) == "Code")
                 {
                     for ($row = 2; $row <= $highestRow; $row++) {
-                        $prenom = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(0, $row)->getValue());
-                        $name = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(1, $row)->getValue());
+                        $firstname = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(0, $row)->getValue());
+                        $lastname = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(1, $row)->getValue());
                         $mdp = chaine_aleatoire() ;
-                        $mdpMd5 = md5($mdp) ;
-                        $nicename = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(2, $row)->getValue());
+                        $pwd = md5($mdp) ;
+                        $login = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(2, $row)->getValue());
                         $email = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(3, $row)->getValue());
-                        $display = "$prenom" . " $name" ;
                         $code = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(4, $row)->getValue());
 
-                        if($bduser->insertProf($name, $mdpMd5, $nicename, $prenom, $email, $display,$code)) {
+                        if($model->insertTeacher($login, $pwd, $code, $firstname, $lastname, $email)) {
                             $message = "Bonjour, vous avez été inscrit sur le site de la Télé Connecté de votre département en temps que professeur. <br> Sur ce site, vous aurez accès à votre emploie du temps, à vos notes et aux informations concernant votre scolarité. <br>" ;
-                            $message2 = $message . "Votre identifiant est " . $nicename . " et votre mot de passe est " . $mdp . ". <br>"  ;
+                            $message2 = $message . "Votre identifiant est " . $login . " et votre mot de passe est " . $mdp . ". <br>"  ;
                             $message3 = $message2 . "Pour vous connecter, rendez vous sur le site : tv-connectee-amu.alwaysdata.net ." . "<br> Nous vous souhaitons une bonne expérience sur notre site. <br>" ;
                             //mail($email, "Inscription à la télé-connecté", $message3) ;
                         }
                         else {
-                            array_push($doubles, $nicename);
+                            array_push($doubles, $login);
                         }
                     }
                 }
