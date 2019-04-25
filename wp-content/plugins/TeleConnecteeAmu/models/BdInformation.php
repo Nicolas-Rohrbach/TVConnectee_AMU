@@ -33,9 +33,7 @@ class BdInformation
             $user = $current_user->user_login;
         }
 
-
         $creationDate = date('Y-m-d');
-
 
         $wpdb->query(
             $wpdb->prepare(
@@ -95,10 +93,10 @@ class BdInformation
         return $result;
     } //getListInformationByAuthor()
 
-//    public function getInformation($id) {
-//        global $wpdb;
-//        $result = $wpdb->get_results("SELECT * FROM informationsHERE id = %d",
-//                $id);
-//        return $result;
-//    } //getInformation()
+    public function getInformationbyID($id) {
+     global $wpdb;
+       $result = $wpdb->get_results("SELECT * FROM informations WHERE id = %d",
+               $id);
+     return $result;
+    } //getInformation()
 }
