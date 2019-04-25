@@ -67,6 +67,7 @@ add_action('hookEDT',array($schedule,'displayMySchedule'));
 add_action('hookWeather',array($weather,'displayMyWeather'));
 
 add_action('handleInfos',(array($information,'informationList')));
+//add_action('displayInformations',(array($information,'')));
 add_action('test',(array($information,'informationList')));
 
 

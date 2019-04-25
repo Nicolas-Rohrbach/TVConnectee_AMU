@@ -52,33 +52,43 @@ class ViewInformation
             </form>';
     } //displayInformationList()
 
-    public function displayChangeInfo($title, $content, $endDate) {
+//    public function displayChangeInfo($title, $content, $endDate) {
+//        echo '
+//            <form action="#" method="POST">
+//                <div class="input-group mb-3">
+//                    <div class="input-group-prepend">
+//                        <span class="input-group-text" id="inputGroup-sizing-default">Titre</span>
+//                    </div>
+//                    <input name="modiftitre" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Entrer le titre de l\'information à ajouter" value="'.$title.'">
+//                </div>
+//                <div class="input-group mb-3">
+//                    <div class="input-group-prepend">
+//                        <span class="input-group-text">Contenu</span>
+//                    </div>
+//                    <textarea name="modifcontenu" class="form-control" aria-label="Contenu" placeholder="Entrer des précisions sur l\'information à ajouter" >'.$content.'</textarea>
+//                </div>
+//                <div class="input-group mb-3">
+//                    <div class="input-group-prepend">
+//                        <span class="input-group-text" id="inputGroup-sizing-default">Date</span>
+//                    </div>
+//                    <input name="modifdate" type="date" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Entrer la date d\'expiration de votre information" value="'.$endDate.'">
+//                </div>
+//                <div class="form-check mb-3">
+//                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+//                      <label class="form-check-label" for="exampleCheck1">Urgent</label>
+//                </div>
+//                <button name="modifvalider" type="submit" class="btn btn-primary btn-lg mb-3" value="Valider">Valider</button>
+//            <a class="btn btn-dark btn-lg mb-3" href="http://tv-connectee-amu.alwaysdata.net">Annuler</a>
+//            </form>';
+//    } //displayChangeInfo()
+
+    public function displayInformationView($title,$content){
+
         echo '
-            <form action="#" method="POST">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Titre</span>
-                    </div>
-                    <input name="modiftitre" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Entrer le titre de l\'information à ajouter" value="'.$title.'">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Contenu</span>
-                    </div>
-                    <textarea name="modifcontenu" class="form-control" aria-label="Contenu" placeholder="Entrer des précisions sur l\'information à ajouter" >'.$content.'</textarea>
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Date</span>
-                    </div>
-                    <input name="modifdate" type="date" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Entrer la date d\'expiration de votre information" value="'.$endDate.'">
-                </div>
-                <div class="form-check mb-3">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Urgent</label>
-                </div>
-                <button name="modifvalider" type="submit" class="btn btn-primary btn-lg mb-3" value="Valider">Valider</button>
-            <a class="btn btn-dark btn-lg mb-3" href="http://tv-connectee-amu.alwaysdata.net">Annuler</a>
-            </form>';
-    } //displayChangeInfo()
+            <div class="informations">
+                 <div class="title_info">'.$title.'</div>
+                 <div class="content_info">'.$content.'</div>
+            </div>        
+        ';
+    }
 }
