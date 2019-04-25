@@ -7,12 +7,7 @@
  * Author URI: http://tvconnectee.alwaysdata.net/
 */
 
-include_once 'views/ViewCard.php';
 include_once 'views/ViewUser.php';
-
-include_once 'controllers/Info.php';
-include_once 'models/BdInfo.php';
-
 include_once 'models/BdUser.php';
 include_once 'controllers/User.php';
 include_once 'models/Excel/PHPExcel/IOFactory.php';
@@ -42,7 +37,6 @@ function mfp_Card()
 ';
 }
 
-$info = new Info();
 $users = new User();
 $schedule = new Schedule();
 $weather = new Weather();
@@ -56,7 +50,8 @@ add_action('modif_info', array( $info, 'modifier_info'), 0, 4);
 
 add_action('add_student', array($users, 'insert_etudiant'), 0, 1);
 add_action('add_teacher', array($users, 'insert_prof'), 0, 1);
-add_action('hookTv', array($users, 'insert_tv'));
+add_action('hookTv', array($users, 'insert_tv'), 0, 6);
+add_action('add_secre', array($users, 'insert_secre'), 0, 5);
 
 add_action('afficher_prof', array($users, 'afficherLesProf'), 0, 1 );
 add_action('afficher_etudiant', array($users, 'afficherLesEtudiants'),0 ,1 );

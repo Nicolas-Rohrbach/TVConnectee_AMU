@@ -15,6 +15,10 @@
 @import url("../astra/style.css");
 
 /* HEADER */
+.ninja {
+	opacity: 0;
+}
+
 .main-header-bar {
 	background-color: #007fff;
 }

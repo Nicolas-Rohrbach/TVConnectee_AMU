@@ -10,7 +10,6 @@ class User
 {
     private $bduser;
     private $userview;
-    private $card;
     /**
      * User constructor.
      */
@@ -18,7 +17,6 @@ class User
     {
         $this->userview = new ViewUser();
         $this->bduser = new BdUser();
-        $this->card = new ViewCard();
     }
 
     public function insert_etudiant($actionEtud){
@@ -33,8 +31,18 @@ class User
         $this->userview->affichierInsertProf();
     }
 
-    public function insert_tv() {
+    public function insert_tv($action, $name, $pwd, $code, $code2, $code3) {
         $this->userview->displayFormTele();
+        if(isset($action)) {
+            $this->bduser->insertTv($name, $pwd, $code, $code2, $code3);
+        }
+    }
+
+    public function insert_secre($action, $login, $pwd, $firstname, $lastname) {
+        $this->userview->displayFormSecre();
+        if(isset($action)) {
+            $this->bduser->insertSecre($login, $pwd, $firstname, $lastname);
+        }
     }
 
     function afficherLesEtudiants($action){
@@ -51,6 +59,7 @@ class User
             $prenom = $row['prenom'];
             $annee = $row['annee'];
             $groupe = $row['groupe'];
+            $halfgroup = $row['demi-groupe'];
             $idBd = $row['ID'];
 
             $etudiant = new DAOEtudiant($nom, $prenom, $annee, $groupe, $idBd);

@@ -35,16 +35,35 @@ class viewUser
  <div align="center">
     <form method="post" id="registerform">
           <label for="nameTv">Titre de télévision</label>
-          <input type="text" class="form-control text-center modal-sm" id="nameTv" placeholder="Titre" required="">
-          <label for="inputPassword4">Mot de passe</label>
-          <input type="password" class="form-control text-center modal-sm" id="pwdTv" placeholder="Mot de passe" required="">
+          <input type="text" class="form-control text-center modal-sm" name="nameTv" placeholder="Titre" required="">
+          <label for="pwdTv">Mot de passe</label>
+          <input type="password" class="form-control text-center modal-sm" name="pwdTv" placeholder="Mot de passe" required="">
         <label for="codeADE1">Emploi du temps (code ADE)</label>
-        <input type="text" class="form-control text-center modal-sm" id="codeADE1" placeholder="Code ADE" required="">
+        <input type="text" class="form-control text-center modal-sm" name="codeADE1" placeholder="Code ADE" required="">
             <label for="codeADE2">Emploi du temps 2</label>
-            <input type="text" class="form-control text-center modal-sm" id="codeADE2" placeholder="Code ADE2">
+            <input type="text" class="form-control text-center modal-sm" name="codeADE2" placeholder="Code ADE2">
             <label for="codeADE3">Emploi du temps 3</label>
-            <input type="text" class="form-control text-center modal-sm" id="codeADE3" placeholder="Code ADE3">
-      <button type="submit" class="btn btn-primary"">Créer</button>
+            <input type="text" class="form-control text-center modal-sm" name="codeADE3" placeholder="Code ADE3">
+      <button type="submit" class="btn btn-primary" name="createTv">Créer</button>
+    </form>
+    </div>
+</div>';
+    }
+
+    public function displayFormSecre() {
+        echo '
+ <div class="cadre">
+ <div align="center">
+    <form method="post" id="registerform">
+        <label for="nameSecre">Login</label>
+        <input type="text" class="form-control text-center modal-sm" name="loginSecre" placeholder="Login" required="">
+        <label for="pwdSecre">Mot de passe</label>
+        <input type="password" class="form-control text-center modal-sm" name="pwdSecre" placeholder="Mot de passe" required="">
+        <label for="firstnameSecre">Prénom</label>
+        <input type="text" class="form-control text-center modal-sm" name="firstnameSecre" placeholder="Prénom" required="">
+        <label for="lastnameSecre">Nom</label>
+        <input type="text" class="form-control text-center modal-sm" name="lastnameSecre" placeholder="Nom">
+      <button type="submit" class="btn btn-primary" name="createSecre">Créer</button>
     </form>
     </div>
 </div>';
@@ -167,7 +186,7 @@ class viewUser
               </div>
                 <button name="modifvalider" type="submit" class="btn btn-primary btn-lg mb-3" value="Valider">Valider</button>
             <a class="btn btn-dark btn-lg mb-3" href="http://'.$_SERVER['HTTP_HOST'].'">Annuler</a>
-            </form>';
+         </form>';
     }
 
     public function refreshPage(){
@@ -223,10 +242,9 @@ class viewUser
 
     public function afficherSupprProf($nom,$prenom,  $row, $id){
         echo '
-    <tr>    
-       
+    <tr>
       <th scope="row">'.$row.'</th>
-      <td class="text-center">'.$prenom.'</td>    
+      <td class="text-center">'.$prenom.'</td>
       <td class="text-center">'.$nom.'</td>
       <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/modifier-un-prof/'.$id.'" class="btn btn-primary btn-lg" name="modifprof" type="submit" value="Modifier">Modifier</a></td>
       <td class="text-center"> <button class="btn btn-danger btn-lg " name="supprprof" type="submit" value="'.$id.'" >Supprimer</button></td>
@@ -254,5 +272,34 @@ class viewUser
             </form>';
     }
 
+    public function displayAllTv($row ,$name, $code,  $code2, $code3, $id){
+        echo '
+    <tr>
+      <th scope="row">'.$row.'</th>
+      <td class="text-center">'.$name.'</td>    
+      <td class="text-center">'.$code.'</td>';
+        if($code2 > 0) echo '<td class="text-center">'.$code2.'</td>';
+        if($code3 > 0) echo '<td class="text-center">'.$code3.'</td>';
+        echo '
+      <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/modifier-une-tv/'.$id.'" class="btn btn-primary btn-lg" name="modifyTv" type="submit" value="Modifier">Modifier</a></td>
+      <td class="text-center"> <button class="btn btn-danger btn-lg " name="deleteTv" type="submit" value="'.$id.'" >Supprimer</button></td>
+    </tr>
+        ';
+    }
 
+    public function displayModifyTv($name, $code, $code2, $code3){
+        echo '
+         <form action="#" method="post">
+            <label for="newTitleTv"> Titre </label>
+            <input name="newTitleTv" type="text" class="form-control" placeholder="Titre" value="'.$name.'">
+            <label for="newCode1"> Code 1 </label>
+            <input name="newCode1" type="text" class="form-control" placeholder="Code ADE 1" value="'.$code.'">
+            <label for="newCode2"> Code 2 </label>
+            <input name="newCode2" type="text" class="form-control" placeholder="Code ADE 2" value="'.$code2.'">
+            <label for="newCode3"> Code 3 </label>
+            <input name="newCode3" type="text" class="form-control" placeholder="Code ADE 3" value="'.$code3.'">
+            <button name="modifyValidate" type="submit" class="btn btn-primary btn-lg mb-3" value="Valider">Valider</button>
+            <a class="btn btn-dark btn-lg mb-3" href="http://'.$_SERVER['HTTP_HOST'].'/gestions-des-tvs">Annuler</a>
+         </form>';
+    }
 }

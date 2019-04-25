@@ -102,15 +102,6 @@ class BdUser
 
     public function insertProf($name, $pwd, $nicename, $firstname, $email, $display,$code){
 
-        $name = filter_input(INPUT_POST,'nameTv');
-        $pwd = md5(filter_input(INPUT_POST,'pwdTv'));
-        $code = filter_input(INPUT_POST,'codeADE1');
-        $code2 = 0;
-        $code3 = 0;
-
-        if(isset($_POST['codeADE2'])) $code2 = filter_input(INPUT_POST,'codeADE2');
-        if(isset($_POST['codeADE3'])) $code3 = filter_input(INPUT_POST,'codeADE3');
-
         if($this->verifyNoDouble($email,$nicename)) {
             $req = $this->getBdd()->prepare('INSERT INTO wp_users (user_login, user_pass, role, annee, groupe, demiGroupe,
                                       user_nicename, prenom, user_email, user_url, user_registered, user_activation_key,
@@ -162,7 +153,7 @@ class BdUser
 
     }
 
-    public function insertTv($name, $pwd, $code, $code2 = 0, $code3 = 0){
+    public function insertTv($name, $pwd, $code, $code2, $code3){
 
         if($this->verifyNoDouble($name,$name)) {
             $req = $this->getBdd()->prepare('INSERT INTO wp_users (user_login, user_pass, role, annee, groupe, demiGroupe,
@@ -181,8 +172,8 @@ class BdUser
             $req->bindParam(':groupe', $code2);
             $req->bindParam(':demiGroupe', $code3);
             $req->bindParam(':name', $nul);
-            $req->bindParam(':firstname', $nul);
-            $req->bindParam(':email', $nul);
+            $req->bindParam(':firstname', $name);
+            $req->bindParam(':email', $name);
             $req->bindParam(':url', $nul);
             $req->bindParam(':key', $nul);
             $req->bindParam(':status', $zero);
@@ -196,6 +187,60 @@ class BdUser
             $role = 'a:1:{s:10:"television";b:1;}';
 
             $result = $wpdb->get_row('SELECT * FROM `wp_users` WHERE `user_login` ="' . $name . '"', ARRAY_A);
+            $id = $result['ID'];
+
+            $req = $this->getBdd()->prepare('INSERT INTO wp_usermeta(user_id, meta_key, meta_value) VALUES (:id, :capabilities, :role)');
+
+            $req->bindParam(':id', $id);
+            $req->bindParam(':capabilities', $capa);
+            $req->bindParam(':role', $role);
+
+            $req->execute();
+
+            return true;
+
+        }
+        else {
+            return false;
+        }
+
+    }
+
+    public function insertSecre($login, $pwd, $firstname, $lastname){
+
+        if($this->verifyNoDouble($login,$login)) {
+            $req = $this->getBdd()->prepare('INSERT INTO wp_users (user_login, user_pass, role, annee, groupe, demiGroupe,
+                                      user_nicename, prenom, user_email, user_url, user_registered, user_activation_key,
+                                      user_status, display_name) 
+                                         VALUES (:login, :pwd, :role, :annee, :groupe, :demiGroupe, :name, :firstname, :email, :url, NOW(), :key, :status, :displayname)');
+
+            $nul = " ";
+            $zero = "0";
+            $role = "secretaire";
+            $diplayname = $firstname." ".$lastname;
+
+            $req->bindParam(':login', $login);
+            $req->bindParam(':pwd', $pwd);
+            $req->bindParam(':role', $role);
+            $req->bindParam(':annee', $zero);
+            $req->bindParam(':groupe', $zero);
+            $req->bindParam(':demiGroupe', $zero);
+            $req->bindParam(':name', $nul);
+            $req->bindParam(':firstname', $firstname);
+            $req->bindParam(':email', $lastname);
+            $req->bindParam(':url', $nul);
+            $req->bindParam(':key', $nul);
+            $req->bindParam(':status', $zero);
+            $req->bindParam(':displayname', $diplayname);
+
+            $req->execute();
+
+            global $wpdb;
+
+            $capa = 'wp_capabilities';
+            $role = 'a:1:{s:10:"secretaire";b:1;}';
+
+            $result = $wpdb->get_row('SELECT * FROM `wp_users` WHERE `user_login` ="' . $login . '"', ARRAY_A);
             $id = $result['ID'];
 
             $req = $this->getBdd()->prepare('INSERT INTO wp_usermeta(user_id, meta_key, meta_value) VALUES (:id, :capabilities, :role)');
