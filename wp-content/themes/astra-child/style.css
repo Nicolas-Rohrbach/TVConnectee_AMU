@@ -15,7 +15,7 @@
 @import url("../astra/style.css");
 .information {
 	max-width : 30%;
-	min-height: 600px;
+	min-height: 40em;
 	border : solid black;
 }
 .title {
@@ -27,4 +27,13 @@
 .content_info {
 	font-size : 2em;
 	margin : 2%;
+}
+
+th {
+	font-size : 120%;
+}
+
+td img {
+	max-width: 75px;
+	max-height: 75px;
 }
