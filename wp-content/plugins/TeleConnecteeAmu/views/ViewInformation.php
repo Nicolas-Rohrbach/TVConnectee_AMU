@@ -23,12 +23,12 @@ class ViewInformation
            <form name="formInfo" method="post">
             <table class="table">
                     <tr>
-                        <th scope="col"></th>
-                        <th scope="col">  Titre </th>
-                        <th scope="col">  Auteur </th>
-                        <th scope="col">  Contenu </th>
-                        <th scope="col">  Date de création </th>
-                        <th scope="col">  Date de fin </th>
+                        <th></th>
+                        <th>  Titre </th>
+                        <th>  Auteur </th>
+                        <th>  Contenu </th>
+                        <th>  Date de création </th>
+                        <th>  Date de fin </th>
                     </tr>';
        for($i=0; $i < sizeof($title); ++$i) {
            echo    '
@@ -82,13 +82,13 @@ class ViewInformation
 //            </form>';
 //    } //displayChangeInfo()
 
-    public function displayInformationView($title,$content){
+    public function displayInformationView($title, $content){
 
-        echo '
-            <div class="informations">
-                 <div class="title_info">'.$title.'</div>
-                 <div class="content_info">'.$content.'</div>
-            </div>        
+           echo '
+				<div class="d-flex information">
+				    <div class="title">'.$title.'</div>
+				    <div class="content_info">'.$content.'</div>	
+				</div>
         ';
     }
 }

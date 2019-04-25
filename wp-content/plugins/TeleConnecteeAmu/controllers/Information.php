@@ -91,17 +91,8 @@ class Information
 
 
 
-    public function displayInformation($id){
-       $result = $this->bdInformation->getInformationbyID($id);
-
-        foreach ($result as $row) {
-            $title = $row['title'];
-            //$author = $row['author'];
-            //$creationDate = date('Y-m-d', strtotime($row['creation_date']));
-            //$endDate = date('Y-m-d', strtotime($row['end_date']));
-            $content = $row['content'];
-        }
-       $this->viewInformation->displayInformationView($title,$content);
+    public function displayInformationMain(){
+        $this->viewInformation->displayInformationView("title", "contenu");
 
     }
    // public function changeInformation($id){
