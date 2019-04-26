@@ -14,8 +14,7 @@
 
 @import url("../astra/style.css");
 #information_carousel {
-	max-width : 30%;
-	min-height: 40em;
+	height: 40em;
 	border : solid black;
 }
 .title {
@@ -29,6 +28,12 @@
 	margin : 2%;
 	text-align: center;
 }
+
+.content_info img{
+	width : auto;
+	max-height: 30ex;
+}
+
 
 th {
 	font-size : 120%;

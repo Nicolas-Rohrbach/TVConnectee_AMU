@@ -42,11 +42,12 @@ class Information
      *Récupère la liste des informations et l'affiche.
      */
     public function informationList(){
-//      $title = "Test image";
-//        $content = '<img src="http://wptv/wp-content/uploads/2019/04/logo_iut-1.png">';
-//        $endDate = date("2019-04-26"); //annee - mois - jour<<
+
+//        $title = 'Evenement !';
+//        $content = '<img src=http://wptv/wp-content/uploads/2019/04/totoro-poster.jpg>';
+//        $endDate = date("2019-06-27");
 //
-//        $this->createInformation($title, $content,$endDate);
+//       $this->createInformation($title, $content,$endDate);
 
         $result = $this->bdInformation->getListInformation();
 
