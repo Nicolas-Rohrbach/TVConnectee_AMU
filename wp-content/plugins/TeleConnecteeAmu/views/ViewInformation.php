@@ -57,15 +57,8 @@ class ViewInformation
         $cpt = 0;
         echo '<div class="container-fluid">
                 <div class="row">
-                    <div id="informations" class="col-sm-5">
+                    <div id="information" class="col-sm-5">
                         <div id="demo" class="carousel slide" data-ride="carousel">
-                            
-                            <!-- Indicator -->
-                            <ul class="carousel-indicators">
-                                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                                <li data-target="#demo" data-slide-to="1"></li>
-                                <li data-target="#demo" data-slide-to="2"></li>
-                            </ul>
                             
                             <!--The slides -->
                             <div class="carousel-inner">
@@ -76,17 +69,9 @@ class ViewInformation
                                                 <div class="title">'.$title[$i].' </div>
                                                 <div class="content_info">'.$content[$i].'</div> 
                                            </div>';
+                                    $cpt++;
                                 }
 echo'                        </div>
-                              
-                               <!-- Left and right controls -->
-                               <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                                    <span class="carousel-control-prev-icon"></span>
-                               </a>
-                               <a class="carousel-control-next" href="#demo" data-slide="next">
-                                    <span class="carousel-control-next-icon"></span>
-                               </a>
-                              
                             </div>
                         </div>';
 

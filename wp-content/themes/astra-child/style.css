@@ -17,6 +17,7 @@
 	max-width : 30%;
 	min-height: 40em;
 	border : solid black;
+	background-color: #00aaaa;
 }
 .title {
 	background-color: lightblue;
@@ -27,6 +28,7 @@
 .content_info {
 	font-size : 2em;
 	margin : 2%;
+	text-align: center;
 }
 
 th {
