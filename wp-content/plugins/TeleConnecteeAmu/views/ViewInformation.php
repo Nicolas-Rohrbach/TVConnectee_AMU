@@ -73,7 +73,8 @@ class ViewInformation
                                 for($i=0; $i < sizeof($title); ++$i) {
                                     $var = ($cpt == 0) ? ' active">' : '">';
                                     echo '<div class="carousel-item' . $var.'
-                                                '.$title[$i].$content[$i].' 
+                                                <div class="title">'.$title[$i].' </div>
+                                                <div class="content_info">'.$content[$i].'</div> 
                                            </div>';
                                 }
 echo'                        </div>

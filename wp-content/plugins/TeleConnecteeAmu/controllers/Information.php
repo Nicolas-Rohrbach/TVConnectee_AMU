@@ -93,7 +93,8 @@ class Information
 
     public function displayInformationMain(){
 
-        $result = $this->bdInformation->getListInformation();
+
+       $result = $this->bdInformation->getListInformation();
 
         $titleList = array();
         $contentList = array();
