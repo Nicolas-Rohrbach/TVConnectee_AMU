@@ -68,6 +68,7 @@ add_action('hookWeather',array($weather,'displayMyWeather'));
 
 add_action('handleInfos',(array($information,'informationList')));
 add_action('displayInformations',(array($information,'displayInformationMain')));
-add_action('test',(array($information,'informationList')));
+
+add_action('test',(array($information,'informationCreationForm')));
 
 

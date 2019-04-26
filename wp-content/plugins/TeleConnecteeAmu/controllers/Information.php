@@ -91,7 +91,9 @@ class Information
     } //endDateCheckInfo()
 
 
-
+    /**
+     * Affiche la liste des informations sur la page d'accueil
+     */
     public function displayInformationMain(){
 
 
@@ -102,8 +104,12 @@ class Information
 
         foreach ($result as $row) {
 
+            $id = $row['ID_info'];
             $title = $row['title'];
             $content = $row['content'];
+            $endDate = date('Y-m-d',strtotime($row['end_date']));
+
+            $this->endDateCheckInfo($id,$endDate);
 
             array_push($titleList, $title) ;
             array_push($contentList,$content) ;
@@ -111,9 +117,9 @@ class Information
 
         $this->viewInformation->displayInformationView($titleList,$contentList);
 
-    }
-   // public function changeInformation($id){
-   //     $result = $this->bdInformation->getInformationbyID($id);
-    //}
+    } // displayInformationMain()
 
+    public function informationCreationForm(){
+        $this->viewInformation->displayInformationCreation();
+    }
 }
