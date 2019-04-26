@@ -122,4 +122,8 @@ class Information
     public function informationCreationForm(){
         $this->viewInformation->displayInformationCreation();
     }
+
+    public function createInformationProcessing(){
+
+    }
 }

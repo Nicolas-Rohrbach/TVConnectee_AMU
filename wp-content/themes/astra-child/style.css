@@ -13,6 +13,10 @@
 */
 
 @import url("../astra/style.css");
+#content {
+	font-size: 120%;
+}
+
 #information_carousel {
 	height: 40em;
 	border : solid black;
@@ -45,4 +49,12 @@ td img {
 }
 #primary {
 	margin : 2em;
+}
+
+
+#creation_info input{
+	margin : 3px;
+}
+#creation_info button{
+	margin : 3px;
 }

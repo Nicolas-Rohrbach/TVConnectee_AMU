@@ -82,11 +82,12 @@ echo'                        </div>
     } //DisplayInformationView()
 
     public function displayInformationCreation(){
-        echo '<form name="creation_info">
-                  Titre : <input type="text" name="title"> </br>
-                  Contenue : <input type="text" name="content"> </br>
+        echo '<form id="creation_info">
+                  Titre : <input type="text" name="title" placeholder="Inserer un titre"> </br>
+                  Contenu : <textarea name="content"> ...</textarea> </br>
                   Ajouter une image : <button name="image" value="ajoutImage"> Ajouter </button> </br>
-                  Date d\'expiration : <input type="date">
+                  Date d\'expiration : <input type="date"> </br>
+                  <input type="submit" value="submit">
               </form>';
     }
 }
