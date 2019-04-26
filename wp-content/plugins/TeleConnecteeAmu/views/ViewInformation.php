@@ -52,6 +52,47 @@ class ViewInformation
             </form>';
     } //displayInformationList()
 
+
+    public function displayInformationView($title, $content){
+        $cpt = 0;
+        echo '<div class="container-fluid">
+                <div class="row">
+                    <div id="informations" class="col-sm-5">
+                        <div id="demo" class="carousel slide" data-ride="carousel">
+                            
+                            <!-- Indicator -->
+                            <ul class="carousel-indicators">
+                                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                <li data-target="#demo" data-slide-to="1"></li>
+                                <li data-target="#demo" data-slide-to="2"></li>
+                            </ul>
+                            
+                            <!--The slides -->
+                            <div class="carousel-inner">
+';
+                                for($i=0; $i < sizeof($title); ++$i) {
+                                    $var = ($cpt == 0) ? ' active">' : '">';
+                                    echo '<div class="carousel-item' . $var.'
+                                                '.$title[$i].$content[$i].' 
+                                           </div>';
+                                }
+echo'                        </div>
+                              
+                               <!-- Left and right controls -->
+                               <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                               </a>
+                               <a class="carousel-control-next" href="#demo" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                               </a>
+                              
+                            </div>
+                        </div>';
+
+
+    }
+
+
 //    public function displayChangeInfo($title, $content, $endDate) {
 //        echo '
 //            <form action="#" method="POST">
@@ -81,14 +122,4 @@ class ViewInformation
 //            <a class="btn btn-dark btn-lg mb-3" href="http://tv-connectee-amu.alwaysdata.net">Annuler</a>
 //            </form>';
 //    } //displayChangeInfo()
-
-    public function displayInformationView($title, $content){
-
-           echo '
-				<div class="d-flex flex-column information">
-				    <div class="d_flex title">'.$title.'</div>
-				    <div class="d_flex content_info">'.$content.'</div>	
-				</div>
-        ';
-    }
 }

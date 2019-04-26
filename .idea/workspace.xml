@@ -4,10 +4,9 @@
     <list default="true" id="9f218e6f-0017-488e-9481-c270bfe80ec1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/log/wprss/log_blg-1.txt" afterPath="$PROJECT_DIR$/wp-content/log/wprss/log_blg-1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/TeleConnectee.php" afterPath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/TeleConnectee.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php" afterPath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdInformation.php" afterPath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdInformation.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewInformation.php" afterPath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewInformation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/astra-child/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/astra-child/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,72 +17,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="BdInfo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdInfo.php">
+      <file leaf-file-name="TeleConnectee.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/TeleConnectee.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="49" column="40" lean-forward="true" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
-              <folding>
-                <marker date="1555486085872" expanded="true" signature="587:695" ph="INSERT INTO `informations`... " />
-                <marker date="1555486085872" expanded="true" signature="963:989" ph="SELECT * FRO... informations" />
-                <marker date="1555486085872" expanded="true" signature="1179:1221" ph="SELECT * FRO... informations" />
-                <marker date="1555486085872" expanded="true" signature="1437:1477" ph="DELETE FROM " />
-                <marker date="1555486085872" expanded="true" signature="1670:1710" ph="SELECT * FRO... informations" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="69" column="76" lean-forward="false" selection-start-line="69" selection-start-column="76" selection-end-line="69" selection-end-column="76" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewCard.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewCard.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1051">
-              <caret line="56" column="57" lean-forward="true" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
-              <folding>
-                <marker date="1555486085872" expanded="true" signature="224:679" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="262:602" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="310:321" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="359:590" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="458:470" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="565:577" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="658:668" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="946:2296" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="1885:2283" ph="{...}" />
-                <marker date="1555486085872" expanded="true" signature="2143:2276" ph="{...}" />
-                <marker date="1555486085872" expanded="true" signature="5062:6011" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="5097:5987" ph="..." />
-                <marker date="1555486085872" expanded="false" signature="5159:5204" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="5205:5963" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="5265:5936" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="6232:6248" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="6369:8263" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="6424:6865" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="6486:6628" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="6921:7312" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="6983:7103" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="7367:7813" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="7430:7571" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="7869:8101" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="8385:10236" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="8432:8857" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="8486:8612" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="8904:9260" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="8958:9055" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="9307:9735" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="9361:9486" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="9781:9983" ph="..." />
-                <marker date="1555486085872" expanded="true" signature="10344:10425" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewInformation.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ViewInformation.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewInformation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-              <folding />
+            <state relative-caret-position="447">
+              <caret line="89" column="24" lean-forward="false" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
+              <folding>
+                <marker date="1556265479102" expanded="true" signature="591:940" ph="..." />
+                <marker date="1556265479102" expanded="true" signature="625:940" ph="..." />
+                <marker date="1556265479102" expanded="true" signature="650:940" ph="..." />
+                <marker date="1556265479102" expanded="true" signature="1034:1598" ph="..." />
+                <marker date="1556265479102" expanded="true" signature="1063:1299" ph="..." />
+                <marker date="1556265479102" expanded="true" signature="1111:1269" ph="..." />
+                <marker date="1556265479102" expanded="true" signature="2122:2861" ph="..." />
+                <marker date="1556265479102" expanded="true" signature="2156:2861" ph="..." />
+                <marker date="1556265479102" expanded="true" signature="2217:2861" ph="..." />
+                <marker date="1556265479102" expanded="true" signature="2301:2861" ph="..." />
+                <marker date="1556265479102" expanded="true" signature="2438:2727" ph="..." />
+                <marker date="1556265479102" expanded="true" signature="3479:3600" ph="..." />
+                <marker date="1556265479102" expanded="true" signature="3696:3817" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,8 +54,8 @@
       <file leaf-file-name="Information.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="52" column="31" lean-forward="true" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+            <state relative-caret-position="153">
+              <caret line="86" column="22" lean-forward="false" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -101,8 +64,28 @@
       <file leaf-file-name="Info.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+            <state relative-caret-position="1092">
+              <caret line="57" column="21" lean-forward="false" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/astra-child/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/astra-child/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -111,23 +94,15 @@
       <file leaf-file-name="BdInformation.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdInformation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="64" column="10" lean-forward="true" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
+            <state relative-caret-position="2016">
+              <caret line="101" column="24" lean-forward="false" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
               <folding>
-                <marker date="1555589795969" expanded="true" signature="743:895" ph="INSERT INTO `informations`... " />
-                <marker date="1555589795969" expanded="true" signature="1332:1377" ph="DELETE FROM " />
-                <marker date="1555589795969" expanded="true" signature="1556:1582" ph="SELECT * FRO... informations" />
+                <marker date="1556187156350" expanded="true" signature="746:898" ph="INSERT INTO `informations`... " />
+                <marker date="1556187156350" expanded="true" signature="1340:1385" ph="DELETE FROM " />
+                <marker date="1556187156350" expanded="true" signature="1669:1695" ph="SELECT * FRO... informations" />
+                <marker date="1556187156350" expanded="true" signature="2060:2104" ph="SELECT * FRO... informations" />
+                <marker date="1556187156350" expanded="true" signature="2354:2394" ph="SELECT * FRO... informations" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeleConnectee.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/TeleConnectee.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="68" column="61" lean-forward="false" selection-start-line="68" selection-start-column="61" selection-end-line="68" selection-end-column="61" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -146,6 +121,8 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdInfo.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdInformation.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/TeleConnectee.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/astra-child/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/astra-child/style.css" />
         <option value="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewInformation.php" />
       </list>
@@ -180,8 +157,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,6 +208,42 @@
               <item name="TeleConnecteeAmu" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="wpTv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wpTv" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wpTv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wpTv" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="astra" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wpTv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wpTv" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="astra" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="inc" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wpTv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wpTv" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="astra" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="languages" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wpTv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wpTv" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="astra-child" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -272,25 +285,26 @@
       <workItem from="1555483383168" duration="1113000" />
       <workItem from="1555486472992" duration="8272000" />
       <workItem from="1555570654038" duration="21882000" />
+      <workItem from="1556178147998" duration="13813000" />
+      <workItem from="1556262515514" duration="2961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37403000" />
+    <option name="totallyTimeSpent" value="54177000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26100966" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26852846" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -298,6 +312,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -331,360 +346,45 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewCard.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdInformation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="2016">
+          <caret line="101" column="24" lean-forward="true" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
           <folding>
-            <marker date="1555486085872" expanded="true" signature="224:679" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="262:602" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="310:321" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="359:590" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="458:470" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="565:577" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="658:668" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="946:2296" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="1885:2283" ph="{...}" />
-            <marker date="1555486085872" expanded="true" signature="2143:2276" ph="{...}" />
-            <marker date="1555486085872" expanded="true" signature="5062:6011" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="5097:5987" ph="..." />
-            <marker date="1555486085872" expanded="false" signature="5159:5204" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="5205:5963" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="5265:5936" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="6232:6248" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="6369:8263" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="6424:6865" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="6486:6628" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="6921:7312" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="6983:7103" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="7367:7813" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="7430:7571" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="7869:8101" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="8385:10236" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="8432:8857" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="8486:8612" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="8904:9260" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="8958:9055" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="9307:9735" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="9361:9486" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="9781:9983" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="10344:10425" ph="..." />
+            <marker date="1556187156350" expanded="true" signature="746:898" ph="INSERT INTO `informations`... " />
+            <marker date="1556187156350" expanded="true" signature="1340:1385" ph="DELETE FROM " />
+            <marker date="1556187156350" expanded="true" signature="1669:1695" ph="SELECT * FRO... informations" />
+            <marker date="1556187156350" expanded="true" signature="2060:2104" ph="SELECT * FRO... informations" />
+            <marker date="1556187156350" expanded="true" signature="2354:2394" ph="SELECT * FRO... informations" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewInformation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3675">
-          <caret line="180" column="1" lean-forward="true" selection-start-line="180" selection-start-column="1" selection-end-line="180" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="1365">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <marker date="1556265479102" expanded="true" signature="591:940" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="625:940" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="650:940" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="1034:1598" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="1063:1299" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="1111:1269" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2122:2861" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2156:2861" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2217:2861" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2301:2861" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2438:2727" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="3479:3600" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="3696:3817" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdInfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <marker date="1555486085872" expanded="true" signature="587:695" ph="INSERT INTO `informations`... " />
-            <marker date="1555486085872" expanded="true" signature="963:989" ph="SELECT * FRO... informations" />
-            <marker date="1555486085872" expanded="true" signature="1179:1221" ph="SELECT * FRO... informations" />
-            <marker date="1555486085872" expanded="true" signature="1437:1477" ph="DELETE FROM " />
-            <marker date="1555486085872" expanded="true" signature="1670:1710" ph="SELECT * FRO... informations" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdInformation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <marker date="1555589795969" expanded="true" signature="743:895" ph="INSERT INTO `informations`... " />
-            <marker date="1555589795969" expanded="true" signature="1332:1377" ph="DELETE FROM " />
-            <marker date="1555589795969" expanded="true" signature="1556:1582" ph="SELECT * FRO... informations" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1555489155604" expanded="true" signature="21379:21483" ph="SELECT meta_... ${$wpdb-&gt;postmeta}" />
-            <marker date="1555489155604" expanded="true" signature="22572:22676" ph="SELECT post_... ${$wpdb-&gt;postmeta}" />
-            <marker date="1555489155604" expanded="true" signature="43494:43563" ph="SELECT optio... ${$wpdb-&gt;options}" />
-            <marker date="1555489155604" expanded="true" signature="165377:165471" ph="SELECT post_... ${$wpdb-&gt;postmeta}" />
-            <marker date="1555489155604" expanded="true" signature="165954:166054" ph="SELECT comme... ${$wpdb-&gt;commentmeta}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/default-filters.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/wlwmanifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/rss.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/class-feed.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/wp-rss-aggregator/includes/feed-access.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11214">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/astra/inc/blog/blog-config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-693">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/rewrite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8795">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/feed-rss2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1240">
-          <caret line="118" column="33" lean-forward="true" selection-start-line="118" selection-start-column="33" selection-end-line="118" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/feed.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="80" column="6" lean-forward="true" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
-          <folding>
-            <marker date="1555408353828" expanded="true" signature="16168:16342" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/default-filters.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/wlwmanifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/rss.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/rss-alerts.php" />
-    <entry file="file://$PROJECT_DIR$/wp-includes/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="991">
-          <caret line="6889" column="0" lean-forward="false" selection-start-line="6889" selection-start-column="0" selection-end-line="6889" selection-end-column="0" />
-          <folding>
-            <marker date="1555489155604" expanded="true" signature="21379:21483" ph="SELECT meta_... ${$wpdb-&gt;postmeta}" />
-            <marker date="1555489155604" expanded="true" signature="22572:22676" ph="SELECT post_... ${$wpdb-&gt;postmeta}" />
-            <marker date="1555489155604" expanded="true" signature="43494:43563" ph="SELECT optio... ${$wpdb-&gt;options}" />
-            <marker date="1555489155604" expanded="true" signature="165377:165471" ph="SELECT post_... ${$wpdb-&gt;postmeta}" />
-            <marker date="1555489155604" expanded="true" signature="165954:166054" ph="SELECT comme... ${$wpdb-&gt;commentmeta}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2325">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1555486085872" expanded="true" signature="394:742" ph="INSERT INTO `wp_users`... " />
-            <marker date="1555486085872" expanded="true" signature="1520:1844" ph="INSERT INTO `wp_users`... " />
-            <marker date="1555486085872" expanded="true" signature="2526:2572" ph="SELECT * FRO... wp_users" />
-            <marker date="1555486085872" expanded="true" signature="3673:3718" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <marker date="1555486085872" expanded="false" signature="265:296" ph="..." />
-            <marker date="1555486085872" expanded="false" signature="344:500" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="501:1946" ph="..." />
-            <marker date="1555486085872" expanded="false" signature="518:761" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="762:1357" ph="..." />
-            <marker date="1555486085872" expanded="false" signature="813:862" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="1003:1061" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="1120:1347" ph="..." />
-            <marker date="1555486085872" expanded="false" signature="1193:1212" ph="..." />
-            <marker date="1555486085872" expanded="false" signature="1374:1397" ph="..." />
-            <marker date="1555486085872" expanded="false" signature="1549:1575" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="1576:1936" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="1586:1740" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="1609:1669" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="1685:1740" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="1744:1928" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="1767:1841" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="1857:1928" ph="..." />
-            <marker date="1555486085872" expanded="false" signature="1975:2088" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="2089:3489" ph="..." />
-            <marker date="1555486085872" expanded="false" signature="2106:2347" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="2348:2941" ph="..." />
-            <marker date="1555486085872" expanded="false" signature="2398:2447" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="2598:2658" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="2716:2930" ph="..." />
-            <marker date="1555486085872" expanded="false" signature="2961:2984" ph="..." />
-            <marker date="1555486085872" expanded="false" signature="3164:3190" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="3191:3478" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="3202:3357" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="3226:3286" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="3302:3357" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="3361:3470" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="3385:3470" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="3578:3706" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="3747:5806" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="3827:5790" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="3868:4199" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="4004:4178" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="4276:5771" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="4319:5750" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="4402:4955" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="4446:4513" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="4576:4930" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="5025:5727" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="5069:5137" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="5200:5702" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="5835:6344" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="5877:6344" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="5898:6315" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="5939:6294" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="6335:6344" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="6459:7053" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="7313:9487" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="7360:7777" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="7414:7538" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="7824:8250" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="7878:8005" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="8291:8707" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="8445:8686" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="8748:9234" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="8903:9213" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="9889:10017" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="10058:11345" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="10138:11329" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="10179:10510" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="10315:10489" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="10587:11310" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="10630:11289" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="10713:11266" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="10757:10824" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="10887:11241" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="11374:11857" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="11404:11857" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="11425:11828" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="11446:11807" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="11848:11857" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="11955:12452" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="12581:13771" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="12628:13045" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="12682:12806" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="13092:13518" ph="..." />
-            <marker date="1555486085872" expanded="true" signature="13146:13273" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/wp-db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="1175" column="16" lean-forward="true" selection-start-line="1175" selection-start-column="16" selection-end-line="1175" selection-end-column="16" />
-          <folding>
-            <marker date="1555408356065" expanded="true" signature="24450:24457" ph="..." />
-            <marker date="1555408356065" expanded="true" signature="41994:42001" ph="..." />
-            <marker date="1555408356065" expanded="true" signature="46787:46794" ph="..." />
-            <marker date="1555408356065" expanded="true" signature="62004:62038" ph="UPDATE `${$t... " />
-            <marker date="1555408356065" expanded="true" signature="63997:64024" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/mysqli/mysqli.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="2145" column="27" lean-forward="true" selection-start-line="2145" selection-start-column="27" selection-end-line="2145" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdInfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="924">
           <caret line="49" column="40" lean-forward="true" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
           <folding>
             <marker date="1555486085872" expanded="true" signature="587:695" ph="INSERT INTO `informations`... " />
@@ -696,37 +396,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/TeleConnectee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="68" column="61" lean-forward="false" selection-start-line="68" selection-start-column="61" selection-end-line="68" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdInformation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="64" column="10" lean-forward="true" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
-          <folding>
-            <marker date="1555589795969" expanded="true" signature="743:895" ph="INSERT INTO `informations`... " />
-            <marker date="1555589795969" expanded="true" signature="1332:1377" ph="DELETE FROM " />
-            <marker date="1555589795969" expanded="true" signature="1556:1582" ph="SELECT * FRO... informations" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewCard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1051">
+        <state relative-caret-position="1071">
           <caret line="56" column="57" lean-forward="true" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
           <folding>
             <marker date="1555486085872" expanded="true" signature="224:679" ph="..." />
@@ -768,8 +440,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="52" column="31" lean-forward="true" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+        <state relative-caret-position="987">
+          <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1176">
+          <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdInformation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1239">
+          <caret line="64" column="10" lean-forward="true" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
+          <folding>
+            <marker date="1556187156350" expanded="true" signature="746:898" ph="INSERT INTO `informations`... " />
+            <marker date="1556187156350" expanded="true" signature="1340:1385" ph="DELETE FROM " />
+            <marker date="1556187156350" expanded="true" signature="1669:1695" ph="SELECT * FRO... informations" />
+            <marker date="1556187156350" expanded="true" signature="2060:2104" ph="SELECT * FRO... informations" />
+            <marker date="1556187156350" expanded="true" signature="2354:2394" ph="SELECT * FRO... informations" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/TeleConnectee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -777,7 +479,446 @@
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewInformation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <marker date="1556265479102" expanded="true" signature="591:940" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="625:940" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="650:940" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="1034:1598" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="1063:1299" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="1111:1269" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2122:2861" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2156:2861" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2217:2861" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2301:2861" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2438:2727" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="3479:3600" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="3696:3817" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewCard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1555486085872" expanded="true" signature="224:679" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="262:602" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="310:321" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="359:590" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="458:470" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="565:577" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="658:668" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="946:2296" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="1885:2283" ph="{...}" />
+            <marker date="1555486085872" expanded="true" signature="2143:2276" ph="{...}" />
+            <marker date="1555486085872" expanded="true" signature="5062:6011" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="5097:5987" ph="..." />
+            <marker date="1555486085872" expanded="false" signature="5159:5204" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="5205:5963" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="5265:5936" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="6232:6248" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="6369:8263" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="6424:6865" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="6486:6628" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="6921:7312" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="6983:7103" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="7367:7813" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="7430:7571" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="7869:8101" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="8385:10236" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="8432:8857" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="8486:8612" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="8904:9260" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="8958:9055" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="9307:9735" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="9361:9486" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="9781:9983" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="10344:10425" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewInformation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1556265479102" expanded="true" signature="591:940" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="625:940" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="650:940" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="1034:1598" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="1063:1299" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="1111:1269" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2122:2861" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2156:2861" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2217:2861" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2301:2861" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2438:2727" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="3479:3600" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="3696:3817" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3675">
+          <caret line="180" column="1" lean-forward="true" selection-start-line="180" selection-start-column="1" selection-end-line="180" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <marker date="1555486085872" expanded="true" signature="587:695" ph="INSERT INTO `informations`... " />
+            <marker date="1555486085872" expanded="true" signature="963:989" ph="SELECT * FRO... informations" />
+            <marker date="1555486085872" expanded="true" signature="1179:1221" ph="SELECT * FRO... informations" />
+            <marker date="1555486085872" expanded="true" signature="1437:1477" ph="DELETE FROM " />
+            <marker date="1555486085872" expanded="true" signature="1670:1710" ph="SELECT * FRO... informations" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdInformation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <marker date="1556187156350" expanded="true" signature="746:898" ph="INSERT INTO `informations`... " />
+            <marker date="1556187156350" expanded="true" signature="1340:1385" ph="DELETE FROM " />
+            <marker date="1556187156350" expanded="true" signature="1669:1695" ph="SELECT * FRO... informations" />
+            <marker date="1556187156350" expanded="true" signature="2060:2104" ph="SELECT * FRO... informations" />
+            <marker date="1556187156350" expanded="true" signature="2354:2394" ph="SELECT * FRO... informations" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/default-filters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/wlwmanifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/rss.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/class-feed.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/wp-rss-aggregator/includes/feed-access.php" />
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/astra/inc/blog/blog-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-693">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/rewrite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8795">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/feed-rss2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1240">
+          <caret line="118" column="33" lean-forward="true" selection-start-line="118" selection-start-column="33" selection-end-line="118" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/feed.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="80" column="6" lean-forward="true" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/default-filters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/wlwmanifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/rss.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/rss-alerts.php" />
+    <entry file="file://$PROJECT_DIR$/wp-includes/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="991">
+          <caret line="6889" column="0" lean-forward="false" selection-start-line="6889" selection-start-column="0" selection-end-line="6889" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2325">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/wp-db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="1175" column="16" lean-forward="true" selection-start-line="1175" selection-start-column="16" selection-end-line="1175" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/mysqli/mysqli.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="2145" column="27" lean-forward="true" selection-start-line="2145" selection-start-column="27" selection-end-line="2145" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="49" column="40" lean-forward="false" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+          <folding>
+            <marker date="1555486085872" expanded="true" signature="587:695" ph="INSERT INTO `informations`... " />
+            <marker date="1555486085872" expanded="true" signature="963:989" ph="SELECT * FRO... informations" />
+            <marker date="1555486085872" expanded="true" signature="1179:1221" ph="SELECT * FRO... informations" />
+            <marker date="1555486085872" expanded="true" signature="1437:1477" ph="DELETE FROM " />
+            <marker date="1555486085872" expanded="true" signature="1670:1710" ph="SELECT * FRO... informations" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/DAO/DAOProf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-944">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/DAO/DAOUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewCard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1889">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <marker date="1555486085872" expanded="true" signature="224:679" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="262:602" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="310:321" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="359:590" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="458:470" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="565:577" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="658:668" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="946:2296" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="1885:2283" ph="{...}" />
+            <marker date="1555486085872" expanded="true" signature="2143:2276" ph="{...}" />
+            <marker date="1555486085872" expanded="true" signature="5062:6011" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="5097:5987" ph="..." />
+            <marker date="1555486085872" expanded="false" signature="5159:5204" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="5205:5963" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="5265:5936" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="6232:6248" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="6369:8263" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="6424:6865" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="6486:6628" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="6921:7312" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="6983:7103" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="7367:7813" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="7430:7571" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="7869:8101" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="8385:10236" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="8432:8857" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="8486:8612" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="8904:9260" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="8958:9055" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="9307:9735" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="9361:9486" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="9781:9983" ph="..." />
+            <marker date="1555486085872" expanded="true" signature="10344:10425" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdInformation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2016">
+          <caret line="101" column="24" lean-forward="false" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
+          <folding>
+            <marker date="1556187156350" expanded="true" signature="746:898" ph="INSERT INTO `informations`... " />
+            <marker date="1556187156350" expanded="true" signature="1340:1385" ph="DELETE FROM " />
+            <marker date="1556187156350" expanded="true" signature="1669:1695" ph="SELECT * FRO... informations" />
+            <marker date="1556187156350" expanded="true" signature="2060:2104" ph="SELECT * FRO... informations" />
+            <marker date="1556187156350" expanded="true" signature="2354:2394" ph="SELECT * FRO... informations" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1092">
+          <caret line="57" column="21" lean-forward="false" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/TeleConnectee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="69" column="76" lean-forward="false" selection-start-line="69" selection-start-column="76" selection-end-line="69" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="86" column="22" lean-forward="false" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewInformation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="89" column="24" lean-forward="false" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
+          <folding>
+            <marker date="1556265479102" expanded="true" signature="591:940" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="625:940" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="650:940" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="1034:1598" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="1063:1299" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="1111:1269" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2122:2861" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2156:2861" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2217:2861" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2301:2861" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="2438:2727" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="3479:3600" ph="..." />
+            <marker date="1556265479102" expanded="true" signature="3696:3817" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/astra-child/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/astra/inc/class-astra-mobile-header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/astra/inc/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/astra/languages/astra.pot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2961">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/astra/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/astra-child/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding />
         </state>
       </provider>
