@@ -82,7 +82,7 @@ echo'                        </div>
     } //DisplayInformationView()
 
     public function displayInformationCreation(){
-        echo '<form id="creation_info">
+        echo '<form id="creation_info" action="">
                   Titre : <input type="text" name="title" placeholder="Inserer un titre"> </br>
                   Contenu : <textarea name="content"> ...</textarea> </br>
                   Ajouter une image : <button name="image" value="ajoutImage"> Ajouter </button> </br>

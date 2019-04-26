@@ -124,6 +124,6 @@ class Information
     }
 
     public function createInformationProcessing(){
-
+        echo 'hello';
     }
 }
