@@ -75,7 +75,7 @@ class Information
             array_push($endDateList, $endDate);
             array_push($contentList,$content) ;
         }
-        $this->viewInformation->displayInformationList($idList, $titleList,$authorList,$contentList, $creationDateList, $endDateList);
+        $this->viewInformation->displayInformationManagement($idList, $titleList,$authorList,$contentList, $creationDateList, $endDateList);
     } // informationList()
 
     /**

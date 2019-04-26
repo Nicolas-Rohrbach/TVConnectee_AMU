@@ -9,7 +9,7 @@
 class ViewInformation
 {
     /**
-     * Affiche toute la liste des informations présente dans la BD
+     * Affiche toute la page de gestions des informations
      * @param $id
      * @param $title
      * @param $author
@@ -17,7 +17,7 @@ class ViewInformation
      * @param $creationDate
      * @param $endDate
      */
-    public function displayInformationList($id, $title, $author, $content, $creationDate, $endDate) {
+    public function displayInformationManagement($id, $title, $author, $content, $creationDate, $endDate) {
         echo '
            <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/formProcessing.js"></script>
            <form name="formInfo" method="post">
@@ -50,14 +50,14 @@ class ViewInformation
            <button type="submit" value="supprimer" name="Supprimer" onclick="formInformationDelete()" class="btn btn-danger"> Supprimer </button>
            <button type="submit" value="modifier" name="Modifier" onclick="formInformationChange()" class="btn btn-info"> modifier </button>
             </form>';
-    } //displayInformationList()
+    } //displayInformationManagement()
 
 
     public function displayInformationView($title, $content){
         $cpt = 0;
         echo '<div class="container-fluid">
                 <div class="row">
-                    <div id="information" class="col-sm-5">
+                    <div id="information_carousel" class="col-sm-5">
                         <div id="demo" class="carousel slide" data-ride="carousel">
                             
                             <!--The slides -->
@@ -74,9 +74,7 @@ class ViewInformation
 echo'                        </div>
                             </div>
                         </div>';
-
-
-    }
+    } //DisplayInformationView()
 
 
 //    public function displayChangeInfo($title, $content, $endDate) {
