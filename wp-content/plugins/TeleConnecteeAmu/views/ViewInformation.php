@@ -40,7 +40,7 @@ class ViewInformation extends ViewG
                         </td>
                         <td>'.$title[$i].'</td> 
                         <td>'.$author[$i].'</td>
-                        <td class="contentInfo">'.$content[$i].'</td>
+                        <td>'.$content[$i].'</td>
                         <td>'.$creationDate[$i].'</td>
                         <td>'.$endDate[$i].'</td>
                     </tr>';
@@ -48,7 +48,7 @@ class ViewInformation extends ViewG
        echo  '</table> 
               </div>
            <button type="submit" value="supprimer" name="deleteInfo" class="btn btn-danger"> Supprimer </button>
-           <button type="submit" value="modifier" name="changeInfo" class="btn btn-info"> Modifier </button>
+           <a href="http://'.$_SERVER['HTTP_HOST'].'/modification-information/" type="submit" value="modifier" name="changeInfo" class="btn btn-info"> Modifier </a>
             </form>';
     } //displayInformationManagement()
 
@@ -98,11 +98,11 @@ echo'                        </div>
     public function displayModifyInformationForm($title,$content,$endDate){
         $dateMin = date('Y-m-d',strtotime("+1 day"));
         echo '<form id="modify_info" method="post">
-                   Titre : <input type="text" name="titleInfo" placeholder="'.$title.'" required> </br>
+                   Titre : <input type="text" name="titleInfo" value="'.$title.'" required> </br>
                   Contenu : <textarea name="contentInfo">'.$content.'</textarea> </br>
                   Ajouter une image : <button name="image" value="ajoutImage"> Ajouter </button> </br>
                   Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" required > </br>
-                  <input type="submit" value="modifInfo" name="modifInfo">
+                  <input type="submit" value="Modifier" name="modifInfo">
               </form>';
     }
 }

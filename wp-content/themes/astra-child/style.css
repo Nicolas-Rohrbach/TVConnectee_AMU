@@ -52,9 +52,13 @@ td img {
 }
 
 
-#creation_info input{
+form input{
 	margin : 3px;
 }
-#creation_info button{
+form button{
 	margin : 3px;
+}
+
+#modify_info {
+	margin-top: 5%;
 }

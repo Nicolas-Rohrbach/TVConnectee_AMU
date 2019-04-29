@@ -77,15 +77,20 @@ class Information
             $this->deleteInformation($infoSelectedID);
             $this->view->refreshPage();
         }
-        elseif (isset($actionChange)) {
-            $result = $this->DB->getInformationbyID($infoSelectedID);
-            $title = $result['title'];
-            $content = $result['content'];
-            $endDate = date('Y-m-d',strtotime($result['end_date']));
-
-            $this->view->displayModifyInformationForm($title,$content,$endDate);
-        }
+//        elseif (isset($actionChange)) {
+//            $result = $this->DB->getInformationbyID($infoSelectedID);
+//            $title = $result['title'];
+//            $content = $result['content'];
+//            $endDate = date('Y-m-d',strtotime($result['end_date']));
+//
+//            $this->view->displayModifyInformationForm($title,$content,$endDate);
+//
+//        }
     } // informationList()
+
+    public function modifyInformation($id) {
+        echo '<P>hello</P>';
+    }
 
     /**
      * Verifie si la date d'expiration de l'info est dépassé et la supprime

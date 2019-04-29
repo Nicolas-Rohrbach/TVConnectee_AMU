@@ -70,6 +70,7 @@ add_action('hookWeather',array($weather,'displayMyWeather'));
 add_action('handleInfos',array($information,'informationList'), 0, 3);
 add_action('displayInformations',array($information,'displayInformationMain'));
 add_action('add_info',array($information,'insertInformation'), 0, 4);
+add_action('modify_Info',array($information,'modifyInformation'), 0, 1);
 
 add_action('test',array($information,'insertInformation'));
 
