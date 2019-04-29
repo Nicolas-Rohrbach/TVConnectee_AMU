@@ -124,7 +124,6 @@ class ViewStudent extends ViewG
                     </select>
               </div>
               <input name="modifvalider" type="submit" value="Valider">
-              <button name="modifvalider"  type="submit" class="btn btn-primary btn-lg mb-3" value="Valider">Valider</button>
             <a class="btn btn-dark btn-lg mb-3" href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs">Annuler</a>
          </form>';
     }

@@ -59,11 +59,33 @@ class CodeAdeManager extends Model
         }
     }
 
+    public function modifyCode($id, $title, $code, $type){
+        $req = $this->getBdd()->prepare('UPDATE code_ade SET title=:title, code=:code, type=:type WHERE ID=:id');
+
+        $req->bindParam(':id', $id);
+        $req->bindParam(':title', $title);
+        $req->bindParam(':code', $code);
+        $req->bindParam(':type', $type);
+
+        $req->execute();
+    }
+
     public function deleteCode($id){
-        $this->deleteTuple('code_Ade',$id);
+        $this->deleteTuple('code_ade',$id);
     }
 
     public function getAllCode(){
         return parent::getAll('code_ade');
+    }
+
+    public function getCode($id){
+        $req = $this->getBdd()->prepare('SELECT * FROM code_ade WHERE ID = :id');
+        $req->bindParam(':id', $id);
+        $req->execute();
+        while ($data = $req->fetch()) {
+            $var[] = $data;
+        }
+        return $var;
+        $req->closeCursor();
     }
 }

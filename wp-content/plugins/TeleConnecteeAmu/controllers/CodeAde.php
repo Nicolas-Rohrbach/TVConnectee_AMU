@@ -6,11 +6,14 @@
  * Time: 09:53
  */
 
-class CodeAde
+class CodeAde extends ControllerG
 {
     private $view;
     private $model;
 
+    /**
+     * CodeAde constructor.
+     */
     public function __construct(){
         $this->view = new ViewCodeAde();
         $this->model = new CodeAdeManager();
@@ -41,7 +44,34 @@ class CodeAde
      * Display all codes from the databass
      */
     public function displayAllCodes(){
-        $results[] = $this->model->getAllCode();
+        $results = $this->model->getAllCode();
         $this->view->displayAllCode($results);
+    }
+
+    /**
+     * Delete code
+     * @param $id
+     */
+    public function deleteMyCode($id){
+        if(isset($id)){
+            $this->model->deleteCode($id);
+            $this->view->refreshPage();
+        }
+    }
+
+    /**
+     * Modify the code
+     */
+    public function modifyMyCode(){
+        $url = filter_input(INPUT_GET, 'url');
+
+        if (empty($url)) {
+            $url = 'Home';
+        }
+
+        $urlExpl = explode('/', $url);
+        echo $url;
+        $result = $this->model->getCode($this->getMyIdUrl(38));
+        $this->view->displayModifyCode($result);
     }
 }

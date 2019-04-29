@@ -7,6 +7,7 @@
  * Author URI: http://tvconnectee.alwaysdata.net/
 */
 
+include_once 'controllers/ControllerG.php';
 include_once 'models/Model.php';
 include_once 'views/ViewG.php';
 
@@ -72,15 +73,18 @@ add_action('add_teacher', array($teacher, 'insertTeacher'), 0, 1);
 add_action('add_television', array($television, 'insertTelevision'), 0, 7);
 add_action('add_secretary', array($secretary, 'insertSecretary'), 0, 6);
 add_action('add_code_ade', array($code, 'insertCode'));
+add_action('add_code_ade', array($code, 'displayAllCodes'));
 
 add_action('displayManagementUsers', array($managementusers, 'displayMyUsers'),0 , 2);
 add_action('modify_user', array($managementusers, 'ModifyMyUser'));
+add_action('modify_code_ade', array($code, 'modifyMyCode'));
 
 add_action('delete_student', array($student, 'deleteStudent'), 0, 1);
 add_action('delete_teacher', array($teacher, 'deleteTeacher'), 0, 1);
+add_action('delete_code_ade', array($code, 'deleteMyCode'), 0, 1);
 
 // Initialize plugin
-add_action('init', function() {
+add_action('init', function(){
     global $R34ICS;
     $R34ICS = new R34ICS();
 });

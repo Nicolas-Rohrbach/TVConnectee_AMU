@@ -6,7 +6,7 @@
  * Time: 10:09
  */
 
-class ManagementUsers
+class ManagementUsers extends ControllerG
 {
     private $view;
     //private $model;
@@ -30,10 +30,8 @@ class ManagementUsers
     }
 
     public function modifyMyUser(){
-        $newAdress = substr($_SERVER['REQUEST_URI'],51);
-        $id = substr($newAdress,0,-1);
         $model = new TeacherManager();
-        $result = $model->getById($id);
+        $result = $model->getById($this->getMyIdUrl(51));
 
         if($result['role'] == "etudiant"){
             $controller = new Student();

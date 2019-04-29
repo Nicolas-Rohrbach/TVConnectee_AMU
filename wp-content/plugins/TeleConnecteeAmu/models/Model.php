@@ -176,7 +176,7 @@ abstract class Model
 
     protected function deleteTuple($table, $id){
 
-        $req = $this->getBdd()->prepare('DELETE FROM '.$table.'WHERE ID = :id');
+        $req = $this->getBdd()->prepare('DELETE FROM '.$table.' WHERE ID = :id');
         $req->bindValue(':id', $id);
 
         $req->execute();
