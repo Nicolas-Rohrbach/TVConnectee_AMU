@@ -93,6 +93,10 @@ class BdInformation
         return $result;
     } //getListInformationByAuthor()
 
+    /**
+     * @param $id
+     * @return mixed
+     */
     public function getInformationbyID($id) {
      global $wpdb;
        $result = $wpdb->get_results(
@@ -100,4 +104,16 @@ class BdInformation
                $id),ARRAY_A);
      return $result;
     } //getInformation()
+
+    public function modifyInformation($id,$title,$content,$endDate) {
+        global $wpdb;
+        $req = $wpdb->prepare('UPDATE wp_users SET title=:title, content=:content, 
+                                            end_date=:end_date WHERE ID_Info=:id');
+        $req->bindParam(':id', $id);
+        $req->bindParam(':title', $title);
+        $req->bindParam(':content', $content);
+        $req->bindParam(':end_date', $endDate);
+
+        $req->execute();
+
 }

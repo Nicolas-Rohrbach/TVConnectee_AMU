@@ -78,7 +78,7 @@ class Information
             $this->view->refreshPage();
         }
         elseif (isset($actionChange)) {
-            echo 'modifier'.$infoSelectedID;
+
         }
     } // informationList()
 
