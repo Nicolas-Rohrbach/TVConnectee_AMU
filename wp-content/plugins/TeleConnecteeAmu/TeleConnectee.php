@@ -5,6 +5,7 @@ Description: Plugin de la télé connectée de l'AMU
 Version: 1.5
 Author: Alexis
 */
+include_once 'views/ViewG.php';
 include_once 'views/ViewCard.php';
 include_once 'views/ViewUser.php';
 include_once 'views/ViewInformation.php';
@@ -66,7 +67,7 @@ add_action('modifprof', array($users, 'afficherModifProf') );
 add_action('hookEDT',array($schedule,'displayMySchedule'));
 add_action('hookWeather',array($weather,'displayMyWeather'));
 
-add_action('handleInfos',array($information,'informationList'));
+add_action('handleInfos',array($information,'informationList'), 0, 3);
 add_action('displayInformations',array($information,'displayInformationMain'));
 add_action('add_info',array($information,'insertInformation'), 0, 4);
 
