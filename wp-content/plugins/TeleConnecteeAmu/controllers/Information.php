@@ -41,7 +41,7 @@ class Information
     /**
      *Récupère la liste des informations et l'affiche.
      */
-    public function informationList(){
+    public function informationList($actionDelete, $actionChange, $infoSelectedID){
 
 //        $title = 'Evenement !';
 //        $content = '<img src=http://wptv/wp-content/uploads/2019/04/totoro-poster.jpg>';
@@ -76,7 +76,16 @@ class Information
             array_push($endDateList, $endDate);
             array_push($contentList,$content) ;
         }
+
         $this->view->displayInformationManagement($idList, $titleList,$authorList,$contentList, $creationDateList, $endDateList);
+
+        if(isset($actionDelete)){
+            echo 'supprimer'.$infoSelectedID;
+        }
+        elseif (isset($actionChange)) {
+            echo 'modifier'.$infoSelectedID;
+        }
+
     } // informationList()
 
     /**

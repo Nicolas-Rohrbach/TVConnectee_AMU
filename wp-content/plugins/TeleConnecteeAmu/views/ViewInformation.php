@@ -19,7 +19,7 @@ class ViewInformation
      */
     public function displayInformationManagement($id, $title, $author, $content, $creationDate, $endDate) {
         echo '
-           <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/formProcessing.js"></script>
+        
            <form name="formInfo" method="post">
             <table class="table">
                     <tr>
@@ -35,7 +35,7 @@ class ViewInformation
                     <tr>
                         <td>
                             <div class="radio">
-                                <label><input type="radio" name="optradio" value="'.$id[$i].'" id="'.$id[$i].'" > </label>
+                                <label><input type="radio" name="radioID" value="'.$id[$i].'" > </label>
                             </div>
                         </td>
                         <td>'.$title[$i].'</td> 
@@ -47,8 +47,8 @@ class ViewInformation
        }
        echo  '</table> 
               </div>
-           <button type="submit" value="supprimer" name="Supprimer" onclick="formInformationDelete()" class="btn btn-danger"> Supprimer </button>
-           <button type="submit" value="modifier" name="Modifier" onclick="formInformationChange()" class="btn btn-info"> modifier </button>
+           <button type="submit" value="supprimer" name="deleteInfo" class="btn btn-danger"> Supprimer </button>
+           <button type="submit" value="modifier" name="changeInfo" class="btn btn-info"> Modifier </button>
             </form>';
     } //displayInformationManagement()
 
