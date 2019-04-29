@@ -39,16 +39,10 @@ class Information
     } //deleteInformation()
 
     /**
-     *Récupère la liste des informations et l'affiche.
+     *Affiche la liste des informations et modifie ou supprime l'info selectionné.
+     *
      */
     public function informationList($actionDelete, $actionChange, $infoSelectedID){
-
-//        $title = 'Evenement !';
-//        $content = '<img src=http://wptv/wp-content/uploads/2019/04/totoro-poster.jpg>';
-//        $endDate = date("2019-06-27");
-//
-//       $this->createInformation($title, $content,$endDate);
-
         $result = $this->DB->getListInformation();
 
         $idList = array();
@@ -80,12 +74,12 @@ class Information
         $this->view->displayInformationManagement($idList, $titleList,$authorList,$contentList, $creationDateList, $endDateList);
 
         if(isset($actionDelete)){
-            echo 'supprimer'.$infoSelectedID;
+            $this->deleteInformation($infoSelectedID);
+            $this->view->refreshPage();
         }
         elseif (isset($actionChange)) {
             echo 'modifier'.$infoSelectedID;
         }
-
     } // informationList()
 
     /**

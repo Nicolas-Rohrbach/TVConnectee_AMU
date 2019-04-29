@@ -6,7 +6,7 @@
  * Time: 11:35
  */
 
-class ViewInformation
+class ViewInformation extends ViewG
 {
     /**
      * Affiche toute la page de gestions des informations
@@ -94,4 +94,5 @@ echo'                        </div>
                   <input type="submit" value="createInfo" name="createInfo">
               </form>';
     } //displayInformationCreation()
+
 }

@@ -5,6 +5,7 @@ Description: Plugin de la télé connectée de l'AMU
 Version: 1.5
 Author: Alexis
 */
+include_once 'views/ViewG.php';
 include_once 'views/ViewCard.php';
 include_once 'views/ViewUser.php';
 include_once 'views/ViewInformation.php';
