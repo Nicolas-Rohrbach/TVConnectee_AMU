@@ -16,6 +16,13 @@ class StudentManager extends Model
 
     }
 
+    public function modifyStudent($id, $firstname, $lastname, $year, $group, $halfgroup, $email){
+
+        $result = $this->getById($id);
+        return $this->modifyUser($id, $result['user_login'], $result['user_pass'], $year, $group, $halfgroup, $firstname, $lastname, $email);
+
+    }
+
     public function getStudents(){
         global $wpdb;
         $result = $wpdb->get_results("SELECT * FROM wp_users WHERE role = 'etudiant'", ARRAY_A);

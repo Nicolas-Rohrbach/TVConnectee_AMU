@@ -49,6 +49,23 @@ abstract class Model
         $req->closeCursor();
     }
 
+    protected function verifyTuple($login)
+    {
+        $var = 0;
+        $req = $this->getBdd()->prepare('SELECT * FROM wp_users WHERE user_login =:login');
+        $req->bindValue(':login', $login);
+        $req->execute();
+        while ($data = $req->fetch(PDO::FETCH_ASSOC)) {
+            $var = $var + 1;
+        }
+        if ($var > 0) {
+            return true;
+        } else {
+            return false;
+        }
+        $req->closeCursor();
+    }
+
     protected function verifyNoDouble($email, $login)
     {
         $var = 0;
@@ -86,8 +103,8 @@ abstract class Model
             $req->bindParam(':annee', $year);
             $req->bindParam(':groupe', $group);
             $req->bindParam(':demiGroupe', $halfgroup);
-            $req->bindParam(':name', $lastname);
             $req->bindParam(':firstname', $firstname);
+            $req->bindParam(':name', $lastname);
             $req->bindParam(':email', $email);
             $req->bindParam(':url', $nul);
             $req->bindParam(':key', $nul);
@@ -96,13 +113,10 @@ abstract class Model
 
             $req->execute();
 
-            global $wpdb;
-
             $capa = 'wp_capabilities';
             $role = 'a:1:{s:10:"'.$role.'";b:1;}';
 
-            $result = $wpdb->get_row('SELECT * FROM `wp_users` WHERE `user_login` ="' . $login . '"', ARRAY_A);
-            $id = $result['ID'];
+            $id = lastInsertId();
 
             $req = $this->getBdd()->prepare('INSERT INTO wp_usermeta(user_id, meta_key, meta_value) VALUES (:id, :capabilities, :role)');
 
@@ -122,11 +136,50 @@ abstract class Model
 
             $req->execute();
 
+            $this->getBdd()->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
             return true;
         }
         else {
             return false;
         }
+    }
+
+    protected function modifyUser($id, $login, $pwd, $year, $group, $halfgroup, $firstname, $lastname, $email)
+    {
+        if ($this->verifyTuple($login)) {
+            $req = $this->getBdd()->prepare('UPDATE wp_users SET user_login=:login, user_pass=:pwd, annee=:annee, 
+                                            groupe=:groupe, demiGroupe=:demiGroupe, user_nicename=:name, prenom=:firstname, 
+                                            user_email=:email, display_name=:displayname WHERE ID=:id');
+
+            $display = $firstname . ' ' . $lastname;
+
+            $req->bindParam(':id', $id);
+            $req->bindParam(':login', $login);
+            $req->bindParam(':pwd', $pwd);
+            $req->bindParam(':annee', $year);
+            $req->bindParam(':groupe', $group);
+            $req->bindParam(':demiGroupe', $halfgroup);
+            $req->bindParam(':firstname', $firstname);
+            $req->bindParam(':name', $lastname);
+            $req->bindParam(':email', $email);
+            $req->bindParam(':displayname', $display);
+
+            $req->execute();
+
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    protected function deleteTuple($table, $id){
+
+        $req = $this->getBdd()->prepare('DELETE FROM '.$table.'WHERE ID = :id');
+        $req->bindValue(':id', $id);
+
+        $req->execute();
     }
 
     public function deleteUser($id){

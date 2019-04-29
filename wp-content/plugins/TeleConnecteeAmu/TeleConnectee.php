@@ -8,7 +8,11 @@
 */
 
 include_once 'models/Model.php';
-include_once 'views/ViewUser.php';
+include_once 'views/ViewG.php';
+
+include_once 'controllers/CodeAde.php';
+include_once 'models/CodeAdeManager.php';
+include_once 'views/ViewCodeAde.php';
 
 include_once 'controllers/Student.php';
 include_once 'models/StudentManager.php';
@@ -26,6 +30,9 @@ include_once 'controllers/Secretary.php';
 include_once 'models/SecretaryManager.php';
 include_once 'views/ViewSecretary.php';
 
+include_once 'controllers/ManagementUsers.php';
+include_once 'views/ViewManagementUsers.php';
+
 include_once 'models/Excel/PHPExcel/IOFactory.php';
 include_once 'models/Excel/PluginExcel.php';
 include_once 'models/DAO/DAOUser.php';
@@ -33,10 +40,8 @@ include_once 'models/DAO/DAOStudent.php';
 include_once 'models/DAO/DAOTeacher.php';
 
 include_once 'controllers/R34ICS.php';
-include_once 'views/ViewR34ICS.php';
 include_once 'controllers/Schedule.php';
 include_once 'views/ViewSchedule.php';
-
 include_once 'controllers/Weather.php';
 include_once 'views/ViewWeather.php';
 
@@ -55,26 +60,24 @@ $student = new Student();
 $teacher = new Teacher();
 $television = new Television();
 $secretary = new Secretary();
+$code = new CodeAde();
+
+$managementusers = new ManagementUsers();
 
 $schedule = new Schedule();
-$weather = new Weather();
+add_action('displaySchedule',array($schedule,'displayMySchedule'));
 
 add_action('add_student', array($student, 'insertStudent'), 0, 1);
 add_action('add_teacher', array($teacher, 'insertTeacher'), 0, 1);
 add_action('add_television', array($television, 'insertTelevision'), 0, 7);
 add_action('add_secretary', array($secretary, 'insertSecretary'), 0, 6);
+add_action('add_code_ade', array($code, 'insertCode'));
 
-add_action('display_teachers', array($teacher, 'displayAllTeachers'), 0, 1 );
-add_action('display_students', array($student, 'displayAllStudents'),0 ,1 );
+add_action('displayManagementUsers', array($managementusers, 'displayMyUsers'),0 , 2);
+add_action('modify_user', array($managementusers, 'ModifyMyUser'));
 
 add_action('delete_student', array($student, 'deleteStudent'), 0, 1);
 add_action('delete_teacher', array($teacher, 'deleteTeacher'), 0, 1);
-
-add_action('modify_student', array($student, 'displayModifyStudent'), 0, 5);
-add_action('modify_teacher', array($teacher, 'displayModifyTeacher') );
-
-add_action('displaySchedule',array($schedule,'displayMySchedule'));
-add_action('displayWeather',array($weather,'displayMyWeather'));
 
 // Initialize plugin
 add_action('init', function() {

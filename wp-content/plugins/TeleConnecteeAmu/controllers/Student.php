@@ -33,6 +33,17 @@ class Student
 
     function displayAllStudents($action){
 
+        $adresse = $_SERVER['REQUEST_URI'];
+        $id =  '';
+
+        for($i = 1; $i < strlen($adresse); ++$i){
+            if($adresse[$i] === '/'){
+                for($j = $i + 1; $j < strlen($adresse) - 1; ++$j){
+                    $id .= $adresse[$j];
+                }
+            }
+        }
+
         $result = $this->model->getStudents();
         $this->view->tabHeadStudent();
 
@@ -93,27 +104,24 @@ class Student
         $this->view->endTab();
     }
 
-    public function displayModifyStudent($action, $nom, $prenom, $annee, $groupe){
+    public function displayModifyMyStudent($result){
 
-        $adresse = $_SERVER['REQUEST_URI'];
-        $id =  '';
+        $this->view->displayModifyStudent($result['user_nicename'], $result['prenom'], $result['annee'], $result['groupe'], $result['demiGroupe']);
 
-        for($i = 1; $i < strlen($adresse); ++$i){
-            if($adresse[$i] === '/'){
-                for($j = $i + 1; $j < strlen($adresse) - 1; ++$j){
-                    $id .= $adresse[$j];
-                }
+        $action = $_POST['modifvalider'];
+        $firstname = filter_input(INPUT_POST,'modifprenom');
+        $lastname = filter_input(INPUT_POST,'modifnom');
+        $year = filter_input(INPUT_POST,'modifannee');
+        $group = filter_input(INPUT_POST,'modifgroupe');
+        $halfgroup = filter_input(INPUT_POST,'modifdemigroupe');
+
+        if($action == 'Valider'){
+            if($this->model->modifyStudent($result['ID'], $firstname, $lastname, $year, $group, $halfgroup, $result['user_email'])){
+                $this->view->refreshPage();
+            }
+            else{
+                echo "erreur";
             }
         }
-        $result = $this->model->getById($id);
-        $this->view->displayModifyStudent($result['user_nicename'], $result['prenom'], $result['annee'], $result['groupe']);
-
-        if($action === 'Valider'){
-            $this->model->deleteUser($id);
-            $this->model->insertStudent($nom, $result['user_pass'], $result['user_login'], $result['user_email'], $result['display_name'], $annee, $groupe, $result['demiGroupe'], $prenom);
-            $this->view->refreshPage();
-
-        }
-
     }
 }

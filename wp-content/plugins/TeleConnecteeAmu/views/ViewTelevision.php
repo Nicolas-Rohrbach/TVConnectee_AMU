@@ -6,7 +6,7 @@
  * Time: 10:46
  */
 
-class ViewTelevision extends ViewUser
+class ViewTelevision extends ViewG
 {
     public function displayFormTelevision() {
         echo '

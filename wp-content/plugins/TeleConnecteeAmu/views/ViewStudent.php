@@ -6,7 +6,7 @@
  * Time: 10:44
  */
 
-class ViewStudent extends ViewUser
+class ViewStudent extends ViewG
 {
     public function displayInsertImportFileStudent() {
         $this->displayInsertImportFile("Etu");
@@ -75,14 +75,14 @@ class ViewStudent extends ViewUser
     public function displayAllStudent($firstname, $lastname, $year, $group, $halfgroup, $row, $id){
         $this->displayAll($row ,$firstname, $lastname, $year,  $group, $halfgroup, false);
         echo '
-          <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/modifier-letudiant/'.$id.'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
+          <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs/modification-utilisateur/'.$id.'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
           <td class="text-center"> <button class="btn btn-danger btn-lg " name="suppretud" type="submit" value="'.$id.'" >Supprimer</button></td>
         </tr>';
     }
 
-    public function displayModifyStudent($nom, $prenom, $annee, $groupe){
+    public function displayModifyStudent($nom, $prenom, $annee, $groupe, $demiGroupe){
         echo '
-         <form action="#" method="post">
+         <form method="post">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="inputGroup-sizing-default">Nom</span>
@@ -115,8 +115,17 @@ class ViewStudent extends ViewUser
                           <option>5</option>
                     </select>
               </div>
-                <button name="modifvalider" type="submit" class="btn btn-primary btn-lg mb-3" value="Valider">Valider</button>
-            <a class="btn btn-dark btn-lg mb-3" href="http://'.$_SERVER['HTTP_HOST'].'/gestions-des-etudiants">Annuler</a>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Selectionner un demi groupe</label>
+                    <select class="form-control" name="modifdemigroupe">
+                          <option>'.$demiGroupe.'</option>
+                          <option>A</option>
+                          <option>B</option>
+                    </select>
+              </div>
+              <input name="modifvalider" type="submit" value="Valider">
+              <button name="modifvalider"  type="submit" class="btn btn-primary btn-lg mb-3" value="Valider">Valider</button>
+            <a class="btn btn-dark btn-lg mb-3" href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs">Annuler</a>
          </form>';
     }
 }

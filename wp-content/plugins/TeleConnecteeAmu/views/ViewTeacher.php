@@ -6,7 +6,7 @@
  * Time: 10:58
  */
 
-class ViewTeacher extends ViewUser
+class ViewTeacher extends ViewG
 {
     public function displayInsertImportFileTeacher() {
         $this->displayInsertImportFile("Prof");
@@ -64,7 +64,7 @@ class ViewTeacher extends ViewUser
     public function displayAllTeacher($firstname, $lastname, $code, $row, $id){
         $this->displayAll($row, $firstname, $lastname, $code, 0, 0, true);
         echo '
-          <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/modifier-le-professeur/'.$id.'" class="btn btn-primary btn-lg" name="modifprof" type="submit" value="Modifier">Modifier</a></td>
+          <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs/modification-utilisateur/'.$id.'" class="btn btn-primary btn-lg" name="modifprof" type="submit" value="Modifier">Modifier</a></td>
           <td class="text-center"> <button class="btn btn-danger btn-lg " name="supprprof" type="submit" value="'.$id.'" >Supprimer</button></td>
         </tr>';
     }
@@ -85,7 +85,7 @@ class ViewTeacher extends ViewUser
                     <input name="modifprenom" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Entrer le titre de linformation à ajouter" value="'.$prenom.'">
                 </div>
                 <button name="modifvalider" type="submit" class="btn btn-primary btn-lg mb-3" value="Valider">Valider</button>
-            <a class="btn btn-dark btn-lg mb-3" href="http://'.$_SERVER['HTTP_HOST'].'/gestions-des-professeurs">Annuler</a>
+            <a class="btn btn-dark btn-lg mb-3" href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs">Annuler</a>
          </form>';
     }
 }

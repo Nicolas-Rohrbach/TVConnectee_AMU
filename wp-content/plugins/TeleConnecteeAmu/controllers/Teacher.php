@@ -87,27 +87,15 @@ class Teacher
 
     }
 
-    public function displayModifyTeacher(){
-        $adresse = $_SERVER['REQUEST_URI'];
-        $id =  '';
+    public function displayModifyTeacher($result){
 
         $action = $_POST['modifvalider'];
         $firstname = $_POST['modifprenom'];
         $lastname  = $_POST['modifnom'];
 
-        for($i = 1; $i < strlen($adresse); ++$i){
-            if($adresse[$i] === '/'){
-                for($j = $i + 1; $j < strlen($adresse) - 1; ++$j){
-                    $id .= $adresse[$j];
-                }
-            }
-        }
-
-        $result = $this->model->getById($id);
         $this->view->displayModifyTeacher($result['user_nicename'], $result['prenom']);
 
         if($action === 'Valider'){
-            $this->model->deleteUser($id);
             $this->model->insertMyTeacher($result['user_login'], $result['user_pass'], $result['code'], $firstname, $lastname, $result['user_email']);
             $this->view->refreshPage();
         }

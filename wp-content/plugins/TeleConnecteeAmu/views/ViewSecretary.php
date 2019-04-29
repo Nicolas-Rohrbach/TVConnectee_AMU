@@ -6,7 +6,7 @@
  * Time: 10:52
  */
 
-class ViewSecretary
+class ViewSecretary extends ViewG
 {
     public function displayFormSecretary() {
         echo '
