@@ -78,7 +78,12 @@ class Information
             $this->view->refreshPage();
         }
         elseif (isset($actionChange)) {
+            $result = $this->DB->getInformationbyID($infoSelectedID);
+            $title = $result['title'];
+            $content = $result['content'];
+            $endDate = date('Y-m-d',strtotime($result['end_date']));
 
+            $this->view->displayModifyInformationForm($title,$content,$endDate);
         }
     } // informationList()
 

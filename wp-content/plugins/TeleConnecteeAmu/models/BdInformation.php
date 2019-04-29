@@ -99,13 +99,12 @@ class BdInformation
      */
     public function getInformationbyID($id) {
      global $wpdb;
-       $result = $wpdb->get_results(
-           $wpdb->prepare("SELECT * FROM informations WHERE id = %d",
-               $id),ARRAY_A);
-     return $result;
+       $result = $wpdb->get_row('SELECT * FROM informations WHERE ID_Info="'.$id.'"',ARRAY_A );
+       return $result;
     } //getInformation()
 
-    public function modifyInformation($id,$title,$content,$endDate) {
+    public function modifyInformation($id,$title,$content,$endDate)
+    {
         global $wpdb;
         $req = $wpdb->prepare('UPDATE wp_users SET title=:title, content=:content, 
                                             end_date=:end_date WHERE ID_Info=:id');
@@ -115,5 +114,6 @@ class BdInformation
         $req->bindParam(':end_date', $endDate);
 
         $req->execute();
+    }
 
 }
