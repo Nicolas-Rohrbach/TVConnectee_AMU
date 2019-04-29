@@ -119,12 +119,21 @@ class Information
 
     } // displayInformationMain()
 
+
+    /**
+     * Demande l'affichage du formulaire et creer l'information si il y a eu un submit.
+     *
+     * @param $action
+     * correspond à la valeur renvoyé par l'appuie du bouton submit (cf snippet createInfo)
+     * @param $title
+     * @param $content
+     * @param $endDates
+     */
     public function insertInformation($action, $title, $content, $endDate){
         $this->view->displayInformationCreation();
         if(isset($action)){
             $this->createInformation($title, $content, $endDate);
         }
-
-    }
+    } //insertInformation()
 
 }

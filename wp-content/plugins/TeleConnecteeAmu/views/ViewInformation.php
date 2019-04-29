@@ -81,6 +81,9 @@ echo'                        </div>
                         </div>';
     } //DisplayInformationView()
 
+    /**
+     * Affiche le formulaire de création d'une information.
+     */
     public function displayInformationCreation(){
         $dateMin = date('Y-m-d',strtotime("+1 day"));
         echo '<form id="creation_info" method="post">
@@ -90,5 +93,5 @@ echo'                        </div>
                   Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" required > </br>
                   <input type="submit" value="createInfo" name="createInfo">
               </form>';
-    }
+    } //displayInformationCreation()
 }
