@@ -8,15 +8,15 @@
 
 class Information
 {
-    private $bdInformation;
-    private $viewInformation;
+    private $DB;
+    private $view;
 
     /**
      * Information constructor.
      */
     public function __construct(){
-        $this->bdInformation = new BdInformation();
-        $this->viewInformation = new ViewInformation();
+        $this->DB = new BdInformation();
+        $this->view = new ViewInformation();
     }
 
     /**
@@ -26,7 +26,7 @@ class Information
      * @param $endDate
      */
     public function createInformation($title, $content, $endDate) {
-        $this->bdInformation->addInformationDB($title, $content, $endDate);
+        $this->DB->addInformationDB($title, $content, $endDate);
     } //addInformation()
 
     /**
@@ -35,7 +35,7 @@ class Information
      */
     public function deleteInformation($id) {
 
-        $this->bdInformation->deleteInformationDB($id);
+        $this->DB->deleteInformationDB($id);
     } //deleteInformation()
 
     /**
@@ -49,7 +49,7 @@ class Information
 //
 //       $this->createInformation($title, $content,$endDate);
 
-        $result = $this->bdInformation->getListInformation();
+        $result = $this->DB->getListInformation();
 
         $idList = array();
         $titleList = array();
@@ -76,7 +76,7 @@ class Information
             array_push($endDateList, $endDate);
             array_push($contentList,$content) ;
         }
-        $this->viewInformation->displayInformationManagement($idList, $titleList,$authorList,$contentList, $creationDateList, $endDateList);
+        $this->view->displayInformationManagement($idList, $titleList,$authorList,$contentList, $creationDateList, $endDateList);
     } // informationList()
 
     /**
@@ -97,7 +97,7 @@ class Information
     public function displayInformationMain(){
 
 
-       $result = $this->bdInformation->getListInformation();
+       $result = $this->DB->getListInformation();
 
         $titleList = array();
         $contentList = array();
@@ -115,15 +115,16 @@ class Information
             array_push($contentList,$content) ;
         }
 
-        $this->viewInformation->displayInformationView($titleList,$contentList);
+        $this->view->displayInformationView($titleList,$contentList);
 
     } // displayInformationMain()
 
-    public function informationCreationForm(){
-        $this->viewInformation->displayInformationCreation();
+    public function insertInformation($action, $title, $content, $endDate){
+        $this->view->displayInformationCreation();
+        if(isset($action)){
+            $this->createInformation($title, $content, $endDate);
+        }
+
     }
 
-    public function createInformationProcessing(){
-        echo 'hello';
-    }
 }
