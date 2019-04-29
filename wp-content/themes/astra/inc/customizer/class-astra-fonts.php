@@ -116,8 +116,8 @@ final class Astra_Fonts {
 	}
 
 	/**
-	 * Google Font ViewSchedule
-	 * Combine multiple google font in one ViewSchedule
+	 * Google Font URL
+	 * Combine multiple google font in one URL
 	 *
 	 * @link https://shellcreeper.com/?p=1476
 	 * @param array $fonts      Google Fonts array.
@@ -127,7 +127,7 @@ final class Astra_Fonts {
 	 */
 	static public function google_fonts_url( $fonts, $subsets = array() ) {
 
-		/* ViewSchedule */
+		/* URL */
 		$base_url  = '//fonts.googleapis.com/css';
 		$font_args = array();
 		$family    = array();
@@ -149,7 +149,7 @@ final class Astra_Fonts {
 			}
 		}
 
-		/* Only return ViewSchedule if font family defined. */
+		/* Only return URL if font family defined. */
 		if ( ! empty( $family ) ) {
 
 			/* Make Font Family a String */

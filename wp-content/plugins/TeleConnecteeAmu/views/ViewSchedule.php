@@ -6,7 +6,7 @@
  * Time: 11:54
  */
 
-class ViewSchedule
+class ViewSchedule extends ViewG
 {
     public function displayName($current_user) {
         echo '<h1 class="text-center text-black-50">'.$current_user->display_name. '</h1>';

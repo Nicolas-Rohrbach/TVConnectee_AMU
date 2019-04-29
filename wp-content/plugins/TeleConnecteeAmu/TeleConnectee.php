@@ -7,25 +7,43 @@
  * Author URI: http://tvconnectee.alwaysdata.net/
 */
 
-include_once 'views/ViewCard.php';
-include_once 'views/ViewUser.php';
-include_once 'controllers/Info.php';
-include_once 'models/BdInfo.php';
-include_once 'models/BdUser.php';
-include_once 'controllers/User.php';
-include_once 'Excel/PHPExcel/IOFactory.php';
-include_once 'Excel/PluginExcel.php';
-include_once 'models/DAO/DAOUser.php';
-include_once 'models/DAO/DAOEtudiant.php';
-include_once 'models/DAO/DAOProf.php';
+include_once 'models/Model.php';
+include_once 'views/ViewG.php';
 
-include_once 'views/ViewSchedule.php';
+include_once 'controllers/CodeAde.php';
+include_once 'models/CodeAdeManager.php';
+include_once 'views/ViewCodeAde.php';
+
+include_once 'controllers/Student.php';
+include_once 'models/StudentManager.php';
+include_once 'views/ViewStudent.php';
+
+include_once 'controllers/Teacher.php';
+include_once 'models/TeacherManager.php';
+include_once 'views/ViewTeacher.php';
+
+include_once 'controllers/Television.php';
+include_once 'models/TelevisionManager.php';
+include_once 'views/ViewTelevision.php';
+
+include_once 'controllers/Secretary.php';
+include_once 'models/SecretaryManager.php';
+include_once 'views/ViewSecretary.php';
+
+include_once 'controllers/ManagementUsers.php';
+include_once 'views/ViewManagementUsers.php';
+
+include_once 'models/Excel/PHPExcel/IOFactory.php';
+include_once 'models/Excel/PluginExcel.php';
+include_once 'models/DAO/DAOUser.php';
+include_once 'models/DAO/DAOStudent.php';
+include_once 'models/DAO/DAOTeacher.php';
+
+include_once 'controllers/R34ICS.php';
 include_once 'controllers/Schedule.php';
+include_once 'views/ViewSchedule.php';
 include_once 'controllers/Weather.php';
 include_once 'views/ViewWeather.php';
-include_once 'controllers/R34ICS.php';
-include_once 'views/ViewR34ICS.php';
-
 
 add_action("wp_head", "mfp_card");
 define('ROOT', dirname(__FILE__));
@@ -38,31 +56,28 @@ function mfp_Card()
 ';
 }
 
-$info = new Info();
-$users = new User();
+$student = new Student();
+$teacher = new Teacher();
+$television = new Television();
+$secretary = new Secretary();
+$code = new CodeAde();
+
+$managementusers = new ManagementUsers();
+
 $schedule = new Schedule();
-$weather = new Weather();
+add_action('displaySchedule',array($schedule,'displayMySchedule'));
 
-add_action('HookAlexis', array( $info, 'affichage_infos_pages' ) );
-add_action('infosMobile', array($info, 'affichage_infos_mobile' ) );
+add_action('add_student', array($student, 'insertStudent'), 0, 1);
+add_action('add_teacher', array($teacher, 'insertTeacher'), 0, 1);
+add_action('add_television', array($television, 'insertTelevision'), 0, 7);
+add_action('add_secretary', array($secretary, 'insertSecretary'), 0, 6);
+add_action('add_code_ade', array($code, 'insertCode'));
 
-add_action('insert_info', array( $info, 'traitement_formulaire_info'), 0, 4);
-add_action('HookAlexis', array( $info, 'suppr_info'), 0, 2);
-add_action('modif_info', array( $info, 'modifier_info'), 0, 4);
+add_action('displayManagementUsers', array($managementusers, 'displayMyUsers'),0 , 2);
+add_action('modify_user', array($managementusers, 'ModifyMyUser'));
 
-add_action('ajouter_user', array($users, 'insert_user'), 0, 3);
-
-add_action('afficher_prof', array($users, 'afficherLesProf'), 0, 1 );
-add_action('afficher_etudiant', array($users, 'afficherLesEtudiants'),0 ,1 );
-
-add_action('supprimerEtudiant', array($users, 'supprEtudiant'), 0, 1);
-add_action('supprimerProf', array($users, 'supprProf'), 0, 1);
-
-add_action('modifetud', array($users, 'afficherModifEtudiant'), 0, 5);
-add_action('modifprof', array($users, 'afficherModifProf') );
-
-add_action('hookEDT',array($schedule,'displayMySchedule'));
-add_action('hookWeather',array($weather,'displayMyWeather'));
+add_action('delete_student', array($student, 'deleteStudent'), 0, 1);
+add_action('delete_teacher', array($teacher, 'deleteTeacher'), 0, 1);
 
 // Initialize plugin
 add_action('init', function() {

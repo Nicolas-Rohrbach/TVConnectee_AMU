@@ -1,3 +1,7 @@
+v1.8.2
+- Fix: Hide "Cart" text appearing in the WooCommerce cart in the header.
+- Fix: Anchors inside blockquote inheriting blockquote text color, hence challenging to distinguish them as links.
+
 v1.8.1
 - Fix: Breadcrumb link colors not working in the customizer preview.
 - Fix: Refactored some functions for breadcrumb.

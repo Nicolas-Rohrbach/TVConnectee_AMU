@@ -2,918 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f21d812e-ce81-44c8-afb6-f9623108a598" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mu-plugins/teleConnecteeAmu-functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewR34ICS.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/generateUrlADE.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/is_connected.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/themes/astra-child/login/bg_amu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/themes/astra-child/login/key165_cyan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/themes/astra-child/login/login-style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/themes/astra-child/login/logo_amu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/themes/astra-child/login/user148_cyan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/themes/astra-child/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/CodeAdeManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewManagementUsers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/plugins/wordpress-importer-fr_FR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/plugins/wordpress-importer-fr_FR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/themes/oceanwp-fr_FR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/themes/oceanwp-fr_FR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/themes/twentynineteen-fr_FR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/themes/twentynineteen-fr_FR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/themes/twentyseventeen-fr_FR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/themes/twentyseventeen-fr_FR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/themes/twentysixteen-fr_FR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/themes/twentysixteen-fr_FR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/Excel/vide.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/Excel/vide.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/R34ICS.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/R34ICS.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/assets/room34_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/assets/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/assets/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-de_DE.mo" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-de_DE.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-el.mo" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-el.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-en_AU.mo" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-en_AU.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-es_MX.mo" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-es_MX.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-fi.mo" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-fi.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-fr_FR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-fr_FR.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-hu_HU.mo" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-hu_HU.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-it_IT.mo" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-it_IT.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-ja.mo" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-ja.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-nb_NO.mo" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-nb_NO.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-nl_NL.mo" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-nl_NL.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-nn_NO.mo" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-nn_NO.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-pt_BR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-pt_BR.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-sv_SE.mo" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-sv_SE.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-zh_CN.mo" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/i18n/languages/r34ics-zh_CN.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/admin-add-calendar-button.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/admin-add-calendar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/admin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/calendar-currentweek.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/calendar-currentweek.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/calendar-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/calendar-list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/data/constants.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/data/constants.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/data/dimensions.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/data/displays.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/data/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/refreshSchedule.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/data/reset.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/data/resources.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewR34ICS.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hello.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/css/revisr-admin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/css/thickbox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/img/loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/img/site5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/js/revisr-dashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/js/revisr-settings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/js/revisr-setup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/js/revisr-staging.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/octicons/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/octicons/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/octicons/octicons-local.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/octicons/octicons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/octicons/octicons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/octicons/octicons.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/octicons/octicons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/octicons/octicons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/octicons/octicons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/octicons/sprockets-octicons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/css/select2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/css/select2.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/az.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/bg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/ca.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/cs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/da.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/de.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/es.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/et.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/eu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/fa.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/fi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/fr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/gl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/he.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/hi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/hr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/hu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/id.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/is.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/it.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/ko.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/lt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/lv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/mk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/nb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/nl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/pl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/pt-BR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/pt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/ro.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/ru.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/sk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/sr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/sv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/th.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/tr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/uk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/vi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/zh-CN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/i18n/zh-TW.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/select2.full.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/select2.full.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/select2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/assets/lib/select2/js/select2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/class-revisr-activity-table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/class-revisr-admin-pages.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/class-revisr-admin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/class-revisr-branch-table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/class-revisr-commits-table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/class-revisr-compatibility.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/class-revisr-cron.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/class-revisr-db-backup.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/class-revisr-db-import.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/class-revisr-db.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/class-revisr-git-callback.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/class-revisr-git.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/class-revisr-i18n.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/class-revisr-meta-boxes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/class-revisr-process.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/class-revisr-remote.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/class-revisr-repositories-table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/class-revisr-settings-fields.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/class-revisr-settings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/classes/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/languages/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/languages/revisr.pot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/revisr.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/pages/branches.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/pages/commits.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/pages/dashboard.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/pages/help.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/pages/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/pages/new-commit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/pages/repositories.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/pages/settings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/pages/setup.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/pages/view-commit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/partials/checkout-remote-form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/partials/delete-branch-form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/partials/discard-form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/partials/import-tables-form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/partials/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/partials/merge-branch-form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/partials/pull-form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/partials/push-form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/templates/partials/revert-form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/revisr/uninstall.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/wordpress-importer/parsers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/wordpress-importer/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/wordpress-importer/wordpress-importer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/astra-child/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra-child/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/astra-child/js/refresh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/astra-child/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra-child/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/404.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/edd/edd.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/edd/edd.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/editor-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/editor-style.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/gutenberg/gutenberg-editor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/gutenberg/gutenberg-editor.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/learndash/learndash.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/learndash/learndash.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/llms/llms.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/llms/llms.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/style.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/bbpress.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/bbpress.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/buddypress.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/buddypress.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/elementor-editor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/elementor-editor.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/hamburgers.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/hamburgers.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/3dx-r.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/3dx.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/3dxy-r.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/3dxy.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/3dy-r.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/3dy.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/arrow-r.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/arrow.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/arrowalt-r.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/arrowalt.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/arrowturn-r.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/arrowturn.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/boring.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/collapse-r.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/collapse.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/elastic-r.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/elastic.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/minus.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/slider-r.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/slider.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/spin-r.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/spin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/spring-r.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/spring.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/squeeze.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/stand-r.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/stand.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/vortex-r.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/hamburgers/types/vortex.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/magnific-popup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/magnific-popup.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/sensei.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/sensei.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/simple-line-icons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/simple-line-icons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/slick.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/slick.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/social-login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/third/social-login.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/woo/hover-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/woo/hover-style.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/woo/wishlist.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/woo/wishlist.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/woo/woo-floating-bar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/woo/woo-floating-bar.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/woo/woo-mini-cart-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/woo/woo-mini-cart.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/woo/woo-mini-cart.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/woo/woo-multistep-checkout.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/woo/woo-multistep-checkout.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/woo/woo-quick-view.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/woo/woo-quick-view.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/woo/woo-star-font.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/woo/woo-star-font.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/woo/woocommerce-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/woo/woocommerce.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/css/woo/woocommerce.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/fonts/fontawesome/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/fonts/fontawesome/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/fonts/fontawesome/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/fonts/fontawesome/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/fonts/fontawesome/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/fonts/fontawesome/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/fonts/simple-line-icons/Simple-Line-Icons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/fonts/simple-line-icons/Simple-Line-Icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/fonts/simple-line-icons/Simple-Line-Icons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/fonts/simple-line-icons/Simple-Line-Icons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/fonts/simple-line-icons/Simple-Line-Icons.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/fonts/slick/slick.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/fonts/slick/slick.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/fonts/slick/slick.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/fonts/slick/slick.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/fonts/star/star.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/fonts/star/star.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/fonts/star/star.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/fonts/star/star.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/img/placeholder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/img/wishlist-loader.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/customSelect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/dropDownMobile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/dropDownSearch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/fitvids.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/fixedFooter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/fullScreenMenu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/fullScreenMobile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/headerReplaceSearch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/headerSearchForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/infiniteScroll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/isotope.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/matchHeight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/megaMenu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/navNoClick.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/overlaySearch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/parallaxFooter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/scrollEffect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/scrollTop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/sidr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/slick.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/superfish.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/core/verticalHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/devs/cookie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/devs/customselect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/devs/fitvids.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/devs/isotope.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/devs/matchHeight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/devs/sidr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/devs/slick.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/devs/smoothscroll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/devs/superfish.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/main.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/edd/edd-cart-ajax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/edd/edd-cart-ajax.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/edd/edd-display-cart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/edd/edd-display-cart.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/html5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/html5.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/infinitescroll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/infinitescroll.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/lightbox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/lightbox.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/magnific-popup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/magnific-popup.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/nicescroll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/nicescroll.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/devs/wooAccountLinks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/devs/wooGridList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/devs/wooQuantityButtons.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/devs/wooReviewsScroll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/devs/wooWidgets.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-ajax-add-to-cart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-ajax-add-to-cart.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-cat-widget.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-cat-widget.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-display-cart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-display-cart.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-floating-bar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-floating-bar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-hover-style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-hover-style.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-mini-cart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-mini-cart.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-multistep-checkout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-multistep-checkout.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-off-canvas.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-off-canvas.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-quick-view.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-quick-view.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-scripts.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-thumbnails.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/assets/js/third/woo/woo-thumbnails.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/changelog.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/comments.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/footer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/image.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/breadcrumbs.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/css/customizer-simple-line-icons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/css/customizer-simple-line-icons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/img/bs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/img/fs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/img/fw.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/img/ls.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/img/rs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/js/customize-preview.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/js/customize-preview.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/js/typography-customize-preview.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/js/typography-customize-preview.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/css/buttonset.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/css/color.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/css/dimensions.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/css/general.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/css/heading.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/css/icon-select.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/css/multiple-select.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/css/radio-image.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/css/range.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/css/rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/css/slider.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/css/sortable.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/css/textarea.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/css/typo.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/css/typography.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/css/upsell.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/js/buttonset.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/js/color.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/js/dimensions.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/js/dropdown-pages.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/js/general.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/js/icon-select.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/js/multicheck.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/js/multiple-select.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/js/radio-image.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/js/range.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/js/slider.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/js/sortable.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/js/text.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/js/textarea.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/js/typo.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/js/typography.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/assets/min/js/upsell.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/buttonset/buttonset.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/buttonset/buttonset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/buttonset/class-control-buttonset.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/color/class-control-color.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/color/color.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/color/color.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/color/transparency-grid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/dimensions/class-control-dimensions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/dimensions/dimensions.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/dimensions/dimensions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/dropdown-pages/class-control-dropdown-pages.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/dropdown-pages/dropdown-pages.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/general.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/general.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/heading/class-control-heading.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/heading/heading.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/icon-select/class-control-icon-select.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/icon-select/icon-select.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/icon-select/icon-select.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/multicheck/class-control-multicheck.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/multicheck/multicheck.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/multiple-select/class-control-multiple-select.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/multiple-select/multiple-select.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/multiple-select/multiple-select.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/radio-image/class-control-radio-image.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/radio-image/radio-image.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/radio-image/radio-image.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/range/class-control-range.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/range/range.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/range/range.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/select2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/select2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/select2.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/select2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/slider/class-control-slider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/slider/slider.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/slider/slider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/sortable/class-control-sortable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/sortable/sortable.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/sortable/sortable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/text/class-control-text.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/text/text.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/textarea/class-control-textarea.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/textarea/textarea.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/textarea/textarea.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/typo/class-control-typo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/typo/typo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/typo/typo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/typography/class-control-typography.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/typography/typography.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/typography/typography.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/typography/webfonts.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/upsell/class-control-upsell.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/upsell/upsell.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/controls/upsell/upsell.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/customizer-helpers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/customizer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/sanitization-callbacks.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/settings/blog.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/settings/edd.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/settings/footer-bottom.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/settings/footer-widgets.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/settings/general.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/settings/header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/settings/learndash.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/settings/lifterlms.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/settings/sidebar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/settings/topbar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/settings/typography.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/customizer/settings/woocommerce.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/edd/edd-config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/edd/edd-helpers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/header-content.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/helpers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/plugins/class-tgm-plugin-activation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/plugins/tgm-plugin-activation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/third/class-bbpress.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/third/class-beaver-themer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/third/class-buddypress.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/third/class-elementor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/third/class-gutenberg.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/third/class-learndash.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/third/class-lifterlms.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/third/class-sensei.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/third/class-social-login.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/walker/assets/menus.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/walker/class-walker-edit-custom.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/walker/init.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/walker/menu-walker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/walker/template.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/woocommerce/woocommerce-config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/inc/woocommerce/woocommerce-helpers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/da_DK.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/da_DK.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/de_DE.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/de_DE.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/es_ES.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/es_ES.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/fr_FR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/fr_FR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/nb_NO.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/nb_NO.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/nl_NL.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/nl_NL.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/oceanwp.pot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/pl_PL.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/pl_PL.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/pt_BR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/pt_BR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/sv_SE.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/sv_SE.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/tr_TR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/tr_TR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/zh_CN.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/zh_CN.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/zh_ZH.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/languages/zh_ZH.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/edd/archive.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/edd/shortcode-content-cart-button.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/edd/shortcode-content-excerpt.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/edd/shortcode-content-image.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/edd/shortcode-content-price.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/edd/single.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/entry/content.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/entry/header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/entry/layout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/entry/media/blog-entry-audio.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/entry/media/blog-entry-gallery.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/entry/media/blog-entry-link.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/entry/media/blog-entry-video.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/entry/media/blog-entry.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/entry/meta.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/entry/quote.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/entry/readmore.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/entry/thumbnail-style/category.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/entry/thumbnail-style/comments.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/entry/thumbnail-style/date.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/entry/thumbnail-style/layout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/footer/copyright.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/footer/layout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/footer/widgets.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/header/layout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/header/logo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/header/nav.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/header/search-dropdown.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/header/search-overlay.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/header/search-replace.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/header/social.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/header/style/center-header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/header/style/custom-header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/header/style/full-screen-header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/header/style/medium-header-search.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/header/style/medium-header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/header/style/top-header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/header/style/vertical-header-search.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/header/style/vertical-header-toggle.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/header/style/vertical-header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/library/layout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/mobile/mobile-dropdown.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/mobile/mobile-fullscreen-search.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/mobile/mobile-fullscreen.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/mobile/mobile-icon.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/mobile/mobile-nav.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/mobile/mobile-search.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/mobile/mobile-sidr-close.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/none.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/page-header-subheading.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/page-header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/page/article.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/page/layout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/scroll-top.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/search/content.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/search/header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/search/layout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/search/readmore.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/search/thumbnail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/single/author-bio.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/single/content.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/single/header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/single/layout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/single/media/blog-single-audio.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/single/media/blog-single-gallery.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/single/media/blog-single-link.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/single/media/blog-single-quote.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/single/media/blog-single-video.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/single/media/blog-single.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/single/meta.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/single/next-prev.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/single/related-posts.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/single/tags.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/topbar/content.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/topbar/layout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/topbar/nav.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/partials/topbar/social.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/_config.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/_layout.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/base/_form.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/base/_main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/base/_normalize.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/base/_shared.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/base/_typography.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/_404.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/_comments.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/_custom-selects.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/_next-prev.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/_page-header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/_pagination.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/_responsive.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/_search.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/blog/_blog-entries.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/blog/_blog-grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/blog/_blog-large.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/blog/_blog-meta.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/blog/_blog-thumbnail.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/blog/_gallery-format.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/blog/_link-format.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/blog/_quote-format.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/blog/_single-author-bio.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/blog/_single-content.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/blog/_single-next-prev.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/blog/_single-post.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/blog/_single-related-posts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/blog/_single-tags.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/blog/_video-audio-formats.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/footer/_footer-bottom.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/footer/_footer-widgets.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/footer/_scroll-top.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/header/_header-center.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/header/_header-custom.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/header/_header-fullscreen.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/header/_header-medium.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/header/_header-top.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/header/_header-transparent.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/header/_header-vertical.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/header/_header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/header/_links_effect.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/header/_megamenu.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/header/_navigation.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/header/_search-dropdown.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/header/_search-overlay.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/header/_search-replace.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/header/_socialmenu.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/mobile/_dropdown-mobile.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/mobile/_fullscreen-mobile.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/plugins/_general.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/plugins/_magnific-popup.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/plugins/_sidr.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/plugins/_slick.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/sidebar/_sidebar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/topbar/_topbar-content.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/topbar/_topbar-menu.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/topbar/_topbar-social.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/components/topbar/_topbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/edd.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/edd/_edd-cart.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/edd/_edd.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/gutenberg-editor.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/hover-style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/learndash.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/learndash/learndash.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/llms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/llms/llms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/stylesheet.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/wishlist.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/woo-floating-bar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/woo-mini-cart.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/woo-multistep-checkout.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/woo-quick-view.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/woo/_woo-cat-widget.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/woo/_woo-mobile-cart.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/woo/_woo-nav.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/woo/_woo-off-canvas.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/woo/_woo-quantity.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/woo/_woo-responsive.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/woo/_woocommerce.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sass/woocommerce.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/screenshot.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/search.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/searchform.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sidebar-left.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/sidebar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/singular.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/templates/landing.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/tribe-events/default-template.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/add-to-wishlist-button.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/cart/mini-cart.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/checkout/checkout-timeline.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/checkout/form-multistep-checkout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/content-single-product.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/loop/loop-start.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/loop/thumbnail/featured-image.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/loop/thumbnail/gallery-slider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/loop/thumbnail/image-swap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/owp-archive-product-hover.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/owp-archive-product-thumbnails.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/owp-archive-product.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/owp-off-canvas-sidebar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/owp-single-product.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/quick-view-content.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/quick-view-image.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/quick-view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/result-count.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/share.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/single-product/title.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/wc-content-wrapper-end.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/woocommerce/wc-content-wrapper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/oceanwp/wpml-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/404.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/archive.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/classes/class-twentynineteen-svg-icons.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/classes/class-twentynineteen-walker-comment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/comments.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/fonts/NonBreakingSpaceOverride.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/fonts/NonBreakingSpaceOverride.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/footer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/image.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/inc/back-compat.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/inc/color-patterns.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/inc/customizer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/inc/icon-functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/inc/template-functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/inc/template-tags.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/js/customize-controls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/js/customize-preview.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/js/priority-menu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/js/skip-link-focus-fix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/js/touch-keyboard-navigation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/postcss.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/print.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/print.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/_normalize.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/blocks/_blocks.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/elements/_elements.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/elements/_lists.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/elements/_tables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/forms/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/forms/_fields.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/forms/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/layout/_layout.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/media/_captions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/media/_galleries.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/media/_media.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/mixins/_mixins-master.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/mixins/_utilities.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/modules/_accessibility.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/modules/_alignments.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/modules/_clearings.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/navigation/_links.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/navigation/_menu-footer-navigation.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/navigation/_menu-main-navigation.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/navigation/_menu-social-navigation.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/navigation/_navigation.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/navigation/_next-previous.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/site/_site.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/site/footer/_site-footer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/site/header/_site-featured-image.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/site/header/_site-header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/site/primary/_archives.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/site/primary/_comments.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/site/primary/_posts-and-pages.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/site/secondary/_widgets.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/typography/_copy.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/typography/_headings.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/typography/_typography.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/variables-site/_colors.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/variables-site/_columns.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/variables-site/_fonts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/variables-site/_structure.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/variables-site/_transitions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/sass/variables-site/_variables-site.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/search.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/single.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/style-editor-customizer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/style-editor-customizer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/style-editor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/style-editor.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/style-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/template-parts/content/content-excerpt.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/template-parts/content/content-none.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/template-parts/content/content-page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/template-parts/content/content-single.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/template-parts/content/content.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/template-parts/footer/footer-widgets.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/template-parts/header/entry-header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/template-parts/header/site-branding.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/template-parts/post/author-bio.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentynineteen/template-parts/post/discussion-meta.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/404.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/archive.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/assets/css/blocks.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/assets/css/colors-dark.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/assets/css/editor-blocks.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/assets/css/editor-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/assets/css/ie8.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/assets/css/ie9.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/assets/images/coffee.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/assets/images/espresso.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/assets/images/header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/assets/images/sandwich.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/assets/images/svg-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/assets/js/customize-controls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/assets/js/customize-preview.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/assets/js/global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/assets/js/html5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/assets/js/jquery.scrollTo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/assets/js/navigation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/assets/js/skip-link-focus-fix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/comments.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/footer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/front-page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/inc/back-compat.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/inc/color-patterns.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/inc/custom-header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/inc/customizer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/inc/icon-functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/inc/template-functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/inc/template-tags.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/search.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/searchform.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/sidebar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/single.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/template-parts/footer/footer-widgets.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/template-parts/footer/site-info.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/template-parts/header/header-image.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/template-parts/header/site-branding.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/template-parts/navigation/navigation-top.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/template-parts/page/content-front-page-panels.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/template-parts/page/content-front-page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/template-parts/page/content-page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/template-parts/post/content-audio.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/template-parts/post/content-excerpt.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/template-parts/post/content-gallery.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/template-parts/post/content-image.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/template-parts/post/content-none.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/template-parts/post/content-video.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentyseventeen/template-parts/post/content.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/404.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/archive.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/comments.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/css/blocks.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/css/editor-blocks.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/css/editor-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/css/ie.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/css/ie7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/css/ie8.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/footer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/genericons/COPYING.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/genericons/Genericons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/genericons/Genericons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/genericons/Genericons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/genericons/Genericons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/genericons/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/genericons/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/genericons/genericons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/image.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/inc/back-compat.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/inc/customizer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/inc/template-tags.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/js/color-scheme-control.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/js/customize-preview.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/js/functions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/js/html5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/js/keyboard-image-navigation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/js/skip-link-focus-fix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/search.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/searchform.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/sidebar-content-bottom.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/sidebar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/single.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/template-parts/biography.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/template-parts/content-none.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/template-parts/content-page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/template-parts/content-search.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/template-parts/content-single.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/twentysixteen/template-parts/content.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSecretary.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSecretary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewUser.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -921,25 +29,81 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/astra-child/functions.php">
+        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/CodeAdeManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="-5">
+              <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mu-plugins/teleConnecteeAmu-functions.php">
+        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
-              <folding>
-                <element signature="e#6#194#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="505">
+              <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="176" column="14" selection-start-line="176" selection-start-column="14" selection-end-line="176" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5">
+              <caret line="55" column="2" lean-forward="true" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -949,8 +113,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -967,6 +131,12 @@
       <find>showendtimes</find>
       <find>hide</find>
       <find>asset</find>
+      <find>excelEtudiant</find>
+      <find>db_connect</find>
+      <find>host</find>
+      <find>dbhost</find>
+      <find>get</find>
+      <find>mysqli_connect</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -975,49 +145,63 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/utilsWeather.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/weather.js" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Weather.php" />
-        <option value="$PROJECT_DIR$/plugins/ics-calendar/templates/calendar-list.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewReadICS.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileReadICS/R34ICS.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileReadICS/templates/calendar-month.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/R35ICS.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileReadICS/templates/calendar-list.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileReadICS/templates/calendar-currentweek.php" />
-        <option value="$PROJECT_DIR$/plugins/ics-calendar/ics-calendar.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/ics-calendar/ics-calendar.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/admin-add-calendar.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/assets/script.js" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/assets/style.css" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/calendar-currentweek.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/data/constants.yaml" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php" />
-        <option value="$PROJECT_DIR$/themes/astra/assets/css/minified/style.min.css" />
-        <option value="$USER_HOME$/www/wp-content/plugins/ics-calendar/assets/style.css" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewR34ICS.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/R34ICS.php" />
-        <option value="$PROJECT_DIR$/themes/astra-child/js/refresh.js" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/generateUrlADE.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/refreshSchedule.js" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/calendar-list.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/is_connected.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/connexion.js" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/connection.js" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewConnexion.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Connexion.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" />
-        <option value="$PROJECT_DIR$/themes/astra-child/style.css" />
-        <option value="$PROJECT_DIR$/mu-plugins/TeleConnecteeAmu-Functions/teleConnecteeAmu-functions.php" />
         <option value="$PROJECT_DIR$/themes/astra-child/login/login-style.css" />
-        <option value="$PROJECT_DIR$/themes/astra-child/functions.php" />
+        <option value="$USER_HOME$/Downloads/Tv Connectee Amu/wp-includes/wp-db.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/refreshPage.js" />
         <option value="$PROJECT_DIR$/mu-plugins/teleConnecteeAmu-functions.php" />
+        <option value="$PROJECT_DIR$/themes/astra/assets/css/minified/style.min.css" />
+        <option value="$PROJECT_DIR$/themes/astra/assets/css/minified/style.min-rtl.css" />
+        <option value="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/site-origin.css" />
+        <option value="$PROJECT_DIR$/themes/astra/assets/css/unminified/style.css" />
+        <option value="$PROJECT_DIR$/themes/astra/assets/css/unminified/style-rtl.css" />
+        <option value="$PROJECT_DIR$/themes/astra/assets/css/unminified/editor-style.css" />
+        <option value="$PROJECT_DIR$/themes/astra-child/functions.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/register.js" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/register.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Info.php" />
+        <option value="$PROJECT_DIR$/themes/astra-child/style.css" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/BdUser.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOProf.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOUser.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOEtudiant.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOTeacher.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOStudent.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PluginExcel.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/SecretaryManager.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TeacherManager.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TelevisionManager.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/User.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewHome.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Home.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewUser.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSecretary.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Secretary.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUser.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/ModifyUser.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewManagementUsers.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/CodeAdeManager.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-15" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
     <option name="width" value="1939" />
     <option name="height" value="1049" />
   </component>
@@ -1037,18 +221,34 @@
             <path>
               <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="TeleConnecteeAmu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="astra-child" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="TeleConnecteeAmu" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="TeleConnecteeAmu" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="TeleConnecteeAmu" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1063,18 +263,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\wpTv\wp-content\plugins\TeleConnecteeAmu\controllers\fileReadICS" />
+      <recent name="C:\wamp64\www\wpTv\wp-content\plugins\ics-calendar" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\wpTv\wp-content\plugins\TeleConnecteeAmu\models" />
       <recent name="C:\wamp64\www\wpTv\wp-content\themes\astra-child\login" />
       <recent name="C:\wamp64\www\wpTv\wp-content\themes\astra-child" />
       <recent name="C:\wamp64\www\wpTv\wp-content\mu-plugins" />
       <recent name="C:\wamp64\www\wpTv\wp-content\themes\astra-child\js" />
-      <recent name="C:\wamp64\www\wpTv\wp-content\plugins\TeleConnecteeAmu\views\js" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\wpTv\wp-content\plugins\TeleConnecteeAmu\controllers\fileReadICS" />
-      <recent name="C:\wamp64\www\wpTv\wp-content\plugins\ics-calendar" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1103,18 +304,27 @@
       <workItem from="1555404960125" duration="12444000" />
       <workItem from="1555481447459" duration="21528000" />
       <workItem from="1555570045368" duration="3616000" />
-      <workItem from="1555575161453" duration="14638000" />
+      <workItem from="1555575161453" duration="15748000" />
+      <workItem from="1555655480159" duration="13507000" />
+      <workItem from="1555672809983" duration="7070000" />
+      <workItem from="1555999223902" duration="12403000" />
+      <workItem from="1556019713519" duration="3449000" />
+      <workItem from="1556085988029" duration="15277000" />
+      <workItem from="1556104815868" duration="8427000" />
+      <workItem from="1556172508107" duration="24570000" />
+      <workItem from="1556258668985" duration="20939000" />
+      <workItem from="1556518269262" duration="10701000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53648000" />
+    <option name="totallyTimeSpent" value="171101000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-12" y="0" width="1551" height="839" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26291078" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29932886" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1128,75 +338,74 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.32922733" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3295302" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/astra/assets/css/minified/extend-customizer.min.css">
+    <entry file="file://$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/site-origin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1514" lean-forward="true" selection-start-column="1514" selection-end-column="1514" />
+        <state relative-caret-position="289">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra/assets/css/minified/compatibility/site-origin.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra/assets/css/minified/compatibility/woocommerce/woocommerce.min.css">
+    <entry file="file://$PROJECT_DIR$/themes/astra/assets/css/unminified/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra/assets/css/minified/style.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        <state relative-caret-position="442">
+          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra/assets/css/minified/style.min-rtl.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra/assets/css/minified/editor-style.min-rtl.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra/assets/css/minified/editor-style.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="50" selection-start-column="50" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/www/wp-content/plugins/ics-calendar/assets/style.css">
+    <entry file="file://$PROJECT_DIR$/themes/astra/assets/css/unminified/style-rtl.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
-          <caret line="201" column="1" selection-start-line="201" selection-start-column="1" selection-end-line="201" selection-end-column="1" />
+          <caret line="6006" column="1" selection-start-line="6006" selection-start-column="1" selection-end-line="6006" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra/style.css">
+    <entry file="file://$PROJECT_DIR$/themes/astra/assets/css/unminified/editor-style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-107" />
+        <state relative-caret-position="-32863">
+          <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/R34ICS.php">
+    <entry file="file://$PROJECT_DIR$/themes/astra/assets/css/unminified/editor-style-rtl.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2703" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/astra-child/login/login-style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-          <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
-          </folding>
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/astra-child/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/weather.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/register.js" />
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/register.php" />
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewWeather.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1204,207 +413,237 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/BdInfo.php">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewR34ICS.php" />
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCard.php" />
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Info.php" />
+    <entry file="file://$PROJECT_DIR$/plugins/if-menu/if-menu.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/BdUser.php">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/themes/astra-child/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/utilsWeather.php">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/R34ICS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6460">
+          <caret line="380" column="5" lean-forward="true" selection-start-line="380" selection-start-column="5" selection-end-line="380" selection-end-column="5" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/jquery.marquee.js">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/BdUser.php" />
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOTeacher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="92" column="32" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOStudent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1280">
+          <caret line="90" column="33" lean-forward="true" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PluginExcel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="53" column="102" selection-start-line="53" selection-start-column="102" selection-end-line="53" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/SecretaryManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TelevisionManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/User.php" />
+    <entry file="file://$USER_HOME$/Downloads/TvConnecteeLocal/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/generateUrlADE.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Weather.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/weather.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-787">
-          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/refreshSchedule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewHome.php" />
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Home.php" />
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        <state relative-caret-position="51">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TeacherManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Secretary.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/ModifyUser.php" />
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="73" column="20" lean-forward="true" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="89" column="50" selection-start-line="89" selection-start-column="50" selection-end-line="89" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2006">
+          <caret line="123" column="13" lean-forward="true" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="37" column="42" lean-forward="true" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
             <element signature="e#6#91#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="49" column="51" lean-forward="true" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+        <state relative-caret-position="2057">
+          <caret line="126" column="55" selection-start-line="126" selection-start-column="55" selection-end-line="126" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/is_connected.php">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSecretary.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="119">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Connexion.php" />
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewConnexion.php" />
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewManagementUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="204">
+          <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra-child/js/refresh.js" />
-    <entry file="file://$PROJECT_DIR$/plugins/wp-force-login/wp-force-login.php">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="81" column="69" selection-start-line="81" selection-start-column="69" selection-end-line="81" selection-end-column="69" />
+        <state relative-caret-position="272">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/wps-hide-login/wps-hide-login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/wps-hide-login/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra-child/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewR34ICS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="87" column="22" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/calendar-list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-444">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#6#639#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra-child/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra-child/login/login-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/2019/04/cropped-Logo-Dpt-info-aix-blanc-1-2-150x104.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/2019/04/cropped-Logo-Dpt-info-aix-blanc-1-3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/2019/04/cropped-Logo-Dpt-info-aix-blanc-1-3-300x85.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/2019/04/logout-150x150.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/2019/04/tool-150x150.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/2019/04/tool-300x300.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/2019/04/logo_iut.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/2019/04/logo_iut-1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/2019/04/logout.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/2019/04/1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/2019/04/1-1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/2019/04/logout-300x300.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra-child/js/connection.js">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra-child/functions.php">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="-5">
+          <caret line="55" column="2" lean-forward="true" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mu-plugins/teleConnecteeAmu-functions.php">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
-          <folding>
-            <element signature="e#6#194#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="321">
+          <caret line="176" column="14" selection-start-line="176" selection-start-column="14" selection-end-line="176" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/CodeAdeManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
         </state>
       </provider>
     </entry>

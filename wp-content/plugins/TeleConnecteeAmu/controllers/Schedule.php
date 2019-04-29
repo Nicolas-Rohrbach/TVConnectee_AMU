@@ -9,17 +9,19 @@
 class Schedule
 {
     private $url;
+    private $weather;
 
 
     public function __construct(){
         $this->url = new ViewSchedule();
+        $this->weather = new ViewWeather();
     }
 
     /**
      * Affiche l'emploi du temps de la personne concerné sauf si il s'agit d'une personne qui n'a pas de code ADE lié à son compte
      * @throws Exception
      */
-    public function displayMySchedule() {
+    public function displayMySchedule(){
         ### Initialisation
         $planning = new Planning();
 
@@ -33,22 +35,35 @@ class Schedule
         # Cherche le code ADE dans le dossier data/ressources.yaml en fonction de l'utilisateur connecté et demande à afficher l'emploi du temps
         $current_user = wp_get_current_user();
 
-        if(isset($current_user->demiGroupe)) {
+        if($current_user->demiGroupe != 0) {
             $this->url->displayName($current_user);
             $this->url->displayTimetable($current_user->demiGroupe,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear);
         }
-        else if(isset($current_user->groupe)) {
+        else if($current_user->groupe != 0) {
             $this->url->displayName($current_user);
             $this->url->displayTimetable($current_user->groupe,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear);
         }
-        else if(isset($current_user->annee)) {
+        else if($current_user->annee != 0) {
             $this->url->displayName($current_user);
-            $this->url->displayTimetable($current_user->groupe,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear);
+            $this->url->displayTimetable($current_user->annee,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear);
         }
         #Si la personne n'est pas connectée ou si il s'agit d'un Admin ou d'une secrétaire
         else {
             $this->url->displayHome($current_user);
         }
+
+        $adresse = $_SERVER['REQUEST_URI'];
+        $id =  '';
+
+        for($i = 1; $i < strlen($adresse); ++$i){
+            if($adresse[$i] === '/'){
+                for($j = $i + 1; $j < strlen($adresse) - 1; ++$j){
+                    $id .= $adresse[$j];
+                }
+            }
+        }
+        echo $id;
+        $this->weather->displayWeather();
     }
 
 }

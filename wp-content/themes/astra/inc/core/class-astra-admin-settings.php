@@ -412,7 +412,7 @@ if ( ! class_exists( 'Astra_Admin_Settings' ) ) {
 
 
 		/**
-		 * Get and return page ViewSchedule
+		 * Get and return page URL
 		 *
 		 * @param string $menu_slug Menu name.
 		 * @since 1.0
@@ -1287,12 +1287,12 @@ if ( ! class_exists( 'Astra_Admin_Settings' ) ) {
 		}
 
 		/**
-		 * Build plugin's page ViewSchedule on WordPress.org
+		 * Build plugin's page URL on WordPress.org
 		 * https://wordpress.org/plugins/{plugin-slug}
 		 *
 		 * @since 1.6.9
 		 * @param String $slug plugin slug.
-		 * @return String Plugin ViewSchedule on WordPress.org
+		 * @return String Plugin URL on WordPress.org
 		 */
 		private static function build_worg_plugin_link( $slug ) {
 			return esc_url( trailingslashit( 'https://wordpress.org/plugins/' . $slug ) );
@@ -1431,12 +1431,12 @@ if ( ! class_exists( 'Astra_Admin_Settings' ) ) {
 					<ul>
 						<?php
 						foreach ( (array) $top_links as $key => $info ) {
-							/* translators: %1$s: Top Link ViewSchedule wrapper, %2$s: Top Link ViewSchedule, %3$s: Top Link ViewSchedule target attribute */
+							/* translators: %1$s: Top Link URL wrapper, %2$s: Top Link URL, %3$s: Top Link URL target attribute */
 							printf(
 								'<li><%1$s %2$s %3$s > %4$s </%1$s>',
-								isset( $info['ViewSchedule'] ) ? 'a' : 'span',
-								isset( $info['ViewSchedule'] ) ? 'href="' . esc_url( $info['ViewSchedule'] ) . '"' : '',
-								isset( $info['ViewSchedule'] ) ? 'target="_blank" rel="noopener"' : '',
+								isset( $info['url'] ) ? 'a' : 'span',
+								isset( $info['url'] ) ? 'href="' . esc_url( $info['url'] ) . '"' : '',
+								isset( $info['url'] ) ? 'target="_blank" rel="noopener"' : '',
 								esc_html( $info['title'] )
 							);
 						}
