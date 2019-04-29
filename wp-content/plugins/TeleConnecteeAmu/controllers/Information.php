@@ -8,15 +8,15 @@
 
 class Information
 {
-    private $bdInformation;
-    private $viewInformation;
+    private $DB;
+    private $view;
 
     /**
      * Information constructor.
      */
     public function __construct(){
-        $this->bdInformation = new BdInformation();
-        $this->viewInformation = new ViewInformation();
+        $this->DB = new BdInformation();
+        $this->view = new ViewInformation();
     }
 
     /**
@@ -26,7 +26,7 @@ class Information
      * @param $endDate
      */
     public function createInformation($title, $content, $endDate) {
-        $this->bdInformation->addInformationDB($title, $content, $endDate);
+        $this->DB->addInformationDB($title, $content, $endDate);
     } //addInformation()
 
     /**
@@ -35,20 +35,21 @@ class Information
      */
     public function deleteInformation($id) {
 
-        $this->bdInformation->deleteInformationDB($id);
+        $this->DB->deleteInformationDB($id);
     } //deleteInformation()
 
     /**
      *Récupère la liste des informations et l'affiche.
      */
     public function informationList(){
-//      $title = "Test image";
-//        $content = '<img src="http://wptv/wp-content/uploads/2019/04/logo_iut-1.png">';
-//        $endDate = date("2019-04-26"); //annee - mois - jour<<
-//
-//        $this->createInformation($title, $content,$endDate);
 
-        $result = $this->bdInformation->getListInformation();
+//        $title = 'Evenement !';
+//        $content = '<img src=http://wptv/wp-content/uploads/2019/04/totoro-poster.jpg>';
+//        $endDate = date("2019-06-27");
+//
+//       $this->createInformation($title, $content,$endDate);
+
+        $result = $this->DB->getListInformation();
 
         $idList = array();
         $titleList = array();
@@ -75,7 +76,7 @@ class Information
             array_push($endDateList, $endDate);
             array_push($contentList,$content) ;
         }
-        $this->viewInformation->displayInformationList($idList, $titleList,$authorList,$contentList, $creationDateList, $endDateList);
+        $this->view->displayInformationManagement($idList, $titleList,$authorList,$contentList, $creationDateList, $endDateList);
     } // informationList()
 
     /**
@@ -84,16 +85,55 @@ class Information
      * @param $endDate
      */
     public function endDateCheckInfo($id, $endDate){
-        if($endDate < date("Y-m-d")) {
+        if($endDate <= date("Y-m-d")) {
             $this->deleteInformation($id);
         }
     } //endDateCheckInfo()
 
 
+    /**
+     * Affiche la liste des informations sur la page d'accueil
+     */
+    public function displayInformationMain(){
 
 
-   // public function changeInformation($id){
-   //     $result = $this->bdInformation->getInformationbyID($id);
-    //}
+       $result = $this->DB->getListInformation();
+
+        $titleList = array();
+        $contentList = array();
+
+        foreach ($result as $row) {
+
+            $id = $row['ID_info'];
+            $title = $row['title'];
+            $content = $row['content'];
+            $endDate = date('Y-m-d',strtotime($row['end_date']));
+
+            $this->endDateCheckInfo($id,$endDate);
+
+            array_push($titleList, $title) ;
+            array_push($contentList,$content) ;
+        }
+
+        $this->view->displayInformationView($titleList,$contentList);
+
+    } // displayInformationMain()
+
+
+    /**
+     * Demande l'affichage du formulaire et creer l'information si il y a eu un submit.
+     *
+     * @param $action
+     * correspond à la valeur renvoyé par l'appuie du bouton submit (cf snippet createInfo)
+     * @param $title
+     * @param $content
+     * @param $endDates
+     */
+    public function insertInformation($action, $title, $content, $endDate){
+        $this->view->displayInformationCreation();
+        if(isset($action)){
+            $this->createInformation($title, $content, $endDate);
+        }
+    } //insertInformation()
 
 }

@@ -95,8 +95,9 @@ class BdInformation
 
     public function getInformationbyID($id) {
      global $wpdb;
-       $result = $wpdb->get_results("SELECT * FROM informations WHERE id = %d",
-               $id);
+       $result = $wpdb->get_results(
+           $wpdb->prepare("SELECT * FROM informations WHERE id = %d",
+               $id),ARRAY_A);
      return $result;
     } //getInformation()
 }

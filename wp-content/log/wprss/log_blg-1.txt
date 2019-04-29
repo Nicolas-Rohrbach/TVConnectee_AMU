@@ -164,3 +164,179 @@ Server returned 22687 characters, of which 150 are below:
 <link rel=
 
 
+[25-04-2019 10:02:19] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://wptv/feed/alerts". The resource could not be retrieved because of a client error with code 404
+Server returned 22687 characters, of which 150 are below:
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=
+
+
+[25-04-2019 11:09:20] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://wptv/feed/alerts". The resource could not be retrieved because of a client error with code 404
+Server returned 22687 characters, of which 150 are below:
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=
+
+
+[25-04-2019 11:53:54] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://wptv/feed/alerts". The resource could not be retrieved because of a client error with code 404
+Server returned 22687 characters, of which 150 are below:
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=
+
+
+[25-04-2019 12:54:59] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://wptv/feed/alerts". The resource could not be retrieved because of a client error with code 404
+Server returned 22687 characters, of which 150 are below:
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=
+
+
+[25-04-2019 13:48:56] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://wptv/feed/alerts". The resource could not be retrieved because of a client error with code 404
+Server returned 22829 characters, of which 150 are below:
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=
+
+
+[26-04-2019 07:24:00] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://wptv/feed/alerts". The resource could not be retrieved because of a client error with code 404
+Server returned 22829 characters, of which 150 are below:
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=
+
+
+[26-04-2019 08:15:14] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://wptv/feed/alerts". The resource could not be retrieved because of a client error with code 404
+Server returned 23382 characters, of which 150 are below:
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=
+
+
+[26-04-2019 08:55:57] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://wptv/feed/alerts". The resource could not be retrieved because of a client error with code 404
+Server returned 23382 characters, of which 150 are below:
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=
+
+
+[26-04-2019 09:47:45] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://wptv/feed/alerts". The resource could not be retrieved because of a client error with code 404
+Server returned 23382 characters, of which 150 are below:
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=
+
+
+[26-04-2019 11:18:19] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://wptv/feed/alerts". The resource could not be retrieved because of a client error with code 404
+Server returned 23382 characters, of which 150 are below:
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=
+
+
+[26-04-2019 11:48:50] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://wptv/feed/alerts". The resource could not be retrieved because of a client error with code 404
+Server returned 23382 characters, of which 150 are below:
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=
+
+
+[26-04-2019 13:08:17] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://wptv/feed/alerts". The resource could not be retrieved because of a client error with code 404
+Server returned 23382 characters, of which 150 are below:
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=
+
+
+[26-04-2019 13:47:29] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://wptv/feed/alerts". The resource could not be retrieved because of a client error with code 404
+Server returned 23382 characters, of which 150 are below:
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=
+
+
+[29-04-2019 07:26:40] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://wptv/feed/alerts". The resource could not be retrieved because of a client error with code 404
+Server returned 23382 characters, of which 150 are below:
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=
+
+
+[29-04-2019 07:47:04] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://wptv/feed/alerts". The resource could not be retrieved because of a client error with code 404
+Server returned 23382 characters, of which 150 are below:
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=
+
+
+[29-04-2019 08:52:12] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://wptv/feed/alerts". The resource could not be retrieved because of a client error with code 404
+Server returned 23382 characters, of which 150 are below:
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=
+
+

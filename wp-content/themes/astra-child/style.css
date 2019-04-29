@@ -14,5 +14,47 @@
 
 @import url("../astra/style.css");
 #content {
-	background-color : purple;
+	font-size: 120%;
+}
+
+#information_carousel {
+	height: 40em;
+	border : solid black;
+}
+.title {
+	background-color: lightblue;
+	font-size : 3em;
+	text-align: center;
+}
+
+.content_info {
+	font-size : 2em;
+	margin : 2%;
+	text-align: center;
+}
+
+.content_info img{
+	width : auto;
+	max-height: 30ex;
+}
+
+
+th {
+	font-size : 120%;
+}
+
+td img {
+	max-width: 75px;
+	max-height: 75px;
+}
+#primary {
+	margin : 2em;
+}
+
+
+#creation_info input{
+	margin : 3px;
+}
+#creation_info button{
+	margin : 3px;
 }
