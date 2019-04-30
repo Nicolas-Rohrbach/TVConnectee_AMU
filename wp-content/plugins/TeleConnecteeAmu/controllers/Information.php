@@ -94,7 +94,11 @@ class Information
             $this->view->displayModifyInformationForm($title,$content,$endDate);
 
         if($action == "Valider") {
-            echo 'hello';
+            $title =$_POST['titleInfo'];
+            $content = $_POST['contentInfo'];
+            $endDate =$_POST['endDateInfo'];
+
+            $this->DB->modifyInformation($id,$title,$content,$endDate);
         }
     }
 
