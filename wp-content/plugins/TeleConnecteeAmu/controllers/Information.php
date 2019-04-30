@@ -84,6 +84,8 @@ class Information
         $urlExpl = explode('/', $_SERVER['REQUEST_URI']);
         $id = $urlExpl[2];
 
+        $action = $_POST['validateChange'];
+
         $result = $this->DB->getInformationbyID($id);
             $title = $result['title'];
             $content = $result['content'];
@@ -91,7 +93,9 @@ class Information
 
             $this->view->displayModifyInformationForm($title,$content,$endDate);
 
-
+        if($action == "Valider") {
+            echo 'hello';
+        }
     }
 
     /**

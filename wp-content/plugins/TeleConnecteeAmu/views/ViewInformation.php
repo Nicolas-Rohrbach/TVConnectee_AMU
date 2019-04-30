@@ -102,16 +102,15 @@ echo'                        </div>
         $dateMin = date('Y-m-d',strtotime("+1 day"));
         echo '
                 <div>
-                    <form id="modify_info" method="get">
+                    <form id="modify_info" method="post">
                   
                       Titre : <input type="text" name="titleInfo" value="'.$title.'" required> </br>
                       Contenu : <textarea name="contentInfo">'.$content.'</textarea> </br>
                       Ajouter une image : <button name="image" value="ajoutImage"> Ajouter </button> </br>
                       Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" value = "'.$endDate.'" required > </br>
                       
-                         <input type="submit" name="executeModifInfo" value="Modifier">
+                         <input type="submit" name="validateChange" value="Valider">
                  </form>
-             
             </div>';
              
 
