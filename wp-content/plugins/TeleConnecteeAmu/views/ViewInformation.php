@@ -33,22 +33,26 @@ class ViewInformation extends ViewG
        for($i=0; $i < sizeof($title); ++$i) {
            echo    '
                     <tr>
-                        <td>
-                            <div class="radio">
-                                <label><input type="radio" name="radioID" value="'.$id[$i].'" > </label>
-                            </div>
-                        </td>
                         <td>'.$title[$i].'</td> 
                         <td>'.$author[$i].'</td>
                         <td>'.$content[$i].'</td>
                         <td>'.$creationDate[$i].'</td>
                         <td>'.$endDate[$i].'</td>
+                        <td>
+                            <div class="button_modif">
+                                <label><button type="submit" value="modifier" name="changeInfo" class="btn btn-info"> Modifier </button></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio">
+                                <label><input type="radio" name="radioID" value="'.$id[$i].'" > </label>
+                            </div>
+                        </td>
                     </tr>';
        }
        echo  '</table> 
               </div>
            <button type="submit" value="supprimer" name="deleteInfo" class="btn btn-danger"> Supprimer </button>
-           <button type="submit" value="modifier" name="changeInfo" class="btn btn-danger"> Modifier </button>
             </form>';
     } //displayInformationManagement()
 
@@ -95,14 +99,24 @@ echo'                        </div>
               </form>';
     } //displayInformationCreation()
 
+
+
     public function displayModifyInformationForm($title,$content,$endDate){
         $dateMin = date('Y-m-d',strtotime("+1 day"));
-        echo '<form id="modify_info" method="post">
-                   Titre : <input type="text" name="titleInfo" value="'.$title.'" required> </br>
-                  Contenu : <textarea name="contentInfo">'.$content.'</textarea> </br>
-                  Ajouter une image : <button name="image" value="ajoutImage"> Ajouter </button> </br>
-                  Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" required > </br>
-                  <input type="submit" value="Modifier" name="modifInfo">
-              </form>';
+        echo '
+                <div>
+                    <form id="modify_info" method="get">
+                  
+                      Titre : <input type="text" name="titleInfo" value="'.$title.'" required> </br>
+                      Contenu : <textarea name="contentInfo">'.$content.'</textarea> </br>
+                      Ajouter une image : <button name="image" value="ajoutImage"> Ajouter </button> </br>
+                      Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" value = "'.$endDate.'" required > </br>
+                      
+                         <input type="submit" name="executeModifInfo" value="Modifier">
+                 </form>
+             
+            </div>';
+             
+
     }
 }

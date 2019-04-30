@@ -83,12 +83,19 @@ class Information
     } // informationList()
 
     public function modifyInformation($id) {
+        $actionMod = $_GET["executeModifInfo"];
+        echo $actionMod;
+//        if(isset($actionMod)) {
+//            echo 'Hello';
+//        }
         $result = $this->DB->getInformationbyID($id);
             $title = $result['title'];
             $content = $result['content'];
             $endDate = date('Y-m-d',strtotime($result['end_date']));
 
             $this->view->displayModifyInformationForm($title,$content,$endDate);
+
+
     }
 
     /**
