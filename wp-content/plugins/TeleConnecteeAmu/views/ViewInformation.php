@@ -23,7 +23,6 @@ class ViewInformation extends ViewG
            <form name="formInfo" method="post">
             <table class="table">
                     <tr>
-                        <th></th>
                         <th>  Titre </th>
                         <th>  Auteur </th>
                         <th>  Contenu </th>
@@ -38,12 +37,12 @@ class ViewInformation extends ViewG
                         <td>'.$content[$i].'</td>
                         <td>'.$creationDate[$i].'</td>
                         <td>'.$endDate[$i].'</td>
-                        <td>
+                        <td class="td_centered">
                             <div class="button_modif">
                                 <label><button type="submit" value="modifier" name="changeInfo" class="btn btn-info"> Modifier </button></label>
                             </div>
                         </td>
-                        <td>
+                        <td class="td_centered">
                             <div class="radio">
                                 <label><input type="radio" name="radioID" value="'.$id[$i].'" > </label>
                             </div>
@@ -51,8 +50,7 @@ class ViewInformation extends ViewG
                     </tr>';
        }
        echo  '</table> 
-              </div>
-           <button type="submit" value="supprimer" name="deleteInfo" class="btn btn-danger"> Supprimer </button>
+                 <div id="delete_button"><button type="submit" value="supprimer" name="deleteInfo" class="btn btn-danger"> Supprimer </button></div> 
             </form>';
     } //displayInformationManagement()
 

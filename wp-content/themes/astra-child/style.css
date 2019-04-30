@@ -39,14 +39,25 @@
 }
 
 
-th {
-	font-size : 120%;
-}
+th {font-size : 120%;}
+
+.td_centered {text-align: center;}
+
 
 td img {
 	max-width: 75px;
 	max-height: 75px;
 }
+
+#delete_button {
+	text-align: right;
+	margin-right: 1%;
+
+}
+
+
+
+
 #primary {
 	margin : 2em;
 }
