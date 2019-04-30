@@ -14,46 +14,6 @@ class ViewStudent extends ViewG
 
     public function tabHeadStudent(){
         echo '
-        <head>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
-        </head>
-        <form action="#" method="post">
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                      <span aria-hidden="true"></span>
-                      <span aria-hidden="true"></span>
-                      <span aria-hidden="true"></span>
-                    </a>
-                </div>
-                  <div id="navbarBasicExample" class="navbar-menu">
-                    <div class="navbar-start">
-                
-                      <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">
-                          Option d\'affichage
-                        </a>
-                
-                        <div class="navbar-dropdown">
-                                <button class="dropdown-item button is-small is-fullwidth" type="submit" name="affichagenom" value="nom">Afficher par nom</button>
-                                <button class="dropdown-item button is-small is-fullwidth" type="submit" name="affichageprenom" value="prenom">Afficher par prénom</button>
-                        </div>
-                      </div>
-                      <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">
-                          Affichage par groupe
-                        </a>
-                
-                        <div class="navbar-dropdown">
-                                 <button class="dropdown-item button is-small is-fullwidth" type="submit" name="affichageannee1" value="annee1">Année 1</button>
-                                <button class="dropdown-item button is-small is-fullwidth" type="submit" name="affichageannee2" value="annee2">Année 2</button>
-                                <button class="dropdown-item button is-small is-fullwidth" type="submit" name="affichagelicence" value="licence">Licence Pro</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </nav>
-            </form>
             <form method="post">
                 <table class="table text-center"> 
                 <thead>

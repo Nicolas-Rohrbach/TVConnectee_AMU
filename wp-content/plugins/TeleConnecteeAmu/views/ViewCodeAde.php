@@ -78,13 +78,13 @@ class ViewCodeAde extends ViewG
         echo '
          <form method="post">
             <label>Titre</label>
-            <input name="modifTitle" type="text" class="form-control" placeholder="Titre" value="'.$result['title'].'">
+            <input name="modifTitle" type="text" class="form-control" placeholder="Titre" value="'.$result[0]['title'].'">
             <label>Code</label>
-            <input name="modifCode" type="text" placeholder="Code" value="'.$result['code'].'">
+            <input name="modifCode" type="text" placeholder="Code" value="'.$result[0]['code'].'">
             <div class="form-group">
-            <label for="exampleFormControlSelect1">Selectionner une année</label>
-                <select class="form-control" name="modifannee">
-                    <option>'.$result['type'].'</option>
+            <label for="exampleFormControlSelect1">Selectionner un type</label>
+                <select class="form-control" name="modifType">
+                    <option>'.$result[0]['type'].'</option>
                     <option>Annee</option>
                     <option>Groupe</option>
                     <option>Demi-Groupe</option>

@@ -8,9 +8,8 @@
 
 class ControllerG
 {
-    public function getMyIdUrl($size){
-        $newAdress = substr($_SERVER['REQUEST_URI'],$size);
-        $id = substr($newAdress,0,-1);
-        return $id;
+    public function getMyIdUrl(){
+        $urlExpl = explode('/', $_SERVER['REQUEST_URI']);
+        return $urlExpl[3];
     }
 }

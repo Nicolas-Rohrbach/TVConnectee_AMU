@@ -31,75 +31,14 @@ class Student
         }
     }
 
-    function displayAllStudents($action){
-
-        $adresse = $_SERVER['REQUEST_URI'];
-        $id =  '';
-
-        for($i = 1; $i < strlen($adresse); ++$i){
-            if($adresse[$i] === '/'){
-                for($j = $i + 1; $j < strlen($adresse) - 1; ++$j){
-                    $id .= $adresse[$j];
-                }
-            }
-        }
-
+    function displayAllStudents(){
         $result = $this->model->getStudents();
         $this->view->tabHeadStudent();
-
-        $tabStudent = [];
-        $cpt = 0;
-
-        foreach ($result as $row) {
-
-            $firstname = $row['prenom'];
-            $lastname = $row['user_nicename'];
-            $year = $row['annee'];
-            $group = $row['groupe'];
-            $halfgroup = $row['demiGroupe'];
-            $id = $row['ID'];
-
-            $student = new DAOStudent($firstname, $lastname, $year, $group, $halfgroup, $id);
-
-            $tabStudent[$cpt] = $student;
-            ++$cpt;
-
-        }
         $i = 0;
-        if($action[0] === 'prenom'){
-            $tabStudentSort = DAOStudent::sortByFirstname($tabStudent);
-            foreach ($tabStudentSort as $student){
-                $this->view->displayAllStudent($student->getFirstname(), $student->getLastname(), $student->getYear(), $student->getGroup(), $student->getHalfgroup(), ++$i, $student->getId());
-            }
-        }
-
-        elseif($action[1] === 'nom'){
-            $tabStudentSort = DAOStudent::sortByLastname($tabStudent);
-            foreach ($tabStudentSort as $student){
-                $this->view->displayAllStudent($student->getFirstname(), $student->getLastname(), $student->getYear(), $student->getGroup(), $student->getHalfgroup(), ++$i, $student->getId());
-            }
-        }
-        elseif($action[2] === 'annee1'){
-            foreach ($tabStudent as $student){
-                if($student->getAnnee() === '1'){
-                    $this->view->displayAllStudent($student->getFirstname(), $student->getLastname(), $student->getYear(), $student->getGroup(), $student->getHalfgroup(), ++$i, $student->getId());                }
-            }
-        }
-        elseif($action[3] === 'annee2'){
-            foreach ($tabStudent as $student){
-                if($student->getAnnee() === '2'){
-                    $this->view->displayAllStudent($student->getFirstname(), $student->getLastname(), $student->getYear(), $student->getGroup(), $student->getHalfgroup(), ++$i, $student->getId());                }
-            }
-        }
-        elseif($action[3] === 'licence'){
-            foreach ($tabStudent as $student){
-                if($student->getAnnee() == "Licence ACI"){
-                    $this->view->displayAllStudent($student->getFirstname(), $student->getLastname(), $student->getYear(), $student->getGroup(), $student->getHalfgroup(), ++$i, $student->getId());                }
-            }
-        }
-        else{
-            foreach ($tabStudent as $student){
-                $this->view->displayAllStudent($student->getFirstname(), $student->getLastname(), $student->getYear(), $student->getGroup(), $student->getHalfgroup(), ++$i, $student->getId());            }
+        foreach ($result as $row){
+            $year = $this->model->getTitleOfCode($row['annee']);
+            echo  $year[0]['title'];
+            $this->view->displayAllStudent($row['prenom'], $row['user_nicename'],  $year[0]['title'], $row['groupe'], $row['demiGroupe'], ++$i, $row['ID']);
         }
         $this->view->endTab();
     }

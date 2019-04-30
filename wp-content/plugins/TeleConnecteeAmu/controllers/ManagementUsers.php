@@ -31,7 +31,7 @@ class ManagementUsers extends ControllerG
 
     public function modifyMyUser(){
         $model = new TeacherManager();
-        $result = $model->getById($this->getMyIdUrl(51));
+        $result = $model->getById($this->getMyIdUrl());
 
         if($result['role'] == "etudiant"){
             $controller = new Student();

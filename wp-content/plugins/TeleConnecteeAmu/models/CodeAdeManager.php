@@ -24,6 +24,10 @@ class CodeAdeManager extends Model
         $req->closeCursor();
     }
 
+    /**
+     * @param $title
+     * @return bool
+     */
     protected function checkIfDoubleTitle($title){
         $var = 0;
         $req = $this->getBdd()->prepare('SELECT * FROM code_ade WHERE title =:title');
@@ -41,6 +45,13 @@ class CodeAdeManager extends Model
     }
 
 
+    /**
+     * Add a tuple
+     * @param $type
+     * @param $title
+     * @param $code
+     * @return bool
+     */
     public function addCode($type, $title, $code){
         if(! ($this->checkIfDoubleCode($code)) && ! ($this->checkIfDoubleTitle($title))){
             $req = $this->getBdd()->prepare('INSERT INTO code_ade (type, title, code) 
@@ -59,25 +70,93 @@ class CodeAdeManager extends Model
         }
     }
 
-    public function modifyCode($id, $title, $code, $type){
-        $req = $this->getBdd()->prepare('UPDATE code_ade SET title=:title, code=:code, type=:type WHERE ID=:id');
-
-        $req->bindParam(':id', $id);
-        $req->bindParam(':title', $title);
-        $req->bindParam(':code', $code);
-        $req->bindParam(':type', $type);
-
-        $req->execute();
+    /**
+     * Modify the tuple
+     * @param $result - Hold parameter of the tuple
+     * @param $id
+     * @param $title
+     * @param $code
+     * @param $type
+     * @return bool
+     */
+    public function checkModify($result, $id, $title, $code, $type){
+        if($result[0]['title'] != $title && $result[0]['code'] != $code){
+            if(!($this->checkIfDoubleCode($code)) && !($this->checkIfDoubleTitle($title))){
+                $this->modifyCode($id, $title, $code, $type);
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        elseif ($result[0]['title'] == $title && $result[0]['code'] != $code){
+            if(!($this->checkIfDoubleCode($code))){
+                $this->modifyCode($id, $title, $code, $type);
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        elseif ($result[0]['title'] != $title && $result[0]['code'] == $code){
+            if (!($this->checkIfDoubleTitle($title))){
+                $this->modifyCode($id, $title, $code, $type);
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        elseif($result[0]['title'] == $title && $result[0]['code'] == $code){
+            $this->modifyCode($id, $title, $code, $type);
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
+    /**
+     * Modify tuple
+     * @param $id
+     * @param $title
+     * @param $code
+     * @param $type
+     */
+    public function modifyCode($id, $title, $code, $type){
+
+            $req = $this->getBdd()->prepare('UPDATE code_ade SET title=:title, code=:code, type=:type WHERE ID=:id');
+
+            $req->bindParam(':id', $id);
+            $req->bindParam(':title', $title);
+            $req->bindParam(':code', $code);
+            $req->bindParam(':type', $type);
+
+            $req->execute();
+
+    }
+
+    /**
+     * Delete tuple
+     * @param $id
+     */
     public function deleteCode($id){
         $this->deleteTuple('code_ade',$id);
     }
 
+    /**
+     * Return all tuple from the table code_ade
+     * @return array
+     */
     public function getAllCode(){
         return parent::getAll('code_ade');
     }
 
+    /**
+     * Return the tuple bind with the id
+     * @param $id
+     * @return array
+     */
     public function getCode($id){
         $req = $this->getBdd()->prepare('SELECT * FROM code_ade WHERE ID = :id');
         $req->bindParam(':id', $id);

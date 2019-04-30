@@ -51,7 +51,7 @@ function excelStudent($actionEtud){
                         $group = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(5, $row)->getValue());
                         $halfgroup = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(6, $row)->getValue());
 
-                        if($model->insertStudent($login, $pwd, $year, $group, $halfgroup, $firstname, $lastname, $email)) {
+                        if($model->insertMyStudent($login, $pwd, $year, $group, $halfgroup, $firstname, $lastname, $email)) {
                             $message = "Bonjour, vous avez été inscrit sur le site de la Télé Connecté de votre département en temps qu'étudiant. <br> Sur ce site, vous aurez accès à votre emploie du temps, à vos notes et aux informations concernant votre scolarité. <br>" ;
                             $message2 = $message . "Votre identifiant est " . $login . " et votre mot de passe est " . $mdp . ". <br>"  ;
                             $message3 = $message2 . "Pour vous connecter, rendez vous sur le site : tv-connectee-amu.alwaysdata.net ." . "<br> Nous vous souhaitons une bonne expérience sur notre site. <br>" ;

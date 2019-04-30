@@ -32,6 +32,7 @@ class CodeAde extends ControllerG
 
         if($action == "Valider"){
             if($this->model->addCode($type, $title, $code)){
+                $this->view->refreshPage();
                 echo "Ajout réalisé";
             }
             else{
@@ -41,7 +42,7 @@ class CodeAde extends ControllerG
     }
 
     /**
-     * Display all codes from the databass
+     * Display all codes from the database
      */
     public function displayAllCodes(){
         $results = $this->model->getAllCode();
@@ -63,15 +64,22 @@ class CodeAde extends ControllerG
      * Modify the code
      */
     public function modifyMyCode(){
-        $url = filter_input(INPUT_GET, 'url');
-
-        if (empty($url)) {
-            $url = 'Home';
-        }
-
-        $urlExpl = explode('/', $url);
-        echo $url;
-        $result = $this->model->getCode($this->getMyIdUrl(38));
+        $result = $this->model->getCode($this->getMyIdUrl());
         $this->view->displayModifyCode($result);
+
+        $action = $_POST['modifCodeValid'];
+        $title = filter_input(INPUT_POST,'modifTitle');
+        $code = filter_input(INPUT_POST,'modifCode');
+        $type = filter_input(INPUT_POST,'modifType');
+
+        if($action == "Valider"){
+            if($this->model->checkModify($result, $this->getMyIdUrl(), $title, $code, $type)){
+                $this->view->refreshPage();
+                echo "Oui c'est bon fréro";
+            }
+            else{
+                echo "Titre ou code déjà utilisé man";
+            }
+        }
     }
 }

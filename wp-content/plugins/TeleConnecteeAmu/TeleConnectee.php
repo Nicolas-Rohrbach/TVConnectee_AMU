@@ -73,9 +73,10 @@ add_action('add_teacher', array($teacher, 'insertTeacher'), 0, 1);
 add_action('add_television', array($television, 'insertTelevision'), 0, 7);
 add_action('add_secretary', array($secretary, 'insertSecretary'), 0, 6);
 add_action('add_code_ade', array($code, 'insertCode'));
-add_action('add_code_ade', array($code, 'displayAllCodes'));
 
+add_action('display_all_codes', array($code, 'displayAllCodes'));
 add_action('displayManagementUsers', array($managementusers, 'displayMyUsers'),0 , 2);
+
 add_action('modify_user', array($managementusers, 'ModifyMyUser'));
 add_action('modify_code_ade', array($code, 'modifyMyCode'));
 
