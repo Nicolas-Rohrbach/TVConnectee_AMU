@@ -19,8 +19,7 @@ class ViewStudent extends ViewG
                 <thead>
                     <tr class="text-center">
                         <th scope="col">#</th>
-                        <th scope="col">Prénom</th>
-                        <th scope="col">Nom</th>
+                        <th scope="col">Numéro étudiant</th>
                         <th scope="col">Année</th>
                         <th scope="col">Groupe</th>
                         <th scope="col">Demi groupe</th>
@@ -32,58 +31,46 @@ class ViewStudent extends ViewG
         ';
     }
 
-    public function displayAllStudent($firstname, $lastname, $year, $group, $halfgroup, $row, $id){
-        $this->displayAll($row ,$firstname, $lastname, $year,  $group, $halfgroup, false);
+    public function displayAllStudent($result, $year, $group, $halfgroup, $row){
+        $this->displayAll($row , $result['user_login'], $year);
         echo '
-          <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs/modification-utilisateur/'.$id.'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
-          <td class="text-center"> <button class="btn btn-danger btn-lg " name="suppretud" type="submit" value="'.$id.'" >Supprimer</button></td>
+          <td class="text-center">'.$group.'</td>
+          <td class="text-center">'.$halfgroup.'</td>
+          <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs/modification-utilisateur/'.$result['ID'].'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
+          <td class="text-center"> <button class="btn btn-danger btn-lg " name="suppretud" type="submit" value="'.$result['ID'].'" >Supprimer</button></td>
         </tr>';
     }
 
-    public function displayModifyStudent($nom, $prenom, $annee, $groupe, $demiGroupe){
+    public function displayModifyStudent($result, $years, $groups, $halfgroups){
         echo '
+         <h3>'.$result['user_login'].'</h3>
          <form method="post">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Nom</span>
-                    </div>
-                    <input name="modifnom" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Entrer le titre de linformation à ajouter" value="'.$nom.'">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Prenom</span>
-                    </div>
-                    <input name="modifprenom" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Entrer le titre de linformation à ajouter" value="'.$prenom.'">
-                </div>
-                <div class="form-group">
-                <label for="exampleFormControlSelect1">Selectionner une année</label>
-                    <select class="form-control" name="modifannee">
-                          <option>'.$annee.'</option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>Licence Professionnelle</option>
-                    </select>
-              </div>
-                <div class="form-group">
-                <label for="exampleFormControlSelect1">Selectionner un groupe</label>
-                    <select class="form-control" name="modifgroupe">
-                          <option>'.$groupe.'</option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                    </select>
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlSelect1">Selectionner un demi groupe</label>
-                    <select class="form-control" name="modifdemigroupe">
-                          <option>'.$demiGroupe.'</option>
-                          <option>A</option>
-                          <option>B</option>
-                    </select>
-              </div>
-              <input name="modifvalider" type="submit" value="Valider">
+            <label>Année</label>
+            <select class="form-control" name="modifYear">
+                <option>'.$result['annee'].'</option>
+            ';
+            foreach ($years as $year) {
+                echo '<option value="'.$year['code'].'">'.$year['title'].'</option >';
+            }
+            echo'
+            </select>
+            <label>Groupe</label>
+            <select class="form-control" name="modifGroup">
+                <option>'.$result['groupe'].'</option>';
+            foreach ($groups as $group){
+                echo'<option value="'.$group['code'].'">'.$group['title'].'</option>';
+            }
+            echo'
+            </select>
+            <label>Demi-groupe</label>
+            <select class="form-control" name="modifHalfgroup">
+                <option>'.$result['demiGroupe'].'</option>';
+            foreach ($halfgroups as $halfgroup){
+                echo'<option value="'.$halfgroup['code'].'">'.$halfgroup['title'].'</option>';
+            }
+            echo'
+            </select>
+            <input name="modifvalider" type="submit" value="Valider">
             <a class="btn btn-dark btn-lg mb-3" href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs">Annuler</a>
          </form>';
     }

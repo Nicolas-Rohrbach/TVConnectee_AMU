@@ -6,21 +6,16 @@
  * Time: 10:02
  */
 
-class StudentManager extends Model
-{
+class StudentManager extends Model{
+
     public function insertMyStudent($login, $pwd, $year, $group, $halfgroup, $firstname, $lastname, $email){
-
         $role = "etudiant";
-
         return $this->insertUser($login, $pwd, $role, $year, $group, $halfgroup, $firstname, $lastname, $email);
-
     }
 
-    public function modifyStudent($id, $firstname, $lastname, $year, $group, $halfgroup, $email){
-
+    public function modifyStudent($id, $year, $group, $halfgroup){
         $result = $this->getById($id);
-        return $this->modifyUser($id, $result['user_login'], $result['user_pass'], $year, $group, $halfgroup, $firstname, $lastname, $email);
-
+        return $this->modifyUser($id, $result['user_login'], $result['user_pass'], $year, $group, $halfgroup, " ", " ", " ");
     }
 
     public function getStudents(){
@@ -28,5 +23,4 @@ class StudentManager extends Model
         $result = $wpdb->get_results("SELECT * FROM wp_users WHERE role = 'etudiant'", ARRAY_A);
         return $result;
     }
-
 }

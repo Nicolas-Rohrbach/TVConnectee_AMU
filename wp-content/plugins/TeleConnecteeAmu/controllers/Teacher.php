@@ -30,47 +30,14 @@ class Teacher
 
     /**
      * Display all teachers in a tab
-     * @param $action
      */
-    public function displayAllTeachers($action){
-
-        $result = $this->model->getTeachers();
+    public function displayAllTeachers(){
+        $results = $this->model->getTeachers();
         $this->view->tabHeadTeacher();
-
-        $tabTeacher = [];
-        $cpt = 0;
-
-        foreach ($result as $row){
-
-            $firstname = $row['prenom'];
-            $lastname = $row['user_nicename'];
-            $code = $row['annee'];
-            $id = $row['ID'];
-
-            $teacher = new DAOTeacher($firstname, $lastname, $code, $id);
-
-            $tabTeacher[$cpt] = $teacher;
-            ++$cpt;
-
-        }
-        $i = 0;
-        if($action[0] === 'prenom'){
-            $tabTeacherSort = DAOTeacher::sortByFirstname($tabTeacher);
-            foreach ($tabTeacherSort as $teacher){
-                $this->view->displayAllTeacher($teacher->getFirstname(), $teacher->getLastname(), $teacher->getCode(), ++$i, $teacher->getId());
-            }
-        }
-
-        elseif($action[1] === 'nom'){
-            $tabTeacherSort = DAOTeacher::sortByLastname($tabTeacher);
-            foreach ($tabTeacherSort as $teacher){
-                $this->view->displayAllTeacher($teacher->getFirstname(), $teacher->getLastname(), $teacher->getCode(), ++$i, $teacher->getId());
-            }
-        }
-        else{
-            foreach ($tabTeacher as $teacher){
-                $this->view->displayAllTeacher($teacher->getFirstname(), $teacher->getLastname(), $teacher->getCode(), ++$i, $teacher->getId());
-            }
+        $row = 0;
+        foreach ($results as $result){
+            ++$row;
+            $this->view->displayAllTeacher($result, ++$row);
         }
         $this->view->endTab();
     }
@@ -89,14 +56,13 @@ class Teacher
 
     public function displayModifyTeacher($result){
 
-        $action = $_POST['modifvalider'];
-        $firstname = $_POST['modifprenom'];
-        $lastname  = $_POST['modifnom'];
+        $action = $_POST['modifValidate'];
+        $code = $_POST['modifCode'];
 
-        $this->view->displayModifyTeacher($result['user_nicename'], $result['prenom']);
+        $this->view->displayModifyTeacher($result);
 
         if($action === 'Valider'){
-            $this->model->insertMyTeacher($result['user_login'], $result['user_pass'], $result['code'], $firstname, $lastname, $result['user_email']);
+            $this->model->modifyTeacher($result, $code);
             $this->view->refreshPage();
         }
     }

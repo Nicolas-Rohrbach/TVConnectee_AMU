@@ -36,26 +36,28 @@ class Student
         $this->view->tabHeadStudent();
         $i = 0;
         foreach ($result as $row){
-            $year = $this->model->getTitleOfCode($row['annee']);
-            echo  $year[0]['title'];
-            $this->view->displayAllStudent($row['prenom'], $row['user_nicename'],  $year[0]['title'], $row['groupe'], $row['demiGroupe'], ++$i, $row['ID']);
+            $year = $this->model->codeReturn($row['annee']);
+            $group = $this->model->codeReturn($row['groupe']);
+            $halfgroup = $this->model->codeReturn($row['demiGroupe']);
+            $this->view->displayAllStudent($row,  $year, $group, $halfgroup, ++$i);
         }
         $this->view->endTab();
     }
 
     public function displayModifyMyStudent($result){
 
-        $this->view->displayModifyStudent($result['user_nicename'], $result['prenom'], $result['annee'], $result['groupe'], $result['demiGroupe']);
+        $years = $this->model->getCodeYear();
+        $groups = $this->model->getCodeGroup();
+        $halfgroups = $this->model->getCodeHafgroup();
+        $this->view->displayModifyStudent($result, $years, $groups, $halfgroups);
 
         $action = $_POST['modifvalider'];
-        $firstname = filter_input(INPUT_POST,'modifprenom');
-        $lastname = filter_input(INPUT_POST,'modifnom');
-        $year = filter_input(INPUT_POST,'modifannee');
-        $group = filter_input(INPUT_POST,'modifgroupe');
-        $halfgroup = filter_input(INPUT_POST,'modifdemigroupe');
+        $year = filter_input(INPUT_POST,'modifYear');
+        $group = filter_input(INPUT_POST,'modifGroup');
+        $halfgroup = filter_input(INPUT_POST,'modifHalfgroup');
 
         if($action == 'Valider'){
-            if($this->model->modifyStudent($result['ID'], $firstname, $lastname, $year, $group, $halfgroup, $result['user_email'])){
+            if($this->model->modifyStudent($result['ID'], $year, $group, $halfgroup)){
                 $this->view->refreshPage();
             }
             else{

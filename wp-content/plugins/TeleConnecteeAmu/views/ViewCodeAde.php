@@ -56,6 +56,7 @@ class ViewCodeAde extends ViewG
         $this->tableHeadCode();
         $cpt = 0;
         foreach($results as $result){
+            ++$cpt;
             echo '
                 <tr>
                     <td class="text-center"> '.$cpt.'</td>
@@ -65,7 +66,6 @@ class ViewCodeAde extends ViewG
                     <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-codes-ade/modification-code-ade/'.$result['ID'].'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
                     <td class="text-center"> <button class="btn btn-danger btn-lg " name="deleteCode" type="submit" value="'.$result['ID'].'" >Supprimer</button></td>
                 </tr>';
-            ++$cpt;
         }
         $this->endTab();
     }

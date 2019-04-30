@@ -183,6 +183,42 @@ abstract class Model
         $req->closeCursor();
     }
 
+    public function getCodeYear(){
+        $req = $this->getBdd()->prepare('SELECT * FROM code_ade WHERE type = "Annee"');
+        $req->execute();
+        while ($data = $req->fetch()) {
+            $var[] = $data;
+        }
+        return $var;
+        $req->closeCursor();
+    }
+
+    public function getCodeGroup(){
+        $req = $this->getBdd()->prepare('SELECT * FROM code_ade WHERE type = "Groupe"');
+        $req->execute();
+        while ($data = $req->fetch()) {
+            $var[] = $data;
+        }
+        return $var;
+        $req->closeCursor();
+    }
+
+    public function getCodeHafgroup(){
+        $req = $this->getBdd()->prepare('SELECT * FROM code_ade WHERE type = "Demi-Groupe"');
+        $req->execute();
+        while ($data = $req->fetch()) {
+            $var[] = $data;
+        }
+        return $var;
+        $req->closeCursor();
+    }
+
+    public function codeReturn($code){
+        $var = $this->getTitleOfCode($code);
+        if(! isset($var[0]['title']))  $var[0]['title'] = $code;
+        return $var[0]['title'];
+    }
+
     protected function deleteTuple($table, $id){
 
         $req = $this->getBdd()->prepare('DELETE FROM '.$table.' WHERE ID = :id');
