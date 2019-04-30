@@ -99,9 +99,9 @@ class BdInformation
      */
     public function getInformationbyID($id) {
      global $wpdb;
-       $result = $wpdb->get_row('SELECT * FROM informations WHERE ID_Info="'.$id.'"',ARRAY_A );
+       $result = $wpdb->get_row('SELECT * FROM informations WHERE ID_info ="'.$id.'"',ARRAY_A );
        return $result;
-    } //getInformation()
+    } //getInformationbyID()
 
     public function modifyInformation($id,$title,$content,$endDate)
     {

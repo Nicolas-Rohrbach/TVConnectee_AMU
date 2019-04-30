@@ -48,7 +48,7 @@ class ViewInformation extends ViewG
        echo  '</table> 
               </div>
            <button type="submit" value="supprimer" name="deleteInfo" class="btn btn-danger"> Supprimer </button>
-           <a href="http://'.$_SERVER['HTTP_HOST'].'/modification-information/" type="submit" value="modifier" name="changeInfo" class="btn btn-info"> Modifier </a>
+           <button type="submit" value="modifier" name="changeInfo" class="btn btn-danger"> Modifier </button>
             </form>';
     } //displayInformationManagement()
 
