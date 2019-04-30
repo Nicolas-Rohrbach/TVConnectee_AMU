@@ -56,8 +56,6 @@ td img {
 }
 
 
-
-
 #primary {
 	margin : 2em;
 }
@@ -68,8 +66,4 @@ form input{
 }
 form button{
 	margin : 3px;
-}
-
-#modify_info {
-	margin-top: 5%;
 }

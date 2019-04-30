@@ -19,7 +19,6 @@ class ViewInformation extends ViewG
      */
     public function displayInformationManagement($id, $title, $author, $content, $creationDate, $endDate) {
         echo '
-        
            <form name="formInfo" method="post">
             <table class="table">
                     <tr>
@@ -39,7 +38,7 @@ class ViewInformation extends ViewG
                         <td>'.$endDate[$i].'</td>
                         <td class="td_centered">
                             <div class="button_modif">
-                                <label><button type="submit" value="modifier" name="changeInfo" class="btn btn-info"> Modifier </button></label>
+                                <label><a href="http://'.$_SERVER['HTTP_HOST'].'/modification-information/'.$id[$i].'" type="submit" value="modifier" name="changeInfo" class="btn btn-info"> Modifier </a></label>
                             </div>
                         </td>
                         <td class="td_centered">

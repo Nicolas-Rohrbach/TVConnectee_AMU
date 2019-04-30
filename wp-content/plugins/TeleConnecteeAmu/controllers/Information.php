@@ -77,17 +77,13 @@ class Information
             $this->deleteInformation($infoSelectedID);
             $this->view->refreshPage();
         }
-        elseif (isset($actionChange)) {
-            $this->modifyInformation($infoSelectedID);
-        }
+
     } // informationList()
 
-    public function modifyInformation($id) {
-        $actionMod = $_GET["executeModifInfo"];
-        echo $actionMod;
-//        if(isset($actionMod)) {
-//            echo 'Hello';
-//        }
+    public function modifyInformation() {
+        $urlExpl = explode('/', $_SERVER['REQUEST_URI']);
+        $id = $urlExpl[2];
+
         $result = $this->DB->getInformationbyID($id);
             $title = $result['title'];
             $content = $result['content'];
