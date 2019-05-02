@@ -17,6 +17,22 @@ class BdInformation
     {
     }
 
+
+    private static $bdd;
+
+    private static function setBdd()
+    {
+        global $wpdb;
+        self::$bdd = new PDO('mysql:host='.$wpdb->dbhost.'; dbname='.$wpdb->dbname, $wpdb->dbuser, $wpdb->dbpassword);
+        self::$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+    }
+    protected function getBdd()
+    {
+        if (self:: $bdd == null)
+            self::setBdd();
+        return self::$bdd;
+    }
+
     /**
      * Ajoute une information dans la BD avec en parametre le titre, le contenu et la date d'expiration.
      * @param $title
@@ -105,15 +121,15 @@ class BdInformation
 
     public function modifyInformation($id,$title,$content,$endDate)
     {
-        global $wpdb;
-        $req = $wpdb->prepare('UPDATE informations SET title='.$title.', content='.$content.', 
-                                            end_date='.$endDate.' WHERE ID_Info='.$id);
-//        $req->bindParam(':id', $id);
-//        $req->bindParam(':title', $title);
-//        $req->bindParam(':content', $content);
-//        $req->bindParam(':end_date', $endDate);
+        $req = $this->getBdd()->prepare('UPDATE informations SET title=:title, content=:content, end_date=:endDate
+                                         WHERE ID_info=:id');
+        $req->bindParam(':id',$id);
+        $req->bindParam(':title',$title);
+        $req->bindParam(':content',$content);
+        $req->bindParam(':endDate',$endDate);
 
         $req->execute();
+
     }
 
 }
