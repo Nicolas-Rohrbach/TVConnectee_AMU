@@ -59,10 +59,15 @@ echo'                        </div>
         echo '<form id="creation_info" method="post">
                   Titre : <input type="text" name="titleInfo" placeholder="Inserer un titre" required> </br>
                   Contenu : <textarea name="contentInfo">...</textarea> </br>
-                  Ajouter une image : <button name="image" value="ajoutImage"> Ajouter </button> </br>
                   Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" required > </br>
                   <input type="submit" value="createInfo" name="createInfo">
-              </form>';
+              </form>
+              
+              <form action="processing_upload.php" method="post" enctype="multipart/form-data" <!--target="dummyframe"-->>
+	                Your Photo: <input type="file" name="image" size="25" />
+	                <input type="submit" name="submit" value="Submit" />
+              </form>
+              <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>'; //pour empecher la redirection
     } //displayInformationCreation()
 
 
