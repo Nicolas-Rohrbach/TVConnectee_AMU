@@ -39,22 +39,24 @@
 }
 
 
-th {
-	font-size : 120%;
-}
+th {font-size : 120%;}
+
+.td_centered {text-align: center;}
+
 
 td img {
 	max-width: 75px;
 	max-height: 75px;
 }
+
 #primary {
 	margin : 2em;
 }
 
 
-#creation_info input{
+form input{
 	margin : 3px;
 }
-#creation_info button{
+form button{
 	margin : 3px;
 }
