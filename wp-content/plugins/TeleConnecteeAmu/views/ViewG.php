@@ -57,7 +57,7 @@ abstract class ViewG{
         echo '
         <tr>
           <th scope="row">'.$row.'</th>
-          <td class="text-center"> <input type="checkbox" name="checkboxstatus[]" value="'.$id.'"/> </th>';
+          <td class="text-center"> <input type="checkbox" name="checkboxstatus[]" value="'.$id.'"/></td>';
         foreach ($tab as $value){
             echo '<td class="text-center">'.$value.'</td>';
         }

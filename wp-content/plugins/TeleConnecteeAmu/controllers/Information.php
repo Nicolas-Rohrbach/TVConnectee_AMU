@@ -30,8 +30,7 @@ class Information
     } //addInformation()
 
     /**
-     * Supprime une information a l'aide de son id
-     * @param $id
+     * @param $action
      */
     public function deleteInformations($action) {
         if(isset($action)) {
@@ -42,6 +41,7 @@ class Information
 
                 }
             }
+            $this->view->refreshPage();
         }
     } //deleteInformation()
 
@@ -51,13 +51,14 @@ class Information
         $i = 0;
 
         foreach ($result as $row){
+            $id = $row['ID_info'];
             $title = $row['title'];
             $author = $row['author'];
             $content = $row['content'];
             $creationDate = $row['creation_date'];
             $endDate = $row['end_date'];
 
-            $this->view->displayAllInformation($row, $title, $author, $content, $creationDate, $endDate, ++$i);
+            $this->view->displayAllInformation($id, $title, $author, $content, $creationDate, $endDate, ++$i);
         }
         $this->view->endTab();
     }

@@ -14,11 +14,11 @@ class ViewInformation extends ViewG
     }
 
 
-public function displayAllInformation($result, $title, $author, $content, $creationDate, $endDate, $row){
+public function displayAllInformation($id, $title, $author, $content, $creationDate, $endDate, $row){
     $tab = [$title, $author, $content, $creationDate, $endDate];
-    $this->displayAll($row, $result['ID_Info'], $tab);
+    $this->displayAll($row, $id, $tab);
     echo '
-          <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/modification-information/'.$result['ID_info'].'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
+          <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/modification-information/'.$id.'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
         </tr>';
 }
 
