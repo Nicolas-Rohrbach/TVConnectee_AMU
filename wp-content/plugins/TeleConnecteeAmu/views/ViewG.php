@@ -52,7 +52,17 @@ abstract class ViewG{
         <input type="submit" value="Delete" name="Delete"/>
         </form>';
     }
-    
+
+    protected function displayAll($row, $id, $tab){
+        echo '
+        <tr>
+          <th scope="row">'.$row.'</th>
+          <td class="text-center"> <input type="checkbox" name="checkboxstatus[]" value="'.$id.'"/> </th>';
+        foreach ($tab as $value){
+            echo '<td class="text-center">'.$value.'</td>';
+        }
+    }
+
     public function refreshPage(){
         echo '<meta http-equiv="refresh" content="0">';
     }

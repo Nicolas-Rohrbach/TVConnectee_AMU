@@ -8,51 +8,19 @@
 
 class ViewInformation extends ViewG
 {
-    /**
-     * Affiche toute la page de gestions des informations
-     * @param $id
-     * @param $title
-     * @param $author
-     * @param $content
-     * @param $creationDate
-     * @param $endDate
-     */
-    public function displayInformationManagement($id, $title, $author, $content, $creationDate, $endDate) {
-        echo '
-           <form name="formInfo" method="post">
-            <table class="table">
-                    <tr>
-                        <th> Selectionner </th>
-                        <th>  Titre </th>
-                        <th>  Auteur </th>
-                        <th>  Contenu </th>
-                        <th>  Date de création </th>
-                        <th>  Date de fin </th>
-                    </tr>';
-       for($i=0; $i < sizeof($title); ++$i) {
-           echo    '
-                    <tr>
-                        <td class="td_centered">
-                            <div class="radio">
-                                <label><input type="radio" name="radioID" value="'.$id[$i].'" > </label>
-                            </div>
-                        </td>
-                        <td>'.$title[$i].'</td> 
-                        <td>'.$author[$i].'</td>
-                        <td>'.$content[$i].'</td>
-                        <td>'.$creationDate[$i].'</td>
-                        <td>'.$endDate[$i].'</td>
-                        <td class="td_centered">
-                            <div class="button_modif">
-                                <label><a href="http://'.$_SERVER['HTTP_HOST'].'/modification-information/'.$id[$i].'" type="submit" value="modifier" name="changeInfo" class="btn btn-info"> Modifier </a></label>
-                            </div>
-                        </td>
-                    </tr>';
-       }
-       echo  '</table> 
-                 <button type="submit" value="supprimer" name="deleteInfo" class="btn btn-danger"> Supprimer </button>
-            </form>';
-    } //displayInformationManagement()
+    public function tabHeadInformation(){
+        $tab = ["Titre","Auteur","Contenu","Date de création","Date de fin"];
+        $this->startTab($tab);
+    }
+
+
+public function displayAllInformation($result, $title, $author, $content, $creationDate, $endDate, $row){
+    $tab = [$title, $author, $content, $creationDate, $endDate];
+    $this->displayAll($row, $result['ID_Info'], $tab);
+    echo '
+          <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/modification-information/'.$result['ID_info'].'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
+        </tr>';
+}
 
 
     /**

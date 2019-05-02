@@ -46,13 +46,6 @@ $weather = new Weather();
 
 
 
-//add_action('HookAlexis', array( $info, 'affichage_infos_pages' ) );
-//add_action('infosMobile', array($info, 'affichage_infos_mobile' ) );
-
-//add_action('insert_info', array( $info, 'traitement_formulaire_info'), 0, 4);
-//add_action('HookAlexis', array( $info, 'suppr_info'), 0, 2);
-//add_action('modif_info', array( $info, 'modifier_info'), 0, 4);
-
 add_action('ajouter_user', array($users, 'insert_user'), 0, 3);
 
 add_action('afficher_prof', array($users, 'afficherLesProf'), 0, 1 );
@@ -67,7 +60,11 @@ add_action('modifprof', array($users, 'afficherModifProf') );
 add_action('hookEDT',array($schedule,'displayMySchedule'));
 add_action('hookWeather',array($weather,'displayMyWeather'));
 
-add_action('handleInfos',array($information,'informationList'), 0, 3);
+add_action('handleInfos',array($information,'displayAllInformations'));
+add_action('delete_infos',array($information, 'deleteInformations'),0 ,1);
+
+
+
 add_action('displayInformations',array($information,'displayInformationMain'));
 add_action('add_info',array($information,'insertInformation'), 0, 4);
 add_action('modify_info',array($information,'modifyInformation'));

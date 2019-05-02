@@ -33,52 +33,34 @@ class Information
      * Supprime une information a l'aide de son id
      * @param $id
      */
-    public function deleteInformation($id) {
+    public function deleteInformations($action) {
+        if(isset($action)) {
+            if (isset($_REQUEST['checkboxstatus'])) {
+                $checked_values = $_REQUEST['checkboxstatus'];
+                foreach ($checked_values as $val) {
+                    $this->DB->deleteInformationDB($val);
 
-        $this->DB->deleteInformationDB($id);
+                }
+            }
+        }
     } //deleteInformation()
 
-    /**
-     *Affiche la liste des informations et modifie ou supprime l'info selectionné.
-     *
-     */
-    public function informationList($actionDelete, $actionChange, $infoSelectedID){
+    function displayAllInformations(){
         $result = $this->DB->getListInformation();
+        $this->view->tabHeadInformation();
+        $i = 0;
 
-        $idList = array();
-        $titleList = array();
-        $authorList = array();
-        $creationDateList = array();
-        $endDateList = array();
-        $contentList = array();
-
-        foreach ($result as $row) {
-
-            $id = $row['ID_info'];
+        foreach ($result as $row){
             $title = $row['title'];
             $author = $row['author'];
-            $creationDate = date('Y-m-d',strtotime($row['creation_date']));
-            $endDate = date('Y-m-d',strtotime($row['end_date']));
             $content = $row['content'];
+            $creationDate = $row['creation_date'];
+            $endDate = $row['end_date'];
 
-            $this->endDateCheckInfo($id,$endDate);
-
-            array_push($idList, $id);
-            array_push($titleList, $title) ;
-            array_push($authorList, $author) ;
-            array_push($creationDateList, $creationDate);
-            array_push($endDateList, $endDate);
-            array_push($contentList,$content) ;
+            $this->view->displayAllInformation($row, $title, $author, $content, $creationDate, $endDate, ++$i);
         }
-
-        $this->view->displayInformationManagement($idList, $titleList,$authorList,$contentList, $creationDateList, $endDateList);
-
-        if(isset($actionDelete)){
-            $this->deleteInformation($infoSelectedID);
-            $this->view->refreshPage();
-        }
-
-    } // informationList()
+        $this->view->endTab();
+    }
 
     public function modifyInformation() {
         $urlExpl = explode('/', $_SERVER['REQUEST_URI']);
@@ -110,7 +92,7 @@ class Information
      */
     public function endDateCheckInfo($id, $endDate){
         if($endDate <= date("Y-m-d")) {
-            $this->deleteInformation($id);
+            $this->DB->deleteInformationDB($id);
         }
     } //endDateCheckInfo()
 
