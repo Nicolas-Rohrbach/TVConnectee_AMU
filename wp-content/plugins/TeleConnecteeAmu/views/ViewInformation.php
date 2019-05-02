@@ -22,6 +22,7 @@ class ViewInformation extends ViewG
            <form name="formInfo" method="post">
             <table class="table">
                     <tr>
+                        <th> Selectionner </th>
                         <th>  Titre </th>
                         <th>  Auteur </th>
                         <th>  Contenu </th>
@@ -31,6 +32,11 @@ class ViewInformation extends ViewG
        for($i=0; $i < sizeof($title); ++$i) {
            echo    '
                     <tr>
+                        <td class="td_centered">
+                            <div class="radio">
+                                <label><input type="radio" name="radioID" value="'.$id[$i].'" > </label>
+                            </div>
+                        </td>
                         <td>'.$title[$i].'</td> 
                         <td>'.$author[$i].'</td>
                         <td>'.$content[$i].'</td>
@@ -41,15 +47,10 @@ class ViewInformation extends ViewG
                                 <label><a href="http://'.$_SERVER['HTTP_HOST'].'/modification-information/'.$id[$i].'" type="submit" value="modifier" name="changeInfo" class="btn btn-info"> Modifier </a></label>
                             </div>
                         </td>
-                        <td class="td_centered">
-                            <div class="radio">
-                                <label><input type="radio" name="radioID" value="'.$id[$i].'" > </label>
-                            </div>
-                        </td>
                     </tr>';
        }
        echo  '</table> 
-                 <div id="delete_button"><button type="submit" value="supprimer" name="deleteInfo" class="btn btn-danger"> Supprimer </button></div> 
+                 <button type="submit" value="supprimer" name="deleteInfo" class="btn btn-danger"> Supprimer </button>
             </form>';
     } //displayInformationManagement()
 
