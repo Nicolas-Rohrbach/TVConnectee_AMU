@@ -18,7 +18,10 @@ class Television
     }
 
     public function insertTelevision($action, $login, $pwd, $code, $code2, $code3, $name) {
-        $this->view->displayFormTelevision();
+        $years = $this->model->getCodeYear();
+        $groups = $this->model->getCodeGroup();
+        $halfgroups = $this->model->getCodeHalfgroup();
+        $this->view->displayFormTelevision($years, $groups, $halfgroups);
         if(isset($action)) {
             $this->model->insertMyTelevision($login, $pwd, $code, $code2, $code3, $name);
         }

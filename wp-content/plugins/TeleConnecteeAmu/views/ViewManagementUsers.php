@@ -6,7 +6,7 @@
  * Time: 11:03
  */
 
-class ViewManagementUsers
+class ViewManagementUsers extends ViewG
 {
     public function displayButtonChoise(){
         echo '

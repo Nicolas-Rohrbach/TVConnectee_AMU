@@ -40,19 +40,6 @@ abstract class Model
         $req->closeCursor();
     }
 
-    public function getEmail($login)
-    {
-        $var = [];
-        $req = $this->getBdd()->prepare('SELECT * FROM USER WHERE LOGIN = :login');
-        $req->bindValue(':login', $login);
-        $req->execute();
-        while ($data = $req->fetch()) {
-            $var[] = $data;
-        }
-        return $var;
-        $req->closeCursor();
-    }
-
     protected function verifyTuple($login){
         $var = 0;
         $req = $this->getBdd()->prepare('SELECT * FROM wp_users WHERE user_login =:login');
@@ -86,12 +73,12 @@ abstract class Model
         $req->closeCursor();
     }
 
-    protected function insertUser($login, $pwd, $role, $year, $group, $halfgroup, $email){
+    protected function insertUser($login, $pwd, $role, $code1, $code2, $code3, $email){
         if ($this->verifyNoDouble($email, $login)){
-            $req = $this->getBdd()->prepare('INSERT INTO wp_users (user_login, user_pass, role, annee, groupe, demiGroupe,
+            $req = $this->getBdd()->prepare('INSERT INTO wp_users (user_login, user_pass, role, code1, code2, code3,
                                       user_nicename, user_email, user_url, user_registered, user_activation_key,
                                       user_status, display_name) 
-                                         VALUES (:login, :pwd, :role, :year, :group, :halfgroup, :name, :email, :url, NOW(), :key, :status, :displayname)');
+                                         VALUES (:login, :pwd, :role, :code1, :code2, :code3, :name, :email, :url, NOW(), :key, :status, :displayname)');
 
             $nul = " ";
             $zero = "0";
@@ -99,9 +86,9 @@ abstract class Model
             $req->bindParam(':login', $login);
             $req->bindParam(':pwd', $pwd);
             $req->bindParam(':role', $role);
-            $req->bindParam(':year', $year);
-            $req->bindParam(':group', $group);
-            $req->bindParam(':halfgroup', $halfgroup);
+            $req->bindParam(':code1', $code1);
+            $req->bindParam(':code2', $code2);
+            $req->bindParam(':code3', $code3);
             $req->bindParam(':name', $login);
             $req->bindParam(':email', $email);
             $req->bindParam(':url', $nul);
@@ -141,18 +128,18 @@ abstract class Model
         }
     }
 
-    protected function modifyUser($id, $login, $pwd, $year, $group, $halfgroup, $email){
+    protected function modifyUser($id, $login, $pwd, $code1, $code2, $code3, $email){
         if ($this->verifyTuple($login)) {
-            $req = $this->getBdd()->prepare('UPDATE wp_users SET user_login=:login, user_pass=:pwd, annee=:year, 
-                                            groupe=:group, demiGroupe=:halfgroup, user_nicename=:name, 
+            $req = $this->getBdd()->prepare('UPDATE wp_users SET user_login=:login, user_pass=:pwd, code1=:code1, 
+                                            code2=:code2, code3=:code3, user_nicename=:name, 
                                             user_email=:email, display_name=:displayname WHERE ID=:id');
 
             $req->bindParam(':id', $id);
             $req->bindParam(':login', $login);
             $req->bindParam(':pwd', $pwd);
-            $req->bindParam(':year', $year);
-            $req->bindParam(':group', $group);
-            $req->bindParam(':halfgroup', $halfgroup);
+            $req->bindParam(':code1', $code1);
+            $req->bindParam(':code2', $code2);
+            $req->bindParam(':code3', $code3);
             $req->bindParam(':name', $login);
             $req->bindParam(':email', $email);
             $req->bindParam(':displayname', $login);
@@ -164,6 +151,17 @@ abstract class Model
         else {
             return false;
         }
+    }
+
+    public function getUsersByRole($role){
+        $req = $this->getBdd()->prepare('SELECT * FROM wp_users WHERE role = :role');
+        $req->bindParam(':role', $role);
+        $req->execute();
+        while ($data = $req->fetch()) {
+            $var[] = $data;
+        }
+        return $var;
+        $req->closeCursor();
     }
 
     public function getTitleOfCode($code){
@@ -197,7 +195,11 @@ abstract class Model
         $req->closeCursor();
     }
 
-    public function getCodeHafgroup(){
+    /**
+     * Return all code from Halfgroup
+     * @return array
+     */
+    public function getCodeHalfgroup(){
         $req = $this->getBdd()->prepare('SELECT * FROM code_ade WHERE type = "Demi-Groupe"');
         $req->execute();
         while ($data = $req->fetch()) {
@@ -207,12 +209,22 @@ abstract class Model
         $req->closeCursor();
     }
 
-    public function codeReturn($code){
+    /**
+     * If the code has not a title, return the code
+     * @param $code
+     * @return mixed
+     */
+    public function getTitle($code){
         $var = $this->getTitleOfCode($code);
         if(! isset($var[0]['title']))  $var[0]['title'] = $code;
         return $var[0]['title'];
     }
 
+    /**
+     * Delete a row from a table due to the id
+     * @param $table
+     * @param $id
+     */
     protected function deleteTuple($table, $id){
 
         $req = $this->getBdd()->prepare('DELETE FROM '.$table.' WHERE ID = :id');
@@ -221,33 +233,48 @@ abstract class Model
         $req->execute();
     }
 
+    /**
+     * Delete a user
+     * @param $id
+     */
     public function deleteUser($id){
-        global $wpdb;
         $this->deleteTuple('wp_users', $id);
-        $wpdb->query("DELETE FROM wp_usermeta WHERE user_id = '$id'");
+        $req = $this->getBdd()->prepare('DELETE FROM wp_usermeta WHERE user_id = :id');
+        $req->bindValue(':id', $id);
+
+        $req->execute();
     }
 
+    /**
+     * Get a user due to his id
+     * @param $id
+     * @return mixed
+     */
     public function getById($id){
         global $wpdb;
         $result = $wpdb->get_row('SELECT * FROM `wp_users` WHERE `ID` ="' . $id . '"', ARRAY_A);
         return $result;
     }
 
+    /**
+     * Get all students from the same group
+     * @param $group
+     * @return mixed
+     */
     public function getByGroup($group){
         global $wpdb;
-        $result = $wpdb->get_results("SELECT * FROM wp_users WHERE groupe= '$group'", ARRAY_A) ;
+        $result = $wpdb->get_results("SELECT * FROM wp_users WHERE code2= '$group'", ARRAY_A) ;
         return $result ;
     }
 
+    /**
+     * Get all students from the same year
+     * @param $year
+     * @return mixed
+     */
     public function getByYear($year){
         global $wpdb;
-        $result = $wpdb->get_results("SELECT * FROM wp_users WHERE annee= '$year'", ARRAY_A) ;
+        $result = $wpdb->get_results("SELECT * FROM wp_users WHERE code1= '$year'", ARRAY_A) ;
         return $result ;
-    }
-
-    public function getByName($firstname, $lastname){
-        global $wpdb;
-        $result = $wpdb->get_row('SELECT groupe, annee FROM wp_users WHERE user_nicename = "'.$lastname.'" AND prenom = "'.$firstname.' "', ARRAY_A);
-        return $result;
     }
 }

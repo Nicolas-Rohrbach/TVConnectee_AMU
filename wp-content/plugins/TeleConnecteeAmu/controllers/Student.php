@@ -11,6 +11,9 @@ class Student extends ControllerG
     private $view;
     private $model;
 
+    /**
+     * Student constructor.
+     */
     public function __construct()
     {
         $this->view = new ViewStudent();
@@ -24,31 +27,28 @@ class Student extends ControllerG
 
     }
 
-    public function deleteStudent($action){
-        if(isset($action)){
-            $this->model->deleteUser($action);
-            $this->view->refreshPage();
-        }
-    }
-
     function displayAllStudents(){
-        $result = $this->model->getStudents();
-        $this->view->tabHeadStudent();
-        $i = 0;
-        foreach ($result as $row){
-            $year = $this->model->codeReturn($row['annee']);
-            $group = $this->model->codeReturn($row['groupe']);
-            $halfgroup = $this->model->codeReturn($row['demiGroupe']);
-            $this->view->displayAllStudent($row,  $year, $group, $halfgroup, ++$i);
+        $result = $this->model->getUsersByRole('etudiant');
+        if(isset($result)){
+            $this->view->tabHeadStudent();
+            $i = 0;
+            foreach ($result as $row){
+                $year = $this->model->getTitle($row['code1']);
+                $group = $this->model->getTitle($row['code2']);
+                $halfgroup = $this->model->getTitle($row['code3']);
+                $this->view->displayAllStudent($row,  $year, $group, $halfgroup, ++$i);
+            }
+            $this->view->endTab();
         }
-        $this->view->endTab();
+        else{
+            $this->view->displayEmpty();
+        }
     }
 
     public function displayModifyMyStudent($result){
-
         $years = $this->model->getCodeYear();
         $groups = $this->model->getCodeGroup();
-        $halfgroups = $this->model->getCodeHafgroup();
+        $halfgroups = $this->model->getCodeHalfgroup();
         $this->view->displayModifyStudent($result, $years, $groups, $halfgroups);
 
         $action = $_POST['modifvalider'];

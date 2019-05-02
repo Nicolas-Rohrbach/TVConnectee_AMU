@@ -33,19 +33,8 @@ class ViewCodeAde extends ViewG
      * Header of the table
      */
     public function tableHeadCode(){
-        echo '<form method="post">
-                <table class="table text-center"> 
-                <thead>
-                    <tr class="text-center">
-                        <th scope="col">#</th>
-                        <th scope="col">Titre</th>
-                        <th scope="col">Code ADE</th>
-                        <th scope="col">Type</th>
-                        <th scope="col">Modifier</th>
-                        <th scope="col">Supprimer</th>
-                     </tr>
-                </thead>
-                <tbody>';
+        $tab = ["Titre", "Code ADE", "Type"];
+        $this->startTab($tab);
     }
 
     /**
@@ -54,17 +43,13 @@ class ViewCodeAde extends ViewG
      */
     public function displayAllCode($results){
         $this->tableHeadCode();
-        $cpt = 0;
+        $row = 0;
         foreach($results as $result){
-            ++$cpt;
+            ++$row;
+            $tab = [$result['title'], $result['code'], $result['type']];
+            $this->displayAll($row, $result['ID'], $tab);
             echo '
-                <tr>
-                    <td class="text-center"> '.$cpt.'</td>
-                    <td class="text-center"> '.$result['title'].'</td>
-                    <td class="text-center"> '.$result['code'].'</td>
-                    <td class="text-center"> '.$result['type'].'</td>
                     <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-codes-ade/modification-code-ade/'.$result['ID'].'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
-                    <td class="text-center"> <button class="btn btn-danger btn-lg " name="deleteCode" type="submit" value="'.$result['ID'].'" >Supprimer</button></td>
                 </tr>';
         }
         $this->endTab();

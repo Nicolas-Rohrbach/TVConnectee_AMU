@@ -9,23 +9,21 @@
 class ManagementUsers extends ControllerG
 {
     private $view;
-    //private $model;
 
-    public function __construct()
-    {
+    public function __construct(){
         $this->view = new ViewManagementUsers();
-        //$this->model = new StudentManager();
     }
 
-    public function displayMyUsers($action, $actionTri){
+    public function displayMyUsers($action){
         $this->view->displayButtonChoise();
+        $this->view->displayError();
         if($action == "Students"){
             $controller = new Student();
-            $controller->displayAllStudents($action);
+            $controller->displayAllStudents();
         }
         elseif ($action == "Teachers") {
             $controller = new Teacher();
-            $controller->displayAllTeachers($actionTri);
+            $controller->displayAllTeachers();
         }
     }
 

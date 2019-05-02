@@ -8,41 +8,44 @@
 
 class ViewTeacher extends ViewG
 {
+    /**
+     * Display the input for read a file
+     */
     public function displayInsertImportFileTeacher() {
         $this->displayInsertImportFile("Prof");
     }
 
+    /**
+     * Header from the table
+     */
     public function tabHeadTeacher(){
-        echo '
-         <form method="post">
-             <table class="table"> 
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <td class="text-center"><strong>Login</strong></td>
-                        <td class="text-center"><strong>Code ADE</strong></td>
-                        <td class="text-center"><strong>Modifier</strong></td>
-                        <td class="text-center"><strong>Supprimer </strong></td>
-                    </tr>
-                </thead>
-            <tbody>
-        ';
+        $tab = ["Numéro Ent", "Code ADE"];
+        $this->startTab($tab);
     }
 
+    /**
+     * Display the content of all teacher per row in a table
+     * @param $result
+     * @param $row
+     */
     public function displayAllTeacher($result, $row){
-        $this->displayAll($row, $result['user_login'], $result['annee']);
+        $tab = [$result['user_login'], $result['code1']];
+        $this->displayAll($row, $result['ID'], $tab);
         echo '
           <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs/modification-utilisateur/'.$result['ID'].'" class="btn btn-primary btn-lg" name="modifprof" type="submit" value="Modifier">Modifier</a></td>
-          <td class="text-center"> <button class="btn btn-danger btn-lg " name="supprprof" type="submit" value="'.$result['ID'].'" >Supprimer</button></td>
         </tr>';
     }
 
+    /**
+     * Display the page for modify the code of the teacher
+     * @param $result
+     */
     public function displayModifyTeacher($result){
         echo '
          <form method="post">
             <h3>'.$result['user_login'].'</h3>
             <label>Code ADE</label>
-            <input name="modifCode" type="text" class="form-control" placeholder="Entrer le Code ADE" value="'.$result['annee'].'" required="">
+            <input name="modifCode" type="text" class="form-control" placeholder="Entrer le Code ADE" value="'.$result['code1'].'" required="">
             <button name="modifValidate" type="submit" class="btn btn-primary btn-lg mb-3" value="Valider">Valider</button>
             <a class="btn btn-dark btn-lg mb-3" href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs">Annuler</a>
          </form>';

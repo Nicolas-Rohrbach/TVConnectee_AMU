@@ -46,17 +46,27 @@ class CodeAde extends ControllerG
      */
     public function displayAllCodes(){
         $results = $this->model->getAllCode();
-        $this->view->displayAllCode($results);
+        if(isset($results)){
+            $this->view->displayAllCode($results);
+        }
+        else{
+            $this->view->displayEmpty();
+        }
     }
 
     /**
-     * Delete code
-     * @param $id
+     * Delete all code who are selected
+     * @param $action
      */
-    public function deleteMyCode($id){
-        if(isset($id)){
-            $this->model->deleteCode($id);
-            $this->view->refreshPage();
+    public function deleteCodes($action){
+        $model = new CodeAdeManager();
+        if(isset($action)){
+            if(isset($_REQUEST['checkboxstatus'])) {
+                $checked_values = $_REQUEST['checkboxstatus'];
+                foreach($checked_values as $val) {
+                    $model->deleteCode($val);
+                }
+            }
         }
     }
 

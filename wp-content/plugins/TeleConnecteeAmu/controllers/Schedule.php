@@ -35,15 +35,15 @@ class Schedule
         # Cherche le code ADE dans le dossier data/ressources.yaml en fonction de l'utilisateur connecté et demande à afficher l'emploi du temps
         $current_user = wp_get_current_user();
 
-        if($current_user->demiGroupe != 0) {
+        if($current_user->code3 != 0) {
             $this->view->displayName($current_user);
             $this->view->displayTimetable($current_user->demiGroupe,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear);
         }
-        else if($current_user->groupe != 0) {
+        else if($current_user->code2 != 0) {
             $this->view->displayName($current_user);
             $this->view->displayTimetable($current_user->groupe,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear);
         }
-        else if($current_user->annee != 0) {
+        else if($current_user->code1 != 0) {
             $this->view->displayName($current_user);
             $this->view->displayTimetable($current_user->annee,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear);
         }

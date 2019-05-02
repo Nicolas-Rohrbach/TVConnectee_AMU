@@ -31,7 +31,7 @@ class ViewStudent extends ViewG
          <form method="post">
             <label>Année</label>
             <select class="form-control" name="modifYear">
-                <option>'.$result['annee'].'</option>
+                <option>'.$result['code1'].'</option>
             ';
             foreach ($years as $year) {
                 echo '<option value="'.$year['code'].'">'.$year['title'].'</option >';
@@ -40,7 +40,7 @@ class ViewStudent extends ViewG
             </select>
             <label>Groupe</label>
             <select class="form-control" name="modifGroup">
-                <option>'.$result['groupe'].'</option>';
+                <option>'.$result['code2'].'</option>';
             foreach ($groups as $group){
                 echo'<option value="'.$group['code'].'">'.$group['title'].'</option>';
             }
@@ -48,7 +48,7 @@ class ViewStudent extends ViewG
             </select>
             <label>Demi-groupe</label>
             <select class="form-control" name="modifHalfgroup">
-                <option>'.$result['demiGroupe'].'</option>';
+                <option>'.$result['code3'].'</option>';
             foreach ($halfgroups as $halfgroup){
                 echo'<option value="'.$halfgroup['code'].'">'.$halfgroup['title'].'</option>';
             }

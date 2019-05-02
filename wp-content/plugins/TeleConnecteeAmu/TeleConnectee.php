@@ -2,7 +2,7 @@
 /**
  * Plugin Name: TvConnecteeAmu
  * Description: Plugin de la télé connectée de l'AMU, ce plugin permet de générer des fichiers ICS. Ces fichiers sont ensuite lus pour pouvoir afficher l'emploi du temps de la personne connectée. Ce plugin permet aussi d'afficher la météo, des informations, des alertes. Tant en ayant une gestion des utilisateurs et des informations.
- * Version: 2.1.1
+ * Version: 2.5.3
  * Author: Alexis Sola & Nicolas Rohrbach & Gwenaêl Roux
  * Author URI: http://tvconnectee.alwaysdata.net/
 */
@@ -61,29 +61,30 @@ $student = new Student();
 $teacher = new Teacher();
 $television = new Television();
 $secretary = new Secretary();
+
+$managementUsers = new ManagementUsers();
+
 $code = new CodeAde();
 
-$managementusers = new ManagementUsers();
-
 $schedule = new Schedule();
+//Function for Schedule
 add_action('displaySchedule',array($schedule,'displayMySchedule'));
 
+//All functions for users
 add_action('add_student', array($student, 'insertStudent'), 0, 1);
 add_action('add_teacher', array($teacher, 'insertTeacher'), 0, 1);
 add_action('add_television', array($television, 'insertTelevision'), 0, 7);
 add_action('add_secretary', array($secretary, 'insertSecretary'), 0, 6);
+
+add_action('displayManagementUsers', array($managementUsers, 'displayMyUsers'), 0, 1);
+add_action('modify_user', array($managementUsers, 'ModifyMyUser'));
+add_action('delete_users', array($managementUsers, 'deleteUsers'), 0, 1);
+
+//All functions for code ADE
 add_action('add_code_ade', array($code, 'insertCode'));
-
 add_action('display_all_codes', array($code, 'displayAllCodes'));
-add_action('displayManagementUsers', array($managementusers, 'displayMyUsers'),0 , 2);
-
-add_action('modify_user', array($managementusers, 'ModifyMyUser'));
 add_action('modify_code_ade', array($code, 'modifyMyCode'));
-
-add_action('delete_student', array($student, 'deleteStudent'), 0, 1);
-add_action('delete_teacher', array($teacher, 'deleteTeacher'), 0, 1);
-add_action('delete_code_ade', array($code, 'deleteMyCode'), 0, 1);
-add_action('delete_users', array($student, 'deleteUsers'), 0, 1);
+add_action('delete_codes', array($code, 'deleteCodes'), 0, 1);
 
 // Initialize plugin
 add_action('init', function(){

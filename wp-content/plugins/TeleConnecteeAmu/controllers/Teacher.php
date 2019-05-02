@@ -32,35 +32,29 @@ class Teacher
      * Display all teachers in a tab
      */
     public function displayAllTeachers(){
-        $results = $this->model->getTeachers();
-        $this->view->tabHeadTeacher();
-        $row = 0;
-        foreach ($results as $result){
-            ++$row;
-            $this->view->displayAllTeacher($result, ++$row);
+        $results = $this->model->getUsersByRole('enseignant');
+        if(isset($results)){
+            $this->view->tabHeadTeacher();
+            $row = 0;
+            foreach ($results as $result){
+                ++$row;
+                $this->view->displayAllTeacher($result, ++$row);
+            }
+            $this->view->endTab();
         }
-        $this->view->endTab();
+        else{
+            $this->view->displayEmpty();
+        }
     }
 
     /**
-     * Delete a teacher
-     * @param $action
+     * Modify the teacher selected
+     * @param $result
      */
-    public function deleteTeacher($action){
-        if(isset($action)){
-            $this->model->deleteUser($action);
-            $this->view->refreshPage();
-        }
-
-    }
-
     public function displayModifyTeacher($result){
-
         $action = $_POST['modifValidate'];
         $code = $_POST['modifCode'];
-
         $this->view->displayModifyTeacher($result);
-
         if($action === 'Valider'){
             $this->model->modifyTeacher($result, $code);
             $this->view->refreshPage();

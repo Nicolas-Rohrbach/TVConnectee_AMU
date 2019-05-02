@@ -16,10 +16,10 @@ class Secretary
         $this->model = new SecretaryManager();
     }
 
-    public function insertSecretary($action, $login, $pwd, $firstname, $lastname, $email){
+    public function insertSecretary($action, $login, $pwd, $email){
         $this->view->displayFormSecretary();
         if(isset($action)) {
-            $this->model->insertMySecretary($login, $pwd, $firstname, $lastname, $email);
+            $this->model->insertMySecretary($login, $pwd, $email);
         }
     }
 }

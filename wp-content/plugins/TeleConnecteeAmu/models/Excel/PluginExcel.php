@@ -2,8 +2,7 @@
 require_once("PHPExcel/IOFactory.php");
 
 
-function chaine_aleatoire($chaine = 'azertyuiopqsdfghjklmwxcvbn123456789')
-{
+function chaine_aleatoire($chaine = 'azertyuiopqsdfghjklmwxcvbn123456789'){
     $nb_letters = strlen($chaine) - 1;
     $generation = '';
     for($i=0; $i < 8; $i++)
@@ -25,8 +24,7 @@ function excelStudent($actionEtud){
     if(isset($actionEtud)) {
         $extension = end(explode(".", $_FILES["excelEtu"]["name"]));    // For getting Extension of selected file
         $allowed_extension = array("xls", "xlsx", "csv");                // allowed extension
-        if (in_array($extension, $allowed_extension))                    // check selected file extension is present in allowed extension array
-        {
+        if (in_array($extension, $allowed_extension)){
             $file = $_FILES["excelEtu"]["tmp_name"];                    // getting temporary source of excel file
             $objPHPExcel = PHPExcel_IOFactory::load($file);              // create object of PHPExcel library by using load() method and in load method define path of selected file
 
@@ -60,20 +58,20 @@ function excelStudent($actionEtud){
                     }
                 }
                 else {
-                    echo ('<p> Vous utilisez un mauvais fichier excel/ ou vous avez changé le nom des colonnes </p>');
+                    echo '<p class="alert alert-danger"> Vous utilisez un mauvais fichier excel/ ou vous avez changé le nom des colonnes </p>';
                 }
             }
             if(isset($doubles)) {
                 foreach ($doubles as $double => $value) {
-                    echo('<p> L\'inscription a échouée pour '.$value.', vérifié si le login ou l\'adresse mail n\'a pas déjà était utilisé </p> <br/>');
+                    echo'<p class="alert alert-danger"> L\'inscription a échouée pour '.$value.', vérifié si le login ou l\'adresse mail n\'a pas déjà était utilisé </p> <br/>';
                 }
             }
             else {
-                echo("Votre inscription a été validé.");
+                echo "<p class='alert alert-danger'>Votre inscription a été validé. </p>";
             }
         }
         else {
-            echo("Extension invalide."); //if non excel file
+            echo "<p class='alert alert-danger'>Extension invalide. </p>"; //if non excel file
         }
     }
 }
@@ -89,8 +87,7 @@ function excelTeacher($actionTeacher)
     if(isset($actionTeacher)) {
         $extension = end(explode(".", $_FILES["excelProf"]["name"]));        // For getting Extension of selected file
         $allowed_extension = array("xls", "xlsx", "csv");               	 // allowed extension
-        if (in_array($extension, $allowed_extension))                  	  	 // check selected file extension is present in allowed extension array
-        {
+        if (in_array($extension, $allowed_extension)){
             $file = $_FILES["excelProf"]["tmp_name"];                        // getting temporary source of excel file
             $objPHPExcel = PHPExcel_IOFactory::load($file);                  // create object of PHPExcel library by using load() method and in load method define path of selected file
 
@@ -118,20 +115,20 @@ function excelTeacher($actionTeacher)
                     }
                 }
                 else {
-                    echo ('<p> Vous utilisez un mauvais fichier excel/ ou vous avez changé le nom des colonnes </p>');
+                    echo '<p class="alert alert-danger"> Vous utilisez un mauvais fichier excel/ ou vous avez changé le nom des colonnes </p>';
                 }
             }
             if(isset($doubles)) {
                 foreach ($doubles as $double => $value) {
-                    echo('<p> L\'inscription a échouée pour '.$value.', vérifié si le login ou l\'adresse mail n\'a pas déjà était utilisé </p> <br/>');
+                    echo '<p class="alert alert-danger"> L\'inscription a échouée pour '.$value.', vérifié si le login ou l\'adresse mail n\'a pas déjà était utilisé </p> <br/>';
                 }
             }
             else {
-                echo("Votre inscription a été validé.");
+                echo "<p class='alert alert-danger'>Votre inscription a été validé. </p>";
             }
         }
         else {
-            echo("Extension invalide."); //if non excel file
+            echo "<p class='alert alert-danger'>Extension invalide. </p>"; //if non excel file
         }
     }
 }
