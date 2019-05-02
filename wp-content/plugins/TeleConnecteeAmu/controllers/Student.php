@@ -6,7 +6,7 @@
  * Time: 10:33
  */
 
-class Student
+class Student extends ControllerG
 {
     private $view;
     private $model;

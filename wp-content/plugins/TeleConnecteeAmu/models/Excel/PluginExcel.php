@@ -4,11 +4,11 @@ require_once("PHPExcel/IOFactory.php");
 
 function chaine_aleatoire($chaine = 'azertyuiopqsdfghjklmwxcvbn123456789')
 {
-    $nb_lettres = strlen($chaine) - 1;
+    $nb_letters = strlen($chaine) - 1;
     $generation = '';
     for($i=0; $i < 8; $i++)
     {
-        $pos = mt_rand(0, $nb_lettres);
+        $pos = mt_rand(0, $nb_letters);
         $car = $chaine[$pos];
         $generation .= $car;
     }
@@ -32,26 +32,23 @@ function excelStudent($actionEtud){
 
             foreach ($objPHPExcel->getWorksheetIterator() as $worksheet) {
                 $highestRow = $worksheet->getHighestRow();
-                if(mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(0, 1)->getValue()) == "Prenom" &&
-                    mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(1, 1)->getValue()) == "Nom" &&
-                    mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(2, 1)->getValue()) == "Numero Ent" &&
-                    mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(3, 1)->getValue()) == "email" &&
-                    mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(4, 1)->getValue()) == "Annee" &&
-                    mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(5, 1)->getValue()) == "Groupe" &&
-                    mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(6, 1)->getValue()) == "Demi-groupe")
+                if(
+                    mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(0, 1)->getValue()) == "Numero Ent" &&
+                    mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(1, 1)->getValue()) == "email" &&
+                    mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(2, 1)->getValue()) == "Annee" &&
+                    mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(3, 1)->getValue()) == "Groupe" &&
+                    mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(4, 1)->getValue()) == "Demi-groupe")
                 {
                     for ($row = 2; $row <= $highestRow; $row++) {
-                        $firstname = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(0, $row)->getValue());
-                        $lastname = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(1, $row)->getValue());
                         $mdp = chaine_aleatoire() ;
                         $pwd = md5($mdp) ;
-                        $login = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(2, $row)->getValue());
-                        $email = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(3, $row)->getValue());
-                        $year = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(4, $row)->getValue());
-                        $group = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(5, $row)->getValue());
-                        $halfgroup = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(6, $row)->getValue());
+                        $login = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(0, $row)->getValue());
+                        $email = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(1, $row)->getValue());
+                        $year = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(2, $row)->getValue());
+                        $group = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(3, $row)->getValue());
+                        $halfgroup = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(4, $row)->getValue());
 
-                        if($model->insertMyStudent($login, $pwd, $year, $group, $halfgroup, $firstname, $lastname, $email)) {
+                        if($model->insertMyStudent($login, $pwd, $year, $group, $halfgroup, $email)) {
                             $message = "Bonjour, vous avez été inscrit sur le site de la Télé Connecté de votre département en temps qu'étudiant. <br> Sur ce site, vous aurez accès à votre emploie du temps, à vos notes et aux informations concernant votre scolarité. <br>" ;
                             $message2 = $message . "Votre identifiant est " . $login . " et votre mot de passe est " . $mdp . ". <br>"  ;
                             $message3 = $message2 . "Pour vous connecter, rendez vous sur le site : tv-connectee-amu.alwaysdata.net ." . "<br> Nous vous souhaitons une bonne expérience sur notre site. <br>" ;
@@ -99,22 +96,17 @@ function excelTeacher($actionTeacher)
 
             foreach ($objPHPExcel->getWorksheetIterator() as $worksheet) {
                 $highestRow = $worksheet->getHighestRow();
-                if(mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(0, 1)->getValue()) == "Prenom" &&
-                    mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(1, 1)->getValue()) == "Nom" &&
-                    mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(2, 1)->getValue()) == "Numero Ent" &&
-                    mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(3, 1)->getValue()) == "email" &&
-                    mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(4, 1)->getValue()) == "Code")
-                {
+                if(mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(0, 1)->getValue()) == "Numero Ent" &&
+                    mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(1, 1)->getValue()) == "email" &&
+                    mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(2, 1)->getValue()) == "Code") {
                     for ($row = 2; $row <= $highestRow; $row++) {
-                        $firstname = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(0, $row)->getValue());
-                        $lastname = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(1, $row)->getValue());
                         $mdp = chaine_aleatoire() ;
                         $pwd = md5($mdp) ;
-                        $login = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(2, $row)->getValue());
-                        $email = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(3, $row)->getValue());
-                        $code = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(4, $row)->getValue());
+                        $login = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(0, $row)->getValue());
+                        $email = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(1, $row)->getValue());
+                        $code = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(2, $row)->getValue());
 
-                        if($model->insertTeacher($login, $pwd, $code, $firstname, $lastname, $email)) {
+                        if($model->insertTeacher($login, $pwd, $code, $email)) {
                             $message = "Bonjour, vous avez été inscrit sur le site de la Télé Connecté de votre département en temps que professeur. <br> Sur ce site, vous aurez accès à votre emploie du temps, à vos notes et aux informations concernant votre scolarité. <br>" ;
                             $message2 = $message . "Votre identifiant est " . $login . " et votre mot de passe est " . $mdp . ". <br>"  ;
                             $message3 = $message2 . "Pour vous connecter, rendez vous sur le site : tv-connectee-amu.alwaysdata.net ." . "<br> Nous vous souhaitons une bonne expérience sur notre site. <br>" ;

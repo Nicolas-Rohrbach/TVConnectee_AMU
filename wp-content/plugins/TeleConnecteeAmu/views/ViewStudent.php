@@ -13,31 +13,15 @@ class ViewStudent extends ViewG
     }
 
     public function tabHeadStudent(){
-        echo '
-            <form method="post">
-                <table class="table text-center"> 
-                <thead>
-                    <tr class="text-center">
-                        <th scope="col">#</th>
-                        <th scope="col">Numéro étudiant</th>
-                        <th scope="col">Année</th>
-                        <th scope="col">Groupe</th>
-                        <th scope="col">Demi groupe</th>
-                        <th scope="col">Modifier</th>
-                        <th scope="col">Supprimer</th>
-                     </tr>
-                </thead>
-                <tbody>
-        ';
+        $tab = ["Numéro étudiant", "Année", "Groupe", "Demi groupe"];
+        $this->startTab($tab);
     }
 
     public function displayAllStudent($result, $year, $group, $halfgroup, $row){
-        $this->displayAll($row , $result['user_login'], $year);
+        $tab = [$result['user_login'], $year, $group, $halfgroup];
+        $this->displayAll($row, $result['ID'], $tab);
         echo '
-          <td class="text-center">'.$group.'</td>
-          <td class="text-center">'.$halfgroup.'</td>
           <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs/modification-utilisateur/'.$result['ID'].'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
-          <td class="text-center"> <button class="btn btn-danger btn-lg " name="suppretud" type="submit" value="'.$result['ID'].'" >Supprimer</button></td>
         </tr>';
     }
 

@@ -26,10 +26,31 @@ abstract class ViewG{
 			<br/>';
     }
 
+    public function startTab($tab){
+        echo '
+            <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/addAllCheckBox.js"></script>
+            <form method="post">
+                <table class="table text-center"> 
+                <thead>
+                    <tr class="text-center">
+                        <th scope="col">#</th>
+                        <th scope="col"> Sélectionner <input type="checkbox" onClick="toggle(this)" /></th>';
+        foreach ($tab as $value){
+            echo'<th scope="col"> '.$value.'</th>';
+        }
+        echo'
+                <th scope="col">Modifer</th>
+                     </tr>
+                </thead>
+                <tbody>
+        ';
+    }
+
     public function endTab(){
         echo'
           </tbody>
         </table>
+        <input type="submit" value="Delete" name="Delete"/>
         </form>';
     }
 
@@ -37,11 +58,13 @@ abstract class ViewG{
         echo '<meta http-equiv="refresh" content="0">';
     }
 
-    protected function displayAll($row , $login, $code){
+    protected function displayAll($row, $id, $tab){
         echo '
         <tr>
           <th scope="row">'.$row.'</th>
-          <td class="text-center"> '.$login.'</td>
-          <td class="text-center">'.$code.'</td>';
+          <td class="text-center"> <input type="checkbox" name="checkboxstatus[]" value="'.$id.'"/> </th>';
+          foreach ($tab as $value){
+              echo '<td class="text-center">'.$value.'</td>';
+          }
     }
 }

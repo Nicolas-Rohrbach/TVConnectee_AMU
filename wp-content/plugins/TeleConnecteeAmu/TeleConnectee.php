@@ -83,6 +83,7 @@ add_action('modify_code_ade', array($code, 'modifyMyCode'));
 add_action('delete_student', array($student, 'deleteStudent'), 0, 1);
 add_action('delete_teacher', array($teacher, 'deleteTeacher'), 0, 1);
 add_action('delete_code_ade', array($code, 'deleteMyCode'), 0, 1);
+add_action('delete_users', array($student, 'deleteUsers'), 0, 1);
 
 // Initialize plugin
 add_action('init', function(){

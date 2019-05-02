@@ -86,31 +86,28 @@ abstract class Model
         $req->closeCursor();
     }
 
-    protected function insertUser($login, $pwd, $role, $year, $group, $halfgroup, $firstname, $lastname, $email){
+    protected function insertUser($login, $pwd, $role, $year, $group, $halfgroup, $email){
         if ($this->verifyNoDouble($email, $login)){
             $req = $this->getBdd()->prepare('INSERT INTO wp_users (user_login, user_pass, role, annee, groupe, demiGroupe,
-                                      user_nicename, prenom, user_email, user_url, user_registered, user_activation_key,
+                                      user_nicename, user_email, user_url, user_registered, user_activation_key,
                                       user_status, display_name) 
-                                         VALUES (:login, :pwd, :role, :annee, :groupe, :demiGroupe, :name, :firstname, :email, :url, NOW(), :key, :status, :displayname)');
+                                         VALUES (:login, :pwd, :role, :year, :group, :halfgroup, :name, :email, :url, NOW(), :key, :status, :displayname)');
 
             $nul = " ";
             $zero = "0";
 
-            $display = $firstname.' '.$lastname;
-
             $req->bindParam(':login', $login);
             $req->bindParam(':pwd', $pwd);
             $req->bindParam(':role', $role);
-            $req->bindParam(':annee', $year);
-            $req->bindParam(':groupe', $group);
-            $req->bindParam(':demiGroupe', $halfgroup);
-            $req->bindParam(':firstname', $firstname);
-            $req->bindParam(':name', $lastname);
+            $req->bindParam(':year', $year);
+            $req->bindParam(':group', $group);
+            $req->bindParam(':halfgroup', $halfgroup);
+            $req->bindParam(':name', $login);
             $req->bindParam(':email', $email);
             $req->bindParam(':url', $nul);
             $req->bindParam(':key', $nul);
             $req->bindParam(':status', $zero);
-            $req->bindParam(':displayname', $display);
+            $req->bindParam(':displayname', $login);
 
             $req->execute();
 
@@ -144,24 +141,21 @@ abstract class Model
         }
     }
 
-    protected function modifyUser($id, $login, $pwd, $year, $group, $halfgroup, $firstname, $lastname, $email){
+    protected function modifyUser($id, $login, $pwd, $year, $group, $halfgroup, $email){
         if ($this->verifyTuple($login)) {
-            $req = $this->getBdd()->prepare('UPDATE wp_users SET user_login=:login, user_pass=:pwd, annee=:annee, 
-                                            groupe=:groupe, demiGroupe=:demiGroupe, user_nicename=:name, prenom=:firstname, 
+            $req = $this->getBdd()->prepare('UPDATE wp_users SET user_login=:login, user_pass=:pwd, annee=:year, 
+                                            groupe=:group, demiGroupe=:halfgroup, user_nicename=:name, 
                                             user_email=:email, display_name=:displayname WHERE ID=:id');
-
-            $display = $firstname . ' ' . $lastname;
 
             $req->bindParam(':id', $id);
             $req->bindParam(':login', $login);
             $req->bindParam(':pwd', $pwd);
-            $req->bindParam(':annee', $year);
-            $req->bindParam(':groupe', $group);
-            $req->bindParam(':demiGroupe', $halfgroup);
-            $req->bindParam(':firstname', $firstname);
-            $req->bindParam(':name', $lastname);
+            $req->bindParam(':year', $year);
+            $req->bindParam(':group', $group);
+            $req->bindParam(':halfgroup', $halfgroup);
+            $req->bindParam(':name', $login);
             $req->bindParam(':email', $email);
-            $req->bindParam(':displayname', $display);
+            $req->bindParam(':displayname', $login);
 
             $req->execute();
 
