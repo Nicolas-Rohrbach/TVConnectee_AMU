@@ -99,6 +99,7 @@ class Information
             $endDate =$_POST['endDateInfo'];
 
             $this->DB->modifyInformation($id,$title,$content,$endDate);
+            $this->view->refreshPage();
         }
     }
 

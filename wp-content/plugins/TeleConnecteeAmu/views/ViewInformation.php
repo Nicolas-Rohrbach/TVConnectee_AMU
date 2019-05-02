@@ -109,9 +109,10 @@ echo'                        </div>
                       Ajouter une image : <button name="image" value="ajoutImage"> Ajouter </button> </br>
                       Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" value = "'.$endDate.'" required > </br>
                       
-                         <input type="submit" name="validateChange" value="Valider">
+                         <input type="submit" name="validateChange" value="Valider" ">
                  </form>
             </div>';
+
              
 
     }
