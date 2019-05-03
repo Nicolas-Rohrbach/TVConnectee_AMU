@@ -55,19 +55,19 @@ echo'                        </div>
      * Affiche le formulaire de création d'une information.
      */
     public function displayInformationCreation(){
+
         $dateMin = date('Y-m-d',strtotime("+1 day"));
+
         echo '<form id="creation_info" method="post">
                   Titre : <input type="text" name="titleInfo" placeholder="Inserer un titre" required> </br>
                   Contenu : <textarea name="contentInfo">...</textarea> </br>
                   Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" required > </br>
+                  '.do_shortcode('[wordpress_file_upload]').'
                   <input type="submit" value="createInfo" name="createInfo">
               </form>
               
-              <form action="processing_upload.php" method="post" enctype="multipart/form-data" <!--target="dummyframe"-->>
-	                Your Photo: <input type="file" name="image" size="25" />
-	                <input type="submit" name="submit" value="Submit" />
-              </form>
-              <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>'; //pour empecher la redirection
+              
+              ';
     } //displayInformationCreation()
 
 

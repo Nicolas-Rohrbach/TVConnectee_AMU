@@ -134,12 +134,16 @@ class Information
      * correspond à la valeur renvoyé par l'appuie du bouton submit (cf snippet createInfo)
      * @param $title
      * @param $content
-     * @param $endDates
+     * @param $endDate
      */
-    public function insertInformation($action, $title, $content, $endDate){
+    public function insertInformation($action,$actionUpload, $title, $content, $endDate){
+
         $this->view->displayInformationCreation();
         if(isset($action)){
             $this->createInformation($title, $content, $endDate);
+        }
+        elseif (isset($actionUpload)) {
+            upload_process();
         }
     } //insertInformation()
 
