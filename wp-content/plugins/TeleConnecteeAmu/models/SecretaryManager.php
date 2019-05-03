@@ -9,10 +9,8 @@
 class SecretaryManager extends Model
 {
     public function insertMySecretary($login, $pwd, $email){
-
         $role = "secretaire";
         $zero = 0;
-
         return $this->insertUser($login, $pwd, $role, $zero, $zero, $zero, $email);
 
     }

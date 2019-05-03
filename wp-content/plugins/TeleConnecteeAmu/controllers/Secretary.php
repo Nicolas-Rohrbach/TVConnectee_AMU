@@ -16,10 +16,32 @@ class Secretary
         $this->model = new SecretaryManager();
     }
 
-    public function insertSecretary($action, $login, $pwd, $email){
+    public function insertSecretary(){
         $this->view->displayFormSecretary();
-        if(isset($action)) {
+
+        $action = $_POST['createSecre'];
+        $login = filter_input(INPUT_POST,'loginSecre');
+        $pwd = md5(filter_input(INPUT_POST,'pwdSecre'));
+        $email = filter_input(INPUT_POST,'emailSecre');
+
+        if(isset($action)){
             $this->model->insertMySecretary($login, $pwd, $email);
+        }
+    }
+
+    public function displayAllSecretary(){
+        $results = $this->model->getUsersByRole('secretaire');
+        if(isset($results)){
+            $this->view->headerTabSecretary();
+            $row = 0;
+            foreach ($results as $result){
+                ++$row;
+                $this->view->displayAllSecretary($row, $result['ID'], $result['user_login']);
+            }
+            $this->view->endTab();
+        }
+        else{
+            $this->view->displayEmpty();
         }
     }
 }

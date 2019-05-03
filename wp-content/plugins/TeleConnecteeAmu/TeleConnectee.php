@@ -74,7 +74,7 @@ add_action('displaySchedule',array($schedule,'displayMySchedule'));
 add_action('add_student', array($student, 'insertStudent'), 0, 1);
 add_action('add_teacher', array($teacher, 'insertTeacher'), 0, 1);
 add_action('add_television', array($television, 'insertTelevision'), 0, 7);
-add_action('add_secretary', array($secretary, 'insertSecretary'), 0, 6);
+add_action('add_secretary', array($secretary, 'insertSecretary'));
 
 add_action('displayManagementUsers', array($managementUsers, 'displayMyUsers'), 0, 1);
 add_action('modify_user', array($managementUsers, 'ModifyMyUser'));

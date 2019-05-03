@@ -38,7 +38,7 @@ class Teacher
             $row = 0;
             foreach ($results as $result){
                 ++$row;
-                $this->view->displayAllTeacher($result, ++$row);
+                $this->view->displayAllTeacher($result, $row);
             }
             $this->view->endTab();
         }

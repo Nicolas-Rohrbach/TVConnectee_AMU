@@ -8,11 +8,6 @@
 
 abstract class ViewG{
 
-    public function _construct(){
-        echo '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>';
-    }
-
     protected function displayInsertImportFile($name){
         echo'
              <form method="post" enctype="multipart/form-data">
@@ -23,11 +18,7 @@ abstract class ViewG{
 			<br/>';
     }
 
-    /**
-     * Build the header of a table
-     * @param $tab
-     */
-    public function startTab($tab){
+    protected function headerTab(){
         echo '
             <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/addAllCheckBox.js"></script>
             <form method="post">
@@ -35,16 +26,28 @@ abstract class ViewG{
                 <thead>
                     <tr class="text-center">
                         <th scope="col">#</th>
-                        <th scope="col"> Sélectionner <input type="checkbox" onClick="toggle(this)" /></th>';
-        foreach ($tab as $value){
-            echo'<th scope="col"> '.$value.'</th>';
-        }
+                        <th scope="col"><input type="checkbox" onClick="toggle(this)" /></th>';
+    }
+
+    protected function endheaderTab(){
         echo'
                 <th scope="col">Modifer</th>
                      </tr>
                 </thead>
                 <tbody>
         ';
+    }
+
+    /**
+     * Build the header of a table
+     * @param $tab
+     */
+    protected function startTab($tab){
+        $this->headerTab();
+        foreach ($tab as $value){
+            echo'<th scope="col"> '.$value.'</th>';
+        }
+        $this->endheaderTab();
     }
 
     /**
@@ -88,10 +91,6 @@ abstract class ViewG{
      */
     public function displayEmpty(){
         echo "<div> Il n'y rien ici, c'est triste :'( </div>";
-    }
-
-    public function displayError(){
-        echo '<script src="/wp-content/plugins/TeleConnecteeAmu/views/js/displayError.js"></script>';
     }
 
     public function displayAllTvStudent($id, $login, $year, $group, $halfgroup, $row){

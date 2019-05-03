@@ -28,6 +28,10 @@ class ManagementUsers extends ControllerG
             $controller = new Television();
             $controller->displayAllTv();
         }
+        elseif ($action == "secretarys"){
+            $controller = new Secretary();
+            $controller->displayAllSecretary();
+        }
     }
 
     public function modifyMyUser(){
