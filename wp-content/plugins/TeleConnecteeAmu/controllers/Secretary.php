@@ -25,7 +25,12 @@ class Secretary
         $email = filter_input(INPUT_POST,'emailSecre');
 
         if(isset($action)){
-            $this->model->insertMySecretary($login, $pwd, $email);
+            if($this->model->insertMySecretary($login, $pwd, $email)){
+                $this->view->refreshPage();
+            }
+            else{
+                $this->view->errorInsertion();
+            }
         }
     }
 

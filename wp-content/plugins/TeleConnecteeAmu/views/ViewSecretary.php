@@ -37,4 +37,8 @@ class ViewSecretary extends ViewG
         $tab[] = $login;
         $this->displayAll($row, $id, $tab);
     }
+
+    public function errorInsertion(){
+        echo '<div> Le login ou l\'adresse mail est déjà utilisé </div>';
+    }
 }

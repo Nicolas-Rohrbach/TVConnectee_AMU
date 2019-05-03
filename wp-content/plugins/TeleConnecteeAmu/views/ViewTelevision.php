@@ -113,4 +113,8 @@ class ViewTelevision extends ViewG{
             <a class="btn btn-dark btn-lg mb-3" href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs">Annuler</a>
          </form>';
     }
+
+    public function errorLogin(){
+        echo '<div> Le login est déjà utilisé ! </div>';
+    }
 }

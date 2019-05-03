@@ -53,9 +53,6 @@ class Student extends ControllerG
             if($this->model->modifyStudent($result['ID'], $year, $group, $halfgroup)){
                 $this->view->refreshPage();
             }
-            else{
-                echo "erreur";
-            }
         }
     }
 }

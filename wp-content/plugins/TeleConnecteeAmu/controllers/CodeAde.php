@@ -33,10 +33,9 @@ class CodeAde extends ControllerG
         if($action == "Valider"){
             if($this->model->addCode($type, $title, $code)){
                 $this->view->refreshPage();
-                echo "Ajout réalisé";
             }
             else{
-                echo "Raté mon gros pépère";
+                $this->view->errorDouble();
             }
         }
     }
@@ -85,10 +84,9 @@ class CodeAde extends ControllerG
         if($action == "Valider"){
             if($this->model->checkModify($result, $this->getMyIdUrl(), $title, $code, $type)){
                 $this->view->refreshPage();
-                echo "Oui c'est bon fréro";
             }
             else{
-                echo "Titre ou code déjà utilisé man";
+                $this->view->errorDouble();
             }
         }
     }

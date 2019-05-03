@@ -34,7 +34,12 @@ class Television extends ControllerG
         $halfgroups = $this->model->getCodeHalfgroup();
         $this->view->displayFormTelevision($years, $groups, $halfgroups);
         if(isset($action)) {
-            $this->model->insertMyTelevision($login, $pwd, $code1, $code2, $code3);
+            if($this->model->insertMyTelevision($login, $pwd, $code1, $code2, $code3)){
+                $this->view->refreshPage();
+            }
+            else{
+                $this->view->errorLogin();
+            }
         }
     }
 

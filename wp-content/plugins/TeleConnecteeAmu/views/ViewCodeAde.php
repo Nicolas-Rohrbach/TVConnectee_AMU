@@ -79,4 +79,11 @@ class ViewCodeAde extends ViewG
             <a class="btn btn-dark btn-lg mb-3" href="http://'.$_SERVER['HTTP_HOST'].'/gestion-codes-ade">Annuler</a>
          </form>';
     }
+
+    /**
+     * Error message if the insertion or the modification want to have a double code or title
+     */
+    public function errorDouble(){
+        echo '<div> Ce code ou ce titre existe déjà ! </div>';
+    }
 }
