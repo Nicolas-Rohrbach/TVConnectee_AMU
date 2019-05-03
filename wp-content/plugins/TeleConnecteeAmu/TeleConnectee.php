@@ -72,6 +72,6 @@ add_action('displayInformations',array($information,'displayInformationMain'));
 add_action('add_info',array($information,'insertInformation'), 0, 5);
 add_action('modify_info',array($information,'modifyInformation'));
 
-add_action('test',array($information,'insertInformation'));
+add_action('test',array($information,'uploadFile'),0,1);
 
 

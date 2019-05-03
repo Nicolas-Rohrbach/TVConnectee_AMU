@@ -65,12 +65,16 @@ echo'                        </div>
                 
                   <input type="submit" value="createInfo" name="createInfo">
               </form>
-              
-              
               ';
     } //displayInformationCreation()
 
-
+    public function displayUploadFileForm(){
+        echo '<form action="" method="post" enctype="multipart/form-data">
+                Select image to upload:
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload Image" name="submit">
+              </form>';
+    }
 
     public function displayModifyInformationForm($title,$content,$endDate){
         $dateMin = date('Y-m-d',strtotime("+1 day"));
