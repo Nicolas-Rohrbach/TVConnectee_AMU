@@ -55,17 +55,26 @@ echo'                        </div>
      * Affiche le formulaire de création d'une information.
      */
     public function displayInformationCreation(){
+
         $dateMin = date('Y-m-d',strtotime("+1 day"));
+
         echo '<form id="creation_info" method="post">
                   Titre : <input type="text" name="titleInfo" placeholder="Inserer un titre" required> </br>
                   Contenu : <textarea name="contentInfo">...</textarea> </br>
-                  Ajouter une image : <button name="image" value="ajoutImage"> Ajouter </button> </br>
                   Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" required > </br>
+                
                   <input type="submit" value="createInfo" name="createInfo">
-              </form>';
+              </form>
+              ';
     } //displayInformationCreation()
 
-
+    public function displayUploadFileForm(){
+        echo '<form action="" method="post" enctype="multipart/form-data">
+                Select image to upload:
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload Image" name="submit">
+              </form>';
+    }
 
     public function displayModifyInformationForm($title,$content,$endDate){
         $dateMin = date('Y-m-d',strtotime("+1 day"));

@@ -9,8 +9,11 @@ include_once 'views/ViewG.php';
 include_once 'views/ViewCard.php';
 include_once 'views/ViewUser.php';
 include_once 'views/ViewInformation.php';
+
 include_once 'controllers/Information.php';
 include_once 'controllers/Info.php';
+
+
 include_once 'models/BdInfo.php';
 include_once 'models/BdUser.php';
 include_once 'models/BdInformation.php';
@@ -66,9 +69,9 @@ add_action('delete_infos',array($information, 'deleteInformations'),0 ,1);
 
 
 add_action('displayInformations',array($information,'displayInformationMain'));
-add_action('add_info',array($information,'insertInformation'), 0, 4);
+add_action('add_info',array($information,'insertInformation'), 0, 5);
 add_action('modify_info',array($information,'modifyInformation'));
 
-add_action('test',array($information,'insertInformation'));
+add_action('test',array($information,'uploadFile'),0,1);
 
 
