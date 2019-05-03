@@ -28,17 +28,10 @@ class Student extends ControllerG
     }
 
     function displayAllStudents(){
-        $result = $this->model->getUsersByRole('etudiant');
-        if(isset($result)){
+        $results = $this->model->getUsersByRole('etudiant');
+        if(isset($results)){
             $this->view->tabHeadStudent();
-            $i = 0;
-            foreach ($result as $row){
-                $year = $this->model->getTitle($row['code1']);
-                $group = $this->model->getTitle($row['code2']);
-                $halfgroup = $this->model->getTitle($row['code3']);
-                $this->view->displayAllStudent($row,  $year, $group, $halfgroup, ++$i);
-            }
-            $this->view->endTab();
+            $this->displayTabTvStudent($results, $this->model, $this->view);
         }
         else{
             $this->view->displayEmpty();

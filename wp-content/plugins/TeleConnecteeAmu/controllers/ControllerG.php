@@ -32,4 +32,18 @@ abstract class ControllerG
             }
         }
     }
+
+    public function displayTabTvStudent($results, $model, $view){
+        $row = 0;
+        foreach ($results as $result){
+            ++$row;
+            $id = $result['ID'];
+            $login = $result['user_login'];
+            $year = $model->getTitle($result['code1']);
+            $group = $model->getTitle($result['code2']);
+            $halfgroup = $model->getTitle($result['code3']);
+            $view->displayAllTvStudent($id, $login, $year, $group, $halfgroup, $row);
+        }
+        $view->endTab();
+    }
 }

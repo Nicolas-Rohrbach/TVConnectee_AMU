@@ -11,10 +11,10 @@ class ViewManagementUsers extends ViewG
     public function displayButtonChoise(){
         echo '
         <form method="post">
-          <input type="radio" name="seeUsers" value="Students"> Etudiants 
-          <input type="radio" name="seeUsers" value="Teachers"> Enseignants
-          <input type="radio" name="seeUsers" value="Secretarys"> Secrétaires
-          <input type="radio" name="seeUsers" value="Televisions"> Télévisions
+          <input type="radio" name="seeUsers" value="students"> Etudiants 
+          <input type="radio" name="seeUsers" value="teachers"> Enseignants
+          <input type="radio" name="seeUsers" value="secretarys"> Secrétaires
+          <input type="radio" name="seeUsers" value="televisions"> Télévisions
           <input type="submit" value="Envoyer">
         </form>';
     }

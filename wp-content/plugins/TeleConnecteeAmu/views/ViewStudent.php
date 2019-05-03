@@ -17,11 +17,10 @@ class ViewStudent extends ViewG
         $this->startTab($tab);
     }
 
-    public function displayAllStudent($result, $year, $group, $halfgroup, $row){
-        $tab = [$result['user_login'], $year, $group, $halfgroup];
-        $this->displayAll($row, $result['ID'], $tab);
-        echo '
-          <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs/modification-utilisateur/'.$result['ID'].'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
+    public function displayAllStudent($id, $login, $year, $group, $halfgroup, $row){
+        $tab = [$login, $year, $group, $halfgroup];
+        $this->displayAll($row, $id, $tab);
+        echo '<td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs/modification-utilisateur/'.$id.'" class="btn btn-primary btn-lg" name="modif" type="submit" value="Modifier">Modifier</a></td>
         </tr>';
     }
 
@@ -33,26 +32,29 @@ class ViewStudent extends ViewG
             <select class="form-control" name="modifYear">
                 <option>'.$result['code1'].'</option>
             ';
-            foreach ($years as $year) {
-                echo '<option value="'.$year['code'].'">'.$year['title'].'</option >';
-            }
-            echo'
+        $selected = $_POST['modifYear'];
+        foreach ($years as $year) {
+                echo '<option value="'.$year['code'].'"'; if($year['code'] == $selected) echo "selected"; echo'>'.$year['title'].'</option >';
+        }
+        echo'
             </select>
             <label>Groupe</label>
             <select class="form-control" name="modifGroup">
                 <option>'.$result['code2'].'</option>';
-            foreach ($groups as $group){
-                echo'<option value="'.$group['code'].'">'.$group['title'].'</option>';
-            }
-            echo'
+        $selected = $_POST['modifGroup'];
+        foreach ($groups as $group){
+            echo'<option value="'.$group['code'].'"'; if($group['code'] == $selected) echo "selected"; echo'>'.$group['title'].'</option>';
+        }
+        echo'
             </select>
             <label>Demi-groupe</label>
             <select class="form-control" name="modifHalfgroup">
                 <option>'.$result['code3'].'</option>';
-            foreach ($halfgroups as $halfgroup){
-                echo'<option value="'.$halfgroup['code'].'">'.$halfgroup['title'].'</option>';
-            }
-            echo'
+        $selected = $_POST['modifHalfgroup'];
+        foreach ($halfgroups as $halfgroup){
+            echo'<option value="'.$halfgroup['code'].'"'; if($halfgroup['code'] == $selected) echo "selected"; echo'>'.$halfgroup['title'].'</option>';
+        }
+        echo'
             </select>
             <input name="modifvalider" type="submit" value="Valider">
             <a class="btn btn-dark btn-lg mb-3" href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs">Annuler</a>

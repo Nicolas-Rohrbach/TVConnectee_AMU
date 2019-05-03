@@ -16,14 +16,17 @@ class ManagementUsers extends ControllerG
 
     public function displayMyUsers($action){
         $this->view->displayButtonChoise();
-        $this->view->displayError();
-        if($action == "Students"){
+        if($action == "students"){
             $controller = new Student();
             $controller->displayAllStudents();
         }
-        elseif ($action == "Teachers") {
+        elseif ($action == "teachers") {
             $controller = new Teacher();
             $controller->displayAllTeachers();
+        }
+        elseif ($action == "televisions"){
+            $controller = new Television();
+            $controller->displayAllTv();
         }
     }
 
@@ -38,6 +41,10 @@ class ManagementUsers extends ControllerG
         elseif ($result['role'] == "enseignant"){
             $controller = new Teacher();
             $controller->displayModifyTeacher($result);
+        }
+        elseif ($result['role'] == "television"){
+            $controller = new Television();
+            $controller->displayModifyTv($result);
         }
     }
 }

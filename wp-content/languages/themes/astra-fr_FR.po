@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Astra package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-04-21 08:17:26+0000\n"
+"PO-Revision-Date: 2019-05-02 13:16:02+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1582,19 +1582,6 @@ msgstr "Titres"
 msgid "Widget Title Color"
 msgstr "Couleur de titre de widget"
 
-#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:64
-#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:81
-#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:98
-#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:118
-#: inc/compatibility/edd/customizer/sections/class-astra-edd-container-configs.php:50
-#: inc/compatibility/learndash/customizer/sections/class-astra-learndash-container-configs.php:63
-#: inc/compatibility/lifterlms/class-astra-lifterlms.php:672
-#: inc/compatibility/lifterlms/customizer/sections/class-astra-lifter-container-configs.php:64
-#: inc/compatibility/woocommerce/customizer/sections/class-astra-woo-shop-container-configs.php:50
-#: inc/metabox/class-astra-meta-boxes.php:244
-msgid "Full Width / Contained"
-msgstr "Pleine largeur - Contraint"
-
 #: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:65
 #: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:82
 #: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:99
@@ -1612,6 +1599,19 @@ msgstr "Pleine largeur - Étiré"
 #: inc/customizer/class-astra-customizer-register-sections-panels.php:284
 msgid "Footer Bar"
 msgstr "Pied de page"
+
+#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:64
+#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:81
+#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:98
+#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:118
+#: inc/compatibility/edd/customizer/sections/class-astra-edd-container-configs.php:50
+#: inc/compatibility/learndash/customizer/sections/class-astra-learndash-container-configs.php:63
+#: inc/compatibility/lifterlms/class-astra-lifterlms.php:672
+#: inc/compatibility/lifterlms/customizer/sections/class-astra-lifter-container-configs.php:64
+#: inc/compatibility/woocommerce/customizer/sections/class-astra-woo-shop-container-configs.php:50
+#: inc/metabox/class-astra-meta-boxes.php:244
+msgid "Full Width / Contained"
+msgstr "Pleine largeur - Espacé"
 
 #: inc/customizer/custom-controls/typography/class-astra-control-typography.php:81
 msgid "Thin 100"
@@ -1803,32 +1803,6 @@ msgstr "Fin de boucle"
 msgid "Default"
 msgstr "Par défaut"
 
-#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:62
-#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:79
-#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:96
-#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:116
-#: inc/compatibility/edd/customizer/sections/class-astra-edd-container-configs.php:48
-#: inc/compatibility/learndash/customizer/sections/class-astra-learndash-container-configs.php:61
-#: inc/compatibility/lifterlms/class-astra-lifterlms.php:670
-#: inc/compatibility/lifterlms/customizer/sections/class-astra-lifter-container-configs.php:62
-#: inc/compatibility/woocommerce/customizer/sections/class-astra-woo-shop-container-configs.php:48
-#: inc/metabox/class-astra-meta-boxes.php:242
-msgid "Boxed"
-msgstr "En boîte"
-
-#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:63
-#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:80
-#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:97
-#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:117
-#: inc/compatibility/edd/customizer/sections/class-astra-edd-container-configs.php:49
-#: inc/compatibility/learndash/customizer/sections/class-astra-learndash-container-configs.php:62
-#: inc/compatibility/lifterlms/class-astra-lifterlms.php:671
-#: inc/compatibility/lifterlms/customizer/sections/class-astra-lifter-container-configs.php:63
-#: inc/compatibility/woocommerce/customizer/sections/class-astra-woo-shop-container-configs.php:49
-#: inc/metabox/class-astra-meta-boxes.php:243
-msgid "Content Boxed"
-msgstr "Contenu en boîte"
-
 #: inc/customizer/configurations/layout/class-astra-sidebar-layout-configs.php:47
 #: inc/customizer/configurations/layout/class-astra-sidebar-layout-configs.php:78
 #: inc/customizer/configurations/layout/class-astra-sidebar-layout-configs.php:97
@@ -1861,6 +1835,13 @@ msgstr "Aucune colonne latérale"
 msgid "Left Sidebar"
 msgstr "Colonne latérale gauche"
 
+#: inc/customizer/configurations/layout/class-astra-blog-single-layout-configs.php:113
+#: inc/customizer/configurations/layout/class-astra-blog-layout-configs.php:130
+#: inc/compatibility/edd/customizer/sections/layout/class-astra-edd-archive-layout-configs.php:164
+#: inc/compatibility/woocommerce/customizer/sections/layout/class-astra-woo-shop-layout-configs.php:157
+msgid "Enter Width"
+msgstr "Saisissez la largeur"
+
 #: inc/customizer/configurations/layout/class-astra-sidebar-layout-configs.php:49
 #: inc/customizer/configurations/layout/class-astra-sidebar-layout-configs.php:80
 #: inc/customizer/configurations/layout/class-astra-sidebar-layout-configs.php:99
@@ -1876,13 +1857,6 @@ msgstr "Colonne latérale gauche"
 #: inc/metabox/class-astra-meta-boxes.php:227
 msgid "Right Sidebar"
 msgstr "Colonne latérale droite"
-
-#: inc/customizer/configurations/layout/class-astra-blog-single-layout-configs.php:113
-#: inc/customizer/configurations/layout/class-astra-blog-layout-configs.php:130
-#: inc/compatibility/edd/customizer/sections/layout/class-astra-edd-archive-layout-configs.php:164
-#: inc/compatibility/woocommerce/customizer/sections/layout/class-astra-woo-shop-layout-configs.php:157
-msgid "Enter Width"
-msgstr "Saisissez la largeur"
 
 #: inc/core/class-astra-theme-options.php:141
 #: inc/core/class-astra-theme-options.php:143
@@ -2447,6 +2421,19 @@ msgstr "Archives d’articles de blog"
 msgid "Disabled"
 msgstr "Désactivé(e)"
 
+#: inc/customizer/configurations/layout/class-astra-header-layout-configs.php:34
+#: inc/customizer/configurations/layout/class-astra-header-layout-configs.php:104
+#: inc/customizer/configurations/layout/class-astra-footer-layout-configs.php:89
+#: inc/customizer/configurations/layout/class-astra-footer-layout-configs.php:113
+#: inc/customizer/configurations/layout/class-astra-footer-layout-configs.php:138
+#: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:113
+#: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:257
+#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-configs.php:80
+#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:106
+#: inc/compatibility/woocommerce/customizer/sections/layout/class-astra-woo-shop-layout-configs.php:90
+msgid "None"
+msgstr "Aucun(e)"
+
 #: inc/customizer/configurations/layout/class-astra-footer-layout-configs.php:156
 msgid "Section 2 Custom Text"
 msgstr "Texte personnalisé de section 2"
@@ -2475,19 +2462,6 @@ msgstr "Assigner un menu au pied de page"
 msgid "Astra Settings"
 msgstr "Réglages d’Astra"
 
-#: inc/customizer/configurations/layout/class-astra-header-layout-configs.php:34
-#: inc/customizer/configurations/layout/class-astra-header-layout-configs.php:104
-#: inc/customizer/configurations/layout/class-astra-footer-layout-configs.php:89
-#: inc/customizer/configurations/layout/class-astra-footer-layout-configs.php:113
-#: inc/customizer/configurations/layout/class-astra-footer-layout-configs.php:138
-#: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:113
-#: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:257
-#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-configs.php:80
-#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:106
-#: inc/compatibility/woocommerce/customizer/sections/layout/class-astra-woo-shop-layout-configs.php:90
-msgid "None"
-msgstr "Aucun(e)"
-
 #: inc/customizer/configurations/typography/class-astra-single-typo-configs.php:46
 msgid "Single Post / Page Title"
 msgstr "Titre de publication seule"
@@ -2496,6 +2470,32 @@ msgstr "Titre de publication seule"
 #: template-parts/content-none.php:23
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr "Prêt à publier votre première publication ? <a href=\"%1$s\">Commencez ici</a>."
+
+#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:62
+#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:79
+#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:96
+#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:116
+#: inc/compatibility/edd/customizer/sections/class-astra-edd-container-configs.php:48
+#: inc/compatibility/learndash/customizer/sections/class-astra-learndash-container-configs.php:61
+#: inc/compatibility/lifterlms/class-astra-lifterlms.php:670
+#: inc/compatibility/lifterlms/customizer/sections/class-astra-lifter-container-configs.php:62
+#: inc/compatibility/woocommerce/customizer/sections/class-astra-woo-shop-container-configs.php:48
+#: inc/metabox/class-astra-meta-boxes.php:242
+msgid "Boxed"
+msgstr "Encadré - Tout"
+
+#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:63
+#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:80
+#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:97
+#: inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php:117
+#: inc/compatibility/edd/customizer/sections/class-astra-edd-container-configs.php:49
+#: inc/compatibility/learndash/customizer/sections/class-astra-learndash-container-configs.php:62
+#: inc/compatibility/lifterlms/class-astra-lifterlms.php:671
+#: inc/compatibility/lifterlms/customizer/sections/class-astra-lifter-container-configs.php:63
+#: inc/compatibility/woocommerce/customizer/sections/class-astra-woo-shop-container-configs.php:49
+#: inc/metabox/class-astra-meta-boxes.php:243
+msgid "Content Boxed"
+msgstr "Encadré - Contenu seulement"
 
 #. Author URI of the theme
 msgid "https://wpastra.com/about/"

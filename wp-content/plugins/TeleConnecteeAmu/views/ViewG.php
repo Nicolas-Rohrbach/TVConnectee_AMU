@@ -93,4 +93,11 @@ abstract class ViewG{
     public function displayError(){
         echo '<script src="/wp-content/plugins/TeleConnecteeAmu/views/js/displayError.js"></script>';
     }
+
+    public function displayAllTvStudent($id, $login, $year, $group, $halfgroup, $row){
+        $tab = [$login, $year, $group, $halfgroup];
+        $this->displayAll($row, $id, $tab);
+        echo '<td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs/modification-utilisateur/'.$id.'" class="btn btn-primary btn-lg" name="modif" type="submit" value="Modifier">Modifier</a></td>
+        </tr>';
+    }
 }

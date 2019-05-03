@@ -6,7 +6,7 @@
  * Time: 11:41
  */
 
-class Television
+class Television extends ControllerG
 {
     private $view;
     private $model;
@@ -17,13 +17,52 @@ class Television
         $this->model = new TelevisionManager();
     }
 
-    public function insertTelevision($action, $login, $pwd, $code, $code2, $code3, $name) {
+    public function insertTelevision(){
+
+        $action = $_POST['createTv'];
+        $login = filter_input(INPUT_POST,'loginTv');
+        $pwd = md5(filter_input(INPUT_POST,'pwdTv'));
+        $code1 = $_POST['firstCode'];
+        $code2 = 0;
+        $code3 = 0;
+
+        if(isset($_POST['secondCode'])) $code2 = $_POST['secondCode'];
+        if(isset($_POST['thirdCode'])) $code3 = $_POST['thirdCode'];
+
         $years = $this->model->getCodeYear();
         $groups = $this->model->getCodeGroup();
         $halfgroups = $this->model->getCodeHalfgroup();
         $this->view->displayFormTelevision($years, $groups, $halfgroups);
         if(isset($action)) {
-            $this->model->insertMyTelevision($login, $pwd, $code, $code2, $code3, $name);
+            $this->model->insertMyTelevision($login, $pwd, $code1, $code2, $code3);
+        }
+    }
+
+    public function displayAllTv(){
+        $results = $this->model->getUsersByRole('television');
+        if(isset($results)){
+            $this->view->headerTabTv();
+            $this->displayTabTvStudent($results, $this->model, $this->view);
+        }
+        else{
+            $this->view->displayEmpty();
+        }
+    }
+
+    public function displayModifyTv($result){
+        $years = $this->model->getCodeYear();
+        $groups = $this->model->getCodeGroup();
+        $halfgroups = $this->model->getCodeHalfgroup();
+        $this->view->displayModifyTv($result, $years, $groups, $halfgroups);
+
+        $action = $_POST['modifValidate'];
+        $code1 = $_POST['firstCode'];
+        $code2 = $_POST['secondCode'];
+        $code3 = $_POST['thirdCode'];
+        if(isset($action)){
+            if($this->model->modifyTv($result, $code1, $code2, $code3)){
+                $this->view->refreshPage();
+            }
         }
     }
 }

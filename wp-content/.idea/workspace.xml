@@ -3,176 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="f21d812e-ce81-44c8-afb6-f9623108a598" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/themes/astra-fr_FR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/languages/themes/astra-fr_FR.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/themes/astra-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/themes/astra-fr_FR.po" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Secretary.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Secretary.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PluginExcel.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PluginExcel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/SecretaryManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/SecretaryManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TeacherManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TeacherManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TelevisionManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TelevisionManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewManagementUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewManagementUsers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/assets/icon-visibility.svg" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/assets/icon-visibility.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/assets/if-menu-site.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/assets/if-menu-site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/assets/if-menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/assets/if-menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/assets/if-menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/assets/if-menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/assets/select2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/assets/select2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/if-menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/if-menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/languages/if-menu-de_DE.po" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/languages/if-menu-de_DE.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/languages/if-menu-ro_RO.po" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/languages/if-menu-ro_RO.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/languages/if-menu.pot" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/languages/if-menu.pot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/src/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/src/Admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/src/conditions-basic.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/src/conditions-basic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/src/conditions-multiple-options.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/src/conditions-multiple-options.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/src/if-menu-nav-menu-4.5.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/src/if-menu-nav-menu-4.5.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/src/if-menu-nav-menu-4.7.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/src/if-menu-nav-menu-4.7.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/src/if-menu-nav-menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/src/if-menu-nav-menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/src/user-info.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/src/user-info.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/autoload_real.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/_config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/phpunit.xml.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/AglInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/AglInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/AimeosInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/AimeosInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/AnnotateCmsInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/AnnotateCmsInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/AsgardInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/AsgardInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/AttogramInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/AttogramInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/BaseInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/BaseInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/BitrixInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/BitrixInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/BonefishInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/BonefishInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/CakePHPInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/CakePHPInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ChefInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ChefInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ClanCatsFrameworkInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ClanCatsFrameworkInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/CockpitInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/CockpitInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/CodeIgniterInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/CodeIgniterInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/Concrete5Installer.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/Concrete5Installer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/CraftInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/CraftInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/CroogoInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/CroogoInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/DecibelInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/DecibelInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/DokuWikiInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/DokuWikiInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/DolibarrInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/DolibarrInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/DrupalInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/DrupalInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ElggInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ElggInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/EliasisInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/EliasisInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ExpressionEngineInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ExpressionEngineInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/EzPlatformInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/EzPlatformInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/FuelInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/FuelInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/FuelphpInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/FuelphpInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/GravInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/GravInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/HuradInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/HuradInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ImageCMSInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ImageCMSInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/Installer.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/Installer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ItopInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ItopInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/JoomlaInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/JoomlaInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/KanboardInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/KanboardInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/KirbyInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/KirbyInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/KodiCMSInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/KodiCMSInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/KohanaInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/KohanaInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/LanManagementSystemInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/LanManagementSystemInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/LaravelInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/LaravelInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/LavaLiteInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/LavaLiteInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/LithiumInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/LithiumInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MODULEWorkInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MODULEWorkInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MODXEvoInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MODXEvoInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MagentoInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MagentoInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MajimaInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MajimaInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MakoInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MakoInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MauticInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MauticInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MayaInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MayaInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MediaWikiInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MediaWikiInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MicroweberInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MicroweberInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ModxInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ModxInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MoodleInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MoodleInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/OctoberInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/OctoberInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/OntoWikiInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/OntoWikiInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/OsclassInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/OsclassInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/OxidInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/OxidInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PPIInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PPIInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PhiftyInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PhiftyInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PhpBBInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PhpBBInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PimcoreInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PimcoreInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PiwikInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PiwikInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PlentymarketsInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PlentymarketsInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/Plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/Plugin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PortoInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PortoInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PrestashopInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PrestashopInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PuppetInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PuppetInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PxcmsInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/PxcmsInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/RadPHPInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/RadPHPInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ReIndexInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ReIndexInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/RedaxoInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/RedaxoInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/RoundcubeInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/RoundcubeInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/SMFInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/SMFInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ShopwareInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ShopwareInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/SilverStripeInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/SilverStripeInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/SiteDirectInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/SiteDirectInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/SyDESInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/SyDESInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/Symfony1Installer.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/Symfony1Installer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/TYPO3CmsInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/TYPO3CmsInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/TYPO3FlowInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/TYPO3FlowInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/TheliaInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/TheliaInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/TuskInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/TuskInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/UserFrostingInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/UserFrostingInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/VanillaInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/VanillaInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/VgmcpInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/VgmcpInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/WHMCSInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/WHMCSInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/WolfCMSInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/WolfCMSInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/WordPressInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/WordPressInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/YawikInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/YawikInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ZendInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ZendInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ZikulaInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/ZikulaInstaller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/AsgardInstallerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/BitrixInstallerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/CakePHPInstallerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/CraftInstallerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/DokuWikiInstallerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/GravInstallerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/InstallerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/MayaInstallerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/MediaWikiInstallerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/OctoberInstallerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/OntoWikiInstallerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/PimcoreInstallerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/PiwikInstallerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/SiteDirectInstallerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/SyDESInstallerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/TestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/VgmcpInstallerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/YawikInstallerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/bootstrap.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -199,17 +41,77 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="23" column="73" lean-forward="true" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
+            <state relative-caret-position="437">
+              <caret line="60" column="37" lean-forward="true" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="49" column="63" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
+              <folding>
+                <element signature="e#169#208#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="76" column="108" lean-forward="true" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="108" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php">
+        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="29" column="80" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
+            <state relative-caret-position="474">
+              <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TelevisionManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="138" column="42" lean-forward="true" selection-start-line="138" selection-start-column="42" selection-end-line="138" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-187">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#6#503#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -280,28 +182,28 @@
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/CodeAdeManager.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/addAllCheckBox.js" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TeacherManager.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PluginExcel.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewManagementUsers.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/displayError.js" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php" />
         <option value="$PROJECT_DIR$/themes/astra-child/style.css" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Secretary.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/SecretaryManager.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TelevisionManager.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewManagementUsers.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TelevisionManager.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php" />
       </list>
     </option>
   </component>
@@ -323,6 +225,11 @@
             <path>
               <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
@@ -442,16 +349,18 @@
       <workItem from="1556537369757" duration="8431000" />
       <workItem from="1556604863315" duration="18800000" />
       <workItem from="1556777407889" duration="22218000" />
+      <workItem from="1556863521984" duration="11082000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220550000" />
+    <option name="totallyTimeSpent" value="231632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31140938" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3161074" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -477,22 +386,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/register.js" />
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/register.php" />
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewR34ICS.php" />
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCard.php" />
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Info.php" />
-    <entry file="file://$PROJECT_DIR$/plugins/if-menu/if-menu.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/BdUser.php" />
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOTeacher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="92" column="32" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOUser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -556,27 +449,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/displayError.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/displayError.js" />
     <entry file="file://$PROJECT_DIR$/themes/astra-child/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="78" column="80" selection-start-line="78" selection-start-column="80" selection-end-line="78" selection-end-column="80" />
-          <folding>
-            <element signature="e#6#503#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -601,20 +478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="66" column="31" lean-forward="true" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -645,13 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/SecretaryManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -659,31 +515,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TeacherManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TelevisionManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="83" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3693">
-          <caret line="274" column="37" lean-forward="true" selection-start-line="274" selection-start-column="37" selection-end-line="274" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -701,27 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewManagementUsers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSecretary.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -736,24 +550,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewManagementUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+        <state relative-caret-position="187">
+          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="44" column="35" lean-forward="true" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="100" column="15" lean-forward="true" selection-start-line="100" selection-start-column="15" selection-end-line="100" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="37" column="40" lean-forward="true" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/astra-child/login/logo_amu.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/astra-child/login/user148_cyan.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/astra-child/login/key165_cyan.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/astra-child/login/bg_amu.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/astra-child/functions.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/astra-child/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#6#503#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="138" column="42" lean-forward="true" selection-start-line="138" selection-start-column="42" selection-end-line="138" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mu-plugins/teleConnecteeAmu-functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-311" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="73" lean-forward="true" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
+        <state relative-caret-position="437">
+          <caret line="60" column="37" lean-forward="true" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TelevisionManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="49" column="63" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
+          <folding>
+            <element signature="e#169#208#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="29" column="80" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
+        <state relative-caret-position="287">
+          <caret line="76" column="108" lean-forward="true" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
         </state>
       </provider>
     </entry>

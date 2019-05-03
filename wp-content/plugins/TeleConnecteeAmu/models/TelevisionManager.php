@@ -8,9 +8,13 @@
 
 class TelevisionManager extends Model
 {
-    public function insertMyTelevision($login, $pwd, $code, $code2, $code3, $name){
+    public function insertMyTelevision($login, $pwd, $code, $code2, $code3){
         $role = "television";
-        return $this->insertUser($login, $pwd, $role, $code, $code2, $code3, $name);
+        return $this->insertUser($login, $pwd, $role, $code, $code2, $code3, $login);
 
+    }
+
+    public function modifyTv($result, $code1, $code2, $code3){
+        return $this->modifyUser($result['ID'], $result['user_login'], $result['user_pass'],$code1, $code2, $code3, $result['user_email']);
     }
 }
