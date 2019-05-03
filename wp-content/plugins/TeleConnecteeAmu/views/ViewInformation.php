@@ -62,7 +62,7 @@ echo'                        </div>
                   Titre : <input type="text" name="titleInfo" placeholder="Inserer un titre" required> </br>
                   Contenu : <textarea name="contentInfo">...</textarea> </br>
                   Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" required > </br>
-                  '.do_shortcode('[wordpress_file_upload]').'
+                
                   <input type="submit" value="createInfo" name="createInfo">
               </form>
               

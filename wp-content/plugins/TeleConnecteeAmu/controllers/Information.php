@@ -139,11 +139,8 @@ class Information
     public function insertInformation($action,$actionUpload, $title, $content, $endDate){
 
         $this->view->displayInformationCreation();
-        if(isset($action)){
+        if(isset($action)) {
             $this->createInformation($title, $content, $endDate);
-        }
-        elseif (isset($actionUpload)) {
-            upload_process();
         }
     } //insertInformation()
 
