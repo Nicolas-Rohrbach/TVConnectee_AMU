@@ -19,10 +19,52 @@ class Alert
         $this->view = new ViewAlert();
     }
 
-    public function createAlert($content, $endDate) {
-        $this->DB->addAlertBD($content, $endDate);
+    public function deleteAlert($action) {
+        if(isset($action)) {
+            if (isset($_REQUEST['checkboxstatus'])) {
+                $checked_values = $_REQUEST['checkboxstatus'];
+                foreach ($checked_values as $val) {
+                    $this->DB->deleteAlertDB($val);
+
+                }
+            }
+            $this->view->refreshPage();
+        }
+    } //deleteInformation()
+
+
+    public function createAlert($action,$content, $endDate){
+
+        $this->view->displayAlertCreationForm();
+        if(isset($action)) {
+            $this->DB->addAlertBD($content, $endDate);
+        }
     } //createAlert()
 
+    function displayListAlerts()
+    {
+        $result = $this->DB->getListAlert();
+        $this->view->tabHeadAlert();
+        $i = 0;
 
+        foreach ($result as $row) {
+            $id = $row['ID_alert'];
+            $author = $row['author'];
+            $content = $row['text'];
+            $creationDate = $row['creation_date'];
+            $endDate = $row['end_date'];
+
+            $this->endDateCheckAlert($id, $endDate);
+
+            $this->view->displayAllAlert($id, $author, $content, $creationDate, $endDate, ++$i);
+        }
+        $this->view->endTab();
+    }
+
+    public function endDateCheckAlert($id, $endDate){
+        if($endDate <= date("Y-m-d")) {
+            $this->DB->deleteAlertDB($id);
+        }
+    } //endDateCheckInfo()
 
 }

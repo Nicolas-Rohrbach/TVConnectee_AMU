@@ -47,6 +47,7 @@ function mfp_Card()
 
 
 $information = new Information();
+$alert = new Alert();
 $users = new User();
 $schedule = new Schedule();
 $weather = new Weather();
@@ -70,12 +71,15 @@ add_action('hookWeather',array($weather,'displayMyWeather'));
 add_action('handleInfos',array($information,'displayAllInformations'));
 add_action('delete_infos',array($information, 'deleteInformations'),0 ,1);
 
+add_action('createAlert',array($alert,'createAlert'),0,3);
+add_action('handleAlert', array($alert,'displayListAlerts'));
+add_action('delete_alert', array($alert,'deleteAlert'), 0 ,1);
 
 
 add_action('displayInformations',array($information,'displayInformationMain'));
 add_action('add_info',array($information,'insertInformation'), 0, 5);
 add_action('modify_info',array($information,'modifyInformation'));
 
-add_action('test',array($information,'uploadFile'),0,1);
+add_action('test',array($alert,'displayListAlerts'));
 
 

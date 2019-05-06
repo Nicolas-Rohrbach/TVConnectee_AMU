@@ -32,7 +32,7 @@ class BdAlert
         );
     }
 
-    public function deleteInformationDB($id)
+    public function deleteAlertDB($id)
     {
         global $wpdb;
         $wpdb->query(
@@ -41,5 +41,12 @@ class BdAlert
                 $id
             )
         );
-    } //deleteInformation()
+    } //deleteAlertDB()
+
+    public function getListAlert()
+    {
+        global $wpdb;
+        $result = $wpdb->get_results("SELECT * FROM alerts", ARRAY_A);
+        return $result;
+    } //getListAlert()
 }
