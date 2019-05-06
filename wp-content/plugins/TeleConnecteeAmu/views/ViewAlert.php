@@ -6,7 +6,7 @@
  * Time: 11:01
  */
 
-class BdAlerte
+class ViewAlert
 {
 
 }
