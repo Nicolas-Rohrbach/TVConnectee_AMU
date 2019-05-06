@@ -32,4 +32,19 @@ class ViewAlert extends ViewG
           <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/modification-alert/'.$id.'" class="btn btn-primary btn-lg" name="modifAlert" type="submit" value="Modifier">Modifier</a></td>
         </tr>';
     }
+
+    public function displayModifyAlertForm($content,$endDate)
+    {
+        $dateMin = date('Y-m-d', strtotime("+1 day"));
+        echo '
+                <div>
+                    <form id="modify_alert" method="post">
+                  
+                      Contenu : <textarea name="contentInfo">' . $content . '</textarea> </br>
+                      Date d\'expiration : <input type="date" name="endDateInfo" min="' . $dateMin . '" value = "' . $endDate . '" required > </br>
+                      
+                         <input type="submit" name="validateChange" value="Valider" ">
+                 </form>
+            </div>';
+    }
 }

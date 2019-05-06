@@ -49,4 +49,25 @@ class BdAlert
         $result = $wpdb->get_results("SELECT * FROM alerts", ARRAY_A);
         return $result;
     } //getListAlert()
+
+
+    public function getAlertbyID($id) {
+        global $wpdb;
+        $result = $wpdb->get_row('SELECT * FROM amerts WHERE ID_alert ="'.$id.'"',ARRAY_A );
+        return $result;
+    } //getAlertbyID()
+
+    public function modifyAlert($id,$content,$endDate)
+    {
+        $req = $this->getBdd()->prepare('UPDATE alerts SET text=:content, end_date=:endDate
+                                         WHERE ID_alert=:id');
+        $req->bindParam(':id',$id);
+        $req->bindParam(':content',$content);
+        $req->bindParam(':endDate',$endDate);
+
+        $req->execute();
+    }
+
+
+
 }

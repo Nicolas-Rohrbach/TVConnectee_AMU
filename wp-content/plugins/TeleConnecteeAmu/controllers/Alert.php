@@ -67,4 +67,26 @@ class Alert
         }
     } //endDateCheckInfo()
 
+
+    public function modifyAlert()
+    {
+        $urlExpl = explode('/', $_SERVER['REQUEST_URI']);
+        $id = $urlExpl[2];
+
+        $action = $_POST['validateChange'];
+
+        $result = $this->DB->getAlertByID($id);
+        $content = $result['content'];
+        $endDate = date('Y-m-d', strtotime($result['end_date']));
+
+        $this->view->displayModifyAlertForm($content, $endDate);
+
+        if ($action == "Valider") {
+            $content = $_POST['contentInfo'];
+            $endDate = $_POST['endDateInfo'];
+
+            $this->DB->modifyAlert($id, $content, $endDate);
+            $this->view->refreshPage();
+        }
+    }
 }
