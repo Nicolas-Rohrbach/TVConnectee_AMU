@@ -56,6 +56,7 @@ class Alert
 
             $this->endDateCheckAlert($id, $endDate);
 
+
             $this->view->displayAllAlert($id, $author, $content, $creationDate, $endDate, ++$i);
         }
         $this->view->endTab();
@@ -76,9 +77,8 @@ class Alert
         $action = $_POST['validateChange'];
 
         $result = $this->DB->getAlertByID($id);
-        $content = $result['content'];
+        $content = $result['text'];
         $endDate = date('Y-m-d', strtotime($result['end_date']));
-
         $this->view->displayModifyAlertForm($content, $endDate);
 
         if ($action == "Valider") {

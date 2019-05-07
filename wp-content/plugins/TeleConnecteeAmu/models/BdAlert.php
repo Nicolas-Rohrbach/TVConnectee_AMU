@@ -8,6 +8,22 @@
 
 class BdAlert
 {
+    private static $bdd;
+
+    private static function setBdd()
+    {
+        global $wpdb;
+        self::$bdd = new PDO('mysql:host='.$wpdb->dbhost.'; dbname='.$wpdb->dbname, $wpdb->dbuser, $wpdb->dbpassword);
+        self::$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+    }
+    protected function getBdd()
+    {
+        if (self:: $bdd == null)
+            self::setBdd();
+        return self::$bdd;
+    }
+
+
     public function addAlertBD($content,$endDate){
         global $wpdb;
 
@@ -53,7 +69,7 @@ class BdAlert
 
     public function getAlertbyID($id) {
         global $wpdb;
-        $result = $wpdb->get_row('SELECT * FROM amerts WHERE ID_alert ="'.$id.'"',ARRAY_A );
+        $result = $wpdb->get_row('SELECT * FROM alerts WHERE ID_alert ="'.$id.'"',ARRAY_A );
         return $result;
     } //getAlertbyID()
 

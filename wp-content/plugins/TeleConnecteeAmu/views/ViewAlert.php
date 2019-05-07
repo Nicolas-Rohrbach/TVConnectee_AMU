@@ -29,8 +29,8 @@ class ViewAlert extends ViewG
         $tab = [$author, $content, $creationDate, $endDate];
         $this->displayAll($row, $id, $tab);
         echo '
-          <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/modification-alert/'.$id.'" class="btn btn-primary btn-lg" name="modifAlert" type="submit" value="Modifier">Modifier</a></td>
-        </tr>';
+          <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/modification-alerte/'.$id.'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
+        </td>';
     }
 
     public function displayModifyAlertForm($content,$endDate)
@@ -38,6 +38,7 @@ class ViewAlert extends ViewG
         $dateMin = date('Y-m-d', strtotime("+1 day"));
         echo '
                 <div>
+                    
                     <form id="modify_alert" method="post">
                   
                       Contenu : <textarea name="contentInfo">' . $content . '</textarea> </br>
