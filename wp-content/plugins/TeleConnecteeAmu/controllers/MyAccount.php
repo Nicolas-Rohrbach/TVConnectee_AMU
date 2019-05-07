@@ -34,17 +34,19 @@ class MyAccount{
     }
 
     public function deleteMyAccount(){
-        $action = $_POST['deletePwd'];
+        $this->view->verifyPassword();
+        $this->view->deleteAccount();
+        $action = $_POST['deleteMyAccount'];
+        $current_user = wp_get_current_user();
         if(isset($action)){
-        }
-        $action = $_POST['deletePwdSubmit'];
-        if(isset($action)){
-            $pwd = md5(filter_input(INPUT_POST, 'deletePwd'));
-            if($this->model->verifyMyPassword($pwd)){
-                echo "oui";
+            $pwd = filter_input(INPUT_POST, 'verifPwd');
+            if(wp_check_password($pwd, $current_user->user_pass)){
+                require_once( ABSPATH.'wp-admin/includes/user.php' );
+                wp_delete_user( $current_user->ID );
+                $this->view->modificationValidate();
             }
             else{
-                echo 'non';
+                echo "No, Wrong Password";
             }
         }
     }

@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f21d812e-ce81-44c8-afb6-f9623108a598" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/MyAccount.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/MyAccountManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewMyAccount.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mu-plugins/teleConnecteeAmu-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/mu-plugins/teleConnecteeAmu-functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/CodeAdeManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/CodeAdeManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewUser.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/jquery-3.3.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra-child/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra-child/js/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/is_connected.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/astra-child/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra-child/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/MyAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/MyAccount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewMyAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewMyAccount.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/MyAccount.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="369">
-              <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+              <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
               </folding>
@@ -62,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewMyAccount.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="91" selection-start-line="14" selection-start-column="91" selection-end-line="14" selection-end-column="91" />
+            <state relative-caret-position="391">
+              <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -71,7 +60,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1479">
+            <state relative-caret-position="389">
               <caret line="93" column="70" selection-start-line="93" selection-start-column="70" selection-end-line="93" selection-end-column="70" />
               <folding>
                 <element signature="e#6#503#0#PHP" expanded="true" />
@@ -323,12 +312,12 @@
       <workItem from="1556863521984" duration="18173000" />
       <workItem from="1557122850181" duration="4631000" />
       <workItem from="1557129076680" duration="9463000" />
-      <workItem from="1557209351795" duration="2403000" />
+      <workItem from="1557209351795" duration="4186000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255220000" />
+    <option name="totallyTimeSpent" value="257003000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -644,9 +633,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/myButton.js" />
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/MyAccountManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
+        <state relative-caret-position="389">
           <caret line="93" column="70" selection-start-line="93" selection-start-column="70" selection-end-line="93" selection-end-column="70" />
           <folding>
             <element signature="e#6#503#0#PHP" expanded="true" />
@@ -656,22 +652,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewMyAccount.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="91" selection-start-line="14" selection-start-column="91" selection-end-line="14" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/MyAccountManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="46" />
+        <state relative-caret-position="391">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/MyAccount.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
-          <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+          <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
           </folding>

@@ -23,6 +23,12 @@ class ViewMyAccount extends ViewG
             </form>';
     }
 
+    public function deleteAccount(){
+        echo '
+                <button type="submit" class="btn btn-primary" name="deleteMyAccount">Supprimer</button>
+                </form>';
+    }
+
     public function modificationValidate(){
         echo '<div class="alert alert-success" role="alert">La modification à été réussie !</div>';
     }
