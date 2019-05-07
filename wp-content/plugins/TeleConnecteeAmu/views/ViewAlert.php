@@ -68,4 +68,13 @@ class ViewAlert extends ViewG
                  </form>
             </div>';
     } //displayModifyAlertForm()
+
+    public function displayAlertMain($content) {
+
+        for($i=0; $i < sizeof($content); ++$i) {
+            echo '<div>
+                        <div class="title">'.$content[$i].' </div>                             
+                  </div>';
+        }
+    }
 }

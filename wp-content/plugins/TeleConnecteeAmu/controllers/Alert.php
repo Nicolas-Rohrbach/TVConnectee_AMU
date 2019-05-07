@@ -117,4 +117,26 @@ class Alert
             $this->view->refreshPage();
         }
     } //modifyAlert()
+
+
+    public function alertMain(){
+
+        $result = $this->DB->getListAlert();
+
+        $contentList = array();
+
+        foreach ($result as $row) {
+
+            $id = $row['ID_alert'];
+            $content = $row['text'];
+            $endDate = date('Y-m-d',strtotime($row['end_date']));
+
+            $this->endDateCheckAlert($id,$endDate);
+
+            array_push($contentList,$content) ;
+        }
+
+        $this->view->displayAlertMain($contentList);
+
+    } // alertMain()
 }
