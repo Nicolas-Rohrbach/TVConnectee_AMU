@@ -8,6 +8,9 @@
 
 class ViewAlert extends ViewG
 {
+    /**
+     * Display the creation form.
+     */
     public function displayAlertCreationForm() {
         $dateMin = date('Y-m-d',strtotime("+1 day")); //date minimum pour la date d'expiration
 
@@ -18,22 +21,39 @@ class ViewAlert extends ViewG
                     <input type="submit" value="Créer" name="createAlert">
             </form>
         ';
-    }
+    } //displayCreationForm();
 
+    /**
+     * Set the head of the table for the alert's management page.
+     */
     public function tabHeadAlert(){
         $tab = ["Auteur","Contenu","Date de création","Date de fin"];
         $this->startTab($tab);
-    }
+    }//tabHeadAlert();
 
+    /**
+     * Display the table of the management page, with delete and modify button.
+     * @param $id
+     * @param $author
+     * @param $content
+     * @param $creationDate
+     * @param $endDate
+     * @param $row
+     */
     public function displayAllAlert($id, $author, $content, $creationDate, $endDate, $row){
         $tab = [$author, $content, $creationDate, $endDate];
         $this->displayAll($row, $id, $tab);
         echo '
           <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/modification-alerte/'.$id.'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
         </td>';
-    }
+    } //displayAllAlert()
 
-    public function displayModifyAlertForm($content,$endDate)
+    /**
+     * Display the modification form.
+     * @param $content
+     * @param $endDate
+     */
+    public function displayModifyAlertForm($content, $endDate)
     {
         $dateMin = date('Y-m-d', strtotime("+1 day"));
         echo '
@@ -47,5 +67,5 @@ class ViewAlert extends ViewG
                          <input type="submit" name="validateChange" value="Valider" ">
                  </form>
             </div>';
-    }
+    } //displayModifyAlertForm()
 }

@@ -8,39 +8,59 @@
 
 class Alert
 {
+    /**
+     * @var BdAlert
+     */
     private $DB;
+
+    /**
+     * @var ViewAlert
+     */
     private $view;
 
     /**
-     * Alerte constructor.
+     * Alert constructor.
      */
     public function __construct(){
         $this->DB = new BdAlert();
         $this->view = new ViewAlert();
     }
 
+    /**
+     * Delete selected alerts.
+     * @param $action
+     * @see displayListAlerts()
+     */
     public function deleteAlert($action) {
         if(isset($action)) {
             if (isset($_REQUEST['checkboxstatus'])) {
                 $checked_values = $_REQUEST['checkboxstatus'];
                 foreach ($checked_values as $val) {
                     $this->DB->deleteAlertDB($val);
-
                 }
             }
             $this->view->refreshPage();
         }
-    } //deleteInformation()
+    } //deleteAlert()
 
 
-    public function createAlert($action,$content, $endDate){
+    /**
+     * Create an alert.
+     * @param $action
+     * @param $content
+     * @param $endDate
+     */
+    public function createAlert($action, $content, $endDate){
 
         $this->view->displayAlertCreationForm();
         if(isset($action)) {
-            $this->DB->addAlertBD($content, $endDate);
+            $this->DB->addAlertDB($content, $endDate);
         }
     } //createAlert()
 
+    /**
+     * Display a table with all alert, with modification and delete button.
+     */
     function displayListAlerts()
     {
         $result = $this->DB->getListAlert();
@@ -60,15 +80,23 @@ class Alert
             $this->view->displayAllAlert($id, $author, $content, $creationDate, $endDate, ++$i);
         }
         $this->view->endTab();
-    }
+    } //displayListAlerts()
 
+    /**
+     * Verify if the alert's end date is outdated.
+     * @param $id
+     * @param $endDate
+     */
     public function endDateCheckAlert($id, $endDate){
         if($endDate <= date("Y-m-d")) {
             $this->DB->deleteAlertDB($id);
         }
-    } //endDateCheckInfo()
+    } //endDateCheckAlert()
 
 
+    /**
+     * Get the alert's id from the url and display the modification form.
+     */
     public function modifyAlert()
     {
         $urlExpl = explode('/', $_SERVER['REQUEST_URI']);
@@ -88,5 +116,5 @@ class Alert
             $this->DB->modifyAlert($id, $content, $endDate);
             $this->view->refreshPage();
         }
-    }
+    } //modifyAlert()
 }
