@@ -10,7 +10,7 @@ class CodeAdeManager extends Model
 {
     protected function checkIfDoubleCode($code){
         $var = 0;
-        $req = $this->getBdd()->prepare('SELECT * FROM code_ade WHERE code =:code');
+        $req = $this->getDb()->prepare('SELECT * FROM code_ade WHERE code =:code');
         $req->bindValue(':code', $code);
         $req->execute();
         while ($data = $req->fetch(PDO::FETCH_ASSOC)){
@@ -30,7 +30,7 @@ class CodeAdeManager extends Model
      */
     protected function checkIfDoubleTitle($title){
         $var = 0;
-        $req = $this->getBdd()->prepare('SELECT * FROM code_ade WHERE title =:title');
+        $req = $this->getDb()->prepare('SELECT * FROM code_ade WHERE title =:title');
         $req->bindValue(':title', $title);
         $req->execute();
         while ($data = $req->fetch(PDO::FETCH_ASSOC)){
@@ -54,7 +54,7 @@ class CodeAdeManager extends Model
      */
     public function addCode($type, $title, $code){
         if(! ($this->checkIfDoubleCode($code)) && ! ($this->checkIfDoubleTitle($title))){
-            $req = $this->getBdd()->prepare('INSERT INTO code_ade (type, title, code) 
+            $req = $this->getDb()->prepare('INSERT INTO code_ade (type, title, code) 
                                          VALUES (:type, :title, :code)');
 
             $req->bindParam(':type', $type);
@@ -125,7 +125,7 @@ class CodeAdeManager extends Model
      */
     public function modifyCode($id, $title, $code, $type){
 
-            $req = $this->getBdd()->prepare('UPDATE code_ade SET title=:title, code=:code, type=:type WHERE ID=:id');
+            $req = $this->getDb()->prepare('UPDATE code_ade SET title=:title, code=:code, type=:type WHERE ID=:id');
 
             $req->bindParam(':id', $id);
             $req->bindParam(':title', $title);
@@ -158,7 +158,7 @@ class CodeAdeManager extends Model
      * @return array
      */
     public function getCode($id){
-        $req = $this->getBdd()->prepare('SELECT * FROM code_ade WHERE ID = :id');
+        $req = $this->getDb()->prepare('SELECT * FROM code_ade WHERE ID = :id');
         $req->bindParam(':id', $id);
         $req->execute();
         while ($data = $req->fetch()) {

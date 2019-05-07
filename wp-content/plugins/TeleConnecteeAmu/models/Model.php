@@ -8,30 +8,30 @@
 
 abstract class Model
 {
-    private static $bdd;
+    private static $db;
 
     /**
      * Set the db with PDO
      */
-    private static function setBdd(){
+    private static function setDb(){
         global $wpdb;
-        self::$bdd = new PDO('mysql:host='.$wpdb->dbhost.'; dbname='.$wpdb->dbname, $wpdb->dbuser, $wpdb->dbpassword);
-        self::$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+        self::$db = new PDO('mysql:host='.$wpdb->dbhost.'; dbname='.$wpdb->dbname, $wpdb->dbuser, $wpdb->dbpassword);
+        self::$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
     }
 
     /**
      * Return the db
      * @return mixed
      */
-    protected function getBdd(){
-        if (self:: $bdd == null)
-            self::setBdd();
-        return self::$bdd;
+    protected function getDb(){
+        if (self:: $db == null)
+            self::setDb();
+        return self::$db;
     }
 
     protected function getAll($table){
         $var = [];
-        $req = $this->getBdd()->prepare('SELECT * FROM ' . $table . ' ORDER BY ID desc');
+        $req = $this->getDb()->prepare('SELECT * FROM ' . $table . ' ORDER BY ID desc');
         $req->execute();
         while ($data = $req->fetch(PDO::FETCH_ASSOC)) {
             $var[] = $data;
@@ -42,7 +42,7 @@ abstract class Model
 
     protected function verifyTuple($login){
         $var = 0;
-        $req = $this->getBdd()->prepare('SELECT * FROM wp_users WHERE user_login =:login');
+        $req = $this->getDb()->prepare('SELECT * FROM wp_users WHERE user_login =:login');
         $req->bindValue(':login', $login);
         $req->execute();
         while ($data = $req->fetch(PDO::FETCH_ASSOC)) {
@@ -58,7 +58,7 @@ abstract class Model
 
     protected function verifyNoDouble($email, $login){
         $var = 0;
-        $req = $this->getBdd()->prepare('SELECT * FROM wp_users WHERE user_email =:mail OR user_login =:login');
+        $req = $this->getDb()->prepare('SELECT * FROM wp_users WHERE user_email =:mail OR user_login =:login');
         $req->bindValue(':mail', $email);
         $req->bindValue(':login', $login);
         $req->execute();
@@ -75,7 +75,7 @@ abstract class Model
 
     protected function insertUser($login, $pwd, $role, $code1, $code2, $code3, $email){
         if ($this->verifyNoDouble($email, $login)){
-            $req = $this->getBdd()->prepare('INSERT INTO wp_users (user_login, user_pass, role, code1, code2, code3,
+            $req = $this->getDb()->prepare('INSERT INTO wp_users (user_login, user_pass, role, code1, code2, code3,
                                       user_nicename, user_email, user_url, user_registered, user_activation_key,
                                       user_status, display_name) 
                                          VALUES (:login, :pwd, :role, :code1, :code2, :code3, :name, :email, :url, NOW(), :key, :status, :displayname)');
@@ -101,9 +101,9 @@ abstract class Model
             $capa = 'wp_capabilities';
             $role = 'a:1:{s:10:"'.$role.'";b:1;}';
 
-            $id = $this->getBdd()->lastInsertId();
+            $id = $this->getDb()->lastInsertId();
 
-            $req = $this->getBdd()->prepare('INSERT INTO wp_usermeta(user_id, meta_key, meta_value) VALUES (:id, :capabilities, :role)');
+            $req = $this->getDb()->prepare('INSERT INTO wp_usermeta(user_id, meta_key, meta_value) VALUES (:id, :capabilities, :role)');
 
             $req->bindParam(':id', $id);
             $req->bindParam(':capabilities', $capa);
@@ -113,7 +113,7 @@ abstract class Model
 
             $level = "wp_user_level";
 
-            $req = $this->getBdd()->prepare('INSERT INTO wp_usermeta(user_id, meta_key, meta_value) VALUES (:id, :level, :value)');
+            $req = $this->getDb()->prepare('INSERT INTO wp_usermeta(user_id, meta_key, meta_value) VALUES (:id, :level, :value)');
 
             $req->bindParam(':id', $id);
             $req->bindParam(':level', $level);
@@ -130,7 +130,7 @@ abstract class Model
 
     protected function modifyUser($id, $login, $pwd, $code1, $code2, $code3, $email){
         if ($this->verifyTuple($login)) {
-            $req = $this->getBdd()->prepare('UPDATE wp_users SET user_login=:login, user_pass=:pwd, code1=:code1, 
+            $req = $this->getDb()->prepare('UPDATE wp_users SET user_login=:login, user_pass=:pwd, code1=:code1, 
                                             code2=:code2, code3=:code3, user_nicename=:name, 
                                             user_email=:email, display_name=:displayname WHERE ID=:id');
 
@@ -154,7 +154,7 @@ abstract class Model
     }
 
     public function getUsersByRole($role){
-        $req = $this->getBdd()->prepare('SELECT * FROM wp_users WHERE role = :role');
+        $req = $this->getDb()->prepare('SELECT * FROM wp_users WHERE role = :role');
         $req->bindParam(':role', $role);
         $req->execute();
         while ($data = $req->fetch()) {
@@ -165,7 +165,7 @@ abstract class Model
     }
 
     public function getTitleOfCode($code){
-        $req = $this->getBdd()->prepare('SELECT title FROM code_ade WHERE code = :code');
+        $req = $this->getDb()->prepare('SELECT title FROM code_ade WHERE code = :code');
         $req->bindParam(':code', $code);
         $req->execute();
         while ($data = $req->fetch()) {
@@ -176,7 +176,7 @@ abstract class Model
     }
 
     public function getCodeYear(){
-        $req = $this->getBdd()->prepare('SELECT * FROM code_ade WHERE type = "Annee"');
+        $req = $this->getDb()->prepare('SELECT * FROM code_ade WHERE type = "Annee"');
         $req->execute();
         while ($data = $req->fetch()) {
             $var[] = $data;
@@ -186,7 +186,7 @@ abstract class Model
     }
 
     public function getCodeGroup(){
-        $req = $this->getBdd()->prepare('SELECT * FROM code_ade WHERE type = "Groupe"');
+        $req = $this->getDb()->prepare('SELECT * FROM code_ade WHERE type = "Groupe"');
         $req->execute();
         while ($data = $req->fetch()) {
             $var[] = $data;
@@ -200,7 +200,7 @@ abstract class Model
      * @return array
      */
     public function getCodeHalfgroup(){
-        $req = $this->getBdd()->prepare('SELECT * FROM code_ade WHERE type = "Demi-Groupe"');
+        $req = $this->getDb()->prepare('SELECT * FROM code_ade WHERE type = "Demi-Groupe"');
         $req->execute();
         while ($data = $req->fetch()) {
             $var[] = $data;
@@ -227,7 +227,7 @@ abstract class Model
      */
     protected function deleteTuple($table, $id){
 
-        $req = $this->getBdd()->prepare('DELETE FROM '.$table.' WHERE ID = :id');
+        $req = $this->getDb()->prepare('DELETE FROM '.$table.' WHERE ID = :id');
         $req->bindValue(':id', $id);
 
         $req->execute();
@@ -239,7 +239,7 @@ abstract class Model
      */
     public function deleteUser($id){
         $this->deleteTuple('wp_users', $id);
-        $req = $this->getBdd()->prepare('DELETE FROM wp_usermeta WHERE user_id = :id');
+        $req = $this->getDb()->prepare('DELETE FROM wp_usermeta WHERE user_id = :id');
         $req->bindValue(':id', $id);
 
         $req->execute();

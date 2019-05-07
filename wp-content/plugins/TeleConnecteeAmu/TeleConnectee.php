@@ -34,6 +34,10 @@ include_once 'views/ViewSecretary.php';
 include_once 'controllers/ManagementUsers.php';
 include_once 'views/ViewManagementUsers.php';
 
+include_once 'controllers/MyAccount.php';
+include_once 'models/MyAccountManager.php';
+include_once 'views/ViewMyAccount.php';
+
 include_once 'models/Excel/PHPExcel/IOFactory.php';
 include_once 'models/Excel/PluginExcel.php';
 include_once 'models/DAO/DAOUser.php';
@@ -43,6 +47,7 @@ include_once 'models/DAO/DAOTeacher.php';
 include_once 'controllers/R34ICS.php';
 include_once 'controllers/Schedule.php';
 include_once 'views/ViewSchedule.php';
+
 include_once 'controllers/Weather.php';
 include_once 'views/ViewWeather.php';
 
@@ -57,10 +62,12 @@ function mfp_Card()
 ';
 }
 
+//Users
 $student = new Student();
 $teacher = new Teacher();
 $television = new Television();
 $secretary = new Secretary();
+$myAccount = new MyAccount();
 
 $managementUsers = new ManagementUsers();
 
@@ -70,6 +77,10 @@ $schedule = new Schedule();
 //Function for Schedule
 add_action('displaySchedule',array($schedule,'displayMySchedule'));
 
+$weather = new Weather();
+//Function for Weather
+add_action('display_weather', array($weather,'displayMyWeather'));
+
 //All functions for users
 add_action('add_student', array($student, 'insertStudent'), 0, 1);
 add_action('add_teacher', array($teacher, 'insertTeacher'), 0, 1);
@@ -78,7 +89,9 @@ add_action('add_secretary', array($secretary, 'insertSecretary'));
 
 add_action('displayManagementUsers', array($managementUsers, 'displayMyUsers'), 0, 1);
 add_action('modify_user', array($managementUsers, 'ModifyMyUser'));
+add_action('modify_my_password', array($myAccount, 'displayModifyPwd'));
 add_action('delete_users', array($managementUsers, 'deleteUsers'), 0, 1);
+add_action('delete_my_account', array($myAccount, 'deleteMyAccount'));
 
 //All functions for code ADE
 add_action('add_code_ade', array($code, 'insertCode'));

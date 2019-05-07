@@ -12,3 +12,15 @@ function gkp_insert_css_in_head() {
     wp_register_style('style', get_bloginfo( 'stylesheet_url' ),'',false,'screen');
     wp_enqueue_style( 'style' );
 }
+
+add_action( 'wp_enqueue_scripts', 'custom_enqueue_script' );
+function custom_enqueue_script() {
+    wp_enqueue_script( 'jquery331', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery-3.3.1.min.js',
+        array( 'jquery' ), '', false);
+}
+
+add_action( 'wp_enqueue_scripts', 'custom_enqueue_script2' );
+function custom_enqueue_script2() {
+    wp_enqueue_script( 'jqueryUI', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery-ui.min.js',
+        array( 'jquery' ), '', false);
+}
