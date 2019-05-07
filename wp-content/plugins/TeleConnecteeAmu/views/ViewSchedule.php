@@ -19,10 +19,8 @@ class ViewSchedule extends ViewG
     public function displayTimetable($value,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear) {
         echo '
             <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/jquery-3.3.1.min.js"></script>
-            <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/jquery-ui.min.js"></script>
-            <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/refreshSchedule.js"></script>
-            <div id="ref">'
-                .do_shortcode('[ics_calendar url="https://ade-consult.univ-amu.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources='.$value.'&projectId=8&startDay='.$startDay.'&startMonth='.$startMonth.'&startYear='.$startYear.'&endDay='.$endDay.'&endMonth='.$endMonth.'&endYear='.$endYear.'&calType=ical" view="list"]')
-            .'</div>';
+            <div id="ref">
+            [ics_calendar url="https://ade-consult.univ-amu.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources='.$value.'&projectId=8&startDay='.$startDay.'&startMonth='.$startMonth.'&startYear='.$startYear.'&endDay='.$endDay.'&endMonth='.$endMonth.'&endYear='.$endYear.'&calType=ical" view="list" count=10]
+            </div>';
     }
 }

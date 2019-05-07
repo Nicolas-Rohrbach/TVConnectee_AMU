@@ -71,7 +71,6 @@ class R34ICS {
     }
 
     public function display_calendar($ics_url, $args=array(), $force_reload=false) {
-
         // Get ICS file, from transient if possible
         $transient_name = __METHOD__ . '_' . sha1($ics_url);
         $ics_contents = null;
@@ -87,7 +86,6 @@ class R34ICS {
 
         // No transient; retrieve data
         if (!empty($ics_contents)) {
-
             // Parse ICS contents
             $ics_data = array();
             if (!$this->parser_loaded) {
@@ -95,11 +93,8 @@ class R34ICS {
             }
             $ICal = new ICal\ICal;
             $ICal->initString($ics_contents);
-
             $ics_data['title'] = !empty($args['title']) ? $args['title'] : $ICal->calendarName();
             $ics_data['description'] = !empty($args['description']) ? $args['description'] : $ICal->calendarDescription();
-
-
 
             // Process events
             if ($ics_events = $ICal->events()) {
@@ -287,7 +282,8 @@ class R34ICS {
                 if ($date < $first_date || $date > $limit_date) { unset($ics_data['events'][$date]); }
                 else { ksort($ics_data['events'][$date]); }
             }
-            ksort($ics_data['events']);
+            if(isset($ics_data['events']))
+                ksort($ics_data['events']);
 
             // Split events into year/month/day groupings and determine earliest and latest dates along the way
             foreach ((array)$ics_data['events'] as $date => $events) {

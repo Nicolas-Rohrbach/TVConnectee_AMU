@@ -39,7 +39,7 @@ if (!empty($ics_data['description'])) {
 
 // Empty calendar message
 if (empty($ics_data['events'])) {
-    echo '<p class="ics-calendar-error">'; _e('Vous n\'avez pas cours !', 'R34ICS'); echo '</p>';
+    return false;
 }
 
 // Display calendar

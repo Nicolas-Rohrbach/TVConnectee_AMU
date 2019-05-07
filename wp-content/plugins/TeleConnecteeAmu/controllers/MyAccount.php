@@ -6,15 +6,21 @@
  * Time: 08:58
  */
 
-class MyAccount{
+class MyAccount extends ControllerG {
     private $view;
     private $model;
 
+    /**
+     * MyAccount constructor.
+     */
     public function __construct(){
         $this->view = new ViewMyAccount();
         $this->model = new MyAccountManager();
     }
 
+    /**
+     *
+     */
     public function displayModifyPwd(){
         $this->view->verifyPassword();
         $this->view->modifyPassword();
@@ -28,11 +34,14 @@ class MyAccount{
                 $this->view->modificationValidate();
             }
             else{
-                echo "No, Wrong Password";
+                $this->view->wrongPassword();
             }
         }
     }
 
+    /**
+     * Delete the account of the user if the password is good
+     */
     public function deleteMyAccount(){
         $this->view->verifyPassword();
         $this->view->deleteAccount();
@@ -43,10 +52,11 @@ class MyAccount{
             if(wp_check_password($pwd, $current_user->user_pass)){
                 require_once( ABSPATH.'wp-admin/includes/user.php' );
                 wp_delete_user( $current_user->ID );
+                $this->addLogEvent("Le compte ".$current_user->user_login." a été supprimé !");
                 $this->view->modificationValidate();
             }
             else{
-                echo "No, Wrong Password";
+                $this->view->wrongPassword();
             }
         }
     }

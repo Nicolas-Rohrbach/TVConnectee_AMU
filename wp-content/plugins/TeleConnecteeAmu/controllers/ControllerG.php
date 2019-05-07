@@ -6,13 +6,13 @@
  * Time: 14:54
  */
 
-abstract class ControllerG
-{
+abstract class ControllerG {
+
     /**
      * Return the id from the url
      * @return mixed
      */
-    public function getMyIdUrl(){
+    protected function getMyIdUrl(){
         $urlExpl = explode('/', $_SERVER['REQUEST_URI']);
         return $urlExpl[3];
     }
@@ -33,7 +33,7 @@ abstract class ControllerG
         }
     }
 
-    public function displayTabTvStudent($results, $model, $view){
+    protected function displayTabTvStudent($results, $model, $view){
         $row = 0;
         foreach ($results as $result){
             ++$row;
@@ -45,5 +45,12 @@ abstract class ControllerG
             $view->displayAllTvStudent($id, $login, $year, $group, $halfgroup, $row);
         }
         $view->endTab();
+    }
+
+    protected function addLogEvent($event){
+        $time = date("D, d M Y H:i:s");
+        $time = "[".$time."] ";
+        $event = $time.$event."\n";
+        file_put_contents(ABSPATH."/wp-content/plugins/TeleConnecteeAmu/fichier.log", $event, FILE_APPEND);
     }
 }

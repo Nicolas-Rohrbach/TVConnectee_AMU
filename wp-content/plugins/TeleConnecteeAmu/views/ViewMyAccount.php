@@ -32,4 +32,8 @@ class ViewMyAccount extends ViewG
     public function modificationValidate(){
         echo '<div class="alert alert-success" role="alert">La modification à été réussie !</div>';
     }
+
+    public function wrongPassword(){
+        echo '<div class="alert alert-danger"> Mauvais mot de passe </div>';
+    }
 }
