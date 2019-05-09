@@ -71,46 +71,16 @@ class ViewAlert extends ViewG
 
     public function displayAlertMain($content) {
         echo '
-    <script src="js/jquery.easy-ticker.js"></script>
-    <script src="js/jquery.min.js"></script>
-    
-    
-        <div class="ticker1">
-            <div class="innerWrap">
-                <div class="list"> List 1 </div>
-                <div class="list"> List 2 </div>
-                <div class="list"> List 3 </div>
-                <div class="list"> List 4 </div>
+        <div id="ticker1">
+            <div class="innerWrap">';
+        for($i = 0; $i < sizeof($content); ++$i){
+            echo '<div class="list"> '.$content[$i].'</div>';
+        }
+        echo '
             </div>
         </div>
-        
-        <div class="ticker2">
-            <ul>
-                <li> List 1 </li>
-                <li> List 2 </li>
-                <li> List 3 </li>
-                <li> List 4 </li>
-            </ul>
-        </div>
-        
-        <script>
-            $(".ticker1, .ticker2").easyTicker({
-                direction: "up",
-                easing: "swing",
-                speed: "slow",
-                interval: 2000,
-                height: "auto",
-                visible: 0,
-                mousePause: 1,
-                controls: {
-                    up: "",
-                    down: "",
-                    toggle: "",
-                    playText: "Play",
-                    stopText: "Stop"
-                }
-            });
-        </script>
+
+         <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/test.js" type="text/javascript"></script>
         ';
     }
 }

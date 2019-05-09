@@ -1,11 +1,11 @@
-$('.ticker1, .ticker2').easyTicker({
+$('#ticker1').easyTicker({
     direction: 'up',
     easing: 'swing',
     speed: 'slow',
     interval: 2000,
     height: 'auto',
-    visible: 0,
-    mousePause: 1,
+    visible: 1,
+    mousePause: 0,
     controls: {
         up: '',
         down: '',
