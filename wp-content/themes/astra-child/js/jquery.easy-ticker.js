@@ -83,7 +83,7 @@
 			});
 			
 			s.targ.css({
-				'position' : 'absolute',
+				'position' : 'relative',
 				'margin' : 0
 			});
 			

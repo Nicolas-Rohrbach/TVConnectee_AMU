@@ -88,3 +88,4 @@ function custom_enqueue_script3() {
     wp_enqueue_script( 'jqueryEasyTicker', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.easy-ticker.js',
         array( 'jquery' ), '', false);
 }
+

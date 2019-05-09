@@ -70,13 +70,15 @@ class ViewAlert extends ViewG
     } //displayModifyAlertForm()
 
     public function displayAlertMain($content) {
-        echo '
-        <div id="ticker1">
-            <div class="innerWrap">';
-        for($i = 0; $i < sizeof($content); ++$i){
-            echo '<div class="list"> '.$content[$i].'</div>';
-        }
-        echo '
+                echo '
+        <div class="alert">
+            <div id="ticker1">
+                <div class="innerWrap">';
+            for($i = 0; $i < sizeof($content); ++$i){
+                echo '<div class="list"> '.$content[$i].'</div>';
+            }
+            echo '
+                </div>
             </div>
         </div>
 

@@ -2,7 +2,7 @@ $('#ticker1').easyTicker({
     direction: 'up',
     easing: 'swing',
     speed: 'slow',
-    interval: 2000,
+    interval: 3000,
     height: 'auto',
     visible: 1,
     mousePause: 0,
@@ -14,3 +14,4 @@ $('#ticker1').easyTicker({
         stopText: 'Stop'
     }
 });
+
