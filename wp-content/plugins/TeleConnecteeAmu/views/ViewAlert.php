@@ -68,4 +68,21 @@ class ViewAlert extends ViewG
                  </form>
             </div>';
     } //displayModifyAlertForm()
+
+    public function displayAlertMain($content) {
+                echo '
+        <div class="alert">
+            <div id="ticker1">
+                <div class="innerWrap">';
+            for($i = 0; $i < sizeof($content); ++$i){
+                echo '<div class="list"> '.$content[$i].'</div>';
+            }
+            echo '
+                </div>
+            </div>
+        </div>
+
+         <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/test.js" type="text/javascript"></script>
+        ';
+    }
 }

@@ -60,3 +60,22 @@ form input{
 form button{
 	margin : 3px;
 }
+
+
+
+/*______________Alerts main_______________*/
+
+.alert {
+	background-color: #D90404;
+	color: white;
+	width : 50%;
+	text-align: center;
+
+}
+
+.innerwrap {
+	position : relative;
+}
+.list {
+	text-align: center;
+}
