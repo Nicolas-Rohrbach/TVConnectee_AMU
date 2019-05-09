@@ -14,6 +14,19 @@
 
 @import url("../astra/style.css");
 
+* {box-sizing:border-box}
+
+/* SLIDESHOW */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.mySlides {
+	display: none;
+}
+
 /* HEADER */
 .ninja {
 	opacity: 0;

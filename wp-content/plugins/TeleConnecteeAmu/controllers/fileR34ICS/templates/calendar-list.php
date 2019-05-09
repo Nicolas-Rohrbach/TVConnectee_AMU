@@ -30,15 +30,15 @@ $date_format = !empty($args['format']) ? strip_tags($args['format']) : 'l, F j';
 echo'<section class="ics-calendar'; if (!empty($args['hidetimes'])) { echo ' hide_times'; } echo'">';
 
 // Title and description
-if (!empty($ics_data['title'])) {
+if (isset($ics_data['title'])) {
     echo '<h2 class="ics-calendar-title">'.$ics_data['title'].'</h2>';
 }
-if (!empty($ics_data['description'])) {
+if (isset($ics_data['description'])) {
     echo '<p class="ics-calendar-description">'.$ics_data['description'].'</p>';
 }
 
 // Empty calendar message
-if (empty($ics_data['events'])) {
+if (empty($ics_data['events'])){
     return false;
 }
 

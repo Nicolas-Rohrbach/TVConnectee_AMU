@@ -70,22 +70,31 @@ class R34ICS {
         return $days_of_week;
     }
 
-    public function display_calendar($ics_url, $args=array(), $force_reload=false) {
+    public function checkCalendar($ics_url, $force_reload=false){
         // Get ICS file, from transient if possible
         $transient_name = __METHOD__ . '_' . sha1($ics_url);
         $ics_contents = null;
-        if (empty($force_reload)) {
+        if(empty($force_reload)){
             $ics_contents = get_transient($transient_name);
         }
-        if (empty($ics_contents)) {
+        if(empty($ics_contents)){
             // Some servers (e.g. Airbnb) will require a user_agent string or return 403 Forbidden
             ini_set('user_agent','ICS Calendar for WordPress');
             $ics_contents = file_get_contents($ics_url);
-            set_transient($transient_name, $ics_contents, 600);
+            if(strlen($ics_contents) > 200){
+                set_transient($transient_name, $ics_contents, 600);
+                return $ics_contents;
+            }
+            else {
+                return null;
+            }
         }
+        return null;
+    }
 
+    public function display_calendar($ics_contents, $args=array()) {
         // No transient; retrieve data
-        if (!empty($ics_contents)) {
+        if(isset($ics_contents)) {
             // Parse ICS contents
             $ics_data = array();
             if (!$this->parser_loaded) {
@@ -97,11 +106,9 @@ class R34ICS {
             $ics_data['description'] = !empty($args['description']) ? $args['description'] : $ICal->calendarDescription();
 
             // Process events
-            if ($ics_events = $ICal->events()) {
-
+            if($ics_events = $ICal->events()) {
                 // Assemble events
                 foreach ((array)$ics_events as $event) {
-
                     // Get the start date and time
                     // All-day events
                     if (strlen($event->dtstart) == 8) {
@@ -154,7 +161,6 @@ class R34ICS {
                         }
                         $all_day = false;
                     }
-
                     // Add event data to output array if this month or later
                     if ($dtstart_date >= date_i18n('Ym') . '01') {
                         // Events with different start and end dates
@@ -234,7 +240,6 @@ class R34ICS {
                                 'deb' => @$event->dtstart,
                                 'fin' => @$event->dtend,
                             );
-
                         }
                         // Events with start/end times
                         else {
@@ -261,12 +266,10 @@ class R34ICS {
                                     substr($dtend_date,0,2)
                                 )),
                             );
-
                         }
                     }
                 }
             }
-
             // Sort events and remove out-of-range dates
             foreach (array_keys((array)$ics_data['events']) as $date) {
                 switch (@$args['view']) {
