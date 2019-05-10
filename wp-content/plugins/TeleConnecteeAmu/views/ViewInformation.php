@@ -71,25 +71,19 @@ class ViewInformation extends ViewG
         $dateMin = date('Y-m-d',strtotime("+1 day"));
 
         echo '<form id="creation_info" method="post">
-                  Titre : <input type="text" name="titleInfo" placeholder="Inserer un titre" required> </br>
+
+                <label> Texte : <input type="radio" name="typeChoice" value="text"></label></br>
+                <label> Affiche : <input type="radio" name="typeChoice" value="image"></label></br>
+                <label> Tableau de note : <input type="radio" name="typeChoice" value="tab"></label></br>
+                <input type="submit" value="Valider" name="submit">
+              </form>
+              
+              Titre : <input type="text" name="titleInfo" placeholder="Inserer un titre" required> </br>
                   Contenu : <textarea name="contentInfo">...</textarea> </br>
                   Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" required > </br>
-                
-                  <input type="submit" value="createInfo" name="createInfo">
-              </form>
               ';
     } //displayInformationCreation()
 
-//    /**
-//     *
-//     */
-//    public function displayUploadFileForm(){
-//        echo '<form action="" method="post" enctype="multipart/form-data">
-//                Select image to upload:
-//                <input type="file" name="fileToUpload" id="fileToUpload">
-//                <input type="submit" value="Upload Image" name="submit">
-//              </form>';
-//    }
 
     /**
      * Display information modify form
@@ -112,4 +106,14 @@ class ViewInformation extends ViewG
                  </form>
             </div>';
     } //displayModifyInformationForm()
+
+    public function displayFormUpload() {
+        echo '
+            <form method="post" enctype="multipart/form-data">
+                    <input type="file" name="file" />
+                    <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
+                    <input type="submit" name="submit" value="Envoyer" />
+            </form>
+        ';
+    }
 }

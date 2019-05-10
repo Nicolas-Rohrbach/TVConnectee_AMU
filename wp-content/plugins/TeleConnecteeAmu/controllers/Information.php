@@ -158,5 +158,35 @@ class Information
         }
     } //insertInformation()
 
+    public function uploadFile($action){
+        $this->view->displayFormUpload();
+        $id = 53;
+
+        $maxsize = 5000000;
+        if(isset($action)){
+            if ($_FILES['file']['error'] > 0) echo "Erreur lors du transfert <br>";
+            if ($_FILES['file']['size'] > $maxsize) echo "Le fichier est trop gros <br>";
+
+
+            $extensions_valides = array( 'jpg' , 'jpeg' , 'gif' , 'png' );
+            $extension_upload = strtolower(  substr(  strrchr($_FILES['file']['name'], '.')  ,1)  );
+            if ( in_array($extension_upload,$extensions_valides) ) echo "Extension correcte <br>";
+
+            $nom =  $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.{$extension_upload}";
+            $resultat = move_uploaded_file($_FILES['file']['tmp_name'],$nom);
+            if ($resultat){
+                echo "Transfert réussi <br>";
+                $content = '<img src="http://wptv/wp-content/plugins/TeleConnecteeAmu/views/Media/'.$id.'.'.$extension_upload.'">';
+                $this->DB->addInformationDB("test upload",$content,date("2019-07-07"));
+            }
+            else {
+                echo "erreur dans le transfert <br>";
+
+            }
+
+
+
+        }
+    }
 
 }
