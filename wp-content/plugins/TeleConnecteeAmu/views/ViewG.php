@@ -18,20 +18,20 @@ abstract class ViewG{
 			<br/>';
     }
 
-    protected function headerTab(){
+    protected function displayHeaderTab(){
         echo '
             <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/addAllCheckBox.js"></script>
             <form method="post">
                 <table class="table text-center"> 
                 <thead>
                     <tr class="text-center">
-                        <th scope="col">#</th>
-                        <th scope="col"><input type="checkbox" onClick="toggle(this)" /></th>';
+                        <th scope="col" width="5%" class="text-center">#</th>
+                        <th scope="col" width="5%" class="text-center"><input type="checkbox" onClick="toggle(this)" /></th>';
     }
 
-    protected function endheaderTab(){
+    protected function displayEndheaderTab(){
         echo'
-                <th scope="col">Modifer</th>
+                <th scope="col" class="text-center">Modifer</th>
                      </tr>
                 </thead>
                 <tbody>
@@ -42,12 +42,12 @@ abstract class ViewG{
      * Build the header of a table
      * @param $tab
      */
-    protected function startTab($tab){
-        $this->headerTab();
+    protected function displayStartTab($tab){
+        $this->displayHeaderTab();
         foreach ($tab as $value){
-            echo'<th scope="col"> '.$value.'</th>';
+            echo'<th scope="col" class="text-center"> '.$value.'</th>';
         }
-        $this->endheaderTab();
+        $this->displayEndheaderTab();
     }
 
     /**
@@ -59,7 +59,7 @@ abstract class ViewG{
     protected function displayAll($row, $id, $tab){
         echo '
         <tr>
-          <th scope="row">'.$row.'</th>
+          <th scope="row" class="text-center">'.$row.'</th>
           <td class="text-center"><input type="checkbox" name="checkboxstatus[]" value="'.$id.'"/></td>';
         if(isset($tab)){
             foreach ($tab as $value){
@@ -71,7 +71,7 @@ abstract class ViewG{
     /**
      * Close the table
      */
-    public function endTab(){
+    public function displayEndTab(){
         echo'
           </tbody>
         </table>

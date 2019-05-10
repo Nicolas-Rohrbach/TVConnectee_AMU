@@ -57,9 +57,9 @@ class ViewTelevision extends ViewG{
          </div>';
     }
 
-    public function headerTabTv(){
+    public function displayHeaderTabTv(){
         $tab = ["Login", "Code 1", "Code 2", "Code 3"];
-        $this->startTab($tab);
+        $this->displayStartTab($tab);
     }
 
     public function displayAllTv($id, $login,  $code1, $code2, $code3, $row){
@@ -69,7 +69,7 @@ class ViewTelevision extends ViewG{
         </tr>';
     }
 
-    public function selectSelected($years, $groups, $halfgroups, $name){
+    public function displaySelectSelected($years, $groups, $halfgroups, $name){
         $selected = $_POST[$name];
         echo '<option value="0">Aucun</option>
                         <optgroup label="Année">';
@@ -97,24 +97,24 @@ class ViewTelevision extends ViewG{
             <label>Premier emploi du temps</label>
             <select class="form-control" name="firstCode" required="">
                 <option value="'.$result['code1'].'">'.$result['code1'].'</option>';
-        $this->selectSelected($years, $groups, $halfgroups, "firstCode");
+        $this->displaySelectSelected($years, $groups, $halfgroups, "firstCode");
         echo'
             <label>Deuxième emploi du temps (Optionel)</label>
             <select class="form-control" name="secondCode">
                 <option value="'.$result['code2'].'">'.$result['code2'].'</option>';
-        $this->selectSelected($years, $groups, $halfgroups, "secondCode");
+        $this->displaySelectSelected($years, $groups, $halfgroups, "secondCode");
         echo '
             <label>Troisième emploi du temps (Optionel)</label>
             <select class="form-control" name="thirdCode">
                 <option value="'.$result['code3'].'">'.$result['code3'].'</option>';
-        $this->selectSelected($years, $groups, $halfgroups, "thirdCode");
+        $this->displaySelectSelected($years, $groups, $halfgroups, "thirdCode");
         echo '
             <input name="modifValidate" type="submit" value="Valider">
             <a class="btn btn-dark btn-lg mb-3" href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs">Annuler</a>
          </form>';
     }
 
-    public function errorLogin(){
+    public function displayErrorLogin(){
         echo '<div> Le login est déjà utilisé ! </div>';
     }
 }

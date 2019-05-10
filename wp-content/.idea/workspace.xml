@@ -2,13 +2,361 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f21d812e-ce81-44c8-afb6-f9623108a598" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/admin-fr_FR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/languages/admin-fr_FR.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/admin-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/admin-fr_FR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/admin-network-fr_FR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/languages/admin-network-fr_FR.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/admin-network-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/admin-network-fr_FR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/continents-cities-fr_FR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/languages/continents-cities-fr_FR.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/continents-cities-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/continents-cities-fr_FR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-0ce75ad2f775d1cac9696967d484808c.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-0ce75ad2f775d1cac9696967d484808c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-1a0cd6a7128913b15c1a10dd68951869.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-1a0cd6a7128913b15c1a10dd68951869.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-1bba9045bb07c89671c88a3f328548e8.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-1bba9045bb07c89671c88a3f328548e8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-28b3c3d595952907e08d98287077426c.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-28b3c3d595952907e08d98287077426c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-2c5d274ea625dd91556554ad82901529.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-2c5d274ea625dd91556554ad82901529.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-68f2cec7514bf8563c723a4d675fcfe6.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-68f2cec7514bf8563c723a4d675fcfe6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-7f13c36c641b114bf18cd0bcc9ecc7e0.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-7f13c36c641b114bf18cd0bcc9ecc7e0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-8860e58c20c6a2ab5876a0f07be43bd9.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-8860e58c20c6a2ab5876a0f07be43bd9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-a25d1cc7bf7ca0b4e114f6bea64943f4.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-a25d1cc7bf7ca0b4e114f6bea64943f4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-bf0f094965d3d4a95b47babcb35fc136.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-bf0f094965d3d4a95b47babcb35fc136.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-f8f49d9fc4a9cf7d78ec99285417bd9c.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-f8f49d9fc4a9cf7d78ec99285417bd9c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/themes/twentynineteen-fr_FR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/languages/themes/twentynineteen-fr_FR.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/themes/twentynineteen-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/themes/twentynineteen-fr_FR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/themes/twentyseventeen-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/themes/twentyseventeen-fr_FR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/themes/twentysixteen-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/themes/twentysixteen-fr_FR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/MyAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/MyAccount.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/R34ICS.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/R34ICS.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/calendar-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/calendar-list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Secretary.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Secretary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Weather.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Weather.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/SecretaryManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/SecretaryManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TeacherManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TeacherManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewMyAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewMyAccount.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/astra-child/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra-child/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSecretary.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSecretary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/refreshPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/refreshSchedule.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/slideshow.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/slideshow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/generateUrlADE.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/404.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/archive.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/archive.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/minified/editor-style.min-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/minified/editor-style.min-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/minified/editor-style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/minified/editor-style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/minified/style.min-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/minified/style.min-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/minified/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/minified/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/bne-flyout-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/bne-flyout-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/bne-flyout.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/bne-flyout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/contact-form-7-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/contact-form-7-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/contact-form-7.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/contact-form-7.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/divi-builder-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/divi-builder-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/divi-builder.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/divi-builder.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/edd-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/edd-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/edd.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/edd.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/gravity-forms-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/gravity-forms-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/gravity-forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/gravity-forms.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/learndash-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/learndash-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/learndash.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/learndash.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/lifterlms-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/lifterlms-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/lifterlms.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/lifterlms.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/site-origin-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/site-origin-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/site-origin.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/site-origin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce-layout-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce-layout-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce-layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce-smallscreen-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce-smallscreen-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce-smallscreen.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce-smallscreen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/customizer-controls-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/customizer-controls-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/customizer-controls.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/customizer-controls.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/editor-style-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/editor-style-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/editor-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/editor-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/extend-customizer-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/extend-customizer-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/extend-customizer.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/extend-customizer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/menu-animation-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/menu-animation-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/menu-animation.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/menu-animation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/style-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/style-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/fonts/astra.svg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/fonts/astra.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/fonts/google-fonts.json" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/fonts/google-fonts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/images/license.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/images/license.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/js/unminified/customizer-controls-toggle.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/js/unminified/customizer-controls-toggle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/js/unminified/customizer-controls.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/js/unminified/customizer-controls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/js/unminified/customizer-dependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/js/unminified/customizer-dependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/js/unminified/customizer-preview.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/js/unminified/customizer-preview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/js/unminified/extend-customizer.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/js/unminified/extend-customizer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/js/unminified/flexibility.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/js/unminified/flexibility.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/js/unminified/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/js/unminified/navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/js/unminified/skip-link-focus-fix.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/js/unminified/skip-link-focus-fix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/js/unminified/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/js/unminified/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/js/unminified/wp-color-picker-alpha.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/js/unminified/wp-color-picker-alpha.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/changelog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/changelog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/comments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/assets/js/unminified/customizer-preview.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/assets/js/unminified/customizer-preview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/class-astra-breadcrumbs-loader.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/class-astra-breadcrumbs-loader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/class-astra-breadcrumbs-markup.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/class-astra-breadcrumbs-markup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/class-astra-breadcrumbs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/class-astra-breadcrumbs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-color-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-color-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/dynamic-css/dynamic.css.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/dynamic-css/dynamic.css.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/assets/js/unminified/customizer-preview.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/assets/js/unminified/customizer-preview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/assets/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/assets/scss/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/assets/scss/_transparent-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/assets/scss/_transparent-header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/assets/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/assets/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/class-astra-ext-transparent-header.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/class-astra-ext-transparent-header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/classes/class-astra-ext-transparent-header-loader.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/classes/class-astra-ext-transparent-header-loader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/classes/class-astra-ext-transparent-header-markup.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/classes/class-astra-ext-transparent-header-markup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/classes/class-astra-transparent-header-panels-and-sections.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/classes/class-astra-transparent-header-panels-and-sections.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/classes/dynamic-css/dynamic.css.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/classes/dynamic-css/dynamic.css.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/classes/dynamic-css/header-sections-dynamic.css.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/classes/dynamic-css/header-sections-dynamic.css.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/classes/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/classes/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/classes/sections/class-astra-customizer-colors-transparent-header-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/classes/sections/class-astra-customizer-colors-transparent-header-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/classes/sections/class-astra-customizer-transparent-header-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/classes/sections/class-astra-customizer-transparent-header-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/classes/sections/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/classes/sections/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/transparent-header/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/admin-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/admin-functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/assets/css/astra-admin-menu-settings-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/assets/css/astra-admin-menu-settings-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/assets/css/astra-admin-menu-settings.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/assets/css/astra-admin-menu-settings.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/assets/css/astra-admin-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/assets/css/astra-admin-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/assets/css/astra-admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/assets/css/astra-admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/assets/css/block-editor-styles-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/assets/css/block-editor-styles-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/assets/css/block-editor-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/assets/css/block-editor-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/assets/fonts/ast-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/assets/fonts/ast-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/assets/images/astra-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/assets/images/astra-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/assets/images/astra.svg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/assets/images/astra.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/assets/js/astra-admin-menu-settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/assets/js/astra-admin-menu-settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/blog/blog-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/blog/blog-config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/blog/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/blog/blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/blog/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/blog/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/blog/single-blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/blog/single-blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/class-astra-after-setup-theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/class-astra-after-setup-theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/class-astra-dynamic-css.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/class-astra-dynamic-css.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/class-astra-loop.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/class-astra-loop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/class-astra-mobile-header.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/class-astra-mobile-header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-amp.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-amp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-bb-ultimate-addon.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-bb-ultimate-addon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-beaver-builder.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-beaver-builder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-beaver-themer.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-beaver-themer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-bne-flyout.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-bne-flyout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-contact-form-7.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-contact-form-7.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-divi-builder.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-divi-builder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-elementor-pro.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-elementor-pro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-elementor.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-elementor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-gravity-forms.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-gravity-forms.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-jetpack.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-jetpack.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-site-origin.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-site-origin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-ubermeu.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-ubermeu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-visual-composer.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/class-astra-visual-composer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/edd/class-astra-edd.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/edd/class-astra-edd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/edd/customizer/class-astra-customizer-register-edd-section.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/edd/customizer/class-astra-customizer-register-edd-section.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/edd/customizer/sections/class-astra-edd-container-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/edd/customizer/sections/class-astra-edd-container-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/edd/customizer/sections/class-astra-edd-sidebar-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/edd/customizer/sections/class-astra-edd-sidebar-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/edd/customizer/sections/layout/class-astra-edd-archive-layout-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/edd/customizer/sections/layout/class-astra-edd-archive-layout-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/edd/customizer/sections/layout/class-astra-edd-single-product-layout-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/edd/customizer/sections/layout/class-astra-edd-single-product-layout-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/edd/edd-common-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/edd/edd-common-functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/learndash/class-astra-learndash.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/learndash/class-astra-learndash.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/learndash/customizer/class-astra-customizer-register-learndash-section.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/learndash/customizer/class-astra-customizer-register-learndash-section.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/learndash/customizer/sections/class-astra-learndash-container-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/learndash/customizer/sections/class-astra-learndash-container-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/learndash/customizer/sections/class-astra-learndash-sidebar-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/learndash/customizer/sections/class-astra-learndash-sidebar-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/learndash/customizer/sections/layout/class-astra-learndash-general-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/learndash/customizer/sections/layout/class-astra-learndash-general-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/lifterlms/class-astra-lifterlms.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/lifterlms/class-astra-lifterlms.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/lifterlms/customizer/class-astra-liferlms-section-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/lifterlms/customizer/class-astra-liferlms-section-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/lifterlms/customizer/sections/class-astra-lifter-container-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/lifterlms/customizer/sections/class-astra-lifter-container-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/lifterlms/customizer/sections/class-astra-lifter-sidebar-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/lifterlms/customizer/sections/class-astra-lifter-sidebar-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/lifterlms/customizer/sections/layout/class-astra-lifter-general-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/lifterlms/customizer/sections/layout/class-astra-lifter-general-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/woocommerce/class-astra-woocommerce.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/woocommerce/class-astra-woocommerce.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/woocommerce/customizer/class-astra-customizer-register-woo-section.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/woocommerce/customizer/class-astra-customizer-register-woo-section.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/woocommerce/customizer/sections/class-astra-woo-shop-container-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/woocommerce/customizer/sections/class-astra-woo-shop-container-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/woocommerce/customizer/sections/class-astra-woo-shop-sidebar-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/woocommerce/customizer/sections/class-astra-woo-shop-sidebar-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/woocommerce/customizer/sections/layout/class-astra-woo-shop-cart-layout-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/woocommerce/customizer/sections/layout/class-astra-woo-shop-cart-layout-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/woocommerce/customizer/sections/layout/class-astra-woo-shop-layout-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/woocommerce/customizer/sections/layout/class-astra-woo-shop-layout-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/woocommerce/customizer/sections/layout/class-astra-woo-shop-single-layout-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/woocommerce/customizer/sections/layout/class-astra-woo-shop-single-layout-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/compatibility/woocommerce/woocommerce-common-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/compatibility/woocommerce/woocommerce-common-functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/core/class-astra-admin-helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/core/class-astra-admin-helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/core/class-astra-admin-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/core/class-astra-admin-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/core/class-astra-attr.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/core/class-astra-attr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/core/class-astra-enqueue-scripts.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/core/class-astra-enqueue-scripts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/core/class-astra-theme-options.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/core/class-astra-theme-options.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/core/class-astra-walker-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/core/class-astra-walker-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/core/class-gutenberg-editor-css.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/core/class-gutenberg-editor-css.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/core/class-theme-strings.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/core/class-theme-strings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/core/common-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/core/common-functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/core/deprecated/deprecated-filters.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/core/deprecated/deprecated-filters.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/core/deprecated/deprecated-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/core/deprecated/deprecated-functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/core/deprecated/deprecated-hooks.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/core/deprecated/deprecated-hooks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/core/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/core/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/core/sidebar-manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/core/sidebar-manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/core/theme-hooks.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/core/theme-hooks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/core/view-general.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/core/view-general.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/astra-pro/class-astra-pro-customizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/astra-pro/class-astra-pro-customizer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/astra-pro/class-astra-pro-upgrade-link-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/astra-pro/class-astra-pro-upgrade-link-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/astra-pro/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/astra-pro/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/class-astra-customizer-callback.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/class-astra-customizer-callback.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/class-astra-customizer-partials.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/class-astra-customizer-partials.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/class-astra-customizer-register-sections-panels.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/class-astra-customizer-register-sections-panels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/class-astra-customizer-sanitizes.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/class-astra-customizer-sanitizes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/class-astra-customizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/class-astra-customizer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/class-astra-font-families.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/class-astra-font-families.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/class-astra-fonts-data.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/class-astra-fonts-data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/class-astra-fonts.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/class-astra-fonts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/buttons/class-astra-customizer-button-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/buttons/class-astra-customizer-button-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/class-astra-customizer-config-base.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/class-astra-customizer-config-base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/colors-background/class-astra-advanced-footer-colors-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/colors-background/class-astra-advanced-footer-colors-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/colors-background/class-astra-body-colors-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/colors-background/class-astra-body-colors-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/colors-background/class-astra-footer-colors-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/colors-background/class-astra-footer-colors-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/layout/class-astra-blog-layout-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/layout/class-astra-blog-layout-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/layout/class-astra-blog-single-layout-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/layout/class-astra-blog-single-layout-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/layout/class-astra-footer-layout-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/layout/class-astra-footer-layout-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/layout/class-astra-header-layout-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/layout/class-astra-header-layout-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/layout/class-astra-sidebar-layout-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/layout/class-astra-sidebar-layout-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/layout/class-astra-site-container-layout-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/layout/class-astra-site-identity-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/layout/class-astra-site-identity-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/layout/class-astra-site-layout-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/layout/class-astra-site-layout-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/typography/class-astra-archive-typo-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/typography/class-astra-archive-typo-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/typography/class-astra-body-typo-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/typography/class-astra-body-typo-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/typography/class-astra-content-typo-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/typography/class-astra-content-typo-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/typography/class-astra-header-typo-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/typography/class-astra-header-typo-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/typography/class-astra-single-typo-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/configurations/typography/class-astra-single-typo-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/background/background.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/background/background.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/background/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/background/background.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/background/background.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/background/background.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/background/class-astra-control-background.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/background/class-astra-control-background.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/border/border.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/border/border.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/border/border.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/border/border.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/border/border.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/border/border.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/border/class-astra-control-border.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/border/class-astra-control-border.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/border/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/border/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/class-astra-customizer-control-base.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/class-astra-customizer-control-base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/color/class-astra-control-color.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/color/class-astra-control-color.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/color/color.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/color/color.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/color/color.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/color/color.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/color/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/color/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/customizer-link/class-astra-control-customizer-link.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/customizer-link/class-astra-control-customizer-link.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/customizer-link/customizer-link.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/customizer-link/customizer-link.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/customizer-link/customizer-link.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/customizer-link/customizer-link.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/customizer-link/customizer-link.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/customizer-link/customizer-link.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/customizer-link/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/customizer-link/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/description/class-astra-control-description.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/description/class-astra-control-description.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/description/description.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/description/description.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/description/description.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/description/description.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/description/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/description/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/divider/class-astra-control-divider.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/divider/class-astra-control-divider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/divider/divider.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/divider/divider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/divider/divider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/divider/divider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/divider/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/divider/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/heading/class-astra-control-heading.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/heading/class-astra-control-heading.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/heading/heading.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/heading/heading.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/heading/heading.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/heading/heading.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/radio-image/class-astra-control-radio-image.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/radio-image/class-astra-control-radio-image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/radio-image/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/radio-image/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/radio-image/radio-image.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/radio-image/radio-image.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/radio-image/radio-image.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/radio-image/radio-image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/radio-image/radio-image.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/radio-image/radio-image.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-color/class-astra-control-responsive-color.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-color/class-astra-control-responsive-color.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-color/responsive-color.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-color/responsive-color.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-color/responsive-color.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-color/responsive-color.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-color/responsive-color.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-color/responsive-color.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-slider/class-astra-control-responsive-slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-slider/class-astra-control-responsive-slider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-slider/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-slider/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-slider/responsive-slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-slider/responsive-slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-slider/responsive-slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-slider/responsive-slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-slider/responsive-slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-slider/responsive-slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-spacing/class-astra-control-responsive-spacing.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-spacing/class-astra-control-responsive-spacing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-spacing/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-spacing/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-spacing/responsive-spacing.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-spacing/responsive-spacing.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-spacing/responsive-spacing.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-spacing/responsive-spacing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-spacing/responsive-spacing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive-spacing/responsive-spacing.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive/class-astra-control-responsive.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive/class-astra-control-responsive.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive/responsive.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive/responsive.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive/responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/responsive/responsive.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/slider/class-astra-control-slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/slider/class-astra-control-slider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/slider/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/slider/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/slider/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/slider/slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/slider/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/slider/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/slider/slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/slider/slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/sortable/class-astra-control-sortable.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/sortable/class-astra-control-sortable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/sortable/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/sortable/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/sortable/sortable.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/sortable/sortable.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/sortable/sortable.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/sortable/sortable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/sortable/sortable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/sortable/sortable.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/spacing/class-astra-control-spacing.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/spacing/class-astra-control-spacing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/spacing/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/spacing/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/spacing/spacing.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/spacing/spacing.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/spacing/spacing.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/spacing/spacing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/spacing/spacing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/spacing/spacing.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/typography/class-astra-control-typography.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/typography/class-astra-control-typography.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/typography/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/typography/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/typography/selectWoo.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/typography/selectWoo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/typography/selectWoo.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/typography/selectWoo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/typography/typography.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/typography/typography.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/typography/typography.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/typography/typography.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/customizer-controls.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/customizer-controls.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/extend-customizer/class-astra-wp-customize-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/extend-customizer/class-astra-wp-customize-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/extend-customizer/class-astra-wp-customize-section.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/extend-customizer/class-astra-wp-customize-section.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/override-defaults.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/override-defaults.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/extras.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/extras.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/lib/notices/class-astra-notices.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/lib/notices/class-astra-notices.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/lib/notices/notices.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/lib/notices/notices.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/metabox/class-astra-meta-box-operations.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/metabox/class-astra-meta-box-operations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/metabox/class-astra-meta-boxes.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/metabox/class-astra-meta-boxes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/metabox/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/metabox/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/template-parts.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/template-parts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/template-tags.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/template-tags.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/theme-update/class-astra-pb-compatibility.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/theme-update/class-astra-pb-compatibility.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/theme-update/class-astra-theme-update.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/theme-update/class-astra-theme-update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/widgets.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/widgets.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/languages/astra.pot" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/languages/astra.pot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/template-parts/404/404-layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/template-parts/404/404-layout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/template-parts/404/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/template-parts/404/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/template-parts/advanced-footer/layout-4.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/template-parts/advanced-footer/layout-4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/template-parts/blog/blog-layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/template-parts/blog/blog-layout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/template-parts/blog/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/template-parts/blog/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/template-parts/content-404.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/template-parts/content-404.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/template-parts/content-blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/template-parts/content-blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/template-parts/content-none.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/template-parts/content-none.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/template-parts/content-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/template-parts/content-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/template-parts/content-single.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/template-parts/content-single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/template-parts/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/template-parts/content.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/template-parts/footer/footer-sml-layout-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/template-parts/footer/footer-sml-layout-2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/template-parts/footer/footer-sml-layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/template-parts/footer/footer-sml-layout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/template-parts/footer/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/template-parts/footer/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/template-parts/header/header-main-layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/template-parts/header/header-main-layout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/template-parts/header/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/template-parts/header/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/template-parts/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/template-parts/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/template-parts/single/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/template-parts/single/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/template-parts/single/single-layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/template-parts/single/single-layout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/toolset-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/toolset-config.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,100 +384,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/R34ICS.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-529">
-              <caret line="72" column="52" lean-forward="true" selection-start-line="72" selection-start-column="52" selection-end-line="72" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
-              <folding>
-                <element signature="e#6#91#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/MyAccount.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="52" column="35" lean-forward="true" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
-              <folding>
-                <element signature="e#6#87#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewWeather.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8383">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/fichier.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="50" column="39" lean-forward="true" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/astra-child/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/slideshow.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -166,7 +421,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOUser.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOEtudiant.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOTeacher.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOStudent.php" />
@@ -179,44 +433,45 @@
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/UserManagement.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/CodeAdeManager.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/addAllCheckBox.js" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TeacherManager.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PluginExcel.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/displayError.js" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewManagementUsers.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TelevisionManager.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/SecretaryManager.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSecretary.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Secretary.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php" />
         <option value="$PROJECT_DIR$/mu-plugins/teleConnecteeAmu-functions.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php" />
         <option value="$PROJECT_DIR$/themes/astra-child/js/myButton.js" />
         <option value="$PROJECT_DIR$/themes/astra-child/js/jquery-3.3.1.min.js" />
         <option value="$PROJECT_DIR$/themes/astra-child/functions.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/myButton.js" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/MyAccountManager.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewMyAccount.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/MyAccount.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php" />
         <option value="$PROJECT_DIR$/plugins/ics-calendar/templates/calendar-list.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/calendar-list.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/R34ICS.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/test.js" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php" />
         <option value="$PROJECT_DIR$/themes/astra-child/style.css" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/slideshow.js" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/R34ICS.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewMyAccount.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSecretary.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Secretary.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/MyAccount.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Weather.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/SecretaryManager.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TeacherManager.php" />
       </list>
     </option>
   </component>
@@ -241,11 +496,6 @@
             <path>
               <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -260,14 +510,6 @@
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="TeleConnecteeAmu" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="TeleConnecteeAmu" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="fileICS" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
@@ -282,25 +524,6 @@
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="TeleConnecteeAmu" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="TeleConnecteeAmu" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="astra-child" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -375,18 +598,18 @@
       <workItem from="1557129076680" duration="9463000" />
       <workItem from="1557209351795" duration="24236000" />
       <workItem from="1557382858938" duration="49000" />
-      <workItem from="1557383196918" duration="19503000" />
+      <workItem from="1557383196918" duration="24467000" />
+      <workItem from="1557468544201" duration="4274000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296605000" />
+    <option name="totallyTimeSpent" value="305843000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3395973" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3442953" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -415,222 +638,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TelevisionManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="34" column="188" selection-start-line="34" selection-start-column="188" selection-end-line="34" selection-end-column="188" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="83" column="93" selection-start-line="83" selection-start-column="93" selection-end-line="83" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSecretary.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-          <folding>
-            <element signature="e#169#208#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/SecretaryManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Secretary.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="58" column="12" lean-forward="true" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewUser.php" />
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Weather.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/refreshPage.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/weather.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/jquery.marquee.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra-child/js/jquery-3.3.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-end-line="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra-child/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/generateUrlADE.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/utilsWeather.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/CodeAdeManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="143" column="23" lean-forward="true" selection-start-line="143" selection-start-column="23" selection-end-line="143" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1598">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/myButton.js" />
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PluginExcel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="117" column="54" selection-start-line="117" selection-start-column="42" selection-end-line="117" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fichier.log" />
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/MyAccountManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewMyAccount.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/calendar-month.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/ics-calendar/assets/script.js" />
-    <entry file="file://$USER_HOME$/OneDrive/Documents/Doc Utile Tv/fileR34ICS/templates/calendar-list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="33" column="70" lean-forward="true" selection-end-line="153" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/ics-calendar/templates/calendar-list.php" />
-    <entry file="file://$USER_HOME$/OneDrive/Documents/Doc Utile Tv/TVConnectee_AMU-ManageUser/wp-content/plugins/TeleConnecteeAmu/TeleConnectee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="101" selection-start-line="101" selection-end-line="108" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="22" lean-forward="true" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
-          <folding>
-            <element signature="e#6#503#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/2019/04/1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/calendar-list.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -645,90 +652,296 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/refreshSchedule.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/addAllCheckBox.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/R34ICS.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/fichier.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state relative-caret-position="1343">
+          <caret line="84" column="78" selection-start-line="84" selection-start-column="78" selection-end-line="84" selection-end-column="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/astra-child/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="306">
           <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/slideshow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        <state relative-caret-position="289">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/fichier.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+        <state relative-caret-position="306">
+          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/CodeAdeManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="143" column="23" lean-forward="true" selection-start-line="143" selection-start-column="23" selection-end-line="143" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewManagementUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewMyAccount.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/_types.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSecretary.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="50" column="39" lean-forward="true" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/R34ICS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-529">
-          <caret line="72" column="52" lean-forward="true" selection-start-line="72" selection-start-column="52" selection-end-line="72" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8383">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
-          <folding>
-            <element signature="e#6#91#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="216">
+          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/MyAccount.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="52" column="35" lean-forward="true" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+        <state relative-caret-position="556">
+          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewWeather.php">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="84" />
+        <state relative-caret-position="425">
+          <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Secretary.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="e#169#208#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="49" column="7" lean-forward="true" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="44" column="49" lean-forward="true" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Weather.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="81" column="60" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="60" />
+          <folding>
+            <element signature="e#6#503#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="98" column="61" selection-start-line="98" selection-start-column="61" selection-end-line="98" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-328">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-138">
+          <caret line="61" column="44" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8383">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewWeather.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="59" column="2" lean-forward="true" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="165" lean-forward="true" selection-start-line="165" selection-end-line="165" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/MyAccountManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/SecretaryManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="83" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TeacherManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TelevisionManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/imagesWeather/00.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/imagesWeather/01.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/imagesWeather/02.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/imagesWeather/03.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/imagesWeather/04.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/imagesWeather/10.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/imagesWeather/11.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/imagesWeather/13.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/imagesWeather/50.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/imagesWeather/wind.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/imagesWeather/09.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/generateUrlADE.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/refreshSchedule.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/refreshPage.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

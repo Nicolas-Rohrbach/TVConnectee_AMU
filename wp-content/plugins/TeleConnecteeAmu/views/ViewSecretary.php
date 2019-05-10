@@ -25,7 +25,7 @@ class ViewSecretary extends ViewG
          </div>';
     }
 
-    public function headerTabSecretary(){
+    public function displayHeaderTabSecretary(){
         $this->headerTab();
         echo'<th scope="col">Login</th>
                     </tr>
@@ -38,7 +38,7 @@ class ViewSecretary extends ViewG
         $this->displayAll($row, $id, $tab);
     }
 
-    public function errorInsertion(){
+    public function displayErrorInsertion(){
         echo '<div> Le login ou l\'adresse mail est déjà utilisé </div>';
     }
 }

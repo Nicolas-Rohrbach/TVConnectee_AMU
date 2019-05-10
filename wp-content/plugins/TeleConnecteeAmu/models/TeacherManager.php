@@ -16,6 +16,6 @@ class TeacherManager extends Model
     }
 
     public function modifyTeacher($result, $code){
-        $this->modifyUser($result['ID'], $result['user_login'], $result['user_pass'], $code, 0, 0, 0, " ", $result['user_email']);
+        $this->modifyUser($result['ID'], $result['user_login'], $result['user_pass'], $code, 0, 0, $result['user_email']);
     }
 }

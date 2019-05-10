@@ -12,3 +12,7 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block";
     setTimeout(showSlides, 2000);
 }
+
+setTimeout(function(){
+    window.location.reload(1);
+}, 300000);

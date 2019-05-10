@@ -75,11 +75,11 @@ $code = new CodeAde();
 
 $schedule = new Schedule();
 //Function for Schedule
-add_action('displaySchedule',array($schedule,'displayMySchedule'));
+add_action('displaySchedule',array($schedule,'displaySchedules'));
 
 $weather = new Weather();
 //Function for Weather
-add_action('display_weather', array($weather,'displayMyWeather'));
+add_action('display_weather', array($weather,'displayWeather'));
 
 //All functions for users
 add_action('add_student', array($student, 'insertStudent'), 0, 1);
@@ -87,16 +87,16 @@ add_action('add_teacher', array($teacher, 'insertTeacher'), 0, 1);
 add_action('add_television', array($television, 'insertTelevision'), 0, 7);
 add_action('add_secretary', array($secretary, 'insertSecretary'));
 
-add_action('displayManagementUsers', array($managementUsers, 'displayMyUsers'), 0, 1);
-add_action('modify_user', array($managementUsers, 'ModifyMyUser'));
-add_action('modify_my_password', array($myAccount, 'displayModifyPwd'));
+add_action('displayManagementUsers', array($managementUsers, 'displayUsers'), 0, 1);
+add_action('modify_user', array($managementUsers, 'ModifyUser'));
+add_action('modify_my_password', array($myAccount, 'modifyPwd'));
 add_action('delete_users', array($managementUsers, 'deleteUsers'), 0, 1);
-add_action('delete_my_account', array($myAccount, 'deleteMyAccount'));
+add_action('delete_my_account', array($myAccount, 'deleteAccount'));
 
 //All functions for code ADE
 add_action('add_code_ade', array($code, 'insertCode'));
 add_action('display_all_codes', array($code, 'displayAllCodes'));
-add_action('modify_code_ade', array($code, 'modifyMyCode'));
+add_action('modify_code_ade', array($code, 'modifyCode'));
 add_action('delete_codes', array($code, 'deleteCodes'), 0, 1);
 
 // Initialize plugin

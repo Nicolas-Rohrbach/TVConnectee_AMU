@@ -9,7 +9,7 @@
 class Weather
 {
     private $view;
-    public function displayMyWeather()
+    public function displayWeather()
     {
         $user_login = wp_get_current_user()->user_login;
 

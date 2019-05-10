@@ -8,30 +8,35 @@
 
 class ViewSchedule extends ViewG
 {
-    public function displayName($current_user) {
-        echo '<h1 class="text-center text-black-50">'.$current_user->display_name. '</h1>';
+    public function displayName($title) {
+        echo '<h2>'.$title.'</h2>';
     }
 
-    public function displayHome($current_user) {
-        echo '<h1 class="text-center text-black-50"> Bienvenue '.$current_user->display_name.' sur la tv connectée ! </h1>';
-    }
-
-    public function startSlide(){
+    public function displayStartSlide(){
         echo '
             <div class="slideshow-container">
                 <div class="mySlides">';
     }
 
-    public function midSlide(){
+    public function displayMidSlide(){
         echo '
                 </div>
               <div class="mySlides">';
     }
 
-    public function endSlide() {
+    public function displayEndSlide() {
         echo '          
                        </div>
                    </div>
         <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/slideshow.js"></script>';
+    }
+
+    public function displayEmptySchedule(){
+        echo '<h2>Pas cours ! </h2>
+                <div>C\'est cool comme ça vous pouvez faire vos TPs</div>';
+    }
+
+    public function displayWelcome(){
+        echo '<h2> Bienvenue mon brave </h2>';
     }
 }

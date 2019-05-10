@@ -33,7 +33,7 @@ abstract class ControllerG {
         }
     }
 
-    protected function displayTabTvStudent($results, $model, $view){
+    protected function TabTvStudent($results, $model, $view){
         $row = 0;
         foreach ($results as $result){
             ++$row;
@@ -44,7 +44,7 @@ abstract class ControllerG {
             $halfgroup = $model->getTitle($result['code3']);
             $view->displayAllTvStudent($id, $login, $year, $group, $halfgroup, $row);
         }
-        $view->endTab();
+        $view->displayEndTab();
     }
 
     protected function addLogEvent($event){

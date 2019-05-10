@@ -35,7 +35,7 @@ class CodeAde extends ControllerG
                 $this->view->refreshPage();
             }
             else{
-                $this->view->errorDouble();
+                $this->view->displayErrorDouble();
             }
         }
     }
@@ -86,7 +86,7 @@ class CodeAde extends ControllerG
                 $this->view->refreshPage();
             }
             else{
-                $this->view->errorDouble();
+                $this->view->displayErrorDouble();
             }
         }
     }

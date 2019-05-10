@@ -10,7 +10,7 @@
 if (!defined('ABSPATH')) { exit; }
 
 
-class R34ICS {
+class R34ICS extends ControllerG {
 
     var $ical_path = '/fileR34ICS/vendors/ics-parser/src/ICal/ICal.php';
     var $event_path = '/fileR34ICS/vendors/ics-parser/src/ICal/Event.php';
@@ -81,6 +81,11 @@ class R34ICS {
             // Some servers (e.g. Airbnb) will require a user_agent string or return 403 Forbidden
             ini_set('user_agent','ICS Calendar for WordPress');
             $ics_contents = file_get_contents($ics_url);
+            if($ics_contents === FALSE){
+                $this->addLogEvent("Le fichier n'a pas réussit à être lu url: ".$ics_url);
+                $view = new ViewSchedule();
+                $view->refreshPage();
+            }
             if(strlen($ics_contents) > 200){
                 set_transient($transient_name, $ics_contents, 600);
                 return $ics_contents;

@@ -31,14 +31,14 @@ class Student extends ControllerG
         $results = $this->model->getUsersByRole('etudiant');
         if(isset($results)){
             $this->view->tabHeadStudent();
-            $this->displayTabTvStudent($results, $this->model, $this->view);
+            $this->TabTvStudent($results, $this->model, $this->view);
         }
         else{
             $this->view->displayEmpty();
         }
     }
 
-    public function displayModifyMyStudent($result){
+    public function modifyMyStudent($result){
         $years = $this->model->getCodeYear();
         $groups = $this->model->getCodeGroup();
         $halfgroups = $this->model->getCodeHalfgroup();

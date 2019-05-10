@@ -29,7 +29,7 @@ class Secretary
                 $this->view->refreshPage();
             }
             else{
-                $this->view->errorInsertion();
+                $this->view->displayErrorInsertion();
             }
         }
     }
@@ -37,13 +37,13 @@ class Secretary
     public function displayAllSecretary(){
         $results = $this->model->getUsersByRole('secretaire');
         if(isset($results)){
-            $this->view->headerTabSecretary();
+            $this->view->displayHeaderTabSecretary();
             $row = 0;
             foreach ($results as $result){
                 ++$row;
                 $this->view->displayAllSecretary($row, $result['ID'], $result['user_login']);
             }
-            $this->view->endTab();
+            $this->view->displayEndTab();
         }
         else{
             $this->view->displayEmpty();

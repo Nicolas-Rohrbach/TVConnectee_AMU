@@ -18,9 +18,9 @@ class ViewTeacher extends ViewG
     /**
      * Header from the table
      */
-    public function tabHeadTeacher(){
+    public function displayTabHeadTeacher(){
         $tab = ["Numéro Ent", "Code ADE"];
-        $this->startTab($tab);
+        $this->displayStartTab($tab);
     }
 
     /**

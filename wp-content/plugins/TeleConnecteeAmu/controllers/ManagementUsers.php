@@ -14,7 +14,7 @@ class ManagementUsers extends ControllerG
         $this->view = new ViewManagementUsers();
     }
 
-    public function displayMyUsers($action){
+    public function displayUsers($action){
         $this->view->displayButtonChoise();
         if($action == "students"){
             $controller = new Student();
@@ -34,21 +34,21 @@ class ManagementUsers extends ControllerG
         }
     }
 
-    public function modifyMyUser(){
+    public function modifyUser(){
         $model = new TeacherManager();
         $result = $model->getById($this->getMyIdUrl());
 
         if($result['role'] == "etudiant"){
             $controller = new Student();
-            $controller->displayModifyMyStudent($result);
+            $controller->modifyMyStudent($result);
         }
         elseif ($result['role'] == "enseignant"){
             $controller = new Teacher();
-            $controller->displayModifyTeacher($result);
+            $controller->modifyTeacher($result);
         }
         elseif ($result['role'] == "television"){
             $controller = new Television();
-            $controller->displayModifyTv($result);
+            $controller->modifyTv($result);
         }
     }
 }

@@ -14,7 +14,7 @@ class ViewStudent extends ViewG
 
     public function tabHeadStudent(){
         $tab = ["Numéro étudiant", "Année", "Groupe", "Demi groupe"];
-        $this->startTab($tab);
+        $this->displayStartTab($tab);
     }
 
     public function displayAllStudent($id, $login, $year, $group, $halfgroup, $row){

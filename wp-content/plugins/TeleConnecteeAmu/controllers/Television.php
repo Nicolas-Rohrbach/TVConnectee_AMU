@@ -38,7 +38,7 @@ class Television extends ControllerG
                 $this->view->refreshPage();
             }
             else{
-                $this->view->errorLogin();
+                $this->view->displayErrorLogin();
             }
         }
     }
@@ -46,15 +46,15 @@ class Television extends ControllerG
     public function displayAllTv(){
         $results = $this->model->getUsersByRole('television');
         if(isset($results)){
-            $this->view->headerTabTv();
-            $this->displayTabTvStudent($results, $this->model, $this->view);
+            $this->view->displayHeaderTabTv();
+            $this->TabTvStudent($results, $this->model, $this->view);
         }
         else{
             $this->view->displayEmpty();
         }
     }
 
-    public function displayModifyTv($result){
+    public function modifyTv($result){
         $years = $this->model->getCodeYear();
         $groups = $this->model->getCodeGroup();
         $halfgroups = $this->model->getCodeHalfgroup();

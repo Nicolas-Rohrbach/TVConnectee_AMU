@@ -1,3 +1,10 @@
+v1.8.3
+- Improvement: Add a font-display property for the Astra Fonts.
+- Fix: Gutenberg separator visibility issue.
+- Fix: WCAG 2.0 Search icon link accessibility fix.
+- Fix: Breadcrumb schema last item id error.
+- Fix: PHP notice appearing when submenu border width set as default.
+
 v1.8.2
 - Fix: Hide "Cart" text appearing in the WooCommerce cart in the header.
 - Fix: Anchors inside blockquote inheriting blockquote text color, hence challenging to distinguish them as links.

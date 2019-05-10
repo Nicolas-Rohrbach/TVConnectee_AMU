@@ -34,13 +34,13 @@ class Teacher
     public function displayAllTeachers(){
         $results = $this->model->getUsersByRole('enseignant');
         if(isset($results)){
-            $this->view->tabHeadTeacher();
+            $this->view->displayTabHeadTeacher();
             $row = 0;
             foreach ($results as $result){
                 ++$row;
                 $this->view->displayAllTeacher($result, $row);
             }
-            $this->view->endTab();
+            $this->view->displayEndTab();
         }
         else{
             $this->view->displayEmpty();
@@ -51,7 +51,7 @@ class Teacher
      * Modify the teacher selected
      * @param $result
      */
-    public function displayModifyTeacher($result){
+    public function modifyTeacher($result){
         $action = $_POST['modifValidate'];
         $code = $_POST['modifCode'];
         $this->view->displayModifyTeacher($result);

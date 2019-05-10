@@ -34,7 +34,7 @@ class ViewCodeAde extends ViewG
      */
     public function tableHeadCode(){
         $tab = ["Titre", "Code ADE", "Type"];
-        $this->startTab($tab);
+        $this->displayStartTab($tab);
     }
 
     /**
@@ -52,7 +52,7 @@ class ViewCodeAde extends ViewG
                     <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-codes-ade/modification-code-ade/'.$result['ID'].'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
                 </tr>';
         }
-        $this->endTab();
+        $this->displayEndTab();
     }
 
     /**
@@ -83,7 +83,7 @@ class ViewCodeAde extends ViewG
     /**
      * Error message if the insertion or the modification want to have a double code or title
      */
-    public function errorDouble(){
+    public function displayErrorDouble(){
         echo '<div> Ce code ou ce titre existe déjà ! </div>';
     }
 }
