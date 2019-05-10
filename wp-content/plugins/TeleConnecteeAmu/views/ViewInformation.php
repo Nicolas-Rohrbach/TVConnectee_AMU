@@ -8,23 +8,36 @@
 
 class ViewInformation extends ViewG
 {
+    /**
+     * Set the head of the table for the information's management page.
+     */
     public function tabHeadInformation(){
         $tab = ["Titre","Auteur","Contenu","Date de création","Date de fin"];
         $this->startTab($tab);
-    }
+    } //tabHeadInformation()
 
 
-public function displayAllInformation($id, $title, $author, $content, $creationDate, $endDate, $row){
-    $tab = [$title, $author, $content, $creationDate, $endDate];
-    $this->displayAll($row, $id, $tab);
-    echo '
-          <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/modification-information/'.$id.'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
-        </tr>';
+    /**
+     * Display the table of the management page, with delete and modify button.
+     * @param $id
+     * @param $title
+     * @param $author
+     * @param $content
+     * @param $creationDate
+     * @param $endDate
+     * @param $row
+     */
+    public function displayAllInformation($id, $title, $author, $content, $creationDate, $endDate, $row){
+        $tab = [$title, $author, $content, $creationDate, $endDate];
+        $this->displayAll($row, $id, $tab);
+        echo '
+              <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/modification-information/'.$id.'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
+            </tr>';
 }
 
 
     /**
-     * Affiche les informations sur la page d'accueil avec un carousel
+     * Display information in main page with a carousel
      * @param $title
      * @param $content
      */
@@ -36,8 +49,7 @@ public function displayAllInformation($id, $title, $author, $content, $creationD
                         <div id="demo" class="carousel slide" data-ride="carousel">
                             
                             <!--The slides -->
-                            <div class="carousel-inner">
-';
+                            <div class="carousel-inner">';
                                 for($i=0; $i < sizeof($title); ++$i) {
                                     $var = ($cpt == 0) ? ' active">' : '">';
                                     echo '<div class="carousel-item' . $var.'
@@ -46,13 +58,13 @@ public function displayAllInformation($id, $title, $author, $content, $creationD
                                            </div>';
                                     $cpt++;
                                 }
-echo'                        </div>
+                        echo'   </div>
                             </div>
                         </div>';
-    } //DisplayInformationView()
+    } //displayInformationView()
 
     /**
-     * Affiche le formulaire de création d'une information.
+     * Display information creation form
      */
     public function displayInformationCreation(){
 
@@ -68,15 +80,24 @@ echo'                        </div>
               ';
     } //displayInformationCreation()
 
-    public function displayUploadFileForm(){
-        echo '<form action="" method="post" enctype="multipart/form-data">
-                Select image to upload:
-                <input type="file" name="fileToUpload" id="fileToUpload">
-                <input type="submit" value="Upload Image" name="submit">
-              </form>';
-    }
+//    /**
+//     *
+//     */
+//    public function displayUploadFileForm(){
+//        echo '<form action="" method="post" enctype="multipart/form-data">
+//                Select image to upload:
+//                <input type="file" name="fileToUpload" id="fileToUpload">
+//                <input type="submit" value="Upload Image" name="submit">
+//              </form>';
+//    }
 
-    public function displayModifyInformationForm($title,$content,$endDate){
+    /**
+     * Display information modify form
+     * @param $title
+     * @param $content
+     * @param $endDate
+     */
+    public function displayModifyInformationForm($title, $content, $endDate){
         $dateMin = date('Y-m-d',strtotime("+1 day"));
         echo '
                 <div>
@@ -90,8 +111,5 @@ echo'                        </div>
                          <input type="submit" name="validateChange" value="Valider" ">
                  </form>
             </div>';
-
-             
-
-    }
+    } //displayModifyInformationForm()
 }

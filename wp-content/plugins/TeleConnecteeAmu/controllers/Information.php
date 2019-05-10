@@ -8,11 +8,19 @@
 
 class Information
 {
+    /**
+     * Information database object
+     * @var BdInformation
+     */
     private $DB;
+    /**
+     * Information view object
+     * @var ViewInformation
+     */
     private $view;
 
     /**
-     * Information constructor.
+     * Information constructor, set the database and the view.
      */
     public function __construct(){
         $this->DB = new BdInformation();
@@ -20,16 +28,17 @@ class Information
     }
 
     /**
-     * Permet de creer une information. EndDate etant sa date d'expiration.
+     * Create an information
      * @param $title
      * @param $content
      * @param $endDate
      */
     public function createInformation($title, $content, $endDate) {
         $this->DB->addInformationDB($title, $content, $endDate);
-    } //addInformation()
+    } //createInformation()
 
     /**
+     * Delete selected informations
      * @param $action
      */
     public function deleteInformations($action) {
@@ -43,9 +52,12 @@ class Information
             }
             $this->view->refreshPage();
         }
-    } //deleteInformation()
+    } //deleteInformations()
 
-    function displayAllInformations(){
+    /**
+     * Get the list of information and display the management page
+     */
+    function informationManagement(){
         $result = $this->DB->getListInformation();
         $this->view->tabHeadInformation();
         $i = 0;
@@ -61,15 +73,18 @@ class Information
             $this->view->displayAllInformation($id, $title, $author, $content, $creationDate, $endDate, ++$i);
         }
         $this->view->endTab();
-    }
+    } // informationManagement()
 
+    /**
+     * Get the id with the URL and display the modification form
+     */
     public function modifyInformation() {
             $urlExpl = explode('/', $_SERVER['REQUEST_URI']);
             $id = $urlExpl[2];
 
             $action = $_POST['validateChange'];
 
-            $result = $this->DB->getInformationbyID($id);
+            $result = $this->DB->getInformationByID($id);
             $title = $result['title'];
             $content = $result['content'];
             $endDate = date('Y-m-d',strtotime($result['end_date']));
@@ -84,10 +99,10 @@ class Information
                 $this->DB->modifyInformation($id,$title,$content,$endDate);
                 $this->view->refreshPage();
             }
-    }
+    } //modifyInformation()
 
     /**
-     * Verifie si la date d'expiration de l'info est dépassé et la supprime
+     * Check if the end date is outdated and delete the information if it is
      * @param $id
      * @param $endDate
      */
@@ -99,9 +114,9 @@ class Information
 
 
     /**
-     * Affiche la liste des informations sur la page d'accueil
+     * Diplay the information carousel in the main page
      */
-    public function displayInformationMain(){
+    public function informationMain(){
 
 
        $result = $this->DB->getListInformation();
@@ -124,14 +139,13 @@ class Information
 
         $this->view->displayInformationView($titleList,$contentList);
 
-    } // displayInformationMain()
+    } // informationMain()
 
 
     /**
-     * Demande l'affichage du formulaire et creer l'information si il y a eu un submit.
-     *
+     * Display the creation form and add the information
      * @param $action
-     * correspond à la valeur renvoyé par l'appuie du bouton submit (cf snippet createInfo)
+     * correspond to the data sent with the submit button (cf snippet createInfo)
      * @param $title
      * @param $content
      * @param $endDate
@@ -144,54 +158,5 @@ class Information
         }
     } //insertInformation()
 
-    public function uploadFile($action){
-        $target_dir = $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/";
-        $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-        $uploadOk = 1;
-        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-
-
-        $this->view->displayUploadFileForm();
-        if(isset($action)){
-            // Check if image file is a actual image or fake image
-            if(isset($_POST["submit"])) {
-                $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-                if($check !== false) {
-                    echo "File is an image - " . $check["mime"] . ".";
-                    $uploadOk = 1;
-                } else {
-                    echo "File is not an image.";
-                    $uploadOk = 0;
-                }
-            }
-            // Check if file already exists
-            if (file_exists($target_file)) {
-                echo "Sorry, file already exists.";
-                $uploadOk = 0;
-            }
-            // Check file size
-            if ($_FILES["fileToUpload"]["size"] > 500000) {
-                echo "Sorry, your file is too large.";
-                $uploadOk = 0;
-            }
-            // Allow certain file formats
-            if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-                && $imageFileType != "gif" ) {
-                echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-                $uploadOk = 0;
-            }
-            // Check if $uploadOk is set to 0 by an error
-            if ($uploadOk == 0) {
-                echo "Sorry, your file was not uploaded.";
-            // if everything is ok, try to upload file
-            } else {
-                if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-                    echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-                } else {
-                    echo "Sorry, there was an error uploading your file.";
-                }
-            }
-        }
-    }
 
 }
