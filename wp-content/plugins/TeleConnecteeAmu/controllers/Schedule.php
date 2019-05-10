@@ -16,6 +16,22 @@ class Schedule extends ControllerG {
         $this->view = new ViewSchedule();
     }
 
+    public function getTabConfig(){
+        ### Initialisation
+        $planning = new Planning();
+
+        ## Récupération de la configuration
+        $conf = $planning->getConf();
+
+        # On prépare l’export en iCal
+        list($startDay, $startMonth, $startYear) = explode('/', gmdate('d\/m\/Y', $conf['FIRST_WEEK']));
+        list($endDay, $endMonth, $endYear) = explode('/', gmdate('d\/m\/Y', intval($conf['FIRST_WEEK'] + ($conf['NB_WEEKS'] * 7 * 24 * 3600))));
+
+        $tab = [$startDay, $startMonth, $startYear, $endDay, $endMonth, $endYear];
+
+        return $tab;
+    }
+
     public function checkSchedule($tab, $code, $force){
         global $R34ICS;
         $R34ICS = new R34ICS();
@@ -61,23 +77,24 @@ class Schedule extends ControllerG {
      */
     public function displaySchedules(){
         $current_user = wp_get_current_user();
-        if($current_user->role =="television" || $current_user->role == "etudiant" || $current_user->role == "enseignant"){
-            ### Initialisation
-            $planning = new Planning();
-
-            ## Récupération de la configuration
-            $conf = $planning->getConf();
-
-            # On prépare l’export en iCal
-            list($startDay, $startMonth, $startYear) = explode('/', gmdate('d\/m\/Y', $conf['FIRST_WEEK']));
-            list($endDay, $endMonth, $endYear) = explode('/', gmdate('d\/m\/Y', intval($conf['FIRST_WEEK'] + ($conf['NB_WEEKS'] * 7 * 24 * 3600))));
-
-            $tab = [$startDay, $startMonth, $startYear, $endDay, $endMonth, $endYear];
+        $urlExpl = explode('/', $_SERVER['REQUEST_URI']);
+        if(is_user_logged_in() && isset($urlExpl[2])){
+            $tab = $this->getTabConfig();
+            $code = $urlExpl[2];
+            $force = true;
+            if($this->checkSchedule($tab, $code, $force)) {
+                $this->displaySchedule($tab, $code, $force);
+            }
+            else{
+                $this->view->displayEmptySchedule();
+            }
+        }
+        elseif($current_user->role =="television" || $current_user->role == "etudiant" || $current_user->role == "enseignant"){
 //            $url = 'https://ade-consult.univ-amu.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources='.$current_user->code3.'&projectId=8&startDay='.$tab[0].'&startMonth='.$tab[1].'&startYear='.$tab[2].'&endDay='.$tab[3].'&endMonth='.$tab[4].'&endYear='.$tab[5].'&calType=ical';
 //            file_put_contents(ABSPATH."/wp-content/plugins/TeleConnecteeAmu/controllers/fileICS/".$current_user->code3, fopen($url, 'r'));
 
-            $force = false;
-            $validSchedule = array();
+            $force = true;
+            $tab = $this->getTabConfig();
             if($this->checkSchedule($tab, $current_user->code1, $force)) $validSchedule[] = $current_user->code1;
             if($this->checkSchedule($tab, $current_user->code2, $force)) $validSchedule[] = $current_user->code2;
             if($this->checkSchedule($tab, $current_user->code3, $force)) $validSchedule[] = $current_user->code3;

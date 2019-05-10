@@ -115,6 +115,6 @@ class ViewTelevision extends ViewG{
     }
 
     public function displayErrorLogin(){
-        echo '<div> Le login est déjà utilisé ! </div>';
+        echo '<div class="alert alert-danger"> Le login est déjà utilisé ! </div>';
     }
 }

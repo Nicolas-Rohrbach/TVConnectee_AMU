@@ -9,7 +9,7 @@
 abstract class ControllerG {
 
     /**
-     * Return the id from the url
+     * Renvoie l'ID
      * @return mixed
      */
     protected function getMyIdUrl(){
@@ -18,7 +18,7 @@ abstract class ControllerG {
     }
 
     /**
-     * Delete all users who are selected
+     * Supprime tout les utilisateurs sélectionnés
      * @param $action
      */
     public function deleteUsers($action){
@@ -33,6 +33,13 @@ abstract class ControllerG {
         }
     }
 
+    /**
+     *
+     * @param $results
+     * @param $model
+     * @param $view
+     *
+     */
     protected function TabTvStudent($results, $model, $view){
         $row = 0;
         foreach ($results as $result){

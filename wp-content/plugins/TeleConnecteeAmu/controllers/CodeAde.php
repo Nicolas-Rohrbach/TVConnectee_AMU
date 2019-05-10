@@ -4,6 +4,7 @@
  * User: Rohrb
  * Date: 29/04/2019
  * Time: 09:53
+ * Ce controller permet de créer/modifier/supprimer des codes ADE
  */
 
 class CodeAde extends ControllerG
@@ -12,7 +13,7 @@ class CodeAde extends ControllerG
     private $model;
 
     /**
-     * CodeAde constructor.
+     * Constructeur de CodeAde.
      */
     public function __construct(){
         $this->view = new ViewCodeAde();
@@ -20,7 +21,7 @@ class CodeAde extends ControllerG
     }
 
     /**
-     * Insert a row into code_ade
+     * Lorsque le bouton est préssé, le controller appel le model pour pouvoir insérer le code écrit
      */
     public function insertCode(){
         $this->view->displayFormAddCode();
@@ -41,7 +42,7 @@ class CodeAde extends ControllerG
     }
 
     /**
-     * Display all codes from the database
+     * Affiche tout les codes ADE enregistrés dans un tableau où on peut soit les supprimer soit les modifier
      */
     public function displayAllCodes(){
         $results = $this->model->getAllCode();
@@ -54,7 +55,7 @@ class CodeAde extends ControllerG
     }
 
     /**
-     * Delete all code who are selected
+     * Supprime tout les codes qui sont sélectionnés
      * @param $action
      */
     public function deleteCodes($action){
@@ -70,7 +71,7 @@ class CodeAde extends ControllerG
     }
 
     /**
-     * Modify the code
+     * Modifie le code ADE lorsque le bouton est préssé
      */
     public function modifyMyCode(){
         $result = $this->model->getCode($this->getMyIdUrl());

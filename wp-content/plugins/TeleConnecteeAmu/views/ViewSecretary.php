@@ -39,6 +39,6 @@ class ViewSecretary extends ViewG
     }
 
     public function displayErrorInsertion(){
-        echo '<div> Le login ou l\'adresse mail est déjà utilisé </div>';
+        echo '<div class="alert alert-danger"> Le login ou l\'adresse mail est déjà utilisé </div>';
     }
 }

@@ -86,7 +86,7 @@ class R34ICS extends ControllerG {
                 $view = new ViewSchedule();
                 $view->refreshPage();
             }
-            if(strlen($ics_contents) > 200){
+            if(strlen($ics_contents) > 150){
                 set_transient($transient_name, $ics_contents, 600);
                 return $ics_contents;
             }

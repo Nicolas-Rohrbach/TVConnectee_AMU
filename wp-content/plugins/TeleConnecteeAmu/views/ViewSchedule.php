@@ -32,11 +32,10 @@ class ViewSchedule extends ViewG
     }
 
     public function displayEmptySchedule(){
-        echo '<h2>Pas cours ! </h2>
-                <div>C\'est cool comme ça vous pouvez faire vos TPs</div>';
+        echo '<div> Vous n\'avez pas cours !</div>';
     }
 
     public function displayWelcome(){
-        echo '<h2> Bienvenue mon brave </h2>';
+        echo '<h2> Bienvenue sur la télé connectée </h2>';
     }
 }
