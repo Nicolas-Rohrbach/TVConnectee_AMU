@@ -38,13 +38,25 @@ class Information
             if (isset($_REQUEST['checkboxstatus'])) {
                 $checked_values = $_REQUEST['checkboxstatus'];
                 foreach ($checked_values as $val) {
+                    $res = $this->DB->getInformationByID($val);
+                    $type = $res['type'];
+                    if($type = "img"){
+                        $this->deleteFile($val);
+                    }
                     $this->DB->deleteInformationDB($val);
-
                 }
             }
             $this->view->refreshPage();
         }
     } //deleteInformations()
+
+    public function deleteFile($id) {
+        $file = glob($_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.*");
+        foreach ($file as $filename) {
+            echo $filename.' vas être supprimé';
+            unlink($filename);
+        }
+    }
 
     /**
      * Get the list of information and display the management page
@@ -196,7 +208,7 @@ class Information
                 return $result;
             }
             else {
-                echo "erreur dans le transfert <br>";
+                echo "le fichier n'as pas été deplacé <br>";
                 return 0;
 
             }

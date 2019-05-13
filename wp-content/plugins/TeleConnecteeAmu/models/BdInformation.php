@@ -148,10 +148,5 @@ class BdInformation
 
     } //modifyInformation()
 
-    public function getLastID() {
-
-        $id = $this->getDb()->lastInsertId();
-        return $id;
-    }
 
 }
