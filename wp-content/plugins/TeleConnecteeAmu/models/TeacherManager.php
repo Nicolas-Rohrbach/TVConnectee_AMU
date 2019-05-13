@@ -8,14 +8,12 @@
 
 class TeacherManager extends Model
 {
-    public function insertTeacher($login, $pwd, $code, $email){
+    public function insertTeacher($login, $pwd, $email,$code){
         $role = "enseignant";
-        $group = 0;
-        $halfgroup = 0;
-        return $this->insertUser($login, $pwd, $role, $code, $group, $halfgroup, $email);
+        return $this->insertUser($login, $pwd, $role, $email, $code);
     }
 
     public function modifyTeacher($result, $code){
-        $this->modifyUser($result['ID'], $result['user_login'], $result['user_pass'], $code, 0, 0, $result['user_email']);
+        $this->modifyUser($result['ID'], $result['user_login'], $result['user_pass'], $result['user_email'], $code);
     }
 }

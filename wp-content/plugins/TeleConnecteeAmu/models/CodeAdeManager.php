@@ -6,8 +6,8 @@
  * Time: 09:36
  */
 
-class CodeAdeManager extends Model
-{
+class CodeAdeManager extends Model{
+
     protected function checkIfDoubleCode($code){
         $var = 0;
         $req = $this->getDb()->prepare('SELECT * FROM code_ade WHERE code =:code');
@@ -166,5 +166,9 @@ class CodeAdeManager extends Model
         }
         return $var;
         $req->closeCursor();
+    }
+
+    public function codeNotBound(){
+        
     }
 }

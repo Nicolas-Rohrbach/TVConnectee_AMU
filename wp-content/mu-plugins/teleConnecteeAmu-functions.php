@@ -8,9 +8,13 @@ Author: Nicolas Rohrbach
 Author URI: https://wptv/
 */
 
+//Met la bonne heure
+global $wpdb;
+date_default_timezone_set('Europe/London');
+$wpdb->time_zone = 'Europe/London';
 
 /**
- * Remove the admin bar from Wordpress
+ * Enlève la barre admin de Wordpress
  */
 add_action('after_setup_theme', 'remove_admin_bar');
 function remove_admin_bar() {
@@ -20,7 +24,7 @@ function remove_admin_bar() {
 }
 
 /**
- * Private acces for wp-admin
+ * Seul les admins peuvent aller sur wp-admin
  */
 add_action( 'init', 'wpm_admin_redirection' );
 function wpm_admin_redirection() {
@@ -31,14 +35,6 @@ function wpm_admin_redirection() {
         exit;
     }
 }
-
-/**
- * Add a new stylesheet from the theme child
- */
-function my_login_stylesheet() {
-    wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/login/login-style.css' );
-}
-add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
 
 /**
  * Change the url for the image
@@ -54,23 +50,63 @@ add_filter( 'login_headerurl', 'my_login_logo_url' );
  * @return string
  */
 function my_login_logo_url_title() {
-    return 'TvConnecteeAmu - Pour un emploi du temps sain';
+    return 'TvConnecteeAmu';
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
-/**
- * Change the image of the logo
- */
-function my_login_logo() { ?>
-    <style type="text/css">
-        #login h1 a, .login h1 a {
-            background-image: url(<?php echo get_stylesheet_directory_uri()."/logo.png" ?>);
-            height:65px;
-            width:320px;
-            background-size: 120px 120px;
-            background-repeat: no-repeat;
-            padding-bottom: 60px;
+add_filter( 'wp_nav_menu_items', 'add_menu', 10, 1);
+function add_menu( $items) {
+    $current_user = wp_get_current_user();
+    $model = new CodeAdeManager();
+    $years = $model->getCodeYear();
+    if (!is_user_logged_in()) {
+        $items .= '<li><a href="'. site_url('wp-login.php') .'">Connexion</a></li>';
+    }
+    elseif($current_user->role != "television" && is_user_logged_in()){
+        $items .= '
+            <li class="menu-item-type-custom menu-item-object-custom menu-item-has-children white">
+                <a href="#" title="Emploi du temps">Emploi du temps</a>
+                <button class="ast-menu-toggle" role="button" aria-expanded="true"><span class="screen-reader-text">Permutateur de Menu</span></button>
+                <ul class="sub-menu">';
+        if(isset($years)){
+            foreach ($years as $year){
+                $items .= '<li class="menu-item menu-item-type-post_type menu-item-object-page"><a class="dropdown-item" href="'.home_url().'/emploi-du-temps/'.$year['code'].'">'.$year['title'].'</a></li>';
+            }
         }
-    </style>
-<?php }
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
+        $items .= '</ul>
+        </li>';
+        if($current_user->role == "secretaire" || $current_user->role == "administrator") {
+            $items .= '
+            <li class="menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                <a href="#" title="Gestion des utilisateurs">Utilisateurs</a>
+                <button class="ast-menu-toggle" role="button" aria-expanded="true"><span class="screen-reader-text">Permutateur de Menu</span></button>
+                <ul class="sub-menu">
+                    <li><a href="/creation-des-comptes"> Création des comptes</a></li>
+                    <li><a href="/gestion-des-utilisateurs">Gestion des utilisateurs</a></li>
+                </ul>
+            </li>';
+            $items .= '
+            <li><a href="/gestion-codes-ade/"> Codes ADE</a></li>';
+            if($current_user->role == "secretaire" || $current_user->role == "administrator" || $current_user->role == "enseignant") {
+                $items .= '
+                <li class="menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                <a href="#" title="Gestion des alertes & informations">Alertes & informations</a>
+                <button class="ast-menu-toggle" role="button" aria-expanded="true"><span class="screen-reader-text">Permutateur de Menu</span></button>
+                <ul class="sub-menu">
+                    <li><a href="/alertes">Alertes</a></li>';
+                if ($current_user->role == "secretaire" || $current_user->role == "administrator") {
+                    $items .= '<li><a href="/informations">Informations</a></li>';
+                }
+                $items .= '
+                 </ul>
+             </li>';
+            }
+        }
+        $items .= '<li><a href="/mon-compte">Mon compte</a></li>';
+        $items .= '<li><a href="'. wp_logout_url() .'">Déconnexion</a></li>';
+    }
+    else {
+        $items .= '<li class="ninja"><a href="'. wp_logout_url() .'">Déconnexion</a></li>';
+    }
+    return $items;
+}

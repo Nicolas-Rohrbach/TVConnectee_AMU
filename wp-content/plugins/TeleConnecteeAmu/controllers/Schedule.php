@@ -16,6 +16,10 @@ class Schedule extends ControllerG {
         $this->view = new ViewSchedule();
     }
 
+    /**
+     * Renvoie les dates de début et de fin, de l'emploi du temps
+     * @return array
+     */
     public function getTabConfig(){
         ### Initialisation
         $planning = new Planning();
@@ -32,6 +36,13 @@ class Schedule extends ControllerG {
         return $tab;
     }
 
+    /**
+     * Vérifie si l'emploi du temps existe
+     * @param $tab
+     * @param $code
+     * @param $force
+     * @return bool
+     */
     public function checkSchedule($tab, $code, $force){
         global $R34ICS;
         $R34ICS = new R34ICS();
@@ -45,6 +56,12 @@ class Schedule extends ControllerG {
         }
     }
 
+    /**
+     * Affiche l'emploi du temps demandé
+     * @param $tab
+     * @param $code
+     * @param $force
+     */
     public function displaySchedule($tab, $code, $force){
         global $R34ICS;
         $R34ICS = new R34ICS();
@@ -95,9 +112,12 @@ class Schedule extends ControllerG {
 
             $force = true;
             $tab = $this->getTabConfig();
-            if($this->checkSchedule($tab, $current_user->code1, $force)) $validSchedule[] = $current_user->code1;
-            if($this->checkSchedule($tab, $current_user->code2, $force)) $validSchedule[] = $current_user->code2;
-            if($this->checkSchedule($tab, $current_user->code3, $force)) $validSchedule[] = $current_user->code3;
+            $codes = unserialize($current_user->code);
+            $validSchedule = array();
+            foreach ($codes as $code){
+                if($this->checkSchedule($tab, $code, $force))
+                    $validSchedule[] = $code;
+            }
             if(empty($validSchedule))
                 $this->view->displayEmptySchedule();
             else{

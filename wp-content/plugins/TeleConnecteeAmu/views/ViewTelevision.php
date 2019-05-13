@@ -32,14 +32,15 @@ class ViewTelevision extends ViewG{
 
     public function displayFormTelevision($years, $groups, $halfgroups) {
         echo '
+        <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/addOrDeleteTvCode.js"></script>
          <div class="cadre">
             <div align="center">
-                <form method="post" id="registerform">
+                <form method="post" id="registerTvForm">
                     <label for="loginTv">Login</label>
                     <input type="text" class="form-control text-center modal-sm" name="loginTv" placeholder="Nom de compte" required="">
                     <label for="pwdTv">Mot de passe</label>
                     <input type="password" class="form-control text-center modal-sm" name="pwdTv" placeholder="Mot de passe" required="">
-                    <label>Premier emploi du temps</label>
+                    <label>Premier emploi du temps</label> <button onclick="addButton()"> Add input</button>
                     <select class="form-control" name="firstCode" required="">';
         $this->displaySelect($years, $groups, $halfgroups);
         echo'

@@ -73,22 +73,21 @@ abstract class Model
         $req->closeCursor();
     }
 
-    protected function insertUser($login, $pwd, $role, $code1, $code2, $code3, $email){
+    protected function insertUser($login, $pwd, $role, $email, $code = array()){
         if ($this->verifyNoDouble($email, $login)){
-            $req = $this->getDb()->prepare('INSERT INTO wp_users (user_login, user_pass, role, code1, code2, code3,
+            $req = $this->getDb()->prepare('INSERT INTO wp_users (user_login, user_pass, role, code,
                                       user_nicename, user_email, user_url, user_registered, user_activation_key,
                                       user_status, display_name) 
-                                         VALUES (:login, :pwd, :role, :code1, :code2, :code3, :name, :email, :url, NOW(), :key, :status, :displayname)');
+                                         VALUES (:login, :pwd, :role, :code, :name, :email, :url, NOW(), :key, :status, :displayname)');
 
             $nul = " ";
             $zero = "0";
 
+            $serCode = serialize($code);
             $req->bindParam(':login', $login);
             $req->bindParam(':pwd', $pwd);
             $req->bindParam(':role', $role);
-            $req->bindParam(':code1', $code1);
-            $req->bindParam(':code2', $code2);
-            $req->bindParam(':code3', $code3);
+            $req->bindParam(':code', $serCode);
             $req->bindParam(':name', $login);
             $req->bindParam(':email', $email);
             $req->bindParam(':url', $nul);
@@ -128,18 +127,16 @@ abstract class Model
         }
     }
 
-    protected function modifyUser($id, $login, $pwd, $code1, $code2, $code3, $email){
+    protected function modifyUser($id, $login, $pwd, $code, $email){
         if ($this->verifyTuple($login)) {
-            $req = $this->getDb()->prepare('UPDATE wp_users SET user_login=:login, user_pass=:pwd, code1=:code1, 
-                                            code2=:code2, code3=:code3, user_nicename=:name, 
+            $req = $this->getDb()->prepare('UPDATE wp_users SET user_login=:login, user_pass=:pwd, code=:code, user_nicename=:name, 
                                             user_email=:email, display_name=:displayname WHERE ID=:id');
 
+            $serCode = serialize($code);
             $req->bindParam(':id', $id);
             $req->bindParam(':login', $login);
             $req->bindParam(':pwd', $pwd);
-            $req->bindParam(':code1', $code1);
-            $req->bindParam(':code2', $code2);
-            $req->bindParam(':code3', $code3);
+            $req->bindParam(':code', $serCode);
             $req->bindParam(':name', $login);
             $req->bindParam(':email', $email);
             $req->bindParam(':displayname', $login);
@@ -234,7 +231,7 @@ abstract class Model
     }
 
     /**
-     * Delete a user
+     * Supprime un utilisateur
      * @param $id
      */
     public function deleteUser($id){
@@ -254,27 +251,5 @@ abstract class Model
         global $wpdb;
         $result = $wpdb->get_row('SELECT * FROM `wp_users` WHERE `ID` ="' . $id . '"', ARRAY_A);
         return $result;
-    }
-
-    /**
-     * Get all students from the same group
-     * @param $group
-     * @return mixed
-     */
-    public function getByGroup($group){
-        global $wpdb;
-        $result = $wpdb->get_results("SELECT * FROM wp_users WHERE code2= '$group'", ARRAY_A) ;
-        return $result ;
-    }
-
-    /**
-     * Get all students from the same year
-     * @param $year
-     * @return mixed
-     */
-    public function getByYear($year){
-        global $wpdb;
-        $result = $wpdb->get_results("SELECT * FROM wp_users WHERE code1= '$year'", ARRAY_A) ;
-        return $result ;
     }
 }

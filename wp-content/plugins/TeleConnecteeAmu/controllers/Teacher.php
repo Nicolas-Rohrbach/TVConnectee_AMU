@@ -12,7 +12,7 @@ class Teacher
     private $model;
 
     /**
-     * Teacher constructor
+     * Constructeur de Teacher
      */
     public function __construct(){
         $this->view = new ViewTeacher();
@@ -20,7 +20,7 @@ class Teacher
     }
 
     /**
-     * Insert all teacher from an Excel file
+     * Insère tout les professeurs depuis un fichier excel
      * @param $actionTeacher
      */
     public function insertTeacher($actionTeacher){
@@ -29,7 +29,7 @@ class Teacher
     }
 
     /**
-     * Display all teachers in a tab
+     * Affiche tout les utilisateurs dans un tableau
      */
     public function displayAllTeachers(){
         $results = $this->model->getUsersByRole('enseignant');
@@ -48,7 +48,7 @@ class Teacher
     }
 
     /**
-     * Modify the teacher selected
+     * Modifie l'utilisateur
      * @param $result
      */
     public function modifyTeacher($result){

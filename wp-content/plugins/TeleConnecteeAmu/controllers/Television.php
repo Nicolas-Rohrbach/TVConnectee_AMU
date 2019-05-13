@@ -32,9 +32,10 @@ class Television extends ControllerG
         $years = $this->model->getCodeYear();
         $groups = $this->model->getCodeGroup();
         $halfgroups = $this->model->getCodeHalfgroup();
+        $code = [$code1, $code2, $code3];
         $this->view->displayFormTelevision($years, $groups, $halfgroups);
         if(isset($action)) {
-            if($this->model->insertMyTelevision($login, $pwd, $code1, $code2, $code3)){
+            if($this->model->insertMyTelevision($login, $pwd, $code)){
                 $this->view->refreshPage();
             }
             else{
@@ -47,7 +48,7 @@ class Television extends ControllerG
         $results = $this->model->getUsersByRole('television');
         if(isset($results)){
             $this->view->displayHeaderTabTv();
-            $this->TabTvStudent($results, $this->model, $this->view);
+            $this->tabTvStudent($results, $this->model, $this->view);
         }
         else{
             $this->view->displayEmpty();
@@ -64,8 +65,10 @@ class Television extends ControllerG
         $code1 = $_POST['firstCode'];
         $code2 = $_POST['secondCode'];
         $code3 = $_POST['thirdCode'];
+
+        $code = [$code1, $code2, $code3];
         if(isset($action)){
-            if($this->model->modifyTv($result, $code1, $code2, $code3)){
+            if($this->model->modifyTv($result, $code)){
                 $this->view->refreshPage();
             }
         }

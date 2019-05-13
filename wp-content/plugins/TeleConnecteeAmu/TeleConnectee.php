@@ -47,9 +47,11 @@ include_once 'models/DAO/DAOTeacher.php';
 include_once 'controllers/R34ICS.php';
 include_once 'controllers/Schedule.php';
 include_once 'views/ViewSchedule.php';
+include_once 'widgets/WidgetSchedule.php';
 
 include_once 'controllers/Weather.php';
 include_once 'views/ViewWeather.php';
+include_once 'widgets/WidgetWeather.php';
 
 add_action("wp_head", "mfp_card");
 define('ROOT', dirname(__FILE__));
@@ -75,11 +77,11 @@ $code = new CodeAde();
 
 $schedule = new Schedule();
 //Function for Schedule
-add_action('displaySchedule',array($schedule,'displaySchedules'));
+//add_action('displaySchedule',array($schedule,'displaySchedules'));
 
 $weather = new Weather();
 //Function for Weather
-add_action('display_weather', array($weather,'displayWeather'));
+//add_action('display_weather', array($weather,'displayWeather'));
 
 //All functions for users
 add_action('add_student', array($student, 'insertStudent'), 0, 1);

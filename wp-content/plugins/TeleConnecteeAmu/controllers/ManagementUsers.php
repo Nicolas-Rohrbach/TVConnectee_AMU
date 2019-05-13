@@ -6,14 +6,20 @@
  * Time: 10:09
  */
 
-class ManagementUsers extends ControllerG
-{
+class ManagementUsers extends ControllerG{
     private $view;
 
+    /**
+     * Constructeur de ManagementUsers.
+     */
     public function __construct(){
         $this->view = new ViewManagementUsers();
     }
 
+    /**
+     * Affiche les utilisateurs choisis
+     * @param $action
+     */
     public function displayUsers($action){
         $this->view->displayButtonChoise();
         if($action == "students"){
@@ -34,6 +40,9 @@ class ManagementUsers extends ControllerG
         }
     }
 
+    /**
+     * Modifie l'utilisateur choisi
+     */
     public function modifyUser(){
         $model = new TeacherManager();
         $result = $model->getById($this->getMyIdUrl());

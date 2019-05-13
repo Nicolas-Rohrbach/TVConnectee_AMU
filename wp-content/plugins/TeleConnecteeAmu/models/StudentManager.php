@@ -8,13 +8,13 @@
 
 class StudentManager extends Model{
 
-    public function insertMyStudent($login, $pwd, $year, $group, $halfgroup, $email){
+    public function insertStudent($login, $pwd, $email, $code){
         $role = "etudiant";
-        return $this->insertUser($login, $pwd, $role, $year, $group, $halfgroup, $email);
+        return $this->insertUser($login, $pwd, $role, $email, $code);
     }
 
-    public function modifyStudent($id, $year, $group, $halfgroup){
+    public function modifyStudent($id, $code){
         $result = $this->getById($id);
-        return $this->modifyUser($id, $result['user_login'], $result['user_pass'], $year, $group, $halfgroup, $result['user_email']);
+        return $this->modifyUser($id, $result['user_login'], $result['user_pass'], $result['user_email'], $code);
     }
 }

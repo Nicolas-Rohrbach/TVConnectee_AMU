@@ -11,7 +11,7 @@ class MyAccount extends ControllerG {
     private $model;
 
     /**
-     * MyAccount constructor.
+     * Constructeur MyAccount.
      */
     public function __construct(){
         $this->view = new ViewMyAccount();
@@ -19,7 +19,7 @@ class MyAccount extends ControllerG {
     }
 
     /**
-     *
+     * Modifie le mot de passe de l'utilisateur si il écrit bien son mot de passe actuel
      */
     public function modifyPwd(){
         $this->view->displayVerifyPassword();
@@ -40,7 +40,7 @@ class MyAccount extends ControllerG {
     }
 
     /**
-     * Delete the account of the user if the password is good
+     * Supprime le compte de l'utilisateur si son mot de passe est correcte et si le code qui rentre est correct
      */
     public function deleteAccount(){
         $this->view->displayVerifyPassword();
@@ -52,7 +52,6 @@ class MyAccount extends ControllerG {
             if(wp_check_password($pwd, $current_user->user_pass)){
                 require_once( ABSPATH.'wp-admin/includes/user.php' );
                 wp_delete_user( $current_user->ID );
-                $this->addLogEvent("Le compte ".$current_user->user_login." a été supprimé !");
                 $this->view->displayModificationValidate();
             }
             else{

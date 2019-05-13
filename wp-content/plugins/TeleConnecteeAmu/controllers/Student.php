@@ -31,7 +31,18 @@ class Student extends ControllerG
         $results = $this->model->getUsersByRole('etudiant');
         if(isset($results)){
             $this->view->tabHeadStudent();
-            $this->TabTvStudent($results, $this->model, $this->view);
+            $row = 0;
+            foreach ($results as $result){
+                ++$row;
+                $id = $result['ID'];
+                $login = $result['user_login'];
+                $code = unserialize($result['code']);
+                $year = $this->model->getTitle($code[0]);
+                $group = $this->model->getTitle($code[1]);
+                $halfgroup = $this->model->getTitle($code[2]);
+                $this->view->displayAllStudent($id, $login, $year, $group, $halfgroup, $row);
+            }
+            $this->view->displayEndTab();
         }
         else{
             $this->view->displayEmpty();
@@ -49,8 +60,9 @@ class Student extends ControllerG
         $group = filter_input(INPUT_POST,'modifGroup');
         $halfgroup = filter_input(INPUT_POST,'modifHalfgroup');
 
+        $code = [$year, $group, $halfgroup];
         if($action == 'Valider'){
-            if($this->model->modifyStudent($result['ID'], $year, $group, $halfgroup)){
+            if($this->model->modifyStudent($result['ID'], $code)){
                 $this->view->refreshPage();
             }
         }

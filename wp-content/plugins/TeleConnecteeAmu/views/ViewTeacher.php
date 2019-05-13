@@ -29,7 +29,8 @@ class ViewTeacher extends ViewG
      * @param $row
      */
     public function displayAllTeacher($result, $row){
-        $tab = [$result['user_login'], $result['code1']];
+        $code = unserialize($result['code']);
+        $tab = [$result['user_login'], $code[0]];
         $this->displayAll($row, $result['ID'], $tab);
         echo '
           <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs/modification-utilisateur/'.$result['ID'].'" class="btn btn-primary btn-lg" name="modif" type="submit" value="Modifier">Modifier</a></td>

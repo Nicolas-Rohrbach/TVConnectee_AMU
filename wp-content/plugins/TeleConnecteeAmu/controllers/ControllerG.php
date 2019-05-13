@@ -40,7 +40,7 @@ abstract class ControllerG {
      * @param $view
      *
      */
-    protected function TabTvStudent($results, $model, $view){
+    protected function tabTvStudent($results, $model, $view){
         $row = 0;
         foreach ($results as $result){
             ++$row;
@@ -54,7 +54,7 @@ abstract class ControllerG {
         $view->displayEndTab();
     }
 
-    protected function addLogEvent($event){
+    public function addLogEvent($event){
         $time = date("D, d M Y H:i:s");
         $time = "[".$time."] ";
         $event = $time.$event."\n";

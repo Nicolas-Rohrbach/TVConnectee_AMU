@@ -90,7 +90,7 @@ abstract class ViewG{
      * Display a message
      */
     public function displayEmpty(){
-        echo "<div> Il n'y pas d'utilisateur de ce rôle inscrit ici !</div>";
+        echo "<div> Il n'y pas d'utilisateur de ce rôle inscrit!</div>";
     }
 
     public function displayAllTvStudent($id, $login, $year, $group, $halfgroup, $row){

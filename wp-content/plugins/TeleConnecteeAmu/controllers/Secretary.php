@@ -6,11 +6,13 @@
  * Time: 11:37
  */
 
-class Secretary
-{
+class Secretary{
     private $view;
     private $model;
 
+    /**
+     * Constructeur de Secretary.
+     */
     public function __construct(){
         $this->view = new ViewSecretary();
         $this->model = new SecretaryManager();
