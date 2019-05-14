@@ -70,26 +70,46 @@ class ViewInformation extends ViewG
 
         $dateMin = date('Y-m-d',strtotime("+1 day"));
 
-        echo '<form id="creation_info" method="post">
-                  Titre : <input type="text" name="titleInfo" placeholder="Inserer un titre" required> </br>
-                  Contenu : <textarea name="contentInfo">...</textarea> </br>
-                  Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" required > </br>
-                
-                  <input type="submit" value="createInfo" name="createInfo">
-              </form>
-              ';
+            echo 'Quel type de contenu voulez vous pour votre information ? </br>
+
+              <form method="post">
+                <label> Texte : <input type="radio" name="typeChoice" value="text"></label></br>
+                <label> Affiche : <input type="radio" name="typeChoice" value="image"></label></br>
+                <label> Tableau de note : <input type="radio" name="typeChoice" value="tab"></label></br>
+                <button type="submit"> Selectionner </button>
+              </form>';
+
+
+            $choice = $_POST['typeChoice'];
+            if($choice == 'text'){
+                echo '<form method="post">
+                        Titre : <input type="text" name="titleInfo" placeholder="Inserer un titre" required> </br>
+                        Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" required ></br>
+                        Contenu : <textarea name="contentInfo">...</textarea> </br>
+                        <input type="submit" value="creer" name="createText">
+                      </form>';
+            }
+            elseif ($choice == 'image') {
+                echo '<form method="post" enctype="multipart/form-data">
+                        Titre : <input type="text" name="titleInfo" placeholder="Inserer un titre" required> </br>
+                        Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" required ></br>
+                        Ajouter une image :<input type="file" name="contentFile" /> </br>
+                        <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
+                         
+                        <input type="submit" value="creer" name="createImg">
+                      </form>';
+            }
+            elseif ($choice == 'tab') {
+                echo '<form method="post">
+                        Titre : <input type="text" name="titleInfo" placeholder="Inserer un titre" required> </br>
+                        Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" required ></br>
+                        
+                        <input type="submit" value="creer" name="createTab">
+                      </form>';
+            }
+
     } //displayInformationCreation()
 
-//    /**
-//     *
-//     */
-//    public function displayUploadFileForm(){
-//        echo '<form action="" method="post" enctype="multipart/form-data">
-//                Select image to upload:
-//                <input type="file" name="fileToUpload" id="fileToUpload">
-//                <input type="submit" value="Upload Image" name="submit">
-//              </form>';
-//    }
 
     /**
      * Display information modify form
@@ -97,19 +117,36 @@ class ViewInformation extends ViewG
      * @param $content
      * @param $endDate
      */
-    public function displayModifyInformationForm($title, $content, $endDate){
+    public function displayModifyInformationForm($title, $content, $endDate,$typeInfo){
         $dateMin = date('Y-m-d',strtotime("+1 day"));
-        echo '
+        if($typeInfo == "text") {
+            echo '
                 <div>
                     <form id="modify_info" method="post">
                   
                       Titre : <input type="text" name="titleInfo" value="'.$title.'" required> </br>
                       Contenu : <textarea name="contentInfo">'.$content.'</textarea> </br>
-                      Ajouter une image : <button name="image" value="ajoutImage"> Ajouter </button> </br>
                       Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" value = "'.$endDate.'" required > </br>
-                      
-                         <input type="submit" name="validateChange" value="Valider" ">
+                      <input type="submit" name="validateChange" value="Modifier" ">
                  </form>
             </div>';
+        }
+        elseif ($typeInfo == "img"){
+            echo '
+                <div>
+                    <form id="modify_info" method="post" enctype="multipart/form-data">
+                      Titre : <input type="text" name="titleInfo" value="'.$title.'" required> </br>
+                      '.$content.' </br>
+                       Changer l\'image :<input type="file" name="contentFile" /> </br>
+                       <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
+                      Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" value = "'.$endDate.'" required > </br>
+                       <input type="submit" name="validateChangeImg" value="Modifier"/>
+                 </form>
+            </div>';
+        }
+        elseif ($typeInfo == "tab"){
+            echo 'Work in progress';
+        } else { echo 'Désolé, une erreur semble être survenue.';}
     } //displayModifyInformationForm()
+
 }

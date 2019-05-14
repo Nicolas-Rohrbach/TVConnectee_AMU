@@ -27,15 +27,7 @@ class Information
         $this->view = new ViewInformation();
     }
 
-    /**
-     * Create an information
-     * @param $title
-     * @param $content
-     * @param $endDate
-     */
-    public function createInformation($title, $content, $endDate) {
-        $this->DB->addInformationDB($title, $content, $endDate);
-    } //createInformation()
+
 
     /**
      * Delete selected informations
@@ -46,13 +38,25 @@ class Information
             if (isset($_REQUEST['checkboxstatus'])) {
                 $checked_values = $_REQUEST['checkboxstatus'];
                 foreach ($checked_values as $val) {
+                    $res = $this->DB->getInformationByID($val);
+                    $type = $res['type'];
+                    if($type = "img"){
+                        $this->deleteFile($val);
+                    }
                     $this->DB->deleteInformationDB($val);
-
                 }
             }
             $this->view->refreshPage();
         }
     } //deleteInformations()
+
+    public function deleteFile($id) {
+        $file = glob($_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.*");
+        foreach ($file as $filename) {
+            echo $filename.' vas être supprimé </br>';
+            unlink($filename);
+        }
+    }
 
     /**
      * Get the list of information and display the management page
@@ -82,22 +86,37 @@ class Information
             $urlExpl = explode('/', $_SERVER['REQUEST_URI']);
             $id = $urlExpl[2];
 
-            $action = $_POST['validateChange'];
+            $actionText = $_POST['validateChange'];
+            $actionImg = $_POST['validateChangeImg'];
 
             $result = $this->DB->getInformationByID($id);
             $title = $result['title'];
             $content = $result['content'];
             $endDate = date('Y-m-d',strtotime($result['end_date']));
+            $typeI = $result['typeInfo'];
 
-            $this->view->displayModifyInformationForm($title,$content,$endDate);
+            $this->view->displayModifyInformationForm($title,$content,$endDate,$typeI);
 
-            if($action == "Valider") {
+            if($actionText == "Modifier") {
                 $title =$_POST['titleInfo'];
                 $content = $_POST['contentInfo'];
                 $endDate =$_POST['endDateInfo'];
 
                 $this->DB->modifyInformation($id,$title,$content,$endDate);
                 $this->view->refreshPage();
+            }
+            elseif($actionImg == "Modifier") {
+                $contentFile = $_FILES['contentFile'];
+                $content = $this->uploadFileModify($id,$contentFile);
+                $title =$_POST['titleInfo'];
+                $endDate =$_POST['endDateInfo'];
+
+                if($content != null) {
+                    $this->DB->modifyInformation($id,$title,$content,$endDate);
+                    $this->view->refreshPage();
+                } else {
+                    echo 'modification impossible';
+                }
             }
     } //modifyInformation()
 
@@ -117,7 +136,6 @@ class Information
      * Diplay the information carousel in the main page
      */
     public function informationMain(){
-
 
        $result = $this->DB->getListInformation();
 
@@ -150,13 +168,92 @@ class Information
      * @param $content
      * @param $endDate
      */
-    public function insertInformation($action,$actionUpload, $title, $content, $endDate){
+    public function insertInformation($actionText,$actionImg,$actionTab, $title, $content, $contentFile, $endDate){
 
         $this->view->displayInformationCreation();
-        if(isset($action)) {
-            $this->createInformation($title, $content, $endDate);
+        if(isset($actionText)) {
+            $this->DB->addInformationDB($title, $content, $endDate,"text");
+        }
+        elseif (isset($actionImg)) {
+            $result = $this->uploadFileCreation($contentFile, $title, $endDate); //upload le fichier avec un nom temporaire
+            if($result != 0) {
+
+                $id = $result;
+                //récupère l'extension du fichier
+                $_FILES['file'] = $contentFile;
+                $extension_upload = strtolower(  substr(  strrchr($_FILES['file']['name'], '.')  ,1)  );
+
+                //renomme le fichier avec l'id de l'info
+                rename($_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/temporary.{$extension_upload}",
+                    $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.{$extension_upload}");
+
+                //modifie le contenu de l'information pour avoir le bon lien de l'image
+                $content = '<img src="http://wptv/wp-content/plugins/TeleConnecteeAmu/views/Media/'.$id.'.'.$extension_upload.'">';
+                $result = $this->DB->getInformationByID($id);
+                $title = $result['title'];
+                $endDate = date('Y-m-d',strtotime($result['end_date']));
+                $this->DB->modifyInformation($id, $title, $content, $endDate);
+            }
+
+        }
+        elseif (isset($actionTab)) {
+            echo 'pas encore implementé';
         }
     } //insertInformation()
 
+    public function uploadFileCreation($file, $title, $endDate){
+        $id = "temporary";
+
+        $_FILES['file'] = $file;
+        $maxsize = 5000000;
+
+            if ($_FILES['file']['error'] > 0) echo "Erreur lors du transfert <br>";
+            if ($_FILES['file']['size'] > $maxsize) echo "Le fichier est trop volumineux <br>";
+
+
+            $extensions_valides = array( 'jpg' , 'jpeg' , 'gif' , 'png' );
+            $extension_upload = strtolower(  substr(  strrchr($_FILES['file']['name'], '.')  ,1)  );
+            if ( in_array($extension_upload,$extensions_valides) ) echo "Extension correcte <br>";
+
+            $nom =  $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.{$extension_upload}";
+            $resultat = move_uploaded_file($_FILES['file']['tmp_name'],$nom);
+            if ($resultat){
+                echo "Transfert réussi <br>";
+                $result = $this->DB->addInformationDB($title,"temporary content",$endDate, "img");
+                return $result;
+            }
+            else {
+                echo "le fichier n'as pas été upload <br>";
+                return 0;
+
+            }
+        }
+    public function uploadFileModify($id, $file)
+    {
+        $_FILES['file'] = $file;
+        $maxsize = 5000000;
+        $this->deleteFile($id);
+
+        echo 'test'.$_FILES['file']['name'].'</br>';
+
+        if ($_FILES['file']['error'] > 0) echo "Erreur lors du transfert <br>";
+        if ($_FILES['file']['size'] > $maxsize) echo "Le fichier est trop volumineux <br>";
+
+
+        $extensions_valides = array('jpg', 'jpeg', 'gif', 'png');
+        $extension_upload = strtolower(substr(strrchr($_FILES['file']['name'], '.'), 1));
+        if (in_array($extension_upload, $extensions_valides)) echo "Extension correcte <br>";
+
+        $nom = $_SERVER['DOCUMENT_ROOT'] . "/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.{$extension_upload}";
+        $resultat = move_uploaded_file($_FILES['file']['tmp_name'], $nom);
+        if ($resultat) {
+            echo "Transfert réussi <br>";
+            $content = '<img src="http://wptv/wp-content/plugins/TeleConnecteeAmu/views/Media/' . $id . '.' . $extension_upload . '">';
+            return $content;
+        } else {
+            echo 'le fichier n\'as pas été upload <br> ';
+
+        }
+    }
 
 }

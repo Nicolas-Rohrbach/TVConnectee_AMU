@@ -47,30 +47,25 @@ class BdInformation
      * @param $title
      * @param $content
      * @param $endDate
+     * @param $type
+     * @return
      */
-    public function addInformationDB($title, $content, $endDate){
+    public function addInformationDB($title, $content, $endDate, $type){
         global $wpdb;
-
         $current_user = wp_get_current_user();
 
         if (isset($current_user)) {
             $user = $current_user->user_login;
         }
-
         $creationDate = date('Y-m-d');
+        $null = null;
 
-        $wpdb->query(
-            $wpdb->prepare(
-                "INSERT INTO `informations`(`ID_info`, `title`, `author`, `creation_date`, `end_date`, `content`)
-                        VALUES (%d, %s, %s, %s, %s, %s)",
-                null,
-                $title,
-                $user,
-                $creationDate,
-                $endDate,
-                $content
-            )
-        );
+        $wpdb->query($wpdb->prepare("INSERT INTO informations (`ID_info`, `title`, `author`, `creation_date`, `end_date`, `content`, `type`) 
+                                         VALUES (%d, %s, %s, %s, %s, %s, %s)",
+                                        null, $title, $user, $creationDate, $endDate, $content, $type));
+
+
+        return $wpdb->insert_id;
 
     } //addInformationDB()
 
@@ -145,5 +140,6 @@ class BdInformation
         $req->execute();
 
     } //modifyInformation()
+
 
 }
