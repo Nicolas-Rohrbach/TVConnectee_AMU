@@ -107,6 +107,7 @@ class ViewInformation extends ViewG
                         <input type="submit" value="creer" name="createTab">
                       </form>';
             }
+            echo '<a href="http://wptv/gerer-les-informations/"> Page de gestion</a>';
     } //displayInformationCreation()
 
 
@@ -128,6 +129,7 @@ class ViewInformation extends ViewG
                       Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" value = "'.$endDate.'" required > </br>
                       <input type="submit" name="validateChange" value="Modifier" ">
                  </form>
+                 <a href="http://wptv/gerer-les-informations/"> Page de gestion</a>
             </div>';
         }
         elseif ($typeInfo == "img"){
@@ -141,6 +143,7 @@ class ViewInformation extends ViewG
                       Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" value = "'.$endDate.'" required > </br>
                        <input type="submit" name="validateChangeImg" value="Modifier"/>
                  </form>
+               <a href="http://wptv/gerer-les-informations/"> Page de gestion</a>
             </div>';
         }
         elseif ($typeInfo == "tab"){
