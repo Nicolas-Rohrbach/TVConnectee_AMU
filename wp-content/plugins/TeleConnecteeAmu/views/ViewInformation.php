@@ -107,7 +107,6 @@ class ViewInformation extends ViewG
                         <input type="submit" value="creer" name="createTab">
                       </form>';
             }
-
     } //displayInformationCreation()
 
 

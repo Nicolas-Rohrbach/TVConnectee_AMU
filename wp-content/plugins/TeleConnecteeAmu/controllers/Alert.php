@@ -8,20 +8,11 @@
 
 class Alert
 {
-    /**
-     * Alert database object
-     * @var BdAlert
-     */
     private $DB;
-
-    /**
-     * Alert view object
-     * @var ViewAlert
-     */
     private $view;
 
     /**
-     * Alert constructor, set DB et view.
+     * Constructeur d'alert, initialise le modèle et la vue.
      */
     public function __construct(){
         $this->DB = new BdAlert();
@@ -29,7 +20,7 @@ class Alert
     }
 
     /**
-     * Delete selected alerts.
+     * Supprime les alertes sélectionnées dans la page de gestion des alertes.
      * @param $action
      * @see alertsManagement()
      */
@@ -47,7 +38,8 @@ class Alert
 
 
     /**
-     * Create an alert.
+     * Affiche le formulaire de création et ajoute l'alerte créée.
+     * cf snippet Create Alert
      * @param $action
      * @param $content
      * @param $endDate
@@ -61,7 +53,8 @@ class Alert
     } //createAlert()
 
     /**
-     * Display a table with all alert, modification and delete buttons.
+     * Affiche un tableau avec toutes les alertes et des boutons de modification ainsi qu'un bouton de suppression.
+     * cf snippet Handle Alert
      */
     function alertsManagement()
     {
@@ -85,7 +78,7 @@ class Alert
     } //alertManagement()
 
     /**
-     * Verify if the alert's end date is outdated.
+     * Verifie si la date de fin est dépassée et supprime l'alerte si c'est le cas.
      * @param $id
      * @param $endDate
      */
@@ -97,7 +90,8 @@ class Alert
 
 
     /**
-     * Get the alert's id from the url and display the modification form.
+     * Récupère l'id de l'alerte depuis l'url et affiche le formulaire de modification pré-remplis.
+     * cf snippet Modification Alert
      */
     public function modifyAlert()
     {
@@ -122,7 +116,8 @@ class Alert
 
 
     /**
-     * Get the list of alerts and display them in the main page
+     * Récupère la liste des alertes et l'affiche sur la page principale
+     *cf snippet Display Alert
      */
     public function alertMain(){
 
