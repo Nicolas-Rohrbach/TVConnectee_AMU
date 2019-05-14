@@ -6,7 +6,8 @@
  * Time: 17:23
  */
 
-class Schedule extends ControllerG {
+class Schedule extends ControllerG
+{
     private $view;
 
     /**
@@ -17,57 +18,32 @@ class Schedule extends ControllerG {
     }
 
     /**
-     * Renvoie les dates de début et de fin, de l'emploi du temps
-     * @return array
-     */
-    public function getTabConfig(){
-        ### Initialisation
-        $planning = new Planning();
-
-        ## Récupération de la configuration
-        $conf = $planning->getConf();
-
-        # On prépare l’export en iCal
-        list($startDay, $startMonth, $startYear) = explode('/', gmdate('d\/m\/Y', $conf['FIRST_WEEK']));
-        list($endDay, $endMonth, $endYear) = explode('/', gmdate('d\/m\/Y', intval($conf['FIRST_WEEK'] + ($conf['NB_WEEKS'] * 7 * 24 * 3600))));
-
-        $tab = [$startDay, $startMonth, $startYear, $endDay, $endMonth, $endYear];
-
-        return $tab;
-    }
-
-    /**
-     * Vérifie si l'emploi du temps existe
-     * @param $tab
+     * Vérifie si l'emploi du temps existe et qu'il a du contenus
      * @param $code
      * @param $force
      * @return bool
      */
-    public function checkSchedule($tab, $code, $force){
+    public function checkSchedule($code, $force){
         global $R34ICS;
         $R34ICS = new R34ICS();
-        $url = 'https://ade-consult.univ-amu.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources='.$code.'&projectId=8&startDay='.$tab[0].'&startMonth='.$tab[1].'&startYear='.$tab[2].'&endDay='.$tab[3].'&endMonth='.$tab[4].'&endYear='.$tab[5].'&calType=ical';
+        $url = ABSPATH."/wp-content/plugins/TeleConnecteeAmu/controllers/fileICS/".$code;
         $contents = $R34ICS->checkCalendar($url, $force);
-        if(isset($contents)) {
+        if (isset($contents))
             return true;
-        }
-        else{
+        else
             return false;
-        }
     }
 
     /**
      * Affiche l'emploi du temps demandé
-     * @param $tab
      * @param $code
      * @param $force
      */
-    public function displaySchedule($tab, $code, $force){
+    public function displaySchedule($code, $force){
         global $R34ICS;
         $R34ICS = new R34ICS();
 
-        $url = 'https://ade-consult.univ-amu.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources='.$code.'&projectId=8&startDay='.$tab[0].'&startMonth='.$tab[1].'&startYear='.$tab[2].'&endDay='.$tab[3].'&endMonth='.$tab[4].'&endYear='.$tab[5].'&calType=ical';
-        //$url = ABSPATH."/wp-content/plugins/TeleConnecteeAmu/controllers/fileICS/".$code;
+        $url = ABSPATH."/wp-content/plugins/TeleConnecteeAmu/controllers/fileICS/".$code;
         $args = array(
             'count' => 10,
             'description' => null,
@@ -79,13 +55,26 @@ class Schedule extends ControllerG {
             'view' => 'list',
         );
         $contents = $R34ICS->checkCalendar($url, $force);
-        if(isset($contents)){
+        if (isset($contents)) {
             $model = new CodeAdeManager();
             $title = $model->getTitle($code);
-            if($code == $title) $this->addLogEvent("Le code s'est affiché au lieu du titre");
+            if ($code == $title) $this->addLogEvent("Le code s'est affiché au lieu du titre");
             $this->view->displayName($title);
             $R34ICS->display_calendar($contents, $args);
         }
+    }
+
+    /**
+     * Affiche l'emploi du temps d'une promo en fonction de l'ID récupéré dans l'url
+     */
+    public function displayYearSchedule(){
+        $code = $this->getMyIdUrl();
+        $force = true;
+        if ($this->checkSchedule($code, $force)) {
+            $this->displaySchedule($code, $force);
+        }
+        else
+            $this->view->displayEmptySchedule();
     }
 
     /**
@@ -94,34 +83,19 @@ class Schedule extends ControllerG {
      */
     public function displaySchedules(){
         $current_user = wp_get_current_user();
-        $urlExpl = explode('/', $_SERVER['REQUEST_URI']);
-        if(is_user_logged_in() && isset($urlExpl[2])){
-            $tab = $this->getTabConfig();
-            $code = $urlExpl[2];
-            $force = true;
-            if($this->checkSchedule($tab, $code, $force)) {
-                $this->displaySchedule($tab, $code, $force);
-            }
-            else{
-                $this->view->displayEmptySchedule();
-            }
-        }
-        elseif($current_user->role =="television" || $current_user->role == "etudiant" || $current_user->role == "enseignant"){
-//            $url = 'https://ade-consult.univ-amu.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources='.$current_user->code3.'&projectId=8&startDay='.$tab[0].'&startMonth='.$tab[1].'&startYear='.$tab[2].'&endDay='.$tab[3].'&endMonth='.$tab[4].'&endYear='.$tab[5].'&calType=ical';
-//            file_put_contents(ABSPATH."/wp-content/plugins/TeleConnecteeAmu/controllers/fileICS/".$current_user->code3, fopen($url, 'r'));
-
+        if ($current_user->role == "television" || $current_user->role == "etudiant" || $current_user->role == "enseignant") {
             $force = true;
             $tab = $this->getTabConfig();
             $codes = unserialize($current_user->code);
             $validSchedule = array();
-            foreach ($codes as $code){
-                if($this->checkSchedule($tab, $code, $force))
+            foreach ($codes as $code) {
+                if ($this->checkSchedule($tab, $code, $force))
                     $validSchedule[] = $code;
             }
-            if(empty($validSchedule))
+            if (empty($validSchedule))
                 $this->view->displayEmptySchedule();
-            else{
-                if($current_user->role == "television") {
+            else {
+                if ($current_user->role == "television") {
                     $this->view->displayStartSlide();
                     foreach ($validSchedule as $schedule) {
                         $this->displaySchedule($tab, $schedule, $force);
@@ -129,13 +103,11 @@ class Schedule extends ControllerG {
                     }
                     $this->view->displayEndSlide();
                 }
-                else{
+                else
                     $this->displaySchedule($tab, $validSchedule[0], $force);
-                }
             }
         }
-        else{
+        else
             $this->view->displayWelcome();
-        }
     }
 }

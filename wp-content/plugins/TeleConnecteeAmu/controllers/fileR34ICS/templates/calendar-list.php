@@ -89,7 +89,6 @@ else {
                             ++$nboccurence;
                             // et on supprime cours qui ont déja eu lieu
                             $heure = date("H:i");
-
                             if (!(date("H:i",strtotime($event['fin'])) <= $heure) ){
                                 if(date("H:i",strtotime($event['deb'])) <= $heure && $heure < date("H:i",strtotime($event['fin']))){
                                     ++$nbevents;
@@ -112,12 +111,15 @@ else {
                                     echo '</td>';
                                 }
                                 else {
-
                                     if (!empty($event['start'])) {
                                         echo '<td width="20%">';
-                                        echo $event['start'];
+                                        $deb = date("H:i",strtotime($event['deb']));
+                                        $newDeb = str_replace(':','h',$deb);
+                                        echo $newDeb.' ';
                                         if (!empty($event['end'])) {
-                                            echo '<span class="time">&#8211;'; echo $event['end'].'</span>';
+                                            echo '<span class="time">&#8211;'; $fin = date("H:i",strtotime($event['fin']));
+                                            $newFin = str_replace(':','h',$fin);
+                                            echo ' '.$newFin.'</span>';
                                         }
                                         echo '</td>';
                                     }

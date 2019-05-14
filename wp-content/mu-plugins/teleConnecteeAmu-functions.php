@@ -10,8 +10,10 @@ Author URI: https://wptv/
 
 //Met la bonne heure
 global $wpdb;
-date_default_timezone_set('Europe/London');
-$wpdb->time_zone = 'Europe/London';
+date_default_timezone_set('Europe/Paris');
+$wpdb->time_zone = 'Europe/Paris';
+
+error_reporting(E_ERROR);
 
 /**
  * Enlève la barre admin de Wordpress

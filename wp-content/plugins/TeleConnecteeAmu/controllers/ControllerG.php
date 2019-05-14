@@ -14,7 +14,8 @@ abstract class ControllerG {
      */
     protected function getMyIdUrl(){
         $urlExpl = explode('/', $_SERVER['REQUEST_URI']);
-        return $urlExpl[3];
+        $size = sizeof($urlExpl);
+        return $urlExpl[$size-2];
     }
 
     /**

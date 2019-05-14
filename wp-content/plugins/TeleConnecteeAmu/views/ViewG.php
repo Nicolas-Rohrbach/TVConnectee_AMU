@@ -29,15 +29,6 @@ abstract class ViewG{
                         <th scope="col" width="5%" class="text-center"><input type="checkbox" onClick="toggle(this)" /></th>';
     }
 
-    protected function displayEndheaderTab(){
-        echo'
-                <th scope="col" class="text-center">Modifer</th>
-                     </tr>
-                </thead>
-                <tbody>
-        ';
-    }
-
     /**
      * Build the header of a table
      * @param $tab
@@ -48,6 +39,15 @@ abstract class ViewG{
             echo'<th scope="col" class="text-center"> '.$value.'</th>';
         }
         $this->displayEndheaderTab();
+    }
+
+    protected function displayEndheaderTab(){
+        echo'
+                <th scope="col" class="text-center">Modifer</th>
+                     </tr>
+                </thead>
+                <tbody>
+        ';
     }
 
     /**
@@ -98,5 +98,53 @@ abstract class ViewG{
         $this->displayAll($row, $id, $tab);
         echo '<td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs/modification-utilisateur/'.$id.'" class="btn btn-primary btn-lg" name="modif" type="submit" value="Modifier">Modifier</a></td>
         </tr>';
+    }
+
+    public function displayUnregisteredCode($badCodes){
+        echo'
+        <h3> Ces codes ne sont pas encore enregistrés ! </h3>
+        <table class="table text-center"> 
+                <thead>
+                    <tr class="text-center">
+                        <th scope="col" width="33%" class="text-center">Année</th>
+                        <th scope="col" width="33%" class="text-center">Groupe</th>
+                        <th scope="col" width="33%" class="text-center">Demi-Groupe</th>
+                        </tr>
+                </thead>
+                <tbody>';
+        $sizeYear = sizeof($badCodes[0]);
+        $sizeGroup = sizeof($badCodes[1]);
+        $sizeHalfgroup = sizeof($badCodes[2]);
+        $size = 0;
+        if($sizeYear >= $sizeGroup && $sizeYear >= $sizeHalfgroup) $size = $sizeYear;
+        if($sizeGroup >= $sizeYear && $sizeGroup >= $sizeHalfgroup) $size = $sizeGroup;
+        if($sizeHalfgroup >= $sizeYear && $sizeHalfgroup >= $sizeGroup) $size = $sizeHalfgroup;
+        for($i = 0; $i < $size; ++$i){
+            echo '<tr>
+                    <td class="text-center">';
+            if($sizeYear > $i)
+                echo $badCodes[0][$i];
+            else
+                echo ' ';
+            echo '</td>
+            <td class="text-center">';
+            if($sizeGroup > $i)
+                echo $badCodes[1][$i];
+            else
+                echo ' ';
+            echo '</td>
+            <td class="text-center">';
+            if($sizeHalfgroup > $i)
+                echo $badCodes[2][$i];
+            else
+                echo ' ';
+            echo '</td>
+
+                  </tr>';
+        }
+        echo '
+                </tbody>
+        </table>
+        ';
     }
 }

@@ -9,7 +9,16 @@
 
 class CodeAde extends ControllerG
 {
+    /**
+     * Vue de CodeAde
+     * @var ViewCodeAde
+     */
     private $view;
+
+    /**
+     * Model de CodeAde
+     * @var CodeAdeManager
+     */
     private $model;
 
     /**
@@ -25,6 +34,11 @@ class CodeAde extends ControllerG
      */
     public function insertCode(){
         $this->view->displayFormAddCode();
+        $badCodesYears = $this->model->codeNotBound(0);
+        $badCodesGroups = $this->model->codeNotBound(1);
+        $badCodesHalfgroups = $this->model->codeNotBound(2);
+        $badCodes = [$badCodesYears, $badCodesGroups, $badCodesHalfgroups];
+        $this->view->displayUnregisteredCode($badCodes);
 
         $action = $_POST['addCode'];
         $code = filter_input(INPUT_POST, 'codeAde');
@@ -33,12 +47,51 @@ class CodeAde extends ControllerG
 
         if($action == "Valider"){
             if($this->model->addCode($type, $title, $code)){
+                $tab = $this->getTabConfig();
+                $this->addFile($code, $tab);
                 $this->view->refreshPage();
             }
             else{
                 $this->view->displayErrorDouble();
             }
         }
+    }
+
+    /**
+     * Renvoie les dates de début et de fin, de l'emploi du temps
+     * @return array
+     */
+    public function getTabConfig(){
+        ### Initialisation
+        $planning = new Planning();
+        ## Récupération de la configuration
+        $conf = $planning->getConf();
+        # On prépare l’export en iCal
+        list($startDay, $startMonth, $startYear) = explode('/', gmdate('d\/m\/Y', $conf['FIRST_WEEK']));
+        list($endDay, $endMonth, $endYear) = explode('/', gmdate('d\/m\/Y', intval($conf['FIRST_WEEK'] + ($conf['NB_WEEKS'] * 7 * 24 * 3600))));
+        $tab = [$startDay, $startMonth, $startYear, $endDay, $endMonth, $endYear];
+        return $tab;
+    }
+
+    /**
+     * Ajoute un fichier via le code donné
+     * @param $code     Code ADE
+     * @param $tab      Configuration pour les dates de début & fin de l'année scolaire
+     */
+    public function addFile($code, $tab){
+        $path = ABSPATH . "/wp-content/plugins/TeleConnecteeAmu/controllers/fileICS/" . $code;
+        $url = 'https://ade-consult.univ-amu.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=' . $code . '&projectId=8&startDay=' . $tab[0] . '&startMonth=' . $tab[1] . '&startYear=' . $tab[2] . '&endDay=' . $tab[3] . '&endMonth=' . $tab[4] . '&endYear=' . $tab[5] . '&calType=ical';
+        file_put_contents($path, fopen($url, 'r'));
+    }
+
+    /**
+     * Supprime le fichier lié au code
+     * @param $code     Code ADE
+     */
+    public function deleteFile($code){
+        $path = ABSPATH . "/wp-content/plugins/TeleConnecteeAmu/controllers/fileICS/" . $code;
+        if(! unlink($path))
+            $this->addLogEvent("Le fichier ne s'est pas supprimer (chemin: ".$path.")");
     }
 
     /**
@@ -56,7 +109,7 @@ class CodeAde extends ControllerG
 
     /**
      * Supprime tout les codes qui sont sélectionnés
-     * @param $action
+     * @param $action       Bouton de validation
      */
     public function deleteCodes($action){
         $model = new CodeAdeManager();
@@ -64,7 +117,10 @@ class CodeAde extends ControllerG
             if(isset($_REQUEST['checkboxstatus'])) {
                 $checked_values = $_REQUEST['checkboxstatus'];
                 foreach($checked_values as $val) {
+                    $oldCode = $model->getCode($val);
+                    $this->deleteFile($oldCode[0]['code']);
                     $model->deleteCode($val);
+                    $this->view->refreshPage();
                 }
             }
         }

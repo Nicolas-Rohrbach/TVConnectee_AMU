@@ -405,3 +405,10 @@
 	border-radius: 1.5%;
 	border:2px solid darkgrey;
 }
+
+/* TABLE */
+.errorNotRegister{
+	font-weight: bold;
+	color: white;
+	background-color: red;
+}

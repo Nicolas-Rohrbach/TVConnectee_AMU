@@ -8,11 +8,20 @@
 
 class Student extends ControllerG
 {
+    /**
+     * View de Student
+     * @var ViewStudent
+     */
     private $view;
+
+    /**
+     * Model de Student
+     * @var StudentManager
+     */
     private $model;
 
     /**
-     * Student constructor.
+     * Constructeur de Student.
      */
     public function __construct()
     {
@@ -20,17 +29,27 @@ class Student extends ControllerG
         $this->model = new StudentManager();
     }
 
+    /**
+     * Ajoute tout les étudiants présent dans un fichier excel
+     * @param $actionStudent    Est à true si le bouton est préssé
+     */
     public function insertStudent($actionStudent){
-
         excelStudent($actionStudent);
         $this->view->displayInsertImportFileStudent();
 
     }
 
+    /**
+     * Affiche tout les étudiants dans un tableau
+     */
     function displayAllStudents(){
         $results = $this->model->getUsersByRole('etudiant');
         if(isset($results)){
-            $this->view->tabHeadStudent();
+            $badCodesYears = $this->model->codeNotBound(0);
+            $badCodesGroups = $this->model->codeNotBound(1);
+            $badCodesHalfgroups = $this->model->codeNotBound(2);
+            $badCodes = [$badCodesYears, $badCodesGroups, $badCodesHalfgroups];
+            $this->view->displayTabHeadStudent();
             $row = 0;
             foreach ($results as $result){
                 ++$row;
@@ -40,8 +59,9 @@ class Student extends ControllerG
                 $year = $this->model->getTitle($code[0]);
                 $group = $this->model->getTitle($code[1]);
                 $halfgroup = $this->model->getTitle($code[2]);
-                $this->view->displayAllStudent($id, $login, $year, $group, $halfgroup, $row);
+                $this->view->displayAllStudent($id, $login, $year, $group, $halfgroup, $row, $badCodes);
             }
+            $this->view->displayRedSignification();
             $this->view->displayEndTab();
         }
         else{
@@ -49,6 +69,10 @@ class Student extends ControllerG
         }
     }
 
+    /**
+     * Modifie l'étudiant sélectionné
+     * @param $result   Données de l'étudiant avant modification
+     */
     public function modifyMyStudent($result){
         $years = $this->model->getCodeYear();
         $groups = $this->model->getCodeGroup();

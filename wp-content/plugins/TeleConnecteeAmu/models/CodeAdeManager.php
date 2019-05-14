@@ -8,6 +8,11 @@
 
 class CodeAdeManager extends Model{
 
+    /**
+     * Vérifie si un code identique existe déjà
+     * @param $code     Code ADE
+     * @return bool     Renvoie vrai s'il y a un doublon
+     */
     protected function checkIfDoubleCode($code){
         $var = 0;
         $req = $this->getDb()->prepare('SELECT * FROM code_ade WHERE code =:code');
@@ -25,8 +30,9 @@ class CodeAdeManager extends Model{
     }
 
     /**
-     * @param $title
-     * @return bool
+     * Vérifie si un titre identique existe déjà
+     * @param $title    Titre du code ADE
+     * @return bool     Renvoie vrai s'il y a un doublon
      */
     protected function checkIfDoubleTitle($title){
         $var = 0;
@@ -46,11 +52,11 @@ class CodeAdeManager extends Model{
 
 
     /**
-     * Add a tuple
-     * @param $type
-     * @param $title
-     * @param $code
-     * @return bool
+     * Ajoute le code dans la bd
+     * @param $type     Type du code (Année/Groupe/Demi-Groupe)
+     * @param $title    Titre du code
+     * @param $code     Code ADE
+     * @return bool     Renvoie vrai si le code est enregistré
      */
     public function addCode($type, $title, $code){
         if(! ($this->checkIfDoubleCode($code)) && ! ($this->checkIfDoubleTitle($title))){
@@ -71,13 +77,13 @@ class CodeAdeManager extends Model{
     }
 
     /**
-     * Modify the tuple
+     * Modifie le code si le titre ou le code écrit n'existe pas déjà
      * @param $result - Hold parameter of the tuple
-     * @param $id
-     * @param $title
-     * @param $code
-     * @param $type
-     * @return bool
+     * @param $id   ID du code
+     * @param $title    Titre du code
+     * @param $code     Code ADE
+     * @param $type     Type du code (Année/Groupe/Demi-Groupe)
+     * @return bool     Renvoie vrai si le code est modifié
      */
     public function checkModify($result, $id, $title, $code, $type){
         if($result[0]['title'] != $title && $result[0]['code'] != $code){
@@ -117,13 +123,13 @@ class CodeAdeManager extends Model{
     }
 
     /**
-     * Modify tuple
-     * @param $id
-     * @param $title
-     * @param $code
-     * @param $type
+     * Modifie le code
+     * @param $id   ID du code
+     * @param $title    Titre du code
+     * @param $code     Code ADE
+     * @param $type     Type du code (Année/Groupe/Demi-Groupe)
      */
-    public function modifyCode($id, $title, $code, $type){
+    protected function modifyCode($id, $title, $code, $type){
 
             $req = $this->getDb()->prepare('UPDATE code_ade SET title=:title, code=:code, type=:type WHERE ID=:id');
 
@@ -137,15 +143,15 @@ class CodeAdeManager extends Model{
     }
 
     /**
-     * Delete tuple
-     * @param $id
+     * Supprime le code
+     * @param $id   ID du code
      */
     public function deleteCode($id){
         $this->deleteTuple('code_ade',$id);
     }
 
     /**
-     * Return all tuple from the table code_ade
+     * Renvoie toute la table de code_ade
      * @return array
      */
     public function getAllCode(){
@@ -153,8 +159,8 @@ class CodeAdeManager extends Model{
     }
 
     /**
-     * Return the tuple bind with the id
-     * @param $id
+     * Renvoie le code
+     * @param $id   ID du code
      * @return array
      */
     public function getCode($id){
@@ -166,9 +172,5 @@ class CodeAdeManager extends Model{
         }
         return $var;
         $req->closeCursor();
-    }
-
-    public function codeNotBound(){
-        
     }
 }

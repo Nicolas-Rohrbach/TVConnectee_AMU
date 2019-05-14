@@ -12,16 +12,26 @@ class ViewStudent extends ViewG
         $this->displayInsertImportFile("Etu");
     }
 
-    public function tabHeadStudent(){
+    public function displayTabHeadStudent(){
         $tab = ["Numéro étudiant", "Année", "Groupe", "Demi groupe"];
         $this->displayStartTab($tab);
     }
 
-    public function displayAllStudent($id, $login, $year, $group, $halfgroup, $row){
-        $tab = [$login, $year, $group, $halfgroup];
-        $this->displayAll($row, $id, $tab);
-        echo '<td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs/modification-utilisateur/'.$id.'" class="btn btn-primary btn-lg" name="modif" type="submit" value="Modifier">Modifier</a></td>
+    public function displayAllStudent($id, $login, $year, $group, $halfgroup, $row, $badCodes){
+        echo '
+        <tr>
+          <th scope="row" class="text-center">'.$row.'</th>
+          <td class="text-center"><input type="checkbox" name="checkboxstatus[]" value="'.$id.'"/></td>
+          <td class="text-center">'.$login.'</td>
+          <td class="text-center'; if(in_array($year, $badCodes[0])) echo ' errorNotRegister'; echo '">'.$year.'</td>
+          <td class="text-center'; if(in_array($group, $badCodes[1])) echo ' errorNotRegister'; echo '">'.$group.'</td>
+          <td class="text-center'; if(in_array($halfgroup, $badCodes[2])) echo ' errorNotRegister'; echo '">'.$halfgroup.'</td>
+          <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs/modification-utilisateur/'.$id.'" class="btn btn-primary btn-lg" name="modif" type="submit" value="Modifier">Modifier</a></td>
         </tr>';
+    }
+
+    public function displayRedSignification(){
+        echo '<div>Zone rouge = Code ADE non enregistré</div>';
     }
 
     public function displayModifyStudent($result, $years, $groups, $halfgroups){

@@ -252,4 +252,39 @@ abstract class Model
         $result = $wpdb->get_row('SELECT * FROM `wp_users` WHERE `ID` ="' . $id . '"', ARRAY_A);
         return $result;
     }
+
+    protected function getAllCodeFromUser($type = null){
+        $req = $this->getDb()->prepare('SELECT code FROM wp_users WHERE role =:role');
+        $role = "etudiant";
+        $req->bindParam(':role',$role);
+        $req->execute();
+        $var = array();
+        while ($data = $req->fetch()) {
+            $var[] = $data;
+        }
+        $req->closeCursor();
+        foreach ($var as $value){
+            $unserCodes = unserialize($value['code']);
+            $userCodes[] = $unserCodes[$type];
+        }
+        return $userCodes;
+    }
+
+    /**
+     * Renvoie tout les code ADE qui n'ont pas été enregistré dans la bd code_ade mais enregistré dans les utilisateurs
+     * @return array
+     */
+    public function codeNotBound($type = null){
+        $userCodes = $this->getAllCodeFromUser($type);
+        $codesAde = $this->getAll('code_ade');
+        $allCode = array();
+        $notRegisterCode = array();
+        foreach ($codesAde as $codeAde)
+            $allCode[] = $codeAde['code'];
+        foreach ($userCodes as $userCode){
+            if(! in_array($userCode, $allCode))
+                $notRegisterCode[] = $userCode;
+        }
+        return $notRegisterCode;
+    }
 }

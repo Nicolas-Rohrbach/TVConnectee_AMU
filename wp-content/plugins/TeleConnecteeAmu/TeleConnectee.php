@@ -77,7 +77,8 @@ $code = new CodeAde();
 
 $schedule = new Schedule();
 //Function for Schedule
-//add_action('displaySchedule',array($schedule,'displaySchedules'));
+add_action('displaySchedule',array($schedule,'displaySchedules'));
+add_action('displayYear_schedule', array($schedule, 'displayYearSchedule'));
 
 $weather = new Weather();
 //Function for Weather
@@ -109,3 +110,18 @@ add_action('init', function(){
 
 // Flush rewrite rules when plugin is activated
 register_activation_hook(__FILE__, function() { flush_rewrite_rules(); });
+
+add_action( 'downloadFileICS', 'downloadFileICS_func' );
+function downloadFileICS_func() {
+    $model = new CodeAdeManager();
+    $allCodes = $model->getAllCode();
+    $controllerAde = new CodeAde();
+    $controller = new Schedule();
+    $tab = $controller->getTabConfig();
+    $force = true;
+    foreach ($allCodes as $code){
+        if ($controller->checkSchedule($tab, $code['code'], $force)) {
+            $controllerAde->addFile($code['code'], $tab);
+        }
+    }
+}
