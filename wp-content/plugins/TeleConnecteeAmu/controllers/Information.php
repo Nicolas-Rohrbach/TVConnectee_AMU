@@ -53,7 +53,7 @@ class Information
     public function deleteFile($id) {
         $file = glob($_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.*");
         foreach ($file as $filename) {
-            echo $filename.' vas être supprimé';
+            echo $filename.' vas être supprimé </br>';
             unlink($filename);
         }
     }
@@ -86,7 +86,8 @@ class Information
             $urlExpl = explode('/', $_SERVER['REQUEST_URI']);
             $id = $urlExpl[2];
 
-            $action = $_POST['validateChange'];
+            $actionText = $_POST['validateChange'];
+            $actionImg = $_POST['validateChangeImg'];
 
             $result = $this->DB->getInformationByID($id);
             $title = $result['title'];
@@ -96,14 +97,26 @@ class Information
 
             $this->view->displayModifyInformationForm($title,$content,$endDate,$typeI);
 
-            if($action == "Valider") {
+            if($actionText == "Modifier") {
                 $title =$_POST['titleInfo'];
                 $content = $_POST['contentInfo'];
                 $endDate =$_POST['endDateInfo'];
 
                 $this->DB->modifyInformation($id,$title,$content,$endDate);
                 $this->view->refreshPage();
-//                wp_redirect( home_url() );
+            }
+            elseif($actionImg == "Modifier") {
+                $contentFile = $_FILES['contentFile'];
+                $content = $this->uploadFileModify($id,$contentFile);
+                $title =$_POST['titleInfo'];
+                $endDate =$_POST['endDateInfo'];
+
+                if($content != null) {
+                    $this->DB->modifyInformation($id,$title,$content,$endDate);
+                    $this->view->refreshPage();
+                } else {
+                    echo 'modification impossible';
+                }
             }
     } //modifyInformation()
 
@@ -162,7 +175,7 @@ class Information
             $this->DB->addInformationDB($title, $content, $endDate,"text");
         }
         elseif (isset($actionImg)) {
-            $result = $this->uploadFile($contentFile, $title, $endDate); //upload le fichier avec un nom temporaire
+            $result = $this->uploadFileCreation($contentFile, $title, $endDate); //upload le fichier avec un nom temporaire
             if($result != 0) {
 
                 $id = $result;
@@ -188,7 +201,7 @@ class Information
         }
     } //insertInformation()
 
-    public function uploadFile($file, $title, $endDate){
+    public function uploadFileCreation($file, $title, $endDate){
         $id = "temporary";
 
         $_FILES['file'] = $file;
@@ -210,11 +223,37 @@ class Information
                 return $result;
             }
             else {
-                echo "le fichier n'as pas été deplacé <br>";
+                echo "le fichier n'as pas été upload <br>";
                 return 0;
 
             }
         }
+    public function uploadFileModify($id, $file)
+    {
+        $_FILES['file'] = $file;
+        $maxsize = 5000000;
+        $this->deleteFile($id);
 
+        echo 'test'.$_FILES['file']['name'].'</br>';
+
+        if ($_FILES['file']['error'] > 0) echo "Erreur lors du transfert <br>";
+        if ($_FILES['file']['size'] > $maxsize) echo "Le fichier est trop volumineux <br>";
+
+
+        $extensions_valides = array('jpg', 'jpeg', 'gif', 'png');
+        $extension_upload = strtolower(substr(strrchr($_FILES['file']['name'], '.'), 1));
+        if (in_array($extension_upload, $extensions_valides)) echo "Extension correcte <br>";
+
+        $nom = $_SERVER['DOCUMENT_ROOT'] . "/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.{$extension_upload}";
+        $resultat = move_uploaded_file($_FILES['file']['tmp_name'], $nom);
+        if ($resultat) {
+            echo "Transfert réussi <br>";
+            $content = '<img src="http://wptv/wp-content/plugins/TeleConnecteeAmu/views/Media/' . $id . '.' . $extension_upload . '">';
+            return $content;
+        } else {
+            echo 'le fichier n\'as pas été upload <br> ';
+
+        }
+    }
 
 }

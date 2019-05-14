@@ -51,7 +51,7 @@ class BdInformation
      * @return
      */
     public function addInformationDB($title, $content, $endDate, $type){
-
+        global $wpdb;
         $current_user = wp_get_current_user();
 
         if (isset($current_user)) {
@@ -60,19 +60,12 @@ class BdInformation
         $creationDate = date('Y-m-d');
         $null = null;
 
-        $req = $this->getDb()->prepare('INSERT INTO informations (ID_info, title, author, creation_date, end_date, content, type) 
-                                         VALUES (:id, :title, :author, :creationDate, :endDate, :content, :type)');
-        $req->bindParam(':id', $null);
-        $req->bindParam(':title', $title);
-        $req->bindParam(':author', $user);
-        $req->bindParam(':creationDate', $creationDate);
-        $req->bindParam(':endDate', $endDate);
-        $req->bindParam(':content', $content);
-        $req->bindParam(':type', $type);
+        $wpdb->query($wpdb->prepare("INSERT INTO informations (`ID_info`, `title`, `author`, `creation_date`, `end_date`, `content`, `type`) 
+                                         VALUES (%d, %s, %s, %s, %s, %s, %s)",
+                                        null, $title, $user, $creationDate, $endDate, $content, $type));
 
-        $req->execute();
 
-        return $this->getDb()->lastInsertId();
+        return $wpdb->insert_id;
 
     } //addInformationDB()
 

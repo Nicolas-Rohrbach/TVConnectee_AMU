@@ -127,19 +127,20 @@ class ViewInformation extends ViewG
                       Titre : <input type="text" name="titleInfo" value="'.$title.'" required> </br>
                       Contenu : <textarea name="contentInfo">'.$content.'</textarea> </br>
                       Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" value = "'.$endDate.'" required > </br>
-                      <input type="submit" name="validateChange" value="Valider" ">
+                      <input type="submit" name="validateChange" value="Modifier" ">
                  </form>
             </div>';
         }
         elseif ($typeInfo == "img"){
             echo '
                 <div>
-                    <form id="modify_info" method="post">
-                  
+                    <form id="modify_info" method="post" enctype="multipart/form-data">
                       Titre : <input type="text" name="titleInfo" value="'.$title.'" required> </br>
-                      '.$content.'
+                      '.$content.' </br>
+                       Changer l\'image :<input type="file" name="contentFile" /> </br>
+                       <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
                       Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" value = "'.$endDate.'" required > </br>
-                       <input type="submit" name="validateChange" value="Valider" ">
+                       <input type="submit" name="validateChangeImg" value="Modifier"/>
                  </form>
             </div>';
         }
@@ -148,13 +149,4 @@ class ViewInformation extends ViewG
         } else { echo 'Désolé, une erreur semble être survenue.';}
     } //displayModifyInformationForm()
 
-    public function displayFormUpload() {
-        echo '
-            <form method="post" enctype="multipart/form-data">
-                    <input type="file" name="file" />
-                    <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
-                    <input type="submit" name="submit" value="Envoyer" />
-            </form>
-        ';
-    }
 }
