@@ -92,8 +92,9 @@ class Information
             $title = $result['title'];
             $content = $result['content'];
             $endDate = date('Y-m-d',strtotime($result['end_date']));
+            $typeI = $result['typeInfo'];
 
-            $this->view->displayModifyInformationForm($title,$content,$endDate);
+            $this->view->displayModifyInformationForm($title,$content,$endDate,$typeI);
 
             if($action == "Valider") {
                 $title =$_POST['titleInfo'];
@@ -102,6 +103,7 @@ class Information
 
                 $this->DB->modifyInformation($id,$title,$content,$endDate);
                 $this->view->refreshPage();
+//                wp_redirect( home_url() );
             }
     } //modifyInformation()
 
@@ -182,7 +184,7 @@ class Information
 
         }
         elseif (isset($actionTab)) {
-
+            echo 'pas encore implementé';
         }
     } //insertInformation()
 

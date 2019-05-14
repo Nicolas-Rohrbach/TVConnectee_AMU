@@ -117,20 +117,35 @@ class ViewInformation extends ViewG
      * @param $content
      * @param $endDate
      */
-    public function displayModifyInformationForm($title, $content, $endDate){
+    public function displayModifyInformationForm($title, $content, $endDate,$typeInfo){
         $dateMin = date('Y-m-d',strtotime("+1 day"));
-        echo '
+        if($typeInfo == "text") {
+            echo '
                 <div>
                     <form id="modify_info" method="post">
                   
                       Titre : <input type="text" name="titleInfo" value="'.$title.'" required> </br>
                       Contenu : <textarea name="contentInfo">'.$content.'</textarea> </br>
-                      Ajouter une image : <button name="image" value="ajoutImage"> Ajouter </button> </br>
                       Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" value = "'.$endDate.'" required > </br>
-                      
-                         <input type="submit" name="validateChange" value="Valider" ">
+                      <input type="submit" name="validateChange" value="Valider" ">
                  </form>
             </div>';
+        }
+        elseif ($typeInfo == "img"){
+            echo '
+                <div>
+                    <form id="modify_info" method="post">
+                  
+                      Titre : <input type="text" name="titleInfo" value="'.$title.'" required> </br>
+                      '.$content.'
+                      Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" value = "'.$endDate.'" required > </br>
+                       <input type="submit" name="validateChange" value="Valider" ">
+                 </form>
+            </div>';
+        }
+        elseif ($typeInfo == "tab"){
+            echo 'Work in progress';
+        } else { echo 'Désolé, une erreur semble être survenue.';}
     } //displayModifyInformationForm()
 
     public function displayFormUpload() {

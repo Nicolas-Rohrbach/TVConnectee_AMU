@@ -79,3 +79,9 @@ form button{
 .list {
 	text-align: center;
 }
+
+
+/*______________form modify Info_______________*/
+#modify_info img {
+	max-width: 240px;
+}
