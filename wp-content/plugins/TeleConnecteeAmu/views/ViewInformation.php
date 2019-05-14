@@ -83,15 +83,15 @@ class ViewInformation extends ViewG
             $choice = $_POST['typeChoice'];
             if($choice == 'text'){
                 echo '<form method="post">
-                        Titre : <input type="text" name="titleInfo" placeholder="Inserer un titre" required> </br>
+                        Titre : <input type="text" name="titleInfo" placeholder="Inserer un titre" required maxlength="20"> </br>
                         Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" required ></br>
-                        Contenu : <textarea name="contentInfo">...</textarea> </br>
+                        Contenu : <textarea name="contentInfo" maxlength="200"></textarea> </br>
                         <input type="submit" value="creer" name="createText">
                       </form>';
             }
             elseif ($choice == 'image') {
                 echo '<form method="post" enctype="multipart/form-data">
-                        Titre : <input type="text" name="titleInfo" placeholder="Inserer un titre" required> </br>
+                        Titre : <input type="text" name="titleInfo" placeholder="Inserer un titre" required maxlength="20"> </br>
                         Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" required ></br>
                         Ajouter une image :<input type="file" name="contentFile" /> </br>
                         <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
@@ -101,7 +101,7 @@ class ViewInformation extends ViewG
             }
             elseif ($choice == 'tab') {
                 echo '<form method="post">
-                        Titre : <input type="text" name="titleInfo" placeholder="Inserer un titre" required> </br>
+                        Titre : <input type="text" name="titleInfo" placeholder="Inserer un titre" required maxlength="20"> </br>
                         Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" required ></br>
                         
                         <input type="submit" value="creer" name="createTab">
@@ -123,8 +123,8 @@ class ViewInformation extends ViewG
                 <div>
                     <form id="modify_info" method="post">
                   
-                      Titre : <input type="text" name="titleInfo" value="'.$title.'" required> </br>
-                      Contenu : <textarea name="contentInfo">'.$content.'</textarea> </br>
+                      Titre : <input type="text" name="titleInfo" value="'.$title.'" required maxlength="20"> </br>
+                      Contenu : <textarea name="contentInfo" maxlength="200">'.$content.'</textarea> </br>
                       Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" value = "'.$endDate.'" required > </br>
                       <input type="submit" name="validateChange" value="Modifier" ">
                  </form>
@@ -134,7 +134,7 @@ class ViewInformation extends ViewG
             echo '
                 <div>
                     <form id="modify_info" method="post" enctype="multipart/form-data">
-                      Titre : <input type="text" name="titleInfo" value="'.$title.'" required> </br>
+                      Titre : <input type="text" name="titleInfo" value="'.$title.'" required maxlength="20"> </br>
                       '.$content.' </br>
                        Changer l\'image :<input type="file" name="contentFile" /> </br>
                        <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />

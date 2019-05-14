@@ -16,7 +16,7 @@ class ViewAlert extends ViewG
 
         echo '
             <form id="creationAlert" method="post">
-                   Contenu : <input type="text" name="content" required> <br>
+                   Contenu : <input type="text" name="content" required maxlength="30"> <br>
                    Date d\'expiration : <input type="date" name="endDateAlert" min="'.$dateMin.'" required > </br>
                     <input type="submit" value="Créer" name="createAlert">
             </form>
@@ -61,7 +61,7 @@ class ViewAlert extends ViewG
                     
                     <form id="modify_alert" method="post">
                   
-                      Contenu : <textarea name="contentInfo">' . $content . '</textarea> </br>
+                      Contenu : <textarea name="contentInfo" maxlength="30">' . $content . '</textarea> </br>
                       Date d\'expiration : <input type="date" name="endDateInfo" min="' . $dateMin . '" value = "' . $endDate . '" required > </br>
                       
                          <input type="submit" name="validateChange" value="Valider" ">

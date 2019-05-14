@@ -105,16 +105,21 @@ class Information
             }
             elseif($actionImg == "Modifier") {
                 $contentFile = $_FILES['contentFile'];
-                $content = $this->uploadFile($id,$contentFile,"","","modify");
+
                 $title =$_POST['titleInfo'];
                 $endDate =$_POST['endDateInfo'];
-
-                if($content != null || $content != 0) {
+                if($_FILES['contentFile']['size'] != 0) {
+                    $contentNew = $this->uploadFile($id,$contentFile,"","","modify");
+                    if($contentNew != null || $contentNew != 0) {
+                        $this->DB->modifyInformation($id,$title,$contentNew,$endDate);
+                        $this->view->refreshPage();
+                    }
+                }
+                else {
                     $this->DB->modifyInformation($id,$title,$content,$endDate);
                     $this->view->refreshPage();
-                } else {
-                    echo 'modification impossible';
                 }
+
             }
     } //modifyInformation()
 
@@ -160,7 +165,7 @@ class Information
 
 
     /**
-     * Affihce le formulaire de création en fonction du type d'information et ajoute l'information
+     * Affiche le formulaire de création en fonction du type d'information et ajoute l'information
      * cf snippet create info
      * @param $actionText
      * @param $actionImg
@@ -201,17 +206,28 @@ class Information
         }
     } //insertInformation()
 
+
+    /**
+     * Upload un fichier sur le serveur, créer l'information avec un contenu temporaire pour la création d'info
+     * et renvoie le nouveau contenu pour quand il s'agit d'une modification.
+     * @param $id
+     * @param $file
+     * @param $title
+     * @param $endDate
+     * @param $action
+     * @return int|string
+     */
     public function uploadFile($id, $file, $title, $endDate, $action){
-        if($action == "create"){
-            $id = "temporary";
+        if($action == "create"){ //si la fonction a été appelée pour la création d'une info
+            $id = "temporary"; //met un id temporaire pour le nom du fichier
         }
-        elseif ($action == "modify"){
-            $this->deleteFile($id);
+        elseif ($action == "modify"){ //si la fonction a été appelée pour la modification d'une info
+            $this->deleteFile($id); // efface le fichier correspondant a l'info modifié
         }
         else{ echo "il y a une erreur dans l'appel de la fonction";}
 
         $_FILES['file'] = $file;
-        $maxsize = 5000000;
+        $maxsize = 5000000; //5Mo
         if ($_FILES['file']['error'] > 0) echo "Erreur lors du transfert <br>";
         if ($_FILES['file']['size'] > $maxsize) echo "Le fichier est trop volumineux <br>";
 
@@ -225,10 +241,12 @@ class Information
         if ($resultat){
             echo "Transfert réussi <br>";
             if($action == "create"){
+                // Ajoute dans la BD avec un contenu temporaire
                 $result = $this->DB->addInformationDB($title,"temporary content",$endDate, "img");
                 return $result;
             }
             elseif ($action == "modify"){
+                //renvoie le nouveau contenu de l'info
                 $content = '<img src="http://wptv/wp-content/plugins/TeleConnecteeAmu/views/Media/' . $id . '.' . $extension_upload . '">';
                 return $content;
             }
@@ -238,6 +256,4 @@ class Information
             return 0;
         }
     }//uploadFile()
-
-
 }
