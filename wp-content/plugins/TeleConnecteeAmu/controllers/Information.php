@@ -250,17 +250,19 @@ class Information
         if ($_FILES['file']['error'] > 0) echo "Erreur lors du transfert <br>";
         if ($_FILES['file']['size'] > $maxsize) echo "Le fichier est trop volumineux <br>";
 
-        if($type == "img") $extensions_valides = array( 'jpg' , 'jpeg' , 'gif' , 'png' );
-        if($type == "tab") $extensions_valides = array( 'xls' , 'xlsx' );
+        if($type == "img"){$extensions_valides = array( 'jpg' , 'jpeg' , 'gif' , 'png' );}
+        if($type == "tab") {$extensions_valides = array( 'xls' , 'xlsx' );}
 
         $extension_upload = strtolower(  substr(  strrchr($_FILES['file']['name'], '.')  ,1)  );
-        if ( in_array($extension_upload,$extensions_valides) ) echo "Extension correcte <br>";
+        if ( in_array($extension_upload,$extensions_valides) ) {
+            $nom =  $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.{$extension_upload}";
+            $resultat = move_uploaded_file($_FILES['file']['tmp_name'],$nom);
+        }else { echo "Extension incorrecte <br>";}
 
-        $nom =  $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.{$extension_upload}";
-        $resultat = move_uploaded_file($_FILES['file']['tmp_name'],$nom);
+
+
 
         if ($resultat){
-            echo "Transfert réussi <br>";
             if($action == "create"){
                 if($type == "img") {
                     // Ajoute dans la BD avec un contenu temporaire
