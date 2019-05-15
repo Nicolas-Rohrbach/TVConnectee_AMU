@@ -45,17 +45,38 @@ class MyAccount extends ControllerG {
     public function deleteAccount(){
         $this->view->displayVerifyPassword();
         $this->view->displayDeleteAccount();
+        $this->view->displayEnterCode();
         $action = $_POST['deleteMyAccount'];
+        $actionDelete = $_POST['deleteAccount'];
         $current_user = wp_get_current_user();
         if(isset($action)){
             $pwd = filter_input(INPUT_POST, 'verifPwd');
-            if(wp_check_password($pwd, $current_user->user_pass)){
-                require_once( ABSPATH.'wp-admin/includes/user.php' );
-                wp_delete_user( $current_user->ID );
-                $this->view->displayModificationValidate();
+            if(wp_check_password($pwd, $current_user->user_pass)) {
+                $code = wp_generate_password();
+                $exist = $this->model->getCode($current_user->ID);
+                if(isset($exist))
+                    $this->model->deleteCode($current_user->ID);
+                if($this->model->createRandomCode($current_user->ID, $code)){
+                    $message = "Voici votre code pour pouvoir vous désinscrire sur ".$_SERVER['HTTP_HOST'].".";
+                    $message .= "Le code est: ".$code.".";
+                    //mail($current_user->user_email, "Code de désinscription", $message);
+                    $this->view->displayMailSend();
+                }
             }
             else{
                 $this->view->displayWrongPassword();
+            }
+        }
+        elseif (isset($actionDelete)){
+            $code = $_POST['codeDelete'];
+            $userCode = $this->model->getCode($current_user->ID);
+            if($code == $userCode[0]['code']){
+                require_once( ABSPATH.'wp-admin/includes/user.php' );
+                wp_delete_user( $current_user->ID);
+                $this->view->displayModificationValidate();
+            }
+            else{
+                echo "bad code";
             }
         }
     }

@@ -47,8 +47,7 @@ class CodeAde extends ControllerG
 
         if($action == "Valider"){
             if($this->model->addCode($type, $title, $code)){
-                $tab = $this->getTabConfig();
-                $this->addFile($code, $tab);
+                $this->addFile($code);
                 $this->view->refreshPage();
             }
             else{
@@ -78,7 +77,8 @@ class CodeAde extends ControllerG
      * @param $code     Code ADE
      * @param $tab      Configuration pour les dates de début & fin de l'année scolaire
      */
-    public function addFile($code, $tab){
+    public function addFile($code){
+        $tab = $this->getTabConfig();
         $path = ABSPATH . "/wp-content/plugins/TeleConnecteeAmu/controllers/fileICS/" . $code;
         $url = 'https://ade-consult.univ-amu.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=' . $code . '&projectId=8&startDay=' . $tab[0] . '&startMonth=' . $tab[1] . '&startYear=' . $tab[2] . '&endDay=' . $tab[3] . '&endMonth=' . $tab[4] . '&endYear=' . $tab[5] . '&calType=ical';
         file_put_contents($path, fopen($url, 'r'));
@@ -129,7 +129,7 @@ class CodeAde extends ControllerG
     /**
      * Modifie le code ADE lorsque le bouton est préssé
      */
-    public function modifyMyCode(){
+    public function modifyCode(){
         $result = $this->model->getCode($this->getMyIdUrl());
         $this->view->displayModifyCode($result);
 
@@ -140,6 +140,10 @@ class CodeAde extends ControllerG
 
         if($action == "Valider"){
             if($this->model->checkModify($result, $this->getMyIdUrl(), $title, $code, $type)){
+                if($result[0]['code'] != $code){
+                    $this->deleteFile($result[0]['code']);
+                    $this->addFile($code);
+                }
                 $this->view->refreshPage();
             }
             else{

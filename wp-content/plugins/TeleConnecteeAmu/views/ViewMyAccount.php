@@ -25,7 +25,7 @@ class ViewMyAccount extends ViewG
 
     public function displayDeleteAccount(){
         echo '
-                <button type="submit" class="btn btn-primary" name="deleteMyAccount">Supprimer</button>
+                <button type="submit" class="btn btn-primary" name="deleteMyAccount">Confirmer</button>
                 </form>';
     }
 
@@ -35,5 +35,18 @@ class ViewMyAccount extends ViewG
 
     public function displayWrongPassword(){
         echo '<div class="alert alert-danger"> Mauvais mot de passe </div>';
+    }
+
+    public function displayMailSend(){
+        echo '<div class="alert alert-success"> Un mail a été envoyé à votre adresse mail, merci de bien vouloir entrer le code reçut</div>';
+    }
+
+    public function displayEnterCode(){
+        echo '
+        <form method="post">
+            <label for="codeDelete"> Code de suppression de compte</label>
+            <input type="text" class="form-control text-center" name="codeDelete" placeholder="Code à rentrer" required="">
+            <button type="submit" class="btn btn-primary" name="deleteAccount">Supprimer</button>
+        </form>';
     }
 }

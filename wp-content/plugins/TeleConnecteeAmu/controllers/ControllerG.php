@@ -34,27 +34,6 @@ abstract class ControllerG {
         }
     }
 
-    /**
-     *
-     * @param $results
-     * @param $model
-     * @param $view
-     *
-     */
-    protected function tabTvStudent($results, $model, $view){
-        $row = 0;
-        foreach ($results as $result){
-            ++$row;
-            $id = $result['ID'];
-            $login = $result['user_login'];
-            $year = $model->getTitle($result['code1']);
-            $group = $model->getTitle($result['code2']);
-            $halfgroup = $model->getTitle($result['code3']);
-            $view->displayAllTvStudent($id, $login, $year, $group, $halfgroup, $row);
-        }
-        $view->displayEndTab();
-    }
-
     public function addLogEvent($event){
         $time = date("D, d M Y H:i:s");
         $time = "[".$time."] ";

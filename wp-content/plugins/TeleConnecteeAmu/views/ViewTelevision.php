@@ -41,16 +41,9 @@ class ViewTelevision extends ViewG{
                     <label for="pwdTv">Mot de passe</label>
                     <input type="password" class="form-control text-center modal-sm" name="pwdTv" placeholder="Mot de passe" required="">
                     <label>Premier emploi du temps</label> <button onclick="addButton()"> Add input</button>
-                    <select class="form-control" name="firstCode" required="">';
+                    <select class="form-control" name="selectTv[]" required="">';
         $this->displaySelect($years, $groups, $halfgroups);
-        echo'
-                    <label>Deuxième emploi du temps (Optionel)</label>
-                    <select class="form-control" name="secondCode">';
-        $this->displaySelect($years, $groups, $halfgroups);
-        echo '
-                    <label>Troisième emploi du temps (Optionel)</label>
-                    <select class="form-control" name="thirdCode">';
-        $this->displaySelect($years, $groups, $halfgroups);
+
         echo'
                     <button type="submit" class="btn btn-primary" name="createTv">Créer</button>
                 </form>
@@ -59,12 +52,12 @@ class ViewTelevision extends ViewG{
     }
 
     public function displayHeaderTabTv(){
-        $tab = ["Login", "Code 1", "Code 2", "Code 3"];
+        $tab = ["Login", "Nombre de vues"];
         $this->displayStartTab($tab);
     }
 
-    public function displayAllTv($id, $login,  $code1, $code2, $code3, $row){
-        $tab = [$login, $code1, $code2, $code3];
+    public function displayAllTv($id, $login,  $nbCode, $row){
+        $tab = [$login, $nbCode];
         $this->displayAll($row, $id, $tab);
         echo '<td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs/modification-utilisateur/'.$id.'" class="btn btn-primary btn-lg" name="modif" type="submit" value="Modifier">Modifier</a></td>
         </tr>';
@@ -92,22 +85,23 @@ class ViewTelevision extends ViewG{
     }
 
     public function displayModifyTv($result, $years, $groups, $halfgroups){
+        $code = unserialize($result['code']);
         echo '
          <h3>'.$result['user_login'].'</h3>
          <form method="post">
             <label>Premier emploi du temps</label>
             <select class="form-control" name="firstCode" required="">
-                <option value="'.$result['code1'].'">'.$result['code1'].'</option>';
+                <option value="'.$code[0].'">'.$code[0].'</option>';
         $this->displaySelectSelected($years, $groups, $halfgroups, "firstCode");
         echo'
             <label>Deuxième emploi du temps (Optionel)</label>
             <select class="form-control" name="secondCode">
-                <option value="'.$result['code2'].'">'.$result['code2'].'</option>';
+                <option value="'.$code[1].'">'.$code[1].'</option>';
         $this->displaySelectSelected($years, $groups, $halfgroups, "secondCode");
         echo '
             <label>Troisième emploi du temps (Optionel)</label>
             <select class="form-control" name="thirdCode">
-                <option value="'.$result['code3'].'">'.$result['code3'].'</option>';
+                <option value="'.$code[2].'">'.$code[2].'</option>';
         $this->displaySelectSelected($years, $groups, $halfgroups, "thirdCode");
         echo '
             <input name="modifValidate" type="submit" value="Valider">

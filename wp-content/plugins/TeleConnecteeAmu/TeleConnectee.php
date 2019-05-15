@@ -53,6 +53,15 @@ include_once 'controllers/Weather.php';
 include_once 'views/ViewWeather.php';
 include_once 'widgets/WidgetWeather.php';
 
+
+include_once 'views/ViewInformation.php';
+include_once 'views/ViewAlert.php';
+include_once 'controllers/Information.php';
+include_once 'controllers/Alert.php';
+include_once 'models/BdInformation.php';
+include_once 'models/BdAlert.php';
+include_once 'widgets/WidgetAlert.php';
+
 add_action("wp_head", "mfp_card");
 define('ROOT', dirname(__FILE__));
 require_once(ROOT . '/controllers/fileSchedule/app/app.php');
@@ -70,6 +79,9 @@ $teacher = new Teacher();
 $television = new Television();
 $secretary = new Secretary();
 $myAccount = new MyAccount();
+
+$information = new Information();
+$alert = new Alert();
 
 $managementUsers = new ManagementUsers();
 
@@ -102,6 +114,18 @@ add_action('display_all_codes', array($code, 'displayAllCodes'));
 add_action('modify_code_ade', array($code, 'modifyCode'));
 add_action('delete_codes', array($code, 'deleteCodes'), 0, 1);
 
+add_action('handleInfos',array($information,'informationManagement'));
+add_action('delete_infos',array($information, 'deleteInformations'),0 ,1);
+add_action('modify_info',array($information,'modifyInformation'));
+add_action('displayInformations',array($information,'informationMain'));
+add_action('add_info',array($information,'insertInformation'), 0, 7);
+
+add_action('createAlert',array($alert,'createAlert'),0,3);
+add_action('handleAlert', array($alert,'alertsManagement'));
+add_action('delete_alert', array($alert,'deleteAlert'), 0 ,1);
+add_action('modify_alert',array($alert,'modifyAlert'));
+add_action('display_alert', array($alert, 'alertMain'));
+
 // Initialize plugin
 add_action('init', function(){
     global $R34ICS;
@@ -116,12 +140,7 @@ function downloadFileICS_func() {
     $model = new CodeAdeManager();
     $allCodes = $model->getAllCode();
     $controllerAde = new CodeAde();
-    $controller = new Schedule();
-    $tab = $controller->getTabConfig();
-    $force = true;
     foreach ($allCodes as $code){
-        if ($controller->checkSchedule($tab, $code['code'], $force)) {
-            $controllerAde->addFile($code['code'], $tab);
-        }
+        $controllerAde->addFile($code['code']);
     }
 }

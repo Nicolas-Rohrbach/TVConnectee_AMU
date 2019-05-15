@@ -6,13 +6,24 @@
  * Time: 11:41
  */
 
-class Television extends ControllerG
-{
+class Television extends ControllerG{
+
+    /**
+     * View de Television
+     * @var ViewTelevision
+     */
     private $view;
+
+    /**
+     * Model de Television
+     * @var TelevisionManager
+     */
     private $model;
 
-    public function __construct()
-    {
+    /**
+     * Constructeur de Television
+     */
+    public function __construct(){
         $this->view = new ViewTelevision();
         $this->model = new TelevisionManager();
     }
@@ -22,20 +33,14 @@ class Television extends ControllerG
         $action = $_POST['createTv'];
         $login = filter_input(INPUT_POST,'loginTv');
         $pwd = md5(filter_input(INPUT_POST,'pwdTv'));
-        $code1 = $_POST['firstCode'];
-        $code2 = 0;
-        $code3 = 0;
-
-        if(isset($_POST['secondCode'])) $code2 = $_POST['secondCode'];
-        if(isset($_POST['thirdCode'])) $code3 = $_POST['thirdCode'];
+        $codes = $_POST['selectTv'];
 
         $years = $this->model->getCodeYear();
         $groups = $this->model->getCodeGroup();
         $halfgroups = $this->model->getCodeHalfgroup();
-        $code = [$code1, $code2, $code3];
         $this->view->displayFormTelevision($years, $groups, $halfgroups);
-        if(isset($action)) {
-            if($this->model->insertMyTelevision($login, $pwd, $code)){
+        if(isset($action)){
+            if($this->model->insertMyTelevision($login, $pwd, $codes)){
                 $this->view->refreshPage();
             }
             else{
@@ -48,7 +53,15 @@ class Television extends ControllerG
         $results = $this->model->getUsersByRole('television');
         if(isset($results)){
             $this->view->displayHeaderTabTv();
-            $this->tabTvStudent($results, $this->model, $this->view);
+            $row = 0;
+            foreach ($results as $result){
+                ++$row;
+                $id = $result['ID'];
+                $login = $result['user_login'];
+                $nbCode = sizeof(unserialize($result['code']));
+                $this->view->displayAllTv($id, $login, $nbCode, $row);
+            }
+            $this->view->displayEndTab();
         }
         else{
             $this->view->displayEmpty();

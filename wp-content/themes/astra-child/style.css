@@ -131,17 +131,6 @@
 }
 
 /* WEATHER */
-.site-footer{
-	position: fixed;
-	bottom: 0;
-	left:0;
-	box-sizing: border-box;
-	background-color: #FFF;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-	padding: 0;
-	width: 100%;
-}
 .Infos{
 	background-color: #0071b9;
 	box-sizing: border-box;
@@ -411,4 +400,69 @@
 	font-weight: bold;
 	color: white;
 	background-color: red;
+}
+
+#content {
+	font-size: 120%;
+}
+
+/*__Information main__*/
+
+#information_carousel {
+	height: 35em;
+	background-color: lightgray;
+	margin-left: 850px;
+
+}
+.titleInfo {
+	font-size : 3em;
+	text-align: center;
+}
+
+.content_info{
+	font-size : 1.5em;
+	text-align: center;
+}
+
+.content_info img{
+	width : auto;
+	max-height: 35ex;
+
+}
+
+
+/*__form__*/
+th {font-size : 120%;}
+
+.tdcentered {text-align: center;}
+
+
+td img {
+	max-width: 75px;
+	max-height: 75px;
+}
+
+form input{
+	margin : 3px;
+}
+form button{
+	margin : 3px;
+}
+
+
+
+/*__Alerts main__*/
+
+.alert {
+	background-color: #D90404;
+	color: white;
+	width : 100%;
+	text-align: center;
+}
+
+.innerwrap {
+	position : relative;
+}
+.list {
+	text-align: center;
 }

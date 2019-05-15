@@ -85,11 +85,10 @@ class Schedule extends ControllerG
         $current_user = wp_get_current_user();
         if ($current_user->role == "television" || $current_user->role == "etudiant" || $current_user->role == "enseignant") {
             $force = true;
-            $tab = $this->getTabConfig();
             $codes = unserialize($current_user->code);
             $validSchedule = array();
             foreach ($codes as $code) {
-                if ($this->checkSchedule($tab, $code, $force))
+                if ($this->checkSchedule($code, $force))
                     $validSchedule[] = $code;
             }
             if (empty($validSchedule))
@@ -98,13 +97,16 @@ class Schedule extends ControllerG
                 if ($current_user->role == "television") {
                     $this->view->displayStartSlide();
                     foreach ($validSchedule as $schedule) {
-                        $this->displaySchedule($tab, $schedule, $force);
+                        $this->displaySchedule($schedule, $force);
                         $this->view->displayMidSlide();
                     }
                     $this->view->displayEndSlide();
                 }
+                else if($current_user->role == "etudiant"){
+                    $this->displaySchedule($validSchedule[1], $force);
+                }
                 else
-                    $this->displaySchedule($tab, $validSchedule[0], $force);
+                    $this->displaySchedule($validSchedule[0], $force);
             }
         }
         else

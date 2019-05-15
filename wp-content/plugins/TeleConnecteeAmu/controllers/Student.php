@@ -45,10 +45,6 @@ class Student extends ControllerG
     function displayAllStudents(){
         $results = $this->model->getUsersByRole('etudiant');
         if(isset($results)){
-            $badCodesYears = $this->model->codeNotBound(0);
-            $badCodesGroups = $this->model->codeNotBound(1);
-            $badCodesHalfgroups = $this->model->codeNotBound(2);
-            $badCodes = [$badCodesYears, $badCodesGroups, $badCodesHalfgroups];
             $this->view->displayTabHeadStudent();
             $row = 0;
             foreach ($results as $result){
@@ -59,7 +55,7 @@ class Student extends ControllerG
                 $year = $this->model->getTitle($code[0]);
                 $group = $this->model->getTitle($code[1]);
                 $halfgroup = $this->model->getTitle($code[2]);
-                $this->view->displayAllStudent($id, $login, $year, $group, $halfgroup, $row, $badCodes);
+                $this->view->displayAllStudent($id, $login, $year, $group, $halfgroup, $row);
             }
             $this->view->displayRedSignification();
             $this->view->displayEndTab();

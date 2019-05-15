@@ -130,16 +130,12 @@ class CodeAdeManager extends Model{
      * @param $type     Type du code (Année/Groupe/Demi-Groupe)
      */
     protected function modifyCode($id, $title, $code, $type){
-
             $req = $this->getDb()->prepare('UPDATE code_ade SET title=:title, code=:code, type=:type WHERE ID=:id');
-
             $req->bindParam(':id', $id);
             $req->bindParam(':title', $title);
             $req->bindParam(':code', $code);
             $req->bindParam(':type', $type);
-
             $req->execute();
-
     }
 
     /**
@@ -164,6 +160,7 @@ class CodeAdeManager extends Model{
      * @return array
      */
     public function getCode($id){
+        $var = 0;
         $req = $this->getDb()->prepare('SELECT * FROM code_ade WHERE ID = :id');
         $req->bindParam(':id', $id);
         $req->execute();

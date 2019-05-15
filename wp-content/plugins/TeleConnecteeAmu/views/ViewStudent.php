@@ -17,15 +17,15 @@ class ViewStudent extends ViewG
         $this->displayStartTab($tab);
     }
 
-    public function displayAllStudent($id, $login, $year, $group, $halfgroup, $row, $badCodes){
+    public function displayAllStudent($id, $login, $year, $group, $halfgroup, $row){
         echo '
         <tr>
           <th scope="row" class="text-center">'.$row.'</th>
           <td class="text-center"><input type="checkbox" name="checkboxstatus[]" value="'.$id.'"/></td>
           <td class="text-center">'.$login.'</td>
-          <td class="text-center'; if(in_array($year, $badCodes[0])) echo ' errorNotRegister'; echo '">'.$year.'</td>
-          <td class="text-center'; if(in_array($group, $badCodes[1])) echo ' errorNotRegister'; echo '">'.$group.'</td>
-          <td class="text-center'; if(in_array($halfgroup, $badCodes[2])) echo ' errorNotRegister'; echo '">'.$halfgroup.'</td>
+          <td class="text-center'; if(is_numeric($year)) echo ' errorNotRegister'; echo '">'.$year.'</td>
+          <td class="text-center'; if(is_numeric($group)) echo ' errorNotRegister'; echo '">'.$group.'</td>
+          <td class="text-center'; if(is_numeric($halfgroup)) echo ' errorNotRegister'; echo '">'.$halfgroup.'</td>
           <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs/modification-utilisateur/'.$id.'" class="btn btn-primary btn-lg" name="modif" type="submit" value="Modifier">Modifier</a></td>
         </tr>';
     }
@@ -35,12 +35,13 @@ class ViewStudent extends ViewG
     }
 
     public function displayModifyStudent($result, $years, $groups, $halfgroups){
+        $code = unserialize($result['code']);
         echo '
          <h3>'.$result['user_login'].'</h3>
          <form method="post">
             <label>Année</label>
             <select class="form-control" name="modifYear">
-                <option>'.$result['code1'].'</option>
+                <option>'.$code[0].'</option>
             ';
         $selected = $_POST['modifYear'];
         foreach ($years as $year) {
@@ -50,7 +51,7 @@ class ViewStudent extends ViewG
             </select>
             <label>Groupe</label>
             <select class="form-control" name="modifGroup">
-                <option>'.$result['code2'].'</option>';
+                <option>'.$code[1].'</option>';
         $selected = $_POST['modifGroup'];
         foreach ($groups as $group){
             echo'<option value="'.$group['code'].'"'; if($group['code'] == $selected) echo "selected"; echo'>'.$group['title'].'</option>';
@@ -59,7 +60,7 @@ class ViewStudent extends ViewG
             </select>
             <label>Demi-groupe</label>
             <select class="form-control" name="modifHalfgroup">
-                <option>'.$result['code3'].'</option>';
+                <option>'.$code[2].'</option>';
         $selected = $_POST['modifHalfgroup'];
         foreach ($halfgroups as $halfgroup){
             echo'<option value="'.$halfgroup['code'].'"'; if($halfgroup['code'] == $selected) echo "selected"; echo'>'.$halfgroup['title'].'</option>';

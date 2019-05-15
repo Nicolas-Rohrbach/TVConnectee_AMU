@@ -14,8 +14,7 @@ abstract class Model
      * Set the db with PDO
      */
     private static function setDb(){
-        global $wpdb;
-        self::$db = new PDO('mysql:host='.$wpdb->dbhost.'; dbname='.$wpdb->dbname, $wpdb->dbuser, $wpdb->dbpassword);
+        self::$db = new PDO('mysql:host='.DB_HOST.'; dbname='.DB_NAME, DB_USER, DB_PASSWORD);
         self::$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
     }
 
@@ -127,7 +126,7 @@ abstract class Model
         }
     }
 
-    protected function modifyUser($id, $login, $pwd, $code, $email){
+    protected function modifyUser($id, $login, $pwd, $email, $code){
         if ($this->verifyTuple($login)) {
             $req = $this->getDb()->prepare('UPDATE wp_users SET user_login=:login, user_pass=:pwd, code=:code, user_nicename=:name, 
                                             user_email=:email, display_name=:displayname WHERE ID=:id');

@@ -95,9 +95,11 @@ function add_menu( $items) {
                 <a href="#" title="Gestion des alertes & informations">Alertes & informations</a>
                 <button class="ast-menu-toggle" role="button" aria-expanded="true"><span class="screen-reader-text">Permutateur de Menu</span></button>
                 <ul class="sub-menu">
-                    <li><a href="/alertes">Alertes</a></li>';
+                    <li><a href="/creer-une-alerte">Créer une alerte</a></li>
+                    <li><a href="/gerer-les-alertes">Gestion des alertes</a></li>';
                 if ($current_user->role == "secretaire" || $current_user->role == "administrator") {
-                    $items .= '<li><a href="/informations">Informations</a></li>';
+                    $items .= '<li><a href="/creer-information">Créer une information</a></li>';
+                    $items .= '<li><a href="/gerer-les-informations">Gestion des informations</a></li>';
                 }
                 $items .= '
                  </ul>
