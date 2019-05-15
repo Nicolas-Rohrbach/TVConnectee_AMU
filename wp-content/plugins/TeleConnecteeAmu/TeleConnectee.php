@@ -83,6 +83,6 @@ add_action('display_alert', array($alert, 'alertMain'));
 
 
 
-add_action('test',array($information,'uploadFile'),0 ,1);
+add_action('test',array($information,'testExcel'));
 
 

@@ -293,4 +293,8 @@ class Information
         }
     }//uploadFile()
 
+    public function testExcel(){
+        testLectureExcel(101);
+    }
+
 }
