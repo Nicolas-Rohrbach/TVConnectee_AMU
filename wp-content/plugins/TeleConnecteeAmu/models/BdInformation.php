@@ -10,21 +10,17 @@
 class BdInformation
 {
 
-    /**
-     * BdInformation constructor.
-     */
     public function __construct(){
     }
 
-
     /**
-     * Correspond to the database.
+     * Correspond a la base de donnée
      * @var
      */
     private static $db;
 
     /**
-     * Set the database with wordpress.
+     * Ajoute la base de donnée avec Wordpress
      */
     private static function setDb(){
         global $wpdb;
@@ -33,7 +29,7 @@ class BdInformation
     } //setDb()
 
     /**
-     * Return the database.
+     * Renvoie la base de donnée
      * @return mixed
      */
     protected function getDb(){
@@ -42,13 +38,15 @@ class BdInformation
         return self::$db;
     }//getDb()
 
+
     /**
-     * Add the information in the database with today date and current user.
+     * Ajoute l'information dans la base de donnée avec la date du jour et l'utilisateur actuel.
+     * Renvoie l'id du dernier objet venant d'être créer.
      * @param $title
      * @param $content
      * @param $endDate
      * @param $type
-     * @return
+     * @return int
      */
     public function addInformationDB($title, $content, $endDate, $type){
         global $wpdb;
@@ -63,14 +61,12 @@ class BdInformation
         $wpdb->query($wpdb->prepare("INSERT INTO informations (`ID_info`, `title`, `author`, `creation_date`, `end_date`, `content`, `type`) 
                                          VALUES (%d, %s, %s, %s, %s, %s, %s)",
                                         null, $title, $user, $creationDate, $endDate, $content, $type));
-
-
         return $wpdb->insert_id;
 
     } //addInformationDB()
 
     /**
-     * Delete an information in the database
+     * Supprime l'information dans la base de donnée
      * @param $id
      */
     public function deleteInformationDB($id){
@@ -84,7 +80,7 @@ class BdInformation
     } //deleteInformationDB()
 
     /**
-     * Return the list of information present in database
+     * Renvoie la liste des onformations présentes dans la BD
      * @return array|null|object
      */
     public function getListInformation()
@@ -95,7 +91,7 @@ class BdInformation
     } //getListInformation()
 
     /**
-     * Return the list of information created by an user
+     * Renvoie la liste des informations crée par un utilisateur précis
      * @param $user
      * @return array|null|object
      */
@@ -112,7 +108,7 @@ class BdInformation
     } //getListInformationByAuthor()
 
     /**
-     * Return an information corresponding to the ID
+     * Retourne une information avec un Id précis
      * @param $id
      * @return mixed
      */
@@ -123,7 +119,7 @@ class BdInformation
     } //getInformationByID()
 
     /**
-     * Modify the information in database
+     * Modifie une information dans la base de donnée
      * @param $id
      * @param $title
      * @param $content
@@ -140,6 +136,5 @@ class BdInformation
         $req->execute();
 
     } //modifyInformation()
-
 
 }

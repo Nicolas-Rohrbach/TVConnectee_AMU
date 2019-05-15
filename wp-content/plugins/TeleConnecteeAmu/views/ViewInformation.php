@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: SFW
+ * User: Léa Arnaud
  * Date: 17/04/2019
  * Time: 11:35
  */
@@ -9,7 +9,7 @@
 class ViewInformation extends ViewG
 {
     /**
-     * Set the head of the table for the information's management page.
+     * Ajoute le haut du tableau de gestion des informations
      */
     public function tabHeadInformation(){
         $tab = ["Titre","Auteur","Contenu","Date de création","Date de fin"];
@@ -18,7 +18,7 @@ class ViewInformation extends ViewG
 
 
     /**
-     * Display the table of the management page, with delete and modify button.
+     * Affiche la page de gestion des informations
      * @param $id
      * @param $title
      * @param $author
@@ -31,13 +31,14 @@ class ViewInformation extends ViewG
         $tab = [$title, $author, $content, $creationDate, $endDate];
         $this->displayAll($row, $id, $tab);
         echo '
-              <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/modification-information/'.$id.'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
+              <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/modification-information/'.$id.'" 
+              class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
             </tr>';
-}
+    } // displayAllInformation()
 
 
     /**
-     * Display information in main page with a carousel
+     * Affiche les informations sur la page principal avec un carousel
      * @param $title
      * @param $content
      */
@@ -64,7 +65,8 @@ class ViewInformation extends ViewG
     } //displayInformationView()
 
     /**
-     * Display information creation form
+     * Affiche un formulaire pour choisir le type d'information que l'on veut créer
+     * et affiche le formulaire de création en fonction.
      */
     public function displayInformationCreation(){
 
@@ -100,10 +102,11 @@ class ViewInformation extends ViewG
                       </form>';
             }
             elseif ($choice == 'tab') {
-                echo '<form method="post">
+                echo '<form method="post" enctype="multipart/form-data">
                         Titre : <input type="text" name="titleInfo" placeholder="Inserer un titre" required maxlength="20"> </br>
                         Date d\'expiration : <input type="date" name="endDateInfo" min="'.$dateMin.'" required ></br>
-                        
+                        Ajout du fichier Xls (ou xlsx) : <input type="file" name="contentFile" /> </br>
+                        <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
                         <input type="submit" value="creer" name="createTab">
                       </form>';
             }
@@ -112,7 +115,7 @@ class ViewInformation extends ViewG
 
 
     /**
-     * Display information modify form
+     * Affiche le formulaire de modification d'information en fonction du type
      * @param $title
      * @param $content
      * @param $endDate

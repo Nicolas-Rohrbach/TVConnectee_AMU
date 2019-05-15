@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: SFW
+ * User: Léa Arnaud
  * Date: 17/04/2019
  * Time: 11:33
  */
@@ -103,19 +103,19 @@ class Information
                 $this->DB->modifyInformation($id,$title,$content,$endDate);
                 $this->view->refreshPage();
             }
-            elseif($actionImg == "Modifier") {
+            elseif($actionImg == "Modifier") { //si il s'agit d'une modification d'affiche
                 $contentFile = $_FILES['contentFile'];
 
                 $title =$_POST['titleInfo'];
                 $endDate =$_POST['endDateInfo'];
-                if($_FILES['contentFile']['size'] != 0) {
-                    $contentNew = $this->uploadFile($id,$contentFile,"","","modify");
+                if($_FILES['contentFile']['size'] != 0) {    //si l'image est modifié
+                    $contentNew = $this->uploadFile($contentFile,"modify","img",$id);
                     if($contentNew != null || $contentNew != 0) {
                         $this->DB->modifyInformation($id,$title,$contentNew,$endDate);
                         $this->view->refreshPage();
                     }
                 }
-                else {
+                else { // si le texte et/ou la date de fin est modifié
                     $this->DB->modifyInformation($id,$title,$content,$endDate);
                     $this->view->refreshPage();
                 }
@@ -177,11 +177,12 @@ class Information
     public function insertInformation($actionText,$actionImg,$actionTab, $title, $content, $contentFile, $endDate){
 
         $this->view->displayInformationCreation();
-        if(isset($actionText)) {
+        if(isset($actionText)) { // si c'est une création de texte
             $this->DB->addInformationDB($title, $content, $endDate,"text");
         }
-        elseif (isset($actionImg)) {
-            $result = $this->uploadFile(0,$contentFile, $title, $endDate,"create"); //upload le fichier avec un nom temporaire
+        elseif (isset($actionImg)) { // si c'est une création d'affiche
+            //upload le fichier avec un nom temporaire
+            $result = $this->uploadFile($contentFile,"create", "img", 0, $title, $endDate);
             if($result != 0) {
 
                 $id = $result;
@@ -201,15 +202,33 @@ class Information
                 $this->DB->modifyInformation($id, $title, $content, $endDate);
             }
         }
-        elseif (isset($actionTab)) {
-            echo 'pas encore implementé';
+        elseif (isset($actionTab)) { //si c'est une création d'un tableau de note
+            $result = $this->uploadFile($contentFile,"create", "tab", 0, $title, $endDate);
+            if($result != 0) {
+                $id = $result;
+                //récupère l'extension du fichier
+                $_FILES['file'] = $contentFile;
+                $extension_upload = strtolower(  substr(  strrchr($_FILES['file']['name'], '.')  ,1)  );
+
+                //renomme le fichier avec l'id de l'info
+                rename($_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/temporary.{$extension_upload}",
+                    $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.{$extension_upload}");
+
+                //modifie le contenu de l'information pour avoir le bon lien de l'image
+                $content = $id.'.'.$extension_upload;
+                $result = $this->DB->getInformationByID($id);
+                $title = $result['title'];
+                $endDate = date('Y-m-d',strtotime($result['end_date']));
+                $this->DB->modifyInformation($id, $title, $content, $endDate);
+            }
+
         }
     } //insertInformation()
 
 
     /**
-     * Upload un fichier sur le serveur, créer l'information avec un contenu temporaire pour la création d'info
-     * et renvoie le nouveau contenu pour quand il s'agit d'une modification.
+     * Upload un fichier sur le serveur, créer l'information avec un contenu temporaire
+     * ou renvoie le nouveau contenu quand il s'agit d'une modification.
      * @param $id
      * @param $file
      * @param $title
@@ -217,7 +236,7 @@ class Information
      * @param $action
      * @return int|string
      */
-    public function uploadFile($id, $file, $title, $endDate, $action){
+    public function uploadFile($file, $action, $type, $id =0, $title="", $endDate=""){
         if($action == "create"){ //si la fonction a été appelée pour la création d'une info
             $id = "temporary"; //met un id temporaire pour le nom du fichier
         }
@@ -231,7 +250,9 @@ class Information
         if ($_FILES['file']['error'] > 0) echo "Erreur lors du transfert <br>";
         if ($_FILES['file']['size'] > $maxsize) echo "Le fichier est trop volumineux <br>";
 
-        $extensions_valides = array( 'jpg' , 'jpeg' , 'gif' , 'png' );
+        if($type == "img") $extensions_valides = array( 'jpg' , 'jpeg' , 'gif' , 'png' );
+        if($type == "tab") $extensions_valides = array( 'xls' , 'xlsx' );
+
         $extension_upload = strtolower(  substr(  strrchr($_FILES['file']['name'], '.')  ,1)  );
         if ( in_array($extension_upload,$extensions_valides) ) echo "Extension correcte <br>";
 
@@ -241,14 +262,28 @@ class Information
         if ($resultat){
             echo "Transfert réussi <br>";
             if($action == "create"){
-                // Ajoute dans la BD avec un contenu temporaire
-                $result = $this->DB->addInformationDB($title,"temporary content",$endDate, "img");
-                return $result;
+                if($type == "img") {
+                    // Ajoute dans la BD avec un contenu temporaire
+                    $result = $this->DB->addInformationDB($title,"temporary content",$endDate, "img");
+                    return $result;
+                }
+                elseif ($type == "tab") {
+                    // Ajoute dans la BD avec un contenu temporaire
+                    $result = $this->DB->addInformationDB($title,"temporary content",$endDate, "tab");
+                    return $result;
+                }else{echo "le type d'information n'est pas le bon";}
             }
             elseif ($action == "modify"){
-                //renvoie le nouveau contenu de l'info
-                $content = '<img src="http://wptv/wp-content/plugins/TeleConnecteeAmu/views/Media/' . $id . '.' . $extension_upload . '">';
-                return $content;
+                if($type == "img") {
+                    //renvoie le nouveau contenu de l'info
+                    $content = '<img src="http://wptv/wp-content/plugins/TeleConnecteeAmu/views/Media/' . $id . '.' . $extension_upload . '">';
+                    return $content;
+                }
+                elseif ($type == "tab"){
+                    //renvoie le nouveau contenu de l'info
+                    $content =  $id .'.'. $extension_upload;
+                    return $content;
+                }else{echo "le type d'information n'est pas le bon";}
             }
         }
         else {
@@ -256,4 +291,5 @@ class Information
             return 0;
         }
     }//uploadFile()
+
 }
