@@ -50,6 +50,7 @@ abstract class ViewG{
           </tbody>
         </table>
         <input type="submit" value="Delete" name="Delete"/>
+        <a href="http://wptv"> Retour a la page d\'accueil</a>
         </form>';
     }
 
