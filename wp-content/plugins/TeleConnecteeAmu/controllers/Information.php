@@ -60,6 +60,7 @@ class Information
      */
     function informationManagement(){
         $result = $this->DB->getListInformation();
+        echo '<a href="http://wptv/creer-information/"> Creer une information </a>';
         $this->view->tabHeadInformation();
         $i = 0;
 
@@ -258,9 +259,6 @@ class Information
             $nom =  $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.{$extension_upload}";
             $resultat = move_uploaded_file($_FILES['file']['tmp_name'],$nom);
         }else { echo "Extension incorrecte <br>";}
-
-
-
 
         if ($resultat){
             if($action == "create"){
