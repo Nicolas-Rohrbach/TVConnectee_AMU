@@ -197,10 +197,7 @@ class Information
 
                 //modifie le contenu de l'information pour avoir le bon lien de l'image
                 $content = '<img src="http://wptv/wp-content/plugins/TeleConnecteeAmu/views/Media/'.$id.'.'.$extension_upload.'">';
-                $result = $this->DB->getInformationByID($id);
-                $title = $result['title'];
-                $endDate = date('Y-m-d',strtotime($result['end_date']));
-                $this->DB->modifyInformation($id, $title, $content, $endDate);
+                $this->changeContentFile($id, $content);
             }
         }
         elseif (isset($actionTab)) { //si c'est une création d'un tableau de note
@@ -215,16 +212,20 @@ class Information
                 rename($_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/temporary.{$extension_upload}",
                     $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.{$extension_upload}");
 
-                //modifie le contenu de l'information pour avoir le bon lien de l'image
+                //modifie le contenu de l'information pour avoir le bon nom du fichier
                 $content = $id.'.'.$extension_upload;
-                $result = $this->DB->getInformationByID($id);
-                $title = $result['title'];
-                $endDate = date('Y-m-d',strtotime($result['end_date']));
-                $this->DB->modifyInformation($id, $title, $content, $endDate);
+                $this->changeContentFile($id, $content);
             }
 
         }
     } //insertInformation()
+
+    public function changeContentFile($id, $content){
+        $result = $this->DB->getInformationByID($id);
+        $title = $result['title'];
+        $endDate = date('Y-m-d',strtotime($result['end_date']));
+        $this->DB->modifyInformation($id, $title, $content, $endDate);
+    }
 
 
     /**
