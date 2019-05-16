@@ -19,7 +19,7 @@
 
 /*___________Information main_________*/
 
-#information_carousel {
+.mySlides-info{
 	height: 35em;
 	background-color: lightgray;
 	margin-left: 850px;
@@ -88,3 +88,16 @@ form button{
 #modify_info img {
 	max-width: 240px;
 }
+
+/*__________Information Table_______________*/
+/*body { font-family: 'helvetica'; }*/
+/*#contain {*/
+    /*height: 100px;*/
+    /*overflow-y: scroll;*/
+/*}*/
+/*#table_scroll {*/
+    /*width: 100%;*/
+    /*margin-top: 100px;*/
+    /*margin-bottom: 100px;*/
+    /*border-collapse: collapse;*/
+/*}*/

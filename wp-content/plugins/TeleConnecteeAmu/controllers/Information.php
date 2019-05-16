@@ -143,25 +143,21 @@ class Information
     public function informationMain(){
 
        $result = $this->DB->getListInformation();
-
-        $titleList = array();
-        $contentList = array();
-
+       $this->view->displayStartSlide();
         foreach ($result as $row) {
 
             $id = $row['ID_info'];
             $title = $row['title'];
             $content = $row['content'];
             $endDate = date('Y-m-d',strtotime($row['end_date']));
+            $type = $row['type'];
 
             $this->endDateCheckInfo($id,$endDate);
+            $this->view->displayInformationView($title,$content,$type);
+            $this->view->displayMidSlide();
 
-            array_push($titleList, $title) ;
-            array_push($contentList,$content) ;
         }
-
-        $this->view->displayInformationView($titleList,$contentList);
-
+        $this->view->displayEndSlide();
     } // informationMain()
 
 
@@ -294,7 +290,7 @@ class Information
     }//uploadFile()
 
     public function testExcel(){
-        testLectureExcel(102);
+        readTab(102);
     }
 
 }

@@ -42,26 +42,15 @@ class ViewInformation extends ViewG
      * @param $title
      * @param $content
      */
-    public function displayInformationView($title, $content){
-        $cpt = 0;
-        echo '<div class="container-fluid">
-                <div class="row">
-                    <div id="information_carousel" class="col-sm-5">
-                        <div id="demo" class="carousel slide" data-ride="carousel">
-                            
-                            <!--The slides -->
-                            <div class="carousel-inner">';
-                                for($i=0; $i < sizeof($title); ++$i) {
-                                    $var = ($cpt == 0) ? ' active">' : '">';
-                                    echo '<div class="carousel-item' . $var.'
-                                                <div class="title">'.$title[$i].' </div>
-                                                <div class="content_info">'.$content[$i].'</div> 
-                                           </div>';
-                                    $cpt++;
-                                }
-                        echo'   </div>
-                            </div>
-                        </div>';
+    public function displayInformationView($title, $content, $type){
+          echo '   
+                <div class="title">'.$title.' </div>
+                    <div class="content_info">';
+                     if($type == "tab"){readTab(102);}
+                     else {echo $content;}
+                     echo '</div>
+                     </div>';
+
     } //displayInformationView()
 
     /**
@@ -154,4 +143,22 @@ class ViewInformation extends ViewG
         } else { echo 'Désolé, une erreur semble être survenue.';}
     } //displayModifyInformationForm()
 
+    public function displayStartSlide(){
+        echo '
+            <div class="slideshow-container-info">
+                <div class="mySlides-info">';
+    }
+
+    public function displayMidSlide(){
+        echo '
+                </div>
+              <div class="mySlides-info">';
+    }
+
+    public function displayEndSlide() {
+        echo '          
+                       </div>
+                   </div>
+        <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/slideshow.js"></script>';
+    }
 }
