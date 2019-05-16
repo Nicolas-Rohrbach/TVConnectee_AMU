@@ -8,10 +8,14 @@
 
 class Schedule extends ControllerG
 {
+    /**
+     * View de Schedule
+     * @var ViewSchedule
+     */
     private $view;
 
     /**
-     * Schedule constructor.
+     * Constructeur de Schedule.
      */
     public function __construct(){
         $this->view = new ViewSchedule();
@@ -58,7 +62,11 @@ class Schedule extends ControllerG
         if (isset($contents)) {
             $model = new CodeAdeManager();
             $title = $model->getTitle($code);
-            if ($code == $title) $this->addLogEvent("Le code s'est affiché au lieu du titre");
+            if ($code == $title){
+                $this->addLogEvent("Le code non enregistré");
+                $current_user = wp_get_current_user();
+                $title = $current_user->user_login;
+            }
             $this->view->displayName($title);
             $R34ICS->display_calendar($contents, $args);
         }
@@ -87,8 +95,14 @@ class Schedule extends ControllerG
             $force = true;
             $codes = unserialize($current_user->code);
             $validSchedule = array();
+
             foreach ($codes as $code) {
-                if ($this->checkSchedule($code, $force))
+                $addCode = new CodeAde();
+                $path = $addCode->getFilePath($code);
+                if(! file_exists($path) || file_get_contents($path) == ''){
+                    $addCode->addFile($code);
+                }
+                if($this->checkSchedule($code, $force))
                     $validSchedule[] = $code;
             }
             if (empty($validSchedule))
@@ -102,11 +116,8 @@ class Schedule extends ControllerG
                     }
                     $this->view->displayEndSlide();
                 }
-                else if($current_user->role == "etudiant"){
-                    $this->displaySchedule($validSchedule[1], $force);
-                }
                 else
-                    $this->displaySchedule($validSchedule[0], $force);
+                    $this->displaySchedule(end($validSchedule), $force);
             }
         }
         else

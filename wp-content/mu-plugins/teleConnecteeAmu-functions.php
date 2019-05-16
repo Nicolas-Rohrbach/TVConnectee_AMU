@@ -13,7 +13,7 @@ global $wpdb;
 date_default_timezone_set('Europe/Paris');
 $wpdb->time_zone = 'Europe/Paris';
 
-error_reporting(E_ERROR);
+//error_reporting(E_ERROR);
 
 /**
  * Enlève la barre admin de Wordpress

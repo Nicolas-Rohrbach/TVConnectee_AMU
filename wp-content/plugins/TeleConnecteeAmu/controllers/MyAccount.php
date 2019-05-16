@@ -55,7 +55,7 @@ class MyAccount extends ControllerG {
                 $code = wp_generate_password();
                 $exist = $this->model->getCode($current_user->ID);
                 if(isset($exist))
-                    $this->model->deleteCode($current_user->ID);
+                    $this->model->modifyCode($current_user->ID, $code);
                 if($this->model->createRandomCode($current_user->ID, $code)){
                     $message = "Voici votre code pour pouvoir vous désinscrire sur ".$_SERVER['HTTP_HOST'].".";
                     $message .= "Le code est: ".$code.".";
@@ -70,8 +70,12 @@ class MyAccount extends ControllerG {
         elseif (isset($actionDelete)){
             $code = $_POST['codeDelete'];
             $userCode = $this->model->getCode($current_user->ID);
-            if($code == $userCode[0]['code']){
+            if($code == $userCode[0]['Code']){
+                if($current_user->role == 'enseignant')
+                    $code = unserialize($current_user->code);
+                unlink($this->getFilePath($code[0]));
                 require_once( ABSPATH.'wp-admin/includes/user.php' );
+                $this->model->deleteCode($current_user->ID);
                 wp_delete_user( $current_user->ID);
                 $this->view->displayModificationValidate();
             }

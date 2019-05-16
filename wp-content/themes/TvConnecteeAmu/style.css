@@ -1,0 +1,170 @@
+/*
+    Theme Name: TvConnecteeAmu
+    Theme URI: http://www.tvconnectee.com/
+    Description: The first theme created by Nicolas Rohrbach.
+    Version: 0.1
+    Author: Nicolas Rohrbach
+    TvConnecteeAmu by Nicolas Rohrbach|| http://www.tvconnectee.com
+*/
+
+/* HEADER */
+#header {
+    margin-bottom: 20px;
+    font-family: Trebuchet MS, Lucida Grande, Arial, Helvetica, Georgia, Sans-serif;
+    float: left;
+    background:#cccccc;
+    width: 100%;
+    padding: 0 10px 20px 10px;
+}
+
+#header h1 {
+    padding: 0 20px 0 0;
+    font-size: 2em;
+    text-align: left;
+}
+#header p {
+    padding: 0 20px 0 0;
+    font-size: 1em;
+    text-align: left;
+}
+
+/* LINK */
+a {
+    color: #555;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* CONTENT */
+#content {
+    font-family: Lucida Grande, Arial, Helvetica, Sans-serif;
+    text-align: left;
+    background: white;
+    color: black;
+    float: left;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+#content h2 {
+    font-size: 2em;
+}
+
+#content h2 a{
+    font-size: 1.2em;
+    font-family: Century Gothic, Lucida Grande, Verdana, Arial, Sans-Serif;
+    color: #006699;
+}
+
+#content h2 a:hover{
+    color: #555;
+}
+
+#page {
+    margin: 0 auto 0 auto;
+    width: 100%;
+}
+
+.postmetadata {
+    font-size: 0.8em;
+    color: #999;
+}
+
+.post_content {
+    font-size: 1em;
+    color: #555;
+}
+
+.post_content a {
+    color: #006699;
+}
+
+.post_content a:hover {
+    color: #fff; background: #006699;
+}
+
+/* SIDEBAR */
+.sidebar {
+    float: right;
+    width: 30%;
+}
+
+.sidebar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.sidebar ul li{}
+.sidebar ul ul li{}
+
+.sidebar h2 {
+    font-size: 2em;
+}
+
+.sidebar a:hover {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+/* FOOTER */
+#footer {
+    text-align: center;
+    font-size: 1em;
+    background:#cccccc;
+    padding: 10px 10px 0 0;
+    clear: both;
+    width: 100%;
+}
+
+#footer p{
+    font-size: 1em;
+    padding: 0 10px 20px 0;
+}
+
+/* COMMENTS */
+.comments-template{
+    margin: 10px 0 0 0;
+}
+
+.comments-template ol{
+    margin: 10px;
+    padding: 0 0 0 15px;
+    list-style: none;
+}
+
+.comments-template ol p{
+    font-family: Trebuchet MS, Arial, Hevletica, Sans-serif;
+    font-size: 0.9em;
+}
+
+.comments-template ol li{
+    margin: 10px 0 0 0;
+    line-height: 15px;
+    padding: 0 0 10px;
+}
+
+.comments-template h2, .comments-template h3{
+    font-size: 1.2em;
+}
+
+.commentmetadata{
+    font-size: 0.9em;
+}
+
+.comments-template p.nocomments{
+    padding: 0;
+}
+
+.comments-template textarea{
+    font-family: Trebuchet MS, Arial, Hevletica, Sans-serif;
+    font-size: 0.9em;
+}
+
+.cadre_commentaires {
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}

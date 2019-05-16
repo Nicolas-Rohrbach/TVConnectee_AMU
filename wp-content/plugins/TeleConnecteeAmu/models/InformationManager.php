@@ -7,11 +7,11 @@
  */
 
 
-class BdInformation
+class InformationManager
 {
 
     /**
-     * BdInformation constructor.
+     * InformationManager constructor.
      */
     public function __construct(){
     }

@@ -53,14 +53,16 @@ include_once 'controllers/Weather.php';
 include_once 'views/ViewWeather.php';
 include_once 'widgets/WidgetWeather.php';
 
-
-include_once 'views/ViewInformation.php';
-include_once 'views/ViewAlert.php';
 include_once 'controllers/Information.php';
+include_once 'models/InformationManager.php';
+include_once 'views/ViewInformation.php';
+
 include_once 'controllers/Alert.php';
-include_once 'models/BdInformation.php';
-include_once 'models/BdAlert.php';
+include_once 'models/AlertManager.php';
+include_once 'views/ViewAlert.php';
 include_once 'widgets/WidgetAlert.php';
+
+include_once 'controllers/TvPlugin.php';
 
 add_action("wp_head", "mfp_card");
 define('ROOT', dirname(__FILE__));
@@ -135,12 +137,28 @@ add_action('init', function(){
 // Flush rewrite rules when plugin is activated
 register_activation_hook(__FILE__, function() { flush_rewrite_rules(); });
 
+$tvPlugin = new TvPlugin();
+$tvPlugin->register();
+
+//require_once plugin_dir_path(__FILE__) . 'templates/traitement.php';
+
+// activation
+register_activation_hook( __FILE__, array( $tvPlugin, 'activate' ) );
+
+// deactivation
+require_once plugin_dir_path( __FILE__ ) . 'controllers/inc/TvPluginDesactivate.php';
+register_deactivation_hook( __FILE__, array( 'TvPluginDesactivate', 'desactivate' ) );
+
+
 add_action( 'downloadFileICS', 'downloadFileICS_func' );
 function downloadFileICS_func() {
     $model = new CodeAdeManager();
     $allCodes = $model->getAllCode();
     $controllerAde = new CodeAde();
     foreach ($allCodes as $code){
+        $path = $controllerAde->getFilePath($code['code']);
         $controllerAde->addFile($code['code']);
+        if(file_get_contents($path) == '')
+            $controllerAde->addFile($code['code']);
     }
 }

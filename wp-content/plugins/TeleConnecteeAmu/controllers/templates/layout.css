@@ -1,0 +1,46 @@
+#clayout {
+    display: flex;
+}
+
+#dimension {
+    display: flex;
+}
+
+.zonegestion {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.dim {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+
+}
+
+#zonedrop {
+    width: 720px;
+    height: 480px;
+    min-height: 480px;
+    min-width: 720px;
+    border-style: dashed;
+    border-color: #aaaaaa;
+}
+
+#gestionLayout{
+    display: flex;
+}
+
+.ligne{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0;
+
+}
+.dropbox{
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #222538;
+    margin: 0;
+}

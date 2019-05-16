@@ -352,7 +352,7 @@ class PHPExcel_Writer_Excel2007 extends PHPExcel_Writer_Abstract implements PHPE
 					// VML Drawing relationships
 					$objZip->addFromString('xl/drawings/_rels/vmlDrawingHF' . ($i + 1) . '.vml.rels', $this->getWriterPart('Rels')->writeHeaderFooterDrawingRelationships($this->_spreadSheet->getSheet($i)));
 
-					// Media
+					// media
 					foreach ($this->_spreadSheet->getSheet($i)->getHeaderFooter()->getImages() as $image) {
 						$objZip->addFromString('xl/media/' . $image->getIndexedFilename(), file_get_contents($image->getPath()));
 					}

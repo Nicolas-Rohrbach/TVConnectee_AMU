@@ -160,7 +160,7 @@ class CodeAdeManager extends Model{
      * @return array
      */
     public function getCode($id){
-        $var = 0;
+        $var = [];
         $req = $this->getDb()->prepare('SELECT * FROM code_ade WHERE ID = :id');
         $req->bindParam(':id', $id);
         $req->execute();

@@ -15,7 +15,7 @@ class Alert
      * Constructeur d'alert, initialise le modèle et la vue.
      */
     public function __construct(){
-        $this->DB = new BdAlert();
+        $this->DB = new AlertManager();
         $this->view = new ViewAlert();
     }
 

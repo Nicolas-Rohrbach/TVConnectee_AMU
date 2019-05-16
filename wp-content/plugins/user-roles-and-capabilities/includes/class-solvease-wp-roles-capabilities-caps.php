@@ -206,7 +206,7 @@ class Solvease_Roles_Capabilities_User_Caps
                 )
             ),
             'media' => array(
-                'name' => 'Media Related Capabilities',
+                'name' => 'media Related Capabilities',
                 'cap' => array(
                     'edit_files' => array(
                         'name' => 'edit_files',

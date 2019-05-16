@@ -2,6 +2,7 @@
 require_once("PHPExcel/IOFactory.php");
 
 function excelStudent($actionEtud){
+    $controller = new CodeAde();
     $model = new StudentManager();
 
     global $wpdb;
@@ -32,9 +33,14 @@ function excelStudent($actionEtud){
                         $group = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(3, $row)->getValue());
                         $halfgroup = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(4, $row)->getValue());
 
-                        $code = [$year, $group, $halfgroup];
+                        $codes = [$year, $group, $halfgroup];
 
-                        if($model->insertStudent($login, $hashpass, $email, $code)) {
+                        if($model->insertStudent($login, $hashpass, $email, $codes)) {
+                            foreach ($codes as $code){
+                                $path = $controller->getFilePath($code);
+                                if(! file_exists($path) || file_get_contents($path) == '')
+                                    $controller->addFile($code);
+                            }
                             $message = "Bonjour, vous avez été inscrit sur le site de la Télé Connecté de votre département en temps qu'étudiant. <br> Sur ce site, vous aurez accès à votre emploie du temps, à vos notes et aux informations concernant votre scolarité. <br>" ;
                             $message2 = $message . "Votre identifiant est " . $login . " et votre mot de passe est " . $pwd . ". <br>"  ;
                             $message3 = $message2 . "Pour vous connecter, rendez vous sur le site : tv-connectee-amu.alwaysdata.net ." . "<br> Nous vous souhaitons une bonne expérience sur notre site. <br>" ;
@@ -65,6 +71,7 @@ function excelStudent($actionEtud){
 }
 
 function excelTeacher($actionTeacher){
+    $controller = new CodeAde();
     $model = new TeacherManager();
     global $wpdb;
     $doubles = array();
@@ -87,6 +94,9 @@ function excelTeacher($actionTeacher){
                         $email = mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(1, $row)->getValue());
                         $code = [mysqli_real_escape_string($con, $worksheet->getCellByColumnAndRow(2, $row)->getValue())];
                         if($model->insertTeacher($login, $hashpass, $email, $code)) {
+                            $path = $controller->getFilePath($code);
+                            if(! file_exists($path) || file_get_contents($path) == '')
+                                $controller->addFile($code[0]);
                             $message = "Bonjour, vous avez été inscrit sur le site de la Télé Connecté de votre département en temps que professeur. <br> Sur ce site, vous aurez accès à votre emploie du temps, à vos notes et aux informations concernant votre scolarité. <br>" ;
                             $message2 = $message . "Votre identifiant est " . $login . " et votre mot de passe est " . $pwd . ". <br>"  ;
                             $message3 = $message2 . "Pour vous connecter, rendez vous sur le site : tv-connectee-amu.alwaysdata.net ." . "<br> Nous vous souhaitons une bonne expérience sur notre site. <br>" ;

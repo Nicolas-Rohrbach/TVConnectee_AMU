@@ -79,7 +79,7 @@ class CodeAde extends ControllerG
      */
     public function addFile($code){
         $tab = $this->getTabConfig();
-        $path = ABSPATH . "/wp-content/plugins/TeleConnecteeAmu/controllers/fileICS/" . $code;
+        $path = $this->getFilePath($code);
         $url = 'https://ade-consult.univ-amu.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=' . $code . '&projectId=8&startDay=' . $tab[0] . '&startMonth=' . $tab[1] . '&startYear=' . $tab[2] . '&endDay=' . $tab[3] . '&endMonth=' . $tab[4] . '&endYear=' . $tab[5] . '&calType=ical';
         file_put_contents($path, fopen($url, 'r'));
     }

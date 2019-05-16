@@ -6,7 +6,7 @@
  * Time: 11:01
  */
 
-class BdAlert
+class AlertManager
 {
     /**
      * Correspond to the database

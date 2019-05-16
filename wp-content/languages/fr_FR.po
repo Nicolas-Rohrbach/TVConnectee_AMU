@@ -1374,7 +1374,7 @@ msgid "Your site doesn’t include support for the \"%s\" block. You can leave t
 msgstr "Votre site ne propose pas de support pour le bloc « %s ». Vous pouvez laisser ce bloc tel quel, convertir son contenu en bloc HTML personnalisé ou le retirer complètement."
 
 #: wp-includes/js/dist/block-library.js:9010
-msgid "Media area"
+msgid "media area"
 msgstr "Zone de média"
 
 #: wp-includes/js/dist/block-library.js:9391
@@ -1382,11 +1382,11 @@ msgid "Set media and words side-by-side for a richer layout."
 msgstr "Définir un média et du texte côte-à-côte pour une mise en page plus riche."
 
 #: wp-includes/js/dist/block-library.js:9390
-msgid "Media & Text"
+msgid "media & Text"
 msgstr "Média & texte"
 
 #: wp-includes/js/dist/block-library.js:9269
-msgid "Media & Text Settings"
+msgid "media & Text Settings"
 msgstr "Réglages média & texte"
 
 #: wp-includes/js/dist/block-library.js:9253
@@ -1679,7 +1679,7 @@ msgid "Resize for smaller devices"
 msgstr "Redimensionner pour les petits appareils"
 
 #: wp-includes/js/dist/block-library.js:3703
-msgid "Media Settings"
+msgid "media Settings"
 msgstr "Réglages des médias"
 
 #: wp-includes/js/dist/block-library.js:3699
@@ -2079,7 +2079,7 @@ msgid "Find original"
 msgstr "Trouver l’original"
 
 #: wp-includes/js/dist/edit-post.js:1000
-msgid "Select or Upload Media"
+msgid "Select or Upload media"
 msgstr "Sélectionnez ou téléversez un fichier"
 
 #: wp-includes/js/dist/edit-post.js:3528
@@ -3952,7 +3952,7 @@ msgid "WordPress User"
 msgstr "Utilisateur WordPress"
 
 #: wp-includes/media.php:4115
-msgid "WordPress Media"
+msgid "WordPress media"
 msgstr "Média WordPress"
 
 #: wp-includes/script-loader.php:1555
@@ -5318,7 +5318,7 @@ msgstr[1] "%s éléments"
 
 #: wp-includes/widgets/class-wp-widget-media.php:70
 msgctxt "label for button in the media widget"
-msgid "Add Media"
+msgid "Add media"
 msgstr "Ajouter un média"
 
 #: wp-includes/widgets/class-wp-widget-media-video.php:39
@@ -5411,13 +5411,13 @@ msgid "Looks like this isn&#8217;t the correct kind of file. Please link to an a
 msgstr "Il semble qu’il ne s’agisse pas du bon type de fichier. Veuillez lier vers un fichier approprié."
 
 #: wp-includes/widgets/class-wp-widget-media.php:81
-msgid "Media Widget"
+msgid "media Widget"
 msgstr "Widget média"
 
 #. translators: %d: widget count
 #: wp-includes/widgets/class-wp-widget-media.php:80
-msgid "Media Widget (%d)"
-msgid_plural "Media Widget (%d)"
+msgid "media Widget (%d)"
+msgid_plural "media Widget (%d)"
 msgstr[0] "Widget média (%d)"
 msgstr[1] "Widgets média (%d)"
 
@@ -5432,12 +5432,12 @@ msgstr "Ajouter au widget"
 
 #: wp-includes/widgets/class-wp-widget-media.php:72
 msgctxt "label for button in the media widget; should preferably not be longer than ~13 characters long"
-msgid "Edit Media"
+msgid "Edit media"
 msgstr "Modifier le média"
 
 #: wp-includes/widgets/class-wp-widget-media.php:71
 msgctxt "label for button in the media widget; should preferably not be longer than ~13 characters long"
-msgid "Replace Media"
+msgid "Replace media"
 msgstr "Remplacer le média"
 
 #: wp-includes/widgets/class-wp-widget-media.php:69
@@ -6432,7 +6432,7 @@ msgid "Document Preview"
 msgstr "Aperçu du document"
 
 #: wp-includes/class-wp-customize-manager.php:5200
-msgid "Header Media"
+msgid "Header media"
 msgstr "Média de l’en-tête"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:336
@@ -10316,7 +10316,7 @@ msgstr "Format"
 
 #: wp-includes/post.php:72
 msgctxt "post type general name"
-msgid "Media"
+msgid "media"
 msgstr "Fichier média"
 
 #: wp-includes/post.php:74
@@ -10365,7 +10365,7 @@ msgid "No plugins found. Try a different search."
 msgstr "Aucune extension trouvée. Veuillez essayer une recherche différente."
 
 #: wp-includes/media.php:3681
-msgid "Search Media"
+msgid "Search media"
 msgstr "Rechercher un fichier média"
 
 #: wp-includes/media.php:3680
@@ -11544,7 +11544,7 @@ msgid "Failed to write request to temporary file."
 msgstr "Impossible d’écrire la requête dans un fichier temporaire."
 
 #: wp-includes/media-template.php:709
-msgid "Embed Media Player"
+msgid "Embed media Player"
 msgstr "Lecteur de média embarqué"
 
 #: wp-includes/media-template.php:726
@@ -11552,7 +11552,7 @@ msgid "Link to Attachment Page"
 msgstr "Lien vers la page du fichier joint"
 
 #: wp-includes/media-template.php:719
-msgid "Link to Media File"
+msgid "Link to media File"
 msgstr "Lien vers le fichier média"
 
 #: wp-includes/media-template.php:696
@@ -11954,7 +11954,7 @@ msgid "Create Gallery"
 msgstr "Créer une galerie"
 
 #: wp-includes/media.php:3657 wp-includes/js/dist/block-editor.js:16137
-msgid "Media Library"
+msgid "media Library"
 msgstr "Bibliothèque de médias"
 
 #: wp-includes/ms-deprecated.php:617
@@ -12010,7 +12010,7 @@ msgstr ""
 #: wp-includes/js/dist/block-library.js:10191
 #: wp-includes/js/dist/block-library.js:11726
 #: wp-includes/js/dist/block-library.js:13037
-msgid "Media File"
+msgid "media File"
 msgstr "Fichier média"
 
 #: wp-includes/media-template.php:728 wp-includes/media-template.php:790
@@ -12129,7 +12129,7 @@ msgid "Create a new gallery"
 msgstr "Créer une nouvelle galerie"
 
 #: wp-includes/js/dist/block-library.js:6210
-msgid "Insert Media"
+msgid "Insert media"
 msgstr "Insérer un média"
 
 #: wp-includes/post.php:76
@@ -12817,7 +12817,7 @@ msgstr "Utilisateur"
 
 #: wp-includes/post.php:73
 msgctxt "add new from admin bar"
-msgid "Media"
+msgid "media"
 msgstr "Fichier média"
 
 #: wp-includes/taxonomy.php:555
@@ -15950,7 +15950,7 @@ msgid "New Post"
 msgstr "Nouvel article"
 
 #: wp-includes/post.php:75
-msgid "Edit Media"
+msgid "Edit media"
 msgstr "Modifier un média"
 
 #: wp-includes/post.php:1626
@@ -16069,7 +16069,7 @@ msgstr "Adresse web de l’image"
 
 #: wp-includes/media.php:4171 wp-includes/class-wp-editor.php:1127
 #: wp-includes/js/dist/block-editor.js:16098
-msgid "Media"
+msgid "media"
 msgstr "Médias"
 
 #: wp-includes/media-template.php:366 wp-includes/media-template.php:580
@@ -16137,7 +16137,7 @@ msgstr "Enregistré."
 
 #: wp-includes/media.php:3636 wp-includes/media.php:3658
 #: wp-includes/class-wp-editor.php:1288
-msgid "Add Media"
+msgid "Add media"
 msgstr "Ajouter un média"
 
 #. translators: %s: file name

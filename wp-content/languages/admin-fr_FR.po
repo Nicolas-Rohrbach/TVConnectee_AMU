@@ -1481,7 +1481,7 @@ msgid "Server"
 msgstr "Serveur"
 
 #: wp-admin/includes/class-wp-debug-data.php:156
-msgid "Media Handling"
+msgid "media Handling"
 msgstr "Prise en charge des médias"
 
 #: wp-admin/includes/class-wp-debug-data.php:150
@@ -3929,7 +3929,7 @@ msgstr[0] "%s fichier média détaché."
 msgstr[1] "%s fichiers médias détachés."
 
 #: wp-admin/upload.php:302
-msgid "Media file detached."
+msgid "media file detached."
 msgstr "Fichier média détaché."
 
 #. translators: %s: number of media files
@@ -3940,12 +3940,12 @@ msgstr[0] "%s fichier média attaché."
 msgstr[1] "%s fichiers médias attachés."
 
 #: wp-admin/upload.php:291
-msgid "Media file attached."
+msgid "media file attached."
 msgstr "Fichier média attaché."
 
 #: wp-admin/media.php:107 wp-admin/upload.php:285 wp-admin/upload.php:345
 #: wp-admin/edit-form-advanced.php:193
-msgid "Media file updated."
+msgid "media file updated."
 msgstr "Fichier média mis à jour."
 
 #. translators: 1: theme name, 2: version number
@@ -4514,11 +4514,11 @@ msgid "Filter users list"
 msgstr "Liste des filtres utilisateurs"
 
 #: wp-admin/upload.php:257
-msgid "Media items list"
+msgid "media items list"
 msgstr "Liste des éléments média"
 
 #: wp-admin/upload.php:256
-msgid "Media items list navigation"
+msgid "media items list navigation"
 msgstr "Navigation de la liste des éléments média"
 
 #: wp-admin/upload.php:255
@@ -5136,7 +5136,7 @@ msgid "<a href=\"https://codex.wordpress.org/Users_Your_Profile_Screen\">Documen
 msgstr "<a href=\"https://codex.wordpress.org/Users_Your_Profile_Screen\">Documentation sur le Profil utilisateur (en)</a>"
 
 #: wp-admin/media-new.php:60
-msgid "<a href=\"https://codex.wordpress.org/Media_Add_New_Screen\">Documentation on Uploading Media Files</a>"
+msgid "<a href=\"https://codex.wordpress.org/Media_Add_New_Screen\">Documentation on Uploading media Files</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Media_Add_New_Screen\">Documentation sur le téléversement de fichiers média (en)</a>"
 
 #: wp-admin/users.php:74
@@ -5156,7 +5156,7 @@ msgid "<a href=\"https://codex.wordpress.org/Dashboard_Updates_Screen\">Document
 msgstr "<a href=\"https://codex.wordpress.org/Dashboard_Updates_Screen\">Documentation sur la mise à jour de WordPress (en)</a>"
 
 #: wp-admin/options-media.php:37
-msgid "<a href=\"https://codex.wordpress.org/Settings_Media_Screen\">Documentation on Media Settings</a>"
+msgid "<a href=\"https://codex.wordpress.org/Settings_Media_Screen\">Documentation on media Settings</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Settings_Media_Screen\">Documentation sur les réglages des médias (en)</a>"
 
 #: wp-admin/options-general.php:48
@@ -5180,7 +5180,7 @@ msgid "<a href=\"https://codex.wordpress.org/Tools_Screen\">Documentation on Too
 msgstr "<a href=\"https://codex.wordpress.org/Tools_Screen\">Documentation sur les outils (en)</a>"
 
 #: wp-admin/upload.php:75 wp-admin/upload.php:249
-msgid "<a href=\"https://codex.wordpress.org/Media_Library_Screen\">Documentation on Media Library</a>"
+msgid "<a href=\"https://codex.wordpress.org/Media_Library_Screen\">Documentation on media Library</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Media_Library_Screen\">Documentation sur la bibliothèque des médias (en)</a>"
 
 #: wp-admin/edit-form-advanced.php:308
@@ -5188,7 +5188,7 @@ msgid "<a href=\"https://codex.wordpress.org/Pages_Screen#Editing_Individual_Pag
 msgstr "<a href=\"https://codex.wordpress.org/Pages_Screen#Editing_Individual_Pages\">Documentation sur la modification des pages (en)</a>"
 
 #: wp-admin/media.php:95 wp-admin/edit-form-advanced.php:326
-msgid "<a href=\"https://codex.wordpress.org/Media_Add_New_Screen#Edit_Media\">Documentation on Edit Media</a>"
+msgid "<a href=\"https://codex.wordpress.org/Media_Add_New_Screen#Edit_Media\">Documentation on Edit media</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Media_Add_New_Screen#Edit_Media\">Documentation sur la modification des médias (en)</a>"
 
 #: wp-admin/users.php:75
@@ -5753,7 +5753,7 @@ msgid "You can view your media in a simple visual grid or a list with columns. S
 msgstr "Vous pouvez voir vos médias dans une grille ou dans une liste avec des colonnes. Passez de l’un à l’autre en utilisant les icônes en haut à gauche des médias."
 
 #: wp-admin/upload.php:56
-msgid "All the files you&#8217;ve uploaded are listed in the Media Library, with the most recent uploads listed first."
+msgid "All the files you&#8217;ve uploaded are listed in the media Library, with the most recent uploads listed first."
 msgstr "Tous les fichiers que vous avez téléversés sont listés dans la bibliothèque de médias, avec le dernier téléversé qui apparaît en premier."
 
 #: wp-admin/plugin-install.php:97
@@ -5804,7 +5804,7 @@ msgstr "Ajouter l’utilisateur sans envoyer de message lui demandant de confirm
 
 #. translators: %s: list view URL
 #: wp-admin/upload.php:102
-msgid "The grid view for the Media Library requires JavaScript. <a href=\"%s\">Switch to the list view</a>."
+msgid "The grid view for the media Library requires JavaScript. <a href=\"%s\">Switch to the list view</a>."
 msgstr "La vue en grille de la Bibliothèque de Médias nécessite JavaScript. <a href=\"%s\">Passer à la vue en liste</a>."
 
 #: wp-admin/update-core.php:214
@@ -5910,7 +5910,7 @@ msgid "You can edit the image while preserving the thumbnail. For example, you m
 msgstr "Vous pouvez modifier l’image tout en préservant sa miniature. Par exemple, vous pourriez vouloir avoir une miniature carrée qui n’afficherait qu’une partie de l’image."
 
 #: wp-admin/includes/image-edit.php:120
-msgid "Once you have made your selection, you can adjust it by entering the size in pixels. The minimum selection size is the thumbnail size as set in the Media settings."
+msgid "Once you have made your selection, you can adjust it by entering the size in pixels. The minimum selection size is the thumbnail size as set in the media settings."
 msgstr "Une fois que votre sélection est faite, vous pouvez l’ajuster en saisissant une taille en pixels. La taille minimale de la sélection est celle des miniatures, tel que défini dans les réglages des Média."
 
 #: wp-admin/includes/image-edit.php:117
@@ -6521,7 +6521,7 @@ msgid "Upgrading to a newer version of the same theme will override changes made
 msgstr "La mise à jour vers une nouvelle version du thème supprimera les modifications que vous aurez faites. Pour éviter cela, nous vous conseillons de passer plutôt par un <a href=\"%s\">Thème-Enfant</a>."
 
 #: wp-admin/options-media.php:52
-msgid "The sizes listed below determine the maximum dimensions in pixels to use when adding an image to the Media Library."
+msgid "The sizes listed below determine the maximum dimensions in pixels to use when adding an image to the media Library."
 msgstr "Les tailles précisées ci-dessous déterminent les dimensions maximales (en pixels) à utiliser lors de l’insertion d’une image dans la bibliothèque de médias."
 
 #: wp-admin/options-discussion.php:179
@@ -7108,7 +7108,7 @@ msgid "%s is currently editing"
 msgstr "%s modifie actuellement ce contenu"
 
 #: wp-admin/edit-form-advanced.php:332
-msgid "You can upload and insert media (images, audio, documents, etc.) by clicking the Add Media button. You can select from the images and files already uploaded to the Media Library, or upload new media to add to your page or post. To create an image gallery, select the images to add and click the &#8220;Create a new gallery&#8221; button."
+msgid "You can upload and insert media (images, audio, documents, etc.) by clicking the Add media button. You can select from the images and files already uploaded to the media Library, or upload new media to add to your page or post. To create an image gallery, select the images to add and click the &#8220;Create a new gallery&#8221; button."
 msgstr "Vous pouvez téléverser et insérer des fichiers média (images, sons, documents, etc.) en cliquant sur le bouton « Ajouter un média ». Vous pouvez sélectionner vos images et fichiers parmi ceux déjà présents dans la bibliothèque de médias, ou en téléverser de nouveaux à ajouter à votre article/page. Pour créer une galerie d’images, sélectionnez les images à ajouter et cliquez sur le bouton « Créer une nouvelle galerie »."
 
 #: wp-admin/includes/image-edit.php:211
@@ -7137,7 +7137,7 @@ msgid "Several boxes on this screen contain settings for how your content will b
 msgstr "Plusieurs sections de cet écran vous permettez de régler la manière dont votre contenu sera publié, notamment :"
 
 #: wp-admin/edit-form-advanced.php:338
-msgid "Inserting Media"
+msgid "Inserting media"
 msgstr "Insertion de média"
 
 #: wp-admin/edit-form-advanced.php:261
@@ -7149,7 +7149,7 @@ msgid "Don&#8217;t forget to click &#8220;Save Changes&#8221; when you&#8217;re 
 msgstr "N’oubliez pas de cliquer sur « Enregistrer les modifications » quand vous avez terminé !"
 
 #: wp-admin/custom-background.php:91
-msgid "To use a background image, simply upload it or choose an image that has already been uploaded to your Media Library by clicking the &#8220;Choose Image&#8221; button. You can display a single instance of your image, or tile it to fill the screen. You can have your background fixed in place, so your site content moves on top of it, or you can have it scroll with your site."
+msgid "To use a background image, simply upload it or choose an image that has already been uploaded to your media Library by clicking the &#8220;Choose Image&#8221; button. You can display a single instance of your image, or tile it to fill the screen. You can have your background fixed in place, so your site content moves on top of it, or you can have it scroll with your site."
 msgstr "Pour utiliser une image de fond, téléversez-la simplement ou choisissez une image déjà téléversée dans votre Bibliothèque de Médias en cliquant sur le bouton « Choisir l’image ». Vous pouvez n’afficher qu’une occurrence de l’image, ou la répéter afin de remplir l’écran. Vous pouvez choisir de garder le fond en place quand vous faites défiler le contenu, ou au contraire faire que le fond défile en même temps."
 
 #: wp-admin/includes/media.php:2846
@@ -7437,7 +7437,7 @@ msgid "Select comment"
 msgstr "Sélectionnez un commentaire"
 
 #: wp-admin/custom-header.php:109
-msgid "You can set a custom image header for your site. Simply upload the image and crop it, and the new header will go live immediately. Alternatively, you can use an image that has already been uploaded to your Media Library by clicking the &#8220;Choose Image&#8221; button."
+msgid "You can set a custom image header for your site. Simply upload the image and crop it, and the new header will go live immediately. Alternatively, you can use an image that has already been uploaded to your media Library by clicking the &#8220;Choose Image&#8221; button."
 msgstr "Vous pouvez utiliser une image d’en-tête personnalisée pour votre site. Téléversez simplement l’image, recadrez-la, et le nouvel en-tête sera aussitôt en ligne. Autrement, vous pouvez utiliser une image qui a déjà été téléversée dans votre Bibliothèque de Médias, en cliquant sur le bouton « Choisissez une image »."
 
 #: wp-admin/custom-header.php:865
@@ -8303,7 +8303,7 @@ msgid "Pages are similar to posts in that they have a title, body text, and asso
 msgstr "Les pages sont comme des articles, en cela qu’elles ont un titre, un contenu et des métadonnées associées ; mais elles diffèrent en cela qu’elles ne font pas partie du flux chronologique du blog - un peu comme des articles permanents. Les pages ne sont pas catégorisées et ne reçoivent pas d’étiquettes, mais peuvent disposer d’une hiérarchie. En effet, vous pouvez imbriquer des pages sous d’autres pages, faisant de ces dernières les « parentes » des premières, créant ainsi un groupement de pages."
 
 #: wp-admin/upload.php:225
-msgid "All the files you&#8217;ve uploaded are listed in the Media Library, with the most recent uploads listed first. You can use the Screen Options tab to customize the display of this screen."
+msgid "All the files you&#8217;ve uploaded are listed in the media Library, with the most recent uploads listed first. You can use the Screen Options tab to customize the display of this screen."
 msgstr "Tous les fichiers que vous avez téléversés sont listés dans la Bibliothèque de Médias, les plus récents en premier. Vous pouvez utiliser l’onglet « Options de l’écran » pour personnaliser l’affichage de cet écran."
 
 #: wp-admin/upload.php:243
@@ -9233,7 +9233,7 @@ msgid "Note that you crop the image by clicking on it (the Crop icon is already 
 msgstr "Pour recadrer une image, cliquez sur l’icône Recadrer puis sélectionnez la zone à conserver en cliquant sur l’image et en faisant glisser le curseur de la souris. Ensuite, cliquez sur Enregistrer pour conserver votre modification."
 
 #: wp-admin/media.php:89 wp-admin/edit-form-advanced.php:320
-msgid "Remember to click Update Media to save metadata entered or changed."
+msgid "Remember to click Update media to save metadata entered or changed."
 msgstr "Pensez bien à cliquer sur le bouton « Mettre à jour le fichier » afin de conserver les métadonnées ajoutées ou modifiées."
 
 #: wp-admin/widgets.php:58
@@ -10516,15 +10516,15 @@ msgid "Use https"
 msgstr "Utiliser https"
 
 #: wp-admin/upload.php:336 wp-admin/upload.php:349
-msgid "Media file restored from the trash."
+msgid "media file restored from the trash."
 msgstr "Fichier média récupéré depuis la corbeille."
 
 #: wp-admin/upload.php:324 wp-admin/upload.php:348
-msgid "Media file moved to the trash."
+msgid "media file moved to the trash."
 msgstr "Fichier média déplacé dans la corbeille."
 
 #: wp-admin/upload.php:313 wp-admin/upload.php:346
-msgid "Media file permanently deleted."
+msgid "media file permanently deleted."
 msgstr "Fichier média définitivement supprimé."
 
 #: wp-admin/edit-tags.php:137 wp-admin/options.php:78
@@ -11288,7 +11288,7 @@ msgid "Library"
 msgstr "Bibliothèque"
 
 #: wp-admin/media.php:135 wp-admin/media.php:155
-msgid "Update Media"
+msgid "Update media"
 msgstr "Mettre à jour le fichier"
 
 #: wp-admin/media.php:72
@@ -11304,7 +11304,7 @@ msgid "Sorry, you are not allowed to edit this attachment."
 msgstr "Désolé, vous n’avez pas l’autorisation de modifier ce fichier attaché."
 
 #: wp-admin/media-new.php:42
-msgid "Upload New Media"
+msgid "Upload New media"
 msgstr "Envoi d’un nouveau média"
 
 #: wp-admin/maint/repair.php:167

@@ -1,0 +1,52 @@
+body{
+    font-family: 'Source Code Pro',Carlito,Serif;
+    margin: 0px;
+}
+
+
+
+
+.header{
+    float: right;
+    width:28%;
+}
+
+#genial{
+    display: flex;
+    flex-direction:row;
+}
+
+#top {
+    width: 99.8%;
+    height: 180px;
+    border: 1px solid #aaaaaa;
+}
+
+
+#left {
+    width: 20%;
+    height: 600px;
+    border: 1px solid #aaaaaa;
+}
+
+
+#center {
+    width:  60%;
+    height: 600px;
+    border: 1px solid #aaaaaa;
+}
+
+
+#right {
+    width: 20%;
+    height: 600px;
+    border: 1px solid #aaaaaa;
+}
+
+
+#bottom {
+    width: 99.8%;
+    height: 180px;
+    border: 1px solid #aaaaaa;
+}
+

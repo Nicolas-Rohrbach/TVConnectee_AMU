@@ -14,7 +14,7 @@ class Information {
      * Constructeur d'information, initialise le modèle et la vue.
      */
     public function __construct(){
-        $this->DB = new BdInformation();
+        $this->DB = new InformationManager();
         $this->view = new ViewInformation();
     }
 
@@ -43,11 +43,11 @@ class Information {
 
 
     /**
-     * Supprime un fichier dans le dossier Media ayant comme nom une id.
+     * Supprime un fichier dans le dossier media ayant comme nom une id.
      * @param $id
      */
     public function deleteFile($id) {
-        $file = glob($_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.*");
+        $file = glob($_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/media/{$id}.*");
         foreach ($file as $filename) {
             unlink($filename);
         }
@@ -189,11 +189,11 @@ class Information {
                 $extension_upload = strtolower(  substr(  strrchr($_FILES['file']['name'], '.')  ,1)  );
 
                 //renomme le fichier avec l'id de l'info
-                rename($_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/temporary.{$extension_upload}",
-                    $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.{$extension_upload}");
+                rename($_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/media/temporary.{$extension_upload}",
+                    $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/media/{$id}.{$extension_upload}");
 
                 //modifie le contenu de l'information pour avoir le bon lien de l'image
-                $content = '<img src="http://wptv/wp-content/plugins/TeleConnecteeAmu/views/Media/'.$id.'.'.$extension_upload.'">';
+                $content = '<img src="http://wptv/wp-content/plugins/TeleConnecteeAmu/views/media/'.$id.'.'.$extension_upload.'">';
                 $result = $this->DB->getInformationByID($id);
                 $title = $result['title'];
                 $endDate = date('Y-m-d',strtotime($result['end_date']));
@@ -234,7 +234,7 @@ class Information {
         $extension_upload = strtolower(  substr(  strrchr($_FILES['file']['name'], '.')  ,1)  );
         if ( in_array($extension_upload,$extensions_valides) ) echo "Extension correcte <br>";
 
-        $nom =  $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.{$extension_upload}";
+        $nom =  $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/media/{$id}.{$extension_upload}";
         $resultat = move_uploaded_file($_FILES['file']['tmp_name'],$nom);
 
         if ($resultat){
@@ -246,7 +246,7 @@ class Information {
             }
             elseif ($action == "modify"){
                 //renvoie le nouveau contenu de l'info
-                $content = '<img src="http://wptv/wp-content/plugins/TeleConnecteeAmu/views/Media/' . $id . '.' . $extension_upload . '">';
+                $content = '<img src="http://wptv/wp-content/plugins/TeleConnecteeAmu/views/media/' . $id . '.' . $extension_upload . '">';
                 return $content;
             }
         }

@@ -40,4 +40,9 @@ abstract class ControllerG {
         $event = $time.$event."\n";
         file_put_contents(ABSPATH."/wp-content/plugins/TeleConnecteeAmu/fichier.log", $event, FILE_APPEND);
     }
+
+    public function getFilePath($code){
+        $path = ABSPATH . "/wp-content/plugins/TeleConnecteeAmu/controllers/fileICS/" . $code;
+        return $path;
+    }
 }
