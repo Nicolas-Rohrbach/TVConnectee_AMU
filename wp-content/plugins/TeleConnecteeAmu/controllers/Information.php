@@ -294,7 +294,7 @@ class Information
     }//uploadFile()
 
     public function testExcel(){
-        testLectureExcel(101);
+        testLectureExcel(102);
     }
 
 }

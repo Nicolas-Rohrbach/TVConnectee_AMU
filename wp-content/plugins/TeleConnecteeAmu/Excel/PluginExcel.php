@@ -8,22 +8,22 @@ function testLectureExcel($id){
     foreach ($file as $i) {
         $filename = $i;
     }
-//$tmpfname = ABSPATH."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$filenames}";
 $excelReader = PHPExcel_IOFactory::createReaderForFile($filename);
 $excelObj = $excelReader->load($filename);
 $worksheet = $excelObj->getSheet(0);
 $lastRow = $worksheet->getHighestRow();
 
-echo "<table>";
+echo '<table style="width: 50%">';
 for ($row = 1; $row <= $lastRow; $row++) {
-    echo '<tr><td style="">';
+    if($row ==1) $var = 'style="background-color: #7E6A7C;"';
+    else $var = '';
+    echo '<tr style="font-size: 150%;"><td '.$var.'>';
     echo $worksheet->getCell('A'.$row)->getValue();
-    echo "</td><td>";
+    echo '</td><td '.$var.'>';
     echo $worksheet->getCell('B'.$row)->getValue();
-    echo "</td><td>";
+    echo '</td><td '.$var.'>';
     echo $worksheet->getCell('C'.$row)->getValue();
     echo "</td><tr>";
 }
 echo "</table>";
-
 }
