@@ -14,19 +14,24 @@ $worksheet = $excelObj->getSheet(0);
 $lastRow = $worksheet->getHighestRow();
 
 echo '
-     <table class="tab_info">';
+<div class="tab">
+    <div class="ticker2">
+            <div class="innerWrap">
+             ';
 for ($row = 0; $row <= $lastRow; $row++) {
     if($row ==1) $var = 'style="background-color: #7E6A7C;"';
     else $var = '';
-    echo '<tr style="font-size: 100%;"><td '.$var.'>';
+    echo '<div class="list" style="font-size: 100%;"><div class="divTableCell"'.$var.'>';
     echo $worksheet->getCell('A'.$row)->getValue();
-    echo '</td><td '.$var.'>';
+    echo '</div><div class="divTableCell" '.$var.'>';
     echo $worksheet->getCell('B'.$row)->getValue();
-    echo '</td><td '.$var.'>';
+    echo '</div><div class="divTableCell" '.$var.'>';
     echo $worksheet->getCell('C'.$row)->getValue();
-    echo "</td><tr>";
+    echo "</div></div>";
 }
-echo "</table>
+echo "   </div>
+    </div>
+</div>
 ";
 }
 

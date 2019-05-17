@@ -153,7 +153,7 @@ class Information
             $type = $row['type'];
 
             $this->endDateCheckInfo($id,$endDate);
-            $this->view->displayInformationView($title,$content,$type);
+            $this->view->displayInformationView($id, $title,$content,$type);
             $this->view->displayMidSlide();
 
         }
