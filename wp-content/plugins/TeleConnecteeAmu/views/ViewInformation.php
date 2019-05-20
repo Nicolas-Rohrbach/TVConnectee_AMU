@@ -49,7 +49,7 @@ class ViewInformation extends ViewG
         echo '   
                 <div class="title">' . $title . ' </div>
                     <div class="content_info">';
-        if ($type == "tab") {readTab($id);}
+        if ($type == "tab") {$this->readExcel($id);}
         else {echo $content;}
                 echo '</div>
              </div>';
@@ -89,7 +89,7 @@ class ViewInformation extends ViewG
               <form method="post">
                 <label> Texte : <input type="radio" name="typeChoice" value="text"></label></br>
                 <label> Affiche : <input type="radio" name="typeChoice" value="image"></label></br>
-                <label> Tableau de note : <input type="radio" name="typeChoice" value="tab"></label></br>
+                <label> Tableau : <input type="radio" name="typeChoice" value="tab"></label></br>
                 <button type="submit"> Selectionner </button>
               </form>';
 
@@ -165,4 +165,57 @@ class ViewInformation extends ViewG
         }
     } //displayModifyInformationForm()
 
+    public function readExcel($id)
+    {
+
+        $file = glob($_SERVER['DOCUMENT_ROOT'] . "/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.*");
+        foreach ($file as $i) {
+            $filename = $i;
+        }
+        $reader = \PhpOffice\PhpSpreadsheet\IOFactory::createReader('Xlsx');
+        $reader->setReadDataOnly(TRUE);
+        $spreadsheet = $reader->load($filename);
+
+        $worksheet = $spreadsheet->getActiveSheet();
+        echo $highestRow = $worksheet->getHighestRow() . '</br>';
+
+        echo '<table>' . PHP_EOL;
+        foreach ($worksheet->getRowIterator() as $row) {
+            echo '<tr>' . PHP_EOL;
+            $cellIterator = $row->getCellIterator();
+            $cellIterator->setIterateOnlyExistingCells(FALSE); // This loops through all cells,
+            //    even if a cell value is not set.
+            // By default, only cells that have a value
+            //    set will be iterated.
+
+
+            $content = 'test';
+            $max = $highestRow;
+            $mod = 0;
+            for ($i = 0; $i < $max; $i++) {
+                $mod = $i % 3;
+                if ($mod == 0) {
+                    $content .= '<tr>';
+                }
+                $content .= '<td>' . $i . '</td>';
+                if ($mod == 2) {
+                    $content .= '</tr>';
+                }
+            }
+            if ($mod != 2 && $i > 0) {
+                $content .= '</tr>';
+            }
+
+
+//            foreach ($cellIterator as $cell) {
+//                echo '<td>' .
+//                    $cell->getValue() .
+//                    '</td>' . PHP_EOL;
+//            }
+//            echo '</tr>' . PHP_EOL;
+//        }
+//        echo '</table>' . PHP_EOL;
+
+        }
+    }
 }

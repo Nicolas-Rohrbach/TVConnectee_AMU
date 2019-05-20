@@ -289,8 +289,7 @@ class Information
         }
     }//uploadFile()
 
-    public function testExcel(){
-        readTab(102);
-    }
+
 
 }
+

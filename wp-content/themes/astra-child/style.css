@@ -20,9 +20,9 @@
 /*___________Information main_________*/
 
 .mySlides-info{
-	height: 30em;
+	/*height: 30em;*/
 	background-color: lightgray;
-	width: 30%;
+	/*width: 30%;*/
 	overflow: hidden;
 
 }
