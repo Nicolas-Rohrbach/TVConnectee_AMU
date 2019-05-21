@@ -77,10 +77,10 @@ else {
                                 echo'<table class="table">
                                             <thead class="bg-primary">
                                             <tr>
-                                                <th scope="col" class="text-light" width="20%">Horaire</th>
-                                                <th scope="col" class="text-light" width="35%">Cours</th>
-                                                <th scope="col" class="text-light" width="25%">Enseignant</th>
-                                                <th scope="col" class="text-light" width="20%">Salle</th>
+                                                <th scope="col" class="text-light text-center" width="20%">Horaire</th>
+                                                <th scope="col" class="text-light text-center" width="35%">Cours</th>
+                                                <th scope="col" class="text-light text-center" width="25%">Enseignant</th>
+                                                <th scope="col" class="text-light text-center" width="20%">Salle</th>
                                             </tr>
                                             </thead>
                                             <tbody>';
@@ -100,7 +100,7 @@ else {
                                 }
                                 if ($time == 'all-day') {
                                     if (!$all_day_indicator_shown) {
-                                        echo '<dt class="all-day-indicator">'; _e('All Day', 'R34ICS'); echo'</dt>';
+                                        echo '<td class="all-day-indicator">'; _e('All Day', 'R34ICS'); echo'</td>';
                                         $all_day_indicator_shown = true;
                                     }
                                     echo '<td class="event">
@@ -112,7 +112,7 @@ else {
                                 }
                                 else {
                                     if (!empty($event['start'])) {
-                                        echo '<td width="20%">';
+                                        echo '<td class="text-center" width="20%">';
                                         $deb = date("H:i",strtotime($event['deb']));
                                         $newDeb = str_replace(':','h',$deb);
                                         echo $newDeb.' ';
@@ -123,7 +123,7 @@ else {
                                         }
                                         echo '</td>';
                                     }
-                                    echo '<td width="35%">
+                                    echo '<td class="text-center" width="35%">
                                             <span class="title">'; echo str_replace('/', '/<wbr />',$event['label']).'</span>';
                                     if (!empty($event['sublabel'])) {
                                         echo '<span class="sublabel">';
@@ -133,12 +133,12 @@ else {
                                         echo str_replace('/', '/<wbr />',$event['sublabel']).'</span>';
                                     }
                                     echo '</td>
-                                        <td width="25%">
+                                        <td class="text-center" width="25%">
 												<span class="sublabel">'; $des = $event['description'];
                                     $des = substr($des,0,-29);
                                     echo $des.'</span>
                                         </td >
-                                        <td width="20%">
+                                        <td class="text-center" width="20%">
                                             <span>'; echo str_replace('/', '/<wbr />',$event['location']).'</span>
                                         </td>';
                                 }

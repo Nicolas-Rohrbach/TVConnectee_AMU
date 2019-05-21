@@ -56,23 +56,20 @@ include_once 'widgets/WidgetWeather.php';
 include_once 'controllers/Information.php';
 include_once 'models/InformationManager.php';
 include_once 'views/ViewInformation.php';
+include_once 'widgets/WidgetInformation.php';
 
 include_once 'controllers/Alert.php';
 include_once 'models/AlertManager.php';
 include_once 'views/ViewAlert.php';
 include_once 'widgets/WidgetAlert.php';
 
-include_once 'controllers/TvPlugin.php';
-
 add_action("wp_head", "mfp_card");
 define('ROOT', dirname(__FILE__));
 require_once(ROOT . '/controllers/fileSchedule/app/app.php');
 
-function mfp_Card()
-{
+function mfp_Card(){
   echo '  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">-->
-';
+   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">-->';
 }
 
 //Users
@@ -133,21 +130,6 @@ add_action('init', function(){
     global $R34ICS;
     $R34ICS = new R34ICS();
 });
-
-// Flush rewrite rules when plugin is activated
-register_activation_hook(__FILE__, function() { flush_rewrite_rules(); });
-
-$tvPlugin = new TvPlugin();
-$tvPlugin->register();
-
-//require_once plugin_dir_path(__FILE__) . 'templates/traitement.php';
-
-// activation
-register_activation_hook( __FILE__, array( $tvPlugin, 'activate' ) );
-
-// deactivation
-require_once plugin_dir_path( __FILE__ ) . 'controllers/inc/TvPluginDesactivate.php';
-register_deactivation_hook( __FILE__, array( 'TvPluginDesactivate', 'desactivate' ) );
 
 
 add_action( 'downloadFileICS', 'downloadFileICS_func' );

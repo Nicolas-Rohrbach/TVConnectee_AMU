@@ -45,7 +45,7 @@ class ViewInformation extends ViewG
         $cpt = 0;
         echo '<div class="container-fluid">
                 <div class="row">
-                    <div id="information_carousel" class="col-sm-5">
+                    <div id="information_carousel">
                         <div id="demo" class="carousel slide" data-ride="carousel">
                             
                             <!--The slides -->
@@ -60,6 +60,8 @@ class ViewInformation extends ViewG
                                 }
                         echo'   </div>
                             </div>
+                        </div>
+                        </div>
                         </div>';
     } //displayInformationView()
 

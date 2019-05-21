@@ -9,12 +9,18 @@
 
 /* HEADER */
 #header {
-    margin-bottom: 20px;
-    font-family: Trebuchet MS, Lucida Grande, Arial, Helvetica, Georgia, Sans-serif;
-    float: left;
-    background:#cccccc;
     width: 100%;
     padding: 0 10px 20px 10px;
+    background-color: #007fff;
+}
+
+.custom-logo {
+    width: 75px;
+    height: 75px;
+}
+
+.white {
+    color: white;
 }
 
 #header h1 {
@@ -40,13 +46,12 @@ a:hover {
 
 /* CONTENT */
 #content {
-    font-family: Lucida Grande, Arial, Helvetica, Sans-serif;
-    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
     background: white;
     color: black;
-    float: left;
-    width: 70%;
-    margin-bottom: 20px;
+    width: 80%;
 }
 
 #content h2 {
@@ -55,7 +60,6 @@ a:hover {
 
 #content h2 a{
     font-size: 1.2em;
-    font-family: Century Gothic, Lucida Grande, Verdana, Arial, Sans-Serif;
     color: #006699;
 }
 
@@ -63,10 +67,6 @@ a:hover {
     color: #555;
 }
 
-#page {
-    margin: 0 auto 0 auto;
-    width: 100%;
-}
 
 .postmetadata {
     font-size: 0.8em;
@@ -83,17 +83,16 @@ a:hover {
 }
 
 .post_content a:hover {
-    color: #fff; background: #006699;
+    color: #fff;
+    background: #006699;
 }
 
-/* SIDEBAR */
-.sidebar {
-    float: right;
-    width: 30%;
+#sidebar-footer div {
+    display: block;
 }
 
 .sidebar ul{
-    list-style-type: none;
+    list-style-type: upper-alpha;
     margin: 0;
     padding: 0 10px;
 }
@@ -101,7 +100,7 @@ a:hover {
 .sidebar ul li{}
 .sidebar ul ul li{}
 
-.sidebar h2 {
+#sidebar h2 {
     font-size: 2em;
 }
 
@@ -112,17 +111,186 @@ a:hover {
 
 /* FOOTER */
 #footer {
-    text-align: center;
-    font-size: 1em;
-    background:#cccccc;
-    padding: 10px 10px 0 0;
-    clear: both;
+    float: left;
+    bottom: 0;
+    left:0;
+    box-sizing: border-box;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding: 0;
     width: 100%;
 }
 
-#footer p{
-    font-size: 1em;
-    padding: 0 10px 20px 0;
+/* WEATHER */
+.Infos{
+    width: 100%;
+    background-color: #0071b9;
+    box-sizing: border-box;
+    color: #FFF;
+    height: 9vw;
+    text-align: center;
+}
+.Infos .Weather{
+    box-sizing: border-box;
+    border-top: solid 1px #FFF;
+    height: 39%;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+}
+.Infos .Weather #weather{
+    border-right: solid 1px #FFF;
+    display: inline-block;
+    height: 100%;
+    width: 49%;
+}
+.Infos .Weather #wind{
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+}
+.Infos .Weather img{
+    display: inline-block;
+    height: 70%;
+}
+.Infos .Time{
+    text-align: center;
+    font-size: 1.6vw;
+    font-weight: 600;
+    margin: -2px 0 -4px 0;
+}
+.Infos .Date{
+    font-size: 1.3vw;
+}
+
+/* OLD CSS */
+* {box-sizing:border-box}
+
+/* MENU */
+.white{
+    color: white;
+}
+
+/* SLIDESHOW */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* HEADER */
+.ninja {
+    opacity: 0;
+}
+
+/* FORM */
+
+.cadre {
+    text-align: center;
+    width: auto;
+    background-color: #E6E6E6;
+    border-radius: 1.5%;
+    border:2px solid darkgrey;
+}
+
+/* TABLE */
+.errorNotRegister{
+    font-weight: bold;
+    color: white;
+    background-color: red;
+}
+
+
+/*__Information main__*/
+
+#information_carousel {
+    height: 70ex;
+}
+.titleInfo {
+    font-size : 3em;
+    text-align: center;
+}
+
+.content_info{
+    font-size : 1.5em;
+    text-align: center;
+}
+
+.content_info img{
+    width : 100%;
+    max-height: 50ex;
+
+}
+
+
+/*__form__*/
+th {font-size : 120%;}
+
+.tdcentered {text-align: center;}
+
+
+td img {
+    max-width: 75px;
+    max-height: 75px;
+}
+
+form input{
+    margin : 3px;
+}
+form button{
+    margin : 3px;
+}
+
+
+
+/*__Alerts main__*/
+
+.alert {
+    background-color: #D90404;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.innerwrap {
+}
+.list {
+    text-align: center;
+}
+
+
+@media (min-width: 1200px)  {
+
+}
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 500px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-device-width: 1000px){
+    .Infos {
+        height: 8.7vw;
+        width: 100%;
+    }
+    .Infos .Time{
+        font-size: 2.4vw;
+    }
+    .Infos .Date{
+        font-size: 1.6vw;
+    }
 }
 
 /* COMMENTS */
