@@ -1,0 +1,13 @@
+#content-twocolumns{
+    float: left;
+    text-align: center;
+    background: white;
+    color: black;
+    width: 70%;
+}
+
+/* SIDEBAR */
+#sidebar-right {
+    width: 30%;
+    float: right;
+}

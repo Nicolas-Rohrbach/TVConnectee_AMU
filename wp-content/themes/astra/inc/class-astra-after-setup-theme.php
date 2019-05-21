@@ -214,7 +214,7 @@ if ( ! class_exists( 'Astra_After_Setup_Theme' ) ) {
 		 * Adds a responsive embed wrapper around oEmbed content
 		 *
 		 * @param  string $html The oEmbed markup.
-		 * @param  string $url The ViewSchedule being embedded.
+		 * @param  string $url The URL being embedded.
 		 * @param  array  $attr An array of attributes.
 		 *
 		 * @return string       Updated embed markup.

@@ -18,7 +18,7 @@
 	## Asides
 	## Comments
 # Infinite scroll
-# Media
+# media
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
@@ -1685,7 +1685,7 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
-# Media
+# media
 --------------------------------------------------------------*/
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
@@ -1776,8 +1776,8 @@ object {
 --------------------------------------------------------------*/
 /*----------  Mixins  ----------*/
 /*----------  Site Variables  ----------*/
-/*----------  Media Query min-width Structure   ----------*/
-/*----------  Media Query max-width Structure   ----------*/
+/*----------  media Query min-width Structure   ----------*/
+/*----------  media Query max-width Structure   ----------*/
 /*----------  Break-point min-width Structure   ----------*/
 /*----------  Break-point max-width Structure   ----------*/
 /*----------  Site Normalize  ----------*/
@@ -2036,7 +2036,7 @@ textarea {
   font-weight: normal;
 }
 
-/*----------  Media ----------*/
+/*----------  media ----------*/
 .single .entry-content .gallery {
   margin-left: -10px;
   margin-right: -10px;
@@ -3956,6 +3956,14 @@ li.ast-masthead-custom-menu-items .ast-search-icon .astra-search-icon {
   margin: 0;
 }
 
+.wp-block-separator {
+  max-width: 100px;
+}
+
+.wp-block-separator.is-style-wide {
+  max-width: none;
+}
+
 .entry-content .has-2-columns .wp-block-column:first-child {
   padding-right: 10px;
 }
@@ -4310,8 +4318,8 @@ body .entry-content .wp-block-latest-posts li {
   margin-top: 1em;
 }
 
-/*----------  Media Query min-width Structure   ----------*/
-/*----------  Media Query max-width Structure   ----------*/
+/*----------  media Query min-width Structure   ----------*/
+/*----------  media Query max-width Structure   ----------*/
 /*----------  Break-point min-width Structure   ----------*/
 /*----------  Break-point max-width Structure   ----------*/
 .footer-sml-layout-2 .ast-small-footer-section-1,
@@ -5520,8 +5528,8 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 /*----------  Blog Styles  ----------*/
-/*----------  Media Query min-width Structure   ----------*/
-/*----------  Media Query max-width Structure   ----------*/
+/*----------  media Query min-width Structure   ----------*/
+/*----------  media Query max-width Structure   ----------*/
 /*----------  Break-point min-width Structure   ----------*/
 /*----------  Break-point max-width Structure   ----------*/
 .blog-layout-1 {

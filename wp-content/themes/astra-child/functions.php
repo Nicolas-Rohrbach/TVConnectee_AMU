@@ -6,64 +6,8 @@
  * Time: 09:30
  */
 
-//redirige vers notre page de connexion si l'id et le mdp sont faux
-//redirige vers notre page de connexion si l'id et le mdp sont faux
-/**
- * Function Name: front_end_login_fail.
- * Description: This redirects the failed login to the custom login page instead of default login page with a modified url
- **/
-add_action( 'wp_login_failed', 'front_end_login_fail' );
-function front_end_login_fail( $username ) {
-
-// Getting ViewSchedule of the login page
-    $referrer = $_SERVER['HTTP_REFERER'];
-// if there's a valid referrer, and it's not the default log-in screen
-    if( !empty( $referrer ) && !strstr( $referrer,'wp-login' ) && !strstr( $referrer,'wp-admin' ) ) {
-
-        wp_redirect( get_permalink(7408) . "?login=failed" );
-        exit;
-    }
-}
-
-/**
- * Function Name: check_username_password.
- * Description: This redirects to the custom login page if user name or password is   empty with a modified url
- **/
-add_action( 'authenticate', 'check_username_password', 1, 3);
-function check_username_password( $login, $username, $password ) {
-
-// Getting ViewSchedule of the login page
-    $referrer = $_SERVER['HTTP_REFERER'];
-
-// if there's a valid referrer, and it's not the default log-in screen
-    if( !empty( $referrer ) && !strstr( $referrer,'wp-login' ) && !strstr( $referrer,'wp-admin' ) ) {
-        if( $username == "" || $password == "" ){
-            wp_redirect( get_permalink(7408) . "?login=empty" );
-            exit;
-
-        }
-    }
-
-}
-// Replace my constant 'LOGIN_PAGE_ID' with your custom login page id.
-
-add_action('after_setup_theme', 'remove_admin_bar');
-function remove_admin_bar() {
-    if (!current_user_can('administrator') && !is_admin()) {
-        show_admin_bar(false);
-    }
-}
-
-// Rediriger les non-administrateurs vers la page d'accueil À partir de l'administration
-function wpm_admin_redirection() {
-    //Si on essaye d'accéder à L'administration Sans avoir le rôle administrateur
-    if ( is_admin() && ! current_user_can( 'administrator' ) ) {
-        // On redirige vers la page d'accueil
-        wp_redirect( home_url() );
-        exit;
-    }
-}
-
+define( 'ASTRA_THEME_DIR', trailingslashit( get_template_directory() ) );
+require_once 'inc/class-astra-dynamic-css.php';
 
 add_action('wp_enqueue_scripts', 'gkp_insert_css_in_head');
 function gkp_insert_css_in_head() {
@@ -72,11 +16,37 @@ function gkp_insert_css_in_head() {
     wp_enqueue_style( 'style' );
 }
 
+/**
+ * Change the image of the logo
+ */
+function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri()."/logo.png" ?>);
+            height:65px;
+            width:320px;
+            background-size: 120px 120px;
+            background-repeat: no-repeat;
+            padding-bottom: 60px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+/**
+ * Ajoute une nouvelle feuille de style pour la page de connexion
+ */
+function my_login_stylesheet() {
+    wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/login/login-style.css' );
+}
+add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
+
 add_action( 'wp_enqueue_scripts', 'custom_enqueue_script' );
 function custom_enqueue_script() {
     wp_enqueue_script( 'jquery331', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery-3.3.1.min.js',
         array( 'jquery' ), '', false);
 }
+
 add_action( 'wp_enqueue_scripts', 'custom_enqueue_script2' );
 function custom_enqueue_script2() {
     wp_enqueue_script( 'jqueryUI', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery-ui.min.js',
@@ -85,7 +55,14 @@ function custom_enqueue_script2() {
 
 add_action( 'wp_enqueue_scripts', 'custom_enqueue_script3' );
 function custom_enqueue_script3() {
+    wp_enqueue_script( 'jqueryUI', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery-ui.min.js',
+        array( 'jquery' ), '', false);
+}
+
+add_action( 'wp_enqueue_scripts', 'custom_enqueue_script4' );
+function custom_enqueue_script4() {
     wp_enqueue_script( 'jqueryEasyTicker', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.easy-ticker.js',
         array( 'jquery' ), '', false);
 }
+
 

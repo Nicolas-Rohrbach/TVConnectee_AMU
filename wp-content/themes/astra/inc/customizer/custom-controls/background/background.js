@@ -77,7 +77,7 @@ wp.customize.controlConstructor['ast-background'] = wp.customize.Control.extend(
 		control.container.on( 'click', '.background-image-upload-button', function( e ) {
 			var image = wp.media({ multiple: false }).open().on( 'select', function() {
 
-				// This will return the selected image from the Media Uploader, the result is an object.
+				// This will return the selected image from the media Uploader, the result is an object.
 				var uploadedImage = image.state().get( 'selection' ).first(),
 					previewImage   = uploadedImage.toJSON().sizes.full.url,
 					imageUrl,

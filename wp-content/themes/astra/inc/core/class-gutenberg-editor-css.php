@@ -72,10 +72,10 @@ if ( ! class_exists( 'Gutenberg_Editor_CSS' ) ) :
 			$css = '';
 
 			$desktop_css = array(
-				'html'                     => array(
+				'html'                                    => array(
 					'font-size' => astra_get_font_css_value( (int) $body_font_size_desktop * 6.25, '%' ),
 				),
-				'a'                        => array(
+				'a'                                       => array(
 					'color' => esc_attr( $link_color ),
 				),
 				// Global selection CSS.
@@ -118,10 +118,13 @@ if ( ! class_exists( 'Gutenberg_Editor_CSS' ) ) :
 					'color' => esc_attr( $text_color ),
 				),
 				// Blockquote Text Color.
-				'blockquote, blockquote a' => array(
+				'blockquote'                              => array(
 					'color' => astra_adjust_brightness( $text_color, 75, 'darken' ),
 				),
-				'blockquote'               => array(
+				'blockquote .editor-rich-text__tinymce a' => array(
+					'color' => astra_hex_to_rgba( $link_color, 1 ),
+				),
+				'blockquote'                              => array(
 					'border-color' => astra_hex_to_rgba( $link_color, 0.05 ),
 				),
 				'.editor-block-list__block .wp-block-quote:not(.is-large):not(.is-style-large), .edit-post-visual-editor .wp-block-pullquote blockquote' => array(

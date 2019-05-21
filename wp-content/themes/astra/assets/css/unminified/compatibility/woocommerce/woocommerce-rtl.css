@@ -102,8 +102,8 @@
 /**
  * Astra Theme compatibility with WooCommerce
  */
-/*----------  Media Query min-width Structure   ----------*/
-/*----------  Media Query max-width Structure   ----------*/
+/*----------  media Query min-width Structure   ----------*/
+/*----------  media Query max-width Structure   ----------*/
 /*----------  Break-point min-width Structure   ----------*/
 /*----------  Break-point max-width Structure   ----------*/
 /**
@@ -4696,4 +4696,8 @@ button.pswp__button--zoom:hover {
 
 .rtl .woocommerce-pagination .page-numbers li:first-child .prev {
   transform: rotateY(-180deg);
+}
+
+.ast-site-header-cart .widgettitle {
+  display: none;
 }

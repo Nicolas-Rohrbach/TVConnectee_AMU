@@ -254,7 +254,7 @@ if ( ! function_exists( 'astra_get_css_value' ) ) {
 						$css_val = esc_attr( $value ) . $unit;
 				break;
 
-			case 'ViewSchedule':
+			case 'url':
 						$css_val = $unit . '(' . esc_url( $value ) . ')';
 				break;
 
@@ -349,8 +349,8 @@ if ( ! function_exists( 'astra_parse_css' ) ) {
 	 * Parse CSS
 	 *
 	 * @param  array  $css_output Array of CSS.
-	 * @param  string $min_media  Min Media breakpoint.
-	 * @param  string $max_media  Max Media breakpoint.
+	 * @param  string $min_media  Min media breakpoint.
+	 * @param  string $max_media  Max media breakpoint.
 	 * @return string             Generated CSS.
 	 */
 	function astra_parse_css( $css_output = array(), $min_media = '', $max_media = '' ) {
@@ -1028,10 +1028,10 @@ endif;
 
 if ( ! function_exists( 'astra_get_pro_url' ) ) :
 	/**
-	 * Returns an ViewSchedule with utm tags
+	 * Returns an URL with utm tags
 	 * the admin settings page.
 	 *
-	 * @param string $url    ViewSchedule fo the site.
+	 * @param string $url    URL fo the site.
 	 * @param string $source utm source.
 	 * @param string $medium utm medium.
 	 * @param string $campaign utm campaign.
@@ -1041,15 +1041,15 @@ if ( ! function_exists( 'astra_get_pro_url' ) ) :
 
 		$url = trailingslashit( $url );
 
-		// Set up our ViewSchedule if we have a source.
+		// Set up our URL if we have a source.
 		if ( isset( $source ) ) {
 			$url = add_query_arg( 'utm_source', sanitize_text_field( $source ), $url );
 		}
-		// Set up our ViewSchedule if we have a medium.
+		// Set up our URL if we have a medium.
 		if ( isset( $medium ) ) {
 			$url = add_query_arg( 'utm_medium', sanitize_text_field( $medium ), $url );
 		}
-		// Set up our ViewSchedule if we have a campaign.
+		// Set up our URL if we have a campaign.
 		if ( isset( $campaign ) ) {
 			$url = add_query_arg( 'utm_campaign', sanitize_text_field( $campaign ), $url );
 		}

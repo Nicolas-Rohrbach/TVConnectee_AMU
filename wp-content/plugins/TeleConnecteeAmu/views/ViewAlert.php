@@ -28,7 +28,7 @@ class ViewAlert extends ViewG
      */
     public function tabHeadAlert(){
         $tab = ["Auteur","Contenu","Date de création","Date de fin"];
-        $this->startTab($tab);
+        $this->displayStartTab($tab);
     }//tabHeadAlert();
 
     /**

@@ -6,8 +6,7 @@
  * Time: 11:33
  */
 
-class Information
-{
+class Information {
     private $DB;
     private $view;
 
@@ -15,7 +14,7 @@ class Information
      * Constructeur d'information, initialise le modèle et la vue.
      */
     public function __construct(){
-        $this->DB = new BdInformation();
+        $this->DB = new InformationManager();
         $this->view = new ViewInformation();
     }
 
@@ -44,11 +43,11 @@ class Information
 
 
     /**
-     * Supprime un fichier dans le dossier Media ayant comme nom une id.
+     * Supprime un fichier dans le dossier media ayant comme nom une id.
      * @param $id
      */
     public function deleteFile($id) {
-        $file = glob($_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.*");
+        $file = glob($_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/media/{$id}.*");
         foreach ($file as $filename) {
             unlink($filename);
         }
@@ -74,7 +73,7 @@ class Information
 
             $this->view->displayAllInformation($id, $title, $author, $content, $creationDate, $endDate, ++$i);
         }
-        $this->view->endTab();
+        $this->view->displayEndTab();
     } // informationManagement()
 
     /**
