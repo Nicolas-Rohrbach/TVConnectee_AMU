@@ -39,7 +39,7 @@ meteoRequest.onload =  function () {
     div.innerHTML = "";
     var weather = document.createElement("DIV");
     weather.innerHTML = temp + "<span style=\"font-size: 16px;\">°C</span>";
-    weather.id = "imagesWeather";
+    weather.id = "weather";
     var imgTemp = document.createElement("IMG");
     imgTemp.id = "icon";
     imgTemp.src = "/wp-content/plugins/TeleConnecteeAmu/views/imagesWeather/" + getIcon(json) + ".png";
@@ -55,12 +55,12 @@ meteoRequest.onload =  function () {
     div.appendChild(weather);
     div.appendChild(wind);
     setTimeout(refreshWeather, 900000);
-}
+};
 function getAlt(json){
-    return json["imagesWeather"][0]["description"];
+    return json["weather"][0]["description"];
 }
 function getIcon(json){
-    return cutIcon(json["imagesWeather"][0]["icon"]);
+    return cutIcon(json["weather"][0]["icon"]);
 }
 function cutIcon(str){
     return str.substr(0, str.length -1);

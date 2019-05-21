@@ -8,8 +8,8 @@
 
 interface DAOUser
 {
-   public static function sortByNom($tab = []);
+   public static function sortByFirstname($tab = []);
 
-   public static function sortByPrenom($tab = []);
+   public static function sortByLastname($tab = []);
 
 }

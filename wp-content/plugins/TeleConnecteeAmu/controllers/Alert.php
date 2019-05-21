@@ -15,7 +15,7 @@ class Alert
      * Constructeur d'alert, initialise le modèle et la vue.
      */
     public function __construct(){
-        $this->DB = new BdAlert();
+        $this->DB = new AlertManager();
         $this->view = new ViewAlert();
     }
 
@@ -74,7 +74,7 @@ class Alert
 
             $this->view->displayAllAlert($id, $author, $content, $creationDate, $endDate, ++$i);
         }
-        $this->view->endTab();
+        $this->view->displayEndTab();
     } //alertManagement()
 
     /**
@@ -98,7 +98,7 @@ class Alert
         $urlExpl = explode('/', $_SERVER['REQUEST_URI']);
         $id = $urlExpl[2];
 
-        $action = $_POST['validateChange'];
+        $action = filter_input(INPUT_POST,'validateChange');
 
         $result = $this->DB->getAlertByID($id);
         $content = $result['text'];
@@ -106,8 +106,8 @@ class Alert
         $this->view->displayModifyAlertForm($content, $endDate);
 
         if ($action == "Valider") {
-            $content = $_POST['contentInfo'];
-            $endDate = $_POST['endDateInfo'];
+            $content = filter_input(INPUT_POST,'contentInfo');
+            $endDate = filter_input(INPUT_POST,'endDateInfo');
 
             $this->DB->modifyAlert($id, $content, $endDate);
             $this->view->refreshPage();

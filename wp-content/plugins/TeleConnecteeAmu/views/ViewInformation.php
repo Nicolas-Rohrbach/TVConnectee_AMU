@@ -9,12 +9,11 @@
 class ViewInformation extends ViewG
 {
     /**
-     * Ajoute le haut du tableau de gestion des informations
+     * Set the head of the table for the information's management page.
      */
-    public function tabHeadInformation()
-    {
-        $tab = ["Titre", "Auteur", "Contenu", "Date de création", "Date de fin"];
-        $this->startTab($tab);
+    public function tabHeadInformation(){
+        $tab = ["Titre","Auteur","Contenu","Date de création","Date de fin"];
+        $this->displayStartTab($tab);
     } //tabHeadInformation()
 
 

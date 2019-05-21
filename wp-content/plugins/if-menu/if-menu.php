@@ -3,13 +3,15 @@
 Plugin Name: If Menu - Visibility control for menu items
 Plugin URI: https://layered.market/plugins/if-menu
 Description: Display tailored menu items to each visitor with visibility rules
-Version: 0.13
+Version: 0.14.1
 Text Domain: if-menu
 Author: Layered
 Author URI: https://layered.market
 License: GPL-3.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 */
+
+use Layered\SafeEval\SafeEval;
 
 require plugin_dir_path(__FILE__) . 'vendor/autoload.php';
 
@@ -101,7 +103,9 @@ class If_Menu {
 						$eval[] = $singleCondition;
 					}
 
-					if ((count($eval) === 1 && $eval[0] == 0) || (count($eval) > 1 && !eval('return ' . implode(' ', $eval) . ';'))) {
+					$safeEval = new SafeEval;
+
+					if ((count($eval) === 1 && $eval[0] == 0) || (count($eval) > 1 && !$safeEval->evaluate(implode(' ', $eval)))) {
 						if ($canPeek) {
 							$item->classes[] = 'if-menu-peek';
 						} else {

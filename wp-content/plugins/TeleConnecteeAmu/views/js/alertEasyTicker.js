@@ -14,3 +14,4 @@ $('#ticker1').easyTicker({
         stopText: 'Stop'
     }
 });
+

@@ -6,11 +6,17 @@
  * Time: 09:29
  */
 
-class Weather
-{
+class Weather{
     private $view;
-    public function displayMyWeather() {
-        $this->view = new ViewWeather();
-        $this->view->displayWeather();
+
+    /**
+     * Affiche la météo si l'utilisateur est connectée
+     */
+    public function displayWeather()
+    {
+        if (is_user_logged_in()) {
+            $this->view = new ViewWeather();
+            $this->view->displayWeather();
+        }
     }
 }
