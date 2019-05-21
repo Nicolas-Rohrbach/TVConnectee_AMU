@@ -5,6 +5,7 @@ Description: Plugin de la télé connectée de l'AMU
 Version: 1.5
 Author: Alexis
 */
+
 include_once 'views/ViewG.php';
 include_once 'views/ViewCard.php';
 include_once 'views/ViewUser.php';
@@ -22,8 +23,6 @@ include_once 'models/BdInformation.php';
 include_once 'models/BdAlert.php';
 
 include_once 'controllers/User.php';
-include_once 'Excel/PHPExcel/IOFactory.php';
-include_once 'Excel/PluginExcel.php';
 include_once 'models/DAO/DAOUser.php';
 include_once 'models/DAO/DAOEtudiant.php';
 include_once 'models/DAO/DAOProf.php';
@@ -37,6 +36,8 @@ include_once 'views/ViewWeather.php';
 add_action("wp_head", "mfp_card");
 define('ROOT', dirname(__FILE__));
 require_once(ROOT . '/controllers/fileSchedule/app/app.php');
+
+require ('Excel/vendor/autoload.php');
 
 function mfp_Card()
 {
@@ -78,11 +79,11 @@ add_action('createAlert',array($alert,'createAlert'),0,3);
 add_action('handleAlert', array($alert,'alertsManagement'));
 add_action('delete_alert', array($alert,'deleteAlert'), 0 ,1);
 add_action('modify_alert',array($alert,'modifyAlert'));
-add_action('display_alert', array($alert, 'alertMain'));
+//add_action('display_alert', array($alert, 'alertMain'));
 
 
 
 
-add_action('test',array($information,'uploadFile'),0 ,1);
+add_action('test',array($information,'testExcel'));
 
 

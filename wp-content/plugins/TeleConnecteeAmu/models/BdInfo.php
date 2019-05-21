@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: s17018568
+ * User:
  * Date: 16/01/19
  * Time: 13:45
  */
@@ -9,9 +9,6 @@
 class BdInfo
 {
 
-    /**
-     * BdInfo constructor.
-     */
     public function __construct()
     {
     }
