@@ -2,32 +2,277 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f21d812e-ce81-44c8-afb6-f9623108a598" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/CodeAdeManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewManagementUsers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/widgets/WidgetInformation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/threeColumns.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/twoColumns.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/images/Logo-Dpt-info-aix-blanc-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/images/Logo-Dpt-info-aix-jaune.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/images/bg_amu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/js/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/js/jquery.easy-ticker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/inc/menu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/page_three_columns.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/page_two-columns.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/sidebar-2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/admin-fr_FR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/languages/admin-fr_FR.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/admin-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/admin-fr_FR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-0ce75ad2f775d1cac9696967d484808c.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-0ce75ad2f775d1cac9696967d484808c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-1a0cd6a7128913b15c1a10dd68951869.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-1a0cd6a7128913b15c1a10dd68951869.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-1bba9045bb07c89671c88a3f328548e8.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-1bba9045bb07c89671c88a3f328548e8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-28b3c3d595952907e08d98287077426c.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-28b3c3d595952907e08d98287077426c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-2c5d274ea625dd91556554ad82901529.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-2c5d274ea625dd91556554ad82901529.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-4a38fe1c0c45989e44682ba6109d9f46.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-4a38fe1c0c45989e44682ba6109d9f46.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-68f2cec7514bf8563c723a4d675fcfe6.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-68f2cec7514bf8563c723a4d675fcfe6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-7f13c36c641b114bf18cd0bcc9ecc7e0.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-7f13c36c641b114bf18cd0bcc9ecc7e0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-803bf1ce2131e13efc590c1bc47851fc.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-803bf1ce2131e13efc590c1bc47851fc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-8860e58c20c6a2ab5876a0f07be43bd9.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-8860e58c20c6a2ab5876a0f07be43bd9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-a25d1cc7bf7ca0b4e114f6bea64943f4.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-a25d1cc7bf7ca0b4e114f6bea64943f4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-bf0f094965d3d4a95b47babcb35fc136.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-bf0f094965d3d4a95b47babcb35fc136.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR-f8f49d9fc4a9cf7d78ec99285417bd9c.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-f8f49d9fc4a9cf7d78ec99285417bd9c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/plugins/akismet-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/plugins/akismet-fr_FR.po" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewR34ICS.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSecretary.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSecretary.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/TvPlugin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/assets/myscript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/assets/mystyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/43926" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/43926" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/652" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/652" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8379" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8379" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8380" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8380" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8381" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8381" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8382" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8382" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8383" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8383" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8385" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8385" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8389" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8389" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/calendar-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/calendar-list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/inc/TvPluginActivate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/inc/TvPluginDesactivate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/templates/B.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/templates/admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/templates/css_menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/templates/fichier.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/templates/gestionLayout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/templates/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/templates/traitement.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/templates/traitement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/templates/traitementLayout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/uninstall.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewInformation.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewInformation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/activation.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/activation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/ajax/ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/ajax/ajax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/general.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/general.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/general.less" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/general.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/list-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/list-table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/list-table.less" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/list-table.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/new-item.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/new-item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/view-opt.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/js/tinymce4.4.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/js/tinymce4.4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/js/view-opt.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/js/view-opt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.export.snippet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.filter.snippet.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.filter.snippet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.gutenberg.snippet.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.gutenberg.snippet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.import.snippet.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.import.snippet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.notices.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.notices.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.snippets.viewtable.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.snippets.viewtable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/metaboxes/base-options.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/metaboxes/base-options.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/metaboxes/info.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/metaboxes/info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/metaboxes/view-options.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/metaboxes/view-options.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/pages/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/pages/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/pages/import.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/pages/import.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/pages/new-item.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/pages/new-item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/pages/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/pages/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/types/snippets-post-types.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/types/snippets-post-types.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/types/snippets-taxonomy.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/types/snippets-taxonomy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/includes/class.execute.snippet.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/includes/class.execute.snippet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/includes/class.helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/includes/class.helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/includes/class.plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/includes/class.plugin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/includes/shortcodes/shortcode-php.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/includes/shortcodes/shortcode-php.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/includes/shortcodes/shortcode-text.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/includes/shortcodes/shortcode-text.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/includes/shortcodes/shortcode-universal.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/includes/shortcodes/shortcode-universal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/includes/shortcodes/shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/includes/shortcodes/shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/insert_php.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/insert_php.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/cache/1e03b430bd41d4fe7513886d6af49819.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/cache/59d722b5c43dba1f3758ccd4c95301f7.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/cache/8609bbae7715430a5f81ad8f9c5d308b.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/cache/a2faad21b76213fd81c58c635179673d.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/cache/a47eff8089ae8c5cf5eb6aef85236a5c.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.accordion.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.accordion.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.blue.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.blue.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.coffee.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.coffee.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.core.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.core.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.datetimepicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.datetimepicker.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.ectoplasm.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.ectoplasm.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.form-group.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.form-group.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.form-metabox.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.form-metabox.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.light.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.light.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.midnight.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.midnight.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.ocean.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.ocean.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.separator.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.separator.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.sunrise.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.sunrise.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.tab.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.tab.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.wp-editor.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.wp-editor.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.checkbox.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.checkbox.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.color-and-opacity.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.color-and-opacity.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.color.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.color.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.dropdown-and-colors.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.dropdown-and-colors.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.dropdown.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.dropdown.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.fonts.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.fonts.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.list.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.list.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.multiple-textbox.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.multiple-textbox.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.pattern.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.pattern.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.radio-colors.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.radio-colors.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/holder.more-link.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/holder.more-link.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/plugin.gradient-picker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/plugin.gradient-picker.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/plugin.paddings-editor.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/plugin.paddings-editor.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.accordion.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.accordion.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.collapse.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.collapse.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.datetimepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.datetimepicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.dropdown.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.dropdown.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.modal.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.modal.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.checkbox.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.checkbox.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.color-and-opacity.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.color-and-opacity.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.color.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.color.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.dropdown-and-colors.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.dropdown-and-colors.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.dropdown.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.dropdown.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.fonts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.fonts.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.gradient.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.gradient.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.integer.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.integer.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.list.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.list.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.multiple-textbox.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.multiple-textbox.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.pattern.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.pattern.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/holder.more-link.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/holder.more-link.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/plugin.gradient-picker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/plugin.gradient-picker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/plugin.iris.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/plugin.iris.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/plugin.paddings-editor.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/plugin.paddings-editor.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/includes/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/includes/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/activation/activator.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/activation/update.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/assets-managment/assets-list.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/assets-managment/script-list.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/assets-managment/style-list.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/base.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/check-compatibility.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/class.requirements.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/plugin.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/request.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/langs/wbcr_factory_410-ru_RU.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/langs/wbcr_factory_410-ru_RU.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/checkbox.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/checkbox.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/color-and-opacity.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/color-and-opacity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/color.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/color.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/customs/html.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/customs/html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/customs/separator.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/customs/separator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/datepicker-range.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/datepicker-range.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/dropdown-and-colors.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/dropdown-and-colors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/dropdown.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/dropdown.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/font.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/font.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/google-font.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/google-font.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/gradient.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/gradient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/hidden.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/hidden.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/accordion-item.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/accordion-item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/accordion.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/accordion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/columns.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/columns.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/control-group-item.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/control-group-item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/control-group.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/control-group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/div.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/div.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/form-group.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/form-group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/more-link.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/more-link.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/tab-item.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/tab-item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/tab.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/tab.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/integer.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/integer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/multiple-textbox.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/multiple-textbox.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/paddings-editor.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/paddings-editor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/pattern.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/pattern.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/radio-colors.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/radio-colors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/radio.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/radio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/textarea.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/textarea.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/textbox.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/textbox.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/url.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/url.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/wp-editor.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/wp-editor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/complex-control.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/complex-control.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/control-holder.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/control-holder.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/control.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/control.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/custom-element.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/custom-element.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/form-element.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/form-element.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/form-layout.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/form-layout.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/form.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/form.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/holder.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/holder.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/html-builder.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/html-builder.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/providers/meta-value-provider.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/providers/meta-value-provider.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/providers/options-value-provider.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/providers/options-value-provider.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/providers/value-provider.interface.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/providers/value-provider.interface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/langs/wbcr_factory_forms_411-ru_RU.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/langs/wbcr_factory_forms_411-ru_RU.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/layouts/bootstrap-3/bootstrap-3.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/layouts/bootstrap-3/bootstrap-3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/includes/form-metabox.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/includes/form-metabox.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/includes/publish-metabox.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/includes/publish-metabox.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/metabox.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/metabox.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/metaboxes.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/metaboxes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/notices/boot.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/notices/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/notices/notices.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/includes/admin-page.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/includes/admin-page.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/includes/page.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/includes/page.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/langs/wbcr_factory_pages_411-fr_FR.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/langs/wbcr_factory_pages_411-fr_FR.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/langs/wbcr_factory_pages_411-ru_RU.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/langs/wbcr_factory_pages_411-ru_RU.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/pages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/templates/assets/css/impressive.page.template.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/templates/assets/css/impressive.page.template.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/templates/impressive-page.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/templates/impressive-page.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/shortcodes/shortcode.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/shortcodes/shortcode.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/shortcodes/shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/shortcodes/shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/taxonomies/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/taxonomies/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/taxonomies/langs/factory_taxonomies_325-ru_RU.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/taxonomies/langs/factory_taxonomies_325-ru_RU.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/taxonomies/taxonomy.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/taxonomies/taxonomy.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/taxonomies/taxonomy.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/taxonomies/taxonomy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/includes/type-menu.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/includes/type-menu.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/langs/wbcr_factory_types_405-ru_RU.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/langs/wbcr_factory_types_405-ru_RU.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/type.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/type.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/types.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/types.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/viewtables/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/viewtables/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/viewtables/includes/viewtable-columns.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/viewtables/includes/viewtable-columns.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/viewtables/viewtable.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/viewtables/viewtable.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/migrations/020100.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/migrations/020100.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/uninstall.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/uninstall.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/TvConnecteeAmu/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/TvConnecteeAmu/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/TvConnecteeAmu/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/TvConnecteeAmu/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/TvConnecteeAmu/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/TvConnecteeAmu/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -46,64 +291,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/CodeAdeManager.php">
+        <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
-              <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+            <state relative-caret-position="378">
+              <caret line="54" column="24" lean-forward="true" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php">
+        <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            <state relative-caret-position="170">
+              <caret line="211" column="13" selection-start-line="211" selection-start-column="13" selection-end-line="211" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php">
+        <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/inc/menu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="176" column="14" selection-start-line="176" selection-start-column="14" selection-end-line="176" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
-              <caret line="55" column="2" lean-forward="true" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+            <state relative-caret-position="34">
+              <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -113,8 +322,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -135,8 +345,20 @@
       <find>db_connect</find>
       <find>host</find>
       <find>dbhost</find>
-      <find>get</find>
       <find>mysqli_connect</find>
+      <find>dyna</find>
+      <find>submenu</find>
+      <find>menu</find>
+      <find>get</find>
+      <find>i18n</find>
+      <find>footer</find>
+      <find>ast-small-footer</find>
+      <find>ast-footer-overlay</find>
+      <find>astra_get_background_obj(</find>
+      <find>footer-adv-bg-obj</find>
+      <find>footer_adv_bg_obj</find>
+      <find>&lt;/</find>
+      <find>br</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -145,65 +367,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/themes/astra-child/login/login-style.css" />
-        <option value="$USER_HOME$/Downloads/Tv Connectee Amu/wp-includes/wp-db.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/refreshPage.js" />
-        <option value="$PROJECT_DIR$/mu-plugins/teleConnecteeAmu-functions.php" />
-        <option value="$PROJECT_DIR$/themes/astra/assets/css/minified/style.min.css" />
-        <option value="$PROJECT_DIR$/themes/astra/assets/css/minified/style.min-rtl.css" />
-        <option value="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/site-origin.css" />
-        <option value="$PROJECT_DIR$/themes/astra/assets/css/unminified/style.css" />
-        <option value="$PROJECT_DIR$/themes/astra/assets/css/unminified/style-rtl.css" />
-        <option value="$PROJECT_DIR$/themes/astra/assets/css/unminified/editor-style.css" />
-        <option value="$PROJECT_DIR$/themes/astra-child/functions.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/register.js" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/register.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Info.php" />
-        <option value="$PROJECT_DIR$/themes/astra-child/style.css" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/BdUser.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOProf.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOUser.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOEtudiant.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOTeacher.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOStudent.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PluginExcel.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/SecretaryManager.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TeacherManager.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TelevisionManager.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/User.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewHome.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Home.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewUser.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSecretary.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Secretary.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUser.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/ModifyUser.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewManagementUsers.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/CodeAdeManager.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/MyAccountManager.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PluginExcel.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/MyAccount.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/templates/admin.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/templates/css_menu.css" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/templates/traitement.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/templates/fichier.html" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/templates/gestionLayout.html" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/templates/layout.css" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/templates/traitementLayout.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/inc/TvPluginActivate.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/inc/TvPluginDesactivate.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/assets/myscript.js" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/assets/mystyle.css" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/uninstall.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/TvPlugin.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/templates/B.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/templates/traitement.css" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/searchform.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/archive.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/comment.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/single.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/search.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewAlert.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/login.css" />
+        <option value="$USER_HOME$/Downloads/exo2.html" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/index.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/widgets/WidgetInformation.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/weather.js" />
+        <option value="$PROJECT_DIR$/mu-plugins/teleConnecteeAmu-functions.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/admin.css" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/calendar-list.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Weather.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/sidebar-2.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/sidebar.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/footer.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewInformation.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/twoColumns.css" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/header.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/page_two-columns.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/page_three_columns.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/threeColumns.css" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/404.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/page.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/inc/menu.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/functions.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/style.css" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
-    <option name="width" value="1939" />
-    <option name="height" value="1049" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -211,6 +433,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,60 +444,60 @@
             <path>
               <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="TeleConnecteeAmu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="TeleConnecteeAmu" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="TeleConnecteeAmu" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="TvConnecteeAmu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="TeleConnecteeAmu" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="TvConnecteeAmu" type="462c0819:PsiDirectoryNode" />
+              <item name="inc" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PhpstormProjects/Lebonrecoin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\wpTv\wp-content\plugins\TeleConnecteeAmu\controllers\fileReadICS" />
-      <recent name="C:\wamp64\www\wpTv\wp-content\plugins\ics-calendar" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\wpTv\wp-content\themes\TvConnecteeAmu" />
+      <recent name="C:\wamp64\www\wpTv\wp-content\plugins\TeleConnecteeAmu\views\js" />
+      <recent name="C:\wamp64\www\wpTv\wp-content\plugins\TeleConnecteeAmu\controllers" />
+      <recent name="C:\wamp64\www\wpTv\wp-content\themes\astra-child\js" />
       <recent name="C:\wamp64\www\wpTv\wp-content\plugins\TeleConnecteeAmu\models" />
-      <recent name="C:\wamp64\www\wpTv\wp-content\themes\astra-child\login" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\wpTv\wp-content\themes\TvConnecteeAmu\assets\images" />
+      <recent name="C:\wamp64\www\wpTv\wp-content\themes\TvConnecteeAmu\assets\js" />
       <recent name="C:\wamp64\www\wpTv\wp-content\themes\astra-child" />
-      <recent name="C:\wamp64\www\wpTv\wp-content\mu-plugins" />
+      <recent name="C:\wamp64\www\wpTv\wp-content\plugins\TeleConnecteeAmu\views\js\utils" />
       <recent name="C:\wamp64\www\wpTv\wp-content\themes\astra-child\js" />
     </key>
   </component>
@@ -314,17 +537,35 @@
       <workItem from="1556172508107" duration="24570000" />
       <workItem from="1556258668985" duration="20939000" />
       <workItem from="1556518269262" duration="10701000" />
+      <workItem from="1556537369757" duration="8431000" />
+      <workItem from="1556604863315" duration="18800000" />
+      <workItem from="1556777407889" duration="22218000" />
+      <workItem from="1556863521984" duration="18173000" />
+      <workItem from="1557122850181" duration="4631000" />
+      <workItem from="1557129076680" duration="9463000" />
+      <workItem from="1557209351795" duration="24236000" />
+      <workItem from="1557382858938" duration="49000" />
+      <workItem from="1557383196918" duration="24467000" />
+      <workItem from="1557468544201" duration="21278000" />
+      <workItem from="1557728825586" duration="22630000" />
+      <workItem from="1557814645298" duration="23855000" />
+      <workItem from="1557902810124" duration="21438000" />
+      <workItem from="1557987939278" duration="24228000" />
+      <workItem from="1558073477543" duration="9898000" />
+      <workItem from="1558083460195" duration="11883000" />
+      <workItem from="1558332919314" duration="10504000" />
+      <workItem from="1558425172366" duration="9610000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171101000" />
+    <option name="totallyTimeSpent" value="456893000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29932886" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3865772" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -349,301 +590,314 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/site-origin.css">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PluginExcel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra/assets/css/unminified/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra/assets/css/unminified/style-rtl.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="6006" column="1" selection-start-line="6006" selection-start-column="1" selection-end-line="6006" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra/assets/css/unminified/editor-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32863">
-          <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra/assets/css/unminified/editor-style-rtl.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2703" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra-child/login/login-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra-child/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        <state relative-caret-position="204">
+          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/weather.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        <state relative-caret-position="1275">
+          <caret line="75" column="1" lean-forward="true" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/register.js" />
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/register.php" />
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewWeather.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="91" lean-forward="true" selection-start-line="12" selection-start-column="91" selection-end-line="12" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewR34ICS.php" />
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCard.php" />
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Info.php" />
-    <entry file="file://$PROJECT_DIR$/plugins/if-menu/if-menu.php">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/assets/myscript.js" />
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/assets/mystyle.css" />
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/652">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra-child/style.css">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8381">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8383">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploads/winp-css-js/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/15963">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/43926">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="579">
+          <caret line="6825" lean-forward="true" selection-start-line="6825" selection-end-line="6825" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8379">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="21774" column="10" lean-forward="true" selection-start-line="21774" selection-start-column="10" selection-end-line="21774" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/calendar-list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="108" column="63" lean-forward="true" selection-start-line="108" selection-start-column="63" selection-end-line="108" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/R34ICS.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6460">
-          <caret line="380" column="5" lean-forward="true" selection-start-line="380" selection-start-column="5" selection-end-line="380" selection-end-column="5" />
-          <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="165" column="47" selection-start-line="165" selection-start-column="47" selection-end-line="165" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/BdUser.php" />
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOTeacher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="92" column="32" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/DAO/DAOStudent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1280">
-          <caret line="90" column="33" lean-forward="true" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PluginExcel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="53" column="102" selection-start-line="53" selection-start-column="102" selection-end-line="53" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/SecretaryManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TelevisionManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/User.php" />
-    <entry file="file://$USER_HOME$/Downloads/TvConnecteeLocal/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewHome.php" />
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Home.php" />
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TeacherManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Secretary.php">
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/admin.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php">
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        <state relative-caret-position="-107">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/ModifyUser.php" />
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="73" column="20" lean-forward="true" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="89" column="50" selection-start-line="89" selection-start-column="50" selection-end-line="89" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2006">
-          <caret line="123" column="13" lean-forward="true" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php">
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="37" column="42" lean-forward="true" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <element signature="e#6#91#0#PHP" expanded="true" />
-          </folding>
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2057">
-          <caret line="126" column="55" selection-start-line="126" selection-start-column="55" selection-end-line="126" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSecretary.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        <state relative-caret-position="-2">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewManagementUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="55" column="2" lean-forward="true" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+        <state relative-caret-position="357">
+          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php">
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="176" column="14" selection-start-line="176" selection-start-column="14" selection-end-line="176" selection-end-column="14" />
+        <state relative-caret-position="80">
+          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php">
+    <entry file="file://$PROJECT_DIR$/mu-plugins/teleConnecteeAmu-functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/CodeAdeManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+        <state relative-caret-position="423">
+          <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state relative-caret-position="1445">
+          <caret line="91" column="25" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Weather.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="145" column="1" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/css/StyleWeather.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/single.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/astra/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1632" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/astra/inc/widgets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-918" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/astra/inc/extras.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/sidebar-2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="31" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/astra/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/twoColumns.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/page_two-columns.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/page_three_columns.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/threeColumns.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/astra/inc/template-tags.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/astra/404.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/astra/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewInformation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="46" column="33" lean-forward="true" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Alert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1719">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewAlert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-600">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/404.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/inc/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="54" column="24" lean-forward="true" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="211" column="13" selection-start-line="211" selection-start-column="13" selection-end-line="211" selection-end-column="13" />
         </state>
       </provider>
     </entry>

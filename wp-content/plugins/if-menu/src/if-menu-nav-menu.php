@@ -126,7 +126,7 @@ class If_Menu_Walker_Nav_Menu_Edit extends Walker_Nav_Menu_Edit {
                 <?php if ( 'custom' == $item->type ) : ?>
                     <p class="field-url description description-wide">
                         <label for="edit-menu-item-url-<?php echo esc_attr( $item_id ); ?>">
-                            <?php esc_html_e('ViewSchedule'); ?><br />
+                            <?php esc_html_e( 'URL' ); ?><br />
                             <input type="text" id="edit-menu-item-url-<?php echo esc_attr( $item_id ); ?>" class="widefat code edit-menu-item-url" name="menu-item-url[<?php echo esc_attr( $item_id ); ?>]" value="<?php echo esc_attr( $item->url ); ?>" />
                         </label>
                     </p>

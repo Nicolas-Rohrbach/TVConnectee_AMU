@@ -6,14 +6,9 @@
  * Time: 10:26
  */
 
-class SecretaryManager extends Model
-{
-    public function insertMySecretary($login, $pwd, $firstname, $lastname, $email){
-
+class SecretaryManager extends Model{
+    public function insertMySecretary($login, $pwd, $email){
         $role = "secretaire";
-        $zero = 0;
-
-        return $this->insertUser($login, $pwd, $role, $zero, $zero, $zero, $firstname, $lastname, $email);
-
+        return $this->insertUser($login, $pwd, $role, $email);
     }
 }

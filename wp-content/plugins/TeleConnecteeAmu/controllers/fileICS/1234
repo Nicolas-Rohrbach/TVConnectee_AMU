@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:-//ADE/version 6.0
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:20190516T080244Z
+DTSTART:20190325T130000Z
+DTEND:20190325T150000Z
+SUMMARY:Système cardiovasculaire
+LOCATION:Amphi n° 2
+DESCRIPTION:\n\nDFGSM3\nElectrocardiogramme : 1 Morphologie et physiologi
+ e des voies de conduction normale-activité électrique du myocyte-physiol
+ ogie de lexcitation normale du coeur 2- Electrocardiogramme normal : gen
+ èse du signal\, méthodes d'enregistrement et caractéristiq\n\nDEHARO Jea
+ n-Claude\n\n(Updated :27/09/2018 12:25)
+UID:ADE60323031382d32303139506c616e6e696e67556e69766572736974e92d38303831
+ 2d352d30
+CREATED:19700101T000000Z
+LAST-MODIFIED:20180927T102500Z
+SEQUENCE:1827044700
+END:VEVENT
+END:VCALENDAR

@@ -6,11 +6,10 @@
  * Time: 15:08
  */
 
-// Don't load directly
 if (!defined('ABSPATH')) { exit; }
 
 
-class R34ICS {
+class R34ICS extends ControllerG {
 
     var $ical_path = '/fileR34ICS/vendors/ics-parser/src/ICal/ICal.php';
     var $event_path = '/fileR34ICS/vendors/ics-parser/src/ICal/Event.php';
@@ -19,15 +18,10 @@ class R34ICS {
     var $limit_days = 365;
 
     public function __construct() {
-
         // Set property values
         $this->ical_path = dirname(__FILE__) . $this->ical_path;
         $this->event_path = dirname(__FILE__) . $this->event_path;
         $this->carbon_path = dirname(__FILE__) . $this->carbon_path;
-
-        // Add ICS shortcode
-        add_shortcode('ics_calendar', array(@$this, 'shortcode'));
-
     }
 
     public function days_of_week($format=null) {
@@ -70,24 +64,34 @@ class R34ICS {
         return $days_of_week;
     }
 
-    public function display_calendar($ics_url, $args=array(), $force_reload=false) {
-
+    public function checkCalendar($ics_url, $force_reload=false){
         // Get ICS file, from transient if possible
         $transient_name = __METHOD__ . '_' . sha1($ics_url);
         $ics_contents = null;
-        if (empty($force_reload)) {
+        if(empty($force_reload)){
             $ics_contents = get_transient($transient_name);
         }
-        if (empty($ics_contents)) {
+        if(empty($ics_contents)){
             // Some servers (e.g. Airbnb) will require a user_agent string or return 403 Forbidden
             ini_set('user_agent','ICS Calendar for WordPress');
             $ics_contents = file_get_contents($ics_url);
-            set_transient($transient_name, $ics_contents, 600);
+            if($ics_contents === FALSE){
+                $this->addLogEvent("Le fichier n'a pas réussit à être lu url: ".$ics_url);
+            }
+            if(strlen($ics_contents) > 150){
+                set_transient($transient_name, $ics_contents, 600);
+                return $ics_contents;
+            }
+            else {
+                return null;
+            }
         }
+        return null;
+    }
 
+    public function display_calendar($ics_contents, $args=array()) {
         // No transient; retrieve data
-        if (!empty($ics_contents)) {
-
+        if(isset($ics_contents)) {
             // Parse ICS contents
             $ics_data = array();
             if (!$this->parser_loaded) {
@@ -95,18 +99,13 @@ class R34ICS {
             }
             $ICal = new ICal\ICal;
             $ICal->initString($ics_contents);
-
-            $ics_data['title'] = !empty($args['title']) ? $args['title'] : $ICal->calendarName();
-            $ics_data['description'] = !empty($args['description']) ? $args['description'] : $ICal->calendarDescription();
-
-
+            $ics_data['title'] = isset($args['title']) ? $args['title'] : $ICal->calendarName();
+            $ics_data['description'] = isset($args['description']) ? $args['description'] : $ICal->calendarDescription();
 
             // Process events
-            if ($ics_events = $ICal->events()) {
-
+            if($ics_events = $ICal->events()) {
                 // Assemble events
                 foreach ((array)$ics_events as $event) {
-
                     // Get the start date and time
                     // All-day events
                     if (strlen($event->dtstart) == 8) {
@@ -118,7 +117,7 @@ class R34ICS {
                         // Workaround for time zone data breaking the _tz values returned by ICS Parser
                         // @todo This workaround may need to be removed if a future update of ICS Parser fixes this bug
                         // If event's time zone appears in $event->dtstart_array[0]; the start and end times are correct, and $event->dtstart_tz overcompensates
-                        if (!empty($event->dtstart_array[0])) {
+                        if (isset($event->dtstart_array[0])) {
                             $dtstart_date = substr($event->dtstart,0,8);
                             $dtstart_time = substr($event->dtstart,9,6);
                             $dtend_date = substr($event->dtend,0,8);
@@ -159,7 +158,6 @@ class R34ICS {
                         }
                         $all_day = false;
                     }
-
                     // Add event data to output array if this month or later
                     if ($dtstart_date >= date_i18n('Ym') . '01') {
                         // Events with different start and end dates
@@ -239,7 +237,6 @@ class R34ICS {
                                 'deb' => @$event->dtstart,
                                 'fin' => @$event->dtend,
                             );
-
                         }
                         // Events with start/end times
                         else {
@@ -266,12 +263,10 @@ class R34ICS {
                                     substr($dtend_date,0,2)
                                 )),
                             );
-
                         }
                     }
                 }
             }
-
             // Sort events and remove out-of-range dates
             foreach (array_keys((array)$ics_data['events']) as $date) {
                 switch (@$args['view']) {
@@ -284,10 +279,11 @@ class R34ICS {
                         break;
                 }
                 $limit_date = date_i18n('Ymd', mktime(0,0,0,date_i18n('n'),date_i18n('j')+$this->limit_days,date_i18n('Y')));
-                if ($date < $first_date || $date > $limit_date) { unset($ics_data['events'][$date]); }
+                if($date < $first_date || $date > $limit_date) { unset($ics_data['events'][$date]); }
                 else { ksort($ics_data['events'][$date]); }
             }
-            ksort($ics_data['events']);
+            if(isset($ics_data['events']))
+                ksort($ics_data['events']);
 
             // Split events into year/month/day groupings and determine earliest and latest dates along the way
             foreach ((array)$ics_data['events'] as $date => $events) {
@@ -297,21 +293,21 @@ class R34ICS {
                 $ym = substr($date,0,6);
                 $ics_data['events'][$year][$month][$day] = $events;
                 unset($ics_data['events'][$date]);
-                if (!isset($ics_data['earliest']) || $ym < $ics_data['earliest']) { $ics_data['earliest'] = $ym; }
-                if (!isset($ics_data['latest']) || $ym > $ics_data['latest']) { $ics_data['latest'] = $ym; }
+                if (empty($ics_data['earliest']) || $ym < $ics_data['earliest']) { $ics_data['earliest'] = $ym; }
+                if (empty($ics_data['latest']) || $ym > $ics_data['latest']) { $ics_data['latest'] = $ym; }
             }
         }
 
         // Override defaults with inputs
-        if (!empty($args['title'])) {
+        if(isset($args['title'])) {
             $ics_data['title'] = ($args['title'] == 'none') ? false : $args['title'];
         }
-        if (!empty($args['description'])) {
+        if(isset($args['description'])) {
             $ics_data['description'] = ($args['description'] == 'none') ? false : $args['description'];
         }
 
         // Render template
-        switch (@$args['view']) {
+        switch(@$args['view']) {
             case 'list':
                 include(dirname(__FILE__) . '/fileR34ICS/templates/calendar-list.php');
                 break;
@@ -320,7 +316,6 @@ class R34ICS {
                 include(dirname(__FILE__) . '/fileR34ICS/templates/calendar-month.php');
                 break;
         }
-
     }
 
     public function first_dow($date=null) {
@@ -330,7 +325,6 @@ class R34ICS {
 
     public function get_days_of_week($format=null) {
         $days_of_week = $this->days_of_week($format);
-
         // Shift sequence of days based on site configuration
         $start_of_week = get_option('start_of_week', 0);
         for ($i = 0; $i < $start_of_week; $i++) {
@@ -338,39 +332,7 @@ class R34ICS {
             unset($days_of_week[$i]);
             $days_of_week[$i] = $day;
         }
-
         return $days_of_week;
-    }
-
-    public function shortcode($atts) {
-
-        // Extract attributes
-        extract(shortcode_atts(array(
-            'count' => null,
-            'eventdesc' => null,
-            'format' => null,
-            'description' => null,
-            'hidetimes' => null,
-            'reload' => false,
-            'showendtimes' => null,
-            'title' => null,
-            'url' => null,
-            'view' => null,
-        ), $atts));
-
-        // Get the calendar output
-        ob_start();
-        $this->display_calendar($url, array(
-            'count' => $count,
-            'description' => $description,
-            'eventdesc' => $eventdesc,
-            'format' => $format,
-            'hidetimes' => $hidetimes,
-            'showendtimes' => $showendtimes,
-            'title' => $title,
-            'view' => $view,
-        ), $reload);
-        return ob_get_clean();
     }
 
     private function _load_parser() {

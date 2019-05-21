@@ -14,6 +14,24 @@
 
 @import url("../astra/style.css");
 
+* {box-sizing:border-box}
+
+/* MENU */
+.white{
+	color: white;
+}
+
+/* SLIDESHOW */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.mySlides {
+	display: none;
+}
+
 /* HEADER */
 .ninja {
 	opacity: 0;
@@ -113,26 +131,12 @@
 }
 
 /* WEATHER */
-.myFooter{
-	position: fixed;
-	bottom: 0;
-	left:0;
-	box-sizing: border-box;
-	color: #FFF;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-	padding: 0;
-	width: 100%;
-}
 .Infos{
-	top: 35vw;
-	background-color: #007fff;
+	background-color: #0071b9;
 	box-sizing: border-box;
 	color: #FFF;
-	float: right;
-	height: 6vw;
+	height: 9vw;
 	text-align: center;
-	width: 25%;
 }
 .Infos .Weather{
 	box-sizing: border-box;
@@ -156,8 +160,6 @@
 .Infos .Weather img{
 	display: inline-block;
 	height: 70%;
-	margin-left: 10px;
-	margin-top: -7px;
 }
 .Infos .Time{
 	font-size: 1.6vw;
@@ -170,7 +172,7 @@
 @media only screen and (max-device-width: 1000px){
 	.Infos {
 		height: 8.7vw;
-		width: 30%;
+		width: 100%;
 	}
 	.Infos .Time{
 		font-size: 2.4vw;
@@ -391,4 +393,76 @@
 	background-color: #E6E6E6;
 	border-radius: 1.5%;
 	border:2px solid darkgrey;
+}
+
+/* TABLE */
+.errorNotRegister{
+	font-weight: bold;
+	color: white;
+	background-color: red;
+}
+
+#content {
+	font-size: 120%;
+}
+
+/*__Information main__*/
+
+#information_carousel {
+	height: 35em;
+	background-color: lightgray;
+	margin-left: 850px;
+
+}
+.titleInfo {
+	font-size : 3em;
+	text-align: center;
+}
+
+.content_info{
+	font-size : 1.5em;
+	text-align: center;
+}
+
+.content_info img{
+	width : auto;
+	max-height: 35ex;
+
+}
+
+
+/*__form__*/
+th {font-size : 120%;}
+
+.tdcentered {text-align: center;}
+
+
+td img {
+	max-width: 75px;
+	max-height: 75px;
+}
+
+form input{
+	margin : 3px;
+}
+form button{
+	margin : 3px;
+}
+
+
+
+/*__Alerts main__*/
+
+.alert {
+	background-color: #D90404;
+	color: white;
+	width : 100%;
+	text-align: center;
+}
+
+.innerwrap {
+	position : relative;
+}
+.list {
+	text-align: center;
 }

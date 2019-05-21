@@ -6,64 +6,121 @@
  * Time: 17:23
  */
 
-class Schedule
+class Schedule extends ControllerG
 {
-    private $url;
-    private $weather;
+    /**
+     * View de Schedule
+     * @var ViewSchedule
+     */
+    private $view;
 
-
+    /**
+     * Constructeur de Schedule.
+     */
     public function __construct(){
-        $this->url = new ViewSchedule();
-        $this->weather = new ViewWeather();
+        $this->view = new ViewSchedule();
+    }
+
+    /**
+     * Vérifie si l'emploi du temps existe et qu'il a du contenus
+     * @param $code
+     * @param $force
+     * @return bool
+     */
+    public function checkSchedule($code, $force){
+        global $R34ICS;
+        $R34ICS = new R34ICS();
+        $url = ABSPATH."/wp-content/plugins/TeleConnecteeAmu/controllers/fileICS/".$code;
+        $contents = $R34ICS->checkCalendar($url, $force);
+        if (isset($contents))
+            return true;
+        else
+            return false;
+    }
+
+    /**
+     * Affiche l'emploi du temps demandé
+     * @param $code
+     * @param $force
+     */
+    public function displaySchedule($code, $force){
+        global $R34ICS;
+        $R34ICS = new R34ICS();
+
+        $url = ABSPATH."/wp-content/plugins/TeleConnecteeAmu/controllers/fileICS/".$code;
+        $args = array(
+            'count' => 10,
+            'description' => null,
+            'eventdesc' => null,
+            'format' => null,
+            'hidetimes' => null,
+            'showendtimes' => null,
+            'title' => null,
+            'view' => 'list',
+        );
+        $contents = $R34ICS->checkCalendar($url, $force);
+        if (isset($contents)) {
+            $model = new CodeAdeManager();
+            $title = $model->getTitle($code);
+            if ($code == $title){
+                $this->addLogEvent("Le code non enregistré");
+                $current_user = wp_get_current_user();
+                $title = $current_user->user_login;
+            }
+            $this->view->displayName($title);
+            $R34ICS->display_calendar($contents, $args);
+        }
+    }
+
+    /**
+     * Affiche l'emploi du temps d'une promo en fonction de l'ID récupéré dans l'url
+     */
+    public function displayYearSchedule(){
+        $code = $this->getMyIdUrl();
+        $force = true;
+        if ($this->checkSchedule($code, $force)) {
+            $this->displaySchedule($code, $force);
+        }
+        else
+            $this->view->displayEmptySchedule();
     }
 
     /**
      * Affiche l'emploi du temps de la personne concerné sauf si il s'agit d'une personne qui n'a pas de code ADE lié à son compte
      * @throws Exception
      */
-    public function displayMySchedule(){
-        ### Initialisation
-        $planning = new Planning();
-
-        ## Récupération de la configuration
-        $conf = $planning->getConf();
-
-        # On prépare l’export en iCal
-        list($startDay, $startMonth, $startYear) = explode('/', gmdate('d\/m\/Y', $conf['FIRST_WEEK']));
-        list($endDay, $endMonth, $endYear) = explode('/', gmdate('d\/m\/Y', intval($conf['FIRST_WEEK'] + ($conf['NB_WEEKS'] * 7 * 24 * 3600))));
-
-        # Cherche le code ADE dans le dossier data/ressources.yaml en fonction de l'utilisateur connecté et demande à afficher l'emploi du temps
+    public function displaySchedules(){
         $current_user = wp_get_current_user();
+        if ($current_user->role == "television" || $current_user->role == "etudiant" || $current_user->role == "enseignant") {
+            $force = true;
+            $codes = unserialize($current_user->code);
+            $validSchedule = array();
 
-        if($current_user->demiGroupe != 0) {
-            $this->url->displayName($current_user);
-            $this->url->displayTimetable($current_user->demiGroupe,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear);
-        }
-        else if($current_user->groupe != 0) {
-            $this->url->displayName($current_user);
-            $this->url->displayTimetable($current_user->groupe,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear);
-        }
-        else if($current_user->annee != 0) {
-            $this->url->displayName($current_user);
-            $this->url->displayTimetable($current_user->annee,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear);
-        }
-        #Si la personne n'est pas connectée ou si il s'agit d'un Admin ou d'une secrétaire
-        else {
-            $this->url->displayHome($current_user);
-        }
-
-        $adresse = $_SERVER['REQUEST_URI'];
-        $id =  '';
-
-        for($i = 1; $i < strlen($adresse); ++$i){
-            if($adresse[$i] === '/'){
-                for($j = $i + 1; $j < strlen($adresse) - 1; ++$j){
-                    $id .= $adresse[$j];
+            foreach ($codes as $code) {
+                $addCode = new CodeAde();
+                $path = $addCode->getFilePath($code);
+                if(! file_exists($path) || file_get_contents($path) == ''){
+                    $addCode->addFile($code);
                 }
+                if($this->checkSchedule($code, $force))
+                    $validSchedule[] = $code;
+            }
+            if (empty($validSchedule))
+                $this->view->displayEmptySchedule();
+            else {
+                if ($current_user->role == "television") {
+                    $this->view->displayStartSlide();
+                    foreach ($validSchedule as $schedule) {
+                        $this->displaySchedule($schedule, $force);
+                        $this->view->displayMidSlide();
+                    }
+                    $this->view->displayEndSlide();
+                }
+                else
+                    $this->displaySchedule(end($validSchedule), $force);
             }
         }
-        echo $id;
-        $this->weather->displayWeather();
+        else
+            $this->view->displayWelcome();
     }
-
 }

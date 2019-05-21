@@ -6,42 +6,58 @@
  * Time: 10:09
  */
 
-class ManagementUsers
-{
+class ManagementUsers extends ControllerG{
     private $view;
-    //private $model;
 
-    public function __construct()
-    {
+    /**
+     * Constructeur de ManagementUsers.
+     */
+    public function __construct(){
         $this->view = new ViewManagementUsers();
-        //$this->model = new StudentManager();
     }
 
-    public function displayMyUsers($action, $actionTri){
+    /**
+     * Affiche les utilisateurs choisis
+     * @param $action
+     */
+    public function displayUsers($action){
         $this->view->displayButtonChoise();
-        if($action == "Students"){
+        if($action == "students"){
             $controller = new Student();
-            $controller->displayAllStudents($action);
+            $controller->displayAllStudents();
         }
-        elseif ($action == "Teachers") {
+        elseif ($action == "teachers") {
             $controller = new Teacher();
-            $controller->displayAllTeachers($actionTri);
+            $controller->displayAllTeachers();
+        }
+        elseif ($action == "televisions"){
+            $controller = new Television();
+            $controller->displayAllTv();
+        }
+        elseif ($action == "secretarys"){
+            $controller = new Secretary();
+            $controller->displayAllSecretary();
         }
     }
 
-    public function modifyMyUser(){
-        $newAdress = substr($_SERVER['REQUEST_URI'],51);
-        $id = substr($newAdress,0,-1);
+    /**
+     * Modifie l'utilisateur choisi
+     */
+    public function modifyUser(){
         $model = new TeacherManager();
-        $result = $model->getById($id);
+        $result = $model->getById($this->getMyIdUrl());
 
         if($result['role'] == "etudiant"){
             $controller = new Student();
-            $controller->displayModifyMyStudent($result);
+            $controller->modifyMyStudent($result);
         }
         elseif ($result['role'] == "enseignant"){
             $controller = new Teacher();
-            $controller->displayModifyTeacher($result);
+            $controller->modifyTeacher($result);
+        }
+        elseif ($result['role'] == "television"){
+            $controller = new Television();
+            $controller->modifyTv($result);
         }
     }
 }

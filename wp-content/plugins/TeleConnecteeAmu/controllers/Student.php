@@ -6,121 +6,84 @@
  * Time: 10:33
  */
 
-class Student
+class Student extends ControllerG
 {
+    /**
+     * View de Student
+     * @var ViewStudent
+     */
     private $view;
+
+    /**
+     * Model de Student
+     * @var StudentManager
+     */
     private $model;
 
+    /**
+     * Constructeur de Student.
+     */
     public function __construct()
     {
         $this->view = new ViewStudent();
         $this->model = new StudentManager();
     }
 
+    /**
+     * Ajoute tout les étudiants présent dans un fichier excel
+     * @param $actionStudent    Est à true si le bouton est préssé
+     */
     public function insertStudent($actionStudent){
-
         excelStudent($actionStudent);
         $this->view->displayInsertImportFileStudent();
 
     }
 
-    public function deleteStudent($action){
-        if(isset($action)){
-            $this->model->deleteUser($action);
-            $this->view->refreshPage();
-        }
-    }
-
-    function displayAllStudents($action){
-
-        $adresse = $_SERVER['REQUEST_URI'];
-        $id =  '';
-
-        for($i = 1; $i < strlen($adresse); ++$i){
-            if($adresse[$i] === '/'){
-                for($j = $i + 1; $j < strlen($adresse) - 1; ++$j){
-                    $id .= $adresse[$j];
-                }
+    /**
+     * Affiche tout les étudiants dans un tableau
+     */
+    function displayAllStudents(){
+        $results = $this->model->getUsersByRole('etudiant');
+        if(isset($results)){
+            $this->view->displayTabHeadStudent();
+            $row = 0;
+            foreach ($results as $result){
+                ++$row;
+                $id = $result['ID'];
+                $login = $result['user_login'];
+                $code = unserialize($result['code']);
+                $year = $this->model->getTitle($code[0]);
+                $group = $this->model->getTitle($code[1]);
+                $halfgroup = $this->model->getTitle($code[2]);
+                $this->view->displayAllStudent($id, $login, $year, $group, $halfgroup, $row);
             }
-        }
-
-        $result = $this->model->getStudents();
-        $this->view->tabHeadStudent();
-
-        $tabStudent = [];
-        $cpt = 0;
-
-        foreach ($result as $row) {
-
-            $firstname = $row['prenom'];
-            $lastname = $row['user_nicename'];
-            $year = $row['annee'];
-            $group = $row['groupe'];
-            $halfgroup = $row['demiGroupe'];
-            $id = $row['ID'];
-
-            $student = new DAOStudent($firstname, $lastname, $year, $group, $halfgroup, $id);
-
-            $tabStudent[$cpt] = $student;
-            ++$cpt;
-
-        }
-        $i = 0;
-        if($action[0] === 'prenom'){
-            $tabStudentSort = DAOStudent::sortByFirstname($tabStudent);
-            foreach ($tabStudentSort as $student){
-                $this->view->displayAllStudent($student->getFirstname(), $student->getLastname(), $student->getYear(), $student->getGroup(), $student->getHalfgroup(), ++$i, $student->getId());
-            }
-        }
-
-        elseif($action[1] === 'nom'){
-            $tabStudentSort = DAOStudent::sortByLastname($tabStudent);
-            foreach ($tabStudentSort as $student){
-                $this->view->displayAllStudent($student->getFirstname(), $student->getLastname(), $student->getYear(), $student->getGroup(), $student->getHalfgroup(), ++$i, $student->getId());
-            }
-        }
-        elseif($action[2] === 'annee1'){
-            foreach ($tabStudent as $student){
-                if($student->getAnnee() === '1'){
-                    $this->view->displayAllStudent($student->getFirstname(), $student->getLastname(), $student->getYear(), $student->getGroup(), $student->getHalfgroup(), ++$i, $student->getId());                }
-            }
-        }
-        elseif($action[3] === 'annee2'){
-            foreach ($tabStudent as $student){
-                if($student->getAnnee() === '2'){
-                    $this->view->displayAllStudent($student->getFirstname(), $student->getLastname(), $student->getYear(), $student->getGroup(), $student->getHalfgroup(), ++$i, $student->getId());                }
-            }
-        }
-        elseif($action[3] === 'licence'){
-            foreach ($tabStudent as $student){
-                if($student->getAnnee() == "Licence ACI"){
-                    $this->view->displayAllStudent($student->getFirstname(), $student->getLastname(), $student->getYear(), $student->getGroup(), $student->getHalfgroup(), ++$i, $student->getId());                }
-            }
+            $this->view->displayRedSignification();
+            $this->view->displayEndTab();
         }
         else{
-            foreach ($tabStudent as $student){
-                $this->view->displayAllStudent($student->getFirstname(), $student->getLastname(), $student->getYear(), $student->getGroup(), $student->getHalfgroup(), ++$i, $student->getId());            }
+            $this->view->displayEmpty();
         }
-        $this->view->endTab();
     }
 
-    public function displayModifyMyStudent($result){
-
-        $this->view->displayModifyStudent($result['user_nicename'], $result['prenom'], $result['annee'], $result['groupe'], $result['demiGroupe']);
+    /**
+     * Modifie l'étudiant sélectionné
+     * @param $result   Données de l'étudiant avant modification
+     */
+    public function modifyMyStudent($result){
+        $years = $this->model->getCodeYear();
+        $groups = $this->model->getCodeGroup();
+        $halfgroups = $this->model->getCodeHalfgroup();
+        $this->view->displayModifyStudent($result, $years, $groups, $halfgroups);
 
         $action = $_POST['modifvalider'];
-        $firstname = filter_input(INPUT_POST,'modifprenom');
-        $lastname = filter_input(INPUT_POST,'modifnom');
-        $year = filter_input(INPUT_POST,'modifannee');
-        $group = filter_input(INPUT_POST,'modifgroupe');
-        $halfgroup = filter_input(INPUT_POST,'modifdemigroupe');
+        $year = filter_input(INPUT_POST,'modifYear');
+        $group = filter_input(INPUT_POST,'modifGroup');
+        $halfgroup = filter_input(INPUT_POST,'modifHalfgroup');
 
+        $code = [$year, $group, $halfgroup];
         if($action == 'Valider'){
-            if($this->model->modifyStudent($result['ID'], $firstname, $lastname, $year, $group, $halfgroup, $result['user_email'])){
+            if($this->model->modifyStudent($result['ID'], $code)){
                 $this->view->refreshPage();
-            }
-            else{
-                echo "erreur";
             }
         }
     }
