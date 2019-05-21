@@ -189,33 +189,33 @@ class ViewInformation extends ViewG
             //    set will be iterated.
 
 
-            $content = 'test';
-            $max = $highestRow;
-            $mod = 0;
-            for ($i = 0; $i < $max; $i++) {
-                $mod = $i % 3;
-                if ($mod == 0) {
-                    $content .= '<tr>';
-                }
-                $content .= '<td>' . $i . '</td>';
-                if ($mod == 2) {
-                    $content .= '</tr>';
-                }
-            }
-            if ($mod != 2 && $i > 0) {
-                $content .= '</tr>';
-            }
-
-
-//            foreach ($cellIterator as $cell) {
-//                echo '<td>' .
-//                    $cell->getValue() .
-//                    '</td>' . PHP_EOL;
+//            $content = 'test';
+//            $max = $highestRow;
+//            $mod = 0;
+//            for ($i = 0; $i < $max; $i++) {
+//                $mod = $i % 3;
+//                if ($mod == 0) {
+//                    $content .= '<tr>';
+//                }
+//                $content .= '<td>' . $i . '</td>';
+//                if ($mod == 2) {
+//                    $content .= '</tr>';
+//                }
 //            }
-//            echo '</tr>' . PHP_EOL;
-//        }
-//        echo '</table>' . PHP_EOL;
+//            if ($mod != 2 && $i > 0) {
+//                $content .= '</tr>';
+//            }
+//
+
+            foreach ($cellIterator as $cell) {
+                echo '<td>' .
+                    $cell->getValue() .
+                    '</td>' . PHP_EOL;
+            }
+            echo '</tr>' . PHP_EOL;
+        }
+        echo '</table>' . PHP_EOL;
 
         }
-    }
+
 }
