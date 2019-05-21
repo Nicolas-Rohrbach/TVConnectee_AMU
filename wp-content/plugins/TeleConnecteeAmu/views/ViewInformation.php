@@ -43,36 +43,36 @@ class ViewInformation extends ViewG
      * @param $title
      * @param $content
      */
+
     public function displayInformationView($id, $title, $content, $type)
     {
-        echo '   
-                <div class="title">' . $title . ' </div>
-                    <div class="content_info">';
-        if ($type == "tab") {$this->readExcel($id);}
-        else {echo $content;}
-                echo '</div>
-             </div>';
+        $cpt = 0;
+        echo '<div class="container-fluid">
+                <div class="row">
+                    <div id="information_carousel">
+                        <div id="demo" class="carousel slide" data-ride="carousel">
+                            
+                            <!--The slides -->
+                            <div class="carousel-inner">';
+        for($i=0; $i < sizeof($title); ++$i) {
+            $var = ($cpt == 0) ? ' active">' : '">';
+            echo '<div class="carousel-item' . $var.'
+                                                <div class="title">'.$title[$i].' </div>
+                                                <div class="content_info">';
+                                                    if ($type[$i] == "tab") {$this->readExcel($id[$i]);}
+                                                    else {echo $content[$i];}
+            echo                               '</div> 
+                                           </div>';
+            $cpt++;
+        }
+        echo'   </div>
+                            </div>
+                        </div>
+                        </div>
+                        </div>';
+
     } //displayInformationView()
 
-    public function displayStartSlide(){
-        echo '
-            <div class="slideshow-container-info">
-                <div class="mySlides-info">';
-    }
-
-    public function displayMidSlide(){
-        echo '
-                </div>
-              <div class="mySlides-info">';
-    }
-
-    public function displayEndSlide() {
-        echo '          
-                       </div>
-                   </div>
-        <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/slideshow.js"></script>
-        <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/test.js"></script>';
-    }
 
     /**
      * Affiche un formulaire pour choisir le type d'information que l'on veut créer

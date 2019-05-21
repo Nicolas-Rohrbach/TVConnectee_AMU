@@ -124,7 +124,7 @@ add_action('createAlert',array($alert,'createAlert'),0,3);
 add_action('handleAlert', array($alert,'alertsManagement'));
 add_action('delete_alert', array($alert,'deleteAlert'), 0 ,1);
 add_action('modify_alert',array($alert,'modifyAlert'));
-add_action('display_alert', array($alert, 'alertMain'));
+
 
 // Initialize plugin
 add_action('init', function(){

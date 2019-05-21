@@ -142,7 +142,10 @@ class Information {
     public function informationMain(){
 
        $result = $this->DB->getListInformation();
-       $this->view->displayStartSlide();
+       $idList = array();
+       $titleList = array();
+       $contentList = array();
+       $typeList = array();
         foreach ($result as $row) {
 
             $id = $row['ID_info'];
@@ -150,13 +153,15 @@ class Information {
             $content = $row['content'];
             $endDate = date('Y-m-d',strtotime($row['end_date']));
             $type = $row['type'];
-
             $this->endDateCheckInfo($id,$endDate);
-            $this->view->displayInformationView($id, $title,$content,$type);
-            $this->view->displayMidSlide();
 
+            array_push($idList,$id);
+            array_push($titleList,$title);
+            array_push($contentList,$content);
+            array_push($typeList, $type);
         }
-        $this->view->displayEndSlide();
+        $this->view->displayInformationView($idList, $titleList,$contentList,$typeList);
+
     } // informationMain()
 
 
