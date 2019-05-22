@@ -44,11 +44,10 @@ class ViewInformation extends ViewG
      * @param $content
      */
 
-    public function displayInformationView($id, $title, $content, $type)
+    public function displayInformationView($title, $content)
     {
         $cpt = 0;
         echo '<div class="container-fluid">
-                <div class="row">
                     <div id="information_carousel">
                         <div id="demo" class="carousel slide" data-ride="carousel">
                             
@@ -57,19 +56,15 @@ class ViewInformation extends ViewG
         for($i=0; $i < sizeof($title); ++$i) {
             $var = ($cpt == 0) ? ' active">' : '">';
             echo '<div class="carousel-item' . $var.'
-                                                <div class="title">'.$title[$i].' </div>
-                                                <div class="content_info">';
-                                                    if ($type[$i] == "tab") {$this->readExcel($id[$i]);}
-                                                    else {echo $content[$i];}
-            echo                               '</div> 
-                                           </div>';
+                         <div class="title">'.$title[$i].' </div>
+                         <div class="content_info">'.$content[$i].'</div> 
+                  </div>';
             $cpt++;
         }
         echo'   </div>
-                            </div>
-                        </div>
-                        </div>
-                        </div>';
+              </div>
+            </div>
+      </div>';
 
     } //displayInformationView()
 
@@ -164,28 +159,7 @@ class ViewInformation extends ViewG
         }
     } //displayModifyInformationForm()
 
-    public function readExcel($id)
-    {
 
-        $file = glob($_SERVER['DOCUMENT_ROOT'] . "/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.*");
-        foreach ($file as $i) {
-            $filename = $i;
-        }
-        $reader = \PhpOffice\PhpSpreadsheet\IOFactory::createReader('Xlsx');
-        $reader->setReadDataOnly(TRUE);
-        $spreadsheet = $reader->load($filename);
-
-        $worksheet = $spreadsheet->getActiveSheet();
-        echo $highestRow = $worksheet->getHighestRow() . '</br>';
-
-        echo '<table>' . PHP_EOL;
-        foreach ($worksheet->getRowIterator() as $row) {
-            echo '<tr>' . PHP_EOL;
-            $cellIterator = $row->getCellIterator();
-            $cellIterator->setIterateOnlyExistingCells(FALSE); // This loops through all cells,
-            //    even if a cell value is not set.
-            // By default, only cells that have a value
-            //    set will be iterated.
 
 
 //            $content = 'test';
@@ -205,16 +179,4 @@ class ViewInformation extends ViewG
 //                $content .= '</tr>';
 //            }
 //
-
-            foreach ($cellIterator as $cell) {
-                echo '<td>' .
-                    $cell->getValue() .
-                    '</td>' . PHP_EOL;
-            }
-            echo '</tr>' . PHP_EOL;
-        }
-        echo '</table>' . PHP_EOL;
-
-        }
-
 }

@@ -155,12 +155,21 @@ class Information {
             $type = $row['type'];
             $this->endDateCheckInfo($id,$endDate);
 
-            array_push($idList,$id);
-            array_push($titleList,$title);
-            array_push($contentList,$content);
-            array_push($typeList, $type);
+            if($type == 'tab'){
+                $list = $this->readSpreadSheet($id);
+                foreach ($list as $table) {
+                    array_push($idList,$id);
+                    array_push($titleList,$title);
+                    array_push($contentList, $table);
+                }
+            }
+            else {
+                array_push($idList,$id);
+                array_push($titleList,$title);
+                array_push($contentList,$content);
+            }
         }
-        $this->view->displayInformationView($idList, $titleList,$contentList,$typeList);
+        $this->view->displayInformationView($titleList,$contentList);
 
     } // informationMain()
 
@@ -293,7 +302,53 @@ class Information {
         }
     }//uploadFile()
 
+    public function readSpreadSheet($id){
 
+        $file = glob($_SERVER['DOCUMENT_ROOT'] . "/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.*");
+        foreach ($file as $i) {
+            $filename = $i;
+        }
+        $reader = \PhpOffice\PhpSpreadsheet\IOFactory::createReader('Xlsx');
+        $reader->setReadDataOnly(TRUE);
+        $spreadsheet = $reader->load($filename);
+
+        $worksheet = $spreadsheet->getActiveSheet();
+        $highestRow = $worksheet->getHighestRow();
+
+        $contentList = array();
+        $content = "";
+        $mod = 0;
+
+
+        for ($i = 0; $i < $highestRow; ++$i) {
+            $mod = $i % 15;
+            if($mod == 0){
+                $content .= '<table class ="table">';
+            }
+            foreach ($worksheet->getRowIterator($i+1,1) as $row) {
+                $content .= '<tr>';
+                $cellIterator = $row->getCellIterator();
+                $cellIterator->setIterateOnlyExistingCells(FALSE);
+                foreach ($cellIterator as $cell) {
+                    $content .='<td>' .
+                        $cell->getValue() .
+                        '</td>';
+                }
+                $content .='</tr>';
+            }
+            if($mod == 14){
+                $content .= '</table>';
+                array_push($contentList,$content);
+                $content = "";
+            }
+        }
+        if($mod != 14 && $i >0){
+            $content .= '</table>';
+            array_push($contentList,$content);
+            $content = "";
+        }
+        return $contentList;
+    }
 
 }
 

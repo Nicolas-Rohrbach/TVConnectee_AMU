@@ -117,7 +117,7 @@ add_action('delete_codes', array($code, 'deleteCodes'), 0, 1);
 add_action('handleInfos',array($information,'informationManagement'));
 add_action('delete_infos',array($information, 'deleteInformations'),0 ,1);
 add_action('modify_info',array($information,'modifyInformation'));
-add_action('displayInformations',array($information,'informationMain'));
+//add_action('displayInformations',array($information,'informationMain'));
 add_action('add_info',array($information,'insertInformation'), 0, 7);
 
 add_action('createAlert',array($alert,'createAlert'),0,3);
@@ -140,7 +140,7 @@ add_action('hookWeather',array($weather,'displayMyWeather'));
 add_action('handleInfos',array($information,'informationManagement'));
 add_action('delete_infos',array($information, 'deleteInformations'),0 ,1);
 add_action('modify_info',array($information,'modifyInformation'));
-add_action('displayInformations',array($information,'informationMain'));
+//add_action('displayInformations',array($information,'informationMain'));
 add_action('add_info',array($information,'insertInformation'), 0, 7);
 
 add_action('createAlert',array($alert,'createAlert'),0,3);
