@@ -1495,3 +1495,25 @@ Server returned 6429 characters, of which 150 are below:
         <meta 
 
 
+[22-05-2019 15:53:57] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://wptv/feed/alerts". The resource could not be retrieved because of a client error with code 404
+Server returned 6429 characters, of which 150 are below:
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>TvConnecteeAmu &raquo; Not Found</title>
+        <meta 
+
+
+[22-05-2019 16:48:07] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://wptv/feed/alerts". The resource could not be retrieved because of a client error with code 404
+Server returned 6429 characters, of which 150 are below:
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>TvConnecteeAmu &raquo; Not Found</title>
+        <meta 
+
+

@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8f9b9a1-218c-4909-ae30-ea212ab095f0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/Media/103.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/Media/106.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/Media/109.xlsx" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/wpTv.iml" afterPath="$PROJECT_DIR$/.idea/wpTv.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/log/wprss/log_blg-1.txt" afterPath="$PROJECT_DIR$/wp-content/log/wprss/log_blg-1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/TeleConnectee.php" afterPath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/TeleConnectee.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php" afterPath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewInformation.php" afterPath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewInformation.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/TvConnecteeAmu/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/TvConnecteeAmu/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,13 +17,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Information.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Information.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="344" column="21" lean-forward="false" selection-start-line="344" selection-start-column="21" selection-end-line="344" selection-end-column="21" />
+            <state relative-caret-position="69">
+              <caret line="326" column="87" lean-forward="false" selection-start-line="326" selection-start-column="87" selection-end-line="326" selection-end-column="87" />
               <folding>
-                <marker date="1558530577849" expanded="true" signature="12688:13504" ph="..." />
+                <marker date="1558534284450" expanded="true" signature="12829:13658" ph="..." />
               </folding>
             </state>
           </provider>
@@ -43,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/TvConnecteeAmu/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="224" column="1" lean-forward="false" selection-start-line="224" selection-start-column="1" selection-end-line="224" selection-end-column="1" />
+            <state relative-caret-position="405">
+              <caret line="236" column="19" lean-forward="true" selection-start-line="236" selection-start-column="19" selection-end-line="236" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -122,8 +118,8 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/js/slideshow.js" />
         <option value="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/TeleConnectee.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewInformation.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/TvConnecteeAmu/style.css" />
         <option value="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/TvConnecteeAmu/style.css" />
       </list>
     </option>
   </component>
@@ -134,7 +130,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-486" />
     <option name="y" value="-18" />
     <option name="width" value="1644" />
@@ -180,6 +176,83 @@
               <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="TeleConnecteeAmu" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wpTv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wpTv" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="TeleConnecteeAmu" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Excel" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wpTv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wpTv" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="TeleConnecteeAmu" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Excel" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wpTv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wpTv" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="TeleConnecteeAmu" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Excel" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="phpoffice" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wpTv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wpTv" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="TeleConnecteeAmu" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Excel" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="phpoffice" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="phpspreadsheet" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wpTv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wpTv" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="TeleConnecteeAmu" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Excel" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="phpoffice" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="phpspreadsheet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wpTv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wpTv" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="TeleConnecteeAmu" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Excel" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="phpoffice" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="phpspreadsheet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="PhpSpreadsheet" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wpTv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wpTv" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="TeleConnecteeAmu" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Excel" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="phpoffice" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="phpspreadsheet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="PhpSpreadsheet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Reader" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="wpTv" type="b2602c69:ProjectViewProjectNode" />
@@ -286,17 +359,18 @@
       <workItem from="1558338406362" duration="16581000" />
       <workItem from="1558438442179" duration="312000" />
       <workItem from="1558439974715" duration="6042000" />
-      <workItem from="1558509065099" duration="12485000" />
+      <workItem from="1558509065099" duration="18046000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133761000" />
+    <option name="totallyTimeSpent" value="139322000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2905478" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2905478" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5064447" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -345,13 +419,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/TvConnecteeAmu/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewG.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="987">
@@ -396,7 +463,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1558530577849" expanded="true" signature="12688:13504" ph="..." />
+            <marker date="1558534284450" expanded="true" signature="12829:13658" ph="..." />
           </folding>
         </state>
       </provider>
@@ -438,7 +505,7 @@
         <state relative-caret-position="3633">
           <caret line="178" column="131" lean-forward="false" selection-start-line="178" selection-start-column="131" selection-end-line="178" selection-end-column="131" />
           <folding>
-            <marker date="1558530577849" expanded="true" signature="12688:13504" ph="..." />
+            <marker date="1558534284450" expanded="true" signature="12829:13658" ph="..." />
           </folding>
         </state>
       </provider>
@@ -584,7 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/IOFactory.php" />
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Spreadsheet.php" />
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/js/slideshowInfo.js" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/ViewInformation.php">
@@ -594,18 +660,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/js/slideshow.js">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/IOFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="-1386">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/TvConnecteeAmu/style.css">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xlsx.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="224" column="1" lean-forward="false" selection-start-line="224" selection-start-column="1" selection-end-line="224" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/TeleConnectee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="169" column="1" lean-forward="true" selection-start-line="169" selection-start-column="1" selection-end-line="169" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="326" column="87" lean-forward="false" selection-start-line="326" selection-start-column="87" selection-end-line="326" selection-end-column="87" />
+          <folding>
+            <marker date="1558534284450" expanded="true" signature="12829:13658" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/js/slideshow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -634,21 +726,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/TeleConnectee.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/TvConnecteeAmu/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="169" column="1" lean-forward="true" selection-start-line="169" selection-start-column="1" selection-end-line="169" selection-end-column="1" />
+          <caret line="236" column="19" lean-forward="true" selection-start-line="236" selection-start-column="19" selection-end-line="236" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="344" column="21" lean-forward="false" selection-start-line="344" selection-start-column="21" selection-end-line="344" selection-end-column="21" />
-          <folding>
-            <marker date="1558530577849" expanded="true" signature="12688:13504" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>

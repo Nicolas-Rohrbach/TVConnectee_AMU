@@ -262,7 +262,7 @@ class Information {
         if ($_FILES['file']['size'] > $maxsize) echo "Le fichier est trop volumineux <br>";
 
         if($type == "img"){$extensions_valides = array( 'jpg' , 'jpeg' , 'gif' , 'png' );}
-        if($type == "tab") {$extensions_valides = array( 'xls' , 'xlsx' );}
+        if($type == "tab") {$extensions_valides = array( 'xls' , 'xlsx' , 'ods' );}
 
         $extension_upload = strtolower(  substr(  strrchr($_FILES['file']['name'], '.')  ,1)  );
         if ( in_array($extension_upload,$extensions_valides) ) {
@@ -308,7 +308,8 @@ class Information {
         foreach ($file as $i) {
             $filename = $i;
         }
-        $reader = \PhpOffice\PhpSpreadsheet\IOFactory::createReader('Xlsx');
+        $extension = ucfirst(strtolower(end(explode(".", $filename))));
+        $reader = \PhpOffice\PhpSpreadsheet\IOFactory::createReader($extension);
         $reader->setReadDataOnly(TRUE);
         $spreadsheet = $reader->load($filename);
 
@@ -323,7 +324,7 @@ class Information {
         for ($i = 0; $i < $highestRow; ++$i) {
             $mod = $i % 15;
             if($mod == 0){
-                $content .= '<table class ="table">';
+                $content .= '<div class="content_table"> <table class ="table-bordered table-sm table_info">';
             }
             foreach ($worksheet->getRowIterator($i+1,1) as $row) {
                 $content .= '<tr>';
@@ -337,13 +338,13 @@ class Information {
                 $content .='</tr>';
             }
             if($mod == 14){
-                $content .= '</table>';
+                $content .= '</table> </div>';
                 array_push($contentList,$content);
                 $content = "";
             }
         }
         if($mod != 14 && $i >0){
-            $content .= '</table>';
+            $content .= '</table></div>';
             array_push($contentList,$content);
             $content = "";
         }
