@@ -1,11 +1,6 @@
 <?php
 
-get_header();
-?>
-</head>
-<body>
-<?php include_once 'inc/menu.php'?>
-<div id="page">
+get_header(); ?>
 <div id="content">
     <br/>
     <?php if(have_posts()) : ?>

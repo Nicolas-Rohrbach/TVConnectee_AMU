@@ -75,7 +75,7 @@ class ViewAlert extends ViewG
      */
     public function displayAlertMain($content) {
                 echo '
-        <div class="alert">
+        <div class="alerts">
             <div id="ticker1">
                 <div class="innerWrap">';
             for($i = 0; $i < sizeof($content); ++$i){

@@ -40,7 +40,6 @@ class Planning {
      */
     public function __construct() {
         $this->conf = $this->getYaml('constants');
-        $this->setCustomConf();
     }
 
     /**

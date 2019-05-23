@@ -53,19 +53,19 @@ class ViewInformation extends ViewG
                             
                             <!--The slides -->
                             <div class="carousel-inner">';
-        for($i=0; $i < sizeof($title); ++$i) {
-            $var = ($cpt == 0) ? ' active">' : '">';
-            echo '<div class="carousel-item' . $var.'
-                         <div class="title">'.$title[$i].' </div>
-                         <div class="content_info">'.$content[$i].'</div> 
-                  </div>';
-            $cpt++;
-        }
-        echo'   </div>
-              </div>
-            </div>
-      </div>';
-
+                                for($i=0; $i < sizeof($title); ++$i) {
+                                    $var = ($cpt == 0) ? ' active">' : '">';
+                                    echo '<div class="carousel-item' . $var.'
+                                                <h1 class="titleInfo">'.$title[$i].' </h1>
+                                                <div class="content_info">'.$content[$i].'</div> 
+                                           </div>';
+                                    $cpt++;
+                                }
+                        echo'   </div>
+                            </div>
+                        </div>
+                        </div>
+                        </div>';
     } //displayInformationView()
 
 
