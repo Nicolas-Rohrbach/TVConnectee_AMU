@@ -151,7 +151,7 @@ add_action('modify_alert',array($alert,'modifyAlert'));
 
 
 
-add_action('test',array($information,'testExcel'));
+//add_action('test',array($information,'testExcel'));
 
 
 
