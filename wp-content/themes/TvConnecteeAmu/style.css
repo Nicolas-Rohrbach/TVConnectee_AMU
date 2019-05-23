@@ -215,7 +215,7 @@ a:hover {
 }
 
 .content_info{
-    /*font-size : 1.5em;*/
+    font-size : 1.5em;
     /*text-align: center;*/
 }
 
@@ -228,13 +228,11 @@ a:hover {
     max-width: 80%;
     display: block;
 
-    /*max-height: 70ex;*/
-    /*word-wrap: normal;*/
-    /*overflow: hidden;*/
+    max-height: 80%;
 }
 .table_info {
     text-align: justify;
-    font-size: 1vm;
+    /*font-size: 2vh;*/
 
 
 }
