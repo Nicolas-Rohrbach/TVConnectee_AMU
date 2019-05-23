@@ -10,8 +10,24 @@
         <link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
         <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <script src="/wp-content/themes/TvConnecteeAmu/assets/js/jquery-3.3.1.min.js"></script>
         <script src="/wp-content/themes/TvConnecteeAmu/assets/js/jquery-ui.min.js"></script>
         <script src="/wp-content/themes/TvConnecteeAmu/assets/js/jquery.easy-ticker.js"></script>
-    <?php wp_head(); ?>   <?php wp_get_archives('type=monthly&format=link'); ?> <?php //comments_popup_script(); <?php wp_head(); ?>
+        <script src="/wp-content/themes/TvConnecteeAmu/assets/js/menu.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#myModal").modal('show');
+            });
+        </script>
 
+    <?php wp_head(); ?>   <?php wp_get_archives('type=monthly&format=link'); ?> <?php //comments_popup_script(); <?php wp_head(); ?>
+    </head>
+    <body <?php body_class(); ?>>
+    <div id="header">
+            <?php //wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+            <?php include_once 'inc/menu.php'; ?>
+    </div>
+    <div id="page">

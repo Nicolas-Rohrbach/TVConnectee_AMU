@@ -1,0 +1,16 @@
+/*__Alerts main__*/
+
+.alerts {
+    font-size: 150%;
+    height: 7ex;
+    background-color: #FF0000;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.innerwrap {
+}
+.list {
+    text-align: center;
+}

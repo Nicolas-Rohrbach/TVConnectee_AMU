@@ -33,10 +33,72 @@ class Student extends ControllerG
      * Ajoute tout les étudiants présent dans un fichier excel
      * @param $actionStudent    Est à true si le bouton est préssé
      */
-    public function insertStudent($actionStudent){
-        excelStudent($actionStudent);
+    public function insertStudent() {
+        $actionStudent = $_POST['importEtu'];
         $this->view->displayInsertImportFileStudent();
+        if ($actionStudent) {
+            $allowed_extension = array("Xls", "Xlsx", "Csv");
+            $extension = ucfirst(strtolower(end(explode(".", $_FILES["excelEtu"]["name"]))));
+            // allowed extension
+            if (in_array($extension, $allowed_extension)) {
+                $reader = \PhpOffice\PhpSpreadsheet\IOFactory::createReader($extension);
+                $reader->setReadDataOnly(TRUE);
+                $spreadsheet = $reader->load($_FILES["excelEtu"]["tmp_name"]);
 
+                $worksheet = $spreadsheet->getActiveSheet();
+                $highestRow = $worksheet->getHighestRow();
+
+                $row = $worksheet->getRowIterator(1, 1);
+                $cells = [];
+                foreach ($row as $value){
+                    $cellIterator = $value->getCellIterator();
+                    $cellIterator->setIterateOnlyExistingCells(FALSE);
+                    foreach ($cellIterator as $cell) {
+                        $cells[] = $cell->getValue();
+                    }
+                }
+                if($cells[0] == "Numero Ent" && $cells[1] == "email" && $cells[2] == "Annee" && $cells[3] == "Groupe" && $cells[4] == "Demi-groupe") {
+                    $doubles = array();
+                    for ($i = 2; $i < $highestRow + 1; ++$i) {
+                        $cells = array();
+                        foreach ($worksheet->getRowIterator($i, $i + 1) as $row) {
+                            $cellIterator = $row->getCellIterator();
+                            $cellIterator->setIterateOnlyExistingCells(FALSE);
+                            foreach ($cellIterator as $cell) {
+                                $cells[] = $cell->getValue();
+                            }
+                        }
+                        $pwd = wp_generate_password();
+                        $hashpass = wp_hash_password($pwd);
+                        $codes = [$cells[2], $cells[3], $cells[4]];
+                        if($this->model->insertStudent($cells[0], $hashpass, $cells[1], $codes)){
+                            foreach ($codes as $code){
+                                $path = $this->getFilePath($code);
+                                if(! file_exists($path))
+                                    $this->addFile($code);
+                            }
+                            $message = "Bonjour, vous avez été inscrit sur le site de la Télé Connecté de votre département en temps qu'étudiant. <br> Sur ce site, vous aurez accès à votre emploie du temps, à vos notes et aux informations concernant votre scolarité. <br>" ;
+                            $message2 = $message . "Votre identifiant est " . $cells[0] . " et votre mot de passe est " . $pwd . ". <br>"  ;
+                            $message3 = $message2 . "Pour vous connecter, rendez vous sur le site : tv-connectee-amu.alwaysdata.net ." . "<br> Nous vous souhaitons une bonne expérience sur notre site. <br>" ;
+                            //mail($email, "Inscription à la télé-connecté", $message3);
+                        }
+                        else {
+                            array_push($doubles, $cells[0]);
+                        }
+                    }
+                    if(! is_null($doubles[0])) {
+                        $this->view->displayErrorDouble($doubles);
+                    } else {
+                        $this->view->displayInsertValidate();
+                    }
+                }
+                else {
+                    $this->view->displayWrongFile();
+                }
+            } else {
+                $this->view->displayWrongExtension();
+            }
+        }
     }
 
     /**
