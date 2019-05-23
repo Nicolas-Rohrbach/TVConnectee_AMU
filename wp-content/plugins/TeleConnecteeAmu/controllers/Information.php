@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: SFW
+ * User: Léa Arnaud
  * Date: 17/04/2019
  * Time: 11:33
  */
@@ -59,6 +59,7 @@ class Information {
      */
     function informationManagement(){
         $result = $this->DB->getListInformation();
+        echo '<a href="http://wptv/creer-information/"> Creer une information </a>';
         $this->view->tabHeadInformation();
         $i = 0;
 
@@ -102,19 +103,19 @@ class Information {
                 $this->DB->modifyInformation($id,$title,$content,$endDate);
                 $this->view->refreshPage();
             }
-            elseif($actionImg == "Modifier") {
+            elseif($actionImg == "Modifier") { //si il s'agit d'une modification d'affiche
                 $contentFile = $_FILES['contentFile'];
 
                 $title =$_POST['titleInfo'];
                 $endDate =$_POST['endDateInfo'];
-                if($_FILES['contentFile']['size'] != 0) {
-                    $contentNew = $this->uploadFile($id,$contentFile,"","","modify");
+                if($_FILES['contentFile']['size'] != 0) {    //si l'image est modifié
+                    $contentNew = $this->uploadFile($contentFile,"modify","img",$id);
                     if($contentNew != null || $contentNew != 0) {
                         $this->DB->modifyInformation($id,$title,$contentNew,$endDate);
                         $this->view->refreshPage();
                     }
                 }
-                else {
+                else { // si le texte et/ou la date de fin est modifié
                     $this->DB->modifyInformation($id,$title,$content,$endDate);
                     $this->view->refreshPage();
                 }
@@ -141,23 +142,33 @@ class Information {
     public function informationMain(){
 
        $result = $this->DB->getListInformation();
-
-        $titleList = array();
-        $contentList = array();
-
+       $idList = array();
+       $titleList = array();
+       $contentList = array();
+       $typeList = array();
         foreach ($result as $row) {
 
             $id = $row['ID_info'];
             $title = $row['title'];
             $content = $row['content'];
             $endDate = date('Y-m-d',strtotime($row['end_date']));
-
+            $type = $row['type'];
             $this->endDateCheckInfo($id,$endDate);
 
-            array_push($titleList, $title) ;
-            array_push($contentList,$content) ;
+            if($type == 'tab'){
+                $list = $this->readSpreadSheet($id);
+                foreach ($list as $table) {
+                    array_push($idList,$id);
+                    array_push($titleList,$title);
+                    array_push($contentList, $table);
+                }
+            }
+            else {
+                array_push($idList,$id);
+                array_push($titleList,$title);
+                array_push($contentList,$content);
+            }
         }
-
         $this->view->displayInformationView($titleList,$contentList);
 
     } // informationMain()
@@ -176,11 +187,12 @@ class Information {
     public function insertInformation($actionText,$actionImg,$actionTab, $title, $content, $contentFile, $endDate){
 
         $this->view->displayInformationCreation();
-        if(isset($actionText)) {
+        if(isset($actionText)) { // si c'est une création de texte
             $this->DB->addInformationDB($title, $content, $endDate,"text");
         }
-        elseif (isset($actionImg)) {
-            $result = $this->uploadFile(0,$contentFile, $title, $endDate,"create"); //upload le fichier avec un nom temporaire
+        elseif (isset($actionImg)) { // si c'est une création d'affiche
+            //upload le fichier avec un nom temporaire
+            $result = $this->uploadFile($contentFile,"create", "img", 0, $title, $endDate);
             if($result != 0) {
 
                 $id = $result;
@@ -189,26 +201,45 @@ class Information {
                 $extension_upload = strtolower(  substr(  strrchr($_FILES['file']['name'], '.')  ,1)  );
 
                 //renomme le fichier avec l'id de l'info
-                rename($_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/media/temporary.{$extension_upload}",
-                    $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/media/{$id}.{$extension_upload}");
+                rename($_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/temporary.{$extension_upload}",
+                    $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.{$extension_upload}");
 
                 //modifie le contenu de l'information pour avoir le bon lien de l'image
-                $content = '<img src="http://wptv/wp-content/plugins/TeleConnecteeAmu/views/media/'.$id.'.'.$extension_upload.'">';
-                $result = $this->DB->getInformationByID($id);
-                $title = $result['title'];
-                $endDate = date('Y-m-d',strtotime($result['end_date']));
-                $this->DB->modifyInformation($id, $title, $content, $endDate);
+                $content = '<img src="http://wptv/wp-content/plugins/TeleConnecteeAmu/views/Media/'.$id.'.'.$extension_upload.'">';
+                $this->changeContentFile($id, $content);
             }
         }
-        elseif (isset($actionTab)) {
-            echo 'pas encore implementé';
+        elseif (isset($actionTab)) { //si c'est une création d'un tableau de note
+            $result = $this->uploadFile($contentFile,"create", "tab", 0, $title, $endDate);
+            if($result != 0) {
+                $id = $result;
+                //récupère l'extension du fichier
+                $_FILES['file'] = $contentFile;
+                $extension_upload = strtolower(  substr(  strrchr($_FILES['file']['name'], '.')  ,1)  );
+
+                //renomme le fichier avec l'id de l'info
+                rename($_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/temporary.{$extension_upload}",
+                    $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.{$extension_upload}");
+
+                //modifie le contenu de l'information pour avoir le bon nom du fichier
+                $content = $id.'.'.$extension_upload;
+                $this->changeContentFile($id, $content);
+            }
+
         }
     } //insertInformation()
 
+    public function changeContentFile($id, $content){
+        $result = $this->DB->getInformationByID($id);
+        $title = $result['title'];
+        $endDate = date('Y-m-d',strtotime($result['end_date']));
+        $this->DB->modifyInformation($id, $title, $content, $endDate);
+    }
+
 
     /**
-     * Upload un fichier sur le serveur, créer l'information avec un contenu temporaire pour la création d'info
-     * et renvoie le nouveau contenu pour quand il s'agit d'une modification.
+     * Upload un fichier sur le serveur, créer l'information avec un contenu temporaire
+     * ou renvoie le nouveau contenu quand il s'agit d'une modification.
      * @param $id
      * @param $file
      * @param $title
@@ -216,7 +247,7 @@ class Information {
      * @param $action
      * @return int|string
      */
-    public function uploadFile($id, $file, $title, $endDate, $action){
+    public function uploadFile($file, $action, $type, $id =0, $title="", $endDate=""){
         if($action == "create"){ //si la fonction a été appelée pour la création d'une info
             $id = "temporary"; //met un id temporaire pour le nom du fichier
         }
@@ -230,24 +261,39 @@ class Information {
         if ($_FILES['file']['error'] > 0) echo "Erreur lors du transfert <br>";
         if ($_FILES['file']['size'] > $maxsize) echo "Le fichier est trop volumineux <br>";
 
-        $extensions_valides = array( 'jpg' , 'jpeg' , 'gif' , 'png' );
-        $extension_upload = strtolower(  substr(  strrchr($_FILES['file']['name'], '.')  ,1)  );
-        if ( in_array($extension_upload,$extensions_valides) ) echo "Extension correcte <br>";
+        if($type == "img"){$extensions_valides = array( 'jpg' , 'jpeg' , 'gif' , 'png' );}
+        if($type == "tab") {$extensions_valides = array( 'xls' , 'xlsx' , 'ods' );}
 
-        $nom =  $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/media/{$id}.{$extension_upload}";
-        $resultat = move_uploaded_file($_FILES['file']['tmp_name'],$nom);
+        $extension_upload = strtolower(  substr(  strrchr($_FILES['file']['name'], '.')  ,1)  );
+        if ( in_array($extension_upload,$extensions_valides) ) {
+            $nom =  $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.{$extension_upload}";
+            $resultat = move_uploaded_file($_FILES['file']['tmp_name'],$nom);
+        }else { echo "Extension incorrecte <br>";}
 
         if ($resultat){
-            echo "Transfert réussi <br>";
             if($action == "create"){
-                // Ajoute dans la BD avec un contenu temporaire
-                $result = $this->DB->addInformationDB($title,"temporary content",$endDate, "img");
-                return $result;
+                if($type == "img") {
+                    // Ajoute dans la BD avec un contenu temporaire
+                    $result = $this->DB->addInformationDB($title,"temporary content",$endDate, "img");
+                    return $result;
+                }
+                elseif ($type == "tab") {
+                    // Ajoute dans la BD avec un contenu temporaire
+                    $result = $this->DB->addInformationDB($title,"temporary content",$endDate, "tab");
+                    return $result;
+                }else{echo "le type d'information n'est pas le bon";}
             }
             elseif ($action == "modify"){
-                //renvoie le nouveau contenu de l'info
-                $content = '<img src="http://wptv/wp-content/plugins/TeleConnecteeAmu/views/media/' . $id . '.' . $extension_upload . '">';
-                return $content;
+                if($type == "img") {
+                    //renvoie le nouveau contenu de l'info
+                    $content = '<img src="http://wptv/wp-content/plugins/TeleConnecteeAmu/views/Media/' . $id . '.' . $extension_upload . '">';
+                    return $content;
+                }
+                elseif ($type == "tab"){
+                    //renvoie le nouveau contenu de l'info
+                    $content =  $id .'.'. $extension_upload;
+                    return $content;
+                }else{echo "le type d'information n'est pas le bon";}
             }
         }
         else {
@@ -255,4 +301,55 @@ class Information {
             return 0;
         }
     }//uploadFile()
+
+    public function readSpreadSheet($id){
+
+        $file = glob($_SERVER['DOCUMENT_ROOT'] . "/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.*");
+        foreach ($file as $i) {
+            $filename = $i;
+        }
+        $extension = ucfirst(strtolower(end(explode(".", $filename))));
+        $reader = \PhpOffice\PhpSpreadsheet\IOFactory::createReader($extension);
+        $reader->setReadDataOnly(TRUE);
+        $spreadsheet = $reader->load($filename);
+
+        $worksheet = $spreadsheet->getActiveSheet();
+        $highestRow = $worksheet->getHighestRow();
+
+        $contentList = array();
+        $content = "";
+        $mod = 0;
+
+
+        for ($i = 0; $i < $highestRow; ++$i) {
+            $mod = $i % 15;
+            if($mod == 0){
+                $content .= '<div class="content_table"> <table class ="table-bordered table-sm table_info">';
+            }
+            foreach ($worksheet->getRowIterator($i+1,1) as $row) {
+                $content .= '<tr>';
+                $cellIterator = $row->getCellIterator();
+                $cellIterator->setIterateOnlyExistingCells(FALSE);
+                foreach ($cellIterator as $cell) {
+                    $content .='<td>' .
+                        $cell->getValue() .
+                        '</td>';
+                }
+                $content .='</tr>';
+            }
+            if($mod == 14){
+                $content .= '</table> </div>';
+                array_push($contentList,$content);
+                $content = "";
+            }
+        }
+        if($mod != 14 && $i >0){
+            $content .= '</table></div>';
+            array_push($contentList,$content);
+            $content = "";
+        }
+        return $contentList;
+    }
+
 }
+

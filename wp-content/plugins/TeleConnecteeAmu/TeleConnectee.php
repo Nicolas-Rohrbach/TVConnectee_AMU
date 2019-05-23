@@ -38,8 +38,6 @@ include_once 'controllers/MyAccount.php';
 include_once 'models/MyAccountManager.php';
 include_once 'views/ViewMyAccount.php';
 
-include_once 'models/Excel/PHPExcel/IOFactory.php';
-include_once 'models/Excel/PluginExcel.php';
 include_once 'models/DAO/DAOUser.php';
 include_once 'models/DAO/DAOStudent.php';
 include_once 'models/DAO/DAOTeacher.php';
@@ -118,20 +116,43 @@ add_action('delete_codes', array($code, 'deleteCodes'), 0, 1);
 add_action('handleInfos',array($information,'informationManagement'));
 add_action('delete_infos',array($information, 'deleteInformations'),0 ,1);
 add_action('modify_info',array($information,'modifyInformation'));
-add_action('displayInformations',array($information,'informationMain'));
+//add_action('displayInformations',array($information,'informationMain'));
 add_action('add_info',array($information,'insertInformation'), 0, 7);
 
 add_action('createAlert',array($alert,'createAlert'),0,3);
 add_action('handleAlert', array($alert,'alertsManagement'));
 add_action('delete_alert', array($alert,'deleteAlert'), 0 ,1);
 add_action('modify_alert',array($alert,'modifyAlert'));
-add_action('display_alert', array($alert, 'alertMain'));
+
 
 // Initialize plugin
 add_action('init', function(){
     global $R34ICS;
     $R34ICS = new R34ICS();
 });
+
+
+
+add_action('hookEDT',array($schedule,'displayMySchedule'));
+add_action('hookWeather',array($weather,'displayMyWeather'));
+
+add_action('handleInfos',array($information,'informationManagement'));
+add_action('delete_infos',array($information, 'deleteInformations'),0 ,1);
+add_action('modify_info',array($information,'modifyInformation'));
+//add_action('displayInformations',array($information,'informationMain'));
+add_action('add_info',array($information,'insertInformation'), 0, 7);
+
+add_action('createAlert',array($alert,'createAlert'),0,3);
+add_action('handleAlert', array($alert,'alertsManagement'));
+add_action('delete_alert', array($alert,'deleteAlert'), 0 ,1);
+add_action('modify_alert',array($alert,'modifyAlert'));
+//add_action('display_alert', array($alert, 'alertMain'));
+
+
+
+
+add_action('test',array($information,'testExcel'));
+
 
 
 add_action( 'downloadFileICS', 'downloadFileICS_func' );
