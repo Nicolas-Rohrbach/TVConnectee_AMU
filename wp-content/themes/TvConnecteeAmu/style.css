@@ -205,28 +205,40 @@ a:hover {
     background-color: red;
 }
 
-
-/*__Information main__*/
-
+/* INFORMATION */
 #information_carousel {
     height: 70ex;
 }
 .titleInfo {
-    font-size : 3em;
+    /*font-size : 3em;*/
     text-align: center;
 }
 
 .content_info{
     font-size : 1.5em;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .content_info img{
-    width : 100%;
+    width : 50%;
     max-height: 50ex;
-
 }
 
+.content_table{
+    max-width: 80%;
+    display: block;
+
+    max-height: 80%;
+}
+.table_info {
+    text-align: justify;
+    /*font-size: 2vh;*/
+
+
+}
+.table_info td {
+
+}
 
 /*__form__*/
 th {font-size : 120%;}
@@ -336,3 +348,4 @@ form button{
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
 }
+

@@ -142,7 +142,10 @@ class Information {
     public function informationMain(){
 
        $result = $this->DB->getListInformation();
-       $this->view->displayStartSlide();
+       $idList = array();
+       $titleList = array();
+       $contentList = array();
+       $typeList = array();
         foreach ($result as $row) {
 
             $id = $row['ID_info'];
@@ -150,13 +153,24 @@ class Information {
             $content = $row['content'];
             $endDate = date('Y-m-d',strtotime($row['end_date']));
             $type = $row['type'];
-
             $this->endDateCheckInfo($id,$endDate);
-            $this->view->displayInformationView($id, $title,$content,$type);
-            $this->view->displayMidSlide();
 
+            if($type == 'tab'){
+                $list = $this->readSpreadSheet($id);
+                foreach ($list as $table) {
+                    array_push($idList,$id);
+                    array_push($titleList,$title);
+                    array_push($contentList, $table);
+                }
+            }
+            else {
+                array_push($idList,$id);
+                array_push($titleList,$title);
+                array_push($contentList,$content);
+            }
         }
-        $this->view->displayEndSlide();
+        $this->view->displayInformationView($titleList,$contentList);
+
     } // informationMain()
 
 
@@ -248,7 +262,7 @@ class Information {
         if ($_FILES['file']['size'] > $maxsize) echo "Le fichier est trop volumineux <br>";
 
         if($type == "img"){$extensions_valides = array( 'jpg' , 'jpeg' , 'gif' , 'png' );}
-        if($type == "tab") {$extensions_valides = array( 'xls' , 'xlsx' );}
+        if($type == "tab") {$extensions_valides = array( 'xls' , 'xlsx' , 'ods' );}
 
         $extension_upload = strtolower(  substr(  strrchr($_FILES['file']['name'], '.')  ,1)  );
         if ( in_array($extension_upload,$extensions_valides) ) {
@@ -288,7 +302,54 @@ class Information {
         }
     }//uploadFile()
 
+    public function readSpreadSheet($id){
 
+        $file = glob($_SERVER['DOCUMENT_ROOT'] . "/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.*");
+        foreach ($file as $i) {
+            $filename = $i;
+        }
+        $extension = ucfirst(strtolower(end(explode(".", $filename))));
+        $reader = \PhpOffice\PhpSpreadsheet\IOFactory::createReader($extension);
+        $reader->setReadDataOnly(TRUE);
+        $spreadsheet = $reader->load($filename);
+
+        $worksheet = $spreadsheet->getActiveSheet();
+        $highestRow = $worksheet->getHighestRow();
+
+        $contentList = array();
+        $content = "";
+        $mod = 0;
+
+
+        for ($i = 0; $i < $highestRow; ++$i) {
+            $mod = $i % 15;
+            if($mod == 0){
+                $content .= '<div class="content_table"> <table class ="table-bordered table-sm table_info">';
+            }
+            foreach ($worksheet->getRowIterator($i+1,1) as $row) {
+                $content .= '<tr>';
+                $cellIterator = $row->getCellIterator();
+                $cellIterator->setIterateOnlyExistingCells(FALSE);
+                foreach ($cellIterator as $cell) {
+                    $content .='<td>' .
+                        $cell->getValue() .
+                        '</td>';
+                }
+                $content .='</tr>';
+            }
+            if($mod == 14){
+                $content .= '</table> </div>';
+                array_push($contentList,$content);
+                $content = "";
+            }
+        }
+        if($mod != 14 && $i >0){
+            $content .= '</table></div>';
+            array_push($contentList,$content);
+            $content = "";
+        }
+        return $contentList;
+    }
 
 }
 
