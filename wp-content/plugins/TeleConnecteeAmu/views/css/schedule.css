@@ -1,0 +1,17 @@
+/* TABLE */
+.errorNotRegister{
+    font-weight: bold;
+    color: white;
+    background-color: red;
+}
+
+/* SLIDESHOW */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}

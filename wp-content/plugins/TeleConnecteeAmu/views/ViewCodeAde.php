@@ -83,7 +83,7 @@ class ViewCodeAde extends ViewG
     /**
      * Error message if the insertion or the modification want to have a double code or title
      */
-    public function displayErrorDouble(){
+    public function displayErrorDoubleCode(){
         echo '<div class="alert alert-danger"> Ce code ou ce titre existe déjà ! </div>';
     }
 }

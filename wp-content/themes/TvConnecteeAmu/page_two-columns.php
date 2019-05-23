@@ -1,12 +1,6 @@
 <?php /* Template Name: 2 colonnes */
 
-get_header();
-?>
-<link href="/wp-content/themes/TvConnecteeAmu/assets/css/twoColumns.css" rel="stylesheet">
-</head>
-<body>
-<?php include_once 'inc/menu.php'?>
-<div id="page">
+get_header(); ?>
 <div id="content-twocolumns">
     <?php if(have_posts()) :
         while(have_posts()) : the_post(); ?>

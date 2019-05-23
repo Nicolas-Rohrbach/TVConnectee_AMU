@@ -93,6 +93,28 @@ abstract class ViewG{
         echo "<div> Il n'y pas d'utilisateur de ce rôle inscrit!</div>";
     }
 
+    public function displayErrorDouble($doubles){
+        echo '
+        <div class="alert alert-danger">
+        <h2>Attention !</h2>';
+        foreach ($doubles as $double) {
+            echo "<h4>$double a rencontré un problème lors de l'enregistrement, vérifié son login et son email ! </h4>";
+        }
+        echo '</div>';
+    }
+
+    public function displayInsertValidate(){
+        echo "<p class='alert alert-success'>Votre inscription a été validé. </p>";
+    }
+
+    public function displayWrongExtension(){
+        echo '<p class="alert alert-danger"> Mauvaise extension de fichier ! </p>';
+    }
+
+    public function displayWrongFile(){
+        echo '<p class="alert alert-danger"> Vous utilisez un mauvais fichier excel/ ou vous avez changé le nom des colonnes </p>';
+    }
+
     public function displayUnregisteredCode($badCodes){
         echo'
         <h3> Ces codes ne sont pas encore enregistrés ! </h3>

@@ -65,8 +65,7 @@ add_action("wp_head", "mfp_card");
 define('ROOT', dirname(__FILE__));
 require_once(ROOT . '/controllers/fileSchedule/app/app.php');
 
-require ('Excel/vendor/autoload.php');
-
+require ('models/Excel/vendor/autoload.php');
 
 function mfp_Card(){
   echo '  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -168,3 +167,17 @@ function downloadFileICS_func() {
             $controllerAde->addFile($code['code']);
     }
 }
+
+function wpdocs_plugin_teleconnecteeAmu_scripts() {
+    wp_register_style('bootstrap-style', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', array(), true);
+    wp_enqueue_style('bootstrap-style');
+    wp_register_style('weather-style', '/wp-content/plugins/TeleConnecteeAmu/views/css/weather.css', array(), true);
+    wp_enqueue_style('weather-style');
+    wp_register_style('alert-style', '/wp-content/plugins/TeleConnecteeAmu/views/css/alert.css', array(), true);
+    wp_enqueue_style('alert-style');
+    wp_register_style('info-style', '/wp-content/plugins/TeleConnecteeAmu/views/css/information.css', array(), true);
+    wp_enqueue_style('info-style');
+    wp_register_style('schedule-style', '/wp-content/plugins/TeleConnecteeAmu/views/css/schedule.css', array(), true);
+    wp_enqueue_style('schedule-style');
+}
+add_action( 'wp_enqueue_scripts', 'wpdocs_plugin_teleconnecteeAmu_scripts' );
