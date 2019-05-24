@@ -153,7 +153,18 @@ class ViewInformation extends ViewG
                <a href="http://wptv/gerer-les-informations/"> Page de gestion</a>
             </div>';
         } elseif ($typeInfo == "tab") {
-            echo 'Work in progress';
+            echo '
+                <div>
+                    <form id="modify_info" method="post" enctype="multipart/form-data">
+                      Titre : <input type="text" name="titleInfo" value="' . $title . '" required maxlength="20"> </br>
+                      ' . $content . ' </br>
+                       Modifier le fichier:<input type="file" name="contentFile" /> </br>
+                       <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
+                      Date d\'expiration : <input type="date" name="endDateInfo" min="' . $dateMin . '" value = "' . $endDate . '" required > </br>
+                       <input type="submit" name="validateChangeTab" value="Modifier"/>
+                 </form>
+               <a href="http://wptv/gerer-les-informations/"> Page de gestion</a>
+            </div>';
         } else {
             echo 'Désolé, une erreur semble être survenue.';
         }
