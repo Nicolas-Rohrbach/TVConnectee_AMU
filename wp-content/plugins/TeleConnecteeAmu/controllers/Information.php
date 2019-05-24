@@ -321,7 +321,7 @@ class Information {
 
 
         for ($i = 0; $i < $highestRow; ++$i) {
-            $mod = $i % 15;
+            $mod = $i % 10;
             if($mod == 0){
                 $content .= '<div class="content_table"> <table class ="table-bordered table-sm table_info">';
             }
@@ -336,13 +336,13 @@ class Information {
                 }
                 $content .='</tr>';
             }
-            if($mod == 14){
+            if($mod == 9){
                 $content .= '</table> </div>';
                 array_push($contentList,$content);
                 $content = "";
             }
         }
-        if($mod != 14 && $i >0){
+        if($mod != 9 && $i >0){
             $content .= '</table></div>';
             array_push($contentList,$content);
             $content = "";

@@ -2,675 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8f9b9a1-218c-4909-ae30-ea212ab095f0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/composer.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/autoload.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/composer/ClassLoader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/composer/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/composer/autoload_classmap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/composer/autoload_files.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/composer/autoload_namespaces.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/composer/autoload_psr4.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/composer/autoload_real.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/composer/autoload_static.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/composer/installed.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/Autoloader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/Bootstrap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/Complex.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/Exception.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/abs.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/acos.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/acosh.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/acot.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/acoth.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/acsc.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/acsch.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/argument.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/asec.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/asech.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/asin.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/asinh.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/atan.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/atanh.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/conjugate.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/cos.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/cosh.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/cot.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/coth.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/csc.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/csch.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/exp.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/inverse.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/ln.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/log10.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/log2.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/negative.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/pow.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/rho.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/sec.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/sech.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/sin.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/sinh.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/sqrt.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/tan.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/tanh.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/functions/theta.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/operations/add.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/operations/divideby.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/operations/divideinto.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/operations/multiply.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/classes/src/operations/subtract.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/examples/complexTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/examples/testFunctions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/examples/testOperations.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/complex/license.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/buildPhar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/Autoloader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/Bootstrap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/Builder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/Exception.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/Functions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/Matrix.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/Operators/Addition.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/Operators/DirectSum.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/Operators/Division.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/Operators/Multiplication.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/Operators/Operator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/Operators/Subtraction.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/functions/adjoint.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/functions/antidiagonal.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/functions/cofactors.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/functions/determinant.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/functions/diagonal.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/functions/identity.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/functions/inverse.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/functions/minors.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/functions/trace.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/functions/transpose.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/operations/add.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/operations/directsum.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/operations/divideby.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/operations/divideinto.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/operations/multiply.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/classes/src/operations/subtract.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/examples/test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/markbaker/matrix/license.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/.php_cs.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/.sami.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/.scrutinizer.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/CHANGELOG.PHPExcel.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/bin/migrate-from-phpexcel" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/bin/pre-commit" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/composer.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/ClassDiagrams/Architecture.cd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/ClassDiagrams/Architecture.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/ClassDiagrams/ClassDiagrams.csproj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/ClassDiagrams/ClassDiagrams.csproj.user" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/ClassDiagrams/ClassDiagrams.sln" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/ClassDiagrams/Classes/IReader.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/ClassDiagrams/Classes/IWriter.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/ClassDiagrams/Classes/PHPExcel.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/ClassDiagrams/Classes/PHPExcel_IOFactory.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/ClassDiagrams/Classes/PHPExcel_Reader_Excel2007.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/ClassDiagrams/Classes/PHPExcel_Reader_Excel5.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/ClassDiagrams/Classes/PHPExcel_Reader_Serialized.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/ClassDiagrams/Classes/PHPExcel_Writer_Excel2007.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/ClassDiagrams/Classes/PHPExcel_Writer_Serialized.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/ClassDiagrams/Classes/Worksheet.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/ClassDiagrams/Exports/Architecture.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/ClassDiagrams/Exports/ReaderWriter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/ClassDiagrams/ReaderWriter.cd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/ClassDiagrams/ReaderWriter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/assets/logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/extra/extra.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/faq.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/references/features-cross-reference.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/references/function-list-by-category.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/references/function-list-by-name.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/accessing-cells.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/architecture.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/autofilters.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/calculation-engine.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/creating-spreadsheet.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/file-formats.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/01-01-autofilter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/01-02-autofilter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/01-03-filter-icon-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/01-03-filter-icon-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/01-04-autofilter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/01-schematic.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/02-readers-writers.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/04-01-simple-autofilter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/04-02-dategroup-autofilter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/04-03-custom-autofilter-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/04-03-custom-autofilter-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/04-04-dynamic-autofilter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/04-05-topten-autofilter-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/04-05-topten-autofilter-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/07-simple-example-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/07-simple-example-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/07-simple-example-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/07-simple-example-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/08-cell-comment.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/08-column-width.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/08-page-setup-margins.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/08-page-setup-scaling-options.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/08-styling-border-options.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/09-command-line-calculation.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/09-formula-in-cell-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/images/09-formula-in-cell-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/memory_saving.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/migration-from-PHPExcel.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/reading-and-writing-to-file.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/reading-files.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/recipes.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/settings.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/docs/topics/worksheets.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/mkdocs.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/phpunit.xml.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Autofilter/10_Autofilter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Autofilter/10_Autofilter_selection_1.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Autofilter/10_Autofilter_selection_2.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Autofilter/10_Autofilter_selection_display.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/01_Simple.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/01_Simple_download_ods.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/01_Simple_download_pdf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/01_Simple_download_xls.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/01_Simple_download_xlsx.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/02_Types.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/03_Formulas.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/04_Printing.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/05_Feature_demo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/06_Largescale.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/07_Reader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/08_Conditional_formatting.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/08_Conditional_formatting_2.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/09_Pagebreaks.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/11_Documentsecurity.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/12_CellProtection.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/13_Calculation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/13_CalculationCyclicFormulae.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/14_Xls.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/15_Datavalidation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/16_Csv.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/17_Html.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/18_Extendedcalculation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/19_Namedrange.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/20_Read_Excel2003XML.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/20_Read_Gnumeric.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/20_Read_Ods.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/20_Read_Sylk.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/20_Read_Xls.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/22_Heavily_formatted.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/23_Sharedstyles.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/24_Readfilter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/25_In_memory_image.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/26_Utf8.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/27_Images_Xls.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/28_Iterator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/29_Advanced_value_binder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/30_Template.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/31_Document_properties_write.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/31_Document_properties_write_xls.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/37_Page_layout_view.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/38_Clone_worksheet.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/39_Dropdown.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/40_Duplicate_style.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/41_Password.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/42_RichText.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/43_Merge_workbooks.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/44_Worksheet_info.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/45_Quadratic_equation_solver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/46_ReadHtml.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/data/continents/Africa.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/data/continents/Asia.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/data/continents/Europe.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/data/continents/North America.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/data/continents/Oceania.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Basic/data/continents/South America.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Calculations/Database/DAVERAGE.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Calculations/Database/DCOUNT.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Calculations/Database/DGET.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Calculations/Database/DMAX.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Calculations/Database/DMIN.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Calculations/Database/DPRODUCT.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Calculations/Database/DSTDEV.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Calculations/Database/DSTDEVP.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Calculations/Database/DVAR.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Calculations/Database/DVARP.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Calculations/DateTime/DATE.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Calculations/DateTime/DATEVALUE.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Calculations/DateTime/TIME.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Calculations/DateTime/TIMEVALUE.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Chart/32_Chart_read_write.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Chart/32_Chart_read_write_HTML.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Chart/32_Chart_read_write_PDF.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Chart/33_Chart_create_area.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Chart/33_Chart_create_bar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Chart/33_Chart_create_bar_stacked.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Chart/33_Chart_create_column.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Chart/33_Chart_create_column_2.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Chart/33_Chart_create_composite.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Chart/33_Chart_create_line.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Chart/33_Chart_create_multiple_charts.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Chart/33_Chart_create_pie.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Chart/33_Chart_create_pie_custom_colors.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Chart/33_Chart_create_radar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Chart/33_Chart_create_scatter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Chart/33_Chart_create_stock.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Chart/34_Chart_update.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Chart/35_Chart_render.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Header.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Pdf/21_Pdf_Domdf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Pdf/21_Pdf_TCPDF.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Pdf/21_Pdf_mPDF.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/01_Simple_file_reader_using_IOFactory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/02_Simple_file_reader_using_a_specified_reader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/03_Simple_file_reader_using_the_IOFactory_to_return_a_reader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/04_Simple_file_reader_using_the_IOFactory_to_identify_a_reader_to_use.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/05_Simple_file_reader_using_the_read_data_only_option.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/06_Simple_file_reader_loading_all_worksheets.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/07_Simple_file_reader_loading_a_single_named_worksheet.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/08_Simple_file_reader_loading_several_named_worksheets.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/09_Simple_file_reader_using_a_read_filter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/10_Simple_file_reader_using_a_configurable_read_filter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/11_Reading_a_workbook_in_chunks_using_a_configurable_read_filter_(version_1).php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/12_Reading_a_workbook_in_chunks_using_a_configurable_read_filter_(version_2).php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/13_Simple_file_reader_for_multiple_CSV_files.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/14_Reading_a_large_CSV_file_in_chunks_to_split_across_multiple_worksheets.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/15_Simple_file_reader_for_tab_separated_value_file_using_the_Advanced_Value_Binder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/16_Handling_loader_exceptions_using_TryCatch.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/17_Simple_file_reader_loading_several_named_worksheets.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/18_Reading_list_of_worksheets_without_loading_entire_file.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/19_Reading_worksheet_information_without_loading_entire_file.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/20_Reader_worksheet_hyperlink_image.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/sampleData/example1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/sampleData/example1.tsv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/sampleData/example1.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/sampleData/example2.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reader/sampleData/example2.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reading_workbook_data/Custom_properties.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reading_workbook_data/Custom_property_names.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reading_workbook_data/Properties.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reading_workbook_data/Worksheet_count_and_names.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reading_workbook_data/sampleData/example1.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reading_workbook_data/sampleData/example1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/Reading_workbook_data/sampleData/example2.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/bootstrap/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/bootstrap/css/phpspreadsheet.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/bootstrap/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/bootstrap/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/bootstrap/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/bootstrap/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/bootstrap/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/bootstrap/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/bootstrap/js/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/images/PhpSpreadsheet_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/images/officelogo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/images/paid.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/images/termsconditions.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/26template.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/27template.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/28iterators.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/30template.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/31docproperties.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/31docproperties.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32chartreadwrite.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32complexChartreadwrite.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteAreaChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteAreaChart2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteAreaChart3.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteAreaChart3D1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteAreaPercentageChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteAreaPercentageChart2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteAreaPercentageChart3D1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteAreaStackedChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteAreaStackedChart2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteAreaStackedChart3D1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteBarChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteBarChart2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteBarChart3.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteBarChart3D1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteBarPercentageChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteBarPercentageChart2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteBarPercentageChart3D1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteBarStackedChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteBarStackedChart2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteBarStackedChart3D1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteBubbleChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteBubbleChart3D1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteChartWithImages1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteColumnChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteColumnChart2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteColumnChart3.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteColumnChart3D1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteColumnChart4.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteColumnPercentageChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteColumnPercentageChart2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteColumnPercentageChart3D1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteColumnStackedChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteColumnStackedChart2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteColumnStackedChart3D1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteDonutChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteDonutChart2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteDonutChart3.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteDonutChart4.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteDonutChartExploded1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteDonutChartMultiseries1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteLineChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteLineChart2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteLineChart3.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteLineChart3D1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteLineChartNoPointMarkers1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteLinePercentageChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteLinePercentageChart2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteLineStackedChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteLineStackedChart2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwritePieChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwritePieChart2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwritePieChart3.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwritePieChart3D1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwritePieChart4.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwritePieChartExploded1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwritePieChartExploded3D1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteRadarChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteRadarChart2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteRadarChart3.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteScatterChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteScatterChart2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteScatterChart3.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteScatterChart4.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteScatterChart5.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteStockChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteStockChart2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteStockChart3.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteStockChart4.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteSurfaceChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteSurfaceChart2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteSurfaceChart3.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/32readwriteSurfaceChart4.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/36writeLineChart1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/43mergeBook1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/43mergeBook2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/46readHtml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/Excel2003XMLTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/GnumericTest.gnumeric" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/OOCalcTest.ods" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/SylkTest.slk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/chartSpreadsheet.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/largeSpreadsheet.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/samples/templates/sampleSpreadsheet.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/Bootstrap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/Calculation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/Category.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/Database.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/DateTime.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/Engine/CyclicReferenceStack.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/Engine/Logger.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/Engineering.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/Exception.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/ExceptionHandler.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/Financial.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/FormulaParser.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/FormulaToken.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/Functions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/Logical.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/LookupRef.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/MathTrig.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/Statistical.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/TextData.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/Token/Stack.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/functionlist.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/bg/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/bg/functions" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/cs/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/cs/functions" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/da/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/da/functions" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/de/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/de/functions" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/en/uk/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/es/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/es/functions" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/fi/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/fi/functions" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/fr/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/fr/functions" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/hu/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/hu/functions" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/it/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/it/functions" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/nl/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/nl/functions" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/no/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/no/functions" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/pl/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/pl/functions" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/pt/br/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/pt/br/functions" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/pt/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/pt/functions" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/ru/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/ru/functions" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/sv/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/sv/functions" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/tr/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/tr/functions" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/AdvancedValueBinder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/Cell.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/Coordinate.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/DataType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/DataValidation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/DataValidator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/DefaultValueBinder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/Hyperlink.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/IValueBinder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Chart/Axis.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Chart/Chart.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Chart/DataSeries.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Chart/DataSeriesValues.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Chart/Exception.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Chart/GridLines.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Chart/Layout.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Chart/Legend.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Chart/PlotArea.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Chart/Properties.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Chart/Renderer/IRenderer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Chart/Renderer/JpGraph.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Chart/Renderer/PHP Charting Libraries.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Chart/Renderer/Polyfill.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Chart/Title.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Collection/Cells.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Collection/CellsFactory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Collection/Memory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Comment.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Document/Properties.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Document/Security.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Exception.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/HashTable.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Helper/Html.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Helper/Migrator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Helper/Sample.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/IComparable.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/IOFactory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/NamedRange.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/BaseReader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Csv.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/DefaultReadFilter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Exception.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Gnumeric.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Html.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/IReadFilter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/IReader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Ods.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Security/XmlScanner.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Slk.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xls.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xls/Color.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xls/Color/BIFF5.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xls/Color/BIFF8.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xls/Color/BuiltIn.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xls/ErrorCode.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xls/Escher.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xls/MD5.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xls/RC4.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xls/Style/Border.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xls/Style/FillPattern.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xlsx.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xlsx/Chart.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xlsx/Theme.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xml.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/ReferenceHelper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/RichText/ITextElement.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/RichText/RichText.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/RichText/Run.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/RichText/TextElement.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Settings.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/CodePage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Date.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Drawing.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Escher.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Escher/DgContainer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Escher/DgContainer/SpgrContainer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Escher/DgContainer/SpgrContainer/SpContainer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Escher/DggContainer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Escher/DggContainer/BstoreContainer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Escher/DggContainer/BstoreContainer/BSE.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Escher/DggContainer/BstoreContainer/BSE/Blip.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/File.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Font.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/JAMA/CHANGELOG.TXT" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/JAMA/CholeskyDecomposition.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/JAMA/EigenvalueDecomposition.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/JAMA/LUDecomposition.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/JAMA/Matrix.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/JAMA/QRDecomposition.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/JAMA/SingularValueDecomposition.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/JAMA/utils/Maths.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/OLE.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/OLE/ChainedBlockStream.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/OLE/PPS.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/OLE/PPS/File.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/OLE/PPS/Root.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/OLERead.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/PasswordHasher.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/StringHelper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/TimeZone.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Trend/BestFit.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Trend/ExponentialBestFit.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Trend/LinearBestFit.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Trend/LogarithmicBestFit.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Trend/PolynomialBestFit.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Trend/PowerBestFit.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Trend/Trend.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/XMLWriter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Xls.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Spreadsheet.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Style/Alignment.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Style/Border.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Style/Borders.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Style/Color.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Style/Conditional.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Style/Fill.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Style/Font.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Style/NumberFormat.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Style/Protection.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Style/Style.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Style/Supervisor.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/AutoFilter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/BaseDrawing.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/CellIterator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Column.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/ColumnCellIterator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/ColumnDimension.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/ColumnIterator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Dimension.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Drawing.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Drawing/Shadow.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/HeaderFooter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/HeaderFooterDrawing.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Iterator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/MemoryDrawing.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/PageMargins.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/PageSetup.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Protection.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Row.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/RowCellIterator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/RowDimension.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/RowIterator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/SheetView.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Worksheet.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/BaseWriter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Csv.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Exception.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Html.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/IWriter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Ods.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Ods/Cell/Comment.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Ods/Content.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Ods/Meta.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Ods/MetaInf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Ods/Mimetype.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Ods/Settings.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Ods/Styles.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Ods/Thumbnails.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Ods/WriterPart.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Pdf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Pdf/Dompdf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Pdf/Mpdf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Pdf/Tcpdf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xls.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xls/BIFFwriter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xls/Escher.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xls/Font.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xls/Parser.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xls/Workbook.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xls/Worksheet.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xls/Xf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/Chart.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/Comments.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/ContentTypes.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/DocProps.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/Drawing.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/Rels.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/RelsRibbon.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/RelsVBA.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/StringTable.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/Style.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/Theme.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/Workbook.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/Worksheet.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/WriterPart.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/psr/simple-cache/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/psr/simple-cache/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/psr/simple-cache/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/psr/simple-cache/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/psr/simple-cache/src/CacheException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/psr/simple-cache/src/CacheInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/psr/simple-cache/src/InvalidArgumentException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdAlert.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdInfo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/models/BdInformation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/Media/112.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/Media/113.xlsx" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/log/wprss/log_blg-1.txt" afterPath="$PROJECT_DIR$/wp-content/log/wprss/log_blg-1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/TeleConnectee.php" afterPath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/TeleConnectee.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php" afterPath="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -680,86 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ViewInformation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewInformation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-              <folding>
-                <element signature="e#6#92#0#PHP" expanded="true" />
-                <marker date="1558611172480" expanded="true" signature="906:1102" ph="..." />
-                <marker date="1558611172480" expanded="true" signature="991:1097" ph="..." />
-                <marker date="1558611172480" expanded="true" signature="1351:1699" ph="{...}" />
-                <marker date="1558611172480" expanded="true" signature="1418:1687" ph="..." />
-                <marker date="1558611172480" expanded="true" signature="1419:1687" ph="..." />
-                <marker date="1558611172480" expanded="true" signature="1470:1687" ph="..." />
-                <marker date="1558611172480" expanded="true" signature="1554:1687" ph="..." />
-                <marker date="1558611172480" expanded="true" signature="2821:3200" ph="..." />
-                <marker date="1558611172480" expanded="true" signature="3884:4444" ph="..." />
-                <marker date="1558611172480" expanded="true" signature="4553:5101" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeleConnectee.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/TeleConnectee.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewAlert.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewAlert.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="83" column="18" lean-forward="false" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
-              <folding>
-                <marker date="1558611172480" expanded="true" signature="379:682" ph="..." />
-                <marker date="1558611172480" expanded="true" signature="1923:2434" ph="..." />
-                <marker date="1558611172480" expanded="true" signature="2003:2415" ph="..." />
-                <marker date="1558611172480" expanded="true" signature="2674:2745" ph="..." />
-                <marker date="1558611172480" expanded="true" signature="2705:2745" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Alert.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Alert.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-519">
-              <caret line="88" column="27" lean-forward="true" selection-start-line="88" selection-start-column="27" selection-end-line="88" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/TvConnecteeAmu/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="283" column="0" lean-forward="false" selection-start-line="283" selection-start-column="0" selection-end-line="283" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/js/test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -791,9 +49,9 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/js/slideshowInfo.js" />
         <option value="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/js/slideshow.js" />
         <option value="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/ViewInformation.php" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/TvConnecteeAmu/style.css" />
         <option value="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/TeleConnectee.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php" />
       </list>
     </option>
   </component>
@@ -826,7 +84,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -860,55 +117,11 @@
               <item name="TeleConnecteeAmu" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="wpTv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wpTv" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="TeleConnecteeAmu" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="wpTv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wpTv" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="TeleConnecteeAmu" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="wpTv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wpTv" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="TeleConnecteeAmu" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="wpTv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wpTv" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="wpTv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wpTv" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="astra-child" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="wpTv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wpTv" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="TvConnecteeAmu" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -971,29 +184,38 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140898000" />
+    <option name="totallyTimeSpent" value="144130000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29914072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30773363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5064447" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5085929" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32915717" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32915717" sideWeight="0.4914071" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5064447" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32915717" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29914072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1039,16 +261,6 @@
           <caret line="131" column="83" lean-forward="false" selection-start-line="131" selection-start-column="83" selection-end-line="131" selection-end-column="83" />
           <folding>
             <element signature="e#6#92#0#PHP" expanded="true" />
-            <marker date="1558611172480" expanded="true" signature="906:1102" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="991:1097" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="1351:1699" ph="{...}" />
-            <marker date="1558611172480" expanded="true" signature="1418:1687" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="1419:1687" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="1470:1687" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="1554:1687" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="2821:3200" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="3884:4444" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="4553:5101" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1067,16 +279,6 @@
           <caret line="146" column="22" lean-forward="false" selection-start-line="146" selection-start-column="22" selection-end-line="146" selection-end-column="22" />
           <folding>
             <element signature="e#6#92#0#PHP" expanded="true" />
-            <marker date="1558611172480" expanded="true" signature="906:1102" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="991:1097" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="1351:1699" ph="{...}" />
-            <marker date="1558611172480" expanded="true" signature="1418:1687" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="1419:1687" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="1470:1687" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="1554:1687" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="2821:3200" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="3884:4444" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="4553:5101" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1110,16 +312,6 @@
           <caret line="82" column="112" lean-forward="false" selection-start-line="82" selection-start-column="112" selection-end-line="82" selection-end-column="112" />
           <folding>
             <element signature="e#6#92#0#PHP" expanded="true" />
-            <marker date="1558611172480" expanded="true" signature="906:1102" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="991:1097" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="1351:1699" ph="{...}" />
-            <marker date="1558611172480" expanded="true" signature="1418:1687" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="1419:1687" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="1470:1687" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="1554:1687" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="2821:3200" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="3884:4444" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="4553:5101" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1229,20 +421,8 @@
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Spreadsheet.php" />
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/js/slideshowInfo.js" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/ViewInformation.php" />
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/IOFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1386">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xlsx.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/IOFactory.php" />
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xlsx.php" />
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/views/js/slideshow.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -1254,14 +434,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
           <caret line="283" column="0" lean-forward="false" selection-start-line="283" selection-start-column="0" selection-end-line="283" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="333" column="36" lean-forward="false" selection-start-line="333" selection-start-column="36" selection-end-line="333" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -1284,13 +456,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="83" column="18" lean-forward="false" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
-          <folding>
-            <marker date="1558611172480" expanded="true" signature="379:682" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="1923:2434" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="2003:2415" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="2674:2745" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="2705:2745" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1308,24 +474,22 @@
           <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
             <element signature="e#6#92#0#PHP" expanded="true" />
-            <marker date="1558611172480" expanded="true" signature="906:1102" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="991:1097" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="1351:1699" ph="{...}" />
-            <marker date="1558611172480" expanded="true" signature="1418:1687" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="1419:1687" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="1470:1687" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="1554:1687" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="2821:3200" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="3884:4444" ph="..." />
-            <marker date="1558611172480" expanded="true" signature="4553:5101" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/TeleConnectee.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="1539">
           <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/TeleConnecteeAmu/controllers/Information.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="351" column="0" lean-forward="true" selection-start-line="351" selection-start-column="0" selection-end-line="351" selection-end-column="0" />
           <folding />
         </state>
       </provider>
