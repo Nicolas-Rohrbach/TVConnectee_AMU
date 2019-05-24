@@ -168,6 +168,9 @@ final class Astra_Fonts {
 
 				$font_args['subset'] = urlencode( trim( $subsets ) );
 			}
+
+			$font_args['display'] = 'fallback';
+
 			return add_query_arg( $font_args, $base_url );
 		}
 

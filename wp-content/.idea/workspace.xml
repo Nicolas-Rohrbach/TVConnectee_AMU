@@ -2,6 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f21d812e-ce81-44c8-afb6-f9623108a598" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Alert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Information.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/MyAccount.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/1234" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/15963" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/43926" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/4511616216+626" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/652" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/71297" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/75963" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8379" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8380" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8381" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8382" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8383" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8385" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8389" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/AlertManager.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/composer.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/composer.lock" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/autoload.php" afterDir="false" />
@@ -462,13 +482,10 @@
       <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/pl/config" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/pl/functions" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/pt/br/config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/pt/br/functions" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/pt/config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/pt/functions" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/ru/config" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/ru/functions" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/sv/config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/sv/functions" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/tr/config" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/tr/functions" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/AdvancedValueBinder.php" afterDir="false" />
@@ -666,68 +683,712 @@
       <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/psr/simple-cache/src/CacheException.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/psr/simple-cache/src/CacheInterface.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/psr/simple-cache/src/InvalidArgumentException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/InformationManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/MyAccountManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewAlert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewInformation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewMyAccount.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/css/alert.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/css/information.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/css/schedule.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/css/weather.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/addAllCheckBox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/addOrDeleteTvCode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/alertEasyTicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/slideshow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/allCodes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/media/99.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/widgets/WidgetAlert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/widgets/WidgetInformation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/widgets/WidgetSchedule.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/widgets/WidgetWeather.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/archive.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/images/Logo-Dpt-info-aix-jaune.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/images/bg_amu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/images/header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/js/jquery.easy-ticker.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/js/theme-customizer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/comment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/header.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/inc/customizer/back-office.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/inc/menu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/page_three_columns.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/page_two-columns.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/screenshot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/search.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/searchform.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/sidebar-left.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/sidebar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/single.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wp-content.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wp-content.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/admin-fr_FR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/languages/admin-fr_FR.mo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/admin-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/admin-fr_FR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/admin-network-fr_FR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/languages/admin-network-fr_FR.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/admin-network-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/admin-network-fr_FR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/continents-cities-fr_FR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/languages/continents-cities-fr_FR.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/continents-cities-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/continents-cities-fr_FR.po" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/fr_FR-0ce75ad2f775d1cac9696967d484808c.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-0ce75ad2f775d1cac9696967d484808c.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/fr_FR-1a0cd6a7128913b15c1a10dd68951869.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-1a0cd6a7128913b15c1a10dd68951869.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/fr_FR-1bba9045bb07c89671c88a3f328548e8.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-1bba9045bb07c89671c88a3f328548e8.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/fr_FR-28b3c3d595952907e08d98287077426c.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-28b3c3d595952907e08d98287077426c.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/fr_FR-2c5d274ea625dd91556554ad82901529.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-2c5d274ea625dd91556554ad82901529.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/fr_FR-4a38fe1c0c45989e44682ba6109d9f46.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-4a38fe1c0c45989e44682ba6109d9f46.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/fr_FR-68f2cec7514bf8563c723a4d675fcfe6.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-68f2cec7514bf8563c723a4d675fcfe6.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/fr_FR-7f13c36c641b114bf18cd0bcc9ecc7e0.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-7f13c36c641b114bf18cd0bcc9ecc7e0.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/fr_FR-803bf1ce2131e13efc590c1bc47851fc.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-803bf1ce2131e13efc590c1bc47851fc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/fr_FR-8860e58c20c6a2ab5876a0f07be43bd9.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-8860e58c20c6a2ab5876a0f07be43bd9.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/fr_FR-a25d1cc7bf7ca0b4e114f6bea64943f4.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-a25d1cc7bf7ca0b4e114f6bea64943f4.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/fr_FR-bf0f094965d3d4a95b47babcb35fc136.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-bf0f094965d3d4a95b47babcb35fc136.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/fr_FR-f8f49d9fc4a9cf7d78ec99285417bd9c.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR-f8f49d9fc4a9cf7d78ec99285417bd9c.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/fr_FR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR.mo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/fr_FR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/plugins/akismet-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/plugins/akismet-fr_FR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/plugins/hello-dolly-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/plugins/hello-dolly-fr_FR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/plugins/members-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/plugins/members-fr_FR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/plugins/wps-hide-login-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/plugins/wps-hide-login-fr_FR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/themes/astra-fr_FR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/languages/themes/astra-fr_FR.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/themes/astra-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/themes/astra-fr_FR.po" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mu-plugins/teleConnecteeAmu-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/mu-plugins/teleConnecteeAmu-functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ManagementUsers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/R34ICS.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/R34ICS.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Secretary.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Secretary.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/43926" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/43926" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/652" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/652" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8379" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8379" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8380" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8380" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8381" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8381" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8382" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8382" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8383" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8383" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8385" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8385" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8389" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileICS/8389" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Television.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Weather.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Weather.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/calendar-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/templates/calendar-list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/vendors/ics-parser/vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/Squiz/Sniffs/CSS/DuplicateClassDefinitionSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileR34ICS/vendors/ics-parser/vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/Squiz/Sniffs/CSS/DuplicateClassDefinitionSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/app/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/app/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/src/Planning.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/src/Planning.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewAlert.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewAlert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/vendor/twitter/bootstrap/docs/assets/js/customize.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/vendor/twitter/bootstrap/docs/assets/js/customize.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/vendor/twitter/bootstrap/docs/assets/js/raw-files.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/vendor/twitter/bootstrap/docs/assets/js/raw-files.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/vendor/twitter/bootstrap/docs/assets/js/vendor/autoprefixer.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/vendor/twitter/bootstrap/docs/assets/js/vendor/autoprefixer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/vendor/twitter/bootstrap/less/media.less" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/vendor/twitter/bootstrap/less/media.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/vendor/twitter/bootstrap/less/responsive-utilities.less" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/vendor/twitter/bootstrap/less/responsive-utilities.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/vendor/twitter/bootstrap/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/vendor/twitter/bootstrap/less/variables.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/CodeAdeManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/CodeAdeManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Autoloader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/CachedObjectStorage/APC.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/CachedObjectStorage/CacheBase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/CachedObjectStorage/DiscISAM.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/CachedObjectStorage/ICache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/CachedObjectStorage/Igbinary.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/CachedObjectStorage/Memcache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/CachedObjectStorage/Memory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/CachedObjectStorage/MemoryGZip.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/CachedObjectStorage/MemorySerialized.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/CachedObjectStorage/PHPTemp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/CachedObjectStorage/SQLite.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/CachedObjectStorage/SQLite3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/CachedObjectStorage/Wincache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/CachedObjectStorageFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/CalcEngine/CyclicReferenceStack.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/CalcEngine/Logger.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Calculation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Calculation/Database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Calculation/DateTime.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Calculation/Engineering.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Calculation/Exception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Calculation/ExceptionHandler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Calculation/Financial.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Calculation/FormulaParser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Calculation/FormulaToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Calculation/Function.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Calculation/Functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Calculation/Logical.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Calculation/LookupRef.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Calculation/MathTrig.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Calculation/Statistical.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Calculation/TextData.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Calculation/Token/Stack.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Calculation/functionlist.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Cell.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Cell/AdvancedValueBinder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Cell/DataType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Cell/DataValidation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Cell/DefaultValueBinder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Cell/Hyperlink.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Cell/IValueBinder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Chart.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Chart/DataSeries.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Chart/DataSeriesValues.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Chart/Exception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Chart/Layout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Chart/Legend.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Chart/PlotArea.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Chart/Renderer/PHP Charting Libraries.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Chart/Renderer/jpgraph.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Chart/Title.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Comment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/DocumentProperties.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/DocumentSecurity.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Exception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/HashTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/IComparable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/IOFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/NamedRange.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Reader/Abstract.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Reader/CSV.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Reader/DefaultReadFilter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Reader/Excel2003XML.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Reader/Excel2007.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Reader/Excel2007/Chart.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Reader/Excel2007/Theme.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Reader/Excel5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Reader/Excel5/Escher.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Reader/Excel5/MD5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Reader/Excel5/RC4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Reader/Exception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Reader/Gnumeric.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Reader/HTML.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Reader/IReadFilter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Reader/IReader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Reader/OOCalc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Reader/SYLK.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/ReferenceHelper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/RichText.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/RichText/ITextElement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/RichText/Run.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/RichText/TextElement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Settings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/CodePage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/Date.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/Drawing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/Escher.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/Escher/DgContainer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/Escher/DgContainer/SpgrContainer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/Escher/DgContainer/SpgrContainer/SpContainer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/Escher/DggContainer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/Escher/DggContainer/BstoreContainer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE/Blip.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/Excel5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/File.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/Font.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/JAMA/CHANGELOG.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/JAMA/CholeskyDecomposition.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/JAMA/EigenvalueDecomposition.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/JAMA/LUDecomposition.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/JAMA/Matrix.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/JAMA/QRDecomposition.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/JAMA/SingularValueDecomposition.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/JAMA/utils/Error.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/JAMA/utils/Maths.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/OLE.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/OLE/ChainedBlockStream.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/OLE/PPS.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/OLE/PPS/File.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/OLE/PPS/Root.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/OLERead.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/PCLZip/gnu-lgpl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/PCLZip/pclzip.lib.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/PCLZip/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/PasswordHasher.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/String.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/TimeZone.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/XMLWriter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/ZipArchive.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/ZipStreamWrapper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/trend/bestFitClass.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/trend/exponentialBestFitClass.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/trend/linearBestFitClass.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/trend/logarithmicBestFitClass.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/trend/polynomialBestFitClass.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/trend/powerBestFitClass.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Shared/trend/trendClass.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Style.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Style/Alignment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Style/Border.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Style/Borders.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Style/Color.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Style/Conditional.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Style/Fill.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Style/Font.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Style/NumberFormat.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Style/Protection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Style/Supervisor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Worksheet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Worksheet/AutoFilter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Worksheet/AutoFilter/Column.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Worksheet/AutoFilter/Column/Rule.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Worksheet/BaseDrawing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Worksheet/CellIterator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Worksheet/ColumnDimension.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Worksheet/Drawing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Worksheet/Drawing/Shadow.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Worksheet/HeaderFooter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Worksheet/HeaderFooterDrawing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Worksheet/MemoryDrawing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Worksheet/PageMargins.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Worksheet/PageSetup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Worksheet/Protection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Worksheet/Row.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Worksheet/RowDimension.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Worksheet/RowIterator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Worksheet/SheetView.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/WorksheetIterator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Abstract.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/CSV.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel2007.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel2007/Chart.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel2007/Comments.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel2007/ContentTypes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel2007/DocProps.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel2007/Drawing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel2007/Rels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel2007/RelsRibbon.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel2007/RelsVBA.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel2007/StringTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel2007/Style.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel2007/Theme.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel2007/Workbook.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel2007/Worksheet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel2007/WriterPart.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel5/BIFFwriter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel5/Escher.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel5/Font.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel5/Parser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel5/Workbook.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel5/Worksheet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Excel5/Xf.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/Exception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/HTML.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/IWriter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/PDF.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/PDF/Core.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/PDF/DomPDF.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/PDF/mPDF.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/Writer/PDF/tcPDF.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/bg/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/cs/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/cs/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/da/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/da/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/de/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/de/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/en/uk/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/es/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/es/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/fi/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/fi/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/fr/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/fr/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/hu/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/hu/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/it/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/it/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/nl/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/nl/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/no/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/no/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/pl/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/pl/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/pt/br/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/pt/br/functions" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/pt/br/functions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/pt/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/pt/functions" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/pt/functions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/ru/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/ru/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/sv/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/sv/functions" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/locale/sv/functions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/tr/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PHPExcel/locale/tr/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PluginExcel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/changelog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/install.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/SecretaryManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/SecretaryManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/StudentManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TeacherManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TeacherManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TelevisionManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/TelevisionManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewInformation.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewInformation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/css/StyleWeather.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/css/weather.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewManagementUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewManagementUsers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSecretary.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSecretary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTelevision.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewUser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewWeather.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewWeather.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/css/StyleWeather.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/jquery-3.3.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/js/jquery-ui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/refreshPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/refreshSchedule.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/generateUrlADE.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/js/utils/is_connected.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/akismet/_inc/akismet.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/akismet/_inc/akismet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/akismet/_inc/akismet.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/akismet/_inc/akismet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/akismet/akismet.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/akismet/akismet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/akismet/class.akismet-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/akismet/class.akismet-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/akismet/class.akismet.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/akismet/class.akismet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/akismet/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/akismet/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/akismet/views/get.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/akismet/views/get.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/akismet/wrapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/akismet/wrapper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gitium/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gitium/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gitium/gitium-webhook.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gitium/gitium-webhook.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gitium/gitium.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gitium/gitium.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gitium/img/gitium.svg" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gitium/img/gitium.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gitium/inc/class-git-wrapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gitium/inc/class-git-wrapper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gitium/inc/class-gitium-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gitium/inc/class-gitium-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gitium/inc/class-gitium-help.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gitium/inc/class-gitium-help.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gitium/inc/class-gitium-menu-bubble.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gitium/inc/class-gitium-menu-bubble.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gitium/inc/class-gitium-menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gitium/inc/class-gitium-menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gitium/inc/class-gitium-requirements.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gitium/inc/class-gitium-requirements.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gitium/inc/class-gitium-submenu-commits.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gitium/inc/class-gitium-submenu-commits.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gitium/inc/class-gitium-submenu-configure.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gitium/inc/class-gitium-submenu-configure.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gitium/inc/class-gitium-submenu-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gitium/inc/class-gitium-submenu-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gitium/inc/class-gitium-submenu-status.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gitium/inc/class-gitium-submenu-status.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gitium/inc/ssh-git" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gitium/inc/ssh-git" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gitium/languages/gitium-es_ES.po" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gitium/languages/gitium-es_ES.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gitium/languages/gitium-sr_RS.po" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gitium/languages/gitium-sr_RS.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gitium/languages/gitium.pot" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gitium/languages/gitium.pot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gitium/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gitium/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/assets/if-menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/assets/if-menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/if-menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/if-menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/src/conditions-basic.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/src/conditions-basic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/src/conditions-multiple-options.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/src/conditions-multiple-options.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/src/if-menu-nav-menu-4.7.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/src/if-menu-nav-menu-4.7.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/src/if-menu-nav-menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/src/if-menu-nav-menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/phpunit.xml.dist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/DrupalInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/DrupalInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/Installer.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/Installer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MediaWikiInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/MediaWikiInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/OctoberInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/src/Composer/Installers/OctoberInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/AsgardInstallerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/BitrixInstallerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/CakePHPInstallerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/CraftInstallerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/DokuWikiInstallerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/GravInstallerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/InstallerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/MayaInstallerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/MediaWikiInstallerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/OctoberInstallerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/OntoWikiInstallerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/PimcoreInstallerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/PiwikInstallerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/SiteDirectInstallerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/SyDESInstallerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/TestCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/VgmcpInstallerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/Composer/Installers/Test/YawikInstallerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/if-menu/vendor/composer/installers/tests/bootstrap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/activation.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/activation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/ajax/ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/ajax/ajax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/general.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/general.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/general.less" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/general.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/list-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/list-table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/list-table.less" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/list-table.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/new-item.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/new-item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/snippet-block.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/snippet-block.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/view-opt.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/view-opt.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/css/view-opt.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/gutenberg/build/index.build.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/gutenberg/build/index.build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/js/code-editor.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/js/code-editor.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/js/tinymce4.4.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/js/tinymce4.4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/assets/js/view-opt.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/assets/js/view-opt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.export.snippet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.filter.snippet.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.filter.snippet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.gutenberg.snippet.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.gutenberg.snippet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.import.snippet.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.import.snippet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.notices.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.notices.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.snippets.viewtable.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/includes/class.snippets.viewtable.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/metaboxes/base-options.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/metaboxes/base-options.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/metaboxes/info.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/metaboxes/info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/metaboxes/view-options.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/metaboxes/view-options.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/pages/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/pages/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/pages/import.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/pages/import.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/pages/new-item.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/pages/new-item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/pages/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/pages/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/types/snippets-post-types.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/types/snippets-post-types.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/admin/types/snippets-taxonomy.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/admin/types/snippets-taxonomy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/includes/class.execute.snippet.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/includes/class.execute.snippet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/includes/class.helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/includes/class.helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/includes/class.plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/includes/class.plugin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/includes/shortcodes/shortcode-php.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/includes/shortcodes/shortcode-php.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/includes/shortcodes/shortcode-text.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/includes/shortcodes/shortcode-text.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/includes/shortcodes/shortcode-universal.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/includes/shortcodes/shortcode-universal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/includes/shortcodes/shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/includes/shortcodes/shortcodes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/insert-php/insert_php.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/insert_php.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/cache/011fec3e39748fa3b9ce2f2baddea17b.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/cache/570f203cabe7e1f308218aff911daa01.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/insert-php/migrations/020200.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/migrations/020200.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/threeColumns.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/twoColumns.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/images/Logo-Dpt-info-aix-blanc-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/images/header.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/TvConnecteeAmu/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/TvConnecteeAmu/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/TvConnecteeAmu/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/TvConnecteeAmu/inc/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/inc/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/TvConnecteeAmu/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/TvConnecteeAmu/page_three_columns.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/page_three_columns.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/TvConnecteeAmu/page_two-columns.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/page_two-columns.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/TvConnecteeAmu/sidebar-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/sidebar-left.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/TvConnecteeAmu/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/sidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/TvConnecteeAmu/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/TvConnecteeAmu/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/cache/1e03b430bd41d4fe7513886d6af49819.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/cache/59d722b5c43dba1f3758ccd4c95301f7.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/cache/8609bbae7715430a5f81ad8f9c5d308b.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/cache/a2faad21b76213fd81c58c635179673d.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/cache/a47eff8089ae8c5cf5eb6aef85236a5c.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.accordion.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.accordion.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.blue.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.blue.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.coffee.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.coffee.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.core.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.core.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.datetimepicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.datetimepicker.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.ectoplasm.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.ectoplasm.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.form-group.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.form-group.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.form-metabox.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.form-metabox.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.light.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.light.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.midnight.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.midnight.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.ocean.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.ocean.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.separator.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.separator.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.sunrise.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.sunrise.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.tab.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.tab.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.wp-editor.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/bootstrap.wp-editor.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.checkbox.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.checkbox.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.color-and-opacity.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.color-and-opacity.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.color.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.color.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.dropdown-and-colors.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.dropdown-and-colors.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.dropdown.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.dropdown.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.fonts.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.fonts.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.list.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.list.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.multiple-textbox.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.multiple-textbox.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.pattern.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.pattern.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.radio-colors.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/control.radio-colors.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/holder.more-link.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/holder.more-link.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/plugin.gradient-picker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/plugin.gradient-picker.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/plugin.paddings-editor.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/css-min/plugin.paddings-editor.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.accordion.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.accordion.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.collapse.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.collapse.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.datetimepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.datetimepicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.dropdown.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.dropdown.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.modal.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/bootstrap.modal.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.checkbox.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.checkbox.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.color-and-opacity.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.color-and-opacity.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.color.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.color.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.dropdown-and-colors.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.dropdown-and-colors.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.dropdown.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.dropdown.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.fonts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.fonts.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.gradient.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.gradient.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.integer.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.integer.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.list.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.list.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.multiple-textbox.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.multiple-textbox.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.pattern.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/control.pattern.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/holder.more-link.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/holder.more-link.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/plugin.gradient-picker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/plugin.gradient-picker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/plugin.iris.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/plugin.iris.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/plugin.paddings-editor.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/assets/js-min/plugin.paddings-editor.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/includes/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/bootstrap/includes/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/activation/activator.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/activation/update.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/assets-managment/assets-list.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/assets-managment/script-list.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/assets-managment/style-list.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/base.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/check-compatibility.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/class.requirements.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/plugin.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/includes/request.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/langs/wbcr_factory_410-ru_RU.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/core/langs/wbcr_factory_410-ru_RU.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/checkbox.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/checkbox.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/color-and-opacity.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/color-and-opacity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/color.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/color.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/customs/html.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/customs/html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/customs/separator.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/customs/separator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/datepicker-range.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/datepicker-range.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/dropdown-and-colors.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/dropdown-and-colors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/dropdown.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/dropdown.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/font.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/font.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/google-font.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/google-font.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/gradient.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/gradient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/hidden.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/hidden.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/accordion-item.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/accordion-item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/accordion.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/accordion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/columns.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/columns.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/control-group-item.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/control-group-item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/control-group.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/control-group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/div.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/div.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/form-group.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/form-group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/more-link.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/more-link.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/tab-item.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/tab-item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/tab.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/holders/tab.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/integer.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/integer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/multiple-textbox.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/multiple-textbox.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/paddings-editor.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/paddings-editor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/pattern.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/pattern.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/radio-colors.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/radio-colors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/radio.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/radio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/textarea.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/textarea.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/textbox.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/textbox.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/url.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/url.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/wp-editor.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/controls/wp-editor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/complex-control.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/complex-control.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/control-holder.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/control-holder.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/control.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/control.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/custom-element.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/custom-element.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/form-element.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/form-element.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/form-layout.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/form-layout.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/form.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/form.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/holder.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/holder.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/html-builder.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/html-builder.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/providers/meta-value-provider.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/providers/meta-value-provider.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/providers/options-value-provider.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/providers/options-value-provider.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/providers/value-provider.interface.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/includes/providers/value-provider.interface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/langs/wbcr_factory_forms_411-ru_RU.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/langs/wbcr_factory_forms_411-ru_RU.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/layouts/bootstrap-3/bootstrap-3.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/forms/layouts/bootstrap-3/bootstrap-3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/includes/form-metabox.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/includes/form-metabox.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/includes/publish-metabox.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/includes/publish-metabox.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/metabox.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/metabox.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/metaboxes.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/metaboxes/metaboxes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/notices/boot.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/notices/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/notices/notices.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/includes/admin-page.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/includes/admin-page.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/includes/page.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/includes/page.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/langs/wbcr_factory_pages_411-fr_FR.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/langs/wbcr_factory_pages_411-fr_FR.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/langs/wbcr_factory_pages_411-ru_RU.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/langs/wbcr_factory_pages_411-ru_RU.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/pages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/templates/assets/css/impressive.page.template.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/templates/assets/css/impressive.page.template.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/templates/impressive-page.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/pages/templates/impressive-page.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/shortcodes/shortcode.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/shortcodes/shortcode.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/shortcodes/shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/shortcodes/shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/taxonomies/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/taxonomies/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/taxonomies/langs/factory_taxonomies_325-ru_RU.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/taxonomies/langs/factory_taxonomies_325-ru_RU.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/taxonomies/taxonomy.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/taxonomies/taxonomy.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/taxonomies/taxonomy.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/taxonomies/taxonomy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/includes/type-menu.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/includes/type-menu.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/langs/wbcr_factory_types_405-ru_RU.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/langs/wbcr_factory_types_405-ru_RU.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/type.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/type.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/types.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/types/types.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/viewtables/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/viewtables/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/viewtables/includes/viewtable-columns.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/viewtables/includes/viewtable-columns.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/libs/factory/viewtables/viewtable.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/libs/factory/viewtables/viewtable.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/migrations/020100.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/migrations/020100.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/insert-php/uninstall.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/insert-php/uninstall.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/login-logout-register-menu/admin/class-login-logout-register-menu-admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/login-logout-register-menu/admin/js/login-logout-register-menu-admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/login-logout-register-menu/includes/class-login-logout-register-menu-activator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/login-logout-register-menu/includes/class-login-logout-register-menu-deactivator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/login-logout-register-menu/includes/class-login-logout-register-menu-i18n.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/login-logout-register-menu/includes/class-login-logout-register-menu-loader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/login-logout-register-menu/includes/class-login-logout-register-menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/login-logout-register-menu/languages/default.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/login-logout-register-menu/login-logout-register-menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/login-logout-register-menu/public/class-login-logout-register-menu-public.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/login-logout-register-menu/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/login-logout-register-menu/uninstall.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/user-roles-and-capabilities/includes/class-solvease-wp-roles-capabilities-caps.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/user-roles-and-capabilities/includes/class-solvease-wp-roles-capabilities-caps.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/user-roles-and-capabilities/includes/class-solvease-wp-roles-capabilities_cap_functionality.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/user-roles-and-capabilities/includes/class-solvease-wp-roles-capabilities_cap_functionality.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/classes/plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/classes/plugin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/classes/singleton.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/classes/singleton.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/languages/wpserveur-hide-login-cs_CZ.po" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/languages/wpserveur-hide-login-cs_CZ.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/languages/wpserveur-hide-login-da_DK.po" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/languages/wpserveur-hide-login-da_DK.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/languages/wpserveur-hide-login-es_ES.po" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/languages/wpserveur-hide-login-es_ES.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/languages/wpserveur-hide-login-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/languages/wpserveur-hide-login-fr_FR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/languages/wpserveur-hide-login-it_IT.po" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/languages/wpserveur-hide-login-it_IT.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/languages/wpserveur-hide-login-ru_RU.po" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/languages/wpserveur-hide-login-ru_RU.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/languages/wpserveur-hide-login.pot" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/languages/wpserveur-hide-login.pot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/uninstall.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/uninstall.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/NicolasKulka/wp-dismissible-notices-handler/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/NicolasKulka/wp-dismissible-notices-handler/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/NicolasKulka/wp-dismissible-notices-handler/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/NicolasKulka/wp-dismissible-notices-handler/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/NicolasKulka/wp-dismissible-notices-handler/handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/NicolasKulka/wp-dismissible-notices-handler/handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/NicolasKulka/wp-dismissible-notices-handler/includes/helper-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/NicolasKulka/wp-dismissible-notices-handler/includes/helper-functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/NicolasKulka/wp-review-me/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/NicolasKulka/wp-review-me/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/NicolasKulka/wp-review-me/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/NicolasKulka/wp-review-me/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/NicolasKulka/wp-review-me/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/NicolasKulka/wp-review-me/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/NicolasKulka/wp-review-me/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/NicolasKulka/wp-review-me/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/NicolasKulka/wp-review-me/review.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/NicolasKulka/wp-review-me/review.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/composer/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/wps-hide-login/wps-hide-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/wps-hide-login/wps-hide-login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra-child/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra-child/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra-child/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra-child/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/minified/style.min-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/minified/style.min-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/minified/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/minified/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/edd-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/edd-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/edd.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/edd.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/learndash-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/learndash-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/learndash.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/learndash.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/lifterlms-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/lifterlms-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/lifterlms.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/lifterlms.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/site-origin.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/site-origin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce-layout-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce-layout-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce-layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/compatibility/woocommerce/woocommerce.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/editor-style-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/editor-style-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/editor-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/editor-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/style-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/style-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/css/unminified/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/css/unminified/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/assets/fonts/google-fonts.json" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/assets/fonts/google-fonts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/changelog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/changelog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/class-astra-breadcrumbs-loader.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/class-astra-breadcrumbs-loader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/assets/css/block-editor-styles-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/assets/css/block-editor-styles-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/assets/css/block-editor-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/assets/css/block-editor-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/class-astra-dynamic-css.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/class-astra-dynamic-css.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/core/common-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/core/common-functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/class-astra-fonts.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/class-astra-fonts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/background/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/customizer/custom-controls/background/background.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/inc/extras.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/inc/extras.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/languages/astra.pot" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/languages/astra.pot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/astra/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/astra/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -755,7 +1416,26 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="888">
+              <caret line="143" column="29" selection-start-line="143" selection-start-column="29" selection-end-line="143" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/inc/customizer/back-office.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="323" column="6" lean-forward="true" selection-start-line="323" selection-start-column="6" selection-end-line="323" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -768,8 +1448,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>refres</find>
-      <find>document</find>
       <find>show</find>
       <find>$R34ICS</find>
       <find>enqueue_style</find>
@@ -798,6 +1476,8 @@
       <find>&lt;/</find>
       <find>br</find>
       <find>header_textcolor</find>
+      <find>mfp</find>
+      <find>content</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -806,10 +1486,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/searchform.php" />
-        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/archive.php" />
-        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/comment.php" />
-        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/single.php" />
         <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/search.php" />
         <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/login.css" />
         <option value="$USER_HOME$/Downloads/exo2.html" />
@@ -829,42 +1505,46 @@
         <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/twoColumns.css" />
         <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/threeColumns.css" />
         <option value="$PROJECT_DIR$/mu-plugins/teleConnecteeAmu-functions.php" />
-        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/functions.php" />
         <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/js/menu.js" />
         <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/inc/menu-mobile.php" />
         <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/inc/menu.php" />
         <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/assets/js/theme-customizer.js" />
         <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/page_three_columns.php" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewAlert.php" />
         <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/sidebar.php" />
         <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/sidebar-left.php" />
-        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/inc/customizer/back-office.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/css/style_weather.css" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/css/weather.css" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/css/alert.css" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/css/information.css" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewInformation.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/css/schedule.css" />
-        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/style.css" />
-        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/fileSchedule/src/Planning.class.php" />
-        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/footer.php" />
-        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/header.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/CodeAde.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Teacher.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Student.php" />
         <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/functions.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/inc/customizer/back-office.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/footer.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/header.php" />
+        <option value="$PROJECT_DIR$/themes/TvConnecteeAmu/style.css" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewAlert.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewInformation.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/AlertManager.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/InformationManager.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Information.php" />
+        <option value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Alert.php" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -872,7 +1552,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -890,28 +1569,6 @@
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="TeleConnecteeAmu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="TeleConnecteeAmu" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="TeleConnecteeAmu" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="TeleConnecteeAmu" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wp-content" type="b2602c69:ProjectViewProjectNode" />
@@ -943,32 +1600,33 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../wptv2/wp-content" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\wpTv\wp-content\themes\TvConnecteeAmu\assets\js" />
-      <recent name="C:\wamp64\www\wpTv\wp-content\themes\TvConnecteeAmu\inc\customizer" />
-      <recent name="C:\wamp64\www\wpTv\wp-content\themes\TvConnecteeAmu" />
-      <recent name="C:\wamp64\www\wpTv\wp-content\plugins\TeleConnecteeAmu\views\js" />
-      <recent name="C:\wamp64\www\wpTv\wp-content\plugins\TeleConnecteeAmu\controllers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\wpTv\wp-content\plugins\TeleConnecteeAmu\models\Excel" />
       <recent name="C:\wamp64\www\wpTv\wp-content\themes\TvConnecteeAmu\assets\images" />
       <recent name="C:\wamp64\www\wpTv\wp-content\themes\TvConnecteeAmu\assets\js" />
       <recent name="C:\wamp64\www\wpTv\wp-content\themes\astra-child" />
       <recent name="C:\wamp64\www\wpTv\wp-content\plugins\TeleConnecteeAmu\views\js\utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\wpTv\wp-content\themes\TvConnecteeAmu\assets\js" />
+      <recent name="C:\wamp64\www\wpTv\wp-content\themes\TvConnecteeAmu\inc\customizer" />
+      <recent name="C:\wamp64\www\wpTv\wp-content\themes\TvConnecteeAmu" />
+      <recent name="C:\wamp64\www\wpTv\wp-content\plugins\TeleConnecteeAmu\views\js" />
+      <recent name="C:\wamp64\www\wpTv\wp-content\plugins\TeleConnecteeAmu\controllers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1027,16 +1685,18 @@
       <workItem from="1558425172366" duration="15930000" />
       <workItem from="1558505579091" duration="23364000" />
       <workItem from="1558591956570" duration="15601000" />
+      <workItem from="1558678837833" duration="2714000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="502178000" />
+    <option name="totallyTimeSpent" value="507736000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3979866" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.40402684" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1065,41 +1725,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/admin/css/colors-iris.css" />
-    <entry file="file://$PROJECT_DIR$/themes/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/assets/images/bg_amu.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/assets/images/header.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra/functions.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/astra/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-53" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/page_two-columns.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/twoColumns.css" />
     <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/assets/css/threeColumns.css" />
     <entry file="file://$PROJECT_DIR$/mu-plugins/teleConnecteeAmu-functions.php">
@@ -1148,24 +1773,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewAlert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="77" column="26" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/page_three_columns.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1197,27 +1808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewInformation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="52" column="70" lean-forward="true" selection-start-line="52" selection-start-column="70" selection-end-line="52" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/inc/customizer/back-office.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="367" column="34" lean-forward="true" selection-start-line="367" selection-start-column="34" selection-end-line="367" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/vendor/psr/simple-cache/src/CacheException.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1246,20 +1836,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PluginExcel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/Excel/PluginExcel.php" />
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/ControllerG.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
@@ -1274,20 +1851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewCodeAde.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
@@ -1299,27 +1862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="50" column="43" lean-forward="true" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="110" column="74" selection-start-line="110" selection-start-column="74" selection-end-line="110" selection-end-column="74" />
         </state>
       </provider>
     </entry>
@@ -1358,10 +1900,146 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Schedule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="65" column="34" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewSchedule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewStudent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1137">
+          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewTeacher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/R34ICS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3984">
+          <caret line="344" column="1" selection-start-line="344" selection-start-column="1" selection-end-line="344" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewG.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="110" column="74" selection-start-line="110" selection-start-column="74" selection-end-line="110" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/page_three_columns.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/widgets/WidgetInformation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="51" column="12" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1552">
-          <caret line="254" column="20" selection-start-line="254" selection-start-column="20" selection-end-line="254" selection-end-column="20" />
+        <state relative-caret-position="3147">
+          <caret line="319" column="1" lean-forward="true" selection-start-line="319" selection-start-column="1" selection-end-line="319" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="97" selection-start-line="15" selection-start-column="97" selection-end-line="15" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="206" selection-start-line="16" selection-start-column="206" selection-end-line="16" selection-end-column="206" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewInformation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="155" column="1" selection-start-line="155" selection-start-column="1" selection-end-line="155" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/views/ViewAlert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="899">
+          <caret line="92" column="1" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/AlertManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="121" column="1" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/models/InformationManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="144" column="1" selection-start-line="144" selection-start-column="1" selection-end-line="144" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Information.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="257" column="1" selection-start-line="257" selection-start-column="1" selection-end-line="257" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/controllers/Alert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="141" column="1" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/TeleConnecteeAmu/TeleConnectee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="143" column="29" selection-start-line="143" selection-start-column="29" selection-end-line="143" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/TvConnecteeAmu/inc/customizer/back-office.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="323" column="6" lean-forward="true" selection-start-line="323" selection-start-column="6" selection-end-line="323" selection-end-column="6" />
         </state>
       </provider>
     </entry>

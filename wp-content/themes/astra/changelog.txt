@@ -1,3 +1,10 @@
+v1.8.4
+- New: Introduced astra_the_title filter to allow users to modify the title.
+- Improvement: Add a font-display property for the Google Fonts.
+- Fix: Missing Inherit option added for breadcrumb typography.
+- Fix: WooCommerce Shop Page row column compatibility with Elementor.
+- Fix: Breadcrumb NavXT plugin schema data not correctly visible.
+
 v1.8.3
 - Improvement: Add a font-display property for the Astra Fonts.
 - Fix: Gutenberg separator visibility issue.

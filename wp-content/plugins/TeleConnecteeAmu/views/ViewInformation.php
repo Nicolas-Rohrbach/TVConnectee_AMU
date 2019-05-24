@@ -162,21 +162,4 @@ class ViewInformation extends ViewG
 
 
 
-//            $content = 'test';
-//            $max = $highestRow;
-//            $mod = 0;
-//            for ($i = 0; $i < $max; $i++) {
-//                $mod = $i % 3;
-//                if ($mod == 0) {
-//                    $content .= '<tr>';
-//                }
-//                $content .= '<td>' . $i . '</td>';
-//                if ($mod == 2) {
-//                    $content .= '</tr>';
-//                }
-//            }
-//            if ($mod != 2 && $i > 0) {
-//                $content .= '</tr>';
-//            }
-//
 }

@@ -61,16 +61,10 @@ include_once 'models/AlertManager.php';
 include_once 'views/ViewAlert.php';
 include_once 'widgets/WidgetAlert.php';
 
-add_action("wp_head", "mfp_card");
 define('ROOT', dirname(__FILE__));
 require_once(ROOT . '/controllers/fileSchedule/app/app.php');
 
 require ('models/Excel/vendor/autoload.php');
-
-function mfp_Card(){
-  echo '  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">-->';
-}
 
 //Users
 $student = new Student();
@@ -116,43 +110,20 @@ add_action('delete_codes', array($code, 'deleteCodes'), 0, 1);
 add_action('handleInfos',array($information,'informationManagement'));
 add_action('delete_infos',array($information, 'deleteInformations'),0 ,1);
 add_action('modify_info',array($information,'modifyInformation'));
-//add_action('displayInformations',array($information,'informationMain'));
+add_action('displayInformations',array($information,'informationMain'));
 add_action('add_info',array($information,'insertInformation'), 0, 7);
 
 add_action('createAlert',array($alert,'createAlert'),0,3);
 add_action('handleAlert', array($alert,'alertsManagement'));
 add_action('delete_alert', array($alert,'deleteAlert'), 0 ,1);
 add_action('modify_alert',array($alert,'modifyAlert'));
-
+add_action('display_alert', array($alert, 'alertMain'));
 
 // Initialize plugin
 add_action('init', function(){
     global $R34ICS;
     $R34ICS = new R34ICS();
 });
-
-
-
-add_action('hookEDT',array($schedule,'displayMySchedule'));
-add_action('hookWeather',array($weather,'displayMyWeather'));
-
-add_action('handleInfos',array($information,'informationManagement'));
-add_action('delete_infos',array($information, 'deleteInformations'),0 ,1);
-add_action('modify_info',array($information,'modifyInformation'));
-//add_action('displayInformations',array($information,'informationMain'));
-add_action('add_info',array($information,'insertInformation'), 0, 7);
-
-add_action('createAlert',array($alert,'createAlert'),0,3);
-add_action('handleAlert', array($alert,'alertsManagement'));
-add_action('delete_alert', array($alert,'deleteAlert'), 0 ,1);
-add_action('modify_alert',array($alert,'modifyAlert'));
-//add_action('display_alert', array($alert, 'alertMain'));
-
-
-
-
-//add_action('test',array($information,'testExcel'));
-
 
 
 add_action( 'downloadFileICS', 'downloadFileICS_func' );
@@ -169,8 +140,8 @@ function downloadFileICS_func() {
 }
 
 function wpdocs_plugin_teleconnecteeAmu_scripts() {
-    wp_register_style('bootstrap-style', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', array(), true);
-    wp_enqueue_style('bootstrap-style');
+    wp_register_style('plugin-bootstrap-style', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', array(), true);
+    wp_enqueue_style('plugin-bootstrap-style');
     wp_register_style('weather-style', '/wp-content/plugins/TeleConnecteeAmu/views/css/weather.css', array(), true);
     wp_enqueue_style('weather-style');
     wp_register_style('alert-style', '/wp-content/plugins/TeleConnecteeAmu/views/css/alert.css', array(), true);
