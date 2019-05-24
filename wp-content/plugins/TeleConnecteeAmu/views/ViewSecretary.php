@@ -19,14 +19,14 @@ class ViewSecretary extends ViewG
                     <input type="password" class="form-control text-center modal-sm" name="pwdSecre" placeholder="Mot de passe" required="">
                     <label for="emailSecre">Email</label>
                     <input type="email" class="form-control text-center modal-sm" name="emailSecre" placeholder="Email" required="">
-                  <button type="submit" class="btn btn-primary" name="createSecre">Créer</button>
+                  <button type="submit" name="createSecre">Créer</button>
                 </form>
             </div>
          </div>';
     }
 
     public function displayHeaderTabSecretary(){
-        $this->headerTab();
+        $this->displayHeaderTab();
         echo'<th scope="col">Login</th>
                     </tr>
                 </thead>

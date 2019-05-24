@@ -1,19 +1,21 @@
 /*__Information main__*/
 
 #information_carousel {
-    height: 70ex;
+    min-height: 90ex;
 }
 .titleInfo {
+    width: 100%;
     font-size : 3em;
     text-align: center;
 }
 
 .content_info{
+    width: 100%;
     font-size : 1.5em;
     text-align: center;
 }
 
 .content_info img{
-    width : 100%;
-    max-height: 50ex;
+    width: 100%;
+    height: auto;
 }

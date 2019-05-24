@@ -13,7 +13,7 @@ abstract class ViewG{
              <form method="post" enctype="multipart/form-data">
 				<input type="file" name="excel'.$name.'" class="btn btn-dark"/>
 				<br/>
-				<button type="submit" name="import'.$name.'" class="btn btn-primary" value="Importer">Importer le fichier</button>
+				<button type="submit" name="import'.$name.'" value="Importer">Importer le fichier</button>
 			</form>
 			<br/>';
     }

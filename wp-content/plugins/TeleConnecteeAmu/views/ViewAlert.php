@@ -44,7 +44,7 @@ class ViewAlert extends ViewG
         $tab = [$author, $content, $creationDate, $endDate];
         $this->displayAll($row, $id, $tab);
         echo '
-          <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/modification-alerte/'.$id.'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
+          <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/modification-alerte/'.$id.'" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
         </td>';
     } //displayAllAlert()
 

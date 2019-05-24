@@ -40,12 +40,13 @@ class ViewTelevision extends ViewG{
                     <input type="text" class="form-control text-center modal-sm" name="loginTv" placeholder="Nom de compte" required="">
                     <label for="pwdTv">Mot de passe</label>
                     <input type="password" class="form-control text-center modal-sm" name="pwdTv" placeholder="Mot de passe" required="">
-                    <label>Premier emploi du temps</label> <button onclick="addButton()"> Add input</button>
+                    <label>Premier emploi du temps</label>
                     <select class="form-control" name="selectTv[]" required="">';
         $this->displaySelect($years, $groups, $halfgroups);
 
         echo'
-                    <button type="submit" class="btn btn-primary" name="createTv">Créer</button>
+                <input type="button" onclick="addButton()" value="Ajouter des emplois du temps">
+                    <button type="submit" name="createTv">Créer</button>
                 </form>
             </div>
          </div>';
@@ -59,7 +60,7 @@ class ViewTelevision extends ViewG{
     public function displayAllTv($id, $login,  $nbCode, $row){
         $tab = [$login, $nbCode];
         $this->displayAll($row, $id, $tab);
-        echo '<td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs/modification-utilisateur/'.$id.'" class="btn btn-primary btn-lg" name="modif" type="submit" value="Modifier">Modifier</a></td>
+        echo '<td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs/modification-utilisateur/'.$id.'" name="modif" type="submit" value="Modifier">Modifier</a></td>
         </tr>';
     }
 

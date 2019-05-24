@@ -7,272 +7,15 @@
     TvConnecteeAmu by Nicolas Rohrbach|| http://www.tvconnectee.com
 */
 
-/* HEADER */
-#header {
-    background-color: #0066CC;
-    width: 100%;
-    padding: 0 10px 20px 10px;
-    color: #ffffff;
-}
-
-#header a {
-    color: #ffffff;
-}
-
-.dropbtn {
-    color: #ffffff;
-}
-
-#header .drop_down-content a {
-    color: #000000;
-}
-
-.drop_down-content {
-    background-color: #ffffff;
-}
-
-.topnav {
-    overflow: hidden;
-}
-
-.topnav a {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav .icon {
-    display: none;
-}
-
-.drop_down {
-    float: left;
-    overflow: hidden;
-}
-
-.drop_down .dropbtn {
-    font-size: 17px;
-    border: none;
-    outline: none;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.drop_down-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.drop_down-content a {
-    float: none;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.topnav a:hover, .drop_down:hover .dropbtn {
-
-}
-
-.drop_down-content a:hover {
-
-}
-
-.drop_down:hover .drop_down-content {
-    display: block;
-}
-
-@media screen and (max-width: 1150px) {
-    .topnav a:not(:first-child), .drop_down .dropbtn {
-        display: none;
-    }
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 1150px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    .topnav.responsive .drop_down {float: none;}
-    .topnav.responsive .drop_down-content {position: relative;}
-    .topnav.responsive .drop_down .dropbtn {
-        display: block;
-        width: 100%;
-        text-align: left;
-    }
-}
-
-.custom-logo {
-    width: 250px;
-    height: 75px;
-}
-
-.white {
-    color: white;
-}
-
-#header h1 {
-    padding: 0 20px 0 0;
-    font-size: 2em;
-    text-align: left;
-}
-#header p {
-    padding: 0 20px 0 0;
-    font-size: 1em;
-    text-align: left;
-}
-
 /* LINK */
 a {
-    color: #555;
+    color: #0066CC;
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
-}
-
-/* CONTENT */
-#content {
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
-    color: black;
-    width: 80%;
-}
-
-#content-twocolumns{
-    float: left;
-    text-align: center;
-    color: black;
-    width: 70%;
-}
-
-#content-threecolumns {
-    color: black;
-    width: 40%;
-    float: left;
-    margin-left: 1%;
-    margin-right: 1%;
-}
-
-/* SIDEBAR */
-#sidebar-left {
-    margin-top: 1%;
-    width: 30%;
-    float: left;
-    border-right: 1px solid darkgrey;
-}
-
-#sidebar-right {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    width: 30%;
-    float: right;
-    border-left: 1px solid darkgrey;
-}
-
-
-#content h2 {
-    font-size: 2em;
-}
-
-#content h2 a{
-    font-size: 1.2em;
-    color: #006699;
-}
-
-#content h2 a:hover{
-    color: #555;
-}
-
-
-.postmetadata {
-    font-size: 0.8em;
-    color: #999;
-}
-
-.post_content {
-    font-size: 1em;
-    color: #555;
-}
-
-.post_content a {
-    color: #006699;
-}
-
-.post_content a:hover {
-    color: #fff;
-    background: #006699;
-}
-
-.sidebar ul{
-    list-style-type: upper-alpha;
-    margin: 0;
-    padding: 0 10px;
-}
-
-.sidebar ul li{}
-.sidebar ul ul li{}
-
-#sidebar h2 {
-    font-size: 2em;
-}
-
-.sidebar a:hover {
     text-decoration: none;
-    border-bottom: 1px dotted;
 }
-
-/* FOOTER */
-#footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-
-#footer div {
-    display: block;
-}
-
-#footer-left {
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    float: left;
-    width: 70%;
-}
-
-#footer-right {
-    bottom: 0;
-    right: 0;
-    position: fixed;
-    float: right;
-    width: 30%;
-}
-
 
 /* OLD CSS */
 * {box-sizing:border-box}
@@ -282,19 +25,12 @@ a:hover {
     color: white;
 }
 
-/* HEADER */
-.ninja {
-    opacity: 0;
-}
-
 /* FORM */
 
 .cadre {
     text-align: center;
     width: auto;
-    background-color: #E6E6E6;
-    border-radius: 1.5%;
-    border:2px solid darkgrey;
+    background-color: #EEEEEE;
 }
 
 /*__form__*/
@@ -320,6 +56,17 @@ form button{
 }
 
 @media (max-width: 1000px) {
+
+    #content {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    #content-twocolumns {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
     /* SIDEBAR */
     #sidebar-left {
         margin-top: 1%;
@@ -338,7 +85,7 @@ form button{
     }
 
     #footer-right {
-        width: 100%;
+        display: none;
     }
 }
 

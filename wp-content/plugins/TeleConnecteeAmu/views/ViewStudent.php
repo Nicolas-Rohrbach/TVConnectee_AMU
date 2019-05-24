@@ -26,7 +26,7 @@ class ViewStudent extends ViewG
           <td class="text-center'; if(is_numeric($year)) echo ' errorNotRegister'; echo '">'.$year.'</td>
           <td class="text-center'; if(is_numeric($group)) echo ' errorNotRegister'; echo '">'.$group.'</td>
           <td class="text-center'; if(is_numeric($halfgroup)) echo ' errorNotRegister'; echo '">'.$halfgroup.'</td>
-          <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs/modification-utilisateur/'.$id.'" class="btn btn-primary btn-lg" name="modif" type="submit" value="Modifier">Modifier</a></td>
+          <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs/modification-utilisateur/'.$id.'" name="modif" type="submit" value="Modifier">Modifier</a></td>
         </tr>';
     }
 

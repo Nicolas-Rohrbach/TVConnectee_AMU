@@ -15,3 +15,11 @@
 .mySlides {
     display: none;
 }
+
+.tabSchedule {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.headerTab {
+    background-color: #0066CC;
+}

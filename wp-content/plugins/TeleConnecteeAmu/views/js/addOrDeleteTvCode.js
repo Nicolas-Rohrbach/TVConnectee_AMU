@@ -10,11 +10,11 @@ function addButton() {
             name: 'selectTv[]',
             class: 'form-control'
         }).append(data).appendTo('#registerTvForm');
-        let button = $('<button >', {
+        let button = $('<input >', {
             id: count,
+            type: 'button',
             onclick: 'deleteRow(this.id)',
-            class: 'btn btn-lg btn-primary btn-block',
-            text: 'Supprimer'
+            value: 'Supprimer'
         }).appendTo('#registerTvForm')
     });
 }

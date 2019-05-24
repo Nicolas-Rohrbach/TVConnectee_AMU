@@ -38,4 +38,8 @@ class ViewSchedule extends ViewG
     public function displayWelcome(){
         echo '<h2> Bienvenue sur la télé connectée </h2>';
     }
+
+    public function displaySelectSchedule(){
+        echo '<div> Veuillez sélectionner un emploi du temps </div>';
+    }
 }

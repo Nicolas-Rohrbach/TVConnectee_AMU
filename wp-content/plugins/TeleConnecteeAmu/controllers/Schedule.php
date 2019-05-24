@@ -77,12 +77,16 @@ class Schedule extends ControllerG
      */
     public function displayYearSchedule(){
         $code = $this->getMyIdUrl();
-        $force = true;
-        if ($this->checkSchedule($code, $force)) {
-            $this->displaySchedule($code, $force);
+        if($code == 'emploi-du-temps') {
+            $this->view->displaySelectSchedule();
+        } else {
+            $force = true;
+            if ($this->checkSchedule($code, $force)) {
+                $this->displaySchedule($code, $force);
+            }
+            else
+                $this->view->displayEmptySchedule();
         }
-        else
-            $this->view->displayEmptySchedule();
     }
 
     /**

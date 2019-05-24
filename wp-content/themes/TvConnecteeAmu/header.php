@@ -17,6 +17,7 @@
        <?php wp_get_archives('type=monthly&format=link'); ?> <?php //comments_popup_script(); <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
+    <?php wp_body_open(); ?>
     <div id="header">
             <?php //wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
             <?php include_once 'inc/menu.php'; ?>

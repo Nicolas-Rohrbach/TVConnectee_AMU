@@ -74,8 +74,8 @@ else {
                                     echo'</tbody>
                                            </table>';
                                 }
-                                echo'<table class="table">
-                                            <thead class="bg-primary">
+                                echo'<table class="table tabSchedule">
+                                            <thead class="headerTab">
                                             <tr>
                                                 <th scope="col" class="text-light text-center" width="20%">Horaire</th>
                                                 <th scope="col" class="text-light text-center" width="35%">Cours</th>
@@ -92,7 +92,7 @@ else {
                             if (!(date("H:i",strtotime($event['fin'])) <= $heure) ){
                                 if(date("H:i",strtotime($event['deb'])) <= $heure && $heure < date("H:i",strtotime($event['fin']))){
                                     ++$nbevents;
-                                    echo '<tr class="alert alert-success" scope="row">';
+                                    echo '<tr class="table-success" scope="row">';
                                 }
                                 else if(date("H:i",strtotime($event['deb'])) > $heure) {
                                     ++$nbevents;

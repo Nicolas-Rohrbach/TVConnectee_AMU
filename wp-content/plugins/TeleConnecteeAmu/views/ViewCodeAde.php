@@ -23,7 +23,8 @@ class ViewCodeAde extends ViewG
                     <input type="radio" name="typeCode" value="Annee"> Année 
                     <input type="radio" name="typeCode" value="Groupe"> Groupe
                     <input type="radio" name="typeCode" value="Demi-groupe"> Demi-Groupe
-                  <button type="submit" class="btn btn-primary" name="addCode" value="Valider">Ajouter</button>
+                    <br/>
+                  <button type="submit" name="addCode" value="Valider">Ajouter</button>
                 </form>
             </div>
          </div>';
@@ -49,7 +50,7 @@ class ViewCodeAde extends ViewG
             $tab = [$result['title'], $result['code'], $result['type']];
             $this->displayAll($row, $result['ID'], $tab);
             echo '
-                    <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-codes-ade/modification-code-ade/'.$result['ID'].'" class="btn btn-primary btn-lg" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
+                    <td class="text-center"> <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-codes-ade/modification-code-ade/'.$result['ID'].'" name="modifetud" type="submit" value="Modifier">Modifier</a></td>
                 </tr>';
         }
         $this->displayEndTab();
@@ -76,7 +77,7 @@ class ViewCodeAde extends ViewG
                 </select>
             </div>
             <input name="modifCodeValid" type="submit" value="Valider">
-            <a class="btn btn-dark btn-lg mb-3" href="http://'.$_SERVER['HTTP_HOST'].'/gestion-codes-ade">Annuler</a>
+            <a href="http://'.$_SERVER['HTTP_HOST'].'/gestion-codes-ade">Annuler</a>
          </form>';
     }
 
