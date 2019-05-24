@@ -231,6 +231,7 @@ class MyTheme_Customize {
         <style type="text/css">
             <?php self::generate_css('#header', 'color', 'header_textcolor', '#'); ?>
             <?php self::generate_css('#header a', 'color', 'header_textcolor', '#'); ?>
+            <?php self::generate_css('.dropbtn', 'color', 'header_textcolor'); ?>
             <?php self::generate_css('#header', 'background-color', 'header_background_color'); ?>
             <?php self::generate_css('#footer', 'background-color', 'footer_background_color'); ?>
             <?php self::generate_css('body', 'background-color', 'background_color', '#'); ?>

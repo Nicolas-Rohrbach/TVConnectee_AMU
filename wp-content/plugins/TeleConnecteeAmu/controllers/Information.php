@@ -154,7 +154,6 @@ class Information {
             $endDate = date('Y-m-d',strtotime($row['end_date']));
             $type = $row['type'];
             $this->endDateCheckInfo($id,$endDate);
-
             if($type == 'tab'){
                 $list = $this->readSpreadSheet($id);
                 foreach ($list as $table) {

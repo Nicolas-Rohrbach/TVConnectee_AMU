@@ -62,7 +62,7 @@ class InformationManager
 
         $wpdb->query($wpdb->prepare("INSERT INTO informations (`ID_info`, `title`, `author`, `creation_date`, `end_date`, `content`, `type`) 
                                          VALUES (%d, %s, %s, %s, %s, %s, %s)",
-                                        null, $title, $user, $creationDate, $endDate, $content, $type));
+            null, $title, $user, $creationDate, $endDate, $content, $type));
 
 
         return $wpdb->insert_id;
@@ -117,9 +117,9 @@ class InformationManager
      * @return mixed
      */
     public function getInformationByID($id) {
-     global $wpdb;
-       $result = $wpdb->get_row('SELECT * FROM informations WHERE ID_info ="'.$id.'"',ARRAY_A );
-       return $result;
+        global $wpdb;
+        $result = $wpdb->get_row('SELECT * FROM informations WHERE ID_info ="'.$id.'"',ARRAY_A );
+        return $result;
     } //getInformationByID()
 
     /**

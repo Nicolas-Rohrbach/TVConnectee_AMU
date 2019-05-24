@@ -682,6 +682,10 @@ msgstr "Information utiles"
 msgid "Colors & Background Overview"
 msgstr "Aperçu des couleurs et de l’arrière-plan"
 
+#: inc/customizer/class-astra-customizer-register-sections-panels.php:263
+msgid "Colors & Background Overview"
+msgstr "Aperçu des couleurs et de l’arrière-plan"
+
 #: inc/customizer/configurations/layout/class-astra-site-identity-configs.php:43
 #: inc/addons/transparent-header/classes/sections/class-astra-customizer-transparent-header-configs.php:207
 msgid "Different Logo for retina devices?"

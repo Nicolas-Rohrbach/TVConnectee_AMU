@@ -801,6 +801,8 @@ if ( ! function_exists( 'astra_get_the_title' ) ) {
 			}
 		}
 
+		$title = apply_filters( 'astra_the_title', $title, $post_id );
+
 		// This will work same as `get_the_title` function but with Custom Title if exits.
 		if ( $echo ) {
 			echo $title;

@@ -123,6 +123,13 @@ if ( ! class_exists( 'Astra_Breadcrumbs_Loader' ) ) {
 				'mobile-unit'  => 'px',
 			);
 
+			/**
+			 * Breadcrumb Font Defaults
+			 */
+			$defaults['breadcrumb-font-family']    = 'inherit';
+			$defaults['breadcrumb-font-weight']    = 'inherit';
+			$defaults['breadcrumb-text-transform'] = '';
+
 			return $defaults;
 		}
 

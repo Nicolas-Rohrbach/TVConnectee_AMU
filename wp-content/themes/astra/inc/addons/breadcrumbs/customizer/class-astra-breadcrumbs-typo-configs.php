@@ -61,16 +61,15 @@ if ( ! class_exists( 'Astra_Breadcrumbs_Typo_Configs' ) ) {
 				 */
 
 				array(
-					'name'        => ASTRA_THEME_SETTINGS . '[breadcrumb-font-family]',
-					'type'        => 'control',
-					'control'     => 'ast-font',
-					'font-type'   => 'ast-font-family',
-					'ast_inherit' => __( 'Default System Font', 'astra' ),
-					'default'     => astra_get_option( 'breadcrumb-font-family' ),
-					'section'     => 'section-breadcrumb-typo',
-					'priority'    => 5,
-					'title'       => __( 'Font Family', 'astra' ),
-					'connect'     => ASTRA_THEME_SETTINGS . '[breadcrumb-font-weight]',
+					'name'      => ASTRA_THEME_SETTINGS . '[breadcrumb-font-family]',
+					'type'      => 'control',
+					'control'   => 'ast-font',
+					'font-type' => 'ast-font-family',
+					'default'   => astra_get_option( 'breadcrumb-font-family' ),
+					'section'   => 'section-breadcrumb-typo',
+					'priority'  => 5,
+					'title'     => __( 'Font Family', 'astra' ),
+					'connect'   => ASTRA_THEME_SETTINGS . '[breadcrumb-font-weight]',
 				),
 
 				/**
@@ -83,7 +82,6 @@ if ( ! class_exists( 'Astra_Breadcrumbs_Typo_Configs' ) ) {
 					'font-type'         => 'ast-font-weight',
 					'sanitize_callback' => array( 'Astra_Customizer_Sanitizes', 'sanitize_font_weight' ),
 					'default'           => astra_get_option( 'breadcrumb-font-weight' ),
-					'ast_inherit'       => __( 'Default', 'astra' ),
 					'section'           => 'section-breadcrumb-typo',
 					'priority'          => 10,
 					'title'             => __( 'Font Weight', 'astra' ),
@@ -102,7 +100,7 @@ if ( ! class_exists( 'Astra_Breadcrumbs_Typo_Configs' ) ) {
 					'priority' => 15,
 					'title'    => __( 'Text Transform', 'astra' ),
 					'choices'  => array(
-						''           => __( 'Default', 'astra' ),
+						''           => __( 'Inherit', 'astra' ),
 						'none'       => __( 'None', 'astra' ),
 						'capitalize' => __( 'Capitalize', 'astra' ),
 						'uppercase'  => __( 'Uppercase', 'astra' ),

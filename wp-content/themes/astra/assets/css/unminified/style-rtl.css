@@ -5636,13 +5636,6 @@ input[type="color"]::-webkit-color-swatch {
   right: 0 !important;
 }
 
-.elementor-element .elementor-wc-products .woocommerce[class*='columns-'] ul.products li.product {
-  width: auto;
-  padding: 0;
-  margin: 0;
-  float: none;
-}
-
 .elementor-post.elementor-grid-item.hentry {
   margin-bottom: 0;
 }
