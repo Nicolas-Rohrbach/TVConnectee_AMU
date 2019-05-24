@@ -4698,3 +4698,7 @@ button.pswp__button--zoom:hover {
 .rtl .woocommerce-pagination .page-numbers li:first-child .prev {
   transform: rotateY(-180deg);
 }
+
+.ast-site-header-cart .widgettitle {
+  display: none;
+}

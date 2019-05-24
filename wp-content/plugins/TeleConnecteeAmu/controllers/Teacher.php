@@ -6,13 +6,13 @@
  * Time: 11:25
  */
 
-class Teacher
+class Teacher extends ControllerG
 {
     private $view;
     private $model;
 
     /**
-     * Teacher constructor
+     * Constructeur de Teacher
      */
     public function __construct(){
         $this->view = new ViewTeacher();
@@ -20,83 +20,106 @@ class Teacher
     }
 
     /**
-     * Insert all teacher from an Excel file
+     * Insère tout les professeurs depuis un fichier excel
      * @param $actionTeacher
      */
     public function insertTeacher($actionTeacher){
-        excelTeacher($actionTeacher);
         $this->view->displayInsertImportFileTeacher();
+        if ($actionTeacher) {
+            $allowed_extension = array("Xls", "Xlsx", "Csv");
+            $extension = ucfirst(strtolower(end(explode(".", $_FILES["excelProf"]["name"]))));
+
+            // allowed extension
+            if (in_array($extension, $allowed_extension)) {
+                $reader = \PhpOffice\PhpSpreadsheet\IOFactory::createReader($extension);
+                $reader->setReadDataOnly(TRUE);
+                $spreadsheet = $reader->load($_FILES["excelProf"]["tmp_name"]);
+
+                $worksheet = $spreadsheet->getActiveSheet();
+                $highestRow = $worksheet->getHighestRow();
+
+                $row = $worksheet->getRowIterator(1, 1);
+                $cells = [];
+                foreach ($row as $value){
+                    $cellIterator = $value->getCellIterator();
+                    $cellIterator->setIterateOnlyExistingCells(FALSE);
+                    foreach ($cellIterator as $cell) {
+                        $cells[] = $cell->getValue();
+                    }
+                }
+                if($cells[0] == "Numero Ent" && $cells[1] == "email" && $cells[2] == "Code") {
+                    $doubles = array();
+                    for ($i = 2; $i < $highestRow + 1; ++$i) {
+                        $cells = array();
+                        foreach ($worksheet->getRowIterator($i, $i + 1) as $row) {
+                            $cellIterator = $row->getCellIterator();
+                            $cellIterator->setIterateOnlyExistingCells(FALSE);
+                            foreach ($cellIterator as $cell) {
+                                $cells[] = $cell->getValue();
+                            }
+                        }
+                        $pwd = wp_generate_password();
+                        $hashpass = wp_hash_password($pwd);
+                        $codes = [$cells[2]];
+                        if($this->model->insertTeacher($cells[0], $hashpass, $cells[1], $codes)){
+                            foreach ($codes as $code){
+                                $path = $this->getFilePath($code);
+                                if(! file_exists($path))
+                                    $this->addFile($code);
+                            }
+                            $message = "Bonjour, vous avez été inscrit sur le site de la Télé Connecté de votre département en temps qu'étudiant. <br> Sur ce site, vous aurez accès à votre emploie du temps, à vos notes et aux informations concernant votre scolarité. <br>" ;
+                            $message2 = $message . "Votre identifiant est " . $cells[0] . " et votre mot de passe est " . $pwd . ". <br>"  ;
+                            $message3 = $message2 . "Pour vous connecter, rendez vous sur le site : tv-connectee-amu.alwaysdata.net ." . "<br> Nous vous souhaitons une bonne expérience sur notre site. <br>" ;
+                            //mail($email, "Inscription à la télé-connecté", $message3);
+                        }
+                        else {
+                            array_push($doubles, $cells[0]);
+                        }
+                    }
+                    if(! is_null($doubles[0])) {
+                        $this->view->displayErrorDouble($doubles);
+                    } else {
+                        $this->view->displayInsertValidate();
+                    }
+                }
+                else {
+                    $this->view->displayWrongFile();
+                }
+            } else {
+                $this->view->displayWrongExtension();
+            }
+        }
     }
 
     /**
-     * Display all teachers in a tab
-     * @param $action
+     * Affiche tout les utilisateurs dans un tableau
      */
-    public function displayAllTeachers($action){
-
-        $result = $this->model->getTeachers();
-        $this->view->tabHeadTeacher();
-
-        $tabTeacher = [];
-        $cpt = 0;
-
-        foreach ($result as $row){
-
-            $firstname = $row['prenom'];
-            $lastname = $row['user_nicename'];
-            $code = $row['annee'];
-            $id = $row['ID'];
-
-            $teacher = new DAOTeacher($firstname, $lastname, $code, $id);
-
-            $tabTeacher[$cpt] = $teacher;
-            ++$cpt;
-
-        }
-        $i = 0;
-        if($action[0] === 'prenom'){
-            $tabTeacherSort = DAOTeacher::sortByFirstname($tabTeacher);
-            foreach ($tabTeacherSort as $teacher){
-                $this->view->displayAllTeacher($teacher->getFirstname(), $teacher->getLastname(), $teacher->getCode(), ++$i, $teacher->getId());
+    public function displayAllTeachers(){
+        $results = $this->model->getUsersByRole('enseignant');
+        if(isset($results)){
+            $this->view->displayTabHeadTeacher();
+            $row = 0;
+            foreach ($results as $result){
+                ++$row;
+                $this->view->displayAllTeacher($result, $row);
             }
-        }
-
-        elseif($action[1] === 'nom'){
-            $tabTeacherSort = DAOTeacher::sortByLastname($tabTeacher);
-            foreach ($tabTeacherSort as $teacher){
-                $this->view->displayAllTeacher($teacher->getFirstname(), $teacher->getLastname(), $teacher->getCode(), ++$i, $teacher->getId());
-            }
+            $this->view->displayEndTab();
         }
         else{
-            foreach ($tabTeacher as $teacher){
-                $this->view->displayAllTeacher($teacher->getFirstname(), $teacher->getLastname(), $teacher->getCode(), ++$i, $teacher->getId());
-            }
+            $this->view->displayEmpty();
         }
-        $this->view->endTab();
     }
 
     /**
-     * Delete a teacher
-     * @param $action
+     * Modifie l'utilisateur
+     * @param $result
      */
-    public function deleteTeacher($action){
-        if(isset($action)){
-            $this->model->deleteUser($action);
-            $this->view->refreshPage();
-        }
-
-    }
-
-    public function displayModifyTeacher($result){
-
-        $action = $_POST['modifvalider'];
-        $firstname = $_POST['modifprenom'];
-        $lastname  = $_POST['modifnom'];
-
-        $this->view->displayModifyTeacher($result['user_nicename'], $result['prenom']);
-
+    public function modifyTeacher($result){
+        $action = $_POST['modifValidate'];
+        $code = $_POST['modifCode'];
+        $this->view->displayModifyTeacher($result);
         if($action === 'Valider'){
-            $this->model->insertMyTeacher($result['user_login'], $result['user_pass'], $result['code'], $firstname, $lastname, $result['user_email']);
+            $this->model->modifyTeacher($result, $code);
             $this->view->refreshPage();
         }
     }

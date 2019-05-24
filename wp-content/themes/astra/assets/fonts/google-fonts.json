@@ -5785,6 +5785,19 @@
         }
     },
     {
+        "Noto Sans HK": {
+            "variants": [
+                "100",
+                "300",
+                "regular",
+                "500",
+                "700",
+                "900"
+            ],
+            "category": "sans-serif"
+        }
+    },
+    {
         "Noto Sans JP": {
             "variants": [
                 "100",

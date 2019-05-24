@@ -8,20 +8,12 @@
 
 class TeacherManager extends Model
 {
-    public function insertMyTeacher($login, $pwd, $code, $firstname, $lastname, $email){
-
+    public function insertTeacher($login, $pwd, $email,$code){
         $role = "enseignant";
-        $group = 0;
-        $halfgroup = 0;
-
-        return $this->insertUser($login, $pwd, $role, $code, $group, $halfgroup, $firstname, $lastname, $email);
-
+        return $this->insertUser($login, $pwd, $role, $email, $code);
     }
 
-    public function getTeachers(){
-        global $wpdb;
-        $result = $wpdb->get_results("SELECT * FROM wp_users WHERE role = 'enseignant'", ARRAY_A);
-        return $result;
+    public function modifyTeacher($result, $code){
+        $this->modifyUser($result['ID'], $result['user_login'], $result['user_pass'], $result['user_email'], $code);
     }
-
 }

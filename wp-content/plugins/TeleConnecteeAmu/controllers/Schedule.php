@@ -6,112 +6,121 @@
  * Time: 17:23
  */
 
-class Schedule
+class Schedule extends ControllerG
 {
-    private $url;
+    /**
+     * View de Schedule
+     * @var ViewSchedule
+     */
+    private $view;
 
-
+    /**
+     * Constructeur de Schedule.
+     */
     public function __construct(){
-        $this->url = new ViewSchedule();
+        $this->view = new ViewSchedule();
     }
 
     /**
-     * Affiche l'emploi du temps de la personne concerné sauf si il s'agit d'un admin ou d'un(e) secrétaire
-     * @throws Exception
+     * Vérifie si l'emploi du temps existe et qu'il a du contenus
+     * @param $code
+     * @param $force
+     * @return bool
      */
-    public function displayMySchedule() {
-        ### Initialisation
-        $planning = new Planning();
+    public function checkSchedule($code, $force){
+        global $R34ICS;
+        $R34ICS = new R34ICS();
+        $url = ABSPATH."/wp-content/plugins/TeleConnecteeAmu/controllers/fileICS/".$code;
+        $contents = $R34ICS->checkCalendar($url, $force);
+        if (isset($contents))
+            return true;
+        else
+            return false;
+    }
 
-        ## Récupération de la configuration
-        $conf = $planning->getConf();
-        $resources = $planning->getResources();
-        $displays = $planning->getDisplays();
-        $dimensions = $planning->getDimensions();
+    /**
+     * Affiche l'emploi du temps demandé
+     * @param $code
+     * @param $force
+     */
+    public function displaySchedule($code, $force){
+        global $R34ICS;
+        $R34ICS = new R34ICS();
 
-        # Récupération de la configuration personnalisée
-        $custom_conf = $planning->getCustomConf();
-
-        ### On commence à noter les paramètres qui seront nécessaires pour la génération de l’image
-        $identifier = $planning->getIdentifier();
-
-        # On prépare l’export en iCal
-        list($startDay, $startMonth, $startYear) = explode('/', gmdate('d\/m\/Y', $conf['FIRST_WEEK']));
-        list($endDay, $endMonth, $endYear) = explode('/', gmdate('d\/m\/Y', intval($conf['FIRST_WEEK'] + ($conf['NB_WEEKS'] * 7 * 24 * 3600))));
-
-
-
-        # Cherche le code ADE dans le dossier data/ressources.yaml en fonction de l'utilisateur connecté et demande à afficher l'emploi du temps
-        $current_user = wp_get_current_user();
-
-        # Si la personne connectée est un étudiant, on cherche à savoir si il est en Alternance ou en initiale puis on cherche son code ADE dans le dossier ressources.yaml
-        if($current_user->roles[0] == "etudiant"){
-            if($current_user->alternant){
-                $typeEtud = 'Alternance';
-                $groupe = $current_user->annee;
+        $url = ABSPATH."/wp-content/plugins/TeleConnecteeAmu/controllers/fileICS/".$code;
+        $args = array(
+            'count' => 10,
+            'description' => null,
+            'eventdesc' => null,
+            'format' => null,
+            'hidetimes' => null,
+            'showendtimes' => null,
+            'title' => null,
+            'view' => 'list',
+        );
+        $contents = $R34ICS->checkCalendar($url, $force);
+        if (isset($contents)) {
+            $model = new CodeAdeManager();
+            $title = $model->getTitle($code);
+            if ($code == $title){
+                $this->addLogEvent("Le code non enregistré");
+                $current_user = wp_get_current_user();
+                $title = $current_user->user_login;
             }
-            else {
-                $typeEtud = 'Initial';
-                $groupe = "TD".$current_user->groupe;
-            }
-
-            #On parcour le fichier ressources.yaml, en faissant des foreach car ceux sont des tableaux dans des tableaux
-            foreach ($resources as $group => $entities) {
-                if($group == $typeEtud) {
-                    foreach ($entities as $annee => $values){
-                        if ($annee == $current_user->annee) {
-                            foreach($values as $value => $key) {
-                                if ($key == $groupe) {
-                                    $this->url->displayName($current_user);
-                                    $this->url->displayTimetable($value,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        #Si un professeur est connecté
-        else if ($current_user->role == "enseignant") {
-            foreach ($resources as $group => $entities) {
-                if($group == "Enseignant") {
-                    foreach ($entities as $key => $value) {
-                        if($current_user->display_name == $value) {
-                            $this->url->displayName($current_user);
-                            $this->url->displayTimetable($value,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear);
-                        }
-                    }
-                }
-            }
-        }
-
-        #Si c'est la télévision
-        else if ($current_user->role == "television") {
-            foreach ($resources as $group => $entities) {
-                if ($group == "Initial") {
-                    foreach ($entities as $key => $values) {
-                        if($current_user->annee == $key) {
-                            foreach($values as $value => $val) {
-                                if ("General ".$current_user->annee == $val) {
-                                    if($current_user->annee == 1) {
-                                        $this->url->displayTitle("Première année");
-                                    }
-                                    else if($current_user->annee == 2) {
-                                        $this->url->displayTitle("Deuxième année");
-                                    }
-                                    $this->url->displayTimetable($value,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear);                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        #Si la personne n'est pas connectée ou si il s'agit d'un Admin ou d'une secrétaire
-        else {
-            $this->url->displayHome($current_user);
+            $this->view->displayName($title);
+            $R34ICS->display_calendar($contents, $args);
         }
     }
 
+    /**
+     * Affiche l'emploi du temps d'une promo en fonction de l'ID récupéré dans l'url
+     */
+    public function displayYearSchedule(){
+        $code = $this->getMyIdUrl();
+        $force = true;
+        if ($this->checkSchedule($code, $force)) {
+            $this->displaySchedule($code, $force);
+        }
+        else
+            $this->view->displayEmptySchedule();
+    }
+
+    /**
+     * Affiche l'emploi du temps de la personne concerné sauf si il s'agit d'une personne qui n'a pas de code ADE lié à son compte
+     * @throws Exception
+     */
+    public function displaySchedules(){
+        $current_user = wp_get_current_user();
+        if ($current_user->role == "television" || $current_user->role == "etudiant" || $current_user->role == "enseignant") {
+            $force = true;
+            $codes = unserialize($current_user->code);
+            $validSchedule = array();
+
+            foreach ($codes as $code) {
+                $addCode = new CodeAde();
+                $path = $addCode->getFilePath($code);
+                if(! file_exists($path) || file_get_contents($path) == ''){
+                    $addCode->addFile($code);
+                }
+                if($this->checkSchedule($code, $force))
+                    $validSchedule[] = $code;
+            }
+            if (empty($validSchedule))
+                $this->view->displayEmptySchedule();
+            else {
+                if ($current_user->role == "television") {
+                    $this->view->displayStartSlide();
+                    foreach ($validSchedule as $schedule) {
+                        $this->displaySchedule($schedule, $force);
+                        $this->view->displayMidSlide();
+                    }
+                    $this->view->displayEndSlide();
+                }
+                else
+                    $this->displaySchedule(end($validSchedule), $force);
+            }
+        }
+        else
+            $this->view->displayWelcome();
+    }
 }

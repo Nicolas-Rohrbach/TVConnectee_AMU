@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Astra 1.8.1\n"
+"Project-Id-Version: Astra 1.8.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/astra\n"
-"POT-Creation-Date: 2019-04-04 14:49:22+00:00\n"
+"POT-Creation-Date: 2019-05-23 10:00:46+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,44 +28,44 @@ msgstr ""
 msgid "Comments Navigation"
 msgstr ""
 
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:357
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:367
 msgid "Browse:"
 msgstr ""
 
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:359
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:369
 #: inc/core/common-functions.php:779
 msgid "Home"
 msgstr ""
 
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:360
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:370
 msgid "404 Not Found"
 msgstr ""
 
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:361
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:371
 msgid "Archives"
 msgstr ""
 
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:363
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:373
 #. Translators: %s is the search query.
 msgid "Search results for: %s"
 msgstr ""
 
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:365
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:375
 #. Translators: %s is the page number.
 msgid "Page %s"
 msgstr ""
 
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:367
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:377
 #. Translators: %s is the page number.
 msgid "Comment Page %s"
 msgstr ""
 
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:369
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:379
 #. Translators: Minute archive title. %s is the minute time format.
 msgid "Minute %s"
 msgstr ""
 
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:371
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:381
 #. Translators: Weekly archive title. %s is the week date format.
 msgid "Week %s"
 msgstr ""
@@ -112,8 +112,6 @@ msgid "Background Color"
 msgstr ""
 
 #: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-configs.php:36
-#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:86
-#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:105
 #: inc/compatibility/edd/customizer/sections/class-astra-edd-container-configs.php:47
 #: inc/compatibility/edd/customizer/sections/class-astra-edd-sidebar-configs.php:59
 #: inc/compatibility/edd/customizer/sections/class-astra-edd-sidebar-configs.php:78
@@ -163,7 +161,7 @@ msgid "Breadcrumb Position"
 msgstr ""
 
 #: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-configs.php:80
-#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:106
+#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:104
 #: inc/compatibility/woocommerce/customizer/sections/layout/class-astra-woo-shop-layout-configs.php:90
 #: inc/customizer/configurations/layout/class-astra-footer-layout-configs.php:89
 #: inc/customizer/configurations/layout/class-astra-footer-layout-configs.php:113
@@ -286,48 +284,50 @@ msgstr ""
 msgid "Bottom"
 msgstr ""
 
-#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:68
-#: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:58
-msgid "Default System Font"
-msgstr ""
-
-#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:72
+#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:71
 #: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:62
 #: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:203
 msgid "Font Family"
 msgstr ""
 
-#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:89
+#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:87
 #: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:96
 #: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:237
 msgid "Font Weight"
 msgstr ""
 
-#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:103
+#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:101
 #: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:110
 #: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:252
 msgid "Text Transform"
 msgstr ""
 
-#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:107
+#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:103
+#: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:256
+#: inc/customizer/custom-controls/background/class-astra-control-background.php:174
+#: inc/customizer/custom-controls/typography/class-astra-control-typography.php:79
+msgid "Inherit"
+msgstr ""
+
+#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:105
 #: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:114
 #: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:258
 msgid "Capitalize"
 msgstr ""
 
-#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:108
+#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:106
 #: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:115
 #: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:259
 msgid "Uppercase"
 msgstr ""
 
-#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:109
+#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:107
 #: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:116
 #: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:260
 msgid "Lowercase"
 msgstr ""
 
-#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:123
+#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:121
 #: inc/customizer/configurations/typography/class-astra-archive-typo-configs.php:60
 #: inc/customizer/configurations/typography/class-astra-archive-typo-configs.php:94
 #: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:130
@@ -343,7 +343,7 @@ msgstr ""
 msgid "Font Size"
 msgstr ""
 
-#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:144
+#: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-typo-configs.php:142
 #: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:151
 msgid "Line Height"
 msgstr ""
@@ -1513,12 +1513,12 @@ msgstr ""
 msgid "This page doesn't seem to exist."
 msgstr ""
 
-#: inc/core/common-functions.php:791 inc/core/common-functions.php:881
+#: inc/core/common-functions.php:791 inc/core/common-functions.php:883
 #. translators: 1: search string
 msgid "Search Results for: %s"
 msgstr ""
 
-#: inc/core/common-functions.php:1080
+#: inc/core/common-functions.php:1082
 #: inc/customizer/configurations/layout/class-astra-header-layout-configs.php:35
 #: inc/customizer/configurations/layout/class-astra-header-layout-configs.php:105
 #: inc/extras.php:350
@@ -2141,6 +2141,10 @@ msgstr ""
 msgid "Body & Content"
 msgstr ""
 
+#: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:58
+msgid "Default System Font"
+msgstr ""
+
 #: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:79
 #: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:223
 msgid "Font Variant"
@@ -2152,12 +2156,6 @@ msgstr ""
 
 #: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:190
 msgid "Headings"
-msgstr ""
-
-#: inc/customizer/configurations/typography/class-astra-body-typo-configs.php:256
-#: inc/customizer/custom-controls/background/class-astra-control-background.php:174
-#: inc/customizer/custom-controls/typography/class-astra-control-typography.php:79
-msgid "Inherit"
 msgstr ""
 
 #: inc/customizer/configurations/typography/class-astra-content-typo-configs.php:44
@@ -2495,49 +2493,49 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:358
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:368
 msgctxt "breadcrumbs aria label"
 msgid "Breadcrumbs"
 msgstr ""
 
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:831
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:841
 msgctxt "minute and hour archives time format"
 msgid "g:i a"
 msgstr ""
 
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:848
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:858
 msgctxt "minute archives time format"
 msgid "i"
 msgstr ""
 
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:865
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:875
 msgctxt "hour archives time format"
 msgid "g a"
 msgstr ""
 
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:881
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:910
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:937
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:964
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:1304
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:891
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:920
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:947
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:974
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:1314
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr ""
 
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:882
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:938
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:1308
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:892
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:948
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:1318
 msgctxt "monthly archives date format"
 msgid "F"
 msgstr ""
 
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:883
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:1312
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:893
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:1322
 msgctxt "daily archives date format"
 msgid "j"
 msgstr ""
 
-#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:911
+#: inc/addons/breadcrumbs/class-astra-breadcrumb-trail.php:921
 msgctxt "weekly archives date format"
 msgid "W"
 msgstr ""
@@ -2550,12 +2548,12 @@ msgid_plural "<mark class=\"count\">%1$s Products</mark>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/core/common-functions.php:1077
+#: inc/core/common-functions.php:1079
 msgctxt "label"
 msgid "Search for:"
 msgstr ""
 
-#: inc/core/common-functions.php:1078
+#: inc/core/common-functions.php:1080
 msgctxt "placeholder"
 msgid "Search &hellip;"
 msgstr ""

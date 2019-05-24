@@ -108,7 +108,7 @@ class Squiz_Sniffs_CSS_DuplicateClassDefinitionSniff implements PHP_CodeSniffer_
             $name = implode(',', $names);
 
             if ($name{0} === '@') {
-                // Media block has its own "scope".
+                // media block has its own "scope".
                 $scope = $name;
             } else if (isset($classNames[$scope][$name]) === true) {
                 $first = $classNames[$scope][$name];

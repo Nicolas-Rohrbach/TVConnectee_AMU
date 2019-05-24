@@ -6,24 +6,36 @@
  * Time: 11:54
  */
 
-class ViewSchedule
+class ViewSchedule extends ViewG
 {
-
-    public function displayTitle($string) {
-        echo '<h1 class="text-center text-black-50">'.$string. '</h1>';
+    public function displayName($title) {
+        echo '<h2>'.$title.'</h2>';
     }
 
-    public function displayName($current_user) {
-        echo '<h1 class="text-center text-black-50">'.$current_user->display_name. '</h1>';
+    public function displayStartSlide(){
+        echo '
+            <div class="slideshow-container">
+                <div class="mySlides">';
     }
 
-    public function displayHome($current_user) {
-        echo '<h1 class="text-center text-black-50"> Bienvenue '.$current_user->display_name.' sur la tv connectée ! </h1>';
+    public function displayMidSlide(){
+        echo '
+                </div>
+              <div class="mySlides">';
     }
 
-    public function displayTimetable($value,$startDay,$startMonth,$startYear,$endDay,$endMonth,$endYear) {
-        echo '<div id="ref">';
-        echo do_shortcode('[ics_calendar url="https://ade-consult.univ-amu.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources='.$value.'&projectId=8&startDay='.$startDay.'&startMonth='.$startMonth.'&startYear='.$startYear.'&endDay='.$endDay.'&endMonth='.$endMonth.'&endYear='.$endYear.'&calType=ical" view="list"]');
-        echo '</div>';
+    public function displayEndSlide() {
+        echo '          
+                       </div>
+                   </div>
+        <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/slideshow.js"></script>';
+    }
+
+    public function displayEmptySchedule(){
+        echo '<div> Vous n\'avez pas cours !</div>';
+    }
+
+    public function displayWelcome(){
+        echo '<h2> Bienvenue sur la télé connectée </h2>';
     }
 }

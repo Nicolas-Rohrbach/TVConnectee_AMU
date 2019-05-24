@@ -71,7 +71,11 @@ function astra_get_selected_breadcrumb( $echo = true ) {
 	} elseif ( function_exists( 'bcn_display' ) && $breadcrumb_source && 'breadcrumb-navxt' == $breadcrumb_source ) {
 
 		if( true === $echo ) {
-			echo '<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">' . bcn_display( ! $echo ) . '</div>';
+			?> 
+				<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+					<?php bcn_display() ?> 
+				</div> 
+			<?php
 			return;
 		}
 		// Check if breadcrumb is turned on from Breadcrumb NavXT plugin.
@@ -293,27 +297,33 @@ class Astra_Breadcrumb_Trail {
 				preg_match( '/(<a.*?>)(.*?)(<\/a>)/i', $item, $matches );
 
 				// Wrap the item text with appropriate itemprop.
-				$item = ! empty( $matches ) ? sprintf( '%s<span itemprop="name">%s</span>%s', $matches[1], $matches[2], $matches[3] ) : sprintf( '<span itemprop="name">%s</span>', $item );
+				$item = ! empty( $matches ) ? sprintf( '%s<span itemprop="name">%s</span>%s', $matches[1], $matches[2], $matches[3] ) : sprintf( '<span>%s</span>', $item );
 
 				// Wrap the item with its itemprop.
 				$item = ! empty( $matches )
 					? preg_replace( '/(<a.*?)([\'"])>/i', '$1$2 itemprop=$2item$2>', $item )
-					: sprintf( '<span itemprop="item">%s</span>', $item );
+					: sprintf( '<span>%s</span>', $item );
 
 				// Add list item classes.
-				$item_class = 'trail-item';
+				$item_class       = 'trail-item';
+				$item_schema_attr = 'itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"';
 
-				if ( 1 === $item_position && 1 < $item_count )
+				if ( 1 === $item_position && 1 < $item_count ) {
 					$item_class .= ' trail-begin';
-
-				elseif ( $item_count === $item_position )
+				} elseif ( $item_count === $item_position ) {
 					$item_class .= ' trail-end';
+					$item_schema_attr = '';
+				}
 
 				// Create list item attributes.
-				$attributes = 'itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="' . $item_class . '"';
-
+				$attributes = $item_schema_attr . ' class="' . $item_class . '"';
+				
 				// Build the meta position HTML.
 				$meta = sprintf( '<meta itemprop="position" content="%s" />', absint( $item_position ) );
+				
+				if ( $item_count === $item_position ) {
+					$meta = '';
+				}
 
 				// Build the list item.
 				$breadcrumb .= sprintf( '<%1$s %2$s>%3$s%4$s</%1$s>', tag_escape( $this->args['item_tag'] ),$attributes, $item, $meta );
