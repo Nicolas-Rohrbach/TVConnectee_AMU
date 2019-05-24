@@ -86,6 +86,7 @@ class Information {
 
             $actionText = $_POST['validateChange'];
             $actionImg = $_POST['validateChangeImg'];
+            $actionTab = $_POST['validateChangeTab'];
 
             $result = $this->DB->getInformationByID($id);
             $title = $result['title'];
@@ -110,6 +111,24 @@ class Information {
                 $endDate =$_POST['endDateInfo'];
                 if($_FILES['contentFile']['size'] != 0) {    //si l'image est modifié
                     $contentNew = $this->uploadFile($contentFile,"modify","img",$id);
+                    if($contentNew != null || $contentNew != 0) {
+                        $this->DB->modifyInformation($id,$title,$contentNew,$endDate);
+                        $this->view->refreshPage();
+                    }
+                }
+                else { // si le texte et/ou la date de fin est modifié
+                    $this->DB->modifyInformation($id,$title,$content,$endDate);
+                    $this->view->refreshPage();
+                }
+
+            }
+            elseif($actionTab == "Modifier") { //si il s'agit d'une modification d'un tableau
+                $contentFile = $_FILES['contentFile'];
+
+                $title =$_POST['titleInfo'];
+                $endDate =$_POST['endDateInfo'];
+                if($_FILES['contentFile']['size'] != 0) {    //si le fichier est modifié
+                    $contentNew = $this->uploadFile($contentFile,"modify","tab",$id);
                     if($contentNew != null || $contentNew != 0) {
                         $this->DB->modifyInformation($id,$title,$contentNew,$endDate);
                         $this->view->refreshPage();
