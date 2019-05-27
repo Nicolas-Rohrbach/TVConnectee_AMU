@@ -133,8 +133,10 @@ class Alert
 
             $this->endDateCheckAlert($id,$endDate);
 
+            $content .= "&emsp;&emsp;&emsp;&emsp;";
             array_push($contentList,$content) ;
         }
+
 
         $this->view->displayAlertMain($contentList);
 

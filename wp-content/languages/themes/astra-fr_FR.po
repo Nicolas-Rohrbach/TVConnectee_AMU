@@ -676,7 +676,11 @@ msgstr "Aperçu de la mise en page du site"
 #: inc/customizer/class-astra-customizer-register-sections-panels.php:309
 #: inc/addons/breadcrumbs/customizer/class-astra-breadcrumbs-configs.php:55
 msgid "Helpful Information"
-msgstr "Informations utiles"
+msgstr "Information utiles"
+
+#: inc/customizer/class-astra-customizer-register-sections-panels.php:263
+msgid "Colors & Background Overview"
+msgstr "Aperçu des couleurs et de l’arrière-plan"
 
 #: inc/customizer/class-astra-customizer-register-sections-panels.php:263
 msgid "Colors & Background Overview"

@@ -16,7 +16,7 @@ class ViewAlert extends ViewG
 
         echo '
             <form id="creationAlert" method="post">
-                   Contenu : <input type="text" name="content" required maxlength="30"> <br>
+                   Contenu : <input type="text" name="content" required maxlength="140"> <br>
                    Date d\'expiration : <input type="date" name="endDateAlert" min="'.$dateMin.'" required > </br>
                     <input type="submit" value="Créer" name="createAlert">
             </form>
@@ -61,7 +61,7 @@ class ViewAlert extends ViewG
                     
                     <form id="modify_alert" method="post">
                   
-                      Contenu : <textarea name="contentInfo" maxlength="30">' . $content . '</textarea> </br>
+                      Contenu : <textarea name="contentInfo" maxlength="140">' . $content . '</textarea> </br>
                       Date d\'expiration : <input type="date" name="endDateInfo" min="' . $dateMin . '" value = "' . $endDate . '" required > </br>
                       
                          <input type="submit" name="validateChange" value="Valider" ">
@@ -74,19 +74,22 @@ class ViewAlert extends ViewG
      * @param $content
      */
     public function displayAlertMain($content) {
-        echo '
-        <div class="alerts">
-            <div id="ticker1">
-                <div class="innerWrap">';
-        for($i = 0; $i < sizeof($content); ++$i){
-            echo '<div class="list"> '.$content[$i].'</div>';
-        }
-        echo '
+                echo '
+        <div class="alerts" id="alert">
+             <div class="ti_wrapper">
+                <div class="ti_slide">
+                    <div class="ti_content">';
+                        for($i = 0; $i < sizeof($content); ++$i){
+                            echo '<div class="ti_news"><span>' .$content[$i].'</span> </div>';
+                        }
+                        echo '
+                    </div>
                 </div>
             </div>
         </div>
-
-         <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/alertEasyTicker.js" type="text/javascript"></script>
+        
+            <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/jquery.tickerNews.js" type="text/javascript"></script>
+         <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/alertTicker.js" type="text/javascript"></script>
         ';
     } //displayAlertMain()
 

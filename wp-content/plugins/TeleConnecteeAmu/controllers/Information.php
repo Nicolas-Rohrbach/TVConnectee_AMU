@@ -81,46 +81,65 @@ class Information {
      * cf snippet Modification Info
      */
     public function modifyInformation() {
-        $urlExpl = explode('/', $_SERVER['REQUEST_URI']);
-        $id = $urlExpl[2];
+            $urlExpl = explode('/', $_SERVER['REQUEST_URI']);
+            $id = $urlExpl[2];
 
-        $actionText = $_POST['validateChange'];
-        $actionImg = $_POST['validateChangeImg'];
+            $actionText = $_POST['validateChange'];
+            $actionImg = $_POST['validateChangeImg'];
+            $actionTab = $_POST['validateChangeTab'];
 
-        $result = $this->DB->getInformationByID($id);
-        $title = $result['title'];
-        $content = $result['content'];
-        $endDate = date('Y-m-d',strtotime($result['end_date']));
-        $typeI = $result['type'];
+            $result = $this->DB->getInformationByID($id);
+            $title = $result['title'];
+            $content = $result['content'];
+            $endDate = date('Y-m-d',strtotime($result['end_date']));
+            $typeI = $result['type'];
 
-        $this->view->displayModifyInformationForm($title,$content,$endDate,$typeI);
+            $this->view->displayModifyInformationForm($title,$content,$endDate,$typeI);
 
-        if($actionText == "Modifier") {
-            $title =$_POST['titleInfo'];
-            $content = $_POST['contentInfo'];
-            $endDate =$_POST['endDateInfo'];
+            if($actionText == "Modifier") {
+                $title =$_POST['titleInfo'];
+                $content = $_POST['contentInfo'];
+                $endDate =$_POST['endDateInfo'];
 
-            $this->DB->modifyInformation($id,$title,$content,$endDate);
-            $this->view->refreshPage();
-        }
-        elseif($actionImg == "Modifier") { //si il s'agit d'une modification d'affiche
-            $contentFile = $_FILES['contentFile'];
-
-            $title =$_POST['titleInfo'];
-            $endDate =$_POST['endDateInfo'];
-            if($_FILES['contentFile']['size'] != 0) {    //si l'image est modifié
-                $contentNew = $this->uploadFile($contentFile,"modify","img",$id);
-                if($contentNew != null || $contentNew != 0) {
-                    $this->DB->modifyInformation($id,$title,$contentNew,$endDate);
-                    $this->view->refreshPage();
-                }
-            }
-            else { // si le texte et/ou la date de fin est modifié
                 $this->DB->modifyInformation($id,$title,$content,$endDate);
                 $this->view->refreshPage();
             }
+            elseif($actionImg == "Modifier") { //si il s'agit d'une modification d'affiche
+                $contentFile = $_FILES['contentFile'];
 
-        }
+                $title =$_POST['titleInfo'];
+                $endDate =$_POST['endDateInfo'];
+                if($_FILES['contentFile']['size'] != 0) {    //si l'image est modifié
+                    $contentNew = $this->uploadFile($contentFile,"modify","img",$id);
+                    if($contentNew != null || $contentNew != 0) {
+                        $this->DB->modifyInformation($id,$title,$contentNew,$endDate);
+                        $this->view->refreshPage();
+                    }
+                }
+                else { // si le texte et/ou la date de fin est modifié
+                    $this->DB->modifyInformation($id,$title,$content,$endDate);
+                    $this->view->refreshPage();
+                }
+
+            }
+            elseif($actionTab == "Modifier") { //si il s'agit d'une modification d'un tableau
+                $contentFile = $_FILES['contentFile'];
+
+                $title =$_POST['titleInfo'];
+                $endDate =$_POST['endDateInfo'];
+                if($_FILES['contentFile']['size'] != 0) {    //si le fichier est modifié
+                    $contentNew = $this->uploadFile($contentFile,"modify","tab",$id);
+                    if($contentNew != null || $contentNew != 0) {
+                        $this->DB->modifyInformation($id,$title,$contentNew,$endDate);
+                        $this->view->refreshPage();
+                    }
+                }
+                else { // si le texte et/ou la date de fin est modifié
+                    $this->DB->modifyInformation($id,$title,$content,$endDate);
+                    $this->view->refreshPage();
+                }
+
+            }
     } //modifyInformation()
 
     /**
@@ -345,6 +364,7 @@ class Information {
         if($mod != 9 && $i >0){
             $content .= '</table>';
             array_push($contentList,$content);
+            $content = "";
         }
         return $contentList;
     }
