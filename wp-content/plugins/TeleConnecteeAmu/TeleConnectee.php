@@ -150,5 +150,9 @@ function wpdocs_plugin_teleconnecteeAmu_scripts() {
     wp_enqueue_style('info-style');
     wp_register_style('schedule-style', '/wp-content/plugins/TeleConnecteeAmu/views/css/schedule.css', array(), true);
     wp_enqueue_style('schedule-style');
+    wp_enqueue_script( 'theme-jquery', get_template_directory_uri() . '/assets/js/jquery-3.3.1.min.js', array (), '', false);
+    wp_enqueue_script( 'theme-jqueryUI', get_template_directory_uri() . '/assets/js/jquery-ui.min.js', array ( 'jquery' ), '', false);
+    wp_enqueue_script( 'theme-jqueryEzTic', '/wp-content/plugins/TeleConnecteeAmu/views/js/jquery.easy-ticker.js', array ( 'jquery' ), '', false);
+
 }
 add_action( 'wp_enqueue_scripts', 'wpdocs_plugin_teleconnecteeAmu_scripts' );

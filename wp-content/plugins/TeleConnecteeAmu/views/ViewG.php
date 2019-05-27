@@ -18,9 +18,10 @@ abstract class ViewG{
 			<br/>';
     }
 
-    protected function displayHeaderTab(){
+    protected function displayHeaderTab($title = null){
         echo '
             <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/addAllCheckBox.js"></script>
+            <h1>'.$title.'</h1>
             <form method="post">
                 <table class="table text-center"> 
                 <thead>
@@ -33,8 +34,8 @@ abstract class ViewG{
      * Build the header of a table
      * @param $tab
      */
-    protected function displayStartTab($tab){
-        $this->displayHeaderTab();
+    protected function displayStartTab($tab, $title = null){
+        $this->displayHeaderTab($title);
         foreach ($tab as $value){
             echo'<th scope="col" class="text-center"> '.$value.'</th>';
         }

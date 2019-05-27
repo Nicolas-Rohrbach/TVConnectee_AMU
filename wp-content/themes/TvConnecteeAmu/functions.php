@@ -19,19 +19,17 @@ function mytheme_customizer_live_preview()
 }
 add_action( 'customize_preview_init', 'mytheme_customizer_live_preview' );
 
-function wpdocs_theme_name_scripts() {
-    wp_register_style('bootstrap-style', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', array(), true);
-    wp_enqueue_style('bootstrap-style');
-    wp_register_style('main-style', get_template_directory_uri().'/style.css', array(), true);
-    wp_enqueue_style('main-style');
-    wp_register_style('header-style', get_template_directory_uri().'/assets/css/header.css', array(), true);
-    wp_enqueue_style('header-style');
-    wp_register_style('content-style', get_template_directory_uri().'/assets/css/content.css', array(), true);
-    wp_enqueue_style('content-style');
-    wp_register_style('footer-style', get_template_directory_uri().'/assets/css/footer.css', array(), true);
-    wp_enqueue_style('footer-style');
+function add_theme_scripts() {
+    wp_enqueue_style('bootstrap-style', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', false, '', 'all');
+    wp_enqueue_style('main-style', get_template_directory_uri().'/style.css', false, '1.0', 'all');
+    wp_enqueue_style('header-style', get_template_directory_uri().'/assets/css/header.css', false, '1.0', 'all');
+    wp_enqueue_style('content-style', get_template_directory_uri().'/assets/css/content.css', false, '1.0', 'all');
+    wp_enqueue_style('footer-style', get_template_directory_uri().'/assets/css/footer.css', false, '1.0', 'all');
+    wp_enqueue_script( 'theme-jquery', get_template_directory_uri() . '/assets/js/jquery-3.3.1.min.js', array (), '', false);
+    wp_enqueue_script( 'theme-jqueryUI', get_template_directory_uri() . '/assets/js/jquery-ui.min.js', array ( 'jquery' ), '', false);
+    wp_enqueue_script( 'theme-jqueryEzTic', get_template_directory_uri() . '/assets/js/jquery.easy-ticker.js', array ( 'jquery' ), 1.1, false);
 }
-add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
+add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
 function admin_css() {
 

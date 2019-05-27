@@ -9,7 +9,7 @@
 class ViewSchedule extends ViewG
 {
     public function displayName($title) {
-        echo '<h2>'.$title.'</h2>';
+        echo '<h1>'.$title.'</h1>';
     }
 
     public function displayStartSlide(){

@@ -53,8 +53,9 @@ class ViewTelevision extends ViewG{
     }
 
     public function displayHeaderTabTv(){
+        $title = "Télévisions";
         $tab = ["Login", "Nombre de vues"];
-        $this->displayStartTab($tab);
+        $this->displayStartTab($tab, $title);
     }
 
     public function displayAllTv($id, $login,  $nbCode, $row){

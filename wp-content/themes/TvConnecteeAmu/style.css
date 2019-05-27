@@ -2,9 +2,12 @@
     Theme Name: TvConnecteeAmu
     Theme URI: http://www.tvconnectee.com/
     Description: The first theme created by Nicolas Rohrbach.
-    Version: 0.3
+    Version: 0.5
+    Licence: GNU General Public License v2 ou ultérieure
+    Licence URI: http://www.gnu.org/licenses/gpl-2.0.html
     Author: Nicolas Rohrbach
     TvConnecteeAmu by Nicolas Rohrbach|| http://www.tvconnectee.com
+    Tags: bootstrap, une colonne, deux colonnes, barre latérale droite, en-tête flexible, prêt pour l'accessibilité, couleurs personnalisées, en-tête personnalisé, logo personnalisé, widgets de pied de page, options de thème
 */
 
 /* LINK */
@@ -25,11 +28,16 @@ a:hover {
     color: white;
 }
 
+.ninja {
+    opacity: 0;
+}
+
 /* FORM */
 
 .cadre {
     text-align: center;
     width: auto;
+    padding: 10px;
     background-color: #EEEEEE;
 }
 

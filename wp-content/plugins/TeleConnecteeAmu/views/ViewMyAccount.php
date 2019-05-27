@@ -13,13 +13,13 @@ class ViewMyAccount extends ViewG
           <div class="cadre">
             <form method="post">
                 <label for="verifPwd">Votre mot de passe actuel</label>
-                <input type="password" class="form-control text-center modal-sm" name="verifPwd" placeholder="Mot de passe" required="">';
+                <input type="password" class="form-control text-center" name="verifPwd" placeholder="Mot de passe" required="">';
     }
 
     public function displayModifyPassword(){
         echo '
                 <label for="newPwd">Votre nouveau mot de passe</label>
-                <input type="password" class="form-control text-center modal-sm" name="newPwd" placeholder="Mot de passe" required="">
+                <input type="password" class="form-control text-center" name="newPwd" placeholder="Mot de passe" required="">
                 <button type="submit" name="modifyMyPwd">Modifier</button>
             </form>
           </div>';

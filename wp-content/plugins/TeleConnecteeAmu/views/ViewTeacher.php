@@ -20,7 +20,8 @@ class ViewTeacher extends ViewG
      */
     public function displayTabHeadTeacher(){
         $tab = ["Numéro Ent", "Code ADE"];
-        $this->displayStartTab($tab);
+        $title = "Enseignants";
+        $this->displayStartTab($tab, $title);
     }
 
     /**

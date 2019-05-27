@@ -26,7 +26,8 @@ class ViewSecretary extends ViewG
     }
 
     public function displayHeaderTabSecretary(){
-        $this->displayHeaderTab();
+        $title = "Secrétaires";
+        $this->displayHeaderTab($title);
         echo'<th scope="col">Login</th>
                     </tr>
                 </thead>

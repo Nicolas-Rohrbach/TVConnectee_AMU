@@ -330,8 +330,8 @@ function mytheme_customize_css()
 add_action( 'wp_head', 'mytheme_customize_css');
 
 $args = array(
-    'width'         => 200,
-    'height'        => 80,
+    'width'         => 320,
+    'height'        => 100,
     'default-image' => get_template_directory_uri() . 'assets/images/header.png',
     'uploads'       => true,
 );

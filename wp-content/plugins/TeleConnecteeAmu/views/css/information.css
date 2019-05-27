@@ -1,8 +1,5 @@
 /*__Information main__*/
 
-#information_carousel {
-    min-height: 90ex;
-}
 .titleInfo {
     width: 100%;
     font-size : 3em;
@@ -16,6 +13,41 @@
 }
 
 .content_info img{
-    width: 100%;
-    height: auto;
+    max-height:35ex;
+}
+
+@media (max-height: 1100px) {
+    .titleInfo {
+        width: 100%;
+        font-size : 3em;
+        text-align: center;
+    }
+
+    .content_info{
+        width: 100%;
+        font-size : 1.5em;
+        text-align: center;
+    }
+
+    .content_info img{
+        max-height:45ex;
+    }
+}
+
+@media (max-height: 800px) {
+    .titleInfo {
+        width: 100%;
+        font-size : 3em;
+        text-align: center;
+    }
+
+    .content_info{
+        width: 100%;
+        font-size : 1.5em;
+        text-align: center;
+    }
+
+    .content_info img{
+        max-height:30ex;
+    }
 }
