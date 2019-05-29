@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/wpTv.iml" filepath="$PROJECT_DIR$/.idea/wpTv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Tv.iml" filepath="$PROJECT_DIR$/.idea/Tv.iml" />
     </modules>
   </component>
 </project>

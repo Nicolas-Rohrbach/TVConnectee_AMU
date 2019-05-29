@@ -87,9 +87,6 @@ class ViewAlert extends ViewG
                 </div>
             </div>
         </div>
-        
-            <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/jquery.tickerNews.js" type="text/javascript"></script>
-         <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/alertTicker.js" type="text/javascript"></script>
         ';
     } //displayAlertMain()
 

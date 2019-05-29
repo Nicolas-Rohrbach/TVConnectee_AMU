@@ -32,7 +32,6 @@ class ViewTelevision extends ViewG{
 
     public function displayFormTelevision($years, $groups, $halfgroups) {
         echo '
-        <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/addOrDeleteTvCode.js"></script>
          <div class="cadre">
             <div align="center">
                 <form method="post" id="registerTvForm">
@@ -41,7 +40,7 @@ class ViewTelevision extends ViewG{
                     <label for="pwdTv">Mot de passe</label>
                     <input type="password" class="form-control text-center modal-sm" name="pwdTv" placeholder="Mot de passe" required="">
                     <label>Premier emploi du temps</label>
-                    <select class="form-control" name="selectTv[]" required="">';
+                    <select class="form-control firstSelect" name="selectTv[]" required="">';
         $this->displaySelect($years, $groups, $halfgroups);
 
         echo'
@@ -66,7 +65,7 @@ class ViewTelevision extends ViewG{
     }
 
     public function displaySelectSelected($years, $groups, $halfgroups, $name){
-        $selected = $_POST[$name];
+        $selected = $name;
         echo '<option value="0">Aucun</option>
                         <optgroup label="Année">';
         foreach ($years as $year) {
@@ -87,28 +86,36 @@ class ViewTelevision extends ViewG{
     }
 
     public function displayModifyTv($result, $years, $groups, $halfgroups){
-        $code = unserialize($result['code']);
+        $codes = unserialize($result['code']);
+        $count = 0;
         echo '
          <h3>'.$result['user_login'].'</h3>
-         <form method="post">
-            <label>Premier emploi du temps</label>
-            <select class="form-control" name="firstCode" required="">
-                <option value="'.$code[0].'">'.$code[0].'</option>';
-        $this->displaySelectSelected($years, $groups, $halfgroups, "firstCode");
-        echo'
-            <label>Deuxième emploi du temps (Optionel)</label>
-            <select class="form-control" name="secondCode">
-                <option value="'.$code[1].'">'.$code[1].'</option>';
-        $this->displaySelectSelected($years, $groups, $halfgroups, "secondCode");
+         <div class="cadre">
+         <div align="center">
+         <form method="post" id="registerTvForm">
+            <label>Mot de passe </label>
+            <input type="password" class="form-control text-center modal-sm" name="pwdTv" placeholder="Mot de passe">
+            <label> Emploi du temps</label>';
+        foreach ($codes as $code) {
+            $count = $count + 1;
+            if($count == 1){
+                echo '<select class="form-control firstSelect" name="selectTv[]" id="selectId'.$count.'">';
+                $this->displaySelectSelected($years, $groups, $halfgroups, $code);
+                echo '<br/>';
+            } else {
+                echo '<div class="row">';
+                echo '<select class="form-control select" name="selectTv[]" id="selectId'.$count.'">';
+                $this->displaySelectSelected($years, $groups, $halfgroups, $code);
+                echo '<input type="button" id="selectId'.$count.'" onclick="deleteRow(this.id)" class="selectbtn" value="Supprimer"></div>';
+            }
+        }
         echo '
-            <label>Troisième emploi du temps (Optionel)</label>
-            <select class="form-control" name="thirdCode">
-                <option value="'.$code[2].'">'.$code[2].'</option>';
-        $this->displaySelectSelected($years, $groups, $halfgroups, "thirdCode");
-        echo '
+            <input type="button" onclick="addButton()" value="Ajouter des emplois du temps">
             <input name="modifValidate" type="submit" value="Valider">
-            <a class="btn btn-dark btn-lg mb-3" href="http://'.$_SERVER['HTTP_HOST'].'/gestion-des-utilisateurs">Annuler</a>
-         </form>';
+            <a href="/gestion-des-utilisateurs">Annuler</a>
+         </form>
+         </div>
+         </div>';
     }
 
     public function displayErrorLogin(){

@@ -41,7 +41,7 @@ class ViewMyAccount extends ViewG
     }
 
     public function displayMailSend(){
-        echo '<div class="alert alert-success"> Un mail a été envoyé à votre adresse mail, merci de bien vouloir entrer le code reçut</div>';
+        echo '<div class="alert alert-success"> Un mail a été envoyé à votre adresse mail, merci de bien vouloir entrer le code reçu</div>';
     }
 
     public function displayEnterCode(){

@@ -9,9 +9,10 @@
 abstract class ViewG{
 
     protected function displayInsertImportFile($name){
-        echo'
+        echo '<a href="/wp-content/plugins/TeleConnecteeAmu/models/Excel/addUsers/ajout'.$name.'s.xlsx"
+                download="Ajout '.$name.'">Télécharger le fichier Excel ! </a>
              <form method="post" enctype="multipart/form-data">
-				<input type="file" name="excel'.$name.'" class="btn btn-dark"/>
+				<input type="file" name="excel'.$name.'" class="inpFil"/>
 				<br/>
 				<button type="submit" name="import'.$name.'" value="Importer">Importer le fichier</button>
 			</form>
@@ -20,7 +21,6 @@ abstract class ViewG{
 
     protected function displayHeaderTab($title = null){
         echo '
-            <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/addAllCheckBox.js"></script>
             <h1>'.$title.'</h1>
             <form method="post">
                 <table class="table text-center"> 
@@ -117,7 +117,8 @@ abstract class ViewG{
     }
 
     public function displayUnregisteredCode($badCodes){
-        echo'
+        if(! is_null($badCodes[0]) || ! is_null($badCodes[1]) || ! is_null($badCodes[2])) {
+            echo'
         <h3> Ces codes ne sont pas encore enregistrés ! </h3>
         <table class="table text-center"> 
                 <thead>
@@ -128,39 +129,52 @@ abstract class ViewG{
                         </tr>
                 </thead>
                 <tbody>';
-        $sizeYear = sizeof($badCodes[0]);
-        $sizeGroup = sizeof($badCodes[1]);
-        $sizeHalfgroup = sizeof($badCodes[2]);
-        $size = 0;
-        if($sizeYear >= $sizeGroup && $sizeYear >= $sizeHalfgroup) $size = $sizeYear;
-        if($sizeGroup >= $sizeYear && $sizeGroup >= $sizeHalfgroup) $size = $sizeGroup;
-        if($sizeHalfgroup >= $sizeYear && $sizeHalfgroup >= $sizeGroup) $size = $sizeHalfgroup;
-        for($i = 0; $i < $size; ++$i){
-            echo '<tr>
+            if(is_null($badCodes[0])){
+                $sizeYear = 0;
+            } else {
+                $sizeYear = sizeof($badCodes[0]);
+            }
+            if(is_null($badCodes[1])){
+                $sizeGroup = 0;
+            } else {
+                $sizeGroup = sizeof($badCodes[1]);
+            }
+            if(is_null($badCodes[2])){
+                $sizeHalfgroup = 0;
+            } else {
+                $sizeHalfgroup = sizeof($badCodes[2]);
+            }
+            $size = 0;
+            if($sizeYear >= $sizeGroup && $sizeYear >= $sizeHalfgroup) $size = $sizeYear;
+            if($sizeGroup >= $sizeYear && $sizeGroup >= $sizeHalfgroup) $size = $sizeGroup;
+            if($sizeHalfgroup >= $sizeYear && $sizeHalfgroup >= $sizeGroup) $size = $sizeHalfgroup;
+            for($i = 0; $i < $size; ++$i){
+                echo '<tr>
                     <td class="text-center">';
-            if($sizeYear > $i)
-                echo $badCodes[0][$i];
-            else
-                echo ' ';
-            echo '</td>
+                if($sizeYear > $i)
+                    echo $badCodes[0][$i];
+                else
+                    echo ' ';
+                echo '</td>
             <td class="text-center">';
-            if($sizeGroup > $i)
-                echo $badCodes[1][$i];
-            else
-                echo ' ';
-            echo '</td>
+                if($sizeGroup > $i)
+                    echo $badCodes[1][$i];
+                else
+                    echo ' ';
+                echo '</td>
             <td class="text-center">';
-            if($sizeHalfgroup > $i)
-                echo $badCodes[2][$i];
-            else
-                echo ' ';
-            echo '</td>
+                if($sizeHalfgroup > $i)
+                    echo $badCodes[2][$i];
+                else
+                    echo ' ';
+                echo '</td>
 
                   </tr>';
-        }
-        echo '
+            }
+            echo '
                 </tbody>
         </table>
         ';
+        }
     }
 }

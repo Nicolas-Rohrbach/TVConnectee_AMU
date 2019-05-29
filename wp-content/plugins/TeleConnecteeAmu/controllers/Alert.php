@@ -56,9 +56,12 @@ class Alert
      * Affiche un tableau avec toutes les alertes et des boutons de modification ainsi qu'un bouton de suppression.
      * cf snippet Handle Alert
      */
-    function alertsManagement()
-    {
-        $result = $this->DB->getListAlert();
+    function alertsManagement(){
+
+        $current_user = wp_get_current_user();
+        $user = $current_user->user_login;
+        $result = $this->DB->getListAlertByAuthor($user);
+
         $this->view->tabHeadAlert();
         $i = 0;
 

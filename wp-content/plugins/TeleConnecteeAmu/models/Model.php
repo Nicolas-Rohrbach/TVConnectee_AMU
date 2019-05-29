@@ -126,16 +126,16 @@ abstract class Model
         }
     }
 
-    protected function modifyUser($id, $login, $pwd, $email, $code){
+    protected function modifyUser($id, $login, $pwd, $email, $codes){
         if ($this->verifyTuple($login)) {
-            $req = $this->getDb()->prepare('UPDATE wp_users SET user_login=:login, user_pass=:pwd, code=:code, user_nicename=:name, 
+            $req = $this->getDb()->prepare('UPDATE wp_users SET user_login=:login, user_pass=:pwd, code=:codes, user_nicename=:name, 
                                             user_email=:email, display_name=:displayname WHERE ID=:id');
 
-            $serCode = serialize($code);
+            $serCode = serialize($codes);
             $req->bindParam(':id', $id);
             $req->bindParam(':login', $login);
             $req->bindParam(':pwd', $pwd);
-            $req->bindParam(':code', $serCode);
+            $req->bindParam(':codes', $serCode);
             $req->bindParam(':name', $login);
             $req->bindParam(':email', $email);
             $req->bindParam(':displayname', $login);
@@ -278,12 +278,21 @@ abstract class Model
         $codesAde = $this->getAll('code_ade');
         $allCode = array();
         $notRegisterCode = array();
-        foreach ($codesAde as $codeAde)
-            $allCode[] = $codeAde['code'];
-        foreach ($userCodes as $userCode){
-            if(! in_array($userCode, $allCode))
-                $notRegisterCode[] = $userCode;
+        if(isset($codesAde)){
+            foreach ($codesAde as $codeAde){
+                $allCode[] = $codeAde['code'];
+            }
         }
-        return $notRegisterCode;
+        if(isset($userCodes)){
+            foreach ($userCodes as $userCode){
+                if(! in_array($userCode, $allCode))
+                    $notRegisterCode[] = $userCode;
+            }
+        }
+        if(empty($notRegisterCode)) {
+            return null;
+        } else {
+            return $notRegisterCode;
+        }
     }
 }

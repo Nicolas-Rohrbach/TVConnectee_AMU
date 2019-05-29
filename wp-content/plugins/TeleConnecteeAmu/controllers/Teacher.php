@@ -60,17 +60,21 @@ class Teacher extends ControllerG
                         }
                         $pwd = wp_generate_password();
                         $hashpass = wp_hash_password($pwd);
+                        $login = $cells[0];
+                        $email = $cells[1];
                         $codes = [$cells[2]];
-                        if($this->model->insertTeacher($cells[0], $hashpass, $cells[1], $codes)){
+                        if($this->model->insertTeacher($login, $hashpass, $email, $codes)){
                             foreach ($codes as $code){
                                 $path = $this->getFilePath($code);
                                 if(! file_exists($path))
                                     $this->addFile($code);
                             }
-                            $message = "Bonjour, vous avez été inscrit sur le site de la Télé Connecté de votre département en temps qu'étudiant. <br> Sur ce site, vous aurez accès à votre emploie du temps, à vos notes et aux informations concernant votre scolarité. <br>" ;
-                            $message2 = $message . "Votre identifiant est " . $cells[0] . " et votre mot de passe est " . $pwd . ". <br>"  ;
-                            $message3 = $message2 . "Pour vous connecter, rendez vous sur le site : tv-connectee-amu.alwaysdata.net ." . "<br> Nous vous souhaitons une bonne expérience sur notre site. <br>" ;
-                            //mail($email, "Inscription à la télé-connecté", $message3);
+                            $message = "Bonjour, vous avez été inscrit sur le site de la Télé Connecté de votre département en temps qu'enseignant.\n";
+                            $message1 = $message."Sur ce site, vous aurez accès à votre emploie du temps, à vos notes et aux informations concernant votre scolarité. \n" ;
+                            $message2 = $message1 . "Votre identifiant est " . $login . " et votre mot de passe est " . $pwd. "\n";
+                            $message3 = $message2 . "Pour vous connecter, rendez vous sur le site : ".home_url().". \n";
+                            $message4 = $message3."Nous vous souhaitons une bonne expérience sur notre site." ;
+                            mail($email, "Inscription à la télé-connecté", $message4);
                         }
                         else {
                             array_push($doubles, $cells[0]);
@@ -116,7 +120,7 @@ class Teacher extends ControllerG
      */
     public function modifyTeacher($result){
         $action = $_POST['modifValidate'];
-        $code = $_POST['modifCode'];
+        $code = [$_POST['modifCode']];
         $this->view->displayModifyTeacher($result);
         if($action === 'Valider'){
             $this->model->modifyTeacher($result, $code);

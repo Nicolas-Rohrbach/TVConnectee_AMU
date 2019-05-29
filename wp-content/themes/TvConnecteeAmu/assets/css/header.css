@@ -94,7 +94,9 @@
 }
 
 @media screen and (max-width: 1150px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {
+        position: relative;
+    }
     .topnav.responsive .icon {
         position: absolute;
         right: 0;
@@ -105,8 +107,12 @@
         display: block;
         text-align: left;
     }
-    .topnav.responsive .drop_down {float: none;}
-    .topnav.responsive .drop_down-content {position: relative;}
+    .topnav.responsive .drop_down {
+        float: none;
+    }
+    .topnav.responsive .drop_down-content {
+        position: relative;
+    }
     .topnav.responsive .drop_down .dropbtn {
         display: block;
         width: 100%;

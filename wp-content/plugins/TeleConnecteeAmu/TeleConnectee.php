@@ -140,19 +140,20 @@ function downloadFileICS_func() {
 }
 
 function wpdocs_plugin_teleconnecteeAmu_scripts() {
-    wp_register_style('plugin-bootstrap-style', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', array(), true);
-    wp_enqueue_style('plugin-bootstrap-style');
-    wp_register_style('weather-style', '/wp-content/plugins/TeleConnecteeAmu/views/css/weather.css', array(), true);
-    wp_enqueue_style('weather-style');
-    wp_register_style('alert-style', '/wp-content/plugins/TeleConnecteeAmu/views/css/alert.css', array(), true);
-    wp_enqueue_style('alert-style');
-    wp_register_style('info-style', '/wp-content/plugins/TeleConnecteeAmu/views/css/information.css', array(), true);
-    wp_enqueue_style('info-style');
-    wp_register_style('schedule-style', '/wp-content/plugins/TeleConnecteeAmu/views/css/schedule.css', array(), true);
-    wp_enqueue_style('schedule-style');
+    wp_enqueue_style('plugin-bootstrap-style', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', array(), true);
+    wp_enqueue_style('weather-style', '/wp-content/plugins/TeleConnecteeAmu/views/css/weather.css', array(), true);
+    wp_enqueue_style('alert-style', '/wp-content/plugins/TeleConnecteeAmu/views/css/alert.css', array(), true);
+    wp_enqueue_style('info-style', '/wp-content/plugins/TeleConnecteeAmu/views/css/information.css', array(), true);
+    wp_enqueue_style('schedule-style', '/wp-content/plugins/TeleConnecteeAmu/views/css/schedule.css', array(), true);
     wp_enqueue_script( 'theme-jquery', get_template_directory_uri() . '/assets/js/jquery-3.3.1.min.js', array (), '', false);
     wp_enqueue_script( 'theme-jqueryUI', get_template_directory_uri() . '/assets/js/jquery-ui.min.js', array ( 'jquery' ), '', false);
     wp_enqueue_script( 'theme-jqueryEzTic', '/wp-content/plugins/TeleConnecteeAmu/views/js/jquery.easy-ticker.js', array ( 'jquery' ), '', false);
-
+    wp_enqueue_script( 'plugin-addCheckBox', '/wp-content/plugins/TeleConnecteeAmu/views/js/addAllCheckBox.js', array ( 'jquery' ), '', false);
+    wp_enqueue_script( 'plugin-addCodeTv', '/wp-content/plugins/TeleConnecteeAmu/views/js/addOrDeleteTvCode.js', array ( 'jquery' ), '', false);
+    wp_enqueue_script( 'plugin-marquee', '/wp-content/plugins/TeleConnecteeAmu/views/js/jquery.marquee.js', array ( 'jquery' ), '', false);
+    wp_enqueue_script( 'plugin-weather', '/wp-content/plugins/TeleConnecteeAmu/views/js/weather.js', array ( 'jquery' ), '', false);
+    wp_enqueue_script( 'plugin-slideshow', '/wp-content/plugins/TeleConnecteeAmu/views/js/slideshow.js', array ( 'jquery' ), '', true);
+    wp_enqueue_script( 'plugin-ticker', '/wp-content/plugins/TeleConnecteeAmu/views/js/jquery.tickerNews.js', array ( 'jquery' ), '', true);
+    wp_enqueue_script( 'plugin-alertTicker', '/wp-content/plugins/TeleConnecteeAmu/views/js/alertTicker.js', array ( 'jquery' ), '', true);
 }
 add_action( 'wp_enqueue_scripts', 'wpdocs_plugin_teleconnecteeAmu_scripts' );

@@ -47,7 +47,7 @@ class Information {
      * @param $id
      */
     public function deleteFile($id) {
-        $file = glob($_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/media/{$id}.*");
+        $file = glob("/wp-content/plugins/TeleConnecteeAmu/views/media/{$id}.*");
         foreach ($file as $filename) {
             unlink($filename);
         }
@@ -58,8 +58,11 @@ class Information {
      * cf snippet Handle Informations
      */
     function informationManagement(){
-        $result = $this->DB->getListInformation();
-        echo '<a href="http://wptv/creer-information/"> Creer une information </a>';
+        $current_user = wp_get_current_user();
+        $user = $current_user->user_login;
+
+        $result = $this->DB->getListInformationByAuthor($user);
+        echo '<a href="'.$_SERVER['HTTP_HOST'].'/creer-information/"> Créer une information </a>';
         $this->view->tabHeadInformation();
         $i = 0;
 
@@ -219,11 +222,11 @@ class Information {
                 $extension_upload = strtolower(  substr(  strrchr($_FILES['file']['name'], '.')  ,1)  );
 
                 //renomme le fichier avec l'id de l'info
-                rename($_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/temporary.{$extension_upload}",
-                    $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.{$extension_upload}");
+                rename($_SERVER['DOCUMENT_ROOT']."/wp-content/plugins/TeleConnecteeAmu/views/media/temporary.{$extension_upload}",
+                    $_SERVER['DOCUMENT_ROOT']."/wp-content/plugins/TeleConnecteeAmu/views/media/{$id}.{$extension_upload}");
 
                 //modifie le contenu de l'information pour avoir le bon lien de l'image
-                $content = '<img src="http://wptv/wp-content/plugins/TeleConnecteeAmu/views/Media/'.$id.'.'.$extension_upload.'">';
+                $content = '<img src="/wp-content/plugins/TeleConnecteeAmu/views/media/'.$id.'.'.$extension_upload.'">';
                 $this->changeContentFile($id, $content);
             }
         }
@@ -236,8 +239,8 @@ class Information {
                 $extension_upload = strtolower(  substr(  strrchr($_FILES['file']['name'], '.')  ,1)  );
 
                 //renomme le fichier avec l'id de l'info
-                rename($_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/temporary.{$extension_upload}",
-                    $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.{$extension_upload}");
+                rename($_SERVER['DOCUMENT_ROOT']."/wp-content/plugins/TeleConnecteeAmu/views/media/temporary.{$extension_upload}",
+                    $_SERVER['DOCUMENT_ROOT']."/wp-content/plugins/TeleConnecteeAmu/views/media/{$id}.{$extension_upload}");
 
                 //modifie le contenu de l'information pour avoir le bon nom du fichier
                 $content = $id.'.'.$extension_upload;
@@ -284,7 +287,7 @@ class Information {
 
         $extension_upload = strtolower(  substr(  strrchr($_FILES['file']['name'], '.')  ,1)  );
         if ( in_array($extension_upload,$extensions_valides) ) {
-            $nom =  $_SERVER['DOCUMENT_ROOT'] ."/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.{$extension_upload}";
+            $nom =  $_SERVER['DOCUMENT_ROOT']."/wp-content/plugins/TeleConnecteeAmu/views/media/{$id}.{$extension_upload}";
             $resultat = move_uploaded_file($_FILES['file']['tmp_name'],$nom);
         }else { echo "Extension incorrecte <br>";}
 
@@ -304,7 +307,7 @@ class Information {
             elseif ($action == "modify"){
                 if($type == "img") {
                     //renvoie le nouveau contenu de l'info
-                    $content = '<img src="http://wptv/wp-content/plugins/TeleConnecteeAmu/views/Media/' . $id . '.' . $extension_upload . '">';
+                    $content = '<img src="/wp-content/plugins/TeleConnecteeAmu/views/media/' . $id . '.' . $extension_upload . '">';
                     return $content;
                 }
                 elseif ($type == "tab"){
@@ -322,7 +325,7 @@ class Information {
 
     public function readSpreadSheet($id){
 
-        $file = glob($_SERVER['DOCUMENT_ROOT'] . "/wp-content/plugins/TeleConnecteeAmu/views/Media/{$id}.*");
+        $file = glob($_SERVER['DOCUMENT_ROOT']."/wp-content/plugins/TeleConnecteeAmu/views/media/{$id}.*");
         foreach ($file as $i) {
             $filename = $i;
         }
@@ -342,14 +345,14 @@ class Information {
         for ($i = 0; $i < $highestRow; ++$i) {
             $mod = $i % 10;
             if($mod == 0){
-                $content .= '<table class ="table table-bordered table-dark tablesize">';
+                $content .= '<table class ="table table-bordered tablesize">';
             }
             foreach ($worksheet->getRowIterator($i+1,1) as $row) {
                 $content .= '<tr scope="row">';
                 $cellIterator = $row->getCellIterator();
                 $cellIterator->setIterateOnlyExistingCells(FALSE);
                 foreach ($cellIterator as $cell) {
-                    $content .='<td class="text-center" width="10%">' .
+                    $content .='<td class="text-center">' .
                         $cell->getValue() .
                         '</td>';
                 }

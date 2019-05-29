@@ -54,14 +54,15 @@ class MyAccount extends ControllerG {
             if(wp_check_password($pwd, $current_user->user_pass)) {
                 $code = wp_generate_password();
                 $exist = $this->model->getCode($current_user->ID);
-                if(isset($exist))
+                if(isset($exist)){
                     $this->model->modifyCode($current_user->ID, $code);
-                if($this->model->createRandomCode($current_user->ID, $code)){
-                    $message = "Voici votre code pour pouvoir vous désinscrire sur ".$_SERVER['HTTP_HOST'].".";
-                    $message .= "Le code est: ".$code.".";
-                    //mail($current_user->user_email, "Code de désinscription", $message);
-                    $this->view->displayMailSend();
+                } else {
+                    $this->model->createRandomCode($current_user->ID, $code);
                 }
+                $message = "Voici votre code pour pouvoir vous désinscrire sur ".$_SERVER['HTTP_HOST'].".";
+                $message .= "Le code est: ".$code.".";
+                mail($current_user->user_email, "Code de désinscription", $message);
+                $this->view->displayMailSend();
             }
             else{
                 $this->view->displayWrongPassword();

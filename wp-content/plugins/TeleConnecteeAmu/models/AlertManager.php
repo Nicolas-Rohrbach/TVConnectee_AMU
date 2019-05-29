@@ -102,6 +102,23 @@ class AlertManager
     } //getAlertByID()
 
     /**
+     * Return the list of information created by an user
+     * @param $user
+     * @return array|null|object
+     */
+    public function getListAlertByAuthor($user)
+    {
+        global $wpdb;
+        $result = $wpdb->get_results(
+            $wpdb->prepare(
+                "SELECT * FROM alerts WHERE author = %s",
+                $user
+            ), ARRAY_A
+        );
+        return $result;
+    } //getListAlertByAuthor()
+
+    /**
      * Modify the alert in the database.
      * @param $id
      * @param $content

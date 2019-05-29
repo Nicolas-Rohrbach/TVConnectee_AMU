@@ -27,8 +27,7 @@ class ViewSchedule extends ViewG
     public function displayEndSlide() {
         echo '          
                        </div>
-                   </div>
-        <script src="/wp-content/plugins/TeleConnecteeAmu/views/js/slideshow.js"></script>';
+                   </div>';
     }
 
     public function displayEmptySchedule(){

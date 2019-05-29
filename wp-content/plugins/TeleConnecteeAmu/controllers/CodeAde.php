@@ -38,7 +38,9 @@ class CodeAde extends ControllerG
         $badCodesGroups = $this->model->codeNotBound(1);
         $badCodesHalfgroups = $this->model->codeNotBound(2);
         $badCodes = [$badCodesYears, $badCodesGroups, $badCodesHalfgroups];
-        $this->view->displayUnregisteredCode($badCodes);
+        if(isset($badCodes)){
+            $this->view->displayUnregisteredCode($badCodes);
+        }
 
         $action = $_POST['addCode'];
         $code = filter_input(INPUT_POST, 'codeAde');
@@ -61,11 +63,11 @@ class CodeAde extends ControllerG
      */
     public function displayAllCodes(){
         $results = $this->model->getAllCode();
-        if(isset($results)){
+        if(isset($results[0])){
             $this->view->displayAllCode($results);
         }
         else{
-            $this->view->displayEmpty();
+            $this->view->displayEmptyCode();
         }
     }
 
@@ -109,7 +111,7 @@ class CodeAde extends ControllerG
                 $this->view->refreshPage();
             }
             else{
-                $this->view->displayErrorDouble();
+                $this->view->displayErrorDoubleCode();
             }
         }
     }

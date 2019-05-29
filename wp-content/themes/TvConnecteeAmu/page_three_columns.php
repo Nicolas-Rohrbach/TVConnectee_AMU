@@ -1,9 +1,7 @@
-<?php /* Template Name: 3 colonnes */
+<?php /* Template Name: 3 colonnes */ ?>
 
-get_header(); ?>
-
-<?php
-if (! wp_is_mobile() ) {
+<?php get_header(); ?>
+<?php if (! wp_is_mobile() ) {
     get_sidebar('left');
 } ?>
 <div id="content-threecolumns">
@@ -20,9 +18,9 @@ if (! wp_is_mobile() ) {
 <?php if ( wp_is_mobile() ) {
     get_sidebar('left');
 }
-get_sidebar();
-
-get_footer(); ?>
+get_sidebar(); ?>
 </div>
+<?php get_footer(); ?>
+
 </body>
 </html>

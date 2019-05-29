@@ -87,4 +87,8 @@ class ViewCodeAde extends ViewG
     public function displayErrorDoubleCode(){
         echo '<div class="alert alert-danger"> Ce code ou ce titre existe déjà ! </div>';
     }
+
+    public function displayEmptyCode() {
+        echo '<div> Il n\'y a pas de code ajouté!';
+    }
 }

@@ -32,7 +32,7 @@ class ViewInformation extends ViewG
         $tab = [$title, $author, $content, $creationDate, $endDate];
         $this->displayAll($row, $id, $tab);
         echo '
-              <td class="text-center"> <a href="http://' . $_SERVER['HTTP_HOST'] . '/modification-information/' . $id . '" 
+              <td class="text-center"> <a href="/modification-information/' . $id . '" 
               name="modifetud" type="submit" value="Modifier">Modifier</a></td>
             </tr>';
     } // displayAllInformation()
@@ -114,7 +114,7 @@ class ViewInformation extends ViewG
                         <input type="submit" value="creer" name="createTab">
                       </form>';
         }
-        echo '<a href="http://wptv/gerer-les-informations/"> Page de gestion</a>';
+        echo '<a href="/gerer-les-informations/"> Page de gestion</a>';
     } //displayInformationCreation()
 
 
@@ -137,7 +137,7 @@ class ViewInformation extends ViewG
                       Date d\'expiration : <input type="date" name="endDateInfo" min="' . $dateMin . '" value = "' . $endDate . '" required > </br>
                       <input type="submit" name="validateChange" value="Modifier" ">
                  </form>
-                 <a href="http://wptv/gerer-les-informations/"> Page de gestion</a>
+                 <a href="'.$_SERVER['HTTP_HOST'].'/gerer-les-informations/"> Page de gestion</a>
             </div>';
         } elseif ($typeInfo == "img") {
             echo '
@@ -150,7 +150,7 @@ class ViewInformation extends ViewG
                       Date d\'expiration : <input type="date" name="endDateInfo" min="' . $dateMin . '" value = "' . $endDate . '" required > </br>
                        <input type="submit" name="validateChangeImg" value="Modifier"/>
                  </form>
-               <a href="http://wptv/gerer-les-informations/"> Page de gestion</a>
+               <a href="/gerer-les-informations/"> Page de gestion</a>
             </div>';
         } elseif ($typeInfo == "tab") {
             echo '
@@ -163,7 +163,7 @@ class ViewInformation extends ViewG
                       Date d\'expiration : <input type="date" name="endDateInfo" min="' . $dateMin . '" value = "' . $endDate . '" required > </br>
                        <input type="submit" name="validateChangeTab" value="Modifier"/>
                  </form>
-               <a href="http://wptv/gerer-les-informations/"> Page de gestion</a>
+               <a href="/gerer-les-informations/"> Page de gestion</a>
             </div>';
         } else {
             echo 'Désolé, une erreur semble être survenue.';

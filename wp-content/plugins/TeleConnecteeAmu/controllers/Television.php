@@ -29,17 +29,16 @@ class Television extends ControllerG{
     }
 
     public function insertTelevision(){
-
         $action = $_POST['createTv'];
-        $login = filter_input(INPUT_POST,'loginTv');
-        $pwd = md5(filter_input(INPUT_POST,'pwdTv'));
-        $codes = $_POST['selectTv'];
-
         $years = $this->model->getCodeYear();
         $groups = $this->model->getCodeGroup();
         $halfgroups = $this->model->getCodeHalfgroup();
+
         $this->view->displayFormTelevision($years, $groups, $halfgroups);
         if(isset($action)){
+            $login = filter_input(INPUT_POST,'loginTv');
+            $pwd = md5(filter_input(INPUT_POST,'pwdTv'));
+            $codes = $_POST['selectTv'];
             if($this->model->insertMyTelevision($login, $pwd, $codes)){
                 $this->view->refreshPage();
             }
@@ -58,12 +57,18 @@ class Television extends ControllerG{
                 ++$row;
                 $id = $result['ID'];
                 $login = $result['user_login'];
-                $nbCode = sizeof(unserialize($result['code']));
+                $codes = unserialize($result['code']);
+                if(is_array($codes)) {
+                    $nbCode = sizeof($codes);
+                } else {
+                    $nbCode = 1;
+                }
+
                 $this->view->displayAllTv($id, $login, $nbCode, $row);
             }
             $this->view->displayEndTab();
         }
-        else{
+        else {
             $this->view->displayEmpty();
         }
     }
@@ -75,13 +80,15 @@ class Television extends ControllerG{
         $this->view->displayModifyTv($result, $years, $groups, $halfgroups);
 
         $action = $_POST['modifValidate'];
-        $code1 = $_POST['firstCode'];
-        $code2 = $_POST['secondCode'];
-        $code3 = $_POST['thirdCode'];
 
-        $code = [$code1, $code2, $code3];
         if(isset($action)){
-            if($this->model->modifyTv($result, $code)){
+            $codes = $_POST['selectTv'];
+            $pwd = $_POST['pwdTv'];
+            $pwd = wp_hash_password($pwd);
+            if(empty($pwd)){
+                $pwd = $result['user_pass'];
+            }
+            if($this->model->modifyTv($result, $pwd, $codes)){
                 $this->view->refreshPage();
             }
         }
